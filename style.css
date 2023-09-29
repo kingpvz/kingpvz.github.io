@@ -1,13 +1,58 @@
 header {
-    background-color: #111138;
+    background-image: linear-gradient(to right, #111138, #404096);
     display: flex;
-    margin: 5px;
-    padding: 5px 50px 5px 50px;
-    border-radius: 2500px
+    margin: 25px 50px 5px 50px;
+    padding: 0 50px 0 50px;
+    border-radius: 100px;
+    flex-direction: row;
 }
 
 #webtitle {
     color: white;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 35px
+}
+
+#titlediv {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    align-items: center;
+}
+
+.titleitem {
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    text-decoration: underline;
+    text-decoration-color: #aaa;
+}
+
+#discord {
+    grid-area: disc;
+    border-radius: 40px;
+}
+
+#content {
+    grid-area: cont;
+}
+
+#sidebar {
+    grid-area: side;
+    width: 300px;
+    border-radius: 40px;
+    background-color: #110606;
+    margin-top: 25px;
+}
+
+#sourcegrid {
+    margin: 0 50px 0 50px;
+    display: grid;
+    grid-template-columns: 300px 25% 25% 25%;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "disc cont cont cont"
+        "side cont cont cont"
 }
