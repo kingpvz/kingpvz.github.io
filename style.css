@@ -1,0 +1,13 @@
+header {
+    background-color: #111138;
+    display: flex;
+    margin: 5px;
+    padding: 5px 50px 5px 50px;
+    border-radius: 2500px
+}
+
+#webtitle {
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
