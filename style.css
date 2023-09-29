@@ -45,7 +45,7 @@ header {
     border-radius: 40px;
     background-color: #110606;
     margin-top: 25px;
-    padding: 10px 5px 10px 5px;
+    padding: 0 5px 5px 5px;
 }
 
 #sourcegrid {
@@ -61,9 +61,12 @@ header {
 .navbar {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    
+    color: #ddd;
+    font-size: 18px;
 }
 
 .here {
-
+    color:white;
+    font-weight: 700;
+    text-decoration:none;
 }
