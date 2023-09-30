@@ -7,6 +7,23 @@ header {
     flex-direction: row;
 }
 
+footer {
+    background-color: #1d1d1d;
+    padding: 5px 100px 5px 100px;
+    margin: 25px 50px 0 50px;
+    border-radius: 100px;
+    color: lightgray;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.footerlink{
+    color: yellowgreen;
+}
+
 #webtitle {
     color: white;
     text-decoration: none;
@@ -41,21 +58,23 @@ header {
 
 #sidebar {
     grid-area: side;
+}
+
+#nav {
     width: 300px;
     border-radius: 40px;
-    background-color: #110606;
+    background-color: #240d0d;
     margin-top: 25px;
-    padding: 0 5px 5px 5px;
+    padding: 10px 5px 5px 5px;
 }
 
 #sourcegrid {
     margin: 0 50px 0 50px;
     display: grid;
-    grid-template-columns: 300px 25% 25% 25%;
+    grid-template-columns: 300px 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas:
-        "disc cont cont cont"
-        "side cont cont cont"
+        "side cont cont"
 }
 
 .navbar {
