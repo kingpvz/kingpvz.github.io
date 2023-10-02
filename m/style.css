@@ -1,12 +1,3 @@
-header {
-    background-image: linear-gradient(to right, #111138, #404096);
-    display: flex;
-    margin: 25px 50px 5px 50px;
-    padding: 0 50px 0 50px;
-    border-radius: 100px;
-    flex-direction: row;
-}
-
 footer {
     background-color: #1d1d1d;
     padding: 5px 100px 5px 100px;
@@ -29,14 +20,16 @@ footer {
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    font-size: 35px
+    font-size: 50px;
+    grid-area: title;
 }
 
-#titlediv {
+#rightnav {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
     width: 100%;
     align-items: center;
+    grid-area: rnav;
 }
 
 .titleitem {
@@ -56,16 +49,9 @@ footer {
     grid-area: cont;
 }
 
-#sidebar {
-    grid-area: side;
-}
-
 #nav {
-    width: 300px;
-    border-radius: 40px;
-    background-color: #240d0d;
-    margin-top: 25px;
     padding: 10px 5px 5px 5px;
+    grid-area:nav;
 }
 
 #sourcegrid {
@@ -88,4 +74,20 @@ footer {
     color:white;
     font-weight: 700;
     text-decoration:none;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-image: linear-gradient(to bottom, #111138, #404096);
+    margin: 0;
+    padding: 5px 50px 5px 50px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "title title"
+        "nav rnav"
 }
