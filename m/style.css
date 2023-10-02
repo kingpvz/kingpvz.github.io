@@ -20,7 +20,7 @@ footer {
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    font-size: 50px;
+    font-size: 70px;
     grid-area: title;
 }
 
@@ -50,24 +50,14 @@ footer {
 }
 
 #nav {
-    padding: 10px 5px 5px 5px;
-    grid-area:nav;
-}
-
-#sourcegrid {
-    margin: 0 50px 0 50px;
-    display: grid;
-    grid-template-columns: 300px 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-        "side cont cont"
+    grid-area: nav;
 }
 
 .navbar {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     color: #ddd;
-    font-size: 18px;
+    font-size: 30px;
 }
 
 .here {
