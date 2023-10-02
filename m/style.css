@@ -1,0 +1,91 @@
+header {
+    background-image: linear-gradient(to right, #111138, #404096);
+    display: flex;
+    margin: 25px 50px 5px 50px;
+    padding: 0 50px 0 50px;
+    border-radius: 100px;
+    flex-direction: row;
+}
+
+footer {
+    background-color: #1d1d1d;
+    padding: 5px 100px 5px 100px;
+    margin: 25px 50px 0 50px;
+    border-radius: 100px;
+    color: lightgray;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.footerlink{
+    color: yellowgreen;
+}
+
+#webtitle {
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 35px
+}
+
+#titlediv {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    align-items: center;
+}
+
+.titleitem {
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    text-decoration: underline;
+    text-decoration-color: #aaa;
+}
+
+#discord {
+    grid-area: disc;
+    border-radius: 40px;
+}
+
+#content {
+    grid-area: cont;
+}
+
+#sidebar {
+    grid-area: side;
+}
+
+#nav {
+    width: 300px;
+    border-radius: 40px;
+    background-color: #240d0d;
+    margin-top: 25px;
+    padding: 10px 5px 5px 5px;
+}
+
+#sourcegrid {
+    margin: 0 50px 0 50px;
+    display: grid;
+    grid-template-columns: 300px 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "side cont cont"
+}
+
+.navbar {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #ddd;
+    font-size: 18px;
+}
+
+.here {
+    color:white;
+    font-weight: 700;
+    text-decoration:none;
+}
