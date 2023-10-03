@@ -1,6 +1,6 @@
 footer {
     background-color: #1d1d1d;
-    padding: 5px 100px 5px 100px;
+    padding: 5px 75px 5px 75px;
     margin: 25px 50px 0 50px;
     border-radius: 100px;
     color: lightgray;
@@ -9,6 +9,7 @@ footer {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    font-size: 20px;
 }
 
 .footerlink{
@@ -24,6 +25,14 @@ footer {
     grid-area: title;
 }
 
+#leftnav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    grid-area: lnav;
+}
+
 #rightnav {
     display: flex;
     flex-direction: column;
@@ -33,7 +42,7 @@ footer {
 }
 
 .titleitem {
-    font-size: 30px;
+    font-size: 50px;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     text-decoration: underline;
@@ -47,17 +56,14 @@ footer {
 
 #content {
     grid-area: cont;
-}
-
-#nav {
-    grid-area: nav;
+    padding: 16px;
 }
 
 .navbar {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     color: #ddd;
-    font-size: 30px;
+    font-size: 45px;
 }
 
 .here {
@@ -79,5 +85,28 @@ header {
     grid-template-rows: auto;
     grid-template-areas:
         "title title"
-        "nav rnav"
+        "lnav rnav"
+}
+
+.navgroup{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#navhead{grid-area: hd;}
+#navg1{grid-area:g1;}
+#navg2{grid-area:g2;}
+#navg3{grid-area:g3;}
+
+#mainnav{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "hd hd hd"
+        "g1 g2 g3"
+        ;
+    background-color: #2e2e2e;
+    padding: 8px 16px 24px 16px;
 }
