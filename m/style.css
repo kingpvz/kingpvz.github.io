@@ -9,7 +9,7 @@ footer {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .footerlink{
@@ -74,6 +74,7 @@ footer {
 html, body{
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 header {
     background-image: linear-gradient(to bottom, #111138, #404096);
