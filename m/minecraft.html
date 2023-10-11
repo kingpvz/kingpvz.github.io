@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700;900;300;200&display=swap" rel="stylesheet">
+    <title>Kingpvz - Minecraft</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.png">
+</head>
+<body style="text-align: center; background-color: black; color: white; background-image: url(../global_resources/minecraft_bg.png); background-repeat: no-repeat; background-size: cover;">
+    <script>
+        function GetURLParameter(sParam) {
+            var sPageURL = window.location.search.substring(1);
+            var sURLVariables = sPageURL.split('&');
+            for (var i = 0; i < sURLVariables.length; i++) {
+                var sParameterName = sURLVariables[i].split('=');
+                if (sParameterName[0] == sParam) {
+                    return sParameterName[1];
+                }
+            }
+        }
+        var red = GetURLParameter('redirect');
+        if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) && red !== '0') {
+            window.location.replace("../minecraft")
+        }
+
+    </script><header>
+        <h1 id="webtitle"><a href="#" id="webtitle">Kingpvz</a></h1><br />
+
+        <div id="leftnav">
+            <a target="_blank" style="color: red;" class="titleitem" href="https://youtube.com/@kingpvz">YouTube</a><br />
+            <a target="_blank" style="color: #FF424D;" class="titleitem" href="https://patreon.com/kingpvz">Patreon</a><br />
+            <a target="_blank" style="color: #F56040" class="titleitem" href="https://instagram.com/kingpvzyt">Instagram</a></div>
+        <div id="rightnav">
+            <a target="_blank" style="color: #1DB954;" class="titleitem" href="https://open.spotify.com/artist/0E9m4Xiqd4g7gAnByJ8FZW?si=1m-T9AhcS7-npeM3t_ZHCw">Spotify</a><br />
+            <a target="_blank" style="color: lightblue;" class="titleitem" href="https://discord.gg/zkWXngH">Discord</a><br />
+            <a target="_blank" style="color: white;" class="titleitem" href="https://my-store-b3cfd9.creator-spring.com/">Merch</a>
+        </div>
+    </header>
+    <div id="mainnav">
+        <h2 style="font-size:35px;" id="navhead">Navigation:</h2>
+        <div id="navg1" class="navgroup">
+            <a class="navbar" href="../m">Home</a><br />
+            <a class="navbar here" href="#">Minecraft</a>
+        </div>
+        <div id="navg2" class="navgroup">
+            <a class="navbar" href="contact">Contact</a><br />
+            <a class="navbar" href="social">Social Sites</a>
+        </div>
+        <div id="navg3" class="navgroup">
+            <a class="navbar" href="projects">Projects</a><br />
+            <a class="navbar" href="#" style="visibility: hidden;">TBA</a>
+        </div>
+    </div>
+    <br /><br />
+          <div id="sourcegrid">
+              <p style="font-size:30px; margin-left: 25px; margin-right: 25px; line-height: 1.7em;">You can get all of my mods, maps and resource packs on Planet Minecraft and CurseForge, and most of my mods, maps and resource packs on MinecraftStorage!<br />Choose the one that you prefer:</p>
+              <a href="https://www.planetminecraft.com/member/kingpvz/" class="mcbutton" target="_blank">Planet Minecraft</a><br /><a href="https://legacy.curseforge.com/members/kingpvzyt/projects" class="mcbutton" target="_blank">CurseForge</a><br /><a href="https://minecraftstorage.com/users/3969/kingpvz" class="mcbutton" target="_blank">MinecraftStorage</a>
+              <br /><br /><br /><p style="font-size:25px; margin-left: 25px; margin-right: 25px; line-height: 1.5em;">All my mods are made using <a href="https://mcreator.net/" style="color:yellow; font-weight: 700; text-decoration:none;">MCreator</a> and all textures, within mods, or in my resource packs are made using <a href="https://www.getpaint.net/" style="color:yellow; font-weight: 700; text-decoration:none;">paint.net</a>.</p>
+              <p style="font-size:22px; margin-left:35px; margin-right:35px; line-height:1.5em;">Note: All Minecraft resources made by me are <b>only</b> available for the <b>Java version of Minecraft.</b></p>
+          </div><br />
+    <iframe style="border-width:0px; width:100%; padding:0; margin: 0;" src="site_resources/footer.html" marginwidth="0" marginheight="0" hspace="0" vspace="0">Your browser doesn't support iFrames.</iframe>
+</body>
+</html>
