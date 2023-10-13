@@ -135,3 +135,30 @@ header {
     .mcbutton:active {
         background-color: #aaaaaa;
     }
+
+.connect {
+    margin: 10px 0 10px 0;
+    padding: 0 20px 0 20px;
+    width: 50%;
+    justify-content: center;
+    border-radius: 25px;
+    display: inline-flex;
+    align-items: center;
+}
+
+#instagram {
+    background: rgb(64,93,230);
+    background: linear-gradient(90deg, rgba(64,93,230,1) 0%, rgba(225,48,108,1) 33%, rgba(245,96,64,1) 67%, rgba(255,220,128,1) 100%);
+}
+
+#discord {
+    background: rgb(114, 137, 218);
+    border-radius: 25px;
+}
+
+.rrur {
+    font-size: 40px;
+    margin-left: 15px;
+    font-weight: 900;
+    color: white;
+}
