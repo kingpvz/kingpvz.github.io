@@ -33,7 +33,7 @@ footer {
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    font-size: 35px
+    font-size: 35px;
 }
 
 #titlediv {
@@ -44,7 +44,7 @@ footer {
 }
 
 .titleitem {
-    font-size: 30px;
+    font-size: 1.6vw;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     text-decoration: underline;
@@ -120,7 +120,7 @@ footer {
 
 .connect{
     margin: 5px 15px 5px 15px;
-    padding: 0 20px 0 20px;
+    padding: 5px 20px 5px 20px;
     border-radius: 25px;
     display: inline-flex;
     align-items: center;
@@ -137,8 +137,8 @@ footer {
 }
 
 .rrur{
-    font-size: 30px;
-    margin-left:10px;
+    font-size: 1.4vw;
+    margin-left:15px;
     font-weight: 900;
     color: white;
 }
