@@ -157,11 +157,12 @@ footer {
     width: calc(200% - 50px);
 }
 
-.socialitem{
+.socialitem {
     padding: 25px;
     margin: initial 20px initial initial;
     border-radius: 25px;
     background-color: darkred;
+    font-family: 'Archivo Black', sans-serif;
     font-weight: 900;
     font-size: 2vw;
     text-decoration: dotted;
