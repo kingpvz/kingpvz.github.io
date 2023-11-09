@@ -163,3 +163,24 @@ header {
     color: white;
     text-decoration: none;
 }
+
+.socialitem {
+    padding: 25px;
+    margin: 50px 85px 50px 85px;
+    border-radius: 25px;
+    background-color: darkred;
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: 900;
+    font-size: 8vw;
+    text-decoration: dotted;
+}
+
+.socialitemlink {
+    text-decoration: none;
+    height: fit-content;
+    color: white;
+}
+
+.socialitemlink:active {
+    color: yellow;
+}
