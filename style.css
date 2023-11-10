@@ -35,6 +35,12 @@ footer {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 35px;
+    transition: 0.5s;
+}
+
+#webtitle:hover {
+    text-shadow: 0 0 10px white;
+    scale: 1.1;
 }
 
 #titlediv {
@@ -50,6 +56,12 @@ footer {
     font-weight: 900;
     text-decoration: underline;
     text-decoration-color: #aaa;
+    transition: 0.3s;
+}
+
+.titleitem:hover{
+    scale: 1.15;
+    text-shadow: 0 0 40px yellow;
 }
 
 #discord {
@@ -71,6 +83,11 @@ footer {
     background-color: #240d0d;
     margin-top: 25px;
     padding: 10px 5px 5px 5px;
+    transition: 0.3s;
+}
+
+#nav:hover {
+    box-shadow: 0 0 15px #505000;
 }
 
 #sourcegrid {
@@ -87,6 +104,11 @@ footer {
     font-weight: 300;
     color: #ddd;
     font-size: 18px;
+    transition: 0.2s;
+}
+
+.navbar:hover{
+    color: yellow;
 }
 
 .here {
@@ -110,14 +132,17 @@ footer {
     text-decoration: none;
     text-shadow: 0px 1px 2px #000000;
     margin: 20px 10px 20px 10px;
+    transition: 0.2s;
 }
 
 .mcbutton:hover {
         background-color: #8f8f8f;
+        scale: 1.05;
     }
 
 .mcbutton:active {
         background-color: #aaaaaa;
+        scale: 1.175;
     }
 
 /*contact*/
@@ -154,7 +179,6 @@ footer {
     row-gap: 50px;
     margin-left: 50px;
     grid-auto-rows: max-content;
-    width: calc(200% - 50px);
 }
 
 .socialitem {
@@ -172,10 +196,12 @@ footer {
     text-decoration: none;
     height: fit-content;
     color: white;
+    transition: 0.3s;
 }
 
 .socialitemlink:hover {
     color: yellow;
+    scale: 1.025;
 }
 
 .socialitemlink:active {
