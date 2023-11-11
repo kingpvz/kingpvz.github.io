@@ -67,6 +67,11 @@ footer {
 #discord {
     grid-area: disc;
     border-radius: 40px;
+    transition: 0.3s;
+}
+
+#discord:hover {
+    box-shadow: 0 0 15px #3d3d8e;
 }
 
 #content {
@@ -152,6 +157,12 @@ footer {
     border-radius: 25px;
     display: inline-flex;
     align-items: center;
+    transition: 0.3s;
+}
+
+.connect:hover{
+    box-shadow: 0 0 25px #fafafa;
+    scale: 1.05;
 }
 
 #instagram {
@@ -159,7 +170,7 @@ footer {
     background: linear-gradient(90deg, rgba(64,93,230,1) 0%, rgba(225,48,108,1) 33%, rgba(245,96,64,1) 67%, rgba(255,220,128,1) 100%);
 }
 
-#discord {
+#discordt {
     background: rgb(114, 137, 218);
     border-radius: 25px;
 }
