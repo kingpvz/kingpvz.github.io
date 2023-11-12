@@ -3,6 +3,12 @@ html, body{
     font-family: 'Roboto', sans-serif;
 }
 
+body {
+    text-align: center;
+    background-color: #111;
+    color: white;
+}
+
 header {
     background-image: linear-gradient(to right, #111138, #404096);
     display: flex;
@@ -13,7 +19,7 @@ header {
 }
 
 footer {
-    background-color: #1d1d1d;
+    background-color: #222;
     padding: 5px 100px 5px 100px;
     margin: 25px 50px 0 50px;
     border-radius: 100px;
@@ -85,7 +91,7 @@ footer {
 #nav {
     width: 300px;
     border-radius: 40px;
-    background-color: #240d0d;
+    background-color: #252530;
     margin-top: 25px;
     padding: 10px 5px 5px 5px;
     transition: 0.3s;
@@ -185,10 +191,10 @@ footer {
 /*social*/
 #socialgrid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 50px;
-    row-gap: 50px;
-    margin-left: 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 40px;
+    margin-left: 40px;
     grid-auto-rows: max-content;
 }
 
@@ -199,8 +205,7 @@ footer {
     background-color: darkred;
     font-family: 'Archivo Black', sans-serif;
     font-weight: 900;
-    font-size: 2vw;
-    text-decoration: dotted;
+    font-size: 1.8vw;
 }
 
 .socialitemlink {
