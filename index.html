@@ -9,21 +9,12 @@
     <link rel="icon" type="image/x-icon" href="favicon.png">
 </head>
 <body>
+    <script src="corefunc.js"></script>
     <script>
-    function GetURLParameter(sParam) {
-        var sPageURL = window.location.search.substring(1);
-        var sURLVariables = sPageURL.split('&');
-        for (var i = 0; i < sURLVariables.length; i++) {
-            var sParameterName = sURLVariables[i].split('=');
-            if (sParameterName[0] == sParam) {
-                return sParameterName[1];
-            }
+        var red = GetURLParameter('redirect');
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && red !== '0') {
+            window.location.replace("m")
         }
-    }
-    var red = GetURLParameter('redirect');
-    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && red!=='0') {
-        window.location.replace("m")
-}
     </script>
     <iframe style="border-width:0px; width:100%; padding:0; margin: 0;" src="site_resources/header.html" marginwidth="0" marginheight="0" hspace="0" vspace="0">Your browser doesn't support iFrames.</iframe><br />
     <div id="sourcegrid">
@@ -38,7 +29,8 @@
                 <a class="navbar" href="projects" title="My apps, games and other fun projects!">Projects</a><br /><br />
             </div>
         </div>
-        <div id="content"><p><b>Stanislav Suchovsk&yacute;</b>, also known as <b>Kingpvz</b>, is a Slovak producer and youtuber. <a style="color:yellow;" href="https://minitubia.fandom.com/wiki/Kingpvz" target="_blank">More at Minitubia</a></p><br />
+        <div id="content">
+            <p><b>Stanislav Suchovsk&yacute;</b>, also known as <b>Kingpvz</b>, is a Slovak producer and youtuber. <a style="color:yellow;" href="https://minitubia.fandom.com/wiki/Kingpvz" target="_blank">More at Minitubia</a></p><br />
             <div>
                 <h1 style="font-family: 'Roboto', sans-serif; font-weight: 700; font-size: 50px; margin-bottom: 20px;">
                     LATEST NEWS:
@@ -47,13 +39,13 @@
                     None... yet
                 </p>
             </div><br /><hr style="margin: 0 150px 50px 150px;" />
-          <div>
-                            <h1 style="font-size: 2.3vw; margin-bottom: 5px;">There is not much to see now. So feel free to check out:</h1><br />
-                            <h2 style="font-size:2vw; margin-top:0px;">
-                                <a href="projects" style="font-size: 2.5vw; color:yellow;">My Projects!</a> or perhaps wanna 
-                                <a href="https://open.spotify.com/artist/0E9m4Xiqd4g7gAnByJ8FZW?si=1m-T9AhcS7-npeM3t_ZHCw" style="font-size: 2.5vw; color:yellow;">Hear my music?</a>
-                            </h2>
-          </div>
+            <div>
+                <h1 style="font-size: 2.3vw; margin-bottom: 5px;">There is not much to see now. So feel free to check out:</h1><br />
+                <h2 style="font-size:2vw; margin-top:0px;">
+                    <a href="projects" style="font-size: 2.5vw; color:yellow;">My Projects!</a> or perhaps wanna
+                    <a href="https://open.spotify.com/artist/0E9m4Xiqd4g7gAnByJ8FZW?si=1m-T9AhcS7-npeM3t_ZHCw" style="font-size: 2.5vw; color:yellow;">Hear my music?</a>
+                </h2>
+            </div>
         </div>
     </div><br />
     <iframe style="border-width:0px; width:100%; padding:0; margin: 0;" src="site_resources/footer.html" marginwidth="0" marginheight="0" hspace="0" vspace="0">Your browser doesn't support iFrames.</iframe>
