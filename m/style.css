@@ -68,8 +68,8 @@ footer {
 
 .navbar {
     font-weight: 300;
-    background-color: #252530;
     font-size: 45px;
+    color: #ccc;
 }
 
 .here {
@@ -108,16 +108,16 @@ header {
 #navg2{grid-area:g2;}
 #navg3{grid-area:g3;}
 
-#mainnav{
+#mainnav {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas:
         "hd hd hd"
-        "g1 g2 g3"
-        ;
-    background-color: #2e2e2e;
+        "g1 g2 g3";
+    background-color: #252530;
     padding: 8px 16px 24px 16px;
+    box-shadow: 0 0 10px 10px #252530, 0 10px 10px 2px yellow;
 }
 
 /*minecraft*/
