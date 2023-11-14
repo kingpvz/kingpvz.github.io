@@ -28,7 +28,7 @@ footer {
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    font-size: 70px;
+    font-size: 100px;
     grid-area: title;
 }
 
@@ -49,7 +49,7 @@ footer {
 }
 
 .titleitem {
-    font-size: 50px;
+    font-size: 7vw;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     text-decoration: underline;
