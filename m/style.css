@@ -120,6 +120,26 @@ header {
     box-shadow: 0 0 10px 10px #252530, 0 10px 10px 2px yellow;
 }
 
+/*index*/
+.introlink {
+    display: block;
+    margin: 10px 15vw 20px 15vw;
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+    font-size: 50px;
+    text-decoration: none;
+    color: white;
+    background-color: #e22;
+    font-weight: 900;
+    transition: 0.25s;
+}
+
+.introlink:active {
+        scale: 1.05;
+        color: #f00;
+        background-color: #eee;
+}
+
 /*minecraft*/
 .mcbutton {
     box-shadow: 2px 2px 10px 0px #ffffff;
