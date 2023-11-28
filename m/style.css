@@ -52,8 +52,8 @@ footer {
     font-size: 8vw;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
-    text-decoration: underline;
-    text-decoration-color: #aaa;
+    text-decoration: none;
+    text-shadow: 10px 10px 10px darkblue;
 }
 
 #discord {
@@ -69,13 +69,13 @@ footer {
 .navbar {
     font-weight: 300;
     font-size: 45px;
-    color: #ccc;
+    text-decoration: none;
+    color: #bbb;
 }
 
 .here {
     color:white;
     font-weight: 700;
-    text-decoration:none;
 }
 
 html, body{

@@ -33,6 +33,12 @@ footer {
 
 .footerlink{
     color: yellowgreen;
+    text-decoration: none;
+    transition: 0.2s
+}
+
+.footerlink:hover{
+    color: yellow;
 }
 
 #webtitle {
@@ -60,9 +66,9 @@ footer {
     font-size: 1.6vw;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
-    text-decoration: underline;
-    text-decoration-color: #aaa;
+    text-decoration: none;
     transition: 0.3s;
+    text-shadow: 5px 5px 5px darkblue;
 }
 
 .titleitem:hover{
@@ -113,9 +119,10 @@ footer {
 .navbar {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    color: #ddd;
+    color: #bbb;
     font-size: 18px;
     transition: 0.2s;
+    text-decoration: none;
 }
 
 .navbar:hover{
@@ -125,7 +132,10 @@ footer {
 .here {
     color:white;
     font-weight: 700;
-    text-decoration:none;
+}
+
+.here:hover{
+    color: #ffc;
 }
 
 /*index*/

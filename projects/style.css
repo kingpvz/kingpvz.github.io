@@ -10,14 +10,34 @@
     background: linear-gradient(135deg, rgba(70,0,0,1) 0%, rgba(0,70,0,1) 50%, rgba(0,0,70,1) 100%);
     border-radius: 40px;
     box-shadow: 0px 0px 15px #333, 0px 0px 5px 0 #333 inset;
-    height: 15vw;
+    height: 32vh;
     transition: 0.45s;
-    display: flex;
+    display: flex; flex-direction: column;
     align-items: center; justify-content: center;
     padding: 40px;
+    text-decoration: none;
+}
+
+.linkadditionalpr{
+    text-decoration: none;
 }
 
 .project:hover {
     box-shadow: 0px 0px 15px yellow, 0px 0px 5px 0 yellow inset;
     scale: 1.03;
+}
+
+.projectimg {
+    height: 10vh;
+}
+
+.projectname {
+    color: white;
+    text-decoration: none;
+    font-size: 3.5vh;
+}
+
+.projectdsc {
+    color: white;
+    text-decoration: none;
 }
