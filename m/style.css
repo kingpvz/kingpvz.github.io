@@ -56,11 +56,6 @@ footer {
     text-shadow: 10px 10px 10px darkblue;
 }
 
-#discord {
-    grid-area: disc;
-    border-radius: 40px;
-}
-
 #content {
     grid-area: cont;
     padding: 16px;
