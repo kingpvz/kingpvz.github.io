@@ -10,18 +10,21 @@
 </head>
 <body>
     <script src="global_resources/corefunc.js"></script>
+    <script src="site_resources/templates.js"></script>
     <script>
         var red = GetURLParameter('redirect');
         if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && red !== '0') {
             window.location.replace("m")
         }
     </script>
-    <iframe style="border-width:0px; width:100%; padding:0; margin: 0;" src="site_resources/header.html" marginwidth="0" marginheight="0" hspace="0" vspace="0">Your browser doesn't support iFrames.</iframe><br />
+    <br />
+    <script>
+        document.body.appendChild(headertemplate.content);
+    </script><br />
     <div id="sourcegrid">
         <div id="sidebar">
             <iframe src="https://discord.com/widget?id=506420289261928458&theme=dark" marginheight="50" marginwidth="50" width="300" height="300" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" id="discord"></iframe>
-            <div id="nav">
-                <h2>Navigation:</h2><br />
+            <div id="nav"><br />
                 <a class="navbar here" href="#" title="The main page! Not much to see here tho.">Home</a><br /><br />
                 <a class="navbar" href="minecraft" title="My Minecraft mods, resource packs and maps!">Minecraft</a><br /><br />
                 <a class="navbar" href="contact" title="My email and messaging platforms.">Contact</a><br /><br />
@@ -37,14 +40,10 @@
                 <p style="font-size: 20px; font-weight: 400; margin-right: 15px; margin-left: 15px;">or</p>
                 <a class="introlink" href="https://musicalcorner2.blogspot.com/2023/02/artist-spotlight-kingpvz.html" target="_blank">MUSICAL CORNER</a>
             </div><br />
-            <div>
-                <h1 style="font-family: 'Roboto', sans-serif; font-weight: 700; font-size: 50px; margin-bottom: 20px;">
-                    LATEST NEWS:
-                </h1>
-                <p>
-                    None... yet...
-                </p>
-            </div><br /><hr style="margin: 0 150px 50px 150px;" />
+                  <div>
+                      <h1>MEME REWIND 2023 IS OUT!</h1><br />
+                      <iframe type="text/html" frameborder="0" width="800" height="450" src="https://www.youtube.com/embed/Mw1MgPPenME?modestbranding=1&rel=0" allowfullscreen></iframe>
+                  </div><br /><hr style="margin: 0 150px 50px 150px;" />
             <div>
                 <h1 style="font-size: 2.3vw; margin-bottom: 5px;">There is not much to see now. So feel free to check out:</h1><br />
                 <h2 style="font-size:2vw; margin-top:0px;">
@@ -53,7 +52,9 @@
                 </h2>
             </div>
         </div>
-    </div><br />
-    <iframe style="border-width:0px; width:100%; padding:0; margin: 0;" src="site_resources/footer.html" marginwidth="0" marginheight="0" hspace="0" vspace="0">Your browser doesn't support iFrames.</iframe>
+    </div>
+          <script>
+              document.body.appendChild(footertemplate.content);
+          </script>
 </body>
 </html>

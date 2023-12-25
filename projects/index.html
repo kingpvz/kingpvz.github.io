@@ -9,18 +9,23 @@
     <link rel="icon" type="image/x-icon" href="../favicon.png">
 </head>
 <body>
-    <script src="../global_resources/corefunc.js"></script><script>
-    var red = GetURLParameter('redirect');
-    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && red!=='0') {
-        window.location.replace("../m/projects")
-}
+    <script src="../global_resources/corefunc.js"></script>
+    <script>
+        var red = GetURLParameter('redirect');
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && red !== '0') {
+            window.location.replace("../m/projects")
+        }
     </script>
-    <iframe style="border-width:0px; width:100%; padding:0; margin: 0;" src="../site_resources/header.html" marginwidth="0" marginheight="0" hspace="0" vspace="0">Your browser doesn't support iFrames.</iframe><br />
+    <script src="../site_resources/templates.js"></script>
+    <br />
+    <script>
+        document.body.appendChild(headertemplate.content);
+    </script><br />
     <div id="sourcegrid">
         <div id="sidebar">
             <iframe src="https://discord.com/widget?id=506420289261928458&theme=dark" marginheight="50" marginwidth="50" width="300" height="300" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" id="discord"></iframe>
             <div id="nav">
-                <h2>Navigation:</h2><br />
+                <br />
                 <a class="navbar" href="../" title="The main page! Not much to see here tho.">Home</a><br /><br />
                 <a class="navbar" href="../minecraft" title="My Minecraft mods, resource packs and maps!">Minecraft</a><br /><br />
                 <a class="navbar" href="../contact" title="My email and messaging platforms.">Contact</a><br /><br />
@@ -29,45 +34,47 @@
             </div>
         </div><div id="content">
 
-                  <div id="projectgrid">
+            <div id="projectgrid">
 
-                      <a class="linkadditionalpr" href="alavida">
-                          <div class="project">
-                              <img class="projectimg" src="../global_resources/projects/alavida.png" />
-                              <h1 class="projectname">ALAVIDA</h1>
-                              <p class="projectdsc">The Project of Alavida is a project to feed my love to mapping and geopolitics! This is indeed, my own contintent.</p>
-                          </div>
-                      </a>
+                <a class="linkadditionalpr" href="alavida">
+                    <div class="project">
+                        <img class="projectimg" src="../global_resources/projects/alavida.png" />
+                        <h1 class="projectname">ALAVIDA</h1>
+                        <p class="projectdsc">The Project of Alavida is a project to feed my love to mapping and geopolitics! This is indeed, my own contintent.</p>
+                    </div>
+                </a>
 
-                      <a class="linkadditionalpr" onclick="window.alert('This page is not done yet.');">
-                          <div class="project">
-                              <p style="color: gray;">- Work In Progress -</p>
-                              <img class="projectimg" src="../global_resources/projects/cps.png" />
-                              <h1 class="projectname">CPS Counter</h1>
-                              <p class="projectdsc">A very old project of mine, a CPS (Clicks per Second) counter app for Android. Has many interesting features!</p>
-                          </div>
-                      </a>
+                <a class="linkadditionalpr" onclick="window.alert('This page is not done yet.');">
+                    <div class="project">
+                        <p style="color: gray;">- Work In Progress -</p>
+                        <img class="projectimg" src="../global_resources/projects/cps.png" />
+                        <h1 class="projectname">CPS Counter</h1>
+                        <p class="projectdsc">A very old project of mine, a CPS (Clicks per Second) counter app for Android. Has many interesting features!</p>
+                    </div>
+                </a>
 
-                      <a class="linkadditionalpr" onclick="window.alert('This page is not done yet.');">
-                          <div class="project">
-                              <p style="color: gray;">- Work In Progress -</p>
-                              <img class="projectimg" src="../global_resources/projects/pilx.png" />
-                              <h1 class="projectname">PILX</h1>
-                              <p class="projectdsc">Python Interpreted Language X is my own try on making a programming language. Currently in very early stages.</p>
-                          </div>
-                      </a>
+                <a class="linkadditionalpr" onclick="window.alert('This page is not done yet.');">
+                    <div class="project">
+                        <p style="color: gray;">- Work In Progress -</p>
+                        <img class="projectimg" src="../global_resources/projects/pilx.png" />
+                        <h1 class="projectname">PILX</h1>
+                        <p class="projectdsc">Python Interpreted Language X is my own try on making a programming language. Currently in very early stages.</p>
+                    </div>
+                </a>
 
-                      <a class="linkadditionalpr" onclick="window.alert('This page is not done yet.');">
-                          <div class="project">
-                              <p style="color: gray;">- Work In Progress -</p>
-                              <img class="projectimg" src="../global_resources/projects/sqlt.png" />
-                              <h1 class="projectname">SQLT</h1>
-                              <p class="projectdsc">Simple Query List is an array management language made by me in Python. It's a terminal to create and manage arrays. Currently in early stages.</p>
-                          </div>
-                      </a>
-                  </div>
+                <a class="linkadditionalpr" onclick="window.alert('This page is not done yet.');">
+                    <div class="project">
+                        <p style="color: gray;">- Work In Progress -</p>
+                        <img class="projectimg" src="../global_resources/projects/sqlt.png" />
+                        <h1 class="projectname">SQLT</h1>
+                        <p class="projectdsc">Simple Query List is an array management language made by me in Python. It's a terminal to create and manage arrays. Currently in early stages.</p>
+                    </div>
+                </a>
+            </div>
 
-    </div></div><br />
-    <iframe style="border-width:0px; width:100%; padding:0; margin: 0;" src="../site_resources/footer.html" marginwidth="0" marginheight="0" hspace="0" vspace="0">Your browser doesn't support iFrames.</iframe>
+        </div>
+    </div><script>
+    document.body.appendChild(footertemplate.content);
+</script>
 </body>
 </html>

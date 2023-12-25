@@ -16,22 +16,13 @@
             window.location.replace("../contact")
         }
 
-    </script><header>
-        <h1 id="webtitle"><a href="#" id="webtitle">Kingpvz</a></h1><br />
-
-        <div id="leftnav">
-            <a target="_blank" style="color: red;" class="titleitem" href="https://youtube.com/@kingpvz">YouTube</a><br />
-            <a target="_blank" style="color: #FF424D;" class="titleitem" href="https://patreon.com/kingpvz">Patreon</a><br />
-            <a target="_blank" style="color: #F56040" class="titleitem" href="https://instagram.com/kingpvzyt">Instagram</a>
-        </div>
-        <div id="rightnav">
-            <a target="_blank" style="color: #1DB954;" class="titleitem" href="https://open.spotify.com/artist/0E9m4Xiqd4g7gAnByJ8FZW?si=1m-T9AhcS7-npeM3t_ZHCw">Spotify</a><br />
-            <a target="_blank" style="color: lightblue;" class="titleitem" href="https://discord.gg/zkWXngH">Discord</a><br />
-            <a target="_blank" style="color: white;" class="titleitem" href="https://my-store-b3cfd9.creator-spring.com/">Merch</a>
-        </div>
-    </header>
+    </script>
+    <script src="site_resources/templates.js"></script>
+    <script>
+        document.body.appendChild(headertemplate.content);
+    </script>
     <div id="mainnav">
-        <h2 style="font-size:35px;" id="navhead">Navigation:</h2>
+        <br id="spacer" />
         <div id="navg1" class="navgroup">
             <a class="navbar" href="../m">Home</a><br />
             <a class="navbar" href="minecraft">Minecraft</a>
@@ -54,7 +45,8 @@
     </div><br /><br />
     <iframe height="2000" title="Email form" allowtransparency="true" frameborder="0" style="width:92.5%; border:none; margin:40px 0 0 0;" sandbox="allow-popups-to-escape-sandbox allow-top-navigation allow-scripts allow-popups allow-forms allow-same-origin" src="https://kingpvz.wufoo.com/forms/qtwfo2k1dcuxnq/"> <a href="https://kingpvz.wufoo.com/forms/qtwfo2k1dcuxnq/">Fill out my Wufoo form!</a> </iframe>
 
-    <br />
-    <iframe style="border-width:0px; width:100%; padding:0; margin: 0;" src="site_resources/footer.html" marginwidth="0" marginheight="0" hspace="0" vspace="0">Your browser doesn't support iFrames.</iframe>
+    <script>
+        document.body.appendChild(footertemplate.content);
+    </script><br />
 </body>
 </html>

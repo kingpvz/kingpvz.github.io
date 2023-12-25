@@ -8,7 +8,7 @@
     <title>Kingpvz - Minecraft</title>
     <link rel="icon" type="image/x-icon" href="favicon.png">
 </head>
-<body style="background-image: url(global_resources/minecraft_bg.png); background-repeat:no-repeat; background-size:cover;">
+<body style="background-image: url(https://i.postimg.cc/d3KcBhBz/minecraft-bg.png); background-repeat: no-repeat; background-size: cover;">
     <script src="global_resources/corefunc.js"></script>
     <script>
         var red = GetURLParameter('redirect');
@@ -16,12 +16,15 @@
             window.location.replace("m/minecraft")
         }
     </script>
-    <iframe style="border-width:0px; width:100%; padding:0; margin: 0;" src="site_resources/header.html" marginwidth="0" marginheight="0" hspace="0" vspace="0">Your browser doesn't support iFrames.</iframe><br />
+    <br />
+    <script src="site_resources/templates.js"></script>
+    <script>
+        document.body.appendChild(headertemplate.content);
+    </script><br />
     <div id="sourcegrid">
         <div id="sidebar">
             <iframe src="https://discord.com/widget?id=506420289261928458&theme=dark" marginheight="50" marginwidth="50" width="300" height="300" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" id="discord"></iframe>
-            <div id="nav">
-                <h2>Navigation:</h2><br />
+            <div id="nav"><br />
                 <a class="navbar" href="." title="The main page! Not much to see here tho.">Home</a><br /><br />
                 <a class="navbar here" href="#" title="My Minecraft mods, resource packs and maps!">Minecraft</a><br /><br />
                 <a class="navbar" href="contact" title="My email and messaging platforms.">Contact</a><br /><br />
@@ -36,7 +39,9 @@
             <br /><br /><br /><p style="font-size:18px; margin-left: 25px; margin-right: 25px; line-height: 1.5em;">All my mods are made using <a href="https://mcreator.net/" style="color:yellow; font-weight: 700; text-decoration:none;">MCreator</a> and all textures, within mods, or in my resource packs are made using <a href="https://www.getpaint.net/" style="color:yellow; font-weight: 700; text-decoration:none;">paint.net</a>.</p>
             <p style="font-size:16px; margin-left:35px; margin-right:35px; line-height:1.5em;">Note: All Minecraft resources made by me are <b>only</b> available for the <b>Java version of Minecraft.</b></p>
         </div>
-    </div><br />
-    <iframe style="border-width:0px; width:100%; padding:0; margin: 0;" src="site_resources/footer.html" marginwidth="0" marginheight="0" hspace="0" vspace="0">Your browser doesn't support iFrames.</iframe>
+    </div>
+    <script>
+        document.body.appendChild(footertemplate.content);
+    </script>
 </body>
 </html>

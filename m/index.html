@@ -15,23 +15,12 @@
         if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) && red !== '0') {
             window.location.replace("../")
         }
-
-    </script><header>
-        <h1 id="webtitle"><a href="#" id="webtitle">Kingpvz</a></h1><br />
-
-        <div id="leftnav">
-            <a target="_blank" style="color: red;" class="titleitem" href="https://youtube.com/@kingpvz">YouTube</a><br />
-            <a target="_blank" style="color: #FF424D;" class="titleitem" href="https://patreon.com/kingpvz">Patreon</a><br />
-            <a target="_blank" style="color: #F56040" class="titleitem" href="https://instagram.com/kingpvzyt">Instagram</a>
-        </div>
-        <div id="rightnav">
-            <a target="_blank" style="color: #1DB954;" class="titleitem" href="https://open.spotify.com/artist/0E9m4Xiqd4g7gAnByJ8FZW?si=1m-T9AhcS7-npeM3t_ZHCw">Spotify</a><br />
-            <a target="_blank" style="color: lightblue;" class="titleitem" href="https://discord.gg/zkWXngH">Discord</a><br />
-            <a target="_blank" style="color: white;" class="titleitem" href="https://my-store-b3cfd9.creator-spring.com/">Merch</a>
-        </div>
-    </header>
-    <div id="mainnav">
-        <h2 style="font-size:35px;" id="navhead">Navigation:</h2>
+    </script>
+    <script src="site_resources/templates.js"></script>
+    <script>
+        document.body.appendChild(headertemplate.content);
+    </script>
+    <div id="mainnav"><br id="spacer" />
         <div id="navg1" class="navgroup">
             <a class="navbar here" href="#">Home</a><br />
             <a class="navbar" href="minecraft">Minecraft</a>
@@ -53,12 +42,8 @@
             </p><a class="introlink" href="https://minitubia.fandom.com/wiki/Kingpvz" target="_blank">MINITUBIA</a>
             <a class="introlink" href="https://musicalcorner2.blogspot.com/2023/02/artist-spotlight-kingpvz.html" target="_blank">MUSICAL CORNER</a><br /><br />
             <div>
-                <h1 style="font-weight: 700; font-size: 80px; margin-bottom: 20px;">
-                    LATEST NEWS:
-                </h1>
-                <p style="font-size:5vw;">
-                    None... yet...
-                </p>
+                <h1 style="font-size: 8vw;">MEME REWIND 2023<br />IS OUT!</h1><br />
+                <iframe type="text/html" frameborder="0" width="800" height="450" src="https://www.youtube.com/embed/Mw1MgPPenME?modestbranding=1&rel=0" allowfullscreen></iframe>
             </div><br /><hr style="margin: 0 100px 50px 100px;" />
             <div>
                 <h1 style="font-size: 6vw; margin-bottom: 5px;">There is not much to see now.<br />So feel free to check out:</h1><br />
@@ -68,7 +53,9 @@
                 </h2>
             </div>
         </div>
-    </div><br />
-    <iframe style="border-width:0px; width:100%; padding:0; margin: 0;" src="site_resources/footer.html" marginwidth="0" marginheight="0" hspace="0" vspace="0">Your browser doesn't support iFrames.</iframe>
+    </div>
+          <script>
+              document.body.appendChild(footertemplate.content);
+          </script><br />
 </body>
 </html>

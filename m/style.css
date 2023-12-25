@@ -5,7 +5,7 @@ body {
     color: white;
 }
 
-footer {
+.footer {
     background-color: #333;
     padding: 5px 75px 5px 75px;
     margin: 25px 50px 0 50px;
@@ -79,7 +79,7 @@ html, body{
     font-family: 'Roboto', sans-serif;
 }
 
-header {
+.header {
     background-image: linear-gradient(to bottom, #111138, #404096);
     margin: 0;
     padding: 5px 50px 5px 50px;
@@ -98,7 +98,7 @@ header {
     flex-direction: column;
 }
 
-#navhead{grid-area: hd;}
+#spacer{grid-area:sp;}
 #navg1{grid-area:g1;}
 #navg2{grid-area:g2;}
 #navg3{grid-area:g3;}
@@ -108,7 +108,7 @@ header {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas:
-        "hd hd hd"
+        "sp sp sp"
         "g1 g2 g3";
     background-color: #252530;
     padding: 8px 16px 24px 16px;
