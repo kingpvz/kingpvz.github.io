@@ -3,7 +3,6 @@ Disallow: /global_resources/
 Disallow: /site_resources/
 Disallow: /m/site_resources/
 Disallow: /m/style.css
-Disallow: /corefunc.js
 Disallow: /404.html
 Disallow: /style.css
 Disallow: /README.md
