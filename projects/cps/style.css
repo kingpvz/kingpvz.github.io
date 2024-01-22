@@ -58,3 +58,50 @@ hr {
     background-color: white;
     border:none;
 }
+
+#cpsfeatures{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 25px;
+}
+
+h4{
+    width:100%;
+    text-align: left;
+    margin-bottom: 25px;
+    font-size:1.2em;
+}
+
+.ft{
+    border-radius:25px;
+    border: white 2px solid;
+    width:100%;
+    transition: 0.25s;
+}
+
+.ft:hover{
+    scale: 1.5;
+}
+
+.cool {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #e46817;
+    transition: 0.3s;
+    color:white;
+}
+
+.cool:hover{
+    scale: 1.025;
+    box-shadow: 0 0 20px #e46817;
+}
+
+#android{
+    background-color: #e46817;
+}
+
+#bluestacks {
+    background-color: #0397d0;
+}
