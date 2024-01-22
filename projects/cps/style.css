@@ -1,0 +1,60 @@
+#cpsnav {
+    width: 290px;
+    border-radius: 40px;
+    background-color: #623a43;
+    margin-bottom: 25px;
+    padding: 10px 5px 5px 5px;
+    transition: 0.3s;
+}
+
+#cpsnav:hover {
+    box-shadow: 0 0 15px #505000;
+}
+
+.cpsnavbar {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #bbb;
+    font-size: 18px;
+    transition: 0.2s;
+    text-decoration: none;
+}
+
+    .cpsnavbar:hover {
+        color: yellow;
+    }
+
+.cpshere {
+    color: white;
+    font-weight: 700;
+}
+
+    .cpshere:hover {
+        color: #ffc;
+    }
+
+#cpsinfo {
+    grid-area:info;
+}
+#cpsdownload {
+    grid-area:download;
+}
+#cpsgrid {
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "info download";
+    margin-left: 40px;
+    grid-column-gap: 40px;
+}
+
+.gridtitlename{
+    width:100%;
+    text-align: left;
+}
+
+hr {
+    margin-bottom: 25px;
+    height: 1px;
+    background-color: white;
+    border:none;
+}
