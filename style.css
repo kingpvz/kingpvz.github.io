@@ -88,6 +88,8 @@ body {
 
 #content {
     grid-area: cont;
+    padding-left: 1vw;
+    padding-right: 1vw;
 }
 
 #sidebar {

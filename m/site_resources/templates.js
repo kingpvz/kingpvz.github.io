@@ -20,6 +20,6 @@ headertemplate.innerHTML = `
 
 footertemplate.innerHTML = `
 <div class="footer">
-        <p>&copy;2023 Kingpvz - All rights reserved.</p><p><a target="_blank" class="footerlink" href="https://kingpvz.weebly.com">Old Site</a> | <a target="_blank" class="footerlink" href="https://github.com/kingpvz/kingpvz.github.io/">GitHub Repository</a></p>
+        <p>&copy;2024 Kingpvz - All rights reserved.</p><p><a target="_blank" class="footerlink" href="https://kingpvz.weebly.com">Old Site</a> | <a target="_blank" class="footerlink" href="https://github.com/kingpvz/kingpvz.github.io/">GitHub Repository</a></p>
      </div>
 `;

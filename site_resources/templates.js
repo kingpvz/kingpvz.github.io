@@ -15,6 +15,6 @@ headertemplate.innerHTML = `
 
 footertemplate.innerHTML = `
 <div class="footer">
-        <p>&copy;2023 Kingpvz</p><p>All rights reserved.</p><p><a target="_blank" class="footerlink" href="https://kingpvz.weebly.com">Old Site</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" class="footerlink" href="https://github.com/kingpvz/kingpvz.github.io/">GitHub Repository</a></p>
+        <p>&copy;2024 Kingpvz</p><p>All rights reserved.</p><p><a target="_blank" class="footerlink" href="https://kingpvz.weebly.com">Old Site</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" class="footerlink" href="https://github.com/kingpvz/kingpvz.github.io/">GitHub Repository</a></p>
      </div>
 `;
