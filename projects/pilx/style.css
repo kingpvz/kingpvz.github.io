@@ -5,7 +5,7 @@ i {
 #pilxnav {
     width: 290px;
     border-radius: 40px;
-    background-color: #2c4029;
+    background-color: #394c65;
     margin-bottom: 25px;
     padding: 10px 5px 5px 5px;
     transition: 0.3s;
@@ -39,9 +39,9 @@ i {
 
 code {
     background-color: #333;
-    padding: 0.25vw;
+    padding: 5px;
     border-radius: 5px;
-    font-size: 0.75vw;
+    font-size: 14px;
     margin-bottom: 4px;
 }
 
@@ -50,7 +50,7 @@ code {
     padding: 3px;
     font-weight: bold;
     border-radius: 5px;
-    font-size: 0.75vw;
+    font-size: 14px;
     margin-bottom: 2px;
     text-decoration: none;
     color: white;
@@ -64,7 +64,7 @@ code {
 
 #pilxdocs {
     width: 14vw;
-    height: 68vh;
+    height: calc(100vh - 300px);
     border-radius: 40px 10px 10px 40px;
     background-color: #bbb;
     color:black;
@@ -78,23 +78,6 @@ code {
     overflow-x: hidden;
     overflow-y: auto;
 }
-#pilxdocs::-webkit-scrollbar {
-    width: 10px;
-}
-
-#pilxdocs::-webkit-scrollbar-track {
-    background: #333;
-    border-radius:0 100px 100px 0;
-}
-
-#pilxdocs::-webkit-scrollbar-thumb {
-    background: #fff;
-    border-radius: 0 100px 100px 0;
-}
-
-    #pilxdocs::-webkit-scrollbar-thumb:hover {
-        background: yellow;
-    }
 
 
     #pilxdocs:hover {
@@ -106,13 +89,19 @@ code {
 }
 
 .pilxdocsmove {
+    line-height: 25px;
     color: black;
-    font-size: 0.9vw;
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+.pilxdocsmove:hover {
+    color: blue;
 }
 
 .text {
-    line-height: 1.4vw;
-    font-size: 0.8vw;
+    line-height: 26px;
+    font-size: 15px;
 }
 
 .mlt {

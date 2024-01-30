@@ -9,6 +9,24 @@ body {
     color: white;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #333;
+    border-radius: 0 100px 100px 0;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 0 100px 100px 0;
+}
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: yellow;
+    }
+
 .header {
     background-image: linear-gradient(to right, #111138, #404096);
     display: flex;
