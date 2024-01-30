@@ -11,21 +11,26 @@ body {
 
 ::-webkit-scrollbar {
     width: 10px;
+    height: 10px;
 }
 
 ::-webkit-scrollbar-track {
     background: #333;
-    border-radius: 0 100px 100px 0;
 }
 
 ::-webkit-scrollbar-thumb {
     background: #fff;
-    border-radius: 0 100px 100px 0;
+    border-radius: 100px;
+    border: solid 3px #333;
 }
 
     ::-webkit-scrollbar-thumb:hover {
         background: yellow;
     }
+
+::-webkit-scrollbar-corner {
+    background: #333;
+}
 
 .header {
     background-image: linear-gradient(to right, #111138, #404096);

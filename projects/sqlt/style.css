@@ -2,20 +2,20 @@ i {
     color: #ffd;
 }
 
-#pilxnav {
+#sqltnav {
     width: 290px;
     border-radius: 40px;
-    background-color: #394c65;
+    background-color: #25512d;
     margin-bottom: 25px;
     padding: 10px 5px 5px 5px;
     transition: 0.3s;
 }
 
-#pilxnav:hover {
+#sqltnav:hover {
     box-shadow: 0 0 15px #505000;
 }
 
-.pilxnavbar {
+.sqltnavbar {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     color: #bbb;
@@ -24,16 +24,16 @@ i {
     text-decoration: none;
 }
 
-    .pilxnavbar:hover {
+    .sqltnavbar:hover {
         color: yellow;
     }
 
-.pilxhere {
+.sqlthere {
     color: white;
     font-weight: 700;
 }
 
-    .pilxhere:hover {
+    .sqlthere:hover {
         color: #ffc;
     }
 
@@ -62,62 +62,58 @@ code {
     background-color:yellow;
 }
 
-#pilxdocs {
+#sqltdocs {
     width: 14vw;
     height: calc(100vh - 300px);
     border-radius: 40px 0 0 40px;
     background-color: #333;
-    color:black;
+    color: black;
     margin-bottom: 25px;
     transition: 0.3s;
     padding: 20px;
-
-    position:fixed;
+    position: fixed;
     right: 0;
-
     overflow-x: hidden;
     overflow-y: scroll;
-
     box-shadow: 0 0 5px #ddd;
 }
 
+#sqltdocs::-webkit-scrollbar {
+    width: 20px;
+}
 
-    #pilxdocs::-webkit-scrollbar {
-        width: 20px;
+#sqltdocs::-webkit-scrollbar-track {
+    background: #333;
+    border-radius: 0 100px 100px 0;
+}
+
+#sqltdocs::-webkit-scrollbar-thumb {
+    background: #bbb;
+    border-radius: 100px;
+    border: solid 8px #333;
+}
+
+    #sqltdocs::-webkit-scrollbar-thumb:hover {
+        background: yellow;
     }
 
-    #pilxdocs::-webkit-scrollbar-track {
-        background: #333;
-        border-radius: 0 100px 100px 0;
-    }
 
-    #pilxdocs::-webkit-scrollbar-thumb {
-        background: #bbb;
-        border-radius: 100px;
-        border: solid 8px #333;
-    }
-
-        #pilxdocs::-webkit-scrollbar-thumb:hover {
-            background: yellow;
-        }
-
-
-    #pilxdocs:hover {
+    #sqltdocs:hover {
         box-shadow: 0 0 15px #eee;
     }
 
-#pilxdocscontent {
+#sqltdocscontent {
     width: calc(100% - 14vw);
 }
 
-.pilxdocsmove {
+.sqltdocsmove {
     line-height: 25px;
     color: #ddd;
     font-size: 18px;
     transition: 0.2s;
 }
 
-.pilxdocsmove:hover {
+.sqltdocsmove:hover {
     color: white;
 }
 

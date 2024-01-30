@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700;900;300;200&display=swap" rel="stylesheet">
+    <title>SQLT Documentation</title>
+    <link rel="icon" type="image/x-icon" href="../../favicon.png">
+    <meta name="description" content="Official documentation for SQLT Array Management developed by Kingpvz." />
+    <meta name="keywords" content="Kingpvz, Kingpvz, Kingpvz Website, Kingpvz Official Website, Kingpvz Site, Stanley, Kingpvz Stanley, Stanley Website, Stanley Suchovský, Stanislav, Stanislav Suchovský, Michal, Michael, Michal Suchovský, Michael Suchovský, Stanislav Michal, Stanley Michael, YouTube, Minecraft, Minecraft Mods, Programming, Music, Producer, Artist, Python, Array, Arrays, Array Management, Management, Manage, Documentation" />
+</head>
+<body>
+    <script src="../../global_resources/corefunc.js"></script>
+    <script>
+        var red = GetURLParameter('redirect');
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && red !== '0') {
+            window.location.replace("../m/projects/sqlt/docs")
+        }
+    </script>
+    <script src="../../site_resources/templates.js"></script>
+    <br />
+    <script>
+        document.body.appendChild(headertemplate.content);
+    </script><br />
+    <div id="sourcegrid">
+        <div id="sidebar">
+
+            <div id="sqltnav">
+                <h3>Project Navigation:</h3><br />
+                <a class="sqltnavbar" href="." title="Home page of this project.">Home</a><br /><br />
+                <a class="sqltnavbar sqlthere" href="#" title="Official Documentation for SQLT">Documentation</a><br /><br />
+                <a class="sqltnavbar" href="https://github.com/kingpvz/SQLT" title="Official GitHub Repository for SQLT" target="_blank">GitHub Repository <b style="transform: rotate(-45deg); display:inline-block;">&#10140;</b></a><br /><br />
+            </div>
+            <div id="nav">
+                <br />
+                <a class="navbar" href="../../" title="The main page! Not much to see here tho.">Home</a><br /><br />
+                <a class="navbar" href="../../minecraft" title="My Minecraft mods, resource packs and maps!">Minecraft</a><br /><br />
+                <a class="navbar" href="../../contact" title="My email and messaging platforms.">Contact</a><br /><br />
+                <a class="navbar" href="../../social" title="Follow me everywhere!">Social Sites</a><br /><br />
+                <a class="navbar" href="../" title="My apps, games and other fun projects!">Projects</a><br /><br />
+            </div><br />
+        </div>
+        <div id="content" style="text-align: left;">
+            <div id="sqltdocs">
+                <a class="sqltdocsmove" href="#">0. Header</a><br />
+                <a class="sqltdocsmove" href="#explanation">0.1. Explanation</a><br />
+                <a class="sqltdocsmove" href="#workspaces">1. Workspaces and Syntax</a><br />
+                <a class="sqltdocsmove" href="#files">2. Saving and Loading Files</a><br />
+                <a class="sqltdocsmove" href="#cmd">3. Commands</a><br />
+                <a class="sqltdocsmove" href="#cmd_terminate">3.1. Terminate</a><br />
+                <a class="sqltdocsmove" href="#cmd_save">3.2. Save to a File</a><br />
+                <a class="sqltdocsmove" href="#cmd_load">3.3. Load from a File</a><br />
+                <a class="sqltdocsmove" href="#cmd_print">3.4. Print</a><br />
+            </div>
+            <div id="sqltdocscontent">
+                <h1>Simple Query List Official Documentation</h1><hr />
+                <p class="text">This is the official documentation of Simple Query List. You may use the Navigation on the right side of the screen to quickly find the section you would like to read about.</p>
+                <h3 id="explanation">Explanation</h3>
+                <p class="text">
+                    In this documentation you can find styled text. Here is a quick overview of what is what:
+                    <br />
+                    <code>I'm a block of code!</code><br />
+                    <code class="mlt">I'm a multiline<br />block of code!</code>
+                    <b class="exp"><code>I'm an explaining block of code!</code></b><br />
+                    <i><code>I'm an output of a block of code!</code></i><br /><br />
+                    Example in python:
+                    <code class="mlt">
+                        print("Hello World!")<br />
+                        <b class="exp">We will print hello world to the screen.</b><br />
+                        <i>Hello World!</i>
+                    </code>
+                    Command Syntax: <code>command <b class="exp">parameter</b> label <b class="exp">another_parameter</b></code>
+                </p>
+                <br /><br />
+                <h2 id="workspaces">Workspaces and Syntax</h2><hr />
+                <p class="text">
+                    When working with any SQLT script, you need to execute it in a workspace. The workspace holds all the data that the commands save - all arrays and their values.<br />
+                    The default workspace is called <code>root</code>, but you can create a workspace with any name (no spaces allowed). All workspaces are absolutely independed from each other and exist solely to allow management of multiple files at the same time.<br />
+                    <br />
+                    The syntax of the language is very simple, you simply write a command name, followed by parameters separated by spaces.
+                    <br />Example from python:<br />
+                    <code class="mlt">
+                        <b class="exp">Python Script:</b><br />
+                        a = ["hi"] &nbsp;<b class="exp">Create list a and add value "hi" to it.</b><br />
+                        print(a) &nbsp;<b class="exp">Print list a to screen.</b><br />
+                        <i>["hi"]</i><br /><br />
+                        <b class="exp">SQLT Script:</b><br />
+                        create a &nbsp;<b class="exp">Create array a.</b><br />
+                        add hi to a &nbsp;<b class="exp">Add value "hi" to array a.</b><br />
+                        print a &nbsp;<b class="exp">Print array a to screen.</b><br />
+                        <i>["hi"]</i>
+                    </code>
+                </p><br /><br />
+                <h2 id="files">Saving and Loading Files</h2><hr />
+                <p class="text">
+                    We can save workspaces to files and then load them into a new script or simply duplicate them.<br />
+                    All files have a version identifier as the first line of the code - such as <code>sqlt:ver(1)</code>. If your version is different than the version of the file, there may be issues with loading. Don't worry however, as SQLT will warn you if the versions do not match.<br />
+                    Files are saved with .sqlt extension and are saved as raw text files.<br />
+                    Syntax:<br />
+                    <code class="mlt">
+                        sqlt:ver(1) <b class="exp">Version Identifier</b><br />
+                        a|a|hdohohod <b class="exp">Array <em>a</em> with values <em>a</em> and <em>hdohohod</em></b><br />
+                        b <b class="exp">Empty Array <em>b</em></b>
+                    </code>
+                    It's true however, that as a user, you do not need to remember this, as the Python script can do it for you whenever you load the file.
+                </p><br /><br />
+                <h2 id="cmd">Commands</h2><hr /><p class="text">
+                    All commands have either a set amount of parameters that they take, or a specific syntax you must follow, or you will encounter an error. Errors do not terminate the program, they will simply not execute whatever commands you've input.
+                    Keep in mind, that if an error have never been encountered before or an error has not been expected when programming, you might run into a Python Exception. I advise you to always save your workspace before
+                    you execute a command of whose syntax you are not sure.<br />
+                    Some commands also have aliases, in this documentation, altough listing all of them, the header will contain the name of said command, despite it not being any of the aliases/being only one of the aliases.
+                </p><br /><br />
+
+                <h3 id="cmd_terminate">Terminate</h3>
+                <p class="text">
+                    Aliases: <code>termin</code> <code>terminate</code> <code>endprogram</code> <code>shutdown</code><br />
+                    Syntax: <code>termin</code><br />
+                    Function: Terminates the terminal, makes all unsaved work inaccessible and disallows you to input any more comands.
+                </p><br /><br />
+                <h3 id="cmd_save">Save to a File</h3>
+                <p class="text">
+                    Aliases: <code>save</code><br />
+                    Syntax: <code>save <b class="exp">workspace</b> as <b class="exp">file</b></code><br />
+                    Syntax Example: <code>save root as myfiles/wsroot</code> = Saves workspace <code>root</code> as file <code>wsroot.sqlt</code> located in <code>*/myfiles/</code><br />
+                    Function: Saves a workspace to a file. File must be either full path <code>C:/Users/User/myworkspace</code>, partial path <code>myfolder/myworkspace</code>
+                    or just the file name <code>myworkspace</code>. It will be saved as a .sqlt file.
+                </p><br /><br />
+                <h3 id="cmd_load">Load from a File</h3>
+                <p class="text">
+                    Aliases: <code>load</code><br />
+                    Syntax: <code>load <b class="exp">file</b> as <b class="exp">workspace</b></code><br />
+                    Syntax Example: <code>load wsroot as arb</code> = Loads file <code>wsroot.sqlt</code> from the current directory as workspace <code>arb</code><br />
+                    Function: Loads a workspace from a file. After loading, asks whether to switch the active workspace to the loaded one. Allows overriding a workspace (confirmation required). File must be either full path <code>C:/Users/User/myworkspace</code>, partial path <code>myfolder/myworkspace</code>
+                    or just the file name <code>myworkspace</code>. You can only load .sqlt files.
+                </p><br /><br />
+                <h3 id="cmd_print">Print</h3>
+                <p class="text">
+                    Aliases: <code>print</code> <code>show</code> <code>view</code><br />
+                    Syntax: <code>print <b class="exp">array</b></code><br />
+                    Syntax Example: <code class="mlt">
+                                create a &nbsp;<b class="exp">Create an array to output.</b><br />
+                                add hello world to a &nbsp;<b class="exp">Add something to the array so we don't output an empty array.</b><br />
+                                print a &nbsp;<b class="exp">Print the array.</b><br />
+                                <i>["hello world"]</i>
+                          </code>
+                    Function: Prints an array to the screen.
+                </p><br /><br />
+                <h2 style="color:lightgray;">I'm working on the others just wait.</h2>
+            </div>
+            
+        </div>
+    </div><script>
+    document.body.appendChild(footertemplate.content);
+</script>
+</body>
+</html>
