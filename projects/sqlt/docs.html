@@ -44,6 +44,7 @@
         </div>
         <div id="content" style="text-align: left;">
             <div id="sqltdocs">
+
                 <a class="sqltdocsmove" href="#">0. Header</a><br />
                 <a class="sqltdocsmove" href="#explanation">0.1. Explanation</a><br />
                 <a class="sqltdocsmove" href="#workspaces">1. Workspaces and Syntax</a><br />
@@ -53,6 +54,18 @@
                 <a class="sqltdocsmove" href="#cmd_save">3.2. Save to a File</a><br />
                 <a class="sqltdocsmove" href="#cmd_load">3.3. Load from a File</a><br />
                 <a class="sqltdocsmove" href="#cmd_print">3.4. Print</a><br />
+                <a class="sqltdocsmove" href="#cmd_create">3.5. Create</a><br />
+                <a class="sqltdocsmove" href="#cmd_add">3.6. Add</a><br />
+                <a class="sqltdocsmove" href="#cmd_del">3.7. Delete</a><br />
+                <a class="sqltdocsmove" href="#cmd_len">3.8. Length</a><br />
+                <a class="sqltdocsmove" href="#cmd_rmv">3.9. Remove</a><br />
+                <a class="sqltdocsmove" href="#cmd_pop">3.10. Pop</a><br />
+                <a class="sqltdocsmove" href="#cmd_cw">3.11. Change/Create a Workspace</a><br />
+                <a class="sqltdocsmove" href="#cmd_info">3.12. Info</a><br />
+                <a class="sqltdocsmove" href="#cmd_list">3.13. List</a><br />
+                <a class="sqltdocsmove" href="#cmd_help">3.14. Help</a><br />
+                <a class="sqltdocsmove" href="#cmd_help_t">3.14.1. Tutorial</a><br />
+
             </div>
             <div id="sqltdocscontent">
                 <h1>Simple Query List Official Documentation</h1><hr />
@@ -132,7 +145,7 @@
                     Aliases: <code>load</code><br />
                     Syntax: <code>load <b class="exp">file</b> as <b class="exp">workspace</b></code><br />
                     Syntax Example: <code>load wsroot as arb</code> = Loads file <code>wsroot.sqlt</code> from the current directory as workspace <code>arb</code><br />
-                    Function: Loads a workspace from a file. After loading, asks whether to switch the active workspace to the loaded one. Allows overriding a workspace (confirmation required). File must be either full path <code>C:/Users/User/myworkspace</code>, partial path <code>myfolder/myworkspace</code>
+                    Function: Loads a workspace from a file. After loading, asks whether to switch the active workspace to the loaded one. Allows overwriting a workspace (confirmation required). File must be either full path <code>C:/Users/User/myworkspace</code>, partial path <code>myfolder/myworkspace</code>
                     or just the file name <code>myworkspace</code>. You can only load .sqlt files.
                 </p><br /><br />
                 <h3 id="cmd_print">Print</h3>
@@ -140,14 +153,103 @@
                     Aliases: <code>print</code> <code>show</code> <code>view</code><br />
                     Syntax: <code>print <b class="exp">array</b></code><br />
                     Syntax Example: <code class="mlt">
-                                create a &nbsp;<b class="exp">Create an array to output.</b><br />
-                                add hello world to a &nbsp;<b class="exp">Add something to the array so we don't output an empty array.</b><br />
-                                print a &nbsp;<b class="exp">Print the array.</b><br />
-                                <i>["hello world"]</i>
-                          </code>
+                        create a &nbsp;<b class="exp">Create an array to output.</b><br />
+                        add hello world to a &nbsp;<b class="exp">Add something to the array so we don't output an empty array.</b><br />
+                        print a &nbsp;<b class="exp">Print the array.</b><br />
+                        <i>["hello world"]</i>
+                    </code>
                     Function: Prints an array to the screen.
                 </p><br /><br />
-                <h2 style="color:lightgray;">I'm working on the others just wait.</h2>
+                <h3 id="cmd_create">Create</h3>
+                <p class="text">
+                    Aliases: <code>create</code><br />
+                    Syntax: <code>create <b class="exp">array</b></code><br />
+                    Syntax Example: <code>create a</code> = Create array <code>a</code><br />
+                    Function: Creates a new array. You can also use it to overwrite arrays (confirmation required).
+                </p><br /><br />
+                <h3 id="cmd_add">Add</h3>
+                <p class="text">
+                    Aliases: <code>add</code><br />
+                    Syntax: <code>add <b class="exp">value</b> to <b class="exp">array</b></code><br />
+                    Syntax Example: <code>add Hello, world! to arr</code> = Add value <code>Hello, World!</code> to array <code>arr</code><br />
+                    Function: Adds a value to the back of an array. The value can be as long as you need, but don't forget that <code>to <b class="exp">array</b></code> must come last.
+                </p><br /><br />
+                <h3 id="cmd_del">Delete</h3>
+                <p class="text">
+                    Aliases: <code>delete</code> <code>del</code><br />
+                    Syntax: <code>del <b class="exp">array</b></code><br />
+                    Syntax Example: <code>del a</code> = Delete array <code>a</code><br />
+                    Function: Deletes an array (confirmation required).
+                </p><br /><br />
+                <h3 id="cmd_len">Length</h3>
+                <p class="text">
+                    Aliases: <code>length</code> <code>len</code><br />
+                    Syntax: <code>len <b class="exp">array</b></code><br />
+                    Syntax Example:
+                    <code class="mlt">
+                        create a &nbsp;<b class="exp">Initialize an array.</b><br />
+                        add hey vsauce to a &nbsp;<b class="exp">Let's add some values.</b><br />
+                        add michael here to a<br />
+                        len a &nbsp;<b class="exp">Get the amount of items in the array.</b><br />
+                        <i>2</i> &nbsp;<b class="exp">This is what array <em>a</em> stores: <em>['hey vsuace','michael here']</em></b>
+                    </code>
+                    Function: Prints the amount of items in an array. &nbsp;&nbsp;&nbsp;&nbsp;<b class="exp">I'm sorry for not being serious in this documentation.</b>
+                </p><br /><br />
+                <h3 id="cmd_rmv">Remove</h3>
+                <p class="text">
+                    Aliases: <code>remove</code><br />
+                    Syntax: <code>remove <b class="exp">value</b> from <b class="exp">array</b></code><br />
+                    Syntax Example: <code>remove sadge from arr</code> = Remove value <code>sadge</code> from array <code>arr</code><br />
+                    Function: Removes a specific value from an array.
+                </p><br /><br />
+                <h3 id="cmd_pop">Pop</h3>
+                <p class="text">
+                    Aliases: <code>pop</code><br />
+                    Syntax: <code>pop <b class="exp">array</b> <b class="exp">index</b></code><br />
+                    Syntax Example: <code>pop array 4</code> = Remove 5th value from array <code>arr</code><br />
+                    Function: Removes a value from an array at a specific index. Negative indexing is supported.
+                </p><br /><br />
+                <h3 id="cmd_cw">Change/Create a Workspace</h3>
+                <p class="text">
+                    Aliases: <code>ws</code> <code>workspace</code> <code>cw</code> <code>changews</code> <code>changeworkspace</code><br />
+                    Syntax: <code>cw <b class="exp">workspace</b></code><br />
+                    Syntax Example: <code>cw woah</code> = Create workspace <code>woah</code> or change to workspace <code>woah</code>, if it already exists.<br />
+                    Function: Creates a workspace and changes to it if it doesn't exist, or just changes to a workspace if it exists.
+                </p><br /><br />
+                <h3 id="cmd_info">Info</h3>
+                <p class="text">
+                    Aliases: <code>info</code><br />
+                    Syntax: <code>info <b class="exp">optional:workspace</b></code><br />
+                    Syntax Example: <code>info root</code> = Show info about workspace <code>root</code><br />
+                    Function: Shows info about the provided workspace, or, if no workspace is provided, about the current workspace.
+                    <br />Output Syntax: <code><b class="exp">workspace</b> {<b class="exp">array_name</b>: <b class="exp">list of values</b>, <b class="exp">array_name</b>: <b class="exp">list of values</b>, <b class="exp">...</b>}</code><br />
+                    Output Syntax Example: <code>root {hi:['bruh','what now'], hello:['idk man']}</code>
+                </p><br /><br />
+                <h3 id="cmd_list">List</h3>
+                <p class="text">
+                    Aliases: <code>list</code><br />
+                    Syntax: <code>list</code><br />
+                    Function: Lists all existing workspaces.
+                </p><br /><br />
+                <h3 id="cmd_help">Help</h3>
+                <p class="text">
+                    Aliases: <code>help</code><br />
+                    Syntax: <code>help <b class="exp">command</b></code><br />
+                    Syntax Example: <code>help delete</code> = Shows information about the <code>delete</code> command.<br />
+                    Function: Shows information about provided command, lists all possible aliases and shows the syntax. It can also be used for learning purposes - there is a quick tutorial available upon typing the command <code>help tutorial</code>
+                    and even an "instant help" for anyone who doesn't know what to do - by using the <code>help me</code> command, they can get information about the presence of the inbuilt tutorial.<br /><br />
+                    Output of the command <code>help me</code>:
+                                          <code class="mlt">
+                                              Use the 'help &lt;command&gt;' syntax to view help about any command.<br />
+                                              If you wish to learn the commands, use 'help tutorial'.
+                                          </code>
+                    </p><br />
+                <h4 id="cmd_help_t">Tutorial</h4>
+                <p class="text">
+                    The base of the tutorial (<code>help tutorial</code>) contains all the information you need to set up a workspace and save/load from a file. Every tutorial also contains a code snippet
+                    to direct you to the next/previous tutorial (the first tutorial directs you to use <code>help t1</code> to continue reading and learn more).<br />
+
+                </p>
             </div>
             
         </div>
