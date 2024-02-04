@@ -39,6 +39,7 @@ body {
     padding: 0 50px 0 50px;
     border-radius: 100px;
     flex-direction: row;
+    align-items: center;
 }
 
 .footer {
@@ -69,7 +70,7 @@ body {
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    font-size: 35px;
+    font-size: 2vw;
     transition: 0.5s;
 }
 
@@ -96,7 +97,7 @@ body {
 
 .titleitem:hover{
     scale: 1.15;
-    text-shadow: 0 0 40px yellow;
+    text-shadow: 0 0 20px yellow, 0 0 3px black, 0 0 3px black;
 }
 
 #discord {
@@ -135,10 +136,9 @@ body {
 #sourcegrid {
     margin: 0 50px 0 50px;
     display: grid;
-    grid-template-columns: 300px 1fr 1fr;
-    grid-template-rows: auto;
+    grid-template-columns: 300px 1fr;
     grid-template-areas:
-        "side cont cont"
+        "side cont"
 }
 
 .navbar {
@@ -165,10 +165,10 @@ body {
 
 /*index*/
 .introlink{
-    margin: 10px;
-    padding: 10px 20px 10px 20px;
-    border-radius: 20px;
-    font-size: 30px;
+    margin: 0.5vw;
+    padding: 0.5vw 1vw 0.5vw 1vw;
+    border-radius: 1vw;
+    font-size: 1.5vw;
     text-decoration: none;
     color: white;
     background-color: #e22;
@@ -187,17 +187,17 @@ body {
 .mcbutton {
     box-shadow: 2px 2px 10px 0px #ffffff;
     background-color: #6b6b6b;
-    border-radius: 10px;
+    border-radius: 0.5vw;
     display: inline-block;
     cursor: pointer;
     color: #ffffff;
     font-family: Verdana;
-    font-size: 20px;
+    font-size: 1vw;
     font-weight: bold;
-    padding: 16px 31px;
+    padding: 0.76vw 1.5vw;
     text-decoration: none;
     text-shadow: 0px 1px 2px #000000;
-    margin: 20px 10px 20px 10px;
+    margin: 1vw 0.5vw 1vw 0.5vw;
     transition: 0.2s;
 }
 
@@ -213,9 +213,9 @@ body {
 
 /*contact*/
 .connect{
-    margin: 5px 15px 5px 15px;
-    padding: 5px 20px 5px 20px;
-    border-radius: 25px;
+    margin: 0.25vw 0.75vw 0.25vw 0.75vw;
+    padding: 0.25vw 1vw 0.25vw 1vw;
+    border-radius: 1.25vw;
     display: inline-flex;
     align-items: center;
     transition: 0.3s;
@@ -233,7 +233,6 @@ body {
 
 #discordt {
     background: rgb(114, 137, 218);
-    border-radius: 25px;
 }
 
 .rrur{
@@ -247,16 +246,16 @@ body {
 #socialgrid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 40px;
-    row-gap: 40px;
+    column-gap: 2vw;
+    row-gap: 2vw;
     margin-left: 40px;
     grid-auto-rows: max-content;
 }
 
 .socialitem {
-    padding: 25px;
-    margin: initial 20px initial initial;
-    border-radius: 25px;
+    padding: 1.25vw;
+    margin: initial 1vw initial initial;
+    border-radius: 1.25vw;
     background-color: darkred;
     font-family: 'Archivo Black', sans-serif;
     font-weight: 900;
