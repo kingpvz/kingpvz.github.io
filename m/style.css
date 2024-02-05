@@ -16,7 +16,7 @@ body {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    font-size: 25px;
+    font-size: 2.3vw;
 }
 
 .footerlink{
@@ -28,7 +28,7 @@ body {
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    font-size: 100px;
+    font-size: 9vw;
     grid-area: title;
 }
 
@@ -49,7 +49,7 @@ body {
 }
 
 .titleitem {
-    font-size: 8vw;
+    font-size: 6.5vw;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     text-decoration: none;
@@ -63,7 +63,7 @@ body {
 
 .navbar {
     font-weight: 300;
-    font-size: 45px;
+    font-size: 5vw;
     text-decoration: none;
     color: #bbb;
 }
@@ -71,6 +71,7 @@ body {
 .here {
     color:white;
     font-weight: 700;
+    scale: 1.05;
 }
 
 html, body{
@@ -82,11 +83,10 @@ html, body{
 .header {
     background-image: linear-gradient(to bottom, #111138, #404096);
     margin: 0;
-    padding: 5px 50px 5px 50px;
+    padding: 5px 4vw 5px 4vw;
     text-align: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
     grid-template-areas:
         "title title"
         "lnav rnav"
@@ -106,12 +106,11 @@ html, body{
 #mainnav {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
     grid-template-areas:
         "sp sp sp"
         "g1 g2 g3";
     background-color: #252530;
-    padding: 8px 16px 24px 16px;
+    padding: 8px 1.5vw 24px 1.5vw;
     box-shadow: 0 0 10px 10px #252530, 0 10px 10px 2px yellow;
 }
 
@@ -121,7 +120,7 @@ html, body{
     margin: 10px 15vw 20px 15vw;
     padding: 10px 20px 10px 20px;
     border-radius: 20px;
-    font-size: 50px;
+    font-size: 5vw;
     text-decoration: none;
     color: white;
     background-color: #e22;
@@ -144,13 +143,13 @@ html, body{
     cursor: pointer;
     color: #ffffff;
     font-family: Verdana;
-    font-size: 50px;
+    font-size: 5vw;
     font-weight: bold;
-    padding: 16px 30px;
+    padding: 1.6vw 3vw;
     width: 67.5%;
     text-decoration: none;
     text-shadow: 0px 1px 2px #000000;
-    margin: 20px 10px 20px 10px;
+    margin: 20px 0 20px 0;
 }
 
     .mcbutton:hover {
@@ -167,7 +166,7 @@ html, body{
     padding: 0 20px 0 20px;
     width: 50%;
     justify-content: center;
-    border-radius: 25px;
+    border-radius: 3vw;
     display: inline-flex;
     align-items: center;
 }
@@ -179,11 +178,10 @@ html, body{
 
 #discordt {
     background: rgb(114, 137, 218);
-    border-radius: 25px;
 }
 
 .rrur {
-    font-size: 37.5px;
+    font-size: 3.8vw;
     margin-left: 15px;
     font-weight: 900;
     color: white;
@@ -192,9 +190,9 @@ html, body{
 
 /*social*/
 .socialitem {
-    padding: 25px;
-    margin: 50px 85px 50px 85px;
-    border-radius: 25px;
+    padding: 2.5vw;
+    margin: 5vw 8.5vw 5vw 8.5vw;
+    border-radius: 2.5vw;
     background-color: darkred;
     font-family: 'Archivo Black', sans-serif;
     font-weight: 900;

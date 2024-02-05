@@ -1,15 +1,15 @@
 .project {
     background: rgb(35,35,35);
     background: linear-gradient(135deg, rgba(70,0,0,1) 0%, rgba(0,70,0,1) 50%, rgba(0,0,70,1) 100%);
-    border-radius: 60px;
+    border-radius: 6vw;
     box-shadow: 0px 0px 25px #333, 0px 0px 10px 0 #333 inset;
-    height: 40vh;
+    height: 82.5vw;
     transition: 0.3s;
     display: flex; flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 60px;
-    margin: 3vh 8vw 4vh 8vw;
+    padding: 5vw;
+    margin: 5vw 8vw 7.5vw 8vw;
 }
 
 .project:active{
@@ -22,17 +22,17 @@
 }
 
 .projectimg {
-    height: 10vh;
+    height: 17vw;
 }
 
 .projectname {
     color: white;
     text-decoration: none;
-    font-size: 4vh;
+    font-size: 7vw;
 }
 
 .projectdsc {
     color: white;
     text-decoration: none;
-    font-size: 1.75vh;
+    font-size: 3.5vw;
 }
