@@ -1,0 +1,21 @@
+.alnavbar {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    font-size: 8vw;
+    transition: 0.2s;
+    text-decoration: none;
+    background: #444
+; padding: 2vw;
+  margin: 4vw;
+  width: 1fr;
+    display: block
+;   border-radius: 4vw;
+    border: solid white 0.5vw;
+}
+
+    .alnavbar:active {
+        color: yellow;
+        background: #bf2a2a;
+        scale: 1.05;
+    }

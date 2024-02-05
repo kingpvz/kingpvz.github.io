@@ -15,7 +15,7 @@
     <script>
         var red = GetURLParameter('redirect');
         if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) && red !== '0') {
-            window.location.replace("../../projects")
+            window.location.replace("/projects")
         }
 
     </script>
@@ -41,15 +41,7 @@
     <br /><br />
     <div id="sourcegrid">
 
-        <a class="linkadditionalpr" href="#">
-            <div class="project">
-                <img class="projectimg" src="https://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/sign-warning-icon.png" />
-                <h1 class="projectname">READ ME</h1>
-                <p class="projectdsc">The pages for these projects are not all finished yet. Please view this website on desktop or in the desktop mode to access any of those that are already done. After all desktop versions will be finished, I'll start working on the mobile versions. Thank you for understanding.</p>
-            </div>
-        </a>
-
-        <a class="linkadditionalpr" href="#">
+        <a class="linkadditionalpr" href="alavida/">
             <div class="project">
                 <img class="projectimg" src="../../global_resources/projects/alavida.png" />
                 <h1 class="projectname">ALAVIDA</h1>
@@ -57,24 +49,27 @@
             </div>
         </a>
 
-        <a class="linkadditionalpr" href="#">
+        <a class="linkadditionalpr" onclick="alert('This page is not done yet!');">
             <div class="project">
+                <p class="projectdsc" style="color:gray;">- Work In Progress -</p>
                 <img class="projectimg" src="../../global_resources/projects/cps.png" />
                 <h1 class="projectname">CPS Counter</h1>
                 <p class="projectdsc">A very old project of mine, a CPS (Clicks per Second) counter app for Android. Has many interesting features!</p>
             </div>
         </a>
 
-        <a class="linkadditionalpr" href="#">
+        <a class="linkadditionalpr" onclick="alert('This page is not done yet!');">
             <div class="project">
+                <p class="projectdsc" style="color:gray;">- Work In Progress -</p>
                 <img class="projectimg" src="../../global_resources/projects/pilx.png" />
                 <h1 class="projectname">PILX</h1>
                 <p class="projectdsc">Python Interpreted Language X is my own try on making a programming language. Currently in very early stages.</p>
             </div>
         </a>
 
-        <a class="linkadditionalpr" href="#">
+        <a class="linkadditionalpr" onclick="alert('This page is not done yet!');">
             <div class="project">
+                <p class="projectdsc" style="color:gray;">- Work In Progress -</p>
                 <img class="projectimg" src="../../global_resources/projects/sqlt.png" />
                 <h1 class="projectname">SQLT</h1>
                 <p class="projectdsc">Style Query List is an array management language made by me in Python. It's a terminal to create and manage arrays. Currently in early stages.</p>
