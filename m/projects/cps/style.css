@@ -1,0 +1,47 @@
+.text {
+    font-size: 3.5vw;
+    display: block;
+    text-align: left;
+    line-height:4.5vw;
+    margin: 2vw 4vw 4vw 4vw;;
+}
+
+.quickl {
+    font-size: 5vw;
+    display: block;
+    color: yellow;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cool {
+    display: flex;
+    align-items: center;
+    padding: 2vw;
+    border-radius: 4vw;
+    margin: 1vw 10vw 1vw 10vw;
+    box-shadow: 0 0 10px #e46817;
+    transition: 0.3s;
+    color: white;
+}
+
+    .cool:hover {
+        scale: 1.025;
+        box-shadow: 0 0 20px #e46817;
+    }
+
+#android {
+    background-color: #e46817;
+}
+
+.featurename {
+    font-size: 5vw;
+    margin-top: 5vw;
+    margin-bottom:2vw;
+}
+
+.ft {
+    border-radius: 5vw;
+    border: white 3px solid;
+    width: 90%;
+}
