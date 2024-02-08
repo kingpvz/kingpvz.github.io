@@ -77,6 +77,9 @@ code {
     opacity: 97.5%;
     border-radius: 10vw;
     box-shadow: black 0 0 10vw;
+
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .hidenavs {
