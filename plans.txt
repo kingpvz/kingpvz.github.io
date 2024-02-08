@@ -1,0 +1,7 @@
+> Quick Navigation in index.html
+  8 or 10 buttons for quick navigation like youtube,
+  projects and so on
+
+> Websites in Navigation
+  a websites section to show off and comunicate basically all
+  of my websites with favicon and quick description
