@@ -3,7 +3,7 @@ const footertemplate = document.createElement('template');
 
 headertemplate.innerHTML = `
 <div class="header">
-        <h1 id="webtitle"><a href="#" id="webtitle">Kingpvz</a></h1><br />
+        <h1 id="webtitle"><a href="/" id="webtitle">Kingpvz</a></h1><br />
 
         <div id="leftnav">
             <a target="_blank" style="color: red;" class="titleitem" href="https://youtube.com/@kingpvz">YouTube</a><br />
