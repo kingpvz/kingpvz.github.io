@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../../style.css" /><link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700;900;300;200&display=swap" rel="stylesheet">
+    <title>SQLT Documentation</title>
+    <link rel="icon" type="image/x-icon" href="../../../favicon.png">
+  <meta name="description" content="Official documentation for SQLT Array Management developed by Kingpvz."/>
+  <meta name="keywords" content="Kingpvz, Kingpvz, Kingpvz Website, Kingpvz Official Website, Kingpvz Site, Stanley, Kingpvz Stanley, Stanley Website, Stanley Suchovský, Stanislav, Stanislav Suchovský, Michal, Michael, Michal Suchovský, Michael Suchovský, Stanislav Michal, Stanley Michael, YouTube, Minecraft, Minecraft Mods, Programming, Music, Producer, Artist, Python, Array, Arrays, Array Management, Management, Manage, Documentation"/>
+</head>
+<body>
+    <script src="../../../global_resources/corefunc.js"></script>
+    <script>
+        var red = GetURLParameter('redirect');
+        if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) && red !== '0') {
+            window.location.replace("/projects/sqlt/docs")
+        }
+
+    </script>
+    <script src="../../site_resources/templates.js"></script>
+    <script>
+        document.body.appendChild(headertemplate.content);
+    </script>
+    <div id="mainnav">
+        <br id="spacer"/>
+        <div id="navg1" class="navgroup">
+            <a class="navbar" href="../../../m">Home</a><br />
+            <a class="navbar" href="../../minecraft">Minecraft</a>
+        </div>
+        <div id="navg2" class="navgroup">
+            <a class="navbar" href="../../contact">Contact</a><br />
+            <a class="navbar" href="../../social">Social Sites</a>
+        </div>
+        <div id="navg3" class="navgroup">
+            <a class="navbar" href="../">Projects</a><br />
+            <a class="navbar" href="#" style="visibility: hidden;">TBA</a>
+        </div>
+    </div>
+    <br /><br />
+          <div id="sourcegrid">
+
+              <h1 style="font-size: 5.5vw;">SQLT Documentation</h1>
+
+              <div style="margin:4vw; padding:2vw; background-color: #555; border-radius:4vw;">
+                  <p style="font-size:3vw; margin: 0.5vw;">Navigation:</p><br />
+                  <div style="display:flex; justify-content: space-around;">
+                      <a class="quickl" href=".">Home</a>
+                      <a class="quickl" href="https://github.com/kingpvz/PILX" target="_blank">GitHub Repository</a>
+                  </div>
+              </div>
+
+              <div id="navs" class="hidenavs">
+
+                  <h1 style="font-size:6vw;">Jump To...</h1>
+
+                  <a class="sqltdocsmove" onclick="document.querySelector('#navs').classList.toggle('hidenavs');" href="#">0. Header</a>
+                  <a class="sqltdocsmove" onclick="document.querySelector('#navs').classList.toggle('hidenavs');" href="#explanation">0.1. Explanation</a>
+                  <a class="sqltdocsmove" onclick="document.querySelector('#navs').classList.toggle('hidenavs');" href="#workspaces">1. Workspaces and Syntax</a>
+                  <a class="sqltdocsmove" onclick="document.querySelector('#navs').classList.toggle('hidenavs');" href="#files">2. Saving and Loading Files</a>
+                  <a class="sqltdocsmove" onclick="document.querySelector('#navs').classList.toggle('hidenavs');" href="#cmd">3. Commands</a>
+                  <a class="sqltdocsmove" onclick="document.querySelector('#navs').classList.toggle('hidenavs');" href="#cmd_terminate">3.1. Terminate</a>
+                  <a class="sqltdocsmove" onclick="document.querySelector('#navs').classList.toggle('hidenavs');" href="#cmd_save">3.2. Save to a File</a>
+                  <a class="sqltdocsmove" onclick="document.querySelector('#navs').classList.toggle('hidenavs');" href="#cmd_load">3.3. Load from a File</a>
+                  <a class="sqltdocsmove" onclick="document.querySelector('#navs').classList.toggle('hidenavs');" href="#cmd_print">3.4. Print</a>
+                  <a class="sqltdocsmove" onclick="document.querySelector('#navs').classList.toggle('hidenavs');" href="#cmd_create">3.5. Create</a>
+                  <a class="sqltdocsmove" onclick="document.querySelector('#navs').classList.toggle('hidenavs');" href="#cmd_add">3.6. Add</a>
+                  <a class="sqltdocsmove" onclick="document.querySelector('#navs').classList.toggle('hidenavs');" href="#cmd_del">3.7. Delete</a>
+                  <a class="sqltdocsmove" onclick="document.querySelector('#navs').classList.toggle('hidenavs');" href="#cmd_len">3.8. Length</a>
+                  <a class="sqltdocsmove" onclick="document.querySelector('#navs').classList.toggle('hidenavs');" href="#cmd_rmv">3.9. Remove</a>
+                  <a class="sqltdocsmove" onclick="document.querySelector('#navs').classList.toggle('hidenavs');" href="#cmd_pop">3.10. Pop</a>
+                  <a class="sqltdocsmove" onclick="document.querySelector('#navs').classList.toggle('hidenavs');" href="#cmd_cw">3.11. Change/Create a Workspace</a>
+                  <a class="sqltdocsmove" onclick="document.querySelector('#navs').classList.toggle('hidenavs');" href="#cmd_info">3.12. Info</a>
+                  <a class="sqltdocsmove" onclick="document.querySelector('#navs').classList.toggle('hidenavs');" href="#cmd_list">3.13. List</a>
+                  <a class="sqltdocsmove" onclick="document.querySelector('#navs').classList.toggle('hidenavs');" href="#cmd_help">3.14. Help</a>
+                  <a class="sqltdocsmove" onclick="document.querySelector('#navs').classList.toggle('hidenavs');" href="#cmd_help_t">3.14.1. Tutorial</a>
+
+              </div>
+
+              <div id="togglenavs" onclick="document.querySelector('#navs').classList.toggle('hidenavs');">
+                  <img src="https://www.pinclipart.com/picdir/big/532-5328945_menu-bar-icon-white-clipart-png-download-menu.png" style="width:11vw;" />
+              </div>
+
+              <h4 style="margin:3vw;">Use the menu button in the top right corner of the screen to quickly jump to the topic you are looking for.</h4>
+              <div style="text-align:left; margin: 2vw 5vw 1vw 5vw;">
+                  <p class="text">This is the official documentation of Simple Query List. You may use the Navigation on the right side of the screen to quickly find the section you would like to read about.</p>
+                  <h3 id="explanation">Explanation</h3>
+                  <p class="text">
+                      In this documentation you can find styled text. Here is a quick overview of what is what:
+                      <br />
+                      <code>I'm a block of code!</code><br />
+                      <code class="mlt">I'm a multiline<br />block of code!</code>
+                      <b class="exp"><code>I'm an explaining block of code!</code></b><br />
+                      <i><code>I'm an output of a block of code!</code></i><br /><br />
+                      Example in python:
+                      <code class="mlt">
+                          print("Hello World!")<br />
+                          <b class="exp">We will print hello world to the screen.</b><br />
+                          <i>Hello World!</i>
+                      </code>
+                      Command Syntax: <code>command <b class="exp">parameter</b> label <b class="exp">another_parameter</b></code>
+                  </p>
+                  <br /><br />
+                  <h2 id="workspaces">Workspaces and Syntax</h2><hr />
+                  <p class="text">
+                      When working with any SQLT script, you need to execute it in a workspace. The workspace holds all the data that the commands save - all arrays and their values.<br />
+                      The default workspace is called <code>root</code>, but you can create a workspace with any name (no spaces allowed). All workspaces are absolutely independed from each other and exist solely to allow management of multiple files at the same time.<br />
+                      <br />
+                      The syntax of the language is very simple, you simply write a command name, followed by parameters separated by spaces.
+                      <br />Example from python:<br />
+                      <code class="mlt">
+                          <b class="exp">Python Script:</b><br />
+                          a = ["hi"] &nbsp;<b class="exp">Create list a and add value "hi" to it.</b><br />
+                          print(a) &nbsp;<b class="exp">Print list a to screen.</b><br />
+                          <i>["hi"]</i><br /><br />
+                          <b class="exp">SQLT Script:</b><br />
+                          create a &nbsp;<b class="exp">Create array a.</b><br />
+                          add hi to a &nbsp;<b class="exp">Add value "hi" to array a.</b><br />
+                          print a &nbsp;<b class="exp">Print array a to screen.</b><br />
+                          <i>["hi"]</i>
+                      </code>
+                  </p><br /><br />
+                  <h2 id="files">Saving and Loading Files</h2><hr />
+                  <p class="text">
+                      We can save workspaces to files and then load them into a new script or simply duplicate them.<br />
+                      All files have a version identifier as the first line of the code - such as <code>sqlt:ver(1)</code>. If your version is different than the version of the file, there may be issues with loading. Don't worry however, as SQLT will warn you if the versions do not match.<br />
+                      Files are saved with .sqlt extension and are saved as raw text files.<br />
+                      Syntax:<br />
+                      <code class="mlt">
+                          sqlt:ver(1) <b class="exp">Version Identifier</b><br />
+                          a|a|hdohohod <b class="exp">Array <em>a</em> with values <em>a</em> and <em>hdohohod</em></b><br />
+                          b <b class="exp">Empty Array <em>b</em></b>
+                      </code>
+                      It's true however, that as a user, you do not need to remember this, as the Python script can do it for you whenever you load the file.
+                  </p><br /><br />
+                  <h2 id="cmd">Commands</h2><hr /><p class="text">
+                      All commands have either a set amount of parameters that they take, or a specific syntax you must follow, or you will encounter an error. Errors do not terminate the program, they will simply not execute whatever commands you've input.
+                      Keep in mind, that if an error have never been encountered before or an error has not been expected when programming, you might run into a Python Exception. I advise you to always save your workspace before
+                      you execute a command of whose syntax you are not sure.<br />
+                      Some commands also have aliases, in this documentation, altough listing all of them, the header will contain the name of said command, despite it not being any of the aliases/being only one of the aliases.
+                  </p><br /><br />
+
+                  <h3 id="cmd_terminate">Terminate</h3>
+                  <p class="text">
+                      Aliases: <code>termin</code> <code>terminate</code> <code>endprogram</code> <code>shutdown</code><br />
+                      Syntax: <code>termin</code><br />
+                      Function: Terminates the terminal, makes all unsaved work inaccessible and disallows you to input any more comands.
+                  </p><br /><br />
+                  <h3 id="cmd_save">Save to a File</h3>
+                  <p class="text">
+                      Aliases: <code>save</code><br />
+                      Syntax: <code>save <b class="exp">workspace</b> as <b class="exp">file</b></code><br />
+                      Syntax Example: <code>save root as myfiles/wsroot</code> = Saves workspace <code>root</code> as file <code>wsroot.sqlt</code> located in <code>*/myfiles/</code><br />
+                      Function: Saves a workspace to a file. File must be either full path <code>C:/Users/User/myworkspace</code>, partial path <code>myfolder/myworkspace</code>
+                      or just the file name <code>myworkspace</code>. It will be saved as a .sqlt file.
+                  </p><br /><br />
+                  <h3 id="cmd_load">Load from a File</h3>
+                  <p class="text">
+                      Aliases: <code>load</code><br />
+                      Syntax: <code>load <b class="exp">file</b> as <b class="exp">workspace</b></code><br />
+                      Syntax Example: <code>load wsroot as arb</code> = Loads file <code>wsroot.sqlt</code> from the current directory as workspace <code>arb</code><br />
+                      Function: Loads a workspace from a file. After loading, asks whether to switch the active workspace to the loaded one. Allows overwriting a workspace (confirmation required). File must be either full path <code>C:/Users/User/myworkspace</code>, partial path <code>myfolder/myworkspace</code>
+                      or just the file name <code>myworkspace</code>. You can only load .sqlt files.
+                  </p><br /><br />
+                  <h3 id="cmd_print">Print</h3>
+                  <p class="text">
+                      Aliases: <code>print</code> <code>show</code> <code>view</code><br />
+                      Syntax: <code>print <b class="exp">array</b></code><br />
+                      Syntax Example: <code class="mlt">
+                          create a &nbsp;<b class="exp">Create an array to output.</b><br />
+                          add hello world to a &nbsp;<b class="exp">Add something to the array so we don't output an empty array.</b><br />
+                          print a &nbsp;<b class="exp">Print the array.</b><br />
+                          <i>["hello world"]</i>
+                      </code>
+                      Function: Prints an array to the screen.
+                  </p><br /><br />
+                  <h3 id="cmd_create">Create</h3>
+                  <p class="text">
+                      Aliases: <code>create</code><br />
+                      Syntax: <code>create <b class="exp">array</b></code><br />
+                      Syntax Example: <code>create a</code> = Create array <code>a</code><br />
+                      Function: Creates a new array. You can also use it to overwrite arrays (confirmation required).
+                  </p><br /><br />
+                  <h3 id="cmd_add">Add</h3>
+                  <p class="text">
+                      Aliases: <code>add</code><br />
+                      Syntax: <code>add <b class="exp">value</b> to <b class="exp">array</b></code><br />
+                      Syntax Example: <code>add Hello, world! to arr</code> = Add value <code>Hello, World!</code> to array <code>arr</code><br />
+                      Function: Adds a value to the back of an array. The value can be as long as you need, but don't forget that <code>to <b class="exp">array</b></code> must come last.
+                  </p><br /><br />
+                  <h3 id="cmd_del">Delete</h3>
+                  <p class="text">
+                      Aliases: <code>delete</code> <code>del</code><br />
+                      Syntax: <code>del <b class="exp">array</b></code><br />
+                      Syntax Example: <code>del a</code> = Delete array <code>a</code><br />
+                      Function: Deletes an array (confirmation required).
+                  </p><br /><br />
+                  <h3 id="cmd_len">Length</h3>
+                  <p class="text">
+                      Aliases: <code>length</code> <code>len</code><br />
+                      Syntax: <code>len <b class="exp">array</b></code><br />
+                      Syntax Example:
+                      <code class="mlt">
+                          create a &nbsp;<b class="exp">Initialize an array.</b><br />
+                          add hey vsauce to a &nbsp;<b class="exp">Let's add some values.</b><br />
+                          add michael here to a<br />
+                          len a &nbsp;<b class="exp">Get the amount of items in the array.</b><br />
+                          <i>2</i> &nbsp;<b class="exp">This is what array <em>a</em> stores: <em>['hey vsuace','michael here']</em></b>
+                      </code>
+                      Function: Prints the amount of items in an array. &nbsp;&nbsp;&nbsp;&nbsp;<b class="exp">I'm sorry for not being serious in this documentation.</b>
+                  </p><br /><br />
+                  <h3 id="cmd_rmv">Remove</h3>
+                  <p class="text">
+                      Aliases: <code>remove</code><br />
+                      Syntax: <code>remove <b class="exp">value</b> from <b class="exp">array</b></code><br />
+                      Syntax Example: <code>remove sadge from arr</code> = Remove value <code>sadge</code> from array <code>arr</code><br />
+                      Function: Removes a specific value from an array.
+                  </p><br /><br />
+                  <h3 id="cmd_pop">Pop</h3>
+                  <p class="text">
+                      Aliases: <code>pop</code><br />
+                      Syntax: <code>pop <b class="exp">array</b> <b class="exp">index</b></code><br />
+                      Syntax Example: <code>pop array 4</code> = Remove 5th value from array <code>arr</code><br />
+                      Function: Removes a value from an array at a specific index. Negative indexing is supported.
+                  </p><br /><br />
+                  <h3 id="cmd_cw">Change/Create a Workspace</h3>
+                  <p class="text">
+                      Aliases: <code>ws</code> <code>workspace</code> <code>cw</code> <code>changews</code> <code>changeworkspace</code><br />
+                      Syntax: <code>cw <b class="exp">workspace</b></code><br />
+                      Syntax Example: <code>cw woah</code> = Create workspace <code>woah</code> or change to workspace <code>woah</code>, if it already exists.<br />
+                      Function: Creates a workspace and changes to it if it doesn't exist, or just changes to a workspace if it exists.
+                  </p><br /><br />
+                  <h3 id="cmd_info">Info</h3>
+                  <p class="text">
+                      Aliases: <code>info</code><br />
+                      Syntax: <code>info <b class="exp">optional:workspace</b></code><br />
+                      Syntax Example: <code>info root</code> = Show info about workspace <code>root</code><br />
+                      Function: Shows info about the provided workspace, or, if no workspace is provided, about the current workspace.
+                      <br />Output Syntax: <code><b class="exp">workspace</b> {<b class="exp">array_name</b>: <b class="exp">list of values</b>, <b class="exp">array_name</b>: <b class="exp">list of values</b>, <b class="exp">...</b>}</code><br />
+                      Output Syntax Example: <code>root {hi:['bruh','what now'], hello:['idk man']}</code>
+                  </p><br /><br />
+                  <h3 id="cmd_list">List</h3>
+                  <p class="text">
+                      Aliases: <code>list</code><br />
+                      Syntax: <code>list</code><br />
+                      Function: Lists all existing workspaces.
+                  </p><br /><br />
+                  <h3 id="cmd_help">Help</h3>
+                  <p class="text">
+                      Aliases: <code>help</code><br />
+                      Syntax: <code>help <b class="exp">command</b></code><br />
+                      Syntax Example: <code>help delete</code> = Shows information about the <code>delete</code> command.<br />
+                      Function: Shows information about provided command, lists all possible aliases and shows the syntax. It can also be used for learning purposes - there is a quick tutorial available upon typing the command <code>help tutorial</code>
+                      and even an "instant help" for anyone who doesn't know what to do - by using the <code>help me</code> command, they can get information about the presence of the inbuilt tutorial.<br /><br />
+                      Output of the command <code>help me</code>:
+                      <code class="mlt">
+                          Use the 'help &lt;command&gt;' syntax to view help about any command.<br />
+                          If you wish to learn the commands, use 'help tutorial'.
+                      </code>
+                  </p><br />
+                  <h4 id="cmd_help_t">Tutorial</h4>
+                  <p class="text">
+                      The base of the tutorial (<code>help tutorial</code>) contains all the information you need to set up a workspace and save/load from a file. Every tutorial also contains a code snippet
+                      to direct you to the next/previous tutorial (the first tutorial directs you to use <code>help t1</code> to continue reading and learn more).<br />
+
+                  </p>
+              </div>
+
+          </div>
+    <script>
+        document.body.appendChild(footertemplate.content);
+    </script><br />
+</body>
+</html>
