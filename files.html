@@ -21,11 +21,100 @@
 
     <style>
 
+        ::-webkit-scrollbar {
+            width: 30px;
+            height: 30px;
+        }
 
+        ::-webkit-scrollbar-track {
+            background: #222;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #fff;
+            border-radius: 100px;
+            border: solid 13px #222;
+        }
+
+            ::-webkit-scrollbar-thumb:hover {
+                background: yellow;
+            }
+
+        ::-webkit-scrollbar-corner {
+            background: #222;
+        }
+
+        body, html {
+            margin: 0; padding: 0;
+            color: white; font-family: "Roboto", sans-serif;
+            background: #222;
+        }
+
+
+        .headerer {
+            background: #000;
+            padding: 0.25vw 0.25vw 0 0.25vw;
+            display: flex;
+            align-items: baseline;
+        }
+
+        .fileheader {
+            background: #222;
+            color: white;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.5vw;
+            margin: 0.25vw 0.25vw 0 0.25vw;
+            border-radius: 1vw 1vw 0 0;
+            transition: 0.2s;
+        }
+
+            .fileheader:hover {
+                background: #333;
+                border-radius: 1.5vw;
+                cursor: default;
+            }
+
+        #filetitle {
+            margin: 0.25vw;
+            font-size: 1.5vw;
+        }
+
+        .content {
+            margin: 0 1vw 0 1vw;
+            padding: 1vw;
+            overflow: auto;
+            height: calc(100vh - 8vw);
+            width: 1fr;
+            font-size: 1vw;
+        }
+
+        done {
+            color: gray;
+            transition: 0.2s;
+        }
+
+        done:hover {
+            color: lightgray;
+            cursor: default;
+        }
+
+        #kokolok:hover {
+            scale: 1.15;
+        }
 
     </style>
-
-    <div class="headerer"></div>
+    <div class="headerer">
+        <a href="." style="display:flex; align-items: center;"><img src="favicon.png" style="margin: 0.25vw 1.5vw 0.25vw 0.25vw; height:4vw; transition: 0.3s" id="kokolok" /></a>
+        <div class="fileheader">
+            <img src="https://www.iconsdb.com/icons/preview/white/file-xxl.png" style="height:2vw; margin-right: 0.5vw;"/>
+            <h1 id="filetitle"></h1>
+        </div>
+        <div style="flex:1"></div>
+        <h1 style="font-size: 2vw; color: #333; margin: 0 1vw 0 0;">Best File Viewer</h1>
+    </div>
     <div class="content">
         <p id="textfile"></p>
     </div>
@@ -40,6 +129,7 @@
                 result = xmlhttp.responseText.replaceAll("\n", "<br/>");
             }
             document.getElementById("textfile").innerHTML = result;
+            document.getElementById("filetitle").innerHTML = file;
         }
         
     </script>
