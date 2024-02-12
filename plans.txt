@@ -13,7 +13,7 @@
 - Desktop TBA
 - Mobile TBA
 
-FINISHED > Websites in Navigation
+<i>> Websites in Navigation</i>
   a websites section to show off and comunicate basically all
   of my websites with favicon and quick description
 - Added 2/8/24
