@@ -13,9 +13,9 @@
 - Desktop TBA
 - Mobile TBA
 
-> Websites in Navigation
+FINISHED > Websites in Navigation
   a websites section to show off and comunicate basically all
   of my websites with favicon and quick description
 - Added 2/8/24
 - Desktop 2/12/24
-- Mobile TBA
+- Mobile 2/12/24
