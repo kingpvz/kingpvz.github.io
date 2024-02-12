@@ -11,12 +11,13 @@
 <body>
     <script src="global_resources/corefunc.js"></script>
     <script>
+        var file = GetURLParameter('file');
         var red = GetURLParameter('redirect');
         if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && red !== '0') {
-            window.location.replace("/m")
+            window.location.replace("/m/files?+file="+file)
         }
 
-        var file = GetURLParameter('file');
+        
     </script>
 
     <style>
