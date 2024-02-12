@@ -1,9 +1,21 @@
+//Example
+// > Name
+//   Description
+// - Added (Date when this plan was added)
+// - Desktop (Date when this plan was implemented for desktop view)
+// - Mobile (Date when this plan was implemented for mobile view)
+
+
 > Quick Navigation in index.html
   8 or 10 buttons for quick navigation like youtube,
   projects and so on
 - Added 2/8/24
+- Desktop TBA
+- Mobile TBA
 
 > Websites in Navigation
   a websites section to show off and comunicate basically all
   of my websites with favicon and quick description
 - Added 2/8/24
+- Desktop 2/12/24
+- Mobile TBA
