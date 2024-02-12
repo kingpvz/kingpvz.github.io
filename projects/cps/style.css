@@ -1,4 +1,4 @@
-#cpsnav {
+#pnav {
     width: 290px;
     border-radius: 2vw;
     background-color: #623a43;
@@ -7,8 +7,18 @@
     transition: 0.3s;
 }
 
-#cpsnav:hover {
+#pnav:hover {
     box-shadow: 0 0 15px #505000;
+}
+
+#navs {
+    position: sticky;
+    top: 2vw;
+    height: min-content;
+}
+
+#nav {
+    position: initial;
 }
 
 .cpsnavbar {

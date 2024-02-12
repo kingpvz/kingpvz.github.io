@@ -1,13 +1,15 @@
-#alavidanav {
+#pnav {
     width: 290px;
     border-radius: 2vw;
     background-color: #2c4029;
     margin-bottom: 25px;
     padding: 10px 5px 5px 5px;
     transition: 0.3s;
+    position: sticky;
+    top: 2vw;
 }
 
-#alavidanav:hover {
+#pnav:hover {
     box-shadow: 0 0 15px #505000;
 }
 
@@ -32,3 +34,13 @@
     .alhere:hover {
         color: #ffc;
     }
+
+#nav {
+    position: initial;
+}
+
+#navs {
+    position: sticky;
+    top: 2vw;
+    height: min-content;
+}

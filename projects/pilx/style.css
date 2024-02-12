@@ -2,7 +2,7 @@ i {
     color: #ffd;
 }
 
-#pilxnav {
+#pnav {
     width: 290px;
     border-radius: 2vw;
     background-color: #394c65;
@@ -11,7 +11,17 @@ i {
     transition: 0.3s;
 }
 
-#pilxnav:hover {
+#navs {
+    position: sticky;
+    top: 2vw;
+    height: min-content;
+}
+
+#nav {
+    position: initial;
+}
+
+#pnav:hover {
     box-shadow: 0 0 15px #505000;
 }
 

@@ -2,13 +2,23 @@ i {
     color: #ffd;
 }
 
-#sqltnav {
+#navs {
+    position: sticky;
+    top: 2vw;
+    height: min-content;
+}
+
+#pnav {
     width: 290px;
     border-radius: 2vw;
     background-color: #25512d;
     margin-bottom: 25px;
     padding: 10px 5px 5px 5px;
     transition: 0.3s;
+}
+
+#nav {
+    position: initial;
 }
 
 #sqltnav:hover {
