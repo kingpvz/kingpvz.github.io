@@ -1,4 +1,4 @@
-//Example
+// Example
 // > Name
 //   Description
 // - Added (Date when this plan was added)
