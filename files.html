@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700;900;400;300;200&display=swap" rel="stylesheet">
+    <title>Files - Kingpvz</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+</head>
+<body>
+    <script src="global_resources/corefunc.js"></script>
+    <script>
+        var red = GetURLParameter('redirect');
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && red !== '0') {
+            window.location.replace("/m")
+        }
+
+        var file = GetURLParameter('file');
+    </script>
+
+    <style>
+
+
+
+    </style>
+
+    <div class="headerer"></div>
+    <div class="content">
+        <p id="textfile"></p>
+    </div>
+
+    <script>
+        window.onload = function() {
+            var result = null;
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.open("GET", file, false);
+            xmlhttp.send();
+            if (xmlhttp.status == 200) {
+                result = xmlhttp.responseText;
+            }
+            document.getElementById("textfile").innerHTML = result;
+        }
+        
+    </script>
+</body>
+
+</html>
