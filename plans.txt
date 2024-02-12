@@ -5,6 +5,8 @@
 // - Desktop (Date when this plan was implemented for desktop view)
 // - Mobile (Date when this plan was implemented for mobile view)
 
+// <done>If the plan is gray, it means it's completed.</done>
+
 
 > Quick Navigation in index.html
   8 or 10 buttons for quick navigation like youtube,
@@ -13,9 +15,9 @@
 - Desktop TBA
 - Mobile TBA
 
-<i>> Websites in Navigation</i>
+<done>> Websites in Navigation
   a websites section to show off and comunicate basically all
   of my websites with favicon and quick description
 - Added 2/8/24
 - Desktop 2/12/24
-- Mobile 2/12/24
+- Mobile 2/12/24</done>
