@@ -124,7 +124,7 @@
         window.onload = function() {
             var result = null;
             var xmlhttp = new XMLHttpRequest();
-            xmlhttp.open("GET", "https://kingpvz.github.io/"+file, false);
+            xmlhttp.open("GET", "https://kingpvz.github.io/global_resources/files/"+file, false);
             xmlhttp.send();
             if (xmlhttp.status == 200) {
                 result = xmlhttp.responseText.replaceAll("\n", "<br/>");
