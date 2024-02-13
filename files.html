@@ -57,6 +57,7 @@
             padding: 0.25vw 0.25vw 0 0.25vw;
             display: flex;
             align-items: baseline;
+            height: min-content;
         }
 
         .fileheader {
@@ -67,9 +68,10 @@
             align-items: center;
             justify-content: center;
             padding: 0.5vw;
-            margin: 0.25vw 0.25vw 0 0.25vw;
+            margin: 0.25vw 0.5vw 0 0.25vw;
             border-radius: 1vw 1vw 0 0;
             transition: 0.2s;
+            height: 2.5vw;
         }
 
             .fileheader:hover {
@@ -90,6 +92,7 @@
             height: calc(100vh - 8vw);
             width: 1fr;
             font-size: 1vw;
+            transition: 0.5s;
         }
 
         done {
@@ -106,12 +109,32 @@
             scale: 1.15;
         }
 
+        .floums {
+            
+            background: #111
+        }
+
+            .floums:hover {
+                background: #333;
+                border-radius: 1.5vw;
+                cursor: pointer;
+            }
+
     </style>
     <div class="headerer">
         <a href="." style="display:flex; align-items: center;"><img src="favicon.png" style="margin: 0.25vw 1.5vw 0.25vw 0.25vw; height:4vw; transition: 0.3s" id="kokolok" /></a>
-        <div class="fileheader">
-            <img src="https://cdn-icons-png.freepik.com/512/228/228628.png" style="height:2vw; margin-right: 0.5vw;"/>
+        <div class="fileheader floums" onclick="window.history.back()" title="Go Back">
+            <h1 style="font-size: 1.5vw; display: block; transform: rotate(180deg);">&#10132;</h1>
+        </div>
+        <div class="fileheader" style="position:relative; top: 0.35vw;">
+            <img src="https://cdn-icons-png.freepik.com/512/228/228628.png" style="height:2vw; margin-right: 0.5vw;" />
             <h1 id="filetitle"></h1>
+        </div>
+        <div class="fileheader floums" onclick="window.history.back()" title="Go Back">
+            <img style="font-size: 1.5vw; display: block;" src="/global_resources/icons/zoomin.png"/>
+        </div>
+        <div class="fileheader floums" onclick="window.history.back()" title="Go Back">
+            <img style="font-size: 1.5vw; display: block;" src="/global_resources/icons/zoomout.png" />
         </div>
         <div style="flex:1"></div>
         <h1 style="font-size: 2vw; color: #333; margin: 0 1vw 0 0;">Best File Viewer</h1>
