@@ -65,15 +65,24 @@
             color: #bbb;
         }
 
+        .fhinter {
+            border-radius: 1vw;
+            transition: 0.1s;
+        }
+
+        .fhinter:active {
+            background: #444;
+        }
+
     </style>
     <div class="headerer">
-        <div class="fileheader" onclick="window.history.back()" title="Go Back">
+        <div class="fileheader fhinter" onclick="window.history.back()" title="Go Back">
             <h1 style="font-size: 5vw; display: block; transform: rotate(180deg); margin: 0; position: relative; top: 0.75vw;">&#10132;</h1>
         </div>
         <div class="fileheader">
             <h1 id="filetitle"></h1>
         </div>
-        <div class="fileheader" onclick="Object.assign(document.createElement('a'), { href: 'https://kingpvz.github.io/global_resources/files/'+file, download: file }).click();" title="Download">
+        <div class="fileheader fhinter" onclick="Object.assign(document.createElement('a'), { href: 'https://kingpvz.github.io/global_resources/files/'+file, download: file }).click();" title="Download">
             <img style="height: 5vw; display: block;" src="../global_resources/icons/download.png" draggable="false" (dragstart)="false;" />
         </div>
     </div>
