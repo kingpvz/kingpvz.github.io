@@ -1,0 +1,100 @@
+ <!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700;900;400;300;200&display=swap" rel="stylesheet">
+    <title>Files - Kingpvz</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.png">
+</head>
+<body>
+    <script src="../global_resources/corefunc.js"></script>
+    <script>
+        var file = GetURLParameter('file');
+        var red = GetURLParameter('redirect');
+        if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) && red !== '0') {
+            window.location.replace("/files?file="+file)
+        }
+    </script>
+
+    <style>
+
+        body, html {
+            margin: 0; padding: 0;
+            color: white; font-family: "Roboto", sans-serif;
+            background: #333;
+        }
+
+
+        .headerer {
+            background: #222;
+            padding: 2vw;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: min-content;
+            user-select: none;
+            box-shadow: black 0 -1vw 2vw 1vw;
+        }
+
+        .fileheader {
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2vw;
+            margin: 1vw;
+        }
+
+        #filetitle {
+            margin: 0;
+            font-size: 5vw;
+        }
+
+        .content {
+            margin: 1vw;
+            padding: 1vw 2vw 1vw 2vw;
+            overflow: auto;
+            height: calc(100vh - 21vw);
+            width: 1fr;
+            font-size: 3vw;
+        }
+
+        done {
+            color: #bbb;
+        }
+
+    </style>
+    <div class="headerer">
+        <div class="fileheader" onclick="window.history.back()" title="Go Back">
+            <h1 style="font-size: 5vw; display: block; transform: rotate(180deg); margin: 0; position: relative; top: 0.75vw;">&#10132;</h1>
+        </div>
+        <div class="fileheader">
+            <h1 id="filetitle"></h1>
+        </div>
+        <div class="fileheader" onclick="Object.assign(document.createElement('a'), { href: 'https://kingpvz.github.io/global_resources/files/'+file, download: file }).click();" title="Download">
+            <img style="height: 5vw; display: block;" src="../global_resources/icons/download.png" draggable="false" (dragstart)="false;" />
+        </div>
+    </div>
+    <div class="content">
+        <p id="textfile" style="white-space: nowrap;"></p>
+    </div>
+
+    <script>
+        window.onload = function() {
+            var result = null;
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.open("GET", "https://kingpvz.github.io/global_resources/files/"+file, false);
+            xmlhttp.send();
+            if (xmlhttp.status == 200) {
+                result = xmlhttp.responseText.replaceAll("\n", "<br/>");
+            }
+            document.getElementById("textfile").innerHTML = result;
+            document.getElementById("filetitle").innerHTML = file;
+        }
+        
+    </script>
+</body>
+
+</html>
