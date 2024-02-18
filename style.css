@@ -278,6 +278,18 @@ body {
     color: lightblue;
 }
 
+@media(max-width: 1280px) {
+    #socialgrid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width: 960px) {
+    #socialgrid {
+        grid-template-columns: 1fr;
+    }
+}
+
 /*webs*/
 .webpager {
     display: flex;

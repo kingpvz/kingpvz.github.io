@@ -5,6 +5,18 @@
     margin-left: 1vw;
 }
 
+@media(max-width: 1280px) {
+    #projectgrid {
+        grid-template-columns: 1fr 1fr;
+    }
+} 
+
+@media(max-width: 960px) {
+    #projectgrid {
+        grid-template-columns: 1fr;
+    }
+}
+
 .project {
     background: rgb(35,35,35);
     background: linear-gradient(135deg, rgba(70,0,0,1) 0%, rgba(0,70,0,1) 50%, rgba(0,0,70,1) 100%);
