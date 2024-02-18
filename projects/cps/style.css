@@ -48,6 +48,10 @@
 }
 #cpsdownload {
     grid-area:download;
+    position: sticky;
+    top: 1vw;
+    height: min-content;
+    z-index: 2;
 }
 #cpsgrid {
     display:grid;
@@ -87,10 +91,13 @@ h4{
     border: white 2px solid;
     width:100%;
     transition: 0.25s;
+    position: relative;
+    z-index: 3;
 }
 
 .ft:hover{
     scale: 1.5;
+    z-index: 5;
 }
 
 .cool {
