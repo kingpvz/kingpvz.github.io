@@ -20,3 +20,5 @@ var questions = [
         "c": 3
     }
 ];
+
+console.log("lol");
