@@ -19,6 +19,12 @@
         const waa = document.createElement("script");
         waa.src = "main.js";
         document.body.prepend(waa);
+
+        const waaa = document.createElement("script");
+        waaa.innerHTML = `
+        randomQuestion();
+        `;
+        document.body.append(waaa);
     </script>
 
     <div id="main">
@@ -36,8 +42,5 @@
 
     </div>
 
-    <script>
-        randomQuestion();
-    </script>
 </body>
 </html>
