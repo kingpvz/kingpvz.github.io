@@ -1,4 +1,5 @@
 console.log(q);
+console.log(questions);
 let ids = [];
 
 function randomQuestion() {
