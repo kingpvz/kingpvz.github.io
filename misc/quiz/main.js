@@ -1,11 +1,11 @@
-console.log(q);
-console.log(questions);
+let qs = questions[q];
+
 let ids = [];
 
 function randomQuestion() {
     while (true) {
-        var chosen = questions[Math.floor(Math.random() * questions.length)];
-        if (ids.includes(chosen["id"])) {
+        var chosen = qs[Math.floor(Math.random() * qs.length)];
+        if (!(ids.includes(chosen["id"]))) {
             break
         }
     }
