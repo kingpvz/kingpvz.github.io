@@ -1,4 +1,4 @@
-let qustions = [
+let questions = [
     {
         "id": 1,
         "command": "Translate!",
