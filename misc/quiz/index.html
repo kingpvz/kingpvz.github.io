@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <script src="../../global_resources/corefunc.js"></script>
+    <script>
+        var q = GetURLParameter('q');
+
+        const wa = document.createElement("script");
+        wa.src = "https://kingpvz.github.io/misc/quiz/files/" + q + ".js";
+        document.body.prepend(wa);
+    </script>
+    <script src="main.js"></script>
+
+    <div id="main">
+
+        <h1 id="command"></h1>
+        <br />
+        <h2 id="query"></h2>
+
+        <div id="choices">
+            <h3 id="c1"></h3>
+            <h3 id="c2"></h3>
+            <h3 id="c3"></h3>
+            <h3 id="c4"></h3>
+        </div>
+
+    </div>
+
+    <script>
+        randomQuestion();
+    </script>
+</body>
+</html>
