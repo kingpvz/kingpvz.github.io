@@ -15,17 +15,8 @@
         const wa = document.createElement("script");
         wa.src = "https://kingpvz.github.io/misc/quiz/files/" + q + ".js";
         document.body.prepend(wa);
-
-        const waa = document.createElement("script");
-        waa.src = "main.js";
-        document.body.prepend(waa);
-
-        const waaa = document.createElement("script");
-        waaa.innerHTML = `
-        randomQuestion();
-        `;
-        document.body.append(waaa);
     </script>
+<script src="main.js"></script>
 
     <div id="main">
 
@@ -41,6 +32,8 @@
         </div>
 
     </div>
-
+<script>
+randomQuestion();
+</script>
 </body>
 </html>
