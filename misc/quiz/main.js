@@ -20,10 +20,10 @@ function endQuiz() {
 function randomQuestion() {
     while (true) {
         var chosen = qs[Math.floor(Math.random() * qs.length)];
-      c1.innerHTML = chosen;
+ /*delete this*/     c1.innerHTML = chosen;
       if (ids.length => 10) {
-        break;
         var chosen = {"id": -1};
+        break;
       }
         if (!(ids.includes(chosen["id"]))) {
             break;
