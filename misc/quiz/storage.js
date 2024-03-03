@@ -25,5 +25,3 @@ var questions = {
 ], 
 "places": []
 };
-
-console.log("storage works");

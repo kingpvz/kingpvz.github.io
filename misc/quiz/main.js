@@ -1,3 +1,5 @@
+console.log("main.js line1 works")
+
 let qs = questions[q];
 
 let ids = [];
