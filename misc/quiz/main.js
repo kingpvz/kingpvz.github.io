@@ -1,20 +1,15 @@
-console.log("main.js line1 works");
-
 let qs = questions[q];
 
 let ids = [];
 let correct = 0;
 
-console.log("ready");
 function endQuiz() {
   choices.style.display = 'none';
 }
 
 function randomQuestion() {
-  console.log("rq started");
     while (true) {
         var chosen = qs[Math.floor(Math.random() * qs.length)];
-      console.log(chosen);
       if (ids.length >= 10) {
         var chosen = {"id": -1};
         break;
