@@ -1,5 +1,5 @@
 console.log("main.js line1 works");
-
+try {
 let qs = questions[q];
 
 let ids = [];
@@ -9,6 +9,7 @@ console.log("ready");
 function endQuiz() {
   choices.style.display = 'none';
 }
+} catch (e) { console.log(e);}
 
 function randomQuestion() {
   console.log("rq started");
