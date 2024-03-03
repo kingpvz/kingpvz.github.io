@@ -2,25 +2,25 @@ var questions = {
 "test": [
     {
         "id": 0,
-        "command": "Translate!",
-        "query": "Hallo",
-        "c1": "Hello",
-        "c2": "Bye",
-        "c3": "Please",
-        "c4": "How are you",
+        "command": "Prelož!",
+        "query": "die Sonne",
+        "c1": "slnko",
+        "c2": "zóna",
+        "c3": "Soňa",
+        "c4": "Nemenovaný učiteľ matematiky je kokot",
         "c": 1,
-        "n": "Next"
+        "n": "Ďalej"
     },
     {
         "id": 1,
-        "command": "Answer!",
+        "command": "Odpovedz!",
         "query": "Wie heißt du?",
-        "c1": "Gut",
-        "c2": "Nein",
-        "c3": "Maria",
-        "c4": "Ja",
+        "c1": "Gut.",
+        "c2": "Nein.",
+        "c3": "Maria.",
+        "c4": "Mathe Lerner ist ein kokot.",
         "c": 3,
-        "n": "Next"
+        "n": "Ďalej"
     }
 ], 
 "places": []
