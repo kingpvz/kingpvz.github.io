@@ -22,11 +22,11 @@ function randomQuestion() {
         var chosen = qs[Math.floor(Math.random() * qs.length)];
       c1.innerHTML = chosen;
       if (ids.length => 10) {
-        break
-        var chosen = {"id": -1}
+        break;
+        var chosen = {"id": -1};
       }
         if (!(ids.includes(chosen["id"]))) {
-            break
+            break;
         }
     }
 if (chosen[id] !== -1){
