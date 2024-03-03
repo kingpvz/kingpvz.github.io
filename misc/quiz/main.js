@@ -19,7 +19,7 @@ function randomQuestion() {
         var chosen = {"id": -1};
         break;
       }
-        if (!(ids.includes(chosen["id"]))) {
+        if (!ids.includes(chosen["id"])) {
             break;
         }
     }
