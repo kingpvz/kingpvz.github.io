@@ -19,7 +19,7 @@ function randomQuestion() {
             break;
         }
     }
-if (chosen[id] !== -1){
+if (chosen["id"] !== -1){
 ids.push(chosen["id"]);
   command.innerHTML = chosen["command"];
   query.innerHTML = chosen["query"];
