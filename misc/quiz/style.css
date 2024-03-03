@@ -14,3 +14,35 @@ html, body, #main {
     align-items: center;
     justify-content: center;
 }
+
+#command {
+  width: 80vw;
+  text-size: 5vw;
+  text-weight: 700;
+  background: gradient(linear, left top, left bottom, from(#00a), to(#22f));
+  color: white;
+  text-align: center;
+  margin-bottom: 5vw;
+  border-radius: 3vw;
+}
+
+#query {
+  background: gradient(linear, left top, left bottom, from(#ddd), to(#fff));
+  color: #222;
+  width: 80vw;
+  text-size: 3vw;
+  text-align: center;
+  text-weight: 500;
+  border-radius: 3vw;
+}
+
+#choices {
+  width: 80vw;
+  padding: 2vw;
+  margin-top: 3vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 2vw;
+  grid-row-gap: 2vw;
+  margin-bottom: 5vw;
+}
