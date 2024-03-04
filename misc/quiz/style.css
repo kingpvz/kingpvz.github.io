@@ -17,8 +17,8 @@ html, body, #main {
 
 #command {
   width: 80vw;
-  text-size: 20vw;
-  text-weight: 700;
+  font-size: 10vw;
+  font-weight: 700;
   background: linear-gradient(to bottom right, #00a, #22f);
   color: white;
   text-align: center;
@@ -30,9 +30,9 @@ html, body, #main {
   background: linear-gradient(to bottom right, #ddd, #fff);
   color: #222;
   width: 80vw;
-  text-size: 10vw;
+  font-size: 5vw;
   text-align: center;
-  text-weight: 500;
+  font-weight: 500;
   border-radius: 3vw;
 }
 
