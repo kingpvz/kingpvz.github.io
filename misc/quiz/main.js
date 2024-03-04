@@ -2,6 +2,7 @@ let qs = questions[q];
 
 let ids = [];
 let correct = 0;
+pts = 0;
 
 function endQuiz() {
   choices.style.display = 'none';
@@ -31,4 +32,49 @@ ids.push(chosen["id"]);
 } else {
   endQuiz();
 }
+}
+
+function answer(num){
+  if (num == correct){
+    pts += 100;
+  } else {
+    pts -= 10;
+  }
+
+  next.style.display = 'block';
+
+  switch (num) {
+     case 1:
+      c1.style.scale = '1.1';
+        break;
+    case 2:
+      c2.style.scale = '1.1';
+      break;
+    case 3:
+      c3.style.scale = '1.1';
+      break;
+    case 4:
+      c4.style.scale = '1.1';
+      break;
+  }
+
+  c1.style.background = 'linear-gradient(to bottom right, #d00, #f22)';
+  c2.style.background = 'linear-gradient(to bottom right, #d00, #f22)';
+  c3.style.background = 'linear-gradient(to bottom right, #d00, #f22)';
+  c4.style.background = 'linear-gradient(to bottom right, #d00, #f22)';
+
+  switch (correct) {
+    case 1:
+      c1.style.background = 'linear-gradient(to bottom right, #0d0, #2f2)';
+      break;
+    case 2:
+      c2.style.background = 'linear-gradient(to bottom right, #0d0, #2f2)';
+      break;
+    case 3:
+      c3.style.background = 'linear-gradient(to bottom right, #0d0, #2f2)';
+      break;
+    case 4:
+      c4.style.background = 'linear-gradient(to bottom right, #0d0, #2f2)';
+      break;
+  }
 }
