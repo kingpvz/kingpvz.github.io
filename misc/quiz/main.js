@@ -60,22 +60,30 @@ function answer(num){
   }
 
   c1.style.background = 'linear-gradient(to bottom right, #d00, #f22)';
+  c1.style.border = 'solid #f00 0.5vw';
   c2.style.background = 'linear-gradient(to bottom right, #d00, #f22)';
+  c2.style.border = 'solid #f00 0.5vw';
   c3.style.background = 'linear-gradient(to bottom right, #d00, #f22)';
+  c3.style.border = 'solid #f00 0.5vw';
   c4.style.background = 'linear-gradient(to bottom right, #d00, #f22)';
+  c4.style.border = 'solid #f00 0.5vw';
 
   switch (correct) {
     case 1:
       c1.style.background = 'linear-gradient(to bottom right, #0d0, #2f2)';
+      c1.style.border = 'solid #0f0 0.5vw';
       break;
     case 2:
       c2.style.background = 'linear-gradient(to bottom right, #0d0, #2f2)';
+      c2.style.border = 'solid #0f0 0.5vw';
       break;
     case 3:
       c3.style.background = 'linear-gradient(to bottom right, #0d0, #2f2)';
+      c3.style.border = 'solid #0f0 0.5vw';
       break;
     case 4:
       c4.style.background = 'linear-gradient(to bottom right, #0d0, #2f2)';
+      c4.style.border = 'solid #0f0 0.5vw';
       break;
   }
 }
