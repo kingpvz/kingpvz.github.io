@@ -42,6 +42,7 @@ function answer(num){
   }
 
   next.style.display = 'block';
+  choices.style.pointerEvents = 'none';
 
   switch (num) {
      case 1:

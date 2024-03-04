@@ -70,9 +70,9 @@ html, body, #main {
   width: 30vw;
   display: none;
   padding: 2.5vw;
-  font-size: 5vw;
+  font-size: 6vw;
   margin-top: 2vw;
-  background-color: linear-gradient(to bottom right, #00c, #66f);
+  background: linear-gradient(to bottom right, #00c, #66f);
   color: white;
   border-raduis: 3vw;
   border: solid #ddd 0.5vw;
