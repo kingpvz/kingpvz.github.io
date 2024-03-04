@@ -99,3 +99,7 @@ function answer(num){
       break;
   }
 }
+
+funxtion handleNext() {
+  //bro idk how to handle next you gotta figure it out yourself
+}
