@@ -47,15 +47,27 @@ function answer(num){
   switch (num) {
      case 1:
       c1.style.scale = '1.1';
+      c2.style.scale = '0.75';
+      c3.style.scale = '0.75';
+      c4.style.scale = '0.75';
         break;
     case 2:
       c2.style.scale = '1.1';
+      c1.style.scale = '0.75';
+      c3.style.scale = '0.75';
+      c4.style.scale = '0.75';
       break;
     case 3:
       c3.style.scale = '1.1';
+      c1.style.scale = '0.75';
+      c2.style.scale = '0.75';
+      c4.style.scale = '0.75';
       break;
     case 4:
       c4.style.scale = '1.1';
+      c1.style.scale = '0.75';
+      c2.style.scale = '0.75';
+      c3.style.scale = '0.75';
       break;
   }
 

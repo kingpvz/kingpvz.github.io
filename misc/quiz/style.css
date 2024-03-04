@@ -64,7 +64,7 @@ html, body, #main {
   justify-content: center;
   margin: 0;
   font-weight: 400;
-  box-shadow: 0 0 0.5vw black;
+  box-shadow: 0 0 2vw black;
 }
 
 #next {
