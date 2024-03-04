@@ -100,6 +100,7 @@ function answer(num){
   }
 }
 
-funxtion handleNext() {
+function handleNext() {
   //bro idk how to handle next you gotta figure it out yourself
+  return null;
 }
