@@ -16,7 +16,7 @@ html, body, #main {
 }
 
 #command {
-  width: 80vw;
+  width: 90vw;
   font-size: 10vw;
   font-weight: 700;
   background: linear-gradient(to bottom right, #00a, #22f);
@@ -24,20 +24,22 @@ html, body, #main {
   text-align: center;
   margin-bottom: 5vw;
   border-radius: 3vw;
+  padding:3vw;
 }
 
 #query {
   background: linear-gradient(to bottom right, #ddd, #fff);
   color: #222;
-  width: 80vw;
+  width: 90vw;
   font-size: 5vw;
   text-align: center;
   font-weight: 500;
   border-radius: 3vw;
+  padding: 2.5vw;
 }
 
 #choices {
-  width: 80vw;
+  width: 85vw;
   padding: 2vw;
   margin-top: 3vw;
   display: grid;
@@ -45,4 +47,26 @@ html, body, #main {
   grid-column-gap: 2vw;
   grid-row-gap: 2vw;
   margin-bottom: 5vw;
+  display: block;
+}
+
+.choice {
+  height: 35vw;
+  background: linear-gradient(to bottom right, #333, #555);
+  border-radius: 3vw;
+  padding: 2vw;
+  font-size: 3vw;
+  border: solid linear-gradient(to bottom right, #44f, #00d) 0.5vw;
+}
+
+#next {
+  width: 30vw;
+  visibility: invisible;
+  padding: 2.5vw;
+  font-size: 5vw;
+  margin-top: 2vw;
+  background-color: liner-gradient(to bottom right, #00d, #66f);
+  color: white;
+  border-raduis: 3vw;
+  border: solid linear-gradient(to bottom right, #ccc, #fff) 0.5vw;
 }
