@@ -69,7 +69,8 @@ html, body, #main {
 
 #next {
   width: 30vw;
-  display: none;
+  visibility: hidden;
+  display: flex;
   padding: 2.5vw;
   font-size: 6vw;
   margin-top: 2vw;
@@ -79,6 +80,8 @@ html, body, #main {
   border: solid #ddd 0.5vw;
   transition: 0.2s;
   text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 #next:active {

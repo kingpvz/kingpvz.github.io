@@ -41,7 +41,7 @@ function answer(num){
     pts -= 10;
   }
 
-  next.style.display = 'block';
+  next.style.visibility = 'visible';
   choices.style.pointerEvents = 'none';
 
   switch (num) {
