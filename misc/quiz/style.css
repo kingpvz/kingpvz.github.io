@@ -75,9 +75,10 @@ html, body, #main {
   margin-top: 2vw;
   background: linear-gradient(to bottom right, #00c, #66f);
   color: white;
-  border-raduis: 3vw;
+  border-radius: 3vw;
   border: solid #ddd 0.5vw;
   transition: 0.2s;
+  text-align: center;
 }
 
 #next:active {
