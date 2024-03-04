@@ -35,7 +35,7 @@ ids.push(chosen["id"]);
 }
 
 function answer(num){
-  if (num == correct){
+  if (num === correct){
     pts += 100;
   } else {
     pts -= 10;
