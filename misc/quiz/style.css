@@ -54,7 +54,7 @@ html, body, #main {
   border-radius: 3vw;
   padding: 2vw;
   font-size: 3.5vw;
-  border: solid linear-gradient(to bottom right, #44f, #00d) 0.5vw;
+  border: solid #44f 0.5vw;
   display: flex;
   color: white;
   text-align: center;
@@ -71,10 +71,10 @@ html, body, #main {
   padding: 2.5vw;
   font-size: 5vw;
   margin-top: 2vw;
-  background-color: liner-gradient(to bottom right, #00d, #66f);
+  background-color: linear-gradient(to bottom right, #00c, #66f);
   color: white;
   border-raduis: 3vw;
-  border: solid linear-gradient(to bottom right, #ccc, #fff) 0.5vw;
+  border: solid #ddd 0.5vw;
   transition: 0.2s;
 }
 
