@@ -5,7 +5,10 @@ let ids = [];
 let correct = 0;
 pts = 0;
 
-next.innerHTML = sts["n"];
+
+function readyUp() {
+  next.innerHTML = sts["n"];
+}
 
 function endQuiz() {
   choices.style.display = 'none';
