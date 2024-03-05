@@ -90,4 +90,12 @@ html, body, #main {
 
 #stats {
   display: none;
+  background: linear-gradient(to bottom right, #ccc, #eee);
+  width: 90vw;
+  border-radius: 3vw;
+  padding: 1.5vw;
+  font-size: 4vw;
+  color: #111;
+  font-weight: 500;
+  margin-top: 1vw;
 }

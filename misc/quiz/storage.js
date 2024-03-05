@@ -4,7 +4,15 @@ var questions = {
     "n": "Ďalej",
     "ask": 10,
     "done": "Hotovo.",
-    "text_points": "Počet bodov"
+    "text_points": "Počet bodov",
+    "text_correct": "Správne",
+    "text_wrong": "Nesprávne",
+    "r": "Hodnotenie",
+    "r_fail": "Borec prepadneš",
+    "r_bad": "Je to zlé",
+    "r_ok": "dostaneš trojku",
+    "r_good": "jooo to daš",
+    "r_great": "to ani pisat nemusiš to maš garant jednotku"
   },
  "qr": [
     {
