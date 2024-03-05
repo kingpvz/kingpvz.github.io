@@ -12,7 +12,6 @@ let stats = {
 
 function readyUp() {
   next.innerHTML = sts["n"];
-  statistics = document.getElementById('stats');
 }
 
 function endQuiz() {
