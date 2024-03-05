@@ -17,14 +17,14 @@ html, body, #main {
 
 #command {
   width: 90vw;
-  font-size: 10vw;
+  font-size: 7.5vw;
   font-weight: 700;
   background: linear-gradient(to bottom right, #00a, #22f);
   color: white;
   text-align: center;
   margin-bottom: 1vw;
   border-radius: 3vw;
-  padding:3vw;
+  padding:2vw;
 }
 
 #query {
@@ -35,7 +35,7 @@ html, body, #main {
   text-align: center;
   font-weight: 500;
   border-radius: 3vw;
-  padding: 2.5vw;
+  padding: 1.75vw;
   margin-top: 0;
 }
 
@@ -53,7 +53,7 @@ html, body, #main {
   height: 30vw;
   background: linear-gradient(to bottom right, #333, #555);
   border-radius: 3vw;
-  padding: 2vw;
+  padding: 1.5vw;
   font-size: 4vw;
   border: solid #44f 0.5vw;
   display: flex;

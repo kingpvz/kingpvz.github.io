@@ -3,7 +3,11 @@ let sts = questions[q]["settings"];
 
 let ids = [];
 let correct = 0;
-pts = 0;
+let stats = {
+  "points": 0,
+  "correct": 0,
+  "wrong": 0
+}
 
 
 function readyUp() {
@@ -41,9 +45,11 @@ ids.push(chosen["id"]);
 
 function answer(num){
   if (num === correct){
-    pts += 100;
+    stats["points"] += 100;
+    stats["correct"] += 1;
   } else {
-    pts -= 10;
+    stats["points"] -= 10;
+    stats["wrong"] += 1;
   }
 
   next.style.visibility = 'visible';
@@ -52,27 +58,27 @@ function answer(num){
   switch (num) {
      case 1:
       c1.style.scale = '1.1';
-      c2.style.scale = '0.75';
-      c3.style.scale = '0.75';
-      c4.style.scale = '0.75';
+      c2.style.scale = '0.8';
+      c3.style.scale = '0.8';
+      c4.style.scale = '0.8';
         break;
     case 2:
       c2.style.scale = '1.1';
-      c1.style.scale = '0.75';
-      c3.style.scale = '0.75';
-      c4.style.scale = '0.75';
+      c1.style.scale = '0.8';
+      c3.style.scale = '0.8';
+      c4.style.scale = '0.8';
       break;
     case 3:
       c3.style.scale = '1.1';
-      c1.style.scale = '0.75';
-      c2.style.scale = '0.75';
-      c4.style.scale = '0.75';
+      c1.style.scale = '0.8';
+      c2.style.scale = '0.8';
+      c4.style.scale = '0.8';
       break;
     case 4:
       c4.style.scale = '1.1';
-      c1.style.scale = '0.75';
-      c2.style.scale = '0.75';
-      c3.style.scale = '0.75';
+      c1.style.scale = '0.8';
+      c2.style.scale = '0.8';
+      c3.style.scale = '0.8';
       break;
   }
 
@@ -106,6 +112,21 @@ function answer(num){
 }
 
 function handleNext() {
-  //bro idk how to handle next you gotta figure it out yourself
-  return null;
+  next.style.visibility = 'hidden';
+  choices.style.pointerEvents = 'auto';
+  c1.style.scale = '1';
+  c2.style.scale = '1';
+  c3.style.scale = '1';
+  c4.style.scale = '1';
+
+  c1.style.background = 'linear-gradient(to bottom right, #333, #555)';
+  c1.style.border = 'solid #44f 0.5vw';
+  c2.style.background = 'linear-gradient(to bottom right, #333, #555)';
+  c2.style.border = 'solid #44f 0.5vw';
+  c3.style.background = 'linear-gradient(to bottom right, #333, #555)';
+  c3.style.border = 'solid #44f 0.5vw';
+  c4.style.background = 'linear-gradient(to bottom right, #333, #555)';
+  c4.style.border = 'solid #44f 0.5vw';
+
+  randomQuestion();
 }
