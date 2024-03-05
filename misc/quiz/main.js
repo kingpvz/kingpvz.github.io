@@ -17,7 +17,7 @@ function endQuiz() {
 function randomQuestion() {
     while (true) {
         var chosen = qs[Math.floor(Math.random() * qs.length)];
-      if (ids.length >= 10) {
+      if (ids.length >= sts["ask"]) {
         var chosen = {"id": -1};
         break;
       }

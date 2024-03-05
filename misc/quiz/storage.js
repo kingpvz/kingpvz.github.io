@@ -1,7 +1,8 @@
 var questions = {
 "test": {
   "settings": {
-    "n": "Ďalej"
+    "n": "Ďalej",
+    "ask": 10
   },
  "qr": [
     {
