@@ -1,5 +1,9 @@
 var questions = {
-"test": [
+"test": {
+  "settings": {
+    "n": "Ďalej"
+  },
+ "qr": [
     {
         "id": 0,
         "command": "Prelož!",
@@ -8,8 +12,7 @@ var questions = {
         "c2": "zóna",
         "c3": "Soňa",
         "c4": "zorna",
-        "c": 1,
-        "n": "Ďalej"
+        "c": 1
     },
     {
         "id": 1,
@@ -19,8 +22,7 @@ var questions = {
         "c2": "Nein.",
         "c3": "Maria.",
         "c4": "Zorna.",
-        "c": 3,
-        "n": "Ďalej"
+        "c": 3
     },
   {
     "id": 2,
@@ -30,8 +32,7 @@ var questions = {
     "c2": "c2 3",
     "c3": "c3 3",
     "c4": "c4 3",
-    "c": 2,
-    "n": "Next 3"
+    "c": 2
   },
   {
     "id": 3,
@@ -41,8 +42,7 @@ var questions = {
     "c2": "c2 4",
     "c3": "c3 4",
     "c4": "c4 4",
-    "c": 4,
-    "n": "Next 4"
+    "c": 4
   },
   {
     "id": 4,
@@ -52,8 +52,7 @@ var questions = {
     "c2": "c2 5",
     "c3": "c3 5",
     "c4": "c4 5",
-    "c": 1,
-    "n": "Next 5"
+    "c": 1
   },
   {
     "id": 5,
@@ -63,8 +62,7 @@ var questions = {
     "c2": "c2 6",
     "c3": "c3 6",
     "c4": "c4 6",
-    "c": 2,
-    "n": "Next 6"
+    "c": 2
   },
   {
     "id": 6,
@@ -74,8 +72,7 @@ var questions = {
     "c2": "c2 7",
     "c3": "c3 7",
     "c4": "c4 7",
-    "c": 3,
-    "n": "Next 7"
+    "c": 3
   },
   {
     "id": 7,
@@ -85,8 +82,7 @@ var questions = {
     "c2": "c2 8",
     "c3": "c3 8",
     "c4": "c4 8",
-    "c": 4,
-    "n": "Next 8"
+    "c": 4
   },
   {
     "id": 8,
@@ -96,8 +92,7 @@ var questions = {
     "c2": "c2 9",
     "c3": "c3 9",
     "c4": "c4 9",
-    "c": 1,
-    "n": "Next 9"
+    "c": 1
   },
   {
     "id": 9,
@@ -107,8 +102,7 @@ var questions = {
     "c2": "c2 10",
     "c3": "c3 10",
     "c4": "c4 10",
-    "c": 2,
-    "n": "Next 10"
+    "c": 2
   },
   {
     "id": 10,
@@ -118,9 +112,9 @@ var questions = {
     "c2": "c2 11",
     "c3": "c3 11",
     "c4": "c4 11",
-    "c": 3,
-    "n": "Next 11"
+    "c": 3
   }
-], 
+  ]
+}, 
 "places": []
 };

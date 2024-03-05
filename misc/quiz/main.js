@@ -1,8 +1,11 @@
-let qs = questions[q];
+let qs = questions[q]["qr"];
+let sts = questions[q]["settings"];
 
 let ids = [];
 let correct = 0;
 pts = 0;
+
+next.innerHTML = sts["n"];
 
 function endQuiz() {
   choices.style.display = 'none';
@@ -28,7 +31,6 @@ ids.push(chosen["id"]);
   c3.innerHTML = chosen["c3"];
   c4.innerHTML = chosen["c4"];
   correct = chosen["c"];
-  next.innerHTML = chosen["n"];
 } else {
   endQuiz();
 }
