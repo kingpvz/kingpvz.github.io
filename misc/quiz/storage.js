@@ -4,7 +4,7 @@ var questions = {
     "n": "Ďalej",
     "ask": 10,
     "done": "Hotovo.",
-    "text_points": "Počet bodov:"
+    "text_points": "Počet bodov"
   },
  "qr": [
     {

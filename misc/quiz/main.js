@@ -17,7 +17,7 @@ function readyUp() {
 function endQuiz() {
   choices.style.display = 'none';
   command.innerHTML = sts["done"];
-  query.innerHTML = sts["text_points"] + " " + stats["points"] + "/" + 100*sts["ask"];
+  query.innerHTML = sts["text_points"] + ": " + stats["points"] + "/" + 100*sts["ask"];
   statistics.style.display = 'block';
 }
 

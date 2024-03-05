@@ -31,7 +31,9 @@
       <h2 id="next" onclick="handleNext();">Next</button>
 
 <div id="stats">
-  
+  <p id="s_correct"></p>
+  <p id="s_wrong"></p>
+  <p id="s_rating"></p>
 </div>
         
     </div>
@@ -46,7 +48,9 @@ let c4 = document.getElementById('c4');
 let next = document.getElementById('next');
 let choices = document.getElementById('choices');
     let statistics = document.getElementById('stats');
-
+let s_correct = document.getElementById('s_correct');
+    let s_wrong = document.getElementById('s_wrong');
+    let s_rating = document.getElementById('s_rating');
 readyUp();
 randomQuestion();
   }

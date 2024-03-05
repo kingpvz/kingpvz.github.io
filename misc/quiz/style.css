@@ -50,7 +50,7 @@ html, body, #main {
 }
 
 .choice {
-  height: 30vw;
+  height: 25vw;
   background: linear-gradient(to bottom right, #333, #555);
   border-radius: 3vw;
   padding: 1.5vw;
