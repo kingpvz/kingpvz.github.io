@@ -16,6 +16,9 @@ function readyUp() {
 
 function endQuiz() {
   choices.style.display = 'none';
+  command.innerHTML = sts["done"];
+  query.innerHTML = sts["text_points"] + " " + stats["points"] + "/" + 100*sts["ask"];
+  statistics.style.display = 'block';
 }
 
 function randomQuestion() {
@@ -48,7 +51,7 @@ function answer(num){
     stats["points"] += 100;
     stats["correct"] += 1;
   } else {
-    stats["points"] -= 10;
+    stats["points"] -= 25;
     stats["wrong"] += 1;
   }
 

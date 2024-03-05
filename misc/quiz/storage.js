@@ -2,7 +2,9 @@ var questions = {
 "test": {
   "settings": {
     "n": "Ďalej",
-    "ask": 10
+    "ask": 10,
+    "done": "Hotovo.",
+    "text_points": "Počet bodov:"
   },
  "qr": [
     {

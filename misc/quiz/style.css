@@ -87,3 +87,7 @@ html, body, #main {
 #next:active {
   scale: 1.05;
 }
+
+#stats {
+  display: none;
+}
