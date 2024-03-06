@@ -30,12 +30,31 @@ header {
   box-shadow: 0 0 1vw black;
 
   img {
-    height: 10vw;
+    height: 9vw;
   }
 
   h1 {
-    font-size: 5vw;
+    font-size: 4.5vw;
     font-weight: 700;
+  }
+}
+
+.obj {
+  color: white;
+  background: linear-gradient(to bottom right, #009, #33b);
+  margin: 2vw;
+  padding: 2vw;
+  border-radius: 2vw;
+  box-shadow: 0 0 2.5vw white;
+
+  h1 {
+    font-size: 5vw;
+    font-weight: 500;
+  }
+
+  p {
+    font-size: 2.5vw;
+    font-weight: 300;
   }
 }
   
@@ -45,6 +64,12 @@ header {
     <a href="/" style="display: block;"><img src="/favicon.png" /></a>
     <h1 style="display: block;">Gymnázium F.V. Sasinka / Septima</h1>
   </header>
+  <br>
+  
+  <div class="obj" onclick="window.location.href = '../quiz?q=test'">
+  <h1>Test</h1>
+  <p>Predmet: Žiadny, Počet otázok: 11, Počet otázok v jednom kvíze: 8</p>
+  </div>
   
 </body>
 </html>
