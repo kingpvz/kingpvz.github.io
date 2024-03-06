@@ -105,7 +105,6 @@ html, body, #main {
 .navbutton {
   transition: 0.2s;
   width: 40vw;
-  visibility: hidden;
   display: flex;
   padding: 2.5vw;
   font-size: 5vw;
