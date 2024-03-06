@@ -44,7 +44,7 @@ header {
   background: linear-gradient(to bottom right, #009, #33b);
   margin: 4vw;
   padding: 4vw;
-  border-radius: 5vw;
+  border-radius: 4vw;
   box-shadow: 0 0 2vw white;
   text-align: center;
 
@@ -60,6 +60,36 @@ header {
     margin-bottom: 0;
   }
 }
+
+@media(min-width: 1120px){
+  header {
+    img {
+      height: 4.5vw;
+    }
+    h1 {
+      font-size: 2.25vw;
+    }
+  }
+
+  .obj {
+    margin: 2vw;
+    padding: 2vw;
+    border-radius: 2vw;
+    box-shadow: 0 0 1vw white;
+    h1 {
+      font-size: 2.5vw;
+    }
+    p {
+      font-size: 1.5vw;
+    }
+  }
+
+  #objcontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2vw;
+  }
+}
   
 </style>
 
@@ -67,12 +97,15 @@ header {
     <a href="/" style="display: block;"><img src="/favicon.png" /></a>
     <h1 style="display: block;">Gymnázium F.V. Sasinka / Septima</h1>
   </header>
-  <br>
   
+  <br>
+  <div id="objcontainer">
+    
   <div class="obj" onclick="window.location.href = '../quiz?q=test&r=hub'">
   <h1>Test</h1>
   <p>Seminár z Informatiky; 11 otázok (8 v jednom kvíze)</p>
   </div>
-  
+    
+  </div>
 </body>
 </html>
