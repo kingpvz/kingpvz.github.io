@@ -104,10 +104,10 @@ html, body, #main {
 
 .navbutton {
   transition: 0.2s;
-  width: 40vw;
+  width: 30vw;
   display: flex;
   padding: 2.5vw;
-  font-size: 5vw;
+  font-size: 4vw;
   margin: 0;
   background: linear-gradient(to bottom right, #00c, #66f);
   color: white;
@@ -129,7 +129,7 @@ html, body, #main {
 #navs {
   display: none;
   width: 90vw;
-  padding: 2vw;
-  margin-top: 2vw;
+  padding: 0;
+  margin-top: 3vw;
   justify-content: space-between;
 }
