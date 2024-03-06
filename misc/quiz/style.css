@@ -134,7 +134,7 @@ html, body, #main {
   justify-content: space-between;
 }
 
-@media(min-width: 720px;) {
+@media(min-width: 1120px;) {
   #command {
     width: 40vw;
     font-size: 4vw;
