@@ -19,6 +19,7 @@ function endQuiz() {
   command.innerHTML = sts["done"];
   query.innerHTML = sts["text_points"] + ": " + stats["points"] + "/" + 100*sts["ask"];
   statsc.style.display = 'block';
+  next.style.display = 'none';
 
   s_correct.innerHTML = sts["text_correct"] + ": " + stats["correct"];
   s_wrong.innerHTML = sts["text_wrong"] + ": " + stats["wrong"];
