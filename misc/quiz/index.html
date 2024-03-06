@@ -35,10 +35,15 @@
   <p id="s_wrong"></p>
   <p id="s_rating"></p>
 </div>
+      
+<div id="navs">
+  <h2 id="again" class="navbutton" onclick="tryAgain();">Try Again</h2>
+  <h2 id="returns" class="navbutton" onclick="returnHome();">Return Home</h2>
+</div>
         
     </div>
 <script>
-  let command, query, c1, c2, c3, c4, next, choices, statsc, s_correct, s_wrong, s_rating;
+  let command, query, c1, c2, c3, c4, next, choices, statsc, s_correct, s_wrong, s_rating, navs, again, returns;
   window.onload = function() {
     command = document.getElementById('command');
 query = document.getElementById('query');
@@ -52,6 +57,9 @@ s_correct = document.getElementById('s_correct');
     s_wrong = document.getElementById('s_wrong');
     s_rating = document.getElementById('s_rating');
 statsc = document.getElementById('statsc');
+    navs = document.getElementById('navs');
+    again = document.getElementById('again');
+    returns = document.getElementById('returns');
 readyUp();
 randomQuestion();
   }

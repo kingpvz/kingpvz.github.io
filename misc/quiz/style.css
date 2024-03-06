@@ -90,7 +90,7 @@ html, body, #main {
 
 #statsc {
   display: none;
-  background: linear-gradient(to bottom right, #ccc, #eee);
+  background: linear-gradient(to bottom right, #ccc, #fff);
   width: 90vw;
   border-radius: 3vw;
   padding: 2vw;
@@ -100,4 +100,37 @@ html, body, #main {
   p {
     margin: 1vw 0 1vw 2vw;
   }
+}
+
+.navbutton {
+  transition: 0.2s;
+  width: 40vw;
+  visibility: hidden;
+  display: flex;
+  padding: 2.5vw;
+  font-size: 5vw;
+  margin: 0;
+  background: linear-gradient(to bottom right, #00c, #66f);
+  color: white;
+  border-radius: 3vw;
+  border: solid #ddd 0.5vw;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbutton:hover {
+  scale: 1.05;
+}
+
+.navbutton:active {
+  scale: 1.1;
+}
+
+#navs {
+  display: none;
+  width: 90vw;
+  padding: 2vw;
+  margin-top: 2vw;
+  justify-content: space-between;
 }
