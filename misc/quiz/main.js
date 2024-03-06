@@ -12,6 +12,8 @@ let stats = {
 
 function readyUp() {
   next.innerHTML = sts["n"];
+  again.innerHTML = sts["text_again"];
+  returns.innerHTML = sts["text_return"];
 }
 
 function endQuiz() {
