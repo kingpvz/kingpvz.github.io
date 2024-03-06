@@ -10,7 +10,11 @@
 <body>
     <script src="../../global_resources/corefunc.js"></script>
     <script>
-        var q = GetURLParameter('q');
+      var q = GetURLParameter('q');
+      var r = "/";
+      if (GetURLParameter('r') !== null){
+        r = GetURLParameter('r');
+      }
     </script>
   <script src="storage.js"></script>
 <script src="main.js"></script>

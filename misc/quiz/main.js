@@ -158,5 +158,5 @@ function tryAgain() {
 }
 
 function returnHome() {
-  window.location.href = "hub";
+  window.location.href = r;
 }
