@@ -150,3 +150,11 @@ function handleNext() {
 
   randomQuestion();
 }
+
+function tryAgain() {
+  window.location.reload();
+}
+
+function returnHome() {
+  window.location.href = "hub";
+}
