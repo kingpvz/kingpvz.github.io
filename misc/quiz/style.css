@@ -35,7 +35,7 @@ html, body, #main {
   text-align: center;
   font-weight: 500;
   border-radius: 3vw;
-  padding: 1.75vw;
+  padding: 2vw;
   margin-top: 0;
 }
 
@@ -93,9 +93,11 @@ html, body, #main {
   background: linear-gradient(to bottom right, #ccc, #eee);
   width: 90vw;
   border-radius: 3vw;
-  padding: 1.5vw 4vw 1.5vw 4vw;
+  padding: 2vw;
   font-size: 4vw;
   color: #111;
   font-weight: 500;
-  margin-top: 1vw;
+  p {
+    margin: 1vw 0 1vw 2vw;
+  }
 }
