@@ -38,19 +38,20 @@
         
     </div>
 <script>
+  let command, query, c1, c2, c3, c4, next, choices, statsc, s_correct, s_wrong, s_rating;
   window.onload = function() {
-    let command = document.getElementById('command');
-let query = document.getElementById('query');
-let c1 = document.getElementById('c1');
-let c2 = document.getElementById('c2');
-let c3 = document.getElementById('c3');
-let c4 = document.getElementById('c4');
-let next = document.getElementById('next');
-let choices = document.getElementById('choices');
-let s_correct = document.getElementById('s_correct');
-    let s_wrong = document.getElementById('s_wrong');
-    let s_rating = document.getElementById('s_rating');
-let statsc = document.getElementById('statsc');
+    command = document.getElementById('command');
+query = document.getElementById('query');
+c1 = document.getElementById('c1');
+c2 = document.getElementById('c2');
+c3 = document.getElementById('c3');
+c4 = document.getElementById('c4');
+next = document.getElementById('next');
+choices = document.getElementById('choices');
+s_correct = document.getElementById('s_correct');
+    s_wrong = document.getElementById('s_wrong');
+    s_rating = document.getElementById('s_rating');
+statsc = document.getElementById('statsc');
 readyUp();
 randomQuestion();
   }
