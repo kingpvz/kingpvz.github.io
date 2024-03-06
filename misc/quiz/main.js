@@ -24,16 +24,16 @@ function endQuiz() {
   s_correct.innerHTML = sts["text_correct"] + ": " + stats["correct"];
   s_wrong.innerHTML = sts["text_wrong"] + ": " + stats["wrong"];
   let ratio = stats["points"]/100*sts["ask"];
-console.log(ratio);
+  
   if (ratio <= 0){
     s_rating.innerHTML = sts["r"]+ ": " + sts["r_fail"];
-  } else if (ratio <= 0.3){
+  } else if ((ratio <= 0.3) && (ratio > 0)){
     s_rating.innerHTML = sts["r"]+ ": " + sts["r_bad"];
-  } else if (ratio <= 0.6){
+  } else if ((ratio <= 0.6) && (ratio > 0.3)){
     s_rating.innerHTML = sts["r"]+ ": " + sts["r_ok"];
-  } else if (ratio <= 0.9){
+  } else if ((ratio <= 0.9) && (ratio > 0.6)){
     s_rating.innerHTML = sts["r"]+ ": " + sts["r_good"];
-  } else {
+  } else if (ratio > 0.9) {
     s_rating.innerHTML = sts["r"]+ ": " + sts["r_great"];
   }
 }
