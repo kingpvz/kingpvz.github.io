@@ -35,7 +35,7 @@ function endQuiz() {
     s_rating.innerHTML = sts["r"]+ ": " + sts["r_ok"];
   } else if ((ratio <= 0.85) && (ratio > 0.6)){
     s_rating.innerHTML = sts["r"]+ ": " + sts["r_good"];
-  } else if (ratio > 0.9) {
+  } else if (ratio > 0.85) {
     s_rating.innerHTML = sts["r"]+ ": " + sts["r_great"];
   }
 }
