@@ -238,6 +238,8 @@ var questions = {
      "c": 4
     }
   ]
-}, 
-"places": []
+}
+
+
+  
 };
