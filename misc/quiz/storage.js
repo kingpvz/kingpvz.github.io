@@ -109,24 +109,134 @@ var questions = {
   },
   {
     "id": 9,
-    "command": "Vypočítaj!",
-    "query": "sum(i=1, 2)",
-    "c1": "5",
-    "c2": "3",
-    "c3": "2",
-    "c4": "1",
+    "command": "Rozdeľ!",
+    "query": "Delenie politických strán podla vzťahu k moci.",
+    "c1": "Liberálne a Konzervatívne",
+    "c2": "Vládne a Opozičné",
+    "c3": "Pravicové a Ľavicové",
+    "c4": "Parlamentné a Neparlamentné",
     "c": 2
   },
   {
     "id": 10,
-    "command": "Hurá!",
-    "query": "Kon_č_e!",
-    "c1": "e ň",
-    "c2": "é n",
-    "c3": "e n",
-    "c4": "é ň",
+    "command": "Definuj!",
+    "query": "Vládne Strany",
+    "c1": "Nemajú ministrov.",
+    "c2": "Kritizujú koalíciu.",
+    "c3": "Sú súčasťou vládnej koalície.",
+    "c4": "Nemajú politickú moc.",
     "c": 3
-  }
+  },
+   {
+     "id": 11,
+    "command": "Definuj!",
+    "query": "Opozičné Strany",
+    "c1": "Majú len 1 ministra.",
+    "c2": "Usilujú sa získať politickú moc.",
+    "c3": "Nie sú súčasťou parlamentu.",
+    "c4": "Podporujú vládu.",
+    "c": 2
+   },
+   {
+   "id": 12,
+    "command": "Definuj!",
+    "query": "Konzervatívne Strany",
+    "c1": "Majú odpor k súkromnému podnikaniu.",
+    "c2": "Ľavicové až stredové strany.",
+    "c3": "Chcú vojensky obsadiť Venezuelu.",
+    "c4": "Kladú dôraz na tradičné hodnoty.",
+    "c": 4
+   },
+   {
+     "id": 13,
+    "command": "Definuj!",
+    "query": "Liberálne Strany",
+    "c1": "Preferujú občianske práva.",
+    "c2": "Ultrapravicové strany.",
+    "c3": "Sú proti občianskemu základu spoločnosti.",
+    "c4": "Kladú dôraz na kvalitu školstva.",
+    "c": 1
+   },
+   {
+     "id": 14,
+    "command": "Definuj!",
+    "query": "Sociálne (Socialistické) Strany",
+    "c1": "Posporujú súkromné vlastníctvo.",
+    "c2": "Podporujú inovácie, rozvoj a šport.",
+    "c3": "Orientujú sa na pracujúce vrstvy.",
+    "c4": "Ľudia sú dostatočne inteligentní na to, aby tieto strany nevolili.",
+    "c": 3
+   },
+   {
+     "id": 15,
+    "command": "Typ strany?",
+    "query": "Sociálny štát, reálna sloboda, človek ako kolektív.",
+    "c1": "Fašistická",
+    "c2": "Ľavicová",
+    "c3": "Stredová",
+    "c4": "Pravicová",
+    "c": 2
+   },
+   {
+     "id": 16,
+    "command": "Typ strany?",
+    "query": "Postupný vývoj, formálna sloboda, zníženie inflácie.",
+    "c1": "Fašistická",
+    "c2": "Ľavicová",
+    "c3": "Stredová",
+    "c4": "Pravicová",
+    "c": 4
+   },
+   {
+     "id": 17,
+    "command": "Definuj!",
+    "query": "Ľavicová Strana",
+    "c1": "Splynutie štátu a spoločnosti.",
+    "c2": "Dôraz na nepriamu demokraciu.",
+    "c3": "Liberalizácia a deregulácia.",
+    "c4": "Človek je jednotlivec.",
+    "c": 1
+   },
+   {
+     "id": 18,
+    "command": "Definuj!",
+    "query": "Pravicová Strana",
+    "c1": "Splynutie štátu a spoločnosti.",
+    "c2": "Platí rovnosť výsledkov.",
+    "c3": "Liberalizácia a deregulácia.",
+    "c4": "Rýchla zmena (revolúcia, reforma, ...)",
+    "c": 3
+   },
+   {
+     "id": 19,
+    "command": "Definuj!",
+    "c1": "Občianske skupiny - občanov zjednocujú spoločné záujmy.",
+    "c2": "Politické skupiny - nevstupujú do tvorby politiky.",
+    "c3": "Združenia bez konkrétneho záujmu.",
+    "query": "Nátlakové Skupiny",
+    "c4": "Občianske združenie - chce priamo vstúpiť do politiky ako hnutie.",
+    "c": 1
+   },
+   {
+      "id": 20,
+     "command": "Odpovedz!",
+     "query": "Ktorá z nasledovných <b>nieje</b> ekonomická nátlaková skupina?",
+     "c1": "Výrobné združenie a odbory.",
+     "c2": "Ekologické združenie.",
+     "c3": "Obchodné združenie.",
+     "c4": "Poľnohospodárske združenie.",
+     "c": 2
+    },
+    {
+      "id": 21,
+     "command": "Odpovedz!",
+     "query": "Ktorá z nasledovných <b>nieje</b> neekonomická nátlaková skupina?",
+     "c1": "Mierové organizácie a organizácie na ochranu ľudských práv.",
+     "c2": "Združenie miest a obcí.",
+     "c3": "Kriminálne organizácie.",
+     "c4": "Zamestnanecké zväzy.",
+     "c": 4
+    }
   ]
 }, 
 "places": []
