@@ -64,8 +64,15 @@ statsc = document.getElementById('statsc');
     navs = document.getElementById('navs');
     again = document.getElementById('again');
     returns = document.getElementById('returns');
+    if (questions.has(q)){
 readyUp();
 randomQuestion();
+  }
+    else {
+      choices.style.display = 'none';
+      command.innerHTML = 'Quiz Not Found';
+      query.innerHTML = 'The link that redirected you here is either incorrect, or the quiz has expired and is no longer available.';
+    }
   }
 </script>
 </body>
