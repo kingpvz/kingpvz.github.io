@@ -277,6 +277,96 @@ var questions = {
      "c3": "Múzeum firiem s rovnakým zameraním.",
      "c4": "Park financovaný nejakým podnikom.",
      "c": 1
+   },
+   {
+     "id":2,
+     "command": "Palivá",
+     "query": "Ktoré priradenie je pravdivé?",
+     "c1": "Ropa - Láb<br>Lignit - Gbely<br>Hnedé Uhlie - Modrý Kameň",
+     "c2": "Ropa - Malacky<br>Zemný Plyn - Handlová<br>Lignit - Nováky",
+     "c3": "Ropa - Gbely<br>Zemný Plyn - Malacky<br>Hnedé Uhlie - Prievidza",
+     "c4": "Ropa - Nováky<br>Hnedé Uhlie - Gbely<br>Lignit - Prievidza",
+     "c": 3
+   },
+   {
+     "id":3,
+     "command": "Rudné suroviny",
+     "query": "Kde sa ťaží železo a meď?",
+     "c1": "Abov (Košice, Trebišov)",
+     "c2": "Kremnica, Banská Štiavnica",
+     "c3": "Orava (Dolný Kubín, Ružomberok)",
+     "c4": "Spiš (Rožňava, Rudňany)",
+     "c": 4
+   },
+   {
+     "id":4,
+     "command": "Rudné suroviny",
+     "query": "Kde sa ťaží striebri a zlato?",
+     "c1": "Abov (Košice, Trebišov)",
+     "c2": "Kremnica, Banská Štiavnica",
+     "c3": "Orava (Dolný Kubín, Ružomberok)",
+     "c4": "Spiš (Rožňava, Rudňany)",
+     "c": 2
+   },
+   {
+     "id":5,
+     "command": "Nerudné suroviny",
+     "query": "Kde sa ťaží magnezit?",
+     "c1": "Jelšava, Lubeník",
+     "c2": "Solivar, Zbudza",
+     "c3": "Malá Fatra",
+     "c4": "Dobšiná",
+     "c": 1
+   },
+   {
+     "id":6,
+     "command": "Nerudné suroviny",
+     "query": "Kde sa ťaží kamenná soľ?",
+     "c1": "Jelšava, Lubeník",
+     "c2": "Solivar, Zbudza",
+     "c3": "Hnúšťa",
+     "c4": "Dobšiná",
+     "c": 2
+   },
+   {
+     "id":7,
+     "command": "Nerudné suroviny",
+     "query": "Kde sa ťaží vápenec?",
+     "c1": "Hnúšťa",
+     "c2": "Solivar, Zbudza",
+     "c3": "Malá Fatra",
+     "c4": "Dobšiná",
+     "c": 3
+   },
+   {
+     "id":8,
+     "command": "Nerudné suroviny",
+     "query": "Kde sa ťaží mastenec?",
+     "c1": "Malá Fatra",
+     "c2": "Dobšiná",
+     "c3": "Jelšava, Lubeník",
+     "c4": "Hnúšťa",
+     "c": 4
+   },
+   {
+     "id":9,
+     "command": "Nerudné suroviny",
+     "query": "Kde sa ťaží wzbest?",
+     "c1": "Jelšava, Lubeník",
+     "c2": "Hnúšťa",
+     "c3": "Malá Fatra",
+     "c4": "Dobšiná",
+     "c": 4
+   },
+   {
+     "id":10,
+     "command": "Strojárstvo",
+     "query": "Ktoré priradenie je pravdivé?",
+     "c1": "Brat",
+     "c2": "Solivar, Zbudza",
+     "c3": "Bratislava",
+     "c4": "Dobšiná",
+     "c": 3
    }
    ]
 }
