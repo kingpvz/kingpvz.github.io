@@ -60,7 +60,7 @@ var questions = {
   {
     "id": 4,
     "command": "Vznik politickej strany.",
-    "query": "Ktorá z týchto možností <b>nieje</b> podmienkou na registráciu politickej strany?",
+    "query": "Ktorá z týchto možností <b>nie je</b> podmienkou na registráciu politickej strany?",
     "c1": "Kaucia 5000€ za založenie strany.",
     "c2": "Petícia s 10000 podpismi.",
     "c3": "Stanovy a program strany.",
@@ -80,7 +80,7 @@ var questions = {
   {
     "id": 6,
     "command": "Zákaz politických strán.",
-    "query": "Ktoré z uvedených politických strán <b>niesu</b> zakázané?",
+    "query": "Ktoré z uvedených politických strán <b>nie sú</b> zakázané?",
     "c1": "Nemravné",
     "c2": "Rasistické",
     "c3": "Liberálne",
@@ -220,7 +220,7 @@ var questions = {
    {
       "id": 20,
      "command": "Odpovedz!",
-     "query": "Ktorá z nasledovných <b>nieje</b> ekonomická nátlaková skupina?",
+     "query": "Ktorá z nasledovných <b>nie je</b> ekonomická nátlaková skupina?",
      "c1": "Výrobné združenie a odbory.",
      "c2": "Ekologické združenie.",
      "c3": "Obchodné združenie.",
@@ -230,7 +230,7 @@ var questions = {
     {
       "id": 21,
      "command": "Odpovedz!",
-     "query": "Ktorá z nasledovných <b>nieje</b> neekonomická nátlaková skupina?",
+     "query": "Ktorá z nasledovných <b>nie je</b> neekonomická nátlaková skupina?",
      "c1": "Mierové organizácie a organizácie na ochranu ľudských práv.",
      "c2": "Združenie miest a obcí.",
      "c3": "Kriminálne organizácie.",
@@ -261,7 +261,7 @@ var questions = {
    {
      "id":0,
      "command": "Odpovedz!",
-     "query": "Ktoré tvrdenie o Slovenskom priemysle <b>nieje</b> pravdivé?",
+     "query": "Ktoré tvrdenie o Slovenskom priemysle <b>nie je</b> pravdivé?",
      "c1": "Zamestnáva najviac pracujúcich.",
      "c2": "Vytvára tretinu hospodárskej výroby.",
      "c3": "Jeho výrobky tvoria väčšinu vývozu do zahraničia.",
@@ -301,7 +301,7 @@ var questions = {
    {
      "id":4,
      "command": "Rudné suroviny",
-     "query": "Kde sa ťaží striebri a zlato?",
+     "query": "Kde sa ťaží striebro a zlato?",
      "c1": "Abov (Košice, Trebišov)",
      "c2": "Kremnica, Banská Štiavnica",
      "c3": "Orava (Dolný Kubín, Ružomberok)",
@@ -351,7 +351,7 @@ var questions = {
    {
      "id":9,
      "command": "Nerudné suroviny",
-     "query": "Kde sa ťaží wzbest?",
+     "query": "Kde sa ťaží azbest?",
      "c1": "Jelšava, Lubeník",
      "c2": "Hnúšťa",
      "c3": "Malá Fatra",
@@ -371,7 +371,7 @@ var questions = {
    {
      "id":11,
      "command": "Strojárstvo",
-     "query": "Ktoré priradenie <b>nieje</b> pravdivé?",
+     "query": "Ktoré priradenie <b>nie je</b> pravdivé?",
      "c1": "Motocykle: Považská Bystrica<br>Traktory: Martin",
      "c2": "Ložiská: Nové Mesto nad Váhom<br>Lode: Štúrovo",
      "c3": "Zdravotnícka Technika: Piešťany<br>Lode: Komárno",
@@ -401,12 +401,152 @@ var questions = {
    {
      "id":14,
      "command": "Hutníctvo",
-     "query": "Ktorý hutnícky podik je zrušený?",
+     "query": "Ktorý hutnícky podnik je zrušený?",
      "c1": "Železiarne Podbrezová",
      "c2": "Kovohuty Krompachy",
      "c3": "Drôtovňa Hlohovec",
      "c4": "Niklová Huť Sereď",
      "c": 4
+   },
+   {
+     "id":15,
+     "command": "Elektrárne",
+     "query": "Ktorá z týchto elektrární neexistuje?",
+     "c1": "Jadrová elektráreň Jaslovské Bohunice",
+     "c2": "Tepelná elektráreň Vojany",
+     "c3": "Solárna elektráreň Pusté Sady",
+     "c4": "Vodná elektráreň Gabčíkovo",
+     "c": 3
+   },
+   {
+     "id":16,
+     "command": "Jadrové Elektrárne",
+     "query": "Kde sa nachádzajú na Slovensku?",
+     "c1": "Jaslovské Bohunice, Zlaté Moravce",
+     "c2": "Jaslovské Bohunice, Mochovce",
+     "c3": "Zlaté Moravce, Špačince",
+     "c4": "Mochovce, Špačince",
+     "c": 2
+   },
+   {
+     "id":17,
+     "command": "Odpovedz!",
+     "query": "Ktorá z týchto kombinácii gumárenských a chemických priemyslov je pravdivá?",
+     "c1": "Bratislava - Slovnaft<br>Šaľa - Duslo<br>Smolenice - Chemolak",
+     "c2": "Bratislava - Chemoprén<br>Nováky - NCHZ<br>Šaľa - Chemolak",
+     "c3": "Košice - Gumolak<br>Bratislava - Istrochem<br>Trenčín - Duslo",
+     "c4": "Dobšiná - Duslo<br>Bratislava - Slovnaft<br>Šaľa - NCHZ",
+     "c": 1
+   },
+   {
+     "id":18,
+     "command": "Odpovedz!",
+     "query": "Kde sa <b>nevyrába</b> plast a syntetické vlákna?",
+     "c1": "Strážske",
+     "c2": "Senica",
+     "c3": "Svit",
+     "c4": "Senec",
+     "c": 4
+   },
+   {
+     "id":19,
+     "command": "Gumárenská výroba",
+     "query": "Ktorá kombinácia je pravdivá?",
+     "c1": "MATADOR Michalovce<br>GUMON Púchov<br>VEGUM Bratislava",
+     "c2": "MATADOR Púchov<br>GUMON Bratislava<br>VEGUM Dolné Vestenice",
+     "c3": "MATADOR Trnava<br>GUMON Bratislava<br>VEGUM Vlčkovice",
+     "c4": "MATADOR Bratislava<br>GUMON Nováky<br>VEGUM Horné Dubové",
+     "c": 2
+   },
+   {
+     "id":20,
+     "command": "Farmaceutický priemysel",
+     "query": "V ktorom s týchto miest <i>nie je</i> prítomný?",
+     "c1": "Hlohovec",
+     "c2": "Nitra",
+     "c3": "Piešťany",
+     "c4": "Šarišské Michaľany",
+     "c": 3
+   },
+   {
+     "id":21,
+     "command": "Potravinársky priemysel",
+     "query": "Ktorá z týchto kombinácií <b>nie je</b> pravdivá?",
+     "c1": "Pivovar Banská Bystrica<br>Mlyny Trenčín<br>Cukrovary Bratislava",
+     "c2": "Mlyny Nitra<br>Pivovar Holíč<br>Konzervárne Levice",
+     "c3": "Pivovar Hurbanovo<br>Cukrovary Trnava<br>Mlyny Nitra",
+     "c4": "Pekárne Sereď<br>Pivovar Topoľčany<br>Konzervárne Levice",
+     "c": 1
+   },
+   {
+     "id":22,
+     "command": "Textilný priemysel",
+     "query": "Ktorá z týchto kombinácií <b>nie je</b> pravdivá?",
+     "c1": "Bavlnárstvo Ružomberok<br>Spracovanie Ľanu Kežmarok",
+     "c2": "Hodvábnictvo Žilina<br>Pletiarstvo Trenčín",
+     "c3": "Hodvábnictvo Levice<br>Pletiarstvo Bratislava",
+     "c4": "Bavlnárstvo Bratislava<br>Pletiarstvo Svit",
+     "c": 2
+   },
+   {
+     "id":23,
+     "command": "Odevný priemysel",
+     "query": "V ktorom z nasledovných miest sa nenachádza odevný závod?",
+     "c1": "Sabinov",
+     "c2": "Trenčín",
+     "c3": "Prešov",
+     "c4": "Púchov",
+     "c": 1
+   },
+   {
+     "id":24,
+     "command": "Odpovedz!",
+     "query": "Ktoré tvrdenie je pravdivé?",
+     "c1": "V Bánovcách nad Bebravou sa vyrába koža a v Poprade obuv.",
+     "c2": "V Bardejove sa vyrába koža a v Bošanoch obuv.",
+     "c3": "V Poprade sa vyrába koža a v Liptovskom Mikuláši obuv.",
+     "c4": "V Bošanoch sa vyrába koža a v Partizánskom obuv.",
+     "c": 4
+   },
+   {
+     "id":25,
+     "command": "Stavebné materiály",
+     "query": "Ktorá kombinácia <b>nie je</b> pravdivá?",
+     "c1": "Cementárne Rohožník a Varín<br>Keramika Lučenec",
+     "c2": "Cementárne Dolné Dubové a Ostré<br>Magnezit Košolná",
+     "c3": "Cementárne Horné Sŕnie a Bystré<br>Keramika Michalovce",
+     "c4": "Cementárne Lietavská Lúčka a Turňa nad Bodvou<br>Magnezit Jelšava",
+     "c": 2
+   },
+   {
+     "id":26,
+     "command": "Sklársky Priemysel",
+     "query": "Ktorý z nasledovných podnikov neexistuje?",
+     "c1": "Úžitkové Sklo Zlatno",
+     "c2": "Laboratórne Sklo Bratislava",
+     "c3": "Vedecké Sklo Poltár",
+     "c4": "Obalové Sklo Nemšová",
+     "c": 3
+   },
+   {
+     "id":27,
+     "command": "Drevospracujúci priemysel",
+     "query": "Ktorá kombinácia <b>nie je</b> pravdivá?",
+     "c1": "Nábytok Bratislava<br>Celulózka Žilina",
+     "c2": "Nábytok Turany<br>Celulózka Pravno",
+     "c3": "Nábytok Lučenec<br>Celulózka Ružomberok",
+     "c4": "Nábytok Topoľčany<br>Celulózka Štúrovo",
+     "c": 2
+   },
+   {
+     "id":28,
+     "command": "Polygrafický priemysel",
+     "query": "Čomu sa venuje a kde je sústredený?",
+     "c1": "Vydávanie novín, časopisov a kníh. (Bratislava, Martin, Nitra, ...)",
+     "c2": "Výroba obalov a kartónu. (Prešov, Trenčín, Trebišov, ...)",
+     "c3": "Výroba tlačiarní a atramentu. (Komárno, Nitra, Rimavská Sobota, ...)",
+     "c4": "Vydávanie plagátov, billboardov a letákov. (Košice, Bratislava, Žilina, ...)",
+     "c": 1
    }
    ]
 }
