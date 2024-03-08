@@ -258,7 +258,16 @@ var questions = {
     "text_return": "Návrat Domov"
   },
  "qr": [
-   
+   {
+     "id":0,
+     "command": "Odpovedz!",
+     "query": "Ktoré tvrdenie o Slovenskom priemysle <b>nieje</b> pravdivé?",
+     "c1": "Zamestnáva najviac pracujúcich.",
+     "c2": "Vytvára tretinu hospodárskej výroby.",
+     "c3": "Jeho výrobky tvoria väčšinu vývozu do zahraničia.",
+     "c4": "Strojárstvo je jeho prvládajúce odvetvie.",
+     "c": 2
+   }
    ]
 }
   
