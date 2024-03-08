@@ -267,6 +267,16 @@ var questions = {
      "c3": "Jeho výrobky tvoria väčšinu vývozu do zahraničia.",
      "c4": "Strojárstvo je jeho prvládajúce odvetvie.",
      "c": 2
+   },
+   {
+     "id":1,
+     "command": "Definuj!",
+     "query": "Priemyselný Park",
+     "c1": "Združenie viacerých firiem na jednom mieste.",
+     "c2": "Prehľad firmy a jej histórie.",
+     "c3": "Múzeum firiem s rovnakým zameraním.",
+     "c4": "Park financovaný nejakým podnikom.",
+     "c": 1
    }
    ]
 }
