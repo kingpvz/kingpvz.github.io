@@ -238,8 +238,28 @@ var questions = {
      "c": 4
     }
   ]
+},
+
+"priemysel": {
+  "settings": {
+    "n": "Ďalej",
+    "ask": 11,
+    "done": "Hotovo.",
+    "text_points": "Počet bodov",
+    "text_correct": "Správne",
+    "text_wrong": "Nesprávne",
+    "r": "Hodnotenie",
+    "r_fail": "Ideš do sexty",
+    "r_bad": "Tam sa ešte chyby najdu a dostaneš 5",
+    "r_ok": "Ešte jeden bod ti chybal do 4",
+    "r_good": "Čista štyrka",
+    "r_great": "Pri dobrej nálade profesorky dostaneš jednotku (šanca minimálna)",
+    "text_again": "Skúsiť Znova",
+    "text_return": "Návrat Domov"
+  },
+ "qr": [
+   
+   ]
 }
-
-
   
 };
