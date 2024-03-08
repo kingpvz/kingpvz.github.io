@@ -547,6 +547,96 @@ var questions = {
      "c3": "Výroba tlačiarní a atramentu. (Komárno, Nitra, Rimavská Sobota, ...)",
      "c4": "Vydávanie plagátov, billboardov a letákov. (Košice, Bratislava, Žilina, ...)",
      "c": 1
+   },
+   {
+     "id":29,
+     "command": "História poľnohospodárstva",
+     "query": "Aký podiel obyvateľstva pracoval v poľnohospodárstve na začiatku 20. storočia?",
+     "c1": "1/5",
+     "c2": "2/5",
+     "c3": "3/5",
+     "c4": "4/5",
+     "c": 3
+   },
+   {
+     "id":30,
+     "command": "História poľnohospodárstva",
+     "query": "Aký veľký pozemok bol zabraný pozemkovou reformou z roku 1919?",
+     "c1": "Lesy nad 20ha.",
+     "c2": "Polia nad 30ha.",
+     "c3": "Orná pôda nad 40ha.",
+     "c4": "Všetok nad 50ha.",
+     "c": 4
+   },
+   {
+     "id":31,
+     "command": "História poľnohospodárstva",
+     "query": "Čo bolo v pláne združstevňovania poľnohospodárskej výroby?",
+     "c1": "Odovzdávanie pôdy, techniky a zvierat družstvám a štátnym majetkom.",
+     "c2": "Odovzdávanie poľnohospodárskych výrobkov a iných hotových produktov družstvám.",
+     "c3": "Zoštátnenie všetkých družstiev.",
+     "c4": "Odovzdanie štátnych majetkov družstvám.",
+     "c": 1
+   },
+   {
+     "id":32,
+     "command": "História poľnohospodárstva",
+     "query": "Čo sa stalo v 70. rokoch minulého storočia?",
+     "c1": "Rozpad poľnohospodárskych družstiev.",
+     "c2": "Zlučovanie do aglomerovaných družstiev.",
+     "c3": "Zákon o pozemkovej reforme.",
+     "c4": "Plán združstevňovania poľnohospodárskej výroby.",
+     "c": 2
+   },
+   {
+     "id":33,
+     "command": "Poľnohospodárske fakty",
+     "query": "Ktoré údaje sú pravdivé o poľnohospodárstve?",
+     "c1": "6% Pracujúcich<br>4% HDP<br>32.7% Rozlohy SR",
+     "c2": "4% Pracujúcich<br>3.5% HDP<br>49.3% Rozlohy SR",
+     "c3": "5% Pracujúcich<br>3% HDP<br>56.6% Rozlohy SR",
+     "c4": "7% Pracujúcich<br>5% HDP<br>41.8 Rozlohy SR",
+     "c": 2
+   },
+   {
+     "id":34,
+     "command": "Poľnohospodárske fakty",
+     "query": "Ktoré tvrdenie <b>nie je</b> pravdivé?",
+     "c1": "Nastáva postupný úbytok ornej pôdy.",
+     "c2": "Celkovo prevláda živočíšna výroba.",
+     "c3": "Zvyšuje sa počet chovaných hospodárskych zvierat.",
+     "c4": "Väčšinu osevnej plochy zaberajú obilniny.",
+     "c": 3
+   },
+   {
+     "id":35,
+     "command": "Odpovedz!",
+     "query": "Ktoré tvrdenie o kukuričnej p.v.o. <b>nie je</b> pravdivé?",
+     "c1": "Má najpriaznivejšie podmienky na rozvoj poľnohospodárstva.",
+     "c2": "Vyhovujú černozeme.",
+     "c3": "Potrebuje teplo a dostatok závlahy.",
+     "c4": "Pahorkatiny od 600 m.n.m.",
+     "c": 4
+   },
+   {
+     "id":36,
+     "command": "Odpovedz!",
+     "query": "Ktoré tvrdenie o repárskej p.v.o. <b>nie je</b> pravdivé?",
+     "c1": "Územia 200-300 m.n.m.",
+     "c2": "Vyhovujú hnedozeme.",
+     "c3": "Ideálny úhrn zrážok: 200-250mm",
+     "c4": "Rozvinuté je vinohradníctvo.",
+     "c": 3
+   },
+   {
+     "id":37,
+     "command": "Odpovedz!",
+     "query": "Ktoré tvrdenie o zemiakarskej p.v.o. <b>nie je</b> pravdivé?",
+     "c1": "Prevažne stred a sever Slovenska.",
+     "c2": "Vyhovujú zrážky okolo 700mm.",
+     "c3": "Prevládajú kambizeme.",
+     "c4": "Kotliny a nížiny.",
+     "c": 4
    }
    ]
 }
