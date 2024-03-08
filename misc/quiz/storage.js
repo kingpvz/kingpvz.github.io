@@ -362,11 +362,51 @@ var questions = {
      "id":10,
      "command": "Strojárstvo",
      "query": "Ktoré priradenie je pravdivé?",
-     "c1": "Brat",
-     "c2": "Solivar, Zbudza",
-     "c3": "Bratislava",
-     "c4": "Dobšiná",
+     "c1": "BA - Kia<br>KE - Volkswagen<br>BB - Peugeot",
+     "c2": "BA - Peugeot<br>KE - Volkswagen<br>ZA - Kia",
+     "c3": "BA - Volkswagen<br>TT - Peugeot<br>ZA - Kia",
+     "c4": "BA - Volkswagen<br>TT - Kia<br>TR - Peugeot",
      "c": 3
+   },
+   {
+     "id":11,
+     "command": "Strojárstvo",
+     "query": "Ktoré priradenie <b>nieje</b> pravdivé?",
+     "c1": "Motocykle: Považská Bystrica<br>Traktory: Martin",
+     "c2": "Ložiská: Nové Mesto nad Váhom<br>Lode: Štúrovo",
+     "c3": "Zdravotnícka Technika: Piešťany<br>Lode: Komárno",
+     "c4": "Motocykle: Považská Bystrica<br>Vagóny: Trnava",
+     "c": 2
+   },
+   {
+     "id":12,
+     "command": "Strojárstvo",
+     "query": "Ktoré priradenie je pravdivé?",
+     "c1": "Stavebné Stroje: Detva<br>Ložiská: Prešov",
+     "c2": "Vagóny: Komárno<br>Automatické práčky: Skalica",
+     "c3": "Zdravotnícka technika: Bratislava<br>Armatúry: Poprad",
+     "c4": "Ložiská: Senica<br>Traktory: Trebišov",
+     "c": 1
+   },
+   {
+     "id":13,
+     "command": "Elektronické Strojárstvo",
+     "query": "Ktoré z nasledovných je silnoprúdové?",
+     "c1": "Telefóny Stropkov",
+     "c2": "Samsung Galanta",
+     "c3": "Siemens Bratislava",
+     "c4": "Televízory Nižná",
+     "c": 3
+   },
+   {
+     "id":14,
+     "command": "Hutníctvo",
+     "query": "Ktorý hutnícky podik je zrušený?",
+     "c1": "Železiarne Podbrezová",
+     "c2": "Kovohuty Krompachy",
+     "c3": "Drôtovňa Hlohovec",
+     "c4": "Niklová Huť Sereď",
+     "c": 4
    }
    ]
 }
