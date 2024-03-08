@@ -637,6 +637,76 @@ var questions = {
      "c3": "Prevládajú kambizeme.",
      "c4": "Kotliny a nížiny.",
      "c": 4
+   },
+   {
+     "id":38,
+     "command": "Odpovedz!",
+     "query": "Ktoré tvrdenie o zemiakarsko-ovesnej p.v.o. <b>nie je</b> pravdivé?",
+     "c1": "Vysoké priemerné ročné teploty (nad 15°C)",
+     "c2": "Tvorí prechod k horskej p.v.o.",
+     "c3": "Zemiaky, krmoviny, ovos.",
+     "c4": "Vysoko položené kotliny.",
+     "c": 1
+   },
+   {
+     "id":39,
+     "command": "Odpovedz!",
+     "query": "Ktoré tvrdenie o horskej p.v.o. <b>nie je</b> pravdivé?",
+     "c1": "Vysoký úhrn zrážok (nad 800mm).",
+     "c2": "Oblasti do 600 m.n.m.",
+     "c3": "Raž, ovos, zamiaky, ľan, ...",
+     "c4": "Podzolové pôdy.",
+     "c": 2
+   },
+   {
+     "id":40,
+     "command": "Vinárske oblasti",
+     "query": "Na Slovensku ich máne 6: Malokarpatskú, Južnoslovenskú, Tokajskú, ?",
+     "c1": "Západoslovenskú, Stredoslovenskú a Východoslovenskú.",
+     "c2": "Bielokarpatskú, Rubínsku a Juhovýchodoslovenskú.",
+     "c3": "Nitriansku, Stredoslovenskú a Východoslovenskú.",
+     "c4": "Rubínsku, Nitriansku a Severoslovenskú.",
+     "c": 3
+   },
+   {
+     "id":41,
+     "command": "Odpovedz!",
+     "query": "Ktoré tvrdenie o Slovenských lesoch je pravdivé?",
+     "c1": "Pokrývajú približne 41% územia SR.",
+     "c2": "Prevažujú ihličnany.",
+     "c3": "Delíme ich na 2 kategórie (hospodárske a ochranné).",
+     "c4": "Hospodárske lesi využívame na vodohospodárenie.",
+     "c": 1
+   },
+   {
+     "id":42,
+     "command": "Vodné hospodárstvo",
+     "query": "O čo sa nestará?",
+     "c1": "Zabezpečenie vody pre obyvateľov a priemysel.",
+     "c2": "Sieť kanalizácie a čistenie vody.",
+     "c3": "Ochranu ľadovcov pred topením.",
+     "c4": "Protipovodňovú ochranu.",
+     "c": 3
+   },
+   {
+     "id":43,
+     "command": "Odpovedz!",
+     "query": "Čo z nasledujúcich možností znečisťuje podzemnú vodu?",
+     "c1": "Poľnohospodárstvo a priemysel.",
+     "c2": "Domácnosti, sklady a nemocnice.",
+     "c3": "Cestovný ruch a doprava.",
+     "c4": "Všetko z uvedených.",
+     "c": 4
+   },
+   {
+     "id":44,
+     "command": "Odpovedz!",
+     "query": "Ktoré látky <b>neznečisťujú</b> podzemnú vodu?",
+     "c1": "Pesticídy.",
+     "c2": "Oxidy vodíka.",
+     "c3": "Dusíkaté látky.",
+     "c4": "Chlór a ťažké kovy.",
+     "c": 2
    }
    ]
 }
