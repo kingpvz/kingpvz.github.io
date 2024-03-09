@@ -12,7 +12,7 @@ var questions = [
     {
         "id": 2,
         "command": "Answer!",
-        "query": "Wie heiﬂt du?",
+        "query": "Wie hei&szlig;t du?",
         "c1": "Gut",
         "c2": "Nein",
         "c3": "Maria",

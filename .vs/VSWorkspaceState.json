@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\misc",
+    "\\misc\\quiz",
+    "\\misc\\quiz\\files"
   ],
-  "SelectedNode": "\\robots.txt",
   "PreviewInSolutionExplorer": false
 }
