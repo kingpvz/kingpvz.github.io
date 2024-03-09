@@ -10,22 +10,14 @@
 <body>
     <script src="../../global_resources/corefunc.js"></script>
     <script>
-        var q = GetURLParameter('q');
-
-        const wa = document.createElement("script");
-        wa.src = "https://kingpvz.github.io/misc/quiz/files/" + q + ".js";
-        document.body.prepend(wa);
-
-        const waa = document.createElement("script");
-        waa.src = "main.js";
-        document.body.prepend(waa);
-
-        const waaa = document.createElement("script");
-        waaa.innerHTML = `
-        randomQuestion();
-        `;
-        document.body.append(waaa);
+      var q = GetURLParameter('q');
+      var r = "/";
+      if (GetURLParameter('r') !== null){
+        r = GetURLParameter('r');
+      }
     </script>
+  <script src="storage.js"></script>
+<script src="main.js"></script>
 
     <div id="main">
 
@@ -34,13 +26,54 @@
         <h2 id="query"></h2>
 
         <div id="choices">
-            <h3 id="c1"></h3>
-            <h3 id="c2"></h3>
-            <h3 id="c3"></h3>
-            <h3 id="c4"></h3>
+            <h3 id="c1" class="choice" onclick="answer(1);"></h3>
+            <h3 id="c2" class="choice" onclick="answer(2);"></h3>
+            <h3 id="c3" class="choice" onclick="answer(3);"></h3>
+            <h3 id="c4" class="choice" onclick="answer(4);"></h3>
         </div>
 
-    </div>
+      <h2 id="next" onclick="handleNext();">Next</h2>
 
+<div id="statsc">
+  <p id="s_correct"></p>
+  <p id="s_wrong"></p>
+  <p id="s_rating"></p>
+</div>
+      
+<div id="navs">
+  <h2 id="again" class="navbutton" onclick="tryAgain();">Try Again</h2>
+  <h2 id="returns" class="navbutton" onclick="returnHome();">Return Home</h2>
+</div>
+        
+    </div>
+<script>
+  let command, query, c1, c2, c3, c4, next, choices, statsc, s_correct, s_wrong, s_rating, navs, again, returns;
+  window.onload = function() {
+    command = document.getElementById('command');
+query = document.getElementById('query');
+c1 = document.getElementById('c1');
+c2 = document.getElementById('c2');
+c3 = document.getElementById('c3');
+c4 = document.getElementById('c4');
+next = document.getElementById('next');
+choices = document.getElementById('choices');
+s_correct = document.getElementById('s_correct');
+    s_wrong = document.getElementById('s_wrong');
+    s_rating = document.getElementById('s_rating');
+statsc = document.getElementById('statsc');
+    navs = document.getElementById('navs');
+    again = document.getElementById('again');
+    returns = document.getElementById('returns');
+    if (questions.hasOwnProperty(q)){
+readyUp();
+randomQuestion();
+  }
+    else {
+      choices.style.display = 'none';
+      command.innerHTML = 'Quiz Not Found';
+      query.innerHTML = 'The link that redirected you here is either incorrect, or the quiz has expired and is no longer available.';
+    }
+  }
+</script>
 </body>
 </html>

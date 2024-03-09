@@ -14,3 +14,266 @@ html, body, #main {
     align-items: center;
     justify-content: center;
 }
+
+#command {
+  width: 90vw;
+  font-size: 7.5vw;
+  font-weight: 700;
+  background: linear-gradient(to bottom right, #00a, #22f);
+  color: white;
+  text-align: center;
+  margin-bottom: 1vw;
+  border-radius: 3vw;
+  padding:2vw;
+}
+
+#query {
+  background: linear-gradient(to bottom right, #ddd, #fff);
+  color: #222;
+  width: 90vw;
+  font-size: 5vw;
+  text-align: center;
+  font-weight: 500;
+  border-radius: 3vw;
+  padding: 2vw;
+  margin-top: 0;
+}
+
+#choices {
+  width: 90vw;
+  margin-top: 2vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 2vw;
+  grid-row-gap: 2vw;
+  margin-bottom: 5vw;
+}
+
+.choice {
+  height: 25vw;
+  background: linear-gradient(to bottom right, #333, #555);
+  border-radius: 3vw;
+  padding: 1.5vw;
+  font-size: 4vw;
+  border: solid #44f 0.5vw;
+  display: flex;
+  color: white;
+  text-align: center;
+  transition: 0.2s;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  font-weight: 400;
+  box-shadow: 0 0 2vw black;
+}
+
+#next {
+  width: 30vw;
+  visibility: hidden;
+  display: flex;
+  padding: 2.5vw;
+  font-size: 6vw;
+  margin-top: 2vw;
+  background: linear-gradient(to bottom right, #00c, #66f);
+  color: white;
+  border-radius: 3vw;
+  border: solid #ddd 0.5vw;
+  transition: 0.2s;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+#next:active {
+  scale: 1.05;
+}
+
+#statsc {
+  display: none;
+  background: linear-gradient(to bottom right, #ccc, #fff);
+  width: 90vw;
+  border-radius: 3vw;
+  padding: 2vw;
+  font-size: 4vw;
+  color: #111;
+  font-weight: 500;
+  p {
+    margin: 1vw 0 1vw 2vw;
+  }
+}
+
+.navbutton {
+  transition: 0.2s;
+  width: 35vw;
+  display: flex;
+  padding: 2.5vw;
+  font-size: 4.25vw;
+  margin: 0;
+  background: linear-gradient(to bottom right, #00c, #66f);
+  color: white;
+  border-radius: 3vw;
+  border: solid #ddd 0.5vw;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbutton:hover {
+  scale: 1.05;
+}
+
+.navbutton:active {
+  scale: 1.1;
+}
+
+#navs {
+  display: none;
+  width: 94vw;
+  padding: 0;
+  margin-top: 3vw;
+  justify-content: space-between;
+}
+
+@media(min-width: 1120px) {
+  #command {
+    width: 40vw;
+    font-size: 3vw;
+    font-weight: 700;
+    background: linear-gradient(to bottom right, #00a, #22f);
+    color: white;
+    text-align: center;
+    margin-bottom: 1vw;
+    border-radius: 2vw;
+    padding:1vw;
+    grid-area: command;
+  }
+
+  #query {
+    background: linear-gradient(to bottom right, #ddd, #fff);
+    color: #222;
+    width: 40vw;
+    font-size: 2vw;
+    text-align: center;
+    font-weight: 500;
+    border-radius: 2vw;
+    padding: 1vw;
+    margin-top: 0;
+    grid-area: query;
+  }
+
+  #choices {
+    width: 40vw;
+    margin-top: 1vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1vw;
+    grid-row-gap: 1vw;
+    margin-bottom: 2vw;
+    grid-area: choices;
+  }
+
+  .choice {
+    height: 10vw;
+    background: linear-gradient(to bottom right, #333, #555);
+    border-radius: 2vw;
+    padding: 1vw;
+    font-size: 1.5vw;
+    border: solid #44f 0.2vw;
+    display: flex;
+    color: white;
+    text-align: center;
+    transition: 0.2s;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-weight: 400;
+    box-shadow: 0 0 1vw black;
+  }
+
+  #next {
+    width: 15vw;
+    visibility: hidden;
+    display: flex;
+    padding: 1vw;
+    font-size: 1.75vw;
+    margin-top: 1vw;
+    background: linear-gradient(to bottom right, #00c, #66f);
+    color: white;
+    border-radius: 2vw;
+    border: solid #ddd 0.2vw;
+    transition: 0.2s;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    grid-area: next;
+  }
+
+  #next:active {
+    scale: 1.05;
+  }
+
+  #statsc {
+    display: none;
+    background: linear-gradient(to bottom right, #ccc, #fff);
+    width: 40vw;
+    border-radius: 2vw;
+    padding: 1vw;
+    font-size: 1.5vw;
+    color: #111;
+    font-weight: 500;
+    p {
+      margin: 0.5vw 0 0.5vw 1vw;
+    }
+    grid-area: stats;
+  }
+
+  .navbutton {
+    transition: 0.2s;
+    width: 20vw;
+    display: flex;
+    padding: 1vw;
+    font-size: 1.75vw;
+    margin: 0;
+    background: linear-gradient(to bottom right, #00c, #66f);
+    color: white;
+    border-radius: 2vw;
+    border: solid #ddd 0.2vw;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbutton:hover {
+    scale: 1.05;
+  }
+
+  .navbutton:active {
+    scale: 1.1;
+  }
+
+  #navs {
+    display: none;
+    width: 42vw;
+    padding: 0;
+    margin-top: 1.5vw;
+    justify-content: space-between;
+    grid-area: nav;
+  }
+
+  #main {
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      display: grid;
+      align-items: center;
+      justify-content: center;
+    grid-teplate-columns: 1fr 1fr;
+    grid-column-gap: 2.5vw;
+    grid-template-areas:
+      "command choices"
+      "query choices"
+      "next stats"
+      "nav stats"
+    ;
+  }
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+ <title>QHUB GFVS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+
+<style>
+   html, body {
+     background: #222;
+     margin: 0;
+     padding: 0;
+     font-family: 'Ubuntu', sans-serif;
+   }
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #22a;
+  color: white;
+  padding: 1vw;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 0 1vw black;
+
+  img {
+    height: 9vw;
+  }
+
+  h1 {
+    font-size: 4.5vw;
+    font-weight: 700;
+  }
+}
+
+.obj {
+  color: white;
+  background: linear-gradient(to bottom right, #009, #33b);
+  margin: 4vw;
+  padding: 4vw;
+  border-radius: 4vw;
+  box-shadow: 0 0 2vw white;
+  text-align: center;
+
+  h1 {
+    font-size: 5vw;
+    font-weight: 500;
+    margin-top: 0;
+  }
+
+  p {
+    font-size: 3vw;
+    font-weight: 300;
+    margin-bottom: 0;
+  }
+}
+
+@media(min-width: 1120px){
+  header {
+    img {
+      height: 4.5vw;
+    }
+    h1 {
+      font-size: 2.25vw;
+    }
+  }
+
+  .obj {
+    margin: 2vw;
+    padding: 2vw;
+    border-radius: 2vw;
+    box-shadow: 0 0 1vw white;
+    h1 {
+      font-size: 2.5vw;
+    }
+    p {
+      font-size: 1.5vw;
+    }
+  }
+
+  #objcontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2vw;
+  }
+}
+  
+</style>
+
+  <header>
+    <a href="/" style="display: block;"><img src="/favicon.png" /></a>
+    <h1 style="display: block;">Gymnázium F.V. Sasinka / Septima</h1>
+  </header>
+  
+  <br>
+  <div id="objcontainer">
+    
+  <div class="obj" onclick="window.location.href = '../quiz?q=polnat&r=hub'">
+  <h1>Politické Strany a Nátlakové Skupiny</h1>
+  <p>Občianska Náuka; 22 otázok (10 v jednom kvíze)</p>
+  </div>
+
+    <div class="obj" onclick="window.location.href = '../quiz?q=priemysel&r=hub'">
+  <h1>Priemysel a Poľnohospodárstvo</h1>
+  <p>Geografia; 45 otázok (11 v jednom kvíze)</p>
+    </div>
+    
+  </div>
+</body>
+</html>
