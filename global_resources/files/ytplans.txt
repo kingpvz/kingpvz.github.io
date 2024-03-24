@@ -1,4 +1,4 @@
-<b>VIDEOS</b>
+<h2>VIDEOS</h2>
 > IF I DIE/LOSE THE VIDEO ENDS
   <ul><li>New Among Us</li></ul>
 
@@ -7,7 +7,7 @@
   <li>How to make a website tutorial part 2</li></ul>
 
 
-<b>MUSIC</b>
+<h2>MUSIC</h2>
 > Geometry Bass 2
   <ul><li>All SubZero and World level music</li></ul>
 
