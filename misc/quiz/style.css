@@ -267,7 +267,7 @@ html, body, #main {
       display: grid;
       align-items: center;
       justify-content: center;
-    grid-teplate-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-column-gap: 2.5vw;
     grid-template-areas:
       "command choices"
