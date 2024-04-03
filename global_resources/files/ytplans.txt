@@ -12,5 +12,4 @@
   <ul><li>All SubZero and World level music</li></ul>
 
 > Other
-  <ul>
-  <li>Undertale Yellow: Enemy Retreating</li></ul>
+  <ul><li>Undertale Yellow: Enemy Retreating</li></ul>
