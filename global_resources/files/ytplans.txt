@@ -1,6 +1,6 @@
 <h2>VIDEOS</h2>
 > IF I DIE/LOSE THE VIDEO ENDS
-  <ul><li>New Among Us</li></ul>
+  <ul><li>New Among Us <done>In Production</done></li></ul>
 
 > OTHER
   <ul><li>Reacting to old music projects</li>
