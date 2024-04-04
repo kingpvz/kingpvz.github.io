@@ -39,6 +39,8 @@ html, body, #main {
   margin-top: 0;
 }
 
+#c1 { grid-area: c1; } #c2 { grid-area: c2; } #c3 { grid-area: c3; } #c4 { grid-area: c4; }
+
 #choices {
   width: 90vw;
   margin-top: 2vw;
@@ -47,6 +49,7 @@ html, body, #main {
   grid-column-gap: 2vw;
   grid-row-gap: 2vw;
   margin-bottom: 5vw;
+  grid-template-areas: "c1 c2" "c3 c4";
 }
 
 .choice {

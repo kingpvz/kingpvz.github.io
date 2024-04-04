@@ -40,6 +40,25 @@ function endQuiz() {
   }
 }
 
+function shuffle(arr) {
+    let currentIndex = arr.length;
+
+    while (currentIndex != 0) {
+
+        let randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex--;
+
+        [arr[currentIndex], arr[randomIndex]] = [
+            arr[randomIndex], arr[currentIndex]];
+    }
+}
+
+function switchPlaces() {
+    var variants = ["c1", "c2", "c3", "c4"];
+    shuffle(variants);
+    choices.style.gridTemplateAreas = '"' + variants[0] + ' ' + variants[1] + '" "' + variants[2] + ' ' + variants[3] + '"';
+}
+
 function randomQuestion() {
     while (true) {
         var chosen = qs[Math.floor(Math.random() * qs.length)];
@@ -59,7 +78,8 @@ ids.push(chosen["id"]);
   c2.innerHTML = chosen["c2"];
   c3.innerHTML = chosen["c3"];
   c4.innerHTML = chosen["c4"];
-  correct = chosen["c"];
+    correct = chosen["c"];
+    switchPlaces();
 } else {
   endQuiz();
 }
