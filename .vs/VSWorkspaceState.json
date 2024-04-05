@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\misc",
-    "\\misc\\quiz"
+    "\\misc\\quiz",
+    "\\misc\\quiz\\new"
   ],
-  "SelectedNode": "\\misc\\quiz\\storage.js",
+  "SelectedNode": "\\misc\\quiz\\main.js",
   "PreviewInSolutionExplorer": false
 }

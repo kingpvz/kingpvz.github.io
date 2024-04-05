@@ -1,7 +1,8 @@
 var questions = {
 
 "priemysel": {
-  "settings": {
+        "settings": {
+    "name": "Priemysel Slovenska",
     "n": "Ďalej",
     "ask": 11,
     "done": "Hotovo.",

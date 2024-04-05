@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Quiz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <script src="../../../global_resources/corefunc.js"></script>
+    <script src="main.js"></script>
+
+    <div id="main">
+        <div id="container">
+            <h1 id="title">Ultimate QUIZ Maker</h1>
+            <div class="containeritem selected" id="settingsbutton">
+                SETTINGS
+            </div>
+            <div id="addquestion">
+                NEW QUESTION
+            </div>
+            <div class="containeritem deletable" id="dummy">
+                <p class="containedtext">QUESTION 1</p>
+                <div class="divider"></div>
+                <img src="https://www.iconsdb.com/icons/preview/white/trash-2-xxl.png" class="deletebutton" id="deletedummy" />
+            </div>
+        </div>
+        <div id="editor">
+            <div id="editsettings" class="editoritem hidden">
+                <h1 class="edittitle">SETTINGS</h1>
+                <div style="text-align: right; padding-right: 1vw;"><button id="savesettings">SAVE</button></div>
+
+                <div class="quickgrid">
+                    <div class="setting">
+                        <div class="settingupper">
+                            <p class="settingtag">Name:</p><input placeholder="My New Quiz" id="sname" class="settinginput" />
+                        </div>
+                        <p class="settinginfo">This is the name of your quiz. It's only informational.</p>
+                    </div>
+
+                    <div class="setting">
+                        <div class="settingupper">
+                            <p class="settingtag">ID:</p><input placeholder="mynewquiz" id="sid" class="settinginput" />
+                        </div>
+                        <p class="settinginfo">This is the identificator. Under this ID, you'll be able to access your quiz. Since it needs to be unique, I might override it if it isn't.</p>
+                    </div>
+
+                    <div class="setting">
+                        <div class="settingupper">
+                            <p class="settingtag">Questions to Ask:</p><input placeholder="10" type="number" id="sask" class="settinginput" />
+                        </div>
+                        <p class="settinginfo">This number specifies how many questions will be asked every time this quiz is played. Leave empty so that all questions are asked.</p>
+                    </div>
+
+                    <div class="setting">
+                        <div class="settingupper">
+                            <p class="settingtag">Next Button Text:</p><input placeholder="Next" id="snext" class="settinginput" />
+                        </div>
+                        <p class="settinginfo">This is the text that shows on the next button between questions.</p>
+                    </div>
+
+                    <div class="setting">
+                        <div class="settingupper">
+                            <p class="settingtag">Quiz Finished Text:</p><input placeholder="Done" id="sdone" class="settinginput" />
+                        </div>
+                        <p class="settinginfo">This is the text that shows on top of the screen when the quiz is finished.</p>
+                    </div>
+
+                    <div class="setting">
+                        <div class="settingupper">
+                            <p class="settingtag">Points Text:</p><input placeholder="Points" id="stpoints" class="settinginput" />
+                        </div>
+                        <p class="settinginfo">This is the text that shows next to the point counter.</p>
+                    </div>
+
+                    <div class="setting">
+                        <div class="settingupper">
+                            <p class="settingtag">Correct Text:</p><input placeholder="Correct" id="stcorrect" class="settinginput" />
+                        </div>
+                        <p class="settinginfo">This is the text that shows next to the correct answers counter.</p>
+                    </div>
+
+                    <div class="setting">
+                        <div class="settingupper">
+                            <p class="settingtag">Incorrect Text:</p><input placeholder="Wrong" id="stwrong" class="settinginput" />
+                        </div>
+                        <p class="settinginfo">This is the text that shows next to the incorrect answers counter.</p>
+                    </div>
+
+                    <div class="setting">
+                        <div class="settingupper">
+                            <p class="settingtag">Rating Text:</p><input placeholder="Rating" id="sr" class="settinginput" />
+                        </div>
+                        <p class="settinginfo">This is the text that shows next to the rating.</p>
+                    </div>
+
+                    <div class="setting">
+                        <div class="settingupper">
+                            <p class="settingtag">Fail Rating:</p><input placeholder="You've failed the quiz." id="srfail" class="settinginput" />
+                        </div>
+                        <p class="settinginfo">This is the rating you get when you score zero or less points.</p>
+                    </div>
+
+                    <div class="setting">
+                        <div class="settingupper">
+                            <p class="settingtag">Bad Rating:</p><input placeholder="You did poorly on the quiz." id="srbad" class="settinginput" />
+                        </div>
+                        <p class="settinginfo">This is the rating you get when you score between 0% and 30% of the total points.</p>
+                    </div>
+
+                    <div class="setting">
+                        <div class="settingupper">
+                            <p class="settingtag">Ok Rating:</p><input placeholder="You did the quiz." id="srok" class="settinginput" />
+                        </div>
+                        <p class="settinginfo">This is the rating you get when you score between 30% and 60% of the total points.</p>
+                    </div>
+
+                    <div class="setting">
+                        <div class="settingupper">
+                            <p class="settingtag">Good Rating:</p><input placeholder="You did the quiz pretty well." id="srgood" class="settinginput" />
+                        </div>
+                        <p class="settinginfo">This is the rating you get when you score between 60% and 85% of the total points.</p>
+                    </div>
+
+                    <div class="setting">
+                        <div class="settingupper">
+                            <p class="settingtag">Great Rating:</p><input placeholder="You did the quiz really well!" id="srgood" class="settinginput" />
+                        </div>
+                        <p class="settinginfo">This is the rating you get when you score over 85% of the total points.</p>
+                    </div>
+
+                    <div class="setting">
+                        <div class="settingupper">
+                            <p class="settingtag">Try Again Text:</p><input placeholder="Try Again" id="sttryagain" class="settinginput" />
+                        </div>
+                        <p class="settinginfo">This is the text that shows up on the button that lets you try the quiz again.</p>
+                    </div>
+
+                    <div class="setting">
+                        <div class="settingupper">
+                            <p class="settingtag">Return Text:</p><input placeholder="Return" id="streturn" class="settinginput" />
+                        </div>
+                        <p class="settinginfo">This is the text that shows up on the button that lets you return to a specified page.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="editquestion" class="editoritem">
+                <h1 class="edittitle">QUESTION EDITOR</h1>
+                <div class="quickgrid">
+                    <div class="setting">
+                        <div class="settingupper">
+                            <p class="settingtag">Question Name:</p><input placeholder="Name" value="Question 1" id="qname" class="settinginput" />
+                        </div>
+                        <p class="settinginfo">This is the name of the question that shows up in the data manager. Only you can see it.</p>
+                    </div>
+                    <div class="setting">
+                        <div class="settingupper">
+                            <p class="settingtag">Question ID:</p><input placeholder="Uneditable" value="N/A" id="qid" disabled="disabled" style="color: #bbb; box-shadow: none;" class="settinginput" />
+                        </div>
+                        <p class="settinginfo">This is the ID by which the question will be accessed.</p>
+                    </div>
+                </div>
+                <br />
+                <div class="quickgrid">
+                    <div class="setting">
+                        <div class="settingupper">
+                            <p class="settingtag">Command:</p><input placeholder="Answer!" id="qscommand" class="settinginput" />
+                        </div>
+                        <p class="settinginfo">This is the text that shows up above the question. You can use it as a topic marker, or as a simple command text.</p>
+                    </div>
+
+                    <div class="setting">
+                        <div class="settingupper">
+                            <p class="settingtag">Question:</p><input placeholder="What's the saqure root of -1?" id="qsquery" class="settinginput" />
+                        </div>
+                        <p class="settinginfo">This is the text of the question. Pretty self explanatory huh?</p>
+                    </div>
+
+                    <div class="setting">
+                        <div class="settingupper">
+                            <p class="settingtag">Option 1:</p><input placeholder="Answer text" id="qsc1" class="settinginput" />
+                        </div>
+                        <p class="settinginfo">This can be a correct or a wrong answer, but remember, only one answer can be correct!</p>
+                    </div>
+
+                    <div class="setting">
+                        <div class="settingupper">
+                            <p class="settingtag">Option 2:</p><input placeholder="Answer text" id="qsc2" class="settinginput" />
+                        </div>
+                        <p class="settinginfo">This can also be a correct or a wrong answer, but keep in mind, there can only be a single correct answer!</p>
+                    </div>
+
+                    <div class="setting">
+                        <div class="settingupper">
+                            <p class="settingtag">Option 3:</p><input placeholder="Answer text" id="qsc3" class="settinginput" />
+                        </div>
+                        <p class="settinginfo">This is either a correct or a wrong answer. Only one answer can be correct.</p>
+                    </div>
+
+                    <div class="setting">
+                        <div class="settingupper">
+                            <p class="settingtag">Option 4:</p><input placeholder="Answer text" id="qsc4" class="settinginput" />
+                        </div>
+                        <p class="settinginfo">This is an answer. It's either correct or wrong. But among all answers, only one is correct.</p>
+                    </div>
+                </div>
+                <br />
+                <div id="answerchoice">
+                    <p id="answertag">Choose the correct answer:</p>
+                    <div style="display: flex; align-items: center;"><input type="radio" class="radiobutton" name="answ" value="1" id="ans1" /><label for="1" style="font-size: 28px; font-weight: 700;">1</label></div>
+                    <div style="display: flex; align-items: center;"><input type="radio" class="radiobutton" name="answ" value="2" id="ans2" /><label for="2" style="font-size: 28px; font-weight: 700;">2</label></div>
+                    <div style="display: flex; align-items: center;"><input type="radio" class="radiobutton" name="answ" value="3" id="ans3" /><label for="3" style="font-size: 28px; font-weight: 700;">3</label></div>
+                    <div style="display: flex; align-items: center;"><input type="radio" class="radiobutton" name="answ" value="4" id="ans4" /><label for="4" style="font-size: 28px; font-weight: 700;">4</label></div>
+                </div>
+                <br /><br />
+                <button id="savequestion">SAVE</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
