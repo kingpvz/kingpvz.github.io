@@ -194,6 +194,7 @@ html, body, #main {
     padding: 5px 10px;
     cursor: pointer;
     transition: 0.2s;
+    margin-right: 25px;
 }
 
 #savesettings:hover{
@@ -282,3 +283,39 @@ html, body, #main {
         border: solid darkgreen 3px;
         box-shadow: white 0 0 10px, white 0 0 10px inset;
     }
+
+.interfacetag {
+    width: 97%;
+    text-align: left;
+    margin-left: 3%;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 0;
+    text-decoration: underline white;
+    text-underline-offset: 10px;
+}
+
+#exportquizbutton {
+    font-family: Ubuntu, sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    background-color: yellow;
+    border: solid darkslateblue 3px;
+    border-radius: 1000px;
+    color: black;
+    padding: 10px 100px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+    #exportquizbutton:hover {
+        scale: 1.1;
+        border: solid lightblue;
+        background-color: orangered;
+        color: white;
+    }
+
+#exportquizbutton:active {
+    border: solid red 3px;
+    box-shadow: white 0 0 10px, white 0 0 10px inset;
+}

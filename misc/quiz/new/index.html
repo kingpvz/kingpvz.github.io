@@ -17,17 +17,20 @@
             <div class="containeritem selected" id="settingsbutton">
                 SETTINGS
             </div>
+            <div class="containeritem" id="exportbutton">
+                EXPORT
+            </div>
             <div id="addquestion">
                 NEW QUESTION
             </div>
             <div class="containeritem deletable" id="dummy">
                 <p class="containedtext">QUESTION 1</p>
                 <div class="divider"></div>
-                <img src="https://www.iconsdb.com/icons/preview/white/trash-2-xxl.png" class="deletebutton" id="deletedummy" />
+                <img src="../../../global_resources/icons/delete.png" class="deletebutton" id="deletedummy" />
             </div>
         </div>
         <div id="editor">
-            <div id="editsettings" class="editoritem hidden">
+            <div id="editsettings" class="editoritem">
                 <h1 class="edittitle">SETTINGS</h1>
                 <div style="text-align: right; padding-right: 1vw;"><button id="savesettings">SAVE</button></div>
 
@@ -146,7 +149,51 @@
                 </div>
             </div>
             
-            <div id="editquestion" class="editoritem">
+            <div id="exportcode" class="editoritem hidden">
+                <h1 class="edittitle">EXPORT CODE</h1>
+                <p class="interfacetag">Personal Settings &nbsp; &nbsp; &nbsp;</p>
+                <div class="quickgrid">
+                    <div class="setting">
+                        <div class="settingupper">
+                            <p class="settingtag">Author Name:</p><input placeholder="John Doe" id="ename" class="settinginput" />
+                        </div>
+                        <p class="settinginfo">You can use this to sign your quiz. It will be visible in the code.</p>
+                    </div>
+                    <div class="setting">
+                        <div class="settingupper">
+                            <p class="settingtag">Embed Code:</p><input placeholder="question1:querytext=bold; question2:answer1text=italic;" id="" class="settinginput" />
+                        </div>
+                        <p class="settinginfo">This doesn't do anything. I wish I was joking.</p>
+                    </div>
+                </div>
+                <br /><br />
+                <p class="interfacetag">Export Settings &nbsp; &nbsp; &nbsp;</p>
+                <div class="quickgrid">
+                    <div class="setting">
+                        <div class="settingupper">
+                            <p class="settingtag">File Name:</p><input placeholder="myquiz" id="efilename" class="settinginput" />
+                        </div>
+                        <p class="settinginfo">This will be the name under which your quiz will be saved.</p>
+                    </div>
+                    <div class="setting">
+                        <div class="settingupper">
+                            <p class="settingtag">File Type:</p>
+                            <select id="efiletype" class="settinginput">
+                                <option value="js">JavaScript (.js)</option>
+                                <option value="txt">Plain Text (.txt)</option>
+                            </select>
+                        </div>
+                        <p class="settinginfo">
+                            JavaScript file type will save your quiz as an instant script without any code.<br />Plain Text file type will simply save your quiz in plain text.
+                            <br />Both options are editable in apps like Notepad and they are both easy to port onto this website, so the choice is yours.
+                        </p>
+                    </div>
+                </div>
+                <br /><br /><br /><br />
+                <button id="exportquizbutton">DOWNLOAD</button>
+            </div>
+
+            <div id="editquestion" class="editoritem hidden">
                 <h1 class="edittitle">QUESTION EDITOR</h1>
                 <div class="quickgrid">
                     <div class="setting">

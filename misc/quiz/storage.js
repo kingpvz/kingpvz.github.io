@@ -2,6 +2,7 @@ var questions = {
 
 "priemysel": {
         "settings": {
+    "author": "Kingpvz",
     "name": "Priemysel Slovenska",
     "n": "Ďalej",
     "ask": 11,
