@@ -74,7 +74,7 @@ html, body, #main {
 
 .containeritem {
     border-style: solid none solid;
-    border-width: 1px;
+    border-width: 2px;
     color: gray;
     border-color: darkgray;
     border-radius: 1000px;
@@ -87,6 +87,9 @@ html, body, #main {
     margin: 15px 0 5px 0;
     scale: 0.95;
     transition: 0.2s;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
     .containeritem:hover {
@@ -96,7 +99,6 @@ html, body, #main {
     }
 
 .selected {
-    border-width: 2px;
     color: white;
     border-color: lightblue;
     font-weight: 700;
@@ -115,6 +117,9 @@ html, body, #main {
     font-weight: 700;
     text-align: center;
     margin-bottom: 30px;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 #addquestion {
@@ -128,6 +133,9 @@ html, body, #main {
     border-radius: 1000px;
     cursor: pointer;
     transition: 0.15s;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 #addquestion:hover {
@@ -161,6 +169,9 @@ html, body, #main {
     color: white;
     font-size: 18px;
     margin-right: 10px;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .settinginput {
@@ -181,29 +192,9 @@ html, body, #main {
     color: #ccc;
     text-align: left;
     margin: 5px 0;
-}
-
-#savesettings {
-    font-family: Ubuntu, sans-serif;
-    font-size: 28px;
-    font-weight: 700;
-    background-color: #234b1b;
-    border: solid yellow 3px;
-    border-radius: 1000px;
-    color: white;
-    padding: 5px 10px;
-    cursor: pointer;
-    transition: 0.2s;
-    margin-right: 25px;
-}
-
-#savesettings:hover{
-    scale: 1.1;
-}
-
-#savesettings:active {
-    border: solid darkblue 3px;
-    box-shadow: white 0 0 10px, white 0 0 10px inset;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .deletable {
@@ -234,6 +225,9 @@ html, body, #main {
 .edittitle {
     color: white;
     font-size: 50px;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 #answerchoice {
@@ -272,6 +266,9 @@ html, body, #main {
     padding: 10px 50px;
     cursor: pointer;
     transition: 0.2s;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
     #savequestion:hover {
@@ -293,6 +290,9 @@ html, body, #main {
     margin-bottom: 0;
     text-decoration: underline white;
     text-underline-offset: 10px;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 #exportquizbutton {
@@ -306,6 +306,9 @@ html, body, #main {
     padding: 10px 100px;
     cursor: pointer;
     transition: 0.2s;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
     #exportquizbutton:hover {

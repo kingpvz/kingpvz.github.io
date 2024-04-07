@@ -14,25 +14,20 @@
     <div id="main">
         <div id="container">
             <h1 id="title">Ultimate QUIZ Maker</h1>
-            <div class="containeritem selected" id="settingsbutton">
+            <div class="containeritem selected" id="settingsbutton" onclick="changeScreen('settings');">
                 SETTINGS
             </div>
-            <div class="containeritem" id="exportbutton">
+            <div class="containeritem" id="exportbutton" onclick="changeScreen('export');">
                 EXPORT
             </div>
-            <div id="addquestion">
+            <div id="addquestion" onclick="newQuestion()">
                 NEW QUESTION
             </div>
-            <div class="containeritem deletable" id="dummy">
-                <p class="containedtext">QUESTION 1</p>
-                <div class="divider"></div>
-                <img src="../../../global_resources/icons/delete.png" class="deletebutton" id="deletedummy" />
-            </div>
+            <div id="questions"></div>
         </div>
         <div id="editor">
             <div id="editsettings" class="editoritem">
                 <h1 class="edittitle">SETTINGS</h1>
-                <div style="text-align: right; padding-right: 1vw;"><button id="savesettings">SAVE</button></div>
 
                 <div class="quickgrid">
                     <div class="setting">
@@ -128,7 +123,7 @@
 
                     <div class="setting">
                         <div class="settingupper">
-                            <p class="settingtag">Great Rating:</p><input placeholder="You did the quiz really well!" id="srgood" class="settinginput" />
+                            <p class="settingtag">Great Rating:</p><input placeholder="You did the quiz really well!" id="srgreat" class="settinginput" />
                         </div>
                         <p class="settinginfo">This is the rating you get when you score over 85% of the total points.</p>
                     </div>
@@ -161,7 +156,7 @@
                     </div>
                     <div class="setting">
                         <div class="settingupper">
-                            <p class="settingtag">Embed Code:</p><input placeholder="question1:querytext=bold; question2:answer1text=italic;" id="" class="settinginput" />
+                            <p class="settingtag">Embed Code:</p><input placeholder="question1:querytext=bold; question2:answer1text=italic;" id="eembed" class="settinginput" />
                         </div>
                         <p class="settinginfo">This doesn't do anything. I wish I was joking.</p>
                     </div>
@@ -198,7 +193,7 @@
                 <div class="quickgrid">
                     <div class="setting">
                         <div class="settingupper">
-                            <p class="settingtag">Question Name:</p><input placeholder="Name" value="Question 1" id="qname" class="settinginput" />
+                            <p class="settingtag">Question Name:</p><input placeholder="Name" value="" id="qname" class="settinginput" />
                         </div>
                         <p class="settinginfo">This is the name of the question that shows up in the data manager. Only you can see it.</p>
                     </div>
@@ -262,10 +257,82 @@
                     <div style="display: flex; align-items: center;"><input type="radio" class="radiobutton" name="answ" value="4" id="ans4" /><label for="4" style="font-size: 28px; font-weight: 700;">4</label></div>
                 </div>
                 <br /><br />
-                <button id="savequestion">SAVE</button>
+                <button id="savequestion" onclick="saveQuestion()">SAVE</button>
             </div>
         </div>
     </div>
+
+    <script>
+        var buttons = {
+            "settings": document.getElementById("settingsbutton"),
+            "export": document.getElementById("exportbutton"),
+            "new": document.getElementById("addquestion"),
+            "save": {
+                "download": document.getElementById("exportquizbutton"),
+                "question": document.getElementById("savequestion")
+            },
+            "question": {
+            },
+            "delete": {
+            }
+        }
+
+        var inputs = {
+            "settings": {
+                "name": document.getElementById("sname"),
+                "id": document.getElementById("sid"),
+                "ask": document.getElementById("sask"),
+                "next": document.getElementById("snext"),
+                "done": document.getElementById("sdone"),
+                "points": document.getElementById("stpoints"),
+                "correct": document.getElementById("stcorrect"),
+                "wrong": document.getElementById("stwrong"),
+                "rating": document.getElementById("sr"),
+                "rfail": document.getElementById("srfail"),
+                "rbad": document.getElementById("srbad"),
+                "rok": document.getElementById("srok"),
+                "rgood": document.getElementById("srgood"),
+                "rgreat": document.getElementById("srgreat"),
+                "tryagain": document.getElementById("sttryagain"),
+                "return": document.getElementById("streturn")
+            },
+            "export": {
+                "author": document.getElementById("ename"),
+                "embed": document.getElementById("eembed"),
+                "filename": document.getElementById("efilename"),
+                "filetype": document.getElementById("efiletype")
+            },
+            "question": {
+                "name": document.getElementById("qname"),
+                "id": document.getElementById("qid"),
+                "query": document.getElementById("qsquery"),
+                "command": document.getElementById("qscommand"),
+                "c1": document.getElementById("qsc1"),
+                "c2": document.getElementById("qsc2"),
+                "c3": document.getElementById("qsc3"),
+                "c4": document.getElementById("qsc4"),
+                "radio": {
+                    "c1": document.getElementById("ans1"),
+                    "c2": document.getElementById("ans2"),
+                    "c3": document.getElementById("ans3"),
+                    "c4": document.getElementById("ans4")
+                }
+            }
+        }
+
+        var layouts = {
+            "settings": document.getElementById("editsettings"),
+            "export": document.getElementById("exportcode"),
+            "question": document.getElementById("editquestion")
+        }
+
+        var questionlabels = {
+        }
+
+        var questionstorage = {
+            
+        }
+    </script>
 
 </body>
 </html>
