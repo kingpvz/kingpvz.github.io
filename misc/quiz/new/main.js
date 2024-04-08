@@ -99,3 +99,30 @@ function newQuestion() {
 
     questioncounter++;
 }
+
+function downloadQuiz() {
+    //bruh idk what all of this code does but changing anything deletes system32 from all computers connected to the website so don't touch this
+    var ex = `
+    {"settings": {
+        "author": "_AUTHORNAME",
+        "name": "_QUIZNAME",
+        "n": "_TEXT_NEXT",
+        "ask": _ASK,
+        "done": "_TEXT_DONE",
+        "text_points": "_TEXT_POINTS",
+        "text_correct": "_TEXT_CORRECT",
+        "text_wrong": "_TEXT_WRONG",
+        "r": "_RATING",
+        "r_fail": "_RATING_FAIL",
+        "r_bad": "_RATING_BAD",
+        "r_ok": "_RATING_OK",
+        "r_good": "_RATING_GOOD",
+        "r_great": "_RATING_GREAT",
+        "text_again": "_TEXT_AGAIN",
+        "text_return": "_TEXT_RETURN"
+}, "qr": [`
+
+//todo: Replace _WILDTAGS with their appropriate values, figure out how to add questions to the qr list
+
+ex = ex+`]}`
+}

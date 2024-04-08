@@ -322,3 +322,12 @@ html, body, #main {
     border: solid red 3px;
     box-shadow: white 0 0 10px, white 0 0 10px inset;
 }
+
+#downloadinfo {
+    color: #bbb;
+}
+
+#downloadinfolink {
+    color: yellow;
+    font-weight: 700;
+}
