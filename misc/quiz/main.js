@@ -1,16 +1,6 @@
-var qs; var sts;
+var qs = questions[q]["qr"];
+var sts = questions[q]["settings"];
 
-if (q.charAt(0) === "{") {
-    q = q.replaceAll("%22", '"').replaceAll("%20", " ").replaceAll("%3C", "<").replaceAll("%3E", ">").replaceAll("%C3%A9", "é").replaceAll("%C3%A1", "á").replaceAll("%C3%AD", "í").replaceAll("%C3%B3", "ó").replaceAll("%C3%BA", "ú").replaceAll("%C3%BD", "ý").replaceAll("%C4%BA", "&#x13A;").replaceAll("%C5%95", "&#x155;").replaceAll("%C3%A4", "&auml;").replaceAll("%C3%B4", "&ocirc;").replaceAll("%C4%8D", "&#x10D;").replaceAll("%C4%8F", "&#x10F;").replaceAll("%C4%BE", "&#x13E;").replaceAll("%C5%88", "&#x148;").replaceAll("%C5%A1", "&scaron;").replaceAll("%C5%A5", "&#x165;").replaceAll("%C5%BE", "&#x17E;");
-    q = q.replaceAll("%28", '(').replaceAll("%29", ")").replaceAll("%27", "'").replaceAll("%23", "#").replaceAll("%C3%89", "É").replaceAll("%C3%81", "Á").replaceAll("%C3%8D", "Í").replaceAll("%C3%93", "Ó").replaceAll("%C3%9A", "Ú").replaceAll("%C3%9D", "Ý").replaceAll("%C4%B9", "&#x139;").replaceAll("%C5%94", "&#x154;").replaceAll("%C3%84", "&Auml;").replaceAll("%C3%94", "&Ocirc;").replaceAll("%C4%8C", "&#x10C;").replaceAll("%C4%8E", "&#x10E;").replaceAll("%C4%BD", "&#x13D;").replaceAll("%C5%87", "&#x147;").replaceAll("%C5%A0", "&Scaron;").replaceAll("%C5%A4", "&#x164;").replaceAll("%C5%BD", "&#x17D;");
-    q = q.replaceAll("%7B", "{").replaceAll("%7D", "}")
-    q = JSON.parse(q);
-    qs = q["qr"];
-    sts = q["settings"];
-} else {
-    qs = questions[q]["qr"];
-    sts = questions[q]["settings"];
-}
 
 
 let ids = [];

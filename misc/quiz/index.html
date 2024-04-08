@@ -67,17 +67,10 @@ statsc = document.getElementById('statsc');
       if (questions.hasOwnProperty(q)){
 readyUp();
 randomQuestion();
-  }
-      else {
-          if (typeof q === 'object' && !Array.isArray(q) && q !== null) {
-              readyUp();
-              randomQuestion();
-          } else {
+      } else {
               choices.style.display = 'none';
               command.innerHTML = 'Quiz Not Found';
               query.innerHTML = 'The link that redirected you here is either incorrect, or the quiz has expired and is no longer available.';
-          }
-      
     }
   }
 </script>
