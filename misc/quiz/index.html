@@ -12,7 +12,7 @@
     <script>
       var q = GetURLParameter('q');
       var r = "/";
-      if (GetURLParameter('r') !== null){
+      if (GetURLParameter('r') !== null && GetURLParameter('r') !== undefined){
         r = GetURLParameter('r');
       }
     </script>
@@ -64,14 +64,20 @@ statsc = document.getElementById('statsc');
     navs = document.getElementById('navs');
     again = document.getElementById('again');
     returns = document.getElementById('returns');
-    if (questions.hasOwnProperty(q)){
+      if (questions.hasOwnProperty(q)){
 readyUp();
 randomQuestion();
   }
-    else {
-      choices.style.display = 'none';
-      command.innerHTML = 'Quiz Not Found';
-      query.innerHTML = 'The link that redirected you here is either incorrect, or the quiz has expired and is no longer available.';
+      else {
+          if (typeof q === 'object' && !Array.isArray(q) && q !== null) {
+              readyUp();
+              randomQuestion();
+          } else {
+              choices.style.display = 'none';
+              command.innerHTML = 'Quiz Not Found';
+              query.innerHTML = 'The link that redirected you here is either incorrect, or the quiz has expired and is no longer available.';
+          }
+      
     }
   }
 </script>
