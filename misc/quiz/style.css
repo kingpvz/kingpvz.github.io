@@ -181,7 +181,7 @@ html, body, #main {
     border-radius: 2vw;
     padding: 1vw;
     font-size: 1.5vw;
-    border: solid #44f 0.2vw;
+    border: solid #44f 0.5vw;
     display: flex;
     color: white;
     text-align: center;
@@ -264,8 +264,8 @@ html, body, #main {
   }
 
   #main {
-      width: 100vw;
-      height: 100vh;
+      width: 99vw;
+      height: 99vh;
       overflow: hidden;
       display: grid;
       align-items: center;
@@ -278,5 +278,6 @@ html, body, #main {
       "next stats"
       "nav stats"
     ;
+    padding: 0.5vh 0.5vw;
   }
 }
