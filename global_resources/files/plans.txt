@@ -8,16 +8,21 @@
 // <done>If the plan is gray, it means it's completed.</done>
 
 
+> Project Quiz
+  I have made a web app that you can use to create quizes and respectivelly read them using the app.
+  The plan here is to turn this into a project implementation to my website so anyone can easily access it.
+- Added 4/10/24
+- Desktop TBA
+- Mobile TBA
+
 > Quick Navigation in index.html
-  8 or 10 buttons for quick navigation like youtube,
-  projects and so on
+  8 or 10 buttons for quick navigation like youtube, projects and so on
 - Added 2/8/24
 - Desktop TBA
 - Mobile TBA
 
 <done>> Websites in Navigation
-  a websites section to show off and comunicate basically all
-  of my websites with favicon and quick description
+  a websites section to show off and comunicate basically all of my websites with favicon and quick description
 - Added 2/8/24
 - Desktop 2/12/24
 - Mobile 2/12/24</done>
