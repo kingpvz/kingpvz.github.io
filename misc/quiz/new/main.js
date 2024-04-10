@@ -12,6 +12,7 @@ function changeScreen(to, id = -1) {
         buttons["question"][id].classList.add("selected");
     } else {
         buttons[to].classList.add("selected");
+        errorlog.style.display = "none";
     }
 
     //handle question
@@ -102,10 +103,53 @@ function newQuestion() {
 
 function downloadQuiz() {
     //bruh idk what all of this code does but changing anything deletes system32 from all computers connected to the website so don't touch this
-    var ex = `
-    {"settings": {
+
+    var questionamount = Object.keys(questionstorage).length;
+
+    var errors = [];
+    if (inputs["settings"]["ask"].value === "" || Number(inputs["settings"]["ask"].value) <= 0) { inputs["settings"]["ask"].value = 10; }
+    if (Number(inputs["settings"]["ask"].value) > questionamount) { errors.push("You cannot ask more questions than there is."); }
+    if (inputs["settings"]["next"].value === "") { inputs["settings"]["next"].value = "Next" }
+    if (inputs["settings"]["done"].value === "") { inputs["settings"]["done"].value = "Done" }
+    if (inputs["settings"]["points"].value === "") { inputs["settings"]["points"].value = "Points" }
+    if (inputs["settings"]["correct"].value === "") { inputs["settings"]["correct"].value = "Correct" }
+    if (inputs["settings"]["wrong"].value === "") { inputs["settings"]["wrong"].value = "Wrong" }
+    if (inputs["settings"]["rating"].value === "") { inputs["settings"]["rating"].value = "Rating" }
+    if (inputs["settings"]["rfail"].value === "") { inputs["settings"]["rfail"].value = "You've failed the quiz." }
+    if (inputs["settings"]["rbad"].value === "") { inputs["settings"]["rbad"].value = "You did poorly on the quiz." }
+    if (inputs["settings"]["rok"].value === "") { inputs["settings"]["rok"].value = "You did the quiz." }
+    if (inputs["settings"]["rgood"].value === "") { inputs["settings"]["rgood"].value = "You did the quiz pretty well." }
+    if (inputs["settings"]["rgreat"].value === "") { inputs["settings"]["rgreat"].value = "You did the quiz really well!" }
+    if (inputs["settings"]["tryagain"].value === "") { inputs["settings"]["tryagain"].value = "Try Again" }
+    if (inputs["settings"]["return"].value === "") { inputs["settings"]["return"].value = "Return" }
+    if (inputs["export"]["filename"].value === "") { inputs["export"]["filename"].value = "myquiz" }
+
+    for (let [key, value] of Object.entries(questionstorage)) {
+        if (questionstorage[key]["command"] === "") { errors.push(questionstorage[key]["name"] + " (Question ID " + key + ") has empty command.") }
+        if (questionstorage[key]["query"] === "") { errors.push(questionstorage[key]["name"] + " (Question ID " + key + ") has no question text.") }
+        if (questionstorage[key]["c1"] === "") { errors.push(questionstorage[key]["name"] + " (Question ID " + key + ") has no choice 1 text.") }
+        if (questionstorage[key]["c2"] === "") { errors.push(questionstorage[key]["name"] + " (Question ID " + key + ") has no choice 2 text.") }
+        if (questionstorage[key]["c3"] === "") { errors.push(questionstorage[key]["name"] + " (Question ID " + key + ") has no choice 3 text.") }
+        if (questionstorage[key]["c4"] === "") { errors.push(questionstorage[key]["name"] + " (Question ID " + key + ") has no choice 4 text.") }
+        if (questionstorage[key]["c"] === 0) { errors.push(questionstorage[key]["name"] + " (Question ID " + key + ") has no correct answer chosen.") }
+    }
+
+    if (errors.length !== 0) {
+
+        errorlog.innerHTML = `<span style="color: white;">Encountered Problems:</span><br><br>` + errors.join("<br>");
+        errorlog.style.display = "block";
+
+    } else {
+
+        var ex = `{
+        "info": {
         "author": "_AUTHORNAME",
         "name": "_QUIZNAME",
+        "id": "_QUIZID",
+        "questions": _QUESTIONS,
+        "embed": "_EMBED"
+    },
+        "settings": {
         "n": "_TEXT_NEXT",
         "ask": _ASK,
         "done": "_TEXT_DONE",
@@ -120,9 +164,43 @@ function downloadQuiz() {
         "r_great": "_RATING_GREAT",
         "text_again": "_TEXT_AGAIN",
         "text_return": "_TEXT_RETURN"
-}, "qr": [`
+}, "qr": [`.replace("_AUTHORNAME", inputs["export"]["author"].value).replace("_QUIZNAME", inputs["settings"]["name"].value).replace("_QUIZID", inputs["settings"]["id"].value).replace("_QUESTIONS", questionamount).replace("_EMBED", inputs["export"]["embed"].value);
+        ex = ex.replace("_TEXT_NEXT", inputs["settings"]["next"].value).replace("_ASK", inputs["settings"]["ask"].value).replace("_TEXT_DONE", inputs["settings"]["done"].value).replace("_TEXT_POINTS", inputs["settings"]["points"].value);
+        ex = ex.replace("_TEXT_CORRECT", inputs["settings"]["correct"].value).replace("_TEXT_WRONG", inputs["settings"]["wrong"].value).replace("_RATING", inputs["settings"]["rating"].value).replace("_RATING_FAIL", inputs["settings"]["rfail"].value);
+        ex = ex.replace("_RATING_BAD", inputs["settings"]["rbad"].value).replace("_RATING_OK", inputs["settings"]["rok"].value).replace("_RATING_GOOD", inputs["settings"]["rgood"].value).replace("_RATING_GREAT", inputs["settings"]["rgreat"].value);
+        ex = ex.replace("_TEXT_AGAIN", inputs["settings"]["tryagain"].value).replace("_TEXT_RETURN", inputs["settings"]["return"].value);
 
-//todo: Replace _WILDTAGS with their appropriate values, figure out how to add questions to the qr list
+        for (let [key, value] of Object.entries(questionstorage)) {
+            var qex = "";
 
-ex = ex+`]}`
+            if (ex.slice(-1) === "}") { qex = qex+"," }
+            qex = qex+`{
+                "id": _ID,
+                "command": "_COMMAND",
+                "query": "_QUERY",
+                "c1": "_C1",
+                "c2": "_C2",
+                "c3": "_C3",
+                "c4": "_C4",
+                "c": _CORRECT
+            }`.replace("_ID", key).replace("_COMMAND", questionstorage[key]["command"]).replace("_QUERY", questionstorage[key]["query"]).replace("_C1", questionstorage[key]["c1"]).replace("_C2", questionstorage[key]["c2"]);
+            qex = qex.replace("_C3", questionstorage[key]["c3"]).replace("_C4", questionstorage[key]["c4"]).replace("_CORRECT", questionstorage[key]["c"]);
+
+            ex = ex + qex;
+        }
+
+        ex = ex + `]}`
+
+        var elementr = document.createElement('a');
+        elementr.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(ex));
+        elementr.setAttribute('download', inputs["export"]["filename"].value+"."+inputs["export"]["filetype"].value);
+
+        elementr.style.display = 'none';
+        document.body.appendChild(elementr);
+
+        elementr.click();
+
+        document.body.removeChild(elementr);
+
+    }
 }

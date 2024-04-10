@@ -1,10 +1,14 @@
 var questions = {
 
-
-"priemysel": {
+    "priemysel": {
+        "info": {
+            "author": "Kingpvz",
+            "name": "Priemysel Slovenska",
+            "id": "priemysel",
+            "questions": 45,
+            "embed": null
+        },
         "settings": {
-    "author": "Kingpvz",
-    "name": "Priemysel Slovenska",
     "n": "Ďalej",
     "ask": 11,
     "done": "Hotovo.",

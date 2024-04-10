@@ -174,19 +174,20 @@
                         <div class="settingupper">
                             <p class="settingtag">File Type:</p>
                             <select id="efiletype" class="settinginput">
-                                <option value="js">JavaScript (.js)</option>
                                 <option value="txt">Plain Text (.txt)</option>
+                                <option value="js">JavaScript (.js)</option>
                             </select>
                         </div>
                         <p class="settinginfo">
-                            JavaScript file type will save your quiz as an instant script without any code.<br />Plain Text file type will simply save your quiz in plain text.
-                            <br />Both options are editable in apps like Notepad and they are both easy to port onto this website, so the choice is yours.
+                            Plain Text file type will simply save your quiz in plain text.<br />JavaScript file type will save your quiz as an instant script without any code.<br />
+                            Both options are editable in apps like Notepad and they are both easy to port onto this website, so the choice is yours.
                         </p>
                     </div>
                 </div>
                 <br /><br /><br /><br />
                 <button id="exportquizbutton" onclick="downloadQuiz();">DOWNLOAD</button>
-                <p id="downloadinfo">After you download the file, send it to me so I can put it on this website. No I don't have money for a server, why do you ask?<br /><a id="downloadinfolink" target="_blank" href="https://kingpvz.github.io/contact">You can contact me by clicking here.</a> I prefer discord connection, since you can directly share the file there.</p>
+                <p id="errorbox"></p>
+                <p id="downloadinfo">After you download the file, you can send it to me so I put it on this website. You can also directly share the file.<br /><a id="downloadinfolink" target="_blank" href="https://kingpvz.github.io/contact">You can contact me by clicking here.</a> I prefer discord connection, since you can directly share the file there.</p>
             </div>
 
             <div id="editquestion" class="editoritem hidden">
@@ -259,6 +260,7 @@
                 </div>
                 <br /><br />
                 <button id="savequestion" onclick="saveQuestion()">SAVE</button>
+                <br /><br />
             </div>
         </div>
     </div>
@@ -330,9 +332,10 @@
         var questionlabels = {
         }
 
-        var questionstorage = {
-            
+        var questionstorage = { 
         }
+
+        var errorlog = document.getElementById("errorbox");
     </script>
 
 </body>
