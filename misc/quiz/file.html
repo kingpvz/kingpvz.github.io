@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Quiz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <style>
+
+        html, body {
+            padding: 0; margin: 0;
+            background-color: #222;
+        }
+
+        body {
+            height: 96vh; width: 96vw;
+            display: flex; align-items: center; justify-content: center; flex-direction: column;
+            padding: 2vh 2vw; color: white; font-family: "Ubuntu", sans-serif;
+        }
+
+        #heading {
+            font-size: 5vw;
+            margin: 0.5vw;
+        }
+
+        #inform {
+            font-size: 1.2vw;
+        }
+
+        #filepick {
+            position: absolute;
+            opacity: 0;
+            width: 0;
+            height: 0;
+            display: block;
+        }
+
+        #fileuploader {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            background-color: #333;
+            border: dashed #88f 0.2vw;
+            padding: 1vw;
+            border-radius: 1vw;
+            transition: 0.2s;
+        }
+
+        #filepick:hover + #fileuploader {
+            color: yellow;
+            scale: 1.025;
+        }
+
+        #bigtext {
+            font-size: 1.5vw;
+            font-weight: 700;
+        }
+
+        #smalltext {
+            font-size: 1vw;
+            font-weight: 300;
+        }
+
+
+        @media (orientation: portrait) {
+            #heading {
+                font-size: 10vw;
+                margin: 1vw;
+            }
+
+            #inform {
+                font-size: 3vw;
+            }
+
+            #fileuploader {
+                width: 80%;
+                border: dashed #88f 0.3vw;
+                padding: 3vw 3vw 2vw 3vw;
+                border-radius: 3vw;
+            }
+
+            #bigtext {
+                margin: 2vw 0 2vw 0;
+                font-size: 4vw;
+            }
+
+            #smalltext {
+                display: none;
+            }
+        }
+
+    </style>
+
+    <h1 id="heading">START THE QUIZ!</h1>
+    <p id="inform">Upload the quiz file (.txt or .js) below and quiz yourself!</p>
+    <input type="file" accept=".txt,.js" id="filepick" onchange="loadfile();"/>
+    <label for="filepick" id="fileuploader"><span id="bigtext">CLICK HERE TO SELECT A FILE</span><br /><span id="smalltext">or drag your file here</span></label>
+
+    <script>
+
+        var rect = document.getElementById("fileuploader").getBoundingClientRect();
+        var pc = document.getElementById("filepick");
+        pc.style.width = (rect.right - rect.left)+"px";
+        pc.style.height = (rect.bottom - rect.top)+"px";
+        pc.style.left = rect.left+"px";
+        pc.style.top = rect.top+"px";
+
+        function loadfile() {
+            var fl = pc.files[0];
+            if (fl) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    filetext = e.target.result;
+                    filename = fl.name;
+
+                    if (filename.slice(-3) === ".js" || filename.slice(-4) === ".txt") {
+
+                        sessionStorage.setItem("QZ", filetext);
+                        delete pc.files;
+                        window.location.replace(".?q=*&r=file");
+
+                    } else {
+                        alert("Wrong file type.");
+                        delete pc.files;
+                    }
+                };
+                reader.readAsText(fl);
+            }
+        }
+
+    </script>
+
+</body>
+</html>

@@ -64,7 +64,7 @@ statsc = document.getElementById('statsc');
     navs = document.getElementById('navs');
     again = document.getElementById('again');
     returns = document.getElementById('returns');
-      if (questions.hasOwnProperty(q)){
+      if (questions.hasOwnProperty(q) || q==="*"){
 readyUp();
 randomQuestion();
       } else {

@@ -1,7 +1,11 @@
-var qs = questions[q]["qr"];
-var sts = questions[q]["settings"];
-
-
+if (q === "*") {
+    var trn = JSON.parse(sessionStorage.getItem("QZ"));
+    var qs = trn["qr"];
+    var sts = trn["settings"];
+} else {
+    var qs = questions[q]["qr"];
+    var sts = questions[q]["settings"];
+}
 
 let ids = [];
 let correct = 0;
