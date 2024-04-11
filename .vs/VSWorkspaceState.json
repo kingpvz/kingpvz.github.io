@@ -1,10 +1,15 @@
 {
   "ExpandedNodes": [
     "",
+    "\\m",
     "\\misc",
     "\\misc\\quiz",
-    "\\misc\\quiz\\new"
+    "\\misc\\quiz\\new",
+    "\\m\\projects",
+    "\\m\\projects\\uquiz",
+    "\\projects",
+    "\\projects\\uquiz"
   ],
-  "SelectedNode": "\\misc\\quiz\\new\\index.html",
+  "SelectedNode": "\\m\\projects\\uquiz\\index.html",
   "PreviewInSolutionExplorer": false
 }
