@@ -513,6 +513,15 @@ html, body, #main {
         padding: 15px 75px;
     }
 
+
+    #savequestion:hover {
+        border: solid #3a3 10px;
+    }
+
+        #savequestion:active {
+            border: solid #3a3 10px;
+        }
+
     .interfacetag {
         width: 95%;
         margin-left: 5%;
@@ -525,6 +534,14 @@ html, body, #main {
         border: solid darkslateblue 10px;
         padding: 15px 75px;
     }
+
+        #exportquizbutton:hover {
+            border: solid darkslateblue 10px;
+        }
+
+        #exportquizbutton:active {
+            border: solid darkslateblue 10px;
+        }
 
     #errorbox {
         width: 90%;
