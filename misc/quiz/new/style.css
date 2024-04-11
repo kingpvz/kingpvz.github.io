@@ -218,6 +218,13 @@ html, body, #main {
     flex-grow: 1;
 }
 
+.choicer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+}
+
 .hidden {
     display: none;
 }
@@ -236,7 +243,7 @@ html, body, #main {
     justify-content: space-around;
     color: white;
     font-size: 24px;
-    padding: 0 20% 0 20%;
+    padding: 0 10% 0 10%;
     font-weight: 500;
 }
 
@@ -371,3 +378,166 @@ html, body, #main {
     #errorbox::-webkit-scrollbar-corner {
         background: #aaa;
     }
+
+
+.mobileonly { display: none; }
+
+@media(orientation: portrait){
+    #main {
+        grid-template-columns: 100vw;
+        grid-template-rows: 30vh 70vh;
+    }
+
+    #title {grid-area: sitetitle}
+    #settingsbutton {grid-area: settings}
+    #exportquizbutton {grid-area: export}
+    #addquestion {grid-area: new}
+    #questions {grid-area: question;
+                width: 100%; overflow-y: auto; height: 100%; overflow-x: hidden;
+    }
+
+    #container {
+        padding: 30px;
+        display: grid;
+        grid-template-rows: repeat(4, auto);
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "sitetitle question" "settings question" "export question" "new question";
+            grid-gap: 20px;
+    }
+
+    .editoritem {
+        height: 70vh;
+    }
+
+    .containeritem {
+        border-width: 5px;
+        padding:10px;
+        font-size: 40px;
+        display: flex; align-items: center; justify-content: center;
+        margin: 0;
+    }
+
+    #title {
+        font-size: 50px;
+        margin-bottom: 0;
+    }
+
+    #addquestion {
+        font-size: 35px;
+        padding-left: 20px; padding-right: 20px;
+        margin: 0 auto 0 auto;
+        display: flex; align-items: center; justify-content: center;
+    }
+
+    .quickgrid {
+        grid-template-columns: 1fr;
+        padding: 40px;
+        grid-gap: 40px;
+    }
+
+    .setting {
+        padding: 0 30px;
+    }
+
+    .settingupper {
+        flex-direction: column;
+        padding-bottom: 25px;
+    }
+
+    .settingtag {
+        font-size: 40px;
+        margin-right: 0;
+        width: 100%;
+        text-align: left;
+        margin-bottom: 15px;
+    }
+
+    .settinginput {
+        width: calc(100% - 40px);
+        font-size: 40px;
+        padding: 10px 20px;
+        border-radius: 25px;
+        box-shadow: #999 2px 2px 5px;
+    }
+
+    .settinginfo {
+        font-size: 20px;
+        color: #ccc;
+        text-align: left;
+        margin: 5px 0;
+    }
+
+    .deletable {
+        margin-top: 15px;
+    }
+
+    .divider {
+        display: none;
+    }
+
+    .deletebutton {
+        height:40px;
+        padding-right: 15px;
+    }
+
+    .edittitle {
+        font-size: 75px;
+    }
+
+    #answerchoice {
+        font-size: 40px;
+        padding: 0 10% 0 10%;
+        font-weight: 500;
+        flex-direction: column;
+    }
+
+    .choicer {
+        width: 75%;
+    }
+
+    .radiobutton {
+        height: 5em;
+        width: 5em;
+        margin-right: 15px;
+    }
+
+    label {
+        font-size: 45px !important;
+    }
+
+    .mobileonly { display: block; }
+
+    #savequestion {
+        font-size: 70px;
+        border: solid #3a3 10px;
+        padding: 15px 75px;
+    }
+
+    .interfacetag {
+        width: 95%;
+        margin-left: 5%;
+        font-size: 30px;
+        text-underline-offset: 20px;
+    }
+
+    #exportquizbutton {
+        font-size: 70px;
+        border: solid darkslateblue 10px;
+        padding: 15px 75px;
+    }
+
+    #errorbox {
+        width: 90%;
+        height: 40%;
+        padding: 20px;
+        margin: 25px auto;
+        border-radius: 50px;
+        font-size: 25px;
+    }
+
+        #errorbox br {
+            content: "A" !important;
+            display: block !important;
+            margin-bottom: 15px !important;
+        }
+}

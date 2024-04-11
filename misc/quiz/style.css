@@ -137,7 +137,7 @@ html, body, #main {
   justify-content: space-between;
 }
 
-@media(min-width: 1120px) {
+@media(orientation: landscape) {
   #command {
     width: 40vw;
     font-size: 3vw;
