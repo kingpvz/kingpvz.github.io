@@ -42,3 +42,50 @@
     top: 2vw;
     height: min-content;
 }
+
+#hubgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2vw;
+    padding: 2vw;
+}
+
+.hublink {
+    text-decoration: none;
+    color: white;
+}
+
+.hub {
+    background-color: #221c55;
+    border: solid 5px #01008b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2vw;
+    box-shadow: #888 0.1vw 0.1vw 0.15vw, #44a 0.2vw 0.2vw 0.3vw inset;
+    transition: 0.2s;
+    padding: 1vw;
+}
+
+    .hub:hover {
+        color: yellow;
+        scale: 1.05;
+        box-shadow: #eee 0 0 0.25vw, #145312 0 0 0.5vw inset;
+        border: solid 5px #145312;
+    }
+
+    .hub:active {
+        scale: 1.1;
+    }
+
+.hubname {
+    font-size: 1.5vw;
+    margin: 0;
+    margin-bottom: 0.5vw;
+}
+
+.hubdesc {
+    font-size: 0.9vw;
+    margin: 0;
+}

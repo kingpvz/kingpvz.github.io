@@ -19,3 +19,40 @@
         background: #bf2a2a;
         scale: 1.05;
     }
+
+.hublink {
+    text-decoration: none;
+    color: white;
+}
+
+.hub {
+    background-color: #221c55;
+    border: solid 8px #01008b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5vw;
+    box-shadow: #888 0.25vw 0.25vw 0.5vw, #44a 0.5vw 0.5vw 0.75vw inset;
+    transition: 0.2s;
+    padding: 3vw;
+    margin: 5vw;
+}
+
+    .hub:active {
+        color: yellow;
+        scale: 1.05;
+        box-shadow: #eee 0 0 1vw, #145312 0 0 1.25vw inset;
+        border: solid 8px #145312;
+    }
+
+.hubname {
+    font-size: 5vw;
+    margin: 0;
+    margin-bottom: 1vw;
+}
+
+.hubdesc {
+    font-size: 2.5vw;
+    margin: 0;
+}
