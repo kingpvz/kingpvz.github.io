@@ -4,13 +4,38 @@
 // - Added (Date when this plan was added)
 // - Desktop (Date when this plan was implemented for desktop view)
 // - Mobile (Date when this plan was implemented for mobile view)
+// - Implemented (Date when this plan was implemented - used when desktop and mobile views are on the same site)
 
 // <done>If the plan is gray, it means it's completed.</done>
 
 
 
+> (QUIZ) Saving/Loading Quiz Projects
+  Imagine you wanted to work on the same quiz with someone else, or simply save the wuiz and finish it another day.
+  Yea basically that, it's very important.
+- Added 4/12/24
+- Implemented TBA
+
+> (QUIZ) Automatic Question Saving
+  This one is super easy to implement I'm just lazy.
+- Added 4/12/24
+- Implemented TBA
+
+> (QUIZ) Better Project Home Page
+  The mobile version looks fine, but since desktop view has navigation on the left side, the desktop home page is kinda empty.
+  So basically, I want to add some buttons and such.
+- Added 4/12/24
+- Desktop TBA
+
+> (QUIZ) Documentation
+  A simple documentation to deeply explain what everything does and give you a quick html lesson about how powerful this quiz actually is.
+  Because fun fact: you can actually add images and style the text. Yea, I just never told you.
+- Added 4/12/24
+- Desktop TBA
+- Mobile TBA
+
 > Quick Navigation in index.html
-  8 or 10 buttons for quick navigation like youtube, projects and so on
+  8 or 10 buttons for quick navigation like youtube, projects and so on.
 - Added 2/8/24
 - Desktop TBA
 - Mobile TBA
@@ -20,7 +45,7 @@
   The plan here is to turn this into a project implementation to my website so anyone can easily access it.
 - Added 4/10/24
 - Desktop 4/12/24
-- Mobile T4/12/24</done>
+- Mobile 4/12/24</done>
 
 <done>> Websites in Navigation
   a websites section to show off and comunicate basically all of my websites with favicon and quick description
