@@ -16,11 +16,6 @@
 - Added 4/12/24
 - Implemented TBA
 
-> (QUIZ) Automatic Question Saving
-  This one is super easy to implement I'm just lazy.
-- Added 4/12/24
-- Implemented TBA
-
 > (QUIZ) Better Project Home Page
   The mobile version looks fine, but since desktop view has navigation on the left side, the desktop home page is kinda empty.
   So basically, I want to add some buttons and such.
@@ -39,6 +34,11 @@
 - Added 2/8/24
 - Desktop TBA
 - Mobile TBA
+
+<done>> (QUIZ) Automatic Question Saving
+  This one is super easy to implement I'm just lazy.
+- Added 4/12/24
+- Implemented 4/24/24</done>
 
 <done>> Project Quiz
   I have made a web app that you can use to create quizes and respectivelly read them using the app.

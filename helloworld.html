@@ -1,0 +1,38 @@
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Ubuntu');
+    *{
+        background-color: #222;
+        color: white;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    h1 {
+        font-family: "Ubuntu", sans-serif;
+        background-image: url(https://i.giphy.com/dB66K4Kywc8gPVh6A7.webp);
+        background-size: cover;
+        color: transparent;
+        -moz-background-clip: text;
+        -webkit-background-clip: text;
+        margin: 10px 0;
+        font-size: 10vw;
+        text-shadow: rgb(255,255,255,25%) 0 0 5vw;
+        transition: 10s;
+    }
+</style>
+<body>
+    <h1>
+        Hello World!
+    </h1>
+</body>
+<script>
+    setTimeout(function () {
+        document.querySelector("h1").style.textShadow = "rgb(255,255,255,30%) 0 0 7.5vw";
+    }, 100);
+    setTimeout(function () {
+        document.querySelector("h1").style.textShadow = "rgb(255,255,255,20%) 0 0 2vw";
+        document.querySelector("h1").style.fontSize = "11vw";
+    }, 10250);
+</script>

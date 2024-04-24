@@ -196,7 +196,7 @@
                 <div class="quickgrid">
                     <div class="setting">
                         <div class="settingupper">
-                            <p class="settingtag">Question Name:</p><input placeholder="Name" value="" id="qname" class="settinginput" />
+                            <p class="settingtag">Question Name:</p><input placeholder="Name" value="" id="qname" class="settinginput" oninput="saveQuestion()"/>
                         </div>
                         <p class="settinginfo">This is the name of the question that shows up in the data manager. Only you can see it.</p>
                     </div>
@@ -211,42 +211,42 @@
                 <div class="quickgrid">
                     <div class="setting">
                         <div class="settingupper">
-                            <p class="settingtag">Command:</p><input placeholder="Answer!" id="qscommand" class="settinginput" />
+                            <p class="settingtag">Command:</p><input placeholder="Answer!" id="qscommand" class="settinginput" oninput="saveQuestion()" />
                         </div>
                         <p class="settinginfo">This is the text that shows up above the question. You can use it as a topic marker, or as a simple command text.</p>
                     </div>
 
                     <div class="setting">
                         <div class="settingupper">
-                            <p class="settingtag">Question:</p><input placeholder="What's the saqure root of -1?" id="qsquery" class="settinginput" />
+                            <p class="settingtag">Question:</p><input placeholder="What's the saqure root of -1?" id="qsquery" class="settinginput" oninput="saveQuestion()" />
                         </div>
                         <p class="settinginfo">This is the text of the question. Pretty self explanatory huh?</p>
                     </div>
 
                     <div class="setting">
                         <div class="settingupper">
-                            <p class="settingtag">Option 1:</p><input placeholder="Answer text" id="qsc1" class="settinginput" />
+                            <p class="settingtag">Option 1:</p><input placeholder="Answer text" id="qsc1" class="settinginput" oninput="saveQuestion()" />
                         </div>
                         <p class="settinginfo">This can be a correct or a wrong answer, but remember, only one answer can be correct!</p>
                     </div>
 
                     <div class="setting">
                         <div class="settingupper">
-                            <p class="settingtag">Option 2:</p><input placeholder="Answer text" id="qsc2" class="settinginput" />
+                            <p class="settingtag">Option 2:</p><input placeholder="Answer text" id="qsc2" class="settinginput" oninput="saveQuestion()" />
                         </div>
                         <p class="settinginfo">This can also be a correct or a wrong answer, but keep in mind, there can only be a single correct answer!</p>
                     </div>
 
                     <div class="setting">
                         <div class="settingupper">
-                            <p class="settingtag">Option 3:</p><input placeholder="Answer text" id="qsc3" class="settinginput" />
+                            <p class="settingtag">Option 3:</p><input placeholder="Answer text" id="qsc3" class="settinginput" oninput="saveQuestion()" />
                         </div>
                         <p class="settinginfo">This is either a correct or a wrong answer. Only one answer can be correct.</p>
                     </div>
 
                     <div class="setting">
                         <div class="settingupper">
-                            <p class="settingtag">Option 4:</p><input placeholder="Answer text" id="qsc4" class="settinginput" />
+                            <p class="settingtag">Option 4:</p><input placeholder="Answer text" id="qsc4" class="settinginput" oninput="saveQuestion()" />
                         </div>
                         <p class="settinginfo">This is an answer. It's either correct or wrong. But among all answers, only one is correct.</p>
                     </div>
@@ -254,15 +254,12 @@
                 <br />
                 <div id="answerchoice">
                     <p id="answertag">Choose the correct answer:</p><div class="choicer">
-                        <div style="display: flex; align-items: center;"><input type="radio" class="radiobutton" name="answ" value="1" id="ans1" /><label for="1" style="font-size: 28px; font-weight: 700;">1</label></div>
-                        <div style="display: flex; align-items: center;"><input type="radio" class="radiobutton" name="answ" value="2" id="ans2" /><label for="2" style="font-size: 28px; font-weight: 700;">2</label></div>
-                        <div style="display: flex; align-items: center;"><input type="radio" class="radiobutton" name="answ" value="3" id="ans3" /><label for="3" style="font-size: 28px; font-weight: 700;">3</label></div>
-                        <div style="display: flex; align-items: center;"><input type="radio" class="radiobutton" name="answ" value="4" id="ans4" /><label for="4" style="font-size: 28px; font-weight: 700;">4</label></div>
+                        <div style="display: flex; align-items: center;"><input type="radio" class="radiobutton" name="answ" value="1" id="ans1" oninput="saveQuestion()" /><label for="1" style="font-size: 28px; font-weight: 700;">1</label></div>
+                        <div style="display: flex; align-items: center;"><input type="radio" class="radiobutton" name="answ" value="2" id="ans2" oninput="saveQuestion()" /><label for="2" style="font-size: 28px; font-weight: 700;">2</label></div>
+                        <div style="display: flex; align-items: center;"><input type="radio" class="radiobutton" name="answ" value="3" id="ans3" oninput="saveQuestion()" /><label for="3" style="font-size: 28px; font-weight: 700;">3</label></div>
+                        <div style="display: flex; align-items: center;"><input type="radio" class="radiobutton" name="answ" value="4" id="ans4" oninput="saveQuestion()" /><label for="4" style="font-size: 28px; font-weight: 700;">4</label></div>
                     </div><br class="mobileonly" />
-                </div>
-                <br /><br />
-                <button id="savequestion" onclick="saveQuestion()">SAVE</button>
-                <br /><br />
+                </div><br />
             </div>
         </div>
     </div>
