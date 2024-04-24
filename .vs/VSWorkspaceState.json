@@ -3,8 +3,10 @@
     "",
     "\\misc",
     "\\misc\\quiz",
-    "\\misc\\quiz\\new"
+    "\\misc\\quiz\\new",
+    "\\projects",
+    "\\projects\\uquiz"
   ],
-  "SelectedNode": "\\misc\\quiz\\new\\style.css",
+  "SelectedNode": "\\404.html",
   "PreviewInSolutionExplorer": false
 }
