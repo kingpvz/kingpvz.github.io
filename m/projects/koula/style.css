@@ -1,0 +1,53 @@
+.alnavbar {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    font-size: 6vw;
+    transition: 0.2s;
+    text-decoration: none;
+    background: #52510f;
+    padding: 2vw;
+    margin: 4vw 10vw;
+    width: 1fr;
+    display: block;
+    border-radius: 4vw;
+    border: solid white 0.5vw;
+}
+
+    .alnavbar:active {
+        color: yellow;
+        background: #bf2a2a;
+        scale: 1.05;
+    }
+
+#sourcegrid {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+h1.A {
+    font-size: 80px;
+    margin-bottom: 10px;
+}
+
+h2.A {
+    margin-top: 40px;
+    margin-bottom: 0;
+    font-size: 55px;
+}
+
+p.A {
+    font-size: 24px;
+    line-height: 48px;
+}
+
+blockquote {
+    font-size: 20px;
+    color: #ddd;
+    border-left: 10px solid #aaa;
+    padding: 20px 40px;
+    border-radius: 10px;
+    background-color: #333;
+    width: fit-content;
+    margin: 0;
+}
