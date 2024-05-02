@@ -1,0 +1,30 @@
+BETA 3.1
+Changed some game messages
+c:
+
+BETA 3.0
+Added moving balls (2 new ball types)
+- They move randomly!
+- Catch them to get or lose points!
+Simplified UI
+- Removed controls from the main UI and moved them to the help screen
+Overhauled the help screen
+Changed controls
+- You can now move with WASD too!
+- Skip level with E and fo back with Q
+Removed at/put command
+- Standardized to only use put/at
+New game load messages
+Changed levels 2 - 5
+- I didn't change level one because how could I even
+2 New Levels
+- Level 6 to teach how moving balls work
+- - Introduction to blue rings
+- Level 7 introduces red rings
+Cleaned up files
+
+BETA 2.2
+Moved some things around
+Made series into functions
+
+<b>Older version changes were deleted from the changelog prior to creation of this file, therefore they are unavailable.</b>
