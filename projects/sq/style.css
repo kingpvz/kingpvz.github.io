@@ -1,0 +1,143 @@
+i {
+    color: #ffd;
+}
+
+#navs {
+    position: sticky;
+    top: 2vw;
+    height: min-content;
+}
+
+#pnav {
+    width: 290px;
+    border-radius: 2vw;
+    background-color: #4e0000;
+    margin-bottom: 25px;
+    padding: 10px 5px 5px 5px;
+    transition: 0.3s;
+}
+
+#nav {
+    position: initial;
+}
+
+#pnav:hover {
+    box-shadow: 0 0 15px #505000;
+}
+
+.sqltnavbar {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #bbb;
+    font-size: 18px;
+    transition: 0.2s;
+    text-decoration: none;
+}
+
+    .sqltnavbar:hover {
+        color: yellow;
+    }
+
+.sqlthere {
+    color: white;
+    font-weight: 700;
+}
+
+    .sqlthere:hover {
+        color: #ffc;
+    }
+
+code {
+    background-color: #333;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.tlink {
+    background-color: #5a5b00;
+    padding: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-bottom: 2px;
+    text-decoration: none;
+    color: white;
+    transition: 0.2s;
+}
+
+.tlink:hover {
+    color:black;
+    background-color:yellow;
+}
+
+#sqltdocs {
+    width: 14vw;
+    height: calc(90vh - 150px - 5vw);
+    border-radius: 40px 0 0 40px;
+    background-color: #333;
+    color: black;
+    margin-bottom: 25px;
+    transition: 0.3s;
+    padding: 20px;
+    position: fixed;
+    right: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    box-shadow: 0 0 5px #ddd;
+}
+
+#sqltdocs::-webkit-scrollbar {
+    width: 20px;
+}
+
+#sqltdocs::-webkit-scrollbar-track {
+    background: #333;
+    border-radius: 0 100px 100px 0;
+}
+
+#sqltdocs::-webkit-scrollbar-thumb {
+    background: #bbb;
+    border-radius: 100px;
+    border: solid 8px #333;
+}
+
+    #sqltdocs::-webkit-scrollbar-thumb:hover {
+        background: yellow;
+    }
+
+
+    #sqltdocs:hover {
+        box-shadow: 0 0 15px #eee;
+    }
+
+#sqltdocscontent {
+    width: calc(100% - 14vw);
+}
+
+.sqltdocsmove {
+    line-height: 24px;
+    color: #ddd;
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+.sqltdocsmove:hover {
+    color: white;
+}
+
+.text {
+    line-height: 26px;
+    font-size: 15px;
+}
+
+.mlt {
+    display:block;
+    margin: 10px 0 10px 0;
+    overflow: auto;
+}
+
+.exp {
+    color: #aaa;
+}
