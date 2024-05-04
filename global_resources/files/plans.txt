@@ -10,6 +10,11 @@
 
 
 
+> (SQ) Mobile Site
+  Yea I'm out of time today I'll do it later
+- Added 5/4/24
+- Mobile TBA
+
 > (QUIZ) Saving/Loading Quiz Projects
   Imagine you wanted to work on the same quiz with someone else, or simply save the wuiz and finish it another day.
   Yea basically that, it's very important.
