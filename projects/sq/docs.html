@@ -55,6 +55,7 @@
                     <a class="sqltdocsmove" href="#cmdprint">2.2. Print</a><br />
                     <a class="sqltdocsmove" href="#cmddel">2.3. Delete Variable (del)</a><br />
                     <a class="sqltdocsmove" href="#cmdvariables">2.4. List all Variables (variables)</a><br />
+                    <a class="sqltdocsmove" href="#cmdsave">2.5. Saving Return to Variable (save)</a><br />
                     <a class="sqltdocsmove" href="#modules">3. Modules</a><br />
                     <a class="sqltdocsmove" href="#mdgithub">3.1. GitHub</a><br />
                     <a class="sqltdocsmove" href="#mdgithubrep">3.1.1. Repository (rep)</a><br />
@@ -138,7 +139,21 @@
                     <h3 id="cmdvariables">List all Variables (variables)</h3>
                     <p class="text">
                         Syntax: <code>variables</code><br />
-                        Function: Lists all variables with their raw (unescaped) values.
+                        Function: Lists all variables with their raw (unescaped) values.<br />
+                        Return: List of all variables with their raw (unescaped) values.
+                    </p><br /><br />
+
+                    <h3 id="cmdsave">Saving Return to Variable (save)</h3>
+                    <p class="text">
+                        Syntax: <code>save <b class="exp">COMMAND</b> to <b class="exp">variable_name</b></code><br />
+                        Aliases: You can replace <code>to</code> with <code>as</code> or <code>in</code> to reach the same functionality.<br />
+                        Function: Saves COMMAND's return to a variable.<br />
+                        Example:
+                        <code class="mlt">
+                            save github rep kingpvz koula to hi &nbsp; <b class="exp">This will still execute the function.</b><br />
+                            print {hi}<br />
+                            <i>https://github.com/kingpvz/koula</i>
+                        </code>
                     </p><br /><br />
 
                     <h2 id="modules">Modules</h2><hr />
@@ -153,11 +168,13 @@
                         Commands:<br /><br />
                         <b id="mdgithubrep">Repository (rep)</b><br />
                         Syntax: <code>github rep <b class="exp">USER</b> <b class="exp">REPOSITORY</b></code><br />
-                        Function: Opens USER's REPOSITORY in the default browser.<br /><br />
+                        Function: Opens USER's REPOSITORY in the default browser.<br />
+                        Return: Link to USER's REPOSITORY.<br /><br />
                         <br />
                         <b id="mdgithubpage">Page</b><br />
                         Syntax: <code>github page <b class="exp">USER</b></code><br />
-                        Function: Opens USER's GitHub Pages page in the default browser.<br /><br />
+                        Function: Opens USER's GitHub Pages page in the default browser.<br />
+                        Return: Link to USER's GitHub Pages page.<br /><br />
                     </p><br /><br />
 
                     <h3 id="mdweb">WEB</h3>
