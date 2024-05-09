@@ -51,7 +51,11 @@
                 <a class="sqltdocsmove" href="#cmdprint">2.2. Print</a><br />
                 <a class="sqltdocsmove" href="#cmddel">2.3. Delete Variable (del)</a><br />
                 <a class="sqltdocsmove" href="#cmdvariables">2.4. List all Variables (variables)</a><br />
-                <a class="sqltdocsmove" href="#cmdsave">2.5. Saving Return to Variable (save)</a><br />
+                <a class="sqltdocsmove" href="#cmdliteral">2.5. String/Lit/Str</a><br />
+                <a class="sqltdocsmove" href="#cmdnumbers">2.6. Assign Numbers (int/float)</a><br />
+                <a class="sqltdocsmove" href="#cmdbools">2.7. Assign Booleans (true/false)</a><br />
+                <a class="sqltdocsmove" href="#cmdwith">2.8. With</a><br />
+                <a class="sqltdocsmove" href="#cmdconcat">2.9. Concat</a><br />
                 <a class="sqltdocsmove" href="#modules">3. Modules</a><br />
                 <a class="sqltdocsmove" href="#mdgithub">3.1. GitHub</a><br />
                 <a class="sqltdocsmove" href="#mdgithubrep">3.1.1. Repository (rep)</a><br />
@@ -102,6 +106,16 @@
                         print {a} &nbsp;<b class="exp">Print variable a to console.</b><br />
                         <i>Hello, World!</i>
                     </code>
+                    <br />
+                    When creating .sq files that you can run using the interpreter keep in mind some extra syntax operands:<br />
+                    <code class="mlt">
+                        var hello = string Hello, World!; print {hello} &nbsp; <b class="exp">You can separate commands using semicolons!</b><br />
+                        <i>Hello, World!</i><br /><br />
+                        var hi = \ &nbsp; <b class="exp">You can continue the command in the next line when you use a backslash as the final character!</b><br />
+                        string Hello!<br />
+                        print {hi}<br />
+                        <i>Hello!</i>
+                    </code>
                 </p><br /><br />
 
                 <h2 id="cmd">Commands</h2><hr /><p class="text">
@@ -112,15 +126,17 @@
 
                 <h3 id="cmdvar">Variable Declaration (var)</h3>
                 <p class="text">
-                    Syntax: <code>var <b class="exp">variable_name</b> = <b class="exp">Some assigned value</b></code><br />
+                    Syntax 1: <code>var <b class="exp">variable_name</b> = <b class="exp">Command with return value</b></code><br />
+                    Syntax 2: <code>var <b class="exp">variable_name</b> := <b class="exp">Literal Value</b></code><br />
                     Function: Declares a variable and saves it to the temporary memory. You can even save an entire command to it.<br />
                     Using variables: To use a variable, simply surround the variable name with curly brackets.<br />
                     Example:
                     <code class="mlt">
-                        var i = Hello, World!<br />
+                        var i = string Hello, &nbsp; <b class="exp">Regular value assignment</b><br />
+                        var j := World! &nbsp; <b class="exp">Literal value assignment</b><br />
                         print i<br />
                         <i>i</i>
-                        <br />print {i}<br />
+                        <br />print {i} {j}<br />
                         <i>Hello, World!</i>
                     </code>
                 </p><br /><br />
@@ -144,18 +160,50 @@
                     Return: List of all variables with their raw (unescaped) values.
                 </p><br /><br />
 
-                <h3 id="cmdsave">Saving Return to Variable (save)</h3>
+                <h3 id="cmdliteral">String/Lit/Str</h3>
                 <p class="text">
-                    Syntax: <code>save <b class="exp">COMMAND</b> to <b class="exp">variable_name</b></code><br />
-                    Aliases: You can replace <code>to</code> with <code>as</code> or <code>in</code> to reach the same functionality.<br />
-                    Function: Saves COMMAND's return to a variable.<br />
+                    Syntax 1: <code>string <b class="exp">String/Literal to return</b></code><br />
+                    Syntax 2: <code>lit <b class="exp">String/Literal to return</b></code><br />
+                    Syntax 3: <code>str <b class="exp">String/Literal to return</b></code><br />
+                    Function: Returns a String or Literal.<br />
+                    This is an alternative to using <code>:=</code> in variable declaration.
+                </p><br /><br />
+
+                <h3 id="cmdnumbers">Assign Numbers (int/float)</h3>
+                <p class="text">
+                    Syntax 1: <code>int <b class="exp">Integer to return</b></code><br />
+                    Syntax 2: <code>float <b class="exp">Floating Point to return</b></code><br />
+                    Function: Returns a Number - an Integer or Floating Point depending on which command was used.<br />
+                </p><br /><br />
+
+                <h3 id="cmdbools">Assign Booleans (true/false)</h3>
+                <p class="text">
+                    Syntax 1: <code>true</code><br />
+                    Syntax 2: <code>false</code><br />
+                    Function: Returns a Boolean value (true or false).<br />
+                </p><br /><br />
+
+                <h3 id="cmdwith">With</h3>
+                <p class="text">
+                    Syntax: <code>with <b class="exp">paramter command</b></code><br />
+                    Function: Passes an optional parameter (literal string) to command.<br />
                     Example:
                     <code class="mlt">
-                        save github rep kingpvz koula to hi &nbsp; <b class="exp">This will still execute the function.</b><br />
-                        print {hi}<br />
-                        <i>https://github.com/kingpvz/koula</i>
+                        var i = with , concat str Hello & str \sWorld!<br />
+                        print {i}<br />
+                        <i>Hello, World!</i>
                     </code>
                 </p><br /><br />
+
+                <h3 id="cmdconcat">Concat</h3>
+                <p class="text">
+                    Syntax: <code>concat <b class="exp">command1</b> & <b class="exp">command2</b></code><br />
+                    Function: Concatenates results of two commands.<br />
+                    Return: Concatenated result separated by optional separator parameter.<br />
+                    Optional Parameter: Separator parameter can be passed using the <code>with</code> command.
+                </p><br /><br />
+
+
 
                 <h2 id="modules">Modules</h2><hr />
                 <p class="text">
@@ -202,28 +250,30 @@
                         \s <b class="exp">Space (This exists because space is used to separate parameters in commands - typing multiple spaces in a string results to only one being saved, however, you can add \s to add as many spaces as you want.)</b><br />
                         \t <b class="exp">Tab</b><br />
                         \0 <b class="exp">Null Character</b><br />
+                        \l <b class="exp">Left Curly Bracket (</b>{<b class="exp">)</b><br />
+                        \r <b class="exp">Right Curly Bracket (</b>}<b class="exp">)</b><br />
+                        \b <b class="exp">Backslash (</b>\<b class="exp">)</b><br />
                     </code>
                 </p><br /><br />
 
                 <h3 id="escex">Exact Escaping</h3>
                 <p class="text">
-                    Exact escaping is a type of escaping consisting of a backslash and a character pointer (<code>\$bs;</code>)<br />
-                    Syntax: <code><b class="exp">\$</b><i>CHARACTERCODE</i><b class="exp">;</b></code><br />
+                    Exact escaping is a type of escaping consisting of a backslash and a character pointer (<code>\$sc.</code>)<br />
+                    Syntax: <code><b class="exp">\$</b><i>CHARACTERCODE</i><b class="exp">.</b></code><br />
                     Here is a list of all charcter codes:
                     <code class="mlt">
-                        <i>bs</i> <b class="exp">Backslash</b> \<br />
-                        <i>lc</i> <b class="exp">Left Curly Bracket</b> {<br />
-                        <i>rc</i> <b class="exp">Right Curly Bracket</b> }<br />
+                        <i>sc</i> <b class="exp">Semicolon</b> ;<br />
                     </code>
                 </p><br /><br />
 
                 <h3>Example:</h3>
                 <code class="mlt">
                     var a = Hello,\sWorld!<br />
-                    print Variable \$lc;a\$rc; stores this value:\n{a}<br /><br />
+                    print Variable \la\r stores this value:\n{a}\n--endprogram\$sc.<br /><br />
                     <i>
                         Variable {a} stores this value:<br />
-                        Hello, World!
+                        Hello, World!<br />
+                        --endprogram;
                     </i>
                 </code>
 
