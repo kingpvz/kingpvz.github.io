@@ -56,15 +56,19 @@
                 <a class="sqltdocsmove" href="#cmdbools">2.7. Assign Booleans (true/false)</a><br />
                 <a class="sqltdocsmove" href="#cmdwith">2.8. With</a><br />
                 <a class="sqltdocsmove" href="#cmdconcat">2.9. Concat</a><br />
-                <a class="sqltdocsmove" href="#modules">3. Modules</a><br />
-                <a class="sqltdocsmove" href="#mdgithub">3.1. GitHub</a><br />
-                <a class="sqltdocsmove" href="#mdgithubrep">3.1.1. Repository (rep)</a><br />
-                <a class="sqltdocsmove" href="#mdgithubpage">3.1.2. Page</a><br />
-                <a class="sqltdocsmove" href="#mdweb">3.2. WEB</a><br />
-                <a class="sqltdocsmove" href="#mdwebopen">3.2.1. Open</a><br />
-                <a class="sqltdocsmove" href="#escaping">4. Escaping Characters</a><br />
-                <a class="sqltdocsmove" href="#escregular">4.1. Regular Escaping</a><br />
-                <a class="sqltdocsmove" href="#escex">4.2. Exact Escaping</a><br />
+                <a class="sqltdocsmove" href="#fns">3. Functions</a><br />
+                <a class="sqltdocsmove" href="#fnsdefine">3.1. Defining Functions</a><br />
+                <a class="sqltdocsmove" href="#fnscall">3.2. Calling Functions (call)</a><br />
+                <a class="sqltdocsmove" href="#fnsreturn">3.3. Returning Values</a><br />
+                <a class="sqltdocsmove" href="#modules">4. Modules</a><br />
+                <a class="sqltdocsmove" href="#mdgithub">4.1. GitHub</a><br />
+                <a class="sqltdocsmove" href="#mdgithubrep">4.1.1. Repository (rep)</a><br />
+                <a class="sqltdocsmove" href="#mdgithubpage">4.1.2. Page</a><br />
+                <a class="sqltdocsmove" href="#mdweb">4.2. WEB</a><br />
+                <a class="sqltdocsmove" href="#mdwebopen">4.2.1. Open</a><br />
+                <a class="sqltdocsmove" href="#escaping">5. Escaping Characters</a><br />
+                <a class="sqltdocsmove" href="#escregular">5.1. Regular Escaping</a><br />
+                <a class="sqltdocsmove" href="#escex">5.2. Exact Escaping</a><br />
 
             </div>
 
@@ -203,6 +207,68 @@
                     Optional Parameter: Separator parameter can be passed using the <code>with</code> command.
                 </p><br /><br />
 
+
+                <h2 id="fns">Functions</h2><hr />
+                <p class="text">
+                    In interpeted code, you are able to define your own function that you can later call. This also gives you the possibility to return any value for variables to save
+                    or call a complicated function many times without having to rewrite the code every time.
+                </p><br /><br />
+
+                <h3 id="fnsdefine">Defining Functions</h3>
+                <p class="text">
+                    To define a function, use the <code>fn</code> statement. Keep in mind, that by doing this you are also opening a code block.<br />
+                    To close a code block, simply add a dot on an empty line / after a semicolon.<br />
+                    Example of a function definition:
+                    <code class="mlt">
+                        fn sayHello<br />
+                        &nbsp;&nbsp; var a = str Hello,<br />
+                        &nbsp;&nbsp; var b = str World!<br />
+                        &nbsp;&nbsp; return str lol &nbsp; <b class="exp">Returns do not cause the function to stop executing.</b><br />
+                        &nbsp;&nbsp; print {a} {b}<br />
+                        .
+                    </code>
+                    Keep in mind, indentation is completely optional and it's up to you if you want to use it or not.<br />
+                    The last two lines (the <code>print</code> command and the dot) can be rewritten like this and still properly close the function code block: <code>print {a} {b}; .</code><br /><br />
+                    Variables declared in functions are local, however you can access them outside of the function after it has been called at least once like this:
+                    <code class="mlt">
+                        fn hi<br />
+                        &nbsp;&nbsp; var bl = str text<br />
+                        .<br /><br />
+                        call hi &nbsp; <b class="exp">Make sure to call the function first.</b><br />
+                        print {LOCAL__hi__bl} &nbsp; <b class="exp">Use this syntax: LOCAL__*function_name*__*local_variable_name*</b><br />
+                        <i>text</i>
+                    </code>
+                </p><br /><br />
+
+                <h3 id="fnscall">Calling Functions (call)</h3>
+                <p class="text">
+                    You can call functions using the <code>call</code> command.<br />
+                    Syntax: <code>call <b class="exp">function_name</b></code><br />
+                    Return: <code>None</code> or function's return.<br />
+                    Example:
+                    <code class="mlt">
+                        <b class="exp">We have defined the sayHello function.</b><br /><br />
+                        call sayHello<br />
+                        <i>Hello, World!</i><br /><br />
+                        var x = call sayHello<br />
+                        <i>Hello, World!</i> &nbsp; <b class="exp">Function still executes.</b><br />
+                        print {x}<br />
+                        <i>lol</i> &nbsp; <b class="exp">return works the same way as print - it returns a literal string.</b>
+                    </code>
+                </p><br /><br />
+
+                <h3 id="fnsreturn">Returning Values</h3>
+                <p class="text">
+                    You can return values from a function using the <code>return</code> statement.<br />
+                    Syntax: <code>return <b class="exp">Command with return value</b></code><br />
+                    Examples:
+                    <code class="mlt">
+                        var a := Hello!<br />
+                        return lit {a} &nbsp; <b class="exp">We return the literal value of variable a.</b><br /><br />
+                        return call b &nbsp; <b class="exp">We return function b's return.</b><br /><br />
+                        return true &nbsp; <b class="exp">We return a boolean value.</b>
+                    </code>
+                </p><br /><br />
 
 
                 <h2 id="modules">Modules</h2><hr />
