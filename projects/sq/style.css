@@ -55,6 +55,23 @@ code {
     margin-bottom: 4px;
 }
 
+html, body {
+    margin: 0; padding: 0;
+}
+
+#sourcegrid.docs {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+#content.docs {
+    height: calc(100% - 20px);
+    overflow-y: auto;
+    width: calc(100% - 60px);
+    padding: 0 30px 20px 30px;
+}
+
 .tlink {
     background-color: #5a5b00;
     padding: 3px;
@@ -73,23 +90,19 @@ code {
 }
 
 #sqltdocs {
-    width: 14vw;
-    height: calc(90vh - 150px - 5vw);
-    border-radius: 40px 0 0 40px;
+    height: calc(100vh - 40px);
     background-color: #333;
     color: black;
-    margin-bottom: 25px;
-    transition: 0.3s;
     padding: 20px;
-    position: fixed;
-    right: 0;
     overflow-x: hidden;
     overflow-y: scroll;
     box-shadow: 0 0 5px #ddd;
+    text-align: left;
+    transition: 0.5s;
 }
 
 #sqltdocs::-webkit-scrollbar {
-    width: 20px;
+    width: 10px;
 }
 
 #sqltdocs::-webkit-scrollbar-track {
@@ -100,7 +113,7 @@ code {
 #sqltdocs::-webkit-scrollbar-thumb {
     background: #bbb;
     border-radius: 100px;
-    border: solid 8px #333;
+    border: solid 3px #333;
 }
 
     #sqltdocs::-webkit-scrollbar-thumb:hover {
@@ -112,12 +125,8 @@ code {
         box-shadow: 0 0 15px #eee;
     }
 
-#sqltdocscontent {
-    width: calc(100% - 14vw);
-}
-
 .sqltdocsmove {
-    line-height: 24px;
+    line-height: 26px;
     color: #ddd;
     font-size: 16px;
     transition: 0.2s;
@@ -146,8 +155,21 @@ code {
     display: none;
 }
 
+.returnback {
+    font-size: 25px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: yellow;
+    font-weight: 900;
+}
+
 
 @media(orientation: portrait){
+
+    .returnback {
+        font-size: 60px;
+    }
 
     .desktophide {
         display: block;
@@ -177,8 +199,8 @@ code {
         background-color: #333;
         padding: 10px;
         border-radius: 10px;
-        font-size: 40px;
-        line-height: 50px;
+        font-size: 30px;
+        line-height: 45px;
         display: inline-block;
     }
 
@@ -210,8 +232,8 @@ code {
         overflow: auto;
         padding: 10px;
         border-radius: 10px;
-        font-size: 20px;
-        line-height: 40px;
+        font-size: 30px;
+        line-height: 45px;
     }
 
     .exp {
@@ -266,4 +288,7 @@ code {
             scale: 1.05;
         }
 
+    h1 { font-size: 80px; }
+    h2 { font-size: 60px; }
+    h3 { font-size: 40px; }
 }
