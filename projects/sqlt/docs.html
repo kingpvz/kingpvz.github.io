@@ -12,63 +12,41 @@
     <meta name="keywords" content="Kingpvz, Kingpvz, Kingpvz Website, Kingpvz Official Website, Kingpvz Site, Stanley, Kingpvz Stanley, Stanley Website, Stanley Suchovský, Stanislav, Stanislav Suchovský, Michal, Michael, Michal Suchovský, Michael Suchovský, Stanislav Michal, Stanley Michael, YouTube, Minecraft, Minecraft Mods, Programming, Music, Producer, Artist, Python, Array, Arrays, Array Management, Management, Manage, Documentation" />
 </head>
 <body>
-    <script src="../../global_resources/corefunc.js"></script>
-    <script>
-        var red = GetURLParameter('redirect');
-        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && red !== '0') {
-            window.location.replace("/m/projects/sqlt/docs")
-        }
-    </script>
-    <script src="../../site_resources/templates.js"></script>
-    <br />
-    <script>
-        document.body.appendChild(headertemplate.content);
-    </script><br />
-    <div id="sourcegrid">
-        <div id="sidebar">
-            <div id="navs">
-                <div id="pnav">
-                    <h3>Project Navigation:</h3><br />
-                    <a class="sqltnavbar" href="." title="Home page of this project.">Home</a><br /><br />
-                    <a class="sqltnavbar sqlthere" href="#" title="Official Documentation for SQLT">Documentation</a><br /><br />
-                    <a class="sqltnavbar" href="https://github.com/kingpvz/SQLT" title="Official GitHub Repository for SQLT" target="_blank">GitHub Repository <b style="transform: rotate(-45deg); display:inline-block;">&#10140;</b></a><br /><br />
-                </div>
-                <div id="nav">
-                    <br />
-                    <a class="navbar" href="../../" title="The main page! Not much to see here tho.">Home</a><br /><br />
-                    <a class="navbar" href="../../minecraft" title="My Minecraft mods, resource packs and maps!">Minecraft</a><br /><br />
-                    <a class="navbar" href="../../contact" title="My email and messaging platforms.">Contact</a><br /><br />
-                    <a class="navbar" href="../../social" title="Follow me everywhere!">Social Sites</a><br /><br />
-                    <a class="navbar" href="../" title="My apps, games and other fun projects!">Projects</a><br /><br />
-                    <a class="navbar" href="../../webs" title="My other websites to check out!">Websites</a><br /><br />
-                </div><br />
-                </div>
+    <div id="sourcegrid" class="docs">
+            <div id="sqltdocs" class="hidenavs" onclick="document.querySelector('#sqltdocs').classList.toggle('hidenavs');">
+
+                <h1 style="font-size:6vw; color: white; text-align: center; width: 100%;" class="desktophide">Jump To...</h1>
+
+                <a class="returnback" href=".">RETURN HOME</a><br />
+
+                <a class="sqltdocsmove" href="#">0. Header</a><br />
+                <a class="sqltdocsmove" href="#explanation">0.1. Explanation</a><br />
+                <a class="sqltdocsmove" href="#workspaces">1. Workspaces and Syntax</a><br />
+                <a class="sqltdocsmove" href="#files">2. Saving and Loading Files</a><br />
+                <a class="sqltdocsmove" href="#cmd">3. Commands</a><br />
+                <a class="sqltdocsmove" href="#cmd_terminate">3.1. Terminate</a><br />
+                <a class="sqltdocsmove" href="#cmd_save">3.2. Save to a File</a><br />
+                <a class="sqltdocsmove" href="#cmd_load">3.3. Load from a File</a><br />
+                <a class="sqltdocsmove" href="#cmd_print">3.4. Print</a><br />
+                <a class="sqltdocsmove" href="#cmd_create">3.5. Create</a><br />
+                <a class="sqltdocsmove" href="#cmd_add">3.6. Add</a><br />
+                <a class="sqltdocsmove" href="#cmd_del">3.7. Delete</a><br />
+                <a class="sqltdocsmove" href="#cmd_len">3.8. Length</a><br />
+                <a class="sqltdocsmove" href="#cmd_rmv">3.9. Remove</a><br />
+                <a class="sqltdocsmove" href="#cmd_pop">3.10. Pop</a><br />
+                <a class="sqltdocsmove" href="#cmd_cw">3.11. Change/Create a Workspace</a><br />
+                <a class="sqltdocsmove" href="#cmd_info">3.12. Info</a><br />
+                <a class="sqltdocsmove" href="#cmd_list">3.13. List</a><br />
+                <a class="sqltdocsmove" href="#cmd_help">3.14. Help</a><br />
+                <a class="sqltdocsmove" href="#cmd_help_t">3.14.1. Tutorial</a><br />
+
             </div>
-            <div id="content" style="text-align: left;">
-                <div id="sqltdocs">
+            <div id="content" style="text-align: left;" class="docs">
 
-                    <a class="sqltdocsmove" href="#">0. Header</a><br />
-                    <a class="sqltdocsmove" href="#explanation">0.1. Explanation</a><br />
-                    <a class="sqltdocsmove" href="#workspaces">1. Workspaces and Syntax</a><br />
-                    <a class="sqltdocsmove" href="#files">2. Saving and Loading Files</a><br />
-                    <a class="sqltdocsmove" href="#cmd">3. Commands</a><br />
-                    <a class="sqltdocsmove" href="#cmd_terminate">3.1. Terminate</a><br />
-                    <a class="sqltdocsmove" href="#cmd_save">3.2. Save to a File</a><br />
-                    <a class="sqltdocsmove" href="#cmd_load">3.3. Load from a File</a><br />
-                    <a class="sqltdocsmove" href="#cmd_print">3.4. Print</a><br />
-                    <a class="sqltdocsmove" href="#cmd_create">3.5. Create</a><br />
-                    <a class="sqltdocsmove" href="#cmd_add">3.6. Add</a><br />
-                    <a class="sqltdocsmove" href="#cmd_del">3.7. Delete</a><br />
-                    <a class="sqltdocsmove" href="#cmd_len">3.8. Length</a><br />
-                    <a class="sqltdocsmove" href="#cmd_rmv">3.9. Remove</a><br />
-                    <a class="sqltdocsmove" href="#cmd_pop">3.10. Pop</a><br />
-                    <a class="sqltdocsmove" href="#cmd_cw">3.11. Change/Create a Workspace</a><br />
-                    <a class="sqltdocsmove" href="#cmd_info">3.12. Info</a><br />
-                    <a class="sqltdocsmove" href="#cmd_list">3.13. List</a><br />
-                    <a class="sqltdocsmove" href="#cmd_help">3.14. Help</a><br />
-                    <a class="sqltdocsmove" href="#cmd_help_t">3.14.1. Tutorial</a><br />
-
+                <div id="togglenavs" onclick="document.querySelector('#sqltdocs').classList.toggle('hidenavs');" class="desktophide">
+                    <img src="https://www.pinclipart.com/picdir/big/532-5328945_menu-bar-icon-white-clipart-png-download-menu.png" style="width:11vw;" />
                 </div>
+
                 <div id="sqltdocscontent">
                     <h1>Simple Query List Official Documentation</h1><hr />
                     <p class="text">This is the official documentation of Simple Query List. You may use the Navigation on the right side of the screen to quickly find the section you would like to read about.</p>
@@ -256,8 +234,5 @@
 
             </div>
         </div>
-    <script>
-        document.body.appendChild(footertemplate.content);
-    </script>
 </body>
 </html>

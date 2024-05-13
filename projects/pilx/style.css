@@ -25,7 +25,7 @@ i {
     box-shadow: 0 0 15px #505000;
 }
 
-.pilxnavbar {
+.sqltnavbar {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     color: #bbb;
@@ -34,16 +34,16 @@ i {
     text-decoration: none;
 }
 
-    .pilxnavbar:hover {
+    .sqltnavbar:hover {
         color: yellow;
     }
 
-.pilxhere {
+.sqlthere {
     color: white;
     font-weight: 700;
 }
 
-    .pilxhere:hover {
+    .sqlthere:hover {
         color: #ffc;
     }
 
@@ -53,6 +53,24 @@ code {
     border-radius: 5px;
     font-size: 14px;
     margin-bottom: 4px;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+#sourcegrid.docs {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+#content.docs {
+    height: calc(100% - 20px);
+    overflow-y: auto;
+    width: calc(100% - 60px);
+    padding: 0 30px 20px 30px;
 }
 
 .tlink {
@@ -67,69 +85,57 @@ code {
     transition: 0.2s;
 }
 
-.tlink:hover {
-    color:black;
-    background-color:yellow;
-}
-
-#pilxdocs {
-    width: 14vw;
-    height: calc(90vh - 150px - 5vw);
-    border-radius: 40px 0 0 40px;
-    background-color: #333;
-    color:black;
-    margin-bottom: 25px;
-    transition: 0.3s;
-    padding: 20px;
-
-    position:fixed;
-    right: 0;
-
-    overflow-x: hidden;
-    overflow-y: scroll;
-
-    box-shadow: 0 0 5px #ddd;
-}
-
-
-    #pilxdocs::-webkit-scrollbar {
-        width: 20px;
+    .tlink:hover {
+        color: black;
+        background-color: yellow;
     }
 
-    #pilxdocs::-webkit-scrollbar-track {
+#sqltdocs {
+    height: calc(100vh - 40px);
+    background-color: #333;
+    color: black;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    box-shadow: 0 0 5px #ddd;
+    text-align: left;
+    transition: 0.5s;
+}
+
+    #sqltdocs::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    #sqltdocs::-webkit-scrollbar-track {
         background: #333;
         border-radius: 0 100px 100px 0;
     }
 
-    #pilxdocs::-webkit-scrollbar-thumb {
+    #sqltdocs::-webkit-scrollbar-thumb {
         background: #bbb;
         border-radius: 100px;
-        border: solid 8px #333;
+        border: solid 3px #333;
     }
 
-        #pilxdocs::-webkit-scrollbar-thumb:hover {
+        #sqltdocs::-webkit-scrollbar-thumb:hover {
             background: yellow;
         }
 
 
-    #pilxdocs:hover {
+    #sqltdocs:hover {
         box-shadow: 0 0 15px #eee;
     }
 
-#pilxdocscontent {
-    width: calc(100% - 14vw);
-}
-
-.pilxdocsmove {
-    line-height: 25px;
+.sqltdocsmove {
+    line-height: 26px;
     color: #ddd;
-    font-size: 18px;
+    font-size: 16px;
     transition: 0.2s;
 }
 
-.pilxdocsmove:hover {
-    color: white;
-}
+    .sqltdocsmove:hover {
+        color: white;
+    }
 
 .text {
     line-height: 26px;
@@ -137,11 +143,161 @@ code {
 }
 
 .mlt {
-    display:block;
+    display: block;
     margin: 10px 0 10px 0;
     overflow: auto;
 }
 
 .exp {
     color: #aaa;
+}
+
+.desktophide {
+    display: none;
+}
+
+.returnback {
+    font-size: 25px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: yellow;
+    font-weight: 900;
+}
+
+
+@media(orientation: portrait) {
+
+    .returnback {
+        font-size: 60px;
+    }
+
+    .desktophide {
+        display: block;
+    }
+
+    .header {
+        display: none;
+    }
+
+    #sourcegrid {
+        grid-template-columns: 0 100%;
+    }
+
+    #sqltdocscontent {
+        width: 100%;
+    }
+
+    #sidebar {
+        display: none;
+    }
+
+    i {
+        color: #ffd;
+    }
+
+    code {
+        background-color: #333;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 30px;
+        line-height: 45px;
+        display: inline-block;
+    }
+
+    .tlink {
+        background-color: #5a5b00;
+        padding: 0.75vw;
+        font-weight: bold;
+        border-radius: 1vw;
+        font-size: 3.25vw;
+        margin-bottom: 0.2vw;
+        text-decoration: none;
+        color: white;
+        transition: 0.2s;
+    }
+
+        .tlink:active {
+            color: black;
+            background-color: yellow;
+        }
+
+    .text {
+        line-height: 5vw;
+        font-size: 3.5vw;
+    }
+
+    .mlt {
+        display: block;
+        margin: 2vw 0;
+        overflow: auto;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 30px;
+        line-height: 45px;
+    }
+
+    .exp {
+        color: #aaa;
+    }
+
+    #togglenavs {
+        position: fixed;
+        width: 15vw;
+        height: 15vw;
+        border-radius: 2vw 0 0 2vw;
+        background: #444;
+        top: 5vw;
+        right: 0;
+        border: solid black 0.5vw;
+        border-right: none;
+        box-shadow: white 0 0 1vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #sqltdocs {
+        position: fixed;
+        width: 90vw;
+        height: 90vh;
+        left: 5vw;
+        top: 5vh;
+        background: #444;
+        opacity: 97.5%;
+        border-radius: 10vw;
+        box-shadow: black 0 0 10vw;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .hidenavs {
+        display: none;
+    }
+
+    .sqltdocsmove {
+        margin: 1vw 2vw;
+        color: #eee;
+        font-size: 5vw;
+        transition: 0.2s;
+        display: block;
+        text-decoration: none;
+    }
+
+        .sqltdocsmove:active {
+            color: white;
+            scale: 1.05;
+        }
+
+    h1 {
+        font-size: 80px;
+    }
+
+    h2 {
+        font-size: 60px;
+    }
+
+    h3 {
+        font-size: 40px;
+    }
 }
