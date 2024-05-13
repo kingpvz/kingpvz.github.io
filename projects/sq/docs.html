@@ -33,6 +33,7 @@
             <a class="sqltdocsmove" href="#cmdbools">2.7. Assign Booleans (true/false)</a><br />
             <a class="sqltdocsmove" href="#cmdwith">2.8. With</a><br />
             <a class="sqltdocsmove" href="#cmdconcat">2.9. Concat</a><br />
+            <a class="sqltdocsmove" href="#cmdscope">2.10. Scope</a><br />
             <a class="sqltdocsmove" href="#fns">3. Functions</a><br />
             <a class="sqltdocsmove" href="#fnsdefine">3.1. Defining Functions</a><br />
             <a class="sqltdocsmove" href="#fnscall">3.2. Calling Functions (call)</a><br />
@@ -56,7 +57,7 @@
             </div>
 
             <div id="sqltdocscontent">
-               <h1>Simple Query Official Documentation</h1><hr />
+                <h1>Simple Query Official Documentation</h1><hr />
                 <p class="text">This is the official documentation of Simple Query (SQ). You may use the Navigation on the right side of the screen to quickly find the section you would like to read about.</p>
                 <h3 id="explanation">Explanation</h3>
                 <p class="text">
@@ -184,6 +185,34 @@
                     Function: Concatenates results of two commands.<br />
                     Return: Concatenated result separated by optional separator parameter.<br />
                     Optional Parameter: Separator parameter can be passed using the <code>with</code> command.
+                </p><br /><br />
+
+                <h3 id="cmdscope">Scope</h3>
+                <p class="text">
+                    Syntax 1: <code>scope</code><br />
+                    Syntax 2: <code>scope <b class="exp">local/global</b></code><br />
+                    Syntax 3: <code>scope <b class="exp">fn/custom function_name/custom_scope_key</b></code><br />
+                    Function 1: Returns the current scope.<br />
+                    Function 2: Sets the scope to either <code>global</code> or <code>local</code>.<br />
+                    Function 3: Sets the scope to either a previously defined function's scope or to a custom scope key.<br />
+                    Note: Calling a function resets the scope. This means that calling any function resets the scope back to global.<br />
+                    <br />
+                    <b>Scopes in SQ:</b><br />
+                    - Global = All variables declared outside of functions and custom scopes.<br />
+                    - Local = Variables declared in the current function.<br />
+                    - Function Specific = Variables declared in a previously defined and called function.<br />
+                    - Custom Key = Variables declared in custom key scopes can only be accessed when you explicitly set the current scope to said key.<br />
+                    <br />
+                    <b>Examples:</b>
+                    <code class="mlt">
+                        scope global &nbsp; <b class="exp">Use this is functions to access global variables. Keep in mind, that any variable declared after setting the scope to global will also be global.</b><br />
+                        scope local &nbsp; <b class="exp">Using this in function returns the scope back to default (this function's scope). Using this outside of a function does nothing.</b><br />
+                        scope fn task &nbsp; <b class="exp">After doing this, assuming the function exists and has been previously called, we are able to access its variables.</b><br />
+                        scope custom hello &nbsp; <b class="exp">
+                            We've entered a custom key scope. Variables from any other scope are now inaccessible, if we declare any variables in this scope, they can only be accessed in this scope and not from outside.
+                            Do not use this if you are unsure what this might cause.
+                        </b>
+                    </code>
                 </p><br /><br />
 
 
