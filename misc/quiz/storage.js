@@ -183,7 +183,7 @@ var questions = {
             "c2": "6",
             "c3": "7",
             "c4": "8",
-            "c": 4
+            "c": 1
         },
         {
             "id": 16,
@@ -309,11 +309,11 @@ var questions = {
             "id": 28,
             "command": "Odpovedz!",
             "query": "Koľko mestských častí má Bratislava?",
-            "c1": "2",
-            "c2": "4",
-            "c3": "5",
+            "c1": "12",
+            "c2": "14",
+            "c3": "17",
             "c4": "8",
-            "c": 4
+            "c": 3
         },
         {
             "id": 29,
