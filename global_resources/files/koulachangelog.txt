@@ -1,3 +1,22 @@
+BETA 4.0
+The editor now works in a preview mode
+- You can try out all the features
+- - Switch balls
+- - Add them to the map
+- - Even remove them!
+- - Player ball can only exist once
+- - Add speed to the moving balls!
+- - There is even a button that tells you the controls!
+- Exporting level isn't implemented yet
+Massive QOL (Quality of Life) improvements!
+- The console window closes automatically upon exiting from the game
+- You can only open one editor window at a time (as opposed to infinity before)
+- When you open the editor, the game window minimizes!
+- When you close the editor, the game window pops up again!
+New messages
+- Some messages changed slightly
+c:
+
 BETA 3.3
 Added buttons instead of keybinds
 - Now you can visit the wiki, changelog, see the controls or open the new level editor (coming soon) using buttons!
