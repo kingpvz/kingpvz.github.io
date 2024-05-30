@@ -1,3 +1,4 @@
+<pseudo title>Koula Changelog</pseudo>
 BETA 4.0
 The editor now works in a preview mode
 - You can try out all the features

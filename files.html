@@ -14,14 +14,14 @@
         var file = GetURLParameter('file');
         var red = GetURLParameter('redirect');
         if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && red !== '0') {
-            window.location.replace("/m/files?file="+file)
+            window.location.replace("/m/files?file=" + file)
         }
 
         var zoomrn = 1;
 
         function updatezoom() {
             const contents = document.querySelector('.content');
-            contents.style.fontSize = zoomrn+"vw";
+            contents.style.fontSize = zoomrn + "vw";
         }
 
         function zoom_in() {
@@ -33,7 +33,7 @@
             } else {
                 zoomrn += 0.1;
             }
-            
+
             updatezoom();
         }
 
@@ -78,8 +78,10 @@
         }
 
         body, html {
-            margin: 0; padding: 0;
-            color: white; font-family: "Roboto", sans-serif;
+            margin: 0;
+            padding: 0;
+            color: white;
+            font-family: "Roboto", sans-serif;
             background: #222;
         }
 
@@ -96,7 +98,6 @@
         .fileheader {
             background: #222;
             color: white;
-            height: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -120,10 +121,10 @@
 
         .content {
             margin: 0 1vw 0 1vw;
-            padding: 1vw;
+            padding: 1vw 1vw 0 1vw;
             overflow: auto;
-            height: calc(100vh - 8vw);
-            width: 1fr;
+            height: calc(100vh - 6vw);
+            width: calc(100% - 1vw - 40px);
             font-size: 1vw;
             transition: 0.5s;
         }
@@ -133,10 +134,10 @@
             transition: 0.2s;
         }
 
-        done:hover {
-            color: lightgray;
-            cursor: default;
-        }
+            done:hover {
+                color: lightgray;
+                cursor: default;
+            }
 
         #kokolok:hover {
             scale: 1.15;
@@ -151,7 +152,6 @@
                 border-radius: 1.5vw;
                 cursor: pointer;
             }
-
     </style>
     <div class="headerer">
         <a href="." style="display:flex; align-items: center;"><img src="favicon.png" style="margin: 0.25vw 1.5vw 0.25vw 0.25vw; height:4vw; transition: 0.3s" id="kokolok" /></a>
@@ -179,18 +179,22 @@
     </div>
 
     <script>
-        window.onload = function() {
+        window.onload = function () {
             var result = null;
+            var fileTitle = null;
             var xmlhttp = new XMLHttpRequest();
-            xmlhttp.open("GET", "https://kingpvz.github.io/global_resources/files/"+file, false);
+            xmlhttp.open("GET", "https://kingpvz.github.io/global_resources/files/" + file, false);
             xmlhttp.send();
             if (xmlhttp.status == 200) {
-                result = xmlhttp.responseText.replaceAll("\n", "<br/>");
+                var receive = xmlhttp.responseText;
+                receive = receive.split("\n");
+                fileTitle = receive.shift();
+                result = receive.join("<br/>")
             }
             document.getElementById("textfile").innerHTML = result;
-            document.getElementById("filetitle").innerHTML = file;
+            document.getElementById("filetitle").innerHTML = fileTitle;
         }
-        
+
     </script>
 </body>
 
