@@ -3,7 +3,7 @@ const footertemplate = document.createElement('template');
 
 headertemplate.innerHTML = `
 <div class="header">
-  <h1 id="webtitle"><a href="/" id="webtitle" target="_parent">Kingpvz</a></h1>
+  <a href="/"><img src="/global_resources/images/website_logo.png" id="webtitle"></a>
          <div id="titlediv">
             <a target="_blank" style="color: red;" class="titleitem" href="https://youtube.com/@kingpvz">YouTube</a><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
             <a target="_blank" style="color: #FF424D;" class="titleitem" href="https://patreon.com/kingpvz">Patreon</a><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>

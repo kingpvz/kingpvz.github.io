@@ -12,11 +12,11 @@ body {
     border-radius: 100px;
     color: lightgray;
     font-family: 'Roboto', sans-serif;
-    font-weight: 200;
+    font-weight: 300;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    font-size: 2.3vw;
+    font-size: 2.8vw;
 }
 
 .footerlink{
@@ -24,12 +24,12 @@ body {
 }
 
 #webtitle {
-    color: white;
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    font-size: 9vw;
+    padding: 2vw 0;
     grid-area: title;
+}
+
+#webtitleimg {
+    height: 17.5vw;
 }
 
 #leftnav {

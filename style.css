@@ -66,16 +66,13 @@ body {
 }
 
 #webtitle {
-    color: white;
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    font-size: 2vw;
+    height: 3.75vw;
     transition: 0.5s;
+    margin: 5% 0;
 }
 
 #webtitle:hover {
-    text-shadow: 0 0 10px white;
+    filter: drop-shadow(0 0 5px white);
     scale: 1.1;
 }
 
