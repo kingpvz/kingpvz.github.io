@@ -72,7 +72,7 @@ html, body, #main {
     overflow: auto;
 }
 
-.containeritem {
+div.containeritem {
     border-style: solid none solid;
     border-width: 2px;
     color: gray;
@@ -92,13 +92,13 @@ html, body, #main {
     user-select: none;
 }
 
-    .containeritem:hover {
+    div.containeritem:hover {
         scale: 1;
         background-color: #2d314b;
         color: white;
     }
 
-.selected {
+div.selected {
     color: white;
     border-color: lightblue;
     font-weight: 700;
@@ -106,8 +106,48 @@ html, body, #main {
     scale: 1;
 }
 
-.selected:hover {
+div.selected:hover {
     scale: 1.005;
+}
+
+#containerfunctions {
+    display:flex;
+}
+
+img.containeritem {
+    padding: 10px;
+    cursor: pointer;
+    scale: 0.9;
+    transition: 0.2s;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    filter: invert(0.3);
+    width: 50px;
+    height: 50px;
+}
+
+    img.containeritem:hover {
+        scale: 1;
+        filter: invert(0);
+    }
+
+    #settingsbutton:hover {
+        rotate: 67.5deg;
+    }
+
+img.selected {
+    filter: invert(0) drop-shadow(#77a 0 0 5px);
+    scale: 1;
+}
+
+    img.selected:hover {
+        scale: 1.05;
+        filter: invert(0) drop-shadow(#77a 0 0 3px);
+    }
+
+.placeholderimg {
+    visibility: hidden;
 }
 
 #title {
@@ -116,7 +156,7 @@ html, body, #main {
     width: 100%;
     font-weight: 700;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
@@ -126,7 +166,7 @@ html, body, #main {
     background-color: #555;
     padding: 8px;
     font-size: 18px;
-    margin: 25px auto 0 auto;
+    margin: 5px auto 0 auto;
     color: #bbb;
     text-shadow: black 3px 3px 3px;
     width: fit-content;
@@ -388,9 +428,8 @@ html, body, #main {
         grid-template-rows: 30vh 70vh;
     }
 
-    #title {grid-area: sitetitle}
-    #settingsbutton {grid-area: settings}
-    #exportquizbutton {grid-area: export}
+    #title {grid-area: sitetitle;}
+    #containerfunctions {grid-area: fns}
     #addquestion {grid-area: new}
     #questions {grid-area: question;
                 width: 100%; overflow-y: auto; height: 100%; overflow-x: hidden;
@@ -401,7 +440,7 @@ html, body, #main {
         display: grid;
         grid-template-rows: repeat(4, auto);
         grid-template-columns: 1fr 1fr;
-        grid-template-areas: "sitetitle question" "settings question" "export question" "new question";
+        grid-template-areas: "sitetitle question" "sitetitle question" "fns question" "new question";
             grid-gap: 20px;
     }
 
@@ -409,7 +448,14 @@ html, body, #main {
         height: 70vh;
     }
 
-    .containeritem {
+    #containerfunctions {
+        display: flex;
+        height: 1fr;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    div.containeritem {
         border-width: 5px;
         padding:10px;
         font-size: 40px;
@@ -417,9 +463,18 @@ html, body, #main {
         margin: 0;
     }
 
+    img.containeritem {
+        width: 100px;
+        height: 100px;
+        margin: 0;
+    }
+
     #title {
         font-size: 50px;
         margin-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     #addquestion {
@@ -557,4 +612,8 @@ html, body, #main {
             display: block !important;
             margin-bottom: 15px !important;
         }
+
+    .desktoponly {
+        display:none;
+    }
 }
