@@ -17,12 +17,6 @@
 - Added 4/12/24
 - Implemented TBA
 
-> (QUIZ) Better Project Home Page
-  The mobile version looks fine, but since desktop view has navigation on the left side, the desktop home page is kinda empty.
-  So basically, I want to add some buttons and such.
-- Added 4/12/24
-- Desktop TBA
-
 > (QUIZ) Documentation
   A simple documentation to deeply explain what everything does and give you a quick html lesson about how powerful this quiz actually is.
   Because fun fact: you can actually add images and style the text. Yea, I just never told you.
@@ -35,6 +29,12 @@
 - Added 2/8/24
 - Desktop TBA
 - Mobile TBA
+
+<done>> (QUIZ) Better Project Home Page
+  The mobile version looks fine, but since desktop view has navigation on the left side, the desktop home page is kinda empty.
+  So basically, I want to add some buttons and such.
+- Added 4/12/24
+- Desktop 5/31/24</done>
 
 <done>> (SQ) Mobile Site
   Yea I'm out of time today I'll do it later

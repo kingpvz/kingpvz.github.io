@@ -195,7 +195,7 @@
                 var receive = xmlhttp.responseText;
                 receive = receive.split("\n");
                 fileTitle = receive.shift();
-                result = receive.join("<br/>")
+                result = receive.join("<br/>");
             }
             document.getElementById("textfile").innerHTML = result;
             document.getElementById("filetitle").innerHTML = fileTitle;

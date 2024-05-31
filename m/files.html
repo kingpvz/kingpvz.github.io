@@ -93,14 +93,18 @@
     <script>
         window.onload = function() {
             var result = null;
+            var fileTitle = null;
             var xmlhttp = new XMLHttpRequest();
             xmlhttp.open("GET", "https://kingpvz.github.io/global_resources/files/"+file, false);
             xmlhttp.send();
             if (xmlhttp.status == 200) {
-                result = xmlhttp.responseText.replaceAll("\n", "<br/>");
+                var receive = xmlhttp.responseText;
+                receive = receive.split("\n");
+                fileTitle = receive.shift();
+                result = receive.join("<br/>");
             }
             document.getElementById("textfile").innerHTML = result;
-            document.getElementById("filetitle").innerHTML = file;
+            document.getElementById("filetitle").innerHTML = fileTitle;
         }
         
     </script>
