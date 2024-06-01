@@ -146,10 +146,6 @@ img.selected {
         filter: invert(0) drop-shadow(#77a 0 0 3px);
     }
 
-.placeholderimg {
-    visibility: hidden;
-}
-
 #title {
     color: white;
     font-size: 25px;

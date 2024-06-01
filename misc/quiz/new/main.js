@@ -15,7 +15,7 @@ function changeScreen(to, id = -1) {
         errorlog.style.display = "none";
     }
 
-    //handle question
+    
     if (id !== -1) {
         inputs["question"]["name"].value = questionstorage[id]["name"];
         inputs["question"]["id"].value = id;
@@ -202,5 +202,167 @@ function downloadQuiz() {
 
         document.body.removeChild(elementr);
 
+    }
+}
+
+function saveProject() {
+    var filet = `{
+        "settings":{
+            "name":"_SETTINGSNAME",
+            "id":"_SETTINGSID",
+            "ask":"_SETTINGSASK",
+            "text": {
+                "next":"_SETTINGSTEXTNEXT",
+                "finish":"_SETTINGSTEXTFINISH",
+                "points":"_SETTINGSTEXTPOINTS",
+                "correct":"_SETTINGSTEXTCORRECT",
+                "incorrect":"_SETTINGSTEXTINCORRECT",
+                "rating":"_SETTINGSTEXTRATING",
+                "again":"_SETTINGSTEXTAGAIN",
+                "return":"_SETTINGSTEXTRETURN"
+            },
+            "rating": {
+                "fail":"_SETTINGSRATEFAIL",
+                "bad":"_SETTINGSRATEBAD",
+                "ok":"_SETTINGSRATEOK",
+                "good":"_SETTINGSRATEGOOD",
+                "great":"_SETTINGSRATEGREAT"
+            }
+        },
+        "export":{
+            "author":"_EXPORTAUTHOR",
+            "embed":"_EXPORTEMBED",
+            "name":"_EXPORTFILENAME"
+        },
+        "KEY:?questionstate::currentquestion": _CURRENTQUESTION,
+        "question": [
+            _QUESTIONDUMP
+        ]
+    }`;
+    filet = filet.replace("_EXPORTAUTHOR", inputs["export"]["author"].value).replace("_SETTINGSNAME", inputs["settings"]["name"].value).replace("_SETTINGSID", inputs["settings"]["id"].value).replace("_EXPORTEMBED", inputs["export"]["embed"].value);
+    filet = filet.replace("_SETTINGSTEXTNEXT", inputs["settings"]["next"].value).replace("_SETTINGSASK", inputs["settings"]["ask"].value).replace("_SETTINGSTEXTFINISH", inputs["settings"]["done"].value).replace("_SETTINGSTEXTPOINTS", inputs["settings"]["points"].value);
+    filet = filet.replace("_SETTINGSTEXTCORRECT", inputs["settings"]["correct"].value).replace("_SETTINGSTEXTINCORRECT", inputs["settings"]["wrong"].value).replace("_SETTINGSTEXTRATING", inputs["settings"]["rating"].value).replace("_SETTINGSRATEFAIL", inputs["settings"]["rfail"].value);
+    filet = filet.replace("_SETTINGSRATEBAD", inputs["settings"]["rbad"].value).replace("_SETTINGSRATEOK", inputs["settings"]["rok"].value).replace("_SETTINGSRATEGOOD", inputs["settings"]["rgood"].value).replace("_SETTINGSRATEGREAT", inputs["settings"]["rgreat"].value);
+    filet = filet.replace("_SETTINGSTEXTAGAIN", inputs["settings"]["tryagain"].value).replace("_SETTINGSTEXTRETURN", inputs["settings"]["return"].value).replace("_CURRENTQUESTION", questioncounter).replace("_EXPORTFILENAME", inputs["export"]["filename"].value);
+
+    var fileq = ``;
+    for (let [key, value] of Object.entries(questionstorage)) {
+        var qex = "";
+
+        if (fileq.slice(-1) === "}") { qex = qex + ",\n" }
+        qex = qex + `{
+                "name": "_NAME",
+                "id": _ID,
+                "command": "_COMMAND",
+                "query": "_QUERY",
+                "c1": "_C1",
+                "c2": "_C2",
+                "c3": "_C3",
+                "c4": "_C4",
+                "c": _CORRECT
+            }`.replace("_ID", key).replace("_COMMAND", questionstorage[key]["command"]).replace("_QUERY", questionstorage[key]["query"]).replace("_C1", questionstorage[key]["c1"]).replace("_C2", questionstorage[key]["c2"]);
+        qex = qex.replace("_C3", questionstorage[key]["c3"]).replace("_C4", questionstorage[key]["c4"]).replace("_CORRECT", questionstorage[key]["c"]).replace("_NAME", questionstorage[key]["name"]);
+
+        fileq = fileq + qex;
+    }
+
+    filet = filet.replace("_QUESTIONDUMP", fileq)
+
+    var elementr = document.createElement('a');
+    elementr.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(filet));
+    var filen = "myquiz";
+    if (inputs["settings"]["id"].value.replace(" ", "")) { filen = inputs["settings"]["id"].value; }
+    elementr.setAttribute('download', filen + ".uqp");
+
+    elementr.style.display = 'none';
+    document.body.appendChild(elementr);
+
+    elementr.click();
+
+    document.body.removeChild(elementr);
+}
+
+function loadProject() {
+    if (confirm('Loading a project will discard all unsaved data.')) {
+
+
+        var input = document.createElement('input');
+        input.type = 'file';
+        input.accept = '.uqp';
+
+        input.onchange = e => {
+
+            var file = e.target.files[0];
+
+            var reader = new FileReader();
+            reader.readAsText(file, 'UTF-8');
+
+            reader.onload = readerEvent => {
+                var content = readerEvent.target.result;
+
+                content = JSON.parse(content);
+
+                inputs["settings"]["name"].value = content["settings"]["name"];
+                inputs["settings"]["id"].value = content["settings"]["id"];
+                inputs["settings"]["ask"].value = content["settings"]["ask"];
+                inputs["settings"]["next"].value = content["settings"]["text"]["next"];
+                inputs["settings"]["done"].value = content["settings"]["text"]["finish"];
+                inputs["settings"]["points"].value = content["settings"]["text"]["points"];
+                inputs["settings"]["correct"].value = content["settings"]["text"]["correct"];
+                inputs["settings"]["wrong"].value = content["settings"]["text"]["incorrect"];
+                inputs["settings"]["rating"].value = content["settings"]["text"]["rating"];
+                inputs["settings"]["tryagain"].value = content["settings"]["text"]["again"];
+                inputs["settings"]["return"].value = content["settings"]["text"]["return"];
+                inputs["settings"]["rfail"].value = content["settings"]["rating"]["fail"];
+                inputs["settings"]["rbad"].value = content["settings"]["rating"]["bad"];
+                inputs["settings"]["rok"].value = content["settings"]["rating"]["ok"];
+                inputs["settings"]["rgood"].value = content["settings"]["rating"]["good"];
+                inputs["settings"]["rgreat"].value = content["settings"]["rating"]["great"];
+
+                inputs["export"]["author"].value = content["export"]["author"];
+                inputs["export"]["embed"].value = content["export"]["embed"];
+                inputs["export"]["filename"].value = content["export"]["name"];
+
+                questioncounter = content["KEY:?questionstate::currentquestion"];
+
+                for (let i = 0; i < content["question"].length; i++) {
+                    let wt = content["question"][i];
+
+                    buttons["question"][wt["id"]] = document.createElement("div");
+                    buttons["question"][wt["id"]].classList.add("deletable"); buttons["question"][wt["id"]].classList.add("containeritem");
+                    buttons["question"][wt["id"]].id = "question" + wt["id"];
+
+                    var CREATEtext = document.createElement("p"); CREATEtext.classList.add("containedtext"); CREATEtext.id = "label" + wt["id"]; CREATEtext.setAttribute("onclick", "changeScreen('question', '" + wt["id"] + "');"); CREATEtext.innerHTML = wt["name"];
+                    var CREATEdivider = document.createElement("div"); CREATEdivider.classList.add("divider");
+                    var CREATEtrash = document.createElement("img"); CREATEtrash.classList.add("deletebutton"); CREATEtrash.id = "delete" + wt["id"]; CREATEtrash.src = "../../../global_resources/icons/delete.png"; CREATEtrash.setAttribute("onclick", "deleteQuestion('" + wt["id"] + "')");
+
+                    questionstorage[wt["id"]] = {
+                        "name": wt["name"],
+                        "command": wt["command"],
+                        "query": wt["query"],
+                        "c1": wt["c1"],
+                        "c2": wt["c2"],
+                        "c3": wt["c3"],
+                        "c4": wt["c4"],
+                        "c": wt["c"]
+                    }
+
+                    buttons["question"][wt["id"]].appendChild(CREATEtext); buttons["question"][wt["id"]].appendChild(CREATEdivider); buttons["question"][wt["id"]].appendChild(CREATEtrash);
+                    document.getElementById("questions").prepend(buttons["question"][wt["id"]]);
+
+                    questionlabels[wt["id"]] = document.getElementById("label" + wt["id"]);
+                    buttons["question"][wt["id"]] = document.getElementById("question" + wt["id"]);
+                    buttons["delete"][wt["id"]] = document.getElementById("delete" + wt["id"]);
+                }
+
+            }
+
+        }
+
+        input.click();
+
+
+    } else {
+        console.log("Action aborted.")
     }
 }

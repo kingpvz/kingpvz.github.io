@@ -11,12 +11,6 @@
 
 
 
-> (QUIZ) Saving/Loading Quiz Projects
-  Imagine you wanted to work on the same quiz with someone else, or simply save the wuiz and finish it another day.
-  Yea basically that, it's very important.
-- Added 4/12/24
-- Implemented TBA
-
 > (QUIZ) Documentation
   A simple documentation to deeply explain what everything does and give you a quick html lesson about how powerful this quiz actually is.
   Because fun fact: you can actually add images and style the text. Yea, I just never told you.
@@ -29,6 +23,12 @@
 - Added 2/8/24
 - Desktop TBA
 - Mobile TBA
+
+<done>> (QUIZ) Saving/Loading Quiz Projects
+  Imagine you wanted to work on the same quiz with someone else, or simply save the wuiz and finish it another day.
+  Yea basically that, it's very important.
+- Added 4/12/24
+- Implemented 6/1/24</done>
 
 <done>> (QUIZ) Better Project Home Page
   The mobile version looks fine, but since desktop view has navigation on the left side, the desktop home page is kinda empty.
