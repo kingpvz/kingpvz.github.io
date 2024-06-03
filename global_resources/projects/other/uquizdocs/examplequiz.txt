@@ -1,0 +1,33 @@
+{
+        "info": {
+        "author": "I'm the author name!",
+        "name": "I'm the quiz name!",
+        "id": "im_the_quiz_id",
+        "questions": 1,
+        "embed": "I'm the embed code!"
+    },
+        "settings": {
+        "n": "I'm the next button!",
+        "ask": 1,
+        "done": "I'm the quiz finished text!",
+        "text_points": "I'm the points text!",
+        "text_correct": "I'm the correct text!",
+        "text_wrong": "I'm the incorrect text!",
+        "r": "I'm the rating text!",
+        "r_fail": "&lt;RATING&gt;",
+        "r_bad": "&lt;RATING&gt;",
+        "r_ok": "&lt;RATING&gt;",
+        "r_good": "&lt;RATING&gt;",
+        "r_great": "&lt;RATING&gt;",
+        "text_again": "I'm the try again button!",
+        "text_return": "I'm the return text!"
+}, "qr": [{
+                "id": 0,
+                "command": "I'm the command!",
+                "query": "I'm the question!",
+                "c1": "I'm an option!",
+                "c2": "I am an option!",
+                "c3": "I'm the option!",
+                "c4": "I am indeed an option!",
+                "c": 3
+            }]}

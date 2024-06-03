@@ -1,0 +1,43 @@
+{
+        "settings":{
+            "name":"I'm the quiz name!",
+            "id":"im_the_quiz_id",
+            "ask":"1",
+            "text": {
+                "next":"I'm the next button!",
+                "finish":"I'm the quiz finished text!",
+                "points":"I'm the points text!",
+                "correct":"I'm the correct text!",
+                "incorrect":"I'm the incorrect text!",
+                "rating":"I'm the rating text!",
+                "again":"I'm the try again button!",
+                "return":"I'm the return text!"
+            },
+            "rating": {
+                "fail":"&lt;RATING&gt;",
+                "bad":"&lt;RATING&gt;",
+                "ok":"&lt;RATING&gt;",
+                "good":"&lt;RATING&gt;",
+                "great":"&lt;RATING&gt;"
+            }
+        },
+        "export":{
+            "author":"I'm the author name!",
+            "embed":"I'm the embed code!",
+            "name":"im_the_quiz_file_name"
+        },
+        "KEY:?questionstate::currentquestion": 1,
+        "question": [
+            {
+                "name": "I am a question!",
+                "id": 0,
+                "command": "I'm the command!",
+                "query": "I'm the question!",
+                "c1": "I'm an option!",
+                "c2": "I am an option!",
+                "c3": "I'm the option!",
+                "c4": "I am indeed an option!",
+                "c": 3
+            }
+        ]
+    }
