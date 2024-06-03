@@ -29,26 +29,44 @@
         <div id="sidebar">
             <div id="navs">
                 <div id="pnav">
-                    <h3>Project Navigation:</h3><br />
-                    <a class="alnavbar" href="." title="Home page of this project.">Home</a><br /><br />
-                    <a class="alnavbar" href="../../misc/quiz/new" title="Powerful Quiz Creation Tool">Create Quiz</a><br /><br />
-                    <a class="alnavbar" href="../../misc/quiz/file" title="Open Quizzes made in the Quiz Creation Tool">Open Quiz</a><br /><br />
-                    <a class="alnavbar" href="hubs" title="Explore Quizzes made especially for a target audience!">Explore Quiz Hubs</a><br /><br />
-                    <a class="alnavbar alhere" href="#" title="Documentation for all features!">Documentation</a><br /><br />
-                </div>            <div id="nav">
-                    <br />
-                    <a class="navbar" href="../../" title="The main page! Not much to see here tho.">Home</a><br /><br />
-                    <a class="navbar" href="../../minecraft" title="My Minecraft mods, resource packs and maps!">Minecraft</a><br /><br />
-                    <a class="navbar" href="../../contact" title="My email and messaging platforms.">Contact</a><br /><br />
-                    <a class="navbar" href="../../social" title="Follow me everywhere!">Social Sites</a><br /><br />
-                    <a class="navbar" href="../" title="My apps, games and other fun projects!">Projects</a><br /><br />
-                    <a class="navbar" href="../../webs" title="My other websites to check out!">Websites</a><br /><br />
+                    <h3>uQuiz Documentation</h3><br />
+                    <a class="alnavbar" href="." title="Home page of this project."><i><span style="text-decoration: underline;">&lt;- Home</span></i></a><br /><br />
+                    <a class="alnavbar albold" href="#hdexplanation">Explanation</a><br /><br />
+                    <a class="alnavbar albold" href="#hdimagesandtextstyles">Images and Text Styling</a><br /><br />
                 </div>
                 </div>
             </div>
-        <div id="content">
+        <div id="content" style="text-align: left; margin-left: 20px;">
 
-            coming soon :D
+            <h1 id="hdexplanation">Explanation</h1><hr />
+                <div style="display:grid; grid-template-columns: 25% 1fr 25%; grid-gap: 15px;">
+
+                    <img src="../../global_resources/projects/other/uquizdocs/examplequestion.jpg" class="sectimg" />
+
+                    <div>
+                        <p class="text">
+                            In the quiz creation tool, every single text box has an explanation right under it to help you understand what it does.
+                            If, however, you are more of a visual learner, the images on the left and right should explain exactly what each of the text boxes do.
+                            Every text box has a label and on our images, each label is included! There is even more visible in the code.<br /><br />
+                            Feel free to download the example quiz to better understand how it works. Both project and quiz file is available:
+                        </p><br />
+                        <div onclick="Object.assign(document.createElement('a'), { href: 'https://kingpvz.github.io/global_resources/projects/other/uquizdocs/examplequiz.txt', download: 'examplequiz.txt' }).click();" class="aldown">
+                            <img style="float:left; margin-right: 15px; height: 100%;" src="../../global_resources/icons/download.png" />
+                            <b>Download Quiz File</b><br /><i style="color: #bbb; font-size: 1vw;">examplequiz.txt &nbsp; | &nbsp; 1.1kB</i>
+                        </div>
+                        <div onclick="Object.assign(document.createElement('a'), { href: 'https://kingpvz.github.io/global_resources/projects/other/uquizdocs/examplequiz.uqp', download: 'examplequiz.txt' }).click();" class="aldown">
+                            <img style="float:left; margin-right: 15px; height: 100%;" src="../../global_resources/icons/download.png" />
+                            <b>Download Quiz Project</b><br /><i style="color: #bbb; font-size: 1vw;">examplequiz.uqp &nbsp; | &nbsp; 1.4kB</i>
+                        </div>
+                    </div>
+
+                    <img src="../../global_resources/projects/other/uquizdocs/examplefinish.jpg" class="sectimg" />
+
+                </div>
+            <br /><br />
+
+            <h1 id="hdimagesandtextstyles">Images and Text Styling</h1><hr />
+            <p class="text">coming soon :D</p>
 
         </div>
         </div>
