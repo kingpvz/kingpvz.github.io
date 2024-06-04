@@ -63,7 +63,8 @@ html, body, #main {
     background-color: #191c2e;
     box-shadow: black 0 0 50px;
     padding: 15px;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .editoritem {
@@ -123,8 +124,8 @@ img.containeritem {
     -ms-user-select: none;
     user-select: none;
     filter: invert(0.3);
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
 }
 
     img.containeritem:hover {
