@@ -1,7 +1,7 @@
 <pseudo title>YouTube Plans</pseudo>
 <h2>VIDEOS</h2>
 > IF I DIE/LOSE THE VIDEO ENDS
-  <ul>idk nothing yet i guess</ul>
+  <ul>Nothing planned.</ul>
 
 > OTHER
   <ul><li>Reacting to old music projects</li>
@@ -13,4 +13,4 @@
   <ul><li>All SubZero and World level music <done>Beast Mode was just finished! Releasing early July!</done></li></ul>
 
 > Other
-  <ul><li>Undertale Yellow: Enemy Retreating <done>Finished! Releases: June 7th</done></li></ul>
+  <ul>Nothing planned.</ul>
