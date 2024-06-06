@@ -11,7 +11,7 @@
 
 
 
-> (QUIZ) Documentation
+> (QUIZ) Complete Documentation
   A simple documentation to deeply explain what everything does and give you a quick html lesson about how powerful this quiz actually is.
   Because fun fact: you can actually add images and style the text. Yea, I just never told you.
 - Added 4/12/24
@@ -54,7 +54,7 @@
 - Mobile 4/12/24</done>
 
 <done>> Websites in Navigation
-  a websites section to show off and comunicate basically all of my websites with favicon and quick description
+  a websites section to show off and comunicate basically all of my websites with <span style="text-decoration:line-trough;">favicon and</span> quick description
 - Added 2/8/24
 - Desktop 2/12/24
 - Mobile 2/12/24</done>
