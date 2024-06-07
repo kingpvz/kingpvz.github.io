@@ -1,0 +1,77 @@
+html, body, #main {
+    margin: 0;
+    padding: 0;
+    font-family: "Ubuntu", sans-serif;
+    background-color: #222;
+}
+
+#main {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-rows: 60% 40%;
+    grid-template-columns: 100%;
+}
+
+#textview {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: #111 0 0 0.5vw 1vw inset, black 0 0 3vw inset;
+}
+
+#textviewtext {
+    color: white;
+    font-size: 4vw;
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+#editor {
+    background-color: #24214f;
+    display: grid;
+    grid-template-rows: 10vh 30vh;
+    grid-template-columns: 1fr;
+}
+
+#pager {
+    background-color: #111;
+    display: flex;
+}
+
+.pagerbutton {
+    background-color: #1f1f2a;
+    width: 4.5vw;
+    height: 9vh;
+    margin: 1vh 0 0 2vw;
+    border-radius: 2vh 2vh 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.pagerimage {
+    height: 80%;
+}
+
+.pagerbutton:hover {
+    padding-bottom: 0.25vh;
+    margin: 0.75vh 0 0 2vw;
+    background-color: #201941;
+}
+
+.selected {
+    background-color: #24214f;
+    margin: 0.5vh 0 0 2vw;
+    padding-bottom: 0.5vh;
+    cursor: default;
+}
+
+    .selected:hover {
+        padding-bottom: 0.5vh;
+        margin: 0.5vh 0 0 2vw;
+        background-color: #24214f;
+    }
