@@ -33,40 +33,143 @@
                     <a class="alnavbar" href="." title="Home page of this project."><i><span style="text-decoration: underline;">&lt;- Home</span></i></a><br /><br />
                     <a class="alnavbar albold" href="#hdexplanation">Explanation</a><br /><br />
                     <a class="alnavbar albold" href="#hdimagesandtextstyles">Images and Text Styling</a><br /><br />
+                    <a class="alnavbar albold" href="#hdtextdesign">Text Designer</a><br /><br />
                 </div>
                 </div>
             </div>
         <div id="content" style="text-align: left; margin-left: 20px;">
 
             <h1 id="hdexplanation">Explanation</h1><hr />
-                <div style="display:grid; grid-template-columns: 25% 1fr 25%; grid-gap: 15px;">
+            <div style="display:grid; grid-template-columns: 25% 1fr 25%; grid-gap: 15px;">
 
-                    <img src="../../global_resources/projects/other/uquizdocs/examplequestion.jpg" class="sectimg" />
+                <img src="../../global_resources/projects/other/uquizdocs/examplequestion.jpg" class="sectimg" />
 
-                    <div>
-                        <p class="text">
-                            In the quiz creation tool, every single text box has an explanation right under it to help you understand what it does.
-                            If, however, you are more of a visual learner, the images on the left and right should explain exactly what each of the text boxes do.
-                            Every text box has a label and on our images, each label is included! There is even more visible in the code.<br /><br />
-                            Feel free to download the example quiz to better understand how it works. Both project and quiz file is available:
-                        </p><br />
-                        <div onclick="Object.assign(document.createElement('a'), { href: 'https://kingpvz.github.io/global_resources/projects/other/uquizdocs/examplequiz.txt', download: 'examplequiz.txt' }).click();" class="aldown">
-                            <img style="float:left; margin-right: 15px; height: 100%;" src="../../global_resources/icons/download.png" />
-                            <b>Download Quiz File</b><br /><i style="color: #bbb; font-size: 1vw;">examplequiz.txt &nbsp; | &nbsp; 1.1kB</i>
-                        </div>
-                        <div onclick="Object.assign(document.createElement('a'), { href: 'https://kingpvz.github.io/global_resources/projects/other/uquizdocs/examplequiz.uqp', download: 'examplequiz.uqp' }).click();" class="aldown">
-                            <img style="float:left; margin-right: 15px; height: 100%;" src="../../global_resources/icons/download.png" />
-                            <b>Download Quiz Project</b><br /><i style="color: #bbb; font-size: 1vw;">examplequiz.uqp &nbsp; | &nbsp; 1.4kB</i>
-                        </div>
+                <div>
+                    <p class="text">
+                        In the quiz creation tool, every single text box has an explanation right under it to help you understand what it does.
+                        If, however, you are more of a visual learner, the images on the left and right should explain exactly what each of the text boxes do.
+                        Every text box has a label and on our images, each label is included! There is even more visible in the code.<br /><br />
+                        Feel free to download the example quiz to better understand how it works. Both project and quiz file is available:
+                    </p><br />
+                    <div onclick="Object.assign(document.createElement('a'), { href: 'https://kingpvz.github.io/global_resources/projects/other/uquizdocs/examplequiz.txt', download: 'examplequiz.txt' }).click();" class="aldown">
+                        <img style="float:left; margin-right: 15px; height: 100%;" src="../../global_resources/icons/download.png" />
+                        <b>Download Quiz File</b><br /><i style="color: #bbb; font-size: 1vw;">examplequiz.txt &nbsp; | &nbsp; 1.1kB</i>
                     </div>
-
-                    <img src="../../global_resources/projects/other/uquizdocs/examplefinish.jpg" class="sectimg" />
-
+                    <div onclick="Object.assign(document.createElement('a'), { href: 'https://kingpvz.github.io/global_resources/projects/other/uquizdocs/examplequiz.uqp', download: 'examplequiz.uqp' }).click();" class="aldown">
+                        <img style="float:left; margin-right: 15px; height: 100%;" src="../../global_resources/icons/download.png" />
+                        <b>Download Quiz Project</b><br /><i style="color: #bbb; font-size: 1vw;">examplequiz.uqp &nbsp; | &nbsp; 1.4kB</i>
+                    </div>
                 </div>
+
+                <img src="../../global_resources/projects/other/uquizdocs/examplefinish.jpg" class="sectimg" />
+
+            </div>
             <br /><br />
 
             <h1 id="hdimagesandtextstyles">Images and Text Styling</h1><hr />
-            <p class="text">coming soon :D</p>
+            <p class="text">You can use custom HTML tags to create images and style text. All tags except for <b>img</b> needs to be closed! Use this as a cheatsheet:<br /></p>
+            <table>
+                <tr>
+                    <th style="width: 20%;">Command</th>
+                    <th style="width: 20%;">Function</th>
+                    <th style="width:35%">Usage Example</th>
+                    <th style="width:25%">Output</th>
+                </tr>
+                <tr>
+                    <td class="first">&lt;img src='<code>url</code>'&gt;</td>
+                    <td>Creates an Image<br />Note: Only use single quotes (<code>'</code>)!</td>
+                    <td>&lt;img src='https://kingpvz.github.io/favicon.png'&gt;</td>
+                    <td><img src="https://kingpvz.github.io/favicon.png" height="100" /></td>
+                </tr>
+                <tr>
+                    <td class="first">&lt;red&gt;</td>
+                    <td>Red Text</td>
+                    <td>&lt;red&gt;Hello!&lt;/red&gt;</td>
+                    <td><span style="color:#f11;">Hello!</span></td>
+                </tr>
+                <tr>
+                    <td class="first">&lt;green&gt;</td>
+                    <td>Green Text</td>
+                    <td>&lt;green&gt;Hello!&lt;/green&gt;</td>
+                    <td><span style="color:#0a0;">Hello!</span></td>
+                </tr>
+                <tr>
+                    <td class="first">&lt;blue&gt;</td>
+                    <td>Blue Text</td>
+                    <td>&lt;blue&gt;Hello!&lt;/blue&gt;</td>
+                    <td><span style="color:#22f;">Hello!</span></td>
+                </tr>
+                <tr>
+                    <td class="first">&lt;yellow&gt;</td>
+                    <td>Yellow Text</td>
+                    <td>&lt;yellow&gt;Hello!&lt;/yellow&gt;</td>
+                    <td><span style="color:#ff0;">Hello!</span></td>
+                </tr>
+                <tr>
+                    <td class="first">&lt;orange&gt;</td>
+                    <td>Orange Text</td>
+                    <td>&lt;orange&gt;Hello!&lt;/orange&gt;</td>
+                    <td><span style="color:#f80;">Hello!</span></td>
+                </tr>
+                <tr>
+                    <td class="first">&lt;cyan&gt;</td>
+                    <td>Cyan Text</td>
+                    <td>&lt;cyan&gt;Hello!&lt;/cyan&gt;</td>
+                    <td><span style="color:#0dd;">Hello!</span></td>
+                </tr>
+                <tr>
+                    <td class="first">&lt;pink&gt;</td>
+                    <td>Pink Text</td>
+                    <td>&lt;pink&gt;Hello!&lt;/pink&gt;</td>
+                    <td><span style="color:#f0c;">Hello!</span></td>
+                </tr>
+                <tr>
+                    <td class="first">&lt;black&gt;</td>
+                    <td>Black Text</td>
+                    <td>&lt;black&gt;Hello!&lt;/black&gt;</td>
+                    <td><span style="color:#000;">Hello!</span></td>
+                </tr>
+                <tr>
+                    <td class="first">&lt;b&gt;</td>
+                    <td>Bold Text</td>
+                    <td>&lt;b&gt;Hello!&lt;/b&gt;</td>
+                    <td><b>Hello!</b></td>
+                </tr>
+                <tr>
+                    <td class="first">&lt;i&gt;</td>
+                    <td>Italic Text</td>
+                    <td>&lt;i&gt;Hello!&lt;/i&gt;</td>
+                    <td><i>Hello!</i></td>
+                </tr>
+                <tr>
+                    <td colspan="4" class="first">
+                        <br />You can combine commands to create any style like this:
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <i>We want a green text, that's both bold and italic.</i>
+                    </td>
+                    <td colspan="2">
+                        &lt;green&gt;&lt;b&gt;&lt;i&gt;Perfect.&lt;/i&gt;&lt;/b&gt;&lt;/green&gt;
+                    </td>
+                    <td>
+                        <b><i><span style="color: #0a0">Perfect.</span></i></b>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" class="first">Don't forget to close the tags in the opposite order as you have opened them!</td>
+                </tr>
+            </table>
+
+            <br /><br />
+            <h1 id="hdtextdesign">Text Designer</h1><hr />
+            <p class="text">
+                You can use this text designer which will output a HTML code usable in the quiz! This is here, so you don' have to worry about for example closing a tag incorrectly.
+                          <div class="aldown" onclick="document.location.href = '../../misc/quiz/textdesign'" style="display: flex; align-items: center; justify-content: center;">
+                              <b style="display: block;">CLICK HERE TO USE IT!</b>
+                          </div>
+            </p>
 
         </div>
         </div>

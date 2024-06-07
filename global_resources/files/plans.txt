@@ -15,7 +15,7 @@
   A simple documentation to deeply explain what everything does and give you a quick html lesson about how powerful this quiz actually is.
   Because fun fact: you can actually add images and style the text. Yea, I just never told you.
 - Added 4/12/24
-- Desktop TBA
+- Desktop 6/7/24
 - Mobile TBA
 
 > Quick Navigation in index.html

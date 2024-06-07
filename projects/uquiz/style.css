@@ -186,3 +186,51 @@
     scale: 1.2;
     border: solid white 3px;
 }
+
+table, th, td {
+    border: solid 3px #555;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    background-color: #222;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: #aaa 3px 3px 3px;
+}
+
+th {
+    font-size: 24px;
+    font-style: italic;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+td {
+    font-size: 18px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition: 0.25s;
+}
+
+td.first {
+    font-weight: bold;
+}
+
+code {
+    color: #999;
+}
+
+tr {
+    transition: 0.25s;
+}
+
+tr:hover {
+    background-color: #333;
+}
+
+td:hover {
+    background-color: #444;
+}

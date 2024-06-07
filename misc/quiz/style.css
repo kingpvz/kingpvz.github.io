@@ -5,6 +5,10 @@ html, body, #main {
     background-color: #222;
 }
 
+img {
+    width: 1fr;
+}
+
 #main {
     width: 100vw;
     height: 100vh;
@@ -280,4 +284,36 @@ html, body, #main {
     ;
     padding: 0.5vh 0.5vw;
   }
+}
+
+blue {
+    color: #22f;
+}
+
+red {
+    color: #f11;
+}
+
+yellow {
+    color: #ff0;
+}
+
+green {
+    color: #0a0;
+}
+
+orange {
+    color: #f80;
+}
+
+cyan {
+    color: #0dd;
+}
+
+pink {
+    color: #f0c;
+}
+
+black {
+    color: black;
 }
