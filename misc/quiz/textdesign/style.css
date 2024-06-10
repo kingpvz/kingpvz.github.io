@@ -20,14 +20,6 @@ html, body, #main {
     box-shadow: #111 0 0 0.5vw 1vw inset, black 0 0 3vw inset;
 }
 
-#textviewtext {
-    color: white;
-    font-size: 4vw;
-    user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-}
-
 #editor {
     background-color: #24214f;
     display: grid;
@@ -54,7 +46,7 @@ html, body, #main {
 }
 
 .pagerimage {
-    height: 80%;
+    width: 80%;
 }
 
 .pagerbutton:hover {
@@ -75,3 +67,92 @@ html, body, #main {
         margin: 0.5vh 0 0 2vw;
         background-color: #24214f;
     }
+
+.hidden {
+    display: none;
+}
+
+.realeditor {
+    width: 96vw;
+    height: 26vh;
+    padding: 2vh 2vw;
+}
+
+#texteditorgrid {
+    display: grid;
+    grid-template-columns: 21vw 21vw 46vw;
+    grid-gap: 4vw;
+    height: 100%;
+    grid-template-rows: 1fr;
+}
+
+textarea {
+    resize: none;
+    width: calc(100% - 1vh - 6px);
+    height: calc(20vh - 6px);
+    background-color: #555;
+    border: solid #777 3px;
+    color: white;
+    border-radius: 1vh;
+    padding: 1vh;
+    font-family: Ubuntu, sans-serif;
+    font-size: 2.5vh;
+    text-align: center;
+}
+
+textarea::placeholder {
+    color: #aaa;
+    font-style: italic;
+    opacity: 1;
+}
+
+textarea::-ms-input-placeholder {color: #aaa;}
+
+.mainh {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 1vh;
+    font-size: 3vh;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.checkbox {
+    width: 25px;
+    height: 25px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.checklabel {
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 2.5vh;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: 0.2s;
+}
+
+.checklabel:hover {
+    scale: 1.05;
+}
+
+.radio {
+    width: 25px;
+    height: 25px;
+    padding-right: 20px;
+    cursor: pointer;
+}

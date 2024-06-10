@@ -15,28 +15,72 @@
 
 
         <div id="textview">
-            <p id="textviewtext">Text will show here.</p>
+            <p id="textviewtext" style="color: white; font-size: 4vw; user-select: none; -moz-user-select: none; -ms-user-select: none;">Text will show here.</p>
         </div>
 
         <div id="editor">
 
             <div id="pager">
-                <div class="pagerbutton selected" title="Edit Text">
+                <div class="pagerbutton selected" title="Edit Text" id="edittextbutton" onclick="changeto('text')">
                     <img src="https://img.icons8.com/?size=100&id=0uZKEX9Uv1Gf&format=png&color=FFFFFF" class="pagerimage" />
                 </div>
-                <div class="pagerbutton" title="Edit Color">
+                <div class="pagerbutton" title="Edit Color" id="editcolorbutton" onclick="changeto('color')">
                     <img src="https://img.icons8.com/?size=100&id=1Ia1TnSUAVrK&format=png&color=000000" class="pagerimage" />
                 </div>
                 <div style="flex-grow: 1"></div>
-                <div class="pagerbutton" title="Show Code" style="margin-right: 2vw;">
+                <div class="pagerbutton" title="Show Code" style="margin-right: 2vw;" id="showcodebutton" onclick="changeto('code')">
                     <img src="https://img.icons8.com/?size=100&id=5aGEVwM5SAuD&format=png&color=FFFFFF" class="pagerimage" />
                 </div>
             </div>
 
             <div id="itemeditor">
 
-                <div style="height: 100%; display: flex; justify-content: center; color: white; font-weight: 700; align-items: center;">
-                    coming soon :3
+                <div class="realeditor" id="texteditor">
+                    <div id="texteditorgrid">
+
+                        <div id="texteditor_text">
+
+                            <h1 class="mainh">Text:</h1>
+                            <textarea placeholder="Input text here..." id="textinput" oninput="updateText()"></textarea>
+
+                        </div>
+                        <div id="texteditor_style">
+
+                            <h1 class="mainh">Style:</h1>
+                            <div style="display:flex; align-items: center; justify-content: space-between;">
+                                <label class="checklabel" onclick="editstyle('i')"><input type="checkbox" id="italiccheck" class="checkbox" /><span style="font-style: italic;">&nbsp; Italic</span></label>
+                                <label class="checklabel" onclick="editstyle('u')"><input type="checkbox" id="underlinecheck" class="checkbox" /><span>&nbsp; <span style="text-decoration: underline;">Underline</span></span></label>
+                            </div>
+                            <br />
+
+                            <h1 class="mainh">Text Weight:</h1>
+                            <div style="display:grid; grid-template-columns: 45% 45%; grid-template-rows: 45% 45%; grid-gap: 1.5vh 10%; width: 100%; justify-items: center;">
+                                <label class="checklabel"><input type="radio" id="bold300" name="boldness" value="300" class="radio" onclick="editstyle('b', 300)" /><span style="font-weight: 300;">&nbsp; Light</span></label>
+                                <label class="checklabel"><input type="radio" id="bold400" name="boldness" value="400" class="radio" checked="checked" onclick="editstyle('b', 400)" /><span style="font-weight: 400;">&nbsp; Default</span></label>
+                                <label class="checklabel"><input type="radio" id="bold500" name="boldness" value="500" class="radio" onclick="editstyle('b', 500)" /><span style="font-weight: 500;">&nbsp; Medium</span></label>
+                                <label class="checklabel"><input type="radio" id="bold700" name="boldness" value="700" class="radio" onclick="editstyle('b', 700)" /><span style="font-weight: 700;">&nbsp; Bold</span></label>
+                            </div>
+
+                        </div>
+                        <div id="texteditor_shadow">
+
+                            <h1 class="mainh">Shadow:</h1>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="realeditor hidden" id="coloreditor">
+
+
+
+                </div>
+
+                <div class="realeditor hidden" id="codeview">
+
+
+
                 </div>
 
             </div>
@@ -44,6 +88,31 @@
         </div>
 
     </div>
+
+    <script>
+
+        var views = {
+            "button": {
+                "text": document.getElementById("edittextbutton"),
+                "color": document.getElementById("editcolorbutton"),
+                "code": document.getElementById("showcodebutton")
+            },
+            "layout": {
+                "textedit": document.getElementById("texteditor"),
+                "coloredit": document.getElementById("coloreditor"),
+                "codeview": document.getElementById("codeview")
+            },
+            "editor": {
+                "textinput": document.getElementById("textinput"),
+                "textitalic": document.getElementById("italiccheck"),
+                "textund": document.getElementById("underlinecheck")
+            },
+            "other": {
+                "txt": document.getElementById("textviewtext")
+            }
+        }
+
+    </script>
 
 </body>
 </html>
