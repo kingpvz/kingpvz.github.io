@@ -36,6 +36,6 @@ function editstyle(type, value=0) {
 }
 
 function updateText() {
-    if (views["editor"]["textinput"].value) { views["other"]["txt"].innerHTML = views["editor"]["textinput"].value.split("\n").join("<br>").split("<").join("&lt;"); }
+    if (views["editor"]["textinput"].value) { views["other"]["txt"].innerHTML = views["editor"]["textinput"].value.split("<").join("&lt;").split("\n").join("<br>"); }
     else { views["other"]["txt"].innerHTML = "Text will show here."; }    
 }
