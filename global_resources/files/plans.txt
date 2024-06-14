@@ -1,4 +1,5 @@
 <pseudo title>Website Plans</pseudo>
+// Note: Date is in MM/DD/YY format.
 // Example
 // > Name
 //   Description
@@ -10,6 +11,11 @@
 // <done>If the plan is gray, it means it's completed.</done>
 
 
+
+> (QUIZ/Text Designer) Mobile Optimization
+  Yea basically make the Text Designer for uQuiz bearable to use on mobile. I have no more time today so, just so I don't forget.
+- Added 6/14/24
+- Implemented TBA
 
 > (QUIZ) Complete Documentation
   A simple documentation to deeply explain what everything does and give you a quick html lesson about how powerful this quiz actually is.
