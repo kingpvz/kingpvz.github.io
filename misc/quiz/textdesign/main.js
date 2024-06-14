@@ -132,7 +132,7 @@ function refreshCode() {
 
     views["editor"]["code"].innerHTML = `
     <span style="color: #d68e13">&lt;</span><span style="color: #5b8af7">span</span>
-    <span style="color: #71b4f2">style</span><span style="color: #5b8af7">=</span><span style="color: #d68e13">'</span><span style="color: #71f273">`+ styles + `</span><span style="color: #d68e13">'&gt;</span>` + views["editor"]["textinput"].value.split("<").join("&amp;lt;").split("\n").join("&lt;br>").split('"').join("&amp;quot;").split("'").join("&amp;#39;") + `<span style="color: #d68e13">&lt;</span><span style="color: #ed5417">/</span><span style="color: #5b8af7">span</span><span style="color: #d68e13">&gt;</span>
+    <span style="color: #71b4f2">style</span><span style="color: #5b8af7">=</span><span style="color: #d68e13">'</span><span style="color: #71f273">`+ styles + `</span><span style="color: #d68e13">'&gt;</span>` + views["editor"]["textinput"].value.split("<").join("&amp;lt;").split("\n").join("<span style='color: #d68e13'>&lt;</span><span style='color: #71b4f2'>br</span><span style='color: #d68e13'>&gt;</span>").split('"').join("&amp;quot;").split("'").join("&amp;#39;") + `<span style="color: #d68e13">&lt;</span><span style="color: #ed5417">/</span><span style="color: #5b8af7">span</span><span style="color: #d68e13">&gt;</span>
     `;
 }
 
