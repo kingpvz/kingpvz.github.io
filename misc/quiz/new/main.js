@@ -366,3 +366,7 @@ function loadProject() {
         console.log("Action aborted.")
     }
 }
+
+function openDesigner() {
+
+}

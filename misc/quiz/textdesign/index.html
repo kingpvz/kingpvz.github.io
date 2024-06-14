@@ -116,15 +116,15 @@
                                 <h1 class="mainh">Default Colors</h1>
                                 <div class="colorgrid">
 
-                                    <div class="color" style="background-color: white;" onclick="changeColor('white');" id="colorwhite" title="White (#fff)"></div>
-                                    <div class="color" style="background-color: black;" onclick="changeColor('black');" id="colorblack" title="Black (#000)"></div>
-                                    <div class="color" style="background-color: #f80;" onclick="changeColor('orange');" id="colororange" title="Orange (#f80)"></div>
-                                    <div class="color" style="background-color: #f11;" onclick="changeColor('red');" id="colorred" title="Red (#f11)"></div>
-                                    <div class="color" style="background-color: #0a0;" onclick="changeColor('green');" id="colorgreen" title="Green (#0a0)"></div>
-                                    <div class="color" style="background-color: #22f;" onclick="changeColor('blue');" id="colorblue" title="Blue (#22f)"></div>
-                                    <div class="color" style="background-color: #0dd;" onclick="changeColor('cyan');" id="colorcyan" title="Cyan (#0dd)"></div>
-                                    <div class="color" style="background-color: #f0c;" onclick="changeColor('pink');" id="colorpink" title="Pink (#f0c)"></div>
-                                    <div class="color" style="background-color: #ff0;" onclick="changeColor('yellow');" id="coloryellow" title="Yellow (#ff0)"></div>
+                                    <div class="color" style="background-color: white;" onclick="changeColor('white',255,255,255);" id="colorwhite" title="White (#fff)"></div>
+                                    <div class="color" style="background-color: black;" onclick="changeColor('black',0,0,0);" id="colorblack" title="Black (#000)"></div>
+                                    <div class="color" style="background-color: #f80;" onclick="changeColor('orange',255,136,0);" id="colororange" title="Orange (#f80)"></div>
+                                    <div class="color" style="background-color: #f11;" onclick="changeColor('red',255,17,17);" id="colorred" title="Red (#f11)"></div>
+                                    <div class="color" style="background-color: #0a0;" onclick="changeColor('green',0,0,170);" id="colorgreen" title="Green (#0a0)"></div>
+                                    <div class="color" style="background-color: #22f;" onclick="changeColor('blue',34,34,255);" id="colorblue" title="Blue (#22f)"></div>
+                                    <div class="color" style="background-color: #0dd;" onclick="changeColor('cyan',0,221,221);" id="colorcyan" title="Cyan (#0dd)"></div>
+                                    <div class="color" style="background-color: #f0c;" onclick="changeColor('pink',255,0,204);" id="colorpink" title="Pink (#f0c)"></div>
+                                    <div class="color" style="background-color: #ff0;" onclick="changeColor('yellow',255,255,0);" id="coloryellow" title="Yellow (#ff0)"></div>
 
                                 </div>
                             </div>
@@ -133,15 +133,15 @@
                                 <h1 class="mainh">More Colors</h1>
                                 <div class="colorgrid">
 
-                                    <div class="color" style="background-color: #444;" onclick="changeColor('darkgrey');" id="colordarkgrey" title="Dark Grey (#444)"></div>
-                                    <div class="color" style="background-color: #888;" onclick="changeColor('grey');" id="colorgrey" title="Grey (#888)"></div>
-                                    <div class="color" style="background-color: #bbb;" onclick="changeColor('lightgrey');" id="colorlightgrey" title="Light Grey (#bbb)"></div>
-                                    <div class="color" style="background-color: #f0f;" onclick="changeColor('magenta');" id="colormagenta" title="Magenta (#f0f)"></div>
-                                    <div class="color" style="background-color: #80f;" onclick="changeColor('violet');" id="colorviolet" title="Violet (#80f)"></div>
-                                    <div class="color" style="background-color: #f69;" onclick="changeColor('lightpink');" id="colorlightpink" title="Light Pink (#f69)"></div>
-                                    <div class="color" style="background-color: #a22;" onclick="changeColor('brown');" id="colorbrown" title="Brown (#0dd)"></div>
-                                    <div class="color" style="background-color: #3b8;" onclick="changeColor('mint');" id="colormint" title="Mint (#3b8)"></div>
-                                    <div class="color" style="background-color: #0af;" onclick="changeColor('skyblue');" id="colorskyblue" title="Sky Blue (#0af)"></div>
+                                    <div class="color" style="background-color: #444;" onclick="changeColor('darkgrey',68,68,68);" id="colordarkgrey" title="Dark Grey (#444)"></div>
+                                    <div class="color" style="background-color: #888;" onclick="changeColor('grey',136,136,136);" id="colorgrey" title="Grey (#888)"></div>
+                                    <div class="color" style="background-color: #bbb;" onclick="changeColor('lightgrey',187,187,187);" id="colorlightgrey" title="Light Grey (#bbb)"></div>
+                                    <div class="color" style="background-color: #f0f;" onclick="changeColor('magenta',255,0,255);" id="colormagenta" title="Magenta (#f0f)"></div>
+                                    <div class="color" style="background-color: #80f;" onclick="changeColor('violet',136,0,255);" id="colorviolet" title="Violet (#80f)"></div>
+                                    <div class="color" style="background-color: #f69;" onclick="changeColor('lightpink',255,102,153);" id="colorlightpink" title="Light Pink (#f69)"></div>
+                                    <div class="color" style="background-color: #a22;" onclick="changeColor('brown',170,34,34);" id="colorbrown" title="Brown (#0dd)"></div>
+                                    <div class="color" style="background-color: #3b8;" onclick="changeColor('mint',51,187,136);" id="colormint" title="Mint (#3b8)"></div>
+                                    <div class="color" style="background-color: #0af;" onclick="changeColor('skyblue',0,170,255);" id="colorskyblue" title="Sky Blue (#0af)"></div>
 
                                 </div>
                             </div>
@@ -150,24 +150,23 @@
                                 <h1 class="mainh">Custom Color</h1>
                                 <label class="sliderlabel">
                                     <span style="font-weight: bold; width: 15%;">Red:</span>
-                                    <input type="range" min="0" max="255" value="0" class="slider nogrow" oninput="colorslider[colorState]['r'] = this.value; changeColor('rgb('+colorslider[colorState]['r']+' '+colorslider[colorState]['g']+' '+colorslider[colorState]['b']+' / '+colorslider[colorState]['a']+'%)')" id="slidercr" />
+                                    <input type="range" min="0" max="255" value="255" class="slider nogrow" oninput="colorslider[colorState]['r'] = this.value; changeColor('rgb('+colorslider[colorState]['r']+' '+colorslider[colorState]['g']+' '+colorslider[colorState]['b']+' / '+colorslider[colorState]['a']+'%)')" id="slidercr" />
                                 </label>
                                 <br />
                                 <label class="sliderlabel">
                                     <span style="font-weight: bold; width: 15%;">Green:</span>
-                                    <input type="range" min="0" max="255" value="0" class="slider nogrow" oninput="colorslider[colorState]['g'] = this.value; changeColor('rgb('+colorslider[colorState]['r']+' '+colorslider[colorState]['g']+' '+colorslider[colorState]['b']+' / '+colorslider[colorState]['a']+'%)')" id="slidercg" />
+                                    <input type="range" min="0" max="255" value="255" class="slider nogrow" oninput="colorslider[colorState]['g'] = this.value; changeColor('rgb('+colorslider[colorState]['r']+' '+colorslider[colorState]['g']+' '+colorslider[colorState]['b']+' / '+colorslider[colorState]['a']+'%)')" id="slidercg" />
                                 </label>
                                 <br />
                                 <label class="sliderlabel">
                                     <span style="font-weight: bold; width: 15%;">Blue:</span>
-                                    <input type="range" min="0" max="255" value="0" class="slider nogrow" oninput="colorslider[colorState]['b'] = this.value; changeColor('rgb('+colorslider[colorState]['r']+' '+colorslider[colorState]['g']+' '+colorslider[colorState]['b']+' / '+colorslider[colorState]['a']+'%)')" id="slidercb" />
+                                    <input type="range" min="0" max="255" value="255" class="slider nogrow" oninput="colorslider[colorState]['b'] = this.value; changeColor('rgb('+colorslider[colorState]['r']+' '+colorslider[colorState]['g']+' '+colorslider[colorState]['b']+' / '+colorslider[colorState]['a']+'%)')" id="slidercb" />
                                 </label>
                                 <br />
                                 <label class="sliderlabel">
                                     <span style="font-weight: bold; width: 15%;">Alpha:</span>
                                     <input type="range" min="0" max="100" value="100" class="slider nogrow" oninput="colorslider[colorState]['a'] = this.value; changeColor('rgb('+colorslider[colorState]['r']+' '+colorslider[colorState]['g']+' '+colorslider[colorState]['b']+' / '+colorslider[colorState]['a']+'%)')" id="sliderca" />
                                 </label>
-                                <br />
 
                             </div>
 
@@ -179,7 +178,26 @@
 
                 <div class="realeditor hidden" id="codeview">
 
+                    <div id="codegrid">
 
+                        <p id="codeviewer">
+                            
+                        </p>
+
+                        <div id="codesidebar">
+
+                            <div style="display: flex; justify-content: flex-end;">
+                                <button id="copycode" onclick="copyCode()">COPY CODE</button>
+                            </div>
+                            
+                            <br />
+                            <p class="smalllabel">
+                                Code you copy is compatible with any CSS interface, including ultimateQuiz, but also any website created using HTML. Feel free to use it in your quiz or on your website.
+                            </p>
+
+                        </div>
+
+                    </div>
 
                 </div>
 
@@ -214,7 +232,9 @@
                 "colorr": document.getElementById("slidercr"),
                 "colorg": document.getElementById("slidercg"),
                 "colorb": document.getElementById("slidercb"),
-                "colora": document.getElementById("sliderca")
+                "colora": document.getElementById("sliderca"),
+                "code": document.getElementById("codeviewer"),
+                "copycode": document.getElementById("copycode")
             },
             "other": {
                 "txt": document.getElementById("textviewtext"),

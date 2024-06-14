@@ -1,7 +1,8 @@
 var shadow = { "x": '0', "y": '0', "blur": '0', "color": "black" }
-var data = { "weight": 400, "color": "white" }
+var data = { "weight": 400, "color": "white", "style":"normal", "decoration":"none" }
 var colorState = "text";
-var colorslider = { "text": { "r": '0', "g": '0', "b": '0', "a": '100' }, "shadow": { "r": '0', "g": '0', "b": '0', "a": '100' } }
+var colorslider = { "text": { "r": '255', "g": '255', "b": '255', "a": '100' }, "shadow": { "r": '0', "g": '0', "b": '0', "a": '100' } }
+var gCode = '';
 
 function changeto(view) {
     views["layout"]["textedit"].classList.add("hidden");
@@ -11,12 +12,15 @@ function changeto(view) {
     views["button"]["color"].classList.remove("selected");
     views["button"]["code"].classList.remove("selected");
     views["button"][view].classList.add("selected");
+    views["editor"]["copycode"].classList.remove("copied");
+    views["editor"]["copycode"].innerHTML = "COPY CODE";
     if (view === "text") {
         views["layout"]["textedit"].classList.remove("hidden");
     } else if (view === "color") {
         views["layout"]["coloredit"].classList.remove("hidden");
     } else if (view === "code") {
         views["layout"]["codeview"].classList.remove("hidden");
+        refreshCode();
     }
 }
 
@@ -24,17 +28,21 @@ function editstyle(type, value=0) {
     if (type === "i") {
         if (views["editor"]["textitalic"].checked) {
             views["other"]["txt"].style.fontStyle = "italic";
+            data["style"] = "italic";
         } else {
             views["other"]["txt"].style.fontStyle = "normal";
+            data["style"] = "normal";
         }
     }
     if (type === "u") {
         if (views["editor"]["textund"].checked) {
             views["other"]["txt"].style.textDecoration = "underline";
             views["other"]["toDisableShadow"].classList.add("disabled");
+            data["decoration"] = "underline";
         } else {
             views["other"]["txt"].style.textDecoration = "none";
             views["other"]["toDisableShadow"].classList.remove("disabled");
+            data["decoration"] = "none";
         }
     }
     if (type === "b") {
@@ -58,7 +66,7 @@ function slideOffset(axs, value, changesliders=false) {
     else { views["other"]["toDisableUnderline"].classList.add("disabled") }
 }
 
-function changeColor(x) {
+function changeColor(x,r,g,b) {
     let rs = '';
     var custom = false;
     switch (x) {
@@ -85,6 +93,10 @@ function changeColor(x) {
 
     if (colorState === 'text') { data['color']=rs; views["other"]["txt"].style.color = rs }
     else { shadow['color'] = rs; views["other"]["txt"].style.textShadow = shadow["x"] / 10 + "vw " + shadow["y"] / 10 + "vh " + shadow["blur"] / 4 + "px " + shadow["color"]; }
+    if (r !== undefined) {
+        colorslider[colorState]["r"] = r; colorslider[colorState]["g"] = g; colorslider[colorState]["b"] = b; colorslider[colorState]["a"] = 100;
+    changeColorTab(colorState); }
+    
 }
 
 function changeColorTab(x) {
@@ -97,4 +109,35 @@ function changeColorTab(x) {
     views["editor"]["colorg"].value = colorslider[x]["g"];
     views["editor"]["colorb"].value = colorslider[x]["b"];
     views["editor"]["colora"].value = colorslider[x]["a"];
+}
+
+function refreshCode() {
+
+    
+
+    let styles;
+    if (data['decoration'] === 'none') {
+        if (shadow["y"]!=='0' || shadow["x"]!=='0' || shadow["blur"]!=='0') {
+            styles = "font-weight: " + data['weight'] + "; font-style: " + data['style'] + "; color: " + data['color'] + "; text-shadow: " + shadow["x"] / 10 + "vw " + shadow["y"] / 10 + "vh " + shadow["blur"] / 4 + "px " + shadow["color"] + ";";
+        } else {
+            styles = "font-weight: " + data['weight'] + "; font-style: " + data['style'] + "; color: " + data['color'] + ";";
+        }
+       } else {
+        styles = "font-weight: " + data['weight'] + "; font-style: " + data['style'] + "; font-decoration: " + data['decoration'] + "; color: " + data['color'] + ";";
+    }
+
+    gCode = '<span style="' + styles + '">' + views["editor"]["textinput"].value + '</span>'
+
+       
+
+    views["editor"]["code"].innerHTML = `
+    <span style="color: #d68e13">&lt;</span><span style="color: #5b8af7">span</span>
+    <span style="color: #71b4f2">style</span><span style="color: #5b8af7">=</span><span style="color: #d68e13">"</span><span style="color: #71f273">`+ styles + `</span><span style="color: #d68e13">"&gt;</span>` + views["editor"]["textinput"].value + `<span style="color: #d68e13">&lt;</span><span style="color: #ed5417">/</span><span style="color: #5b8af7">span</span><span style="color: #d68e13">&gt;</span>
+    `;
+}
+
+function copyCode() {
+    navigator.clipboard.writeText(gCode);
+    views["editor"]["copycode"].classList.add("copied");
+    views["editor"]["copycode"].innerHTML = "COPIED!";
 }

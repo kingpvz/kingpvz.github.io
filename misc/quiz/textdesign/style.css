@@ -192,6 +192,7 @@ textarea::-ms-input-placeholder {color: #aaa;}
 
 .slider.nogrow {
     width: 85%;
+    height: 1.6vh;
 }
 
     .slider:hover {
@@ -273,7 +274,7 @@ textarea::-ms-input-placeholder {color: #aaa;}
     border-radius: 2vh;
     padding: 1vh;
     position: relative;
-    box-shadow: 0.3vh 0.3vh 0.25vh;
+    box-shadow: 0.35vh 0.35vh 0.25vh;
     display: grid;
     grid-template-columns: 25% 25% 40%;
     grid-gap: 5%;
@@ -303,4 +304,65 @@ textarea::-ms-input-placeholder {color: #aaa;}
     scale: 1;
     box-shadow: black 0 0 0.5vh;
     border: solid 0.5vh rgb(255 255 255 / 50%)
+}
+#codeviewer {
+    background-color: #111;
+    width: 96%;
+    padding: 1.5vh 2%;
+    white-space: nowrap;
+    overflow-x: auto;
+    font-size: 18px;
+    font-family: monospace;
+    margin-bottom: 2vh;
+    border-radius: 2vh;
+    color: white;
+    text-align: center;
+}
+
+    #codeviewer::-webkit-scrollbar {
+        height: 0.75vh;
+    }
+
+    #codeviewer::-webkit-scrollbar-track {
+        background: #24214f;
+    }
+
+    #codeviewer::-webkit-scrollbar-thumb {
+        background: #aaa;
+        border-radius: 1vh;
+        border: solid 0.25vh #24214f;
+    }
+
+        #codeviewer::-webkit-scrollbar-thumb:hover {
+            background: #fff;
+        }
+
+#copycode {
+    background: #8b8;
+    border-radius: 2vh;
+    padding: 1vh 1vw;
+    font-size: 2vh;
+    color: black;
+    cursor: pointer;
+    border: solid white 3px;
+    box-shadow: rgb(0 0 0 / 50%) 0.5vh 0.5vh 0.3vh;
+    transition: 0.2s;
+    font-family: Ubuntu, sans-serif;
+}
+
+#copycode:hover{
+    scale: 1.075;
+}
+
+#copycode.copied {
+    background: #070;
+    border: solid #0a0 3px;
+    box-shadow: none;
+    cursor: default;
+    color: white;
+    font-weight: 700;
+}
+
+#copycode.copied:hover {
+    scale :1;
 }

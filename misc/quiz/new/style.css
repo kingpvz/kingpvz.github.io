@@ -416,8 +416,44 @@ img.selected {
         background: #aaa;
     }
 
-
 .mobileonly { display: none; }
+
+.floatingtag {
+    position: absolute;
+    top: 2vh; right: 2vh;
+    width: 8vh;
+    height: 8vh;
+    background-color: #444;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2vh;
+    padding: 1vh;
+    cursor: pointer;
+    border: solid 0.5vh #bbb;
+    box-shadow: rgb(0 0 0 / 25%) 0 1vh 0.5vh 0.5vh;
+    transition: 0.2s;
+}
+
+.floatingtag:hover {
+    background-color: #555;
+    border: solid 0.5vh #aa0;
+    box-shadow: rgb(255 255 255 / 50%) 0 0 1vh;
+    scale: 1.025;
+}
+
+.floatingimg {
+    width: 6vh;
+    height: 6vh;
+}
+
+.floatingtext {
+    font-size: 1.3vh;
+    margin: 0.2vh 0 0 0;
+}
+
 
 @media(orientation: portrait){
     #main {
@@ -612,5 +648,41 @@ img.selected {
 
     .desktoponly {
         display:none;
+    }
+
+    .floatingtag {
+        position: sticky;
+        top: 2vh;
+        left: 2vh;
+        width: 7vh;
+        height: 7vh;
+        background-color: #444;
+        color: white;
+        opacity: 0.8;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 1.5vh;
+        padding: 0.5vh;
+        cursor: pointer;
+        border: solid 0.25vh #bbb;
+        box-shadow: rgb(0 0 0 / 25%) 0 1vh 0.5vh 0.5vh;
+    }
+        .floatingtag:hover {
+            background-color: #555;
+            border: solid 0.25vh #aa0;
+            box-shadow: rgb(255 255 255 / 50%) 0 0 1vh;
+            scale: 1;
+        }
+
+    .floatingimg {
+        width: 4.5vh;
+        height: 4.5vh;
+    }
+
+    .floatingtext {
+        font-size: 1.25vh;
+        margin: 0.2vh 0 0 0;
     }
 }
