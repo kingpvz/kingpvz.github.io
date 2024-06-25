@@ -1,7 +1,7 @@
 <pseudo title>YouTube Plans</pseudo>
 <h2>VIDEOS</h2>
 > IF I DIE/LOSE THE VIDEO ENDS
-  <ul><li>Welcome to the Game</li></ul>
+  <ul><li>Welcome to the Game &nbsp; <done>Releasing mid-August!</done></li></ul>
 
 > OTHER
   <ul><li>Reacting to old music projects</li>
@@ -10,7 +10,7 @@
 
 <h2>MUSIC</h2>
 > Geometry Bass 2
-  <ul><li>All SubZero and World level music <done>Beast Mode was just finished! Releasing early July!</done></li></ul>
+  <ul><li>All SubZero and World level music &nbsp; <done>Beast Mode was just finished! Releasing early July!</done></li></ul>
 
 > Other
   <ul>Nothing planned.</ul>
