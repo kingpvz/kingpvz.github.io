@@ -8,7 +8,7 @@
 // - Mobile (Date when this plan was implemented for mobile view)
 // - Implemented (Date when this plan was implemented - used when desktop and mobile views are on the same site)
 
-// <done>If the plan is gray, it means it's completed.</done>
+// <done>If the plan is grey, it means it's completed.</done>
 
 
 
