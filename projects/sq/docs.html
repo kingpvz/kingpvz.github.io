@@ -26,6 +26,7 @@
             <a class="sqltdocsmove" href="#cmd">2. Commands</a><br />
             <a class="sqltdocsmove" href="#cmdvar">2.1. Variable Declaration (var)</a><br />
             <a class="sqltdocsmove" href="#cmdprint">2.2. Print</a><br />
+            <a class="sqltdocsmove" href="#cmdprintf">2.2.1. Functional Print (printf)</a><br />
             <a class="sqltdocsmove" href="#cmddel">2.3. Delete Variable (del)</a><br />
             <a class="sqltdocsmove" href="#cmdvariables">2.4. List all Variables (variables)</a><br />
             <a class="sqltdocsmove" href="#cmdliteral">2.5. String/Lit/Str</a><br />
@@ -128,7 +129,20 @@
                 <h3 id="cmdprint">Print</h3>
                 <p class="text">
                     Syntax: <code>print <b class="exp">value</b></code><br />
-                    Function: Prints value to the console. Replaces escaped characters with their real values in the output.
+                    Function: Prints a literal value to the console. Replaces escaped characters with their real values in the output.
+                </p><br />
+
+                <h4 id="cmdprintf">Functional Print (printf)</h4>
+                <p class="text">
+                    Syntax: <code>printf <b class="exp">Command with return value</b></code><br />
+                    Function: Prints a return value to the console. Replaces escaped characters with their real values in the output.<br />
+                    Example:
+                    <code class="mlt">
+                        print scope<br />
+                        <i>scope</i> &nbsp; <b class="exp">The literal value "scope" is printed.</b><br />
+                        printf scope<br />
+                        <i>GLOBAL__</i> &nbsp; <b class="exp">The return of the scope command is printed.</b>
+                    </code>
                 </p><br /><br />
 
                 <h3 id="cmddel">Delete Variable (del)</h3>
@@ -140,8 +154,7 @@
                 <h3 id="cmdvariables">List all Variables (variables)</h3>
                 <p class="text">
                     Syntax: <code>variables</code><br />
-                    Function: Lists all variables with their raw (unescaped) values.<br />
-                    Return: List of all variables with their raw (unescaped) values.
+                    Function: Returns the list of all variables with their raw (unescaped) values.<br />
                 </p><br /><br />
 
                 <h3 id="cmdliteral">String/Lit/Str</h3>
@@ -243,7 +256,7 @@
                         &nbsp;&nbsp; var bl = str text<br />
                         .<br /><br />
                         call hi &nbsp; <b class="exp">Make sure to call the function first.</b><br />
-scope fn hi &nbsp; <b class="exp">Setting the scope to function hi.</b><br/>
+                        scope fn hi &nbsp; <b class="exp">Setting the scope to function hi.</b><br />
                         print {bl} &nbsp; <b class="exp">In our current scope, this variable exists.</b><br />
                         <i>text</i>
                     </code>
