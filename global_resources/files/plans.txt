@@ -12,18 +12,18 @@
 
 
 
-> (QUIZ) Complete Documentation
-  A simple documentation to deeply explain what everything does and give you a quick html lesson about how powerful this quiz actually is.
-  Because fun fact: you can actually add images and style the text. Yea, I just never told you.
-- Added 4/12/24
-- Desktop 6/7/24
-- Mobile TBA
-
 > Quick Navigation in index.html
   8 or 10 buttons for quick navigation like youtube, projects and so on.
 - Added 2/8/24
 - Desktop TBA
 - Mobile TBA
+
+<done>> (QUIZ) Complete Documentation
+  A simple documentation to deeply explain what everything does and give you a quick html lesson about how powerful this quiz actually is.
+  Because fun fact: you can actually add images and style the text. Yea, I just never told you.
+- Added 4/12/24
+- Desktop 6/7/24
+- Mobile 6/27/24</done>
 
 <done>> (QUIZ/Text Designer) Mobile Optimization
   Yea basically make the Text Designer for uQuiz bearable to use on mobile. I have no more time today so, just so I don't forget.
