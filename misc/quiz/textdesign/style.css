@@ -20,6 +20,15 @@ html, body, #main {
     box-shadow: #111 0 0 0.5vw 1vw inset, black 0 0 3vw inset;
 }
 
+#textviewtext {
+    color: white;
+    font-size: 4vw;
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    text-align: center;
+}
+
 #editor {
     background-color: #24214f;
     display: grid;
@@ -367,8 +376,193 @@ textarea::-ms-input-placeholder {color: #aaa;}
     scale :1;
 }
 
+.sliderColorText {
+    font-weight: bold;
+    width: 15%;
+}
+
+.sliderShadow {
+    font-weight: bold;
+    width: 10%;
+}
+
+#shadowgrid {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-gap: 10%;
+}
+
+.mobileSpacer { display: none; }
+
 @media(orientation: portrait) {
 
+    #main {
+        grid-template-rows: 30% 70%;
+    }
 
+    #textview {
+        box-shadow: #111 0 0 1vw 2vw inset, black 0 0 5vw inset;
+    }
 
+    #textviewtext {
+        font-size: 8vw;
+    }
+
+    #editor {
+        grid-template-rows: 8vh 62vh;
+    }
+
+    .pagerbutton {
+        width: 12.5vw;
+        height: 7vh;
+    }
+
+    .pagerimage {
+        width: 75%;
+    }
+
+    .realeditor {
+        width: 90vw;
+        height: 58vh;
+        padding: 2vh 5vw;
+        overflow-y: auto;
+    }
+
+    #texteditorgrid {
+        display: block;
+    }
+
+    textarea {
+        resize: none;
+        width: calc(100% - 2vh - 10px);
+        height: calc(10vh);
+        overflow-y: auto;
+        border: solid #777 5px;
+        font-size: 3vh;
+        margin-bottom: 5vh;
+    }
+
+    .mainh {
+        font-size: 3.5vh;
+    }
+
+    .checkbox {
+        width: 3vh;
+        height: 3vh;
+        padding-right: 4vw;
+    }
+
+    .checklabel {
+        font-size: 2.5vh;
+    }
+
+    .radio {
+        width: 3vh;
+        height: 3vh;
+        padding-right: 4vw;
+    }
+
+    .sliderlabel {
+        font-size: 2.5vh;
+    }
+
+    .smalllabel {
+        font-size: 2vh;
+    }
+
+    .slider {
+        border: solid white 3px;
+        padding: 10px;
+        width: 100%;
+        height: 1.75vh;
+    }
+
+        .slider.nogrow {
+            width: 100%;
+            height: 2vh;
+        }
+
+        .slider:hover {
+            scale: 1;
+        }
+
+        .slider.nogrow:hover {
+            scale: 1;
+        }
+
+    .qbutton {
+        border: solid white 3px;
+        font-size: 1.5vh;
+        padding: 10px;
+        display: inline-block;
+    }
+
+        .qbutton:hover {
+            scale: 1;
+        }
+
+    #coloreditorgrid {
+        grid-template-columns: 30% 70%;
+    }
+
+    #stickycolors { position: sticky; top: 0; display:block; }
+
+    .colortab {
+        font-size: 2vh;
+        margin-top: 2vh;
+    }
+
+        .colortab.nonactive {
+            margin-left: 2vw;
+        }
+
+    #colorselector {
+        display: block;
+        margin-bottom: 1vh;
+    }
+
+    .colorgrid {
+        height: 25vh;
+    }
+
+    .color {
+        scale: 1;
+    }
+
+    #codeviewer {
+        width: 92%;
+        padding: 1.5vh 4%;
+        white-space: normal;
+        overflow-x: hidden;
+        font-size: 2vh;
+    }
+
+    #copycode {
+        font-size: 2.5vh;
+        border: solid white 5px;
+        padding: 1vh;
+    }
+
+        #copycode:hover {
+            scale: 1;
+        }
+
+    .sliderColorText {
+        font-weight: bold;
+        width: 40%;
+    }
+
+    .sliderShadow {
+        font-weight: bold;
+        width: 10%;
+    }
+
+    #shadowgrid {
+        display: block;
+    }
+
+    .mobileSpacer {
+        display: block;
+        height: 5vh;
+    }
 }

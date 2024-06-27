@@ -12,11 +12,6 @@
 
 
 
-> (QUIZ/Text Designer) Mobile Optimization
-  Yea basically make the Text Designer for uQuiz bearable to use on mobile. I have no more time today so, just so I don't forget.
-- Added 6/14/24
-- Implemented TBA
-
 > (QUIZ) Complete Documentation
   A simple documentation to deeply explain what everything does and give you a quick html lesson about how powerful this quiz actually is.
   Because fun fact: you can actually add images and style the text. Yea, I just never told you.
@@ -29,6 +24,11 @@
 - Added 2/8/24
 - Desktop TBA
 - Mobile TBA
+
+<done>> (QUIZ/Text Designer) Mobile Optimization
+  Yea basically make the Text Designer for uQuiz bearable to use on mobile. I have no more time today so, just so I don't forget.
+- Added 6/14/24
+- Implemented 6/27/24</done>
 
 <done>> (QUIZ) Saving/Loading Quiz Projects
   Imagine you wanted to work on the same quiz with someone else, or simply save the wuiz and finish it another day.

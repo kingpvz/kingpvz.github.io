@@ -15,7 +15,7 @@
 
 
         <div id="textview">
-            <p id="textviewtext" style="color: white; font-size: 4vw; user-select: none; -moz-user-select: none; -ms-user-select: none; text-align: center;">Text will show here.</p>
+            <p id="textviewtext">Text will show here.</p>
         </div>
 
         <div id="editor">
@@ -52,6 +52,7 @@
                                 <label class="checklabel" onclick="editstyle('u')" id="disablableunderline"><input type="checkbox" id="underlinecheck" class="checkbox" /><span>&nbsp; <span style="text-decoration: underline;">Underline</span></span></label>
                             </div>
                             <br />
+                            <div class="mobileSpacer"></div>
 
                             <h1 class="mainh">Text Weight:</h1>
                             <div style="display:grid; grid-template-columns: 45% 45%; grid-template-rows: 45% 45%; grid-gap: 1.5vh 10%; width: 100%; justify-items: center;">
@@ -60,17 +61,18 @@
                                 <label class="checklabel"><input type="radio" id="bold500" name="boldness" value="500" class="radio" onclick="editstyle('b', 500)" /><span style="font-weight: 500;">&nbsp; Medium</span></label>
                                 <label class="checklabel"><input type="radio" id="bold700" name="boldness" value="700" class="radio" onclick="editstyle('b', 700)" /><span style="font-weight: 700;">&nbsp; Bold</span></label>
                             </div>
+                            <div class="mobileSpacer"></div>
 
                         </div>
                         <div id="texteditor_shadow" style="transition: 0.2s;">
                             <h1 class="mainh">Shadow:</h1>
-                            <div style="display:grid; grid-template-columns: 45% 45%; grid-gap: 10%;">
+                            <div id="shadowgrid">
 
                                 <div>
                                     <p class="smalllabel">Offset:</p>
-                                    <label class="sliderlabel"><span style="font-weight: bold; width: 10%;">X:</span><input type="range" min="-100" max="100" value="0" class="slider" oninput="slideOffset('x', this.value)" id="slidershadowx" /></label>
+                                    <label class="sliderlabel"><span class="sliderShadow">X:</span><input type="range" min="-100" max="100" value="0" class="slider" oninput="slideOffset('x', this.value)" id="slidershadowx" /></label>
                                     <br />
-                                    <label class="sliderlabel"><span style="font-weight: bold; width: 10%;">Y:</span><input type="range" min="-100" max="100" value="0" class="slider" oninput="slideOffset('y', this.value)" id="slidershadowy" /></label>
+                                    <label class="sliderlabel"><span class="sliderShadow">Y:</span><input type="range" min="-100" max="100" value="0" class="slider" oninput="slideOffset('y', this.value)" id="slidershadowy" /></label>
                                     <br />
                                     <div style="display: flex; justify-content: space-between;">
                                         <button class="qbutton" onclick="slideOffset('x', '0', true);slideOffset('y', '0', true)">Reset Position</button>
@@ -85,6 +87,7 @@
                                     <br />
                                     <div style="display: flex; justify-content: space-around;"><button class="qbutton" onclick="slideOffset('x', '0', true); slideOffset('y', '0', true); slideOffset('blur', '0', true);">Reset Shadow</button></div>
                                     <p class="smalllabel">You can change the shadow color in the color tab.</p>
+                                    <div class="mobileSpacer" style="height:1vh;"></div>
                                 </div>
                                 
 
@@ -100,12 +103,14 @@
 
                         <div id="colortabs">
 
-                            <div class="colortab" onclick="changeColorTab('text')" id="colortabtext">
-                                TEXT
-                            </div>
+                            <div id="stickycolors">
+                                <div class="colortab" onclick="changeColorTab('text')" id="colortabtext">
+                                    TEXT
+                                </div>
 
-                            <div class="colortab nonactive" onclick="changeColorTab('shadow')" id="colortabshadow">
-                                SHADOW
+                                <div class="colortab nonactive" onclick="changeColorTab('shadow')" id="colortabshadow">
+                                    SHADOW
+                                </div>
                             </div>
 
                         </div>
@@ -129,7 +134,7 @@
                                 </div>
                             </div>
                             <div id="mcolors">
-
+                                <div class="mobileSpacer" style="height:3vh;"></div>
                                 <h1 class="mainh">More Colors</h1>
                                 <div class="colorgrid">
 
@@ -146,25 +151,25 @@
                                 </div>
                             </div>
                             <div id="ccolor">
-
+                                <div class="mobileSpacer" style="height:3vh;"></div>
                                 <h1 class="mainh">Custom Color</h1>
                                 <label class="sliderlabel">
-                                    <span style="font-weight: bold; width: 15%;">Red:</span>
+                                    <span class="sliderColorText">Red:</span>
                                     <input type="range" min="0" max="255" value="255" class="slider nogrow" oninput="colorslider[colorState]['r'] = this.value; changeColor('rgb('+colorslider[colorState]['r']+' '+colorslider[colorState]['g']+' '+colorslider[colorState]['b']+' / '+colorslider[colorState]['a']+'%)')" id="slidercr" />
                                 </label>
                                 <br />
                                 <label class="sliderlabel">
-                                    <span style="font-weight: bold; width: 15%;">Green:</span>
+                                    <span class="sliderColorText">Green:</span>
                                     <input type="range" min="0" max="255" value="255" class="slider nogrow" oninput="colorslider[colorState]['g'] = this.value; changeColor('rgb('+colorslider[colorState]['r']+' '+colorslider[colorState]['g']+' '+colorslider[colorState]['b']+' / '+colorslider[colorState]['a']+'%)')" id="slidercg" />
                                 </label>
                                 <br />
                                 <label class="sliderlabel">
-                                    <span style="font-weight: bold; width: 15%;">Blue:</span>
+                                    <span class="sliderColorText">Blue:</span>
                                     <input type="range" min="0" max="255" value="255" class="slider nogrow" oninput="colorslider[colorState]['b'] = this.value; changeColor('rgb('+colorslider[colorState]['r']+' '+colorslider[colorState]['g']+' '+colorslider[colorState]['b']+' / '+colorslider[colorState]['a']+'%)')" id="slidercb" />
                                 </label>
                                 <br />
                                 <label class="sliderlabel">
-                                    <span style="font-weight: bold; width: 15%;">Alpha:</span>
+                                    <span class="sliderColorText">Alpha:</span>
                                     <input type="range" min="0" max="100" value="100" class="slider nogrow" oninput="colorslider[colorState]['a'] = this.value; changeColor('rgb('+colorslider[colorState]['r']+' '+colorslider[colorState]['g']+' '+colorslider[colorState]['b']+' / '+colorslider[colorState]['a']+'%)')" id="sliderca" />
                                 </label>
 
