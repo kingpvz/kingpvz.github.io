@@ -44,7 +44,7 @@ Simplified UI
 Overhauled the help screen
 Changed controls
 - You can now move with WASD too!
-- Skip level with E and fo back with Q
+- Skip level with E and go back with Q
 Removed at/put command
 - Standardized to only use put/at
 New game load messages
