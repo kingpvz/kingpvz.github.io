@@ -1,0 +1,112 @@
+:root {
+    --highlightcolor: #210c00;
+    --verybgcolor: #333;
+    --shadowtabcolor: #ddd;
+    --textcolor: white;
+    --shadowctabcolor: #111;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.2s;
+}
+
+header {
+    height: 6vh;
+    padding: 2vh 2vh 0 2vh;
+    background-color: var(--highlightcolor);
+    display: flex;
+    box-shadow: var(--shadowmaincolor) 0 0.1vh 1.5vh;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: 0.2s;
+    align-items: flex-end;
+}
+
+#headerlogo {
+    height: 4vh;
+    padding: 1vh 0 2vh 0;
+    -webkit-filter: drop-shadow(1px 0 1px #210c00) drop-shadow(1px 1px 1px #210c00) drop-shadow(0 1px 1px #210c00) drop-shadow(-1px 0 1px #210c00) drop-shadow(-1px -1px 1px #210c00) drop-shadow(0 -1px 1px #210c00) drop-shadow(1px -1px 1px #210c00) drop-shadow(-1px 1px 1px #210c00);
+}
+
+#modebutton {
+    height: 5vh;
+    padding: 0.5vh 0.5vh 1.5vh 0.5vh;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+}
+
+#modebutton:hover {
+    scale: 1.2;
+}
+
+main {
+    height: 92vh;
+    background-color: var(--verybgcolor);
+}
+
+#maintabs {
+    display:flex;
+    padding: 0vh 4vh 0 4vh;
+    height: 6vh;
+}
+
+.tab {
+    font-size: 2vh;
+    font-family: Ubuntu;
+    color: var(--textcolor);
+    font-weight: 700;
+    background-color: var(--highlightcolor);
+    padding: 2vh;
+    margin: 0 1vh;
+    border-radius: 1vh 1vh 0 0;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    transition: 0.2s;
+    box-shadow: var(--shadowtabcolor) 0 -1px 5px -2px;
+    height: 2vh;
+    overflow: hidden;
+}
+
+    .tab:hover {
+        border-radius: 2vh 2vh 0 0;
+        box-shadow: orange 0 -0.25vh 1vh -0.5vh;
+        background-color: orange;
+        color: black;
+    }
+
+    .tab.current {
+        border-radius: 2vh 2vh 0 0;
+        background-color: orangered;
+        cursor: default;
+        box-shadow: var(--shadowctabcolor) 0 -3px 5px -2px;
+    }
+
+        .tab.current:hover {
+            box-shadow: var(--shadowctabcolor) 0 -3px 5px -2px;
+            color: black;
+            background-color: orange;
+        }
+
+
+#gradienteffect {
+    height: 2vh;
+    background: linear-gradient(orangered 0%, #333 80%, #333 100%);
+}
+
+#gradienteffectorange {
+    height: 2vh;
+    background: linear-gradient(orange 0%, #333 80%, #333 100%);
+    transition: 0.2s;
+    opacity: 0;
+}
+
+#main {
+    height: 90vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}

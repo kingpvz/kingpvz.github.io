@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7J3YJQYZ30"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-7J3YJQYZ30');
+    </script>
+    <title>kp PlayGround</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="../../favicon.png">
+</head>
+<body>
+    <script src="../../global_resources/corefunc.js"></script>
+    <script src="main.js"></script>
+
+    <header>
+
+        <img src="../../global_resources/images/kpplayground.png" id="headerlogo" />
+        <div id="maintabs">
+
+            <div class="tab current" onmouseover="document.getElementById('gradienteffectorange').style.opacity = 1;" onmouseout="document.getElementById('gradienteffectorange').style.opacity = 0;">
+                HOME
+            </div>
+            <div class="tab" onmouseover="document.getElementById('gradienteffectorange').style.opacity = 1;" onmouseout="document.getElementById('gradienteffectorange').style.opacity = 0;">
+                OPTIONS
+            </div>
+            <div class="tab" onmouseover="document.getElementById('gradienteffectorange').style.opacity = 1;" onmouseout="document.getElementById('gradienteffectorange').style.opacity = 0;">
+                EDITOR
+            </div>
+            <div class="tab" onmouseover="document.getElementById('gradienteffectorange').style.opacity = 1;" onmouseout="document.getElementById('gradienteffectorange').style.opacity = 0;">
+                PREVIEW
+            </div>
+
+        </div>
+        <div style="flex-grow: 1;"></div>
+        <img src="../../global_resources/icons/mode.png" id="modebutton" onclick="toggleMode()" title="Toggle Light Mode/Dark Mode" />
+
+    </header>
+
+    <main>
+
+        <div id="gradienteffect">
+            <div id="gradienteffectorange"></div>
+        </div>
+        <div id="main">
+
+
+
+        </div>
+
+    </main>
+
+    <script>
+
+        var r = document.querySelector(':root');
+
+    </script>
+
+</body>
+</html>
