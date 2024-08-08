@@ -201,7 +201,7 @@ main {
 }
 
 code {
-    font-family: Consolas;
+    font-family: Consolas, monospace;
     font-size: 16px;
     line-height: 24px;
     padding: 1vh 1.5vh;
@@ -258,20 +258,20 @@ code::-webkit-scrollbar-track {
     border-radius: 0.5vh;
     font-size: 16px;
     color: var(--textcolor);
-    font-family: Consolas;
+    font-family: Consolas, monospace;
     width: max-content;
     transition: 0.2s;
     overflow: auto;
 }
 
 .codeunit {
-    font-family: Consolas;
+    font-family: Consolas, monospace;
     font-weight: bold;
     user-select: all;
 }
 
 .codeitalic {
-    font-family: Consolas;
+    font-family: Consolas, monospace;
     font-style: italic;
     user-select: all;
 }
