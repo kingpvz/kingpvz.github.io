@@ -1,9 +1,20 @@
+
 :root {
     --highlightcolor: #210c00;
     --verybgcolor: #333;
     --shadowtabcolor: #ddd;
     --textcolor: white;
     --shadowctabcolor: #111;
+    --hoverhighlightcolor: orange;
+    --maintabcolor: orangered;
+    --linkcolor: yellow;
+    --linkhovercolor: blue;
+    --gradient1: linear-gradient(orangered 0%, #333 80%, #333 100%);
+    --gradient2: linear-gradient(orange 0%, #333 80%, #333 100%);
+    --syntaxsymbol: orange;
+    --syntaxkeyword: cornflowerblue;
+    --syntaxbackground: #181818;
+    --syntaxproperty: lightblue;
 }
 
 html, body {
@@ -75,13 +86,13 @@ main {
     .tab:hover {
         border-radius: 2vh 2vh 0 0;
         box-shadow: orange 0 -0.25vh 1vh -0.5vh;
-        background-color: orange;
+        background-color: var(--hoverhighlightcolor);
         color: black;
     }
 
     .tab.current {
         border-radius: 2vh 2vh 0 0;
-        background-color: orangered;
+        background-color: var(--maintabcolor);
         cursor: default;
         box-shadow: var(--shadowctabcolor) 0 -3px 5px -2px;
     }
@@ -89,18 +100,18 @@ main {
         .tab.current:hover {
             box-shadow: var(--shadowctabcolor) 0 -3px 5px -2px;
             color: black;
-            background-color: orange;
+            background-color: var(--hoverhighlightcolor);
         }
 
 
 #gradienteffect {
     height: 2vh;
-    background: linear-gradient(orangered 0%, #333 80%, #333 100%);
+    background: var(--gradient1);
 }
 
 #gradienteffectorange {
     height: 2vh;
-    background: linear-gradient(orange 0%, #333 80%, #333 100%);
+    background: var(--gradient2);
     transition: 0.2s;
     opacity: 0;
 }
@@ -110,3 +121,200 @@ main {
     overflow-y: auto;
     overflow-x: hidden;
 }
+
+    #main::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    #main::-webkit-scrollbar-track {
+        background: var(--verybgcolor);
+    }
+
+    #main::-webkit-scrollbar-thumb {
+        background: var(--textcolor);
+        border-radius: 100px;
+        border: solid 3px var(--verybgcolor);
+    }
+
+        #main::-webkit-scrollbar-thumb:hover {
+            background: red;
+        }
+
+    #main::-webkit-scrollbar-corner {
+        background: var(--verybgcolor);
+    }
+
+.tabscreen {
+    display: none;
+    padding: 1vh 2vh;
+}
+
+.tabscreen.selected {
+    display: block;
+}
+
+.text {
+    font-size: 20px;
+    color: var(--textcolor);
+    font-family: Ubuntu;
+    transition: 0.2s;
+}
+
+.info {
+    font-size: 14px;
+    color: var(--textcolor);
+    font-family: Ubuntu;
+    transition: 0.2s;
+    margin: 0;
+}
+
+.anchorlink {
+    color: var(--linkcolor);
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.anchorlink:hover {
+    color: var(--linkhovercolor);
+    text-shadow: var(--shadowtabcolor) 0 0 3px;
+}
+
+#contenteditablealert {
+    display: block;
+    position: absolute;
+    pointer-events: none;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0.5vh;
+    font-size: 18px;
+    color: red;
+    font-family: sans-serif;
+    background-color: #bbb;
+    border-radius: 1vh 0 0 0;
+    font-weight: 700;
+}
+
+.hidden {
+    display: none !important;
+}
+
+code {
+    font-family: Consolas;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 1vh 1.5vh;
+    background-color: var(--syntaxbackground);
+    border-radius: 1vh;
+    margin-top: 1vh;
+    display: block;
+    color: var(--textcolor);
+    box-shadow: var(--shadowtabcolor) 0 0 2px;
+    transition: 0.2s;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+code::-webkit-scrollbar {
+    height: 5px;
+}
+
+code::-webkit-scrollbar-track {
+    background: var(--syntaxbackground);
+}
+
+    code::-webkit-scrollbar-thumb {
+        background: var(--textcolor);
+        border-radius: 100px;
+        border: solid 1px var(--syntaxbackground);
+    }
+
+    code::-webkit-scrollbar-thumb:hover {
+        background: red;
+    }
+
+    code::-webkit-scrollbar-corner {
+        background: var(--syntaxbackground);
+    }
+
+.titleofsort {
+    font-family: Ubuntu;
+    font-size: 28px;
+    color: var(--textcolor);
+    transition: 0.2s;
+    margin-bottom: 0;
+}
+
+#screenoptionsinside {
+    display: grid;
+    grid-template-columns: 48.5% 48.5%;
+    grid-gap: 3%;
+}
+
+.coreinput {
+    background-color: var(--verybgcolor);
+    border: solid var(--shadowtabcolor) 1px;
+    border-radius: 0.5vh;
+    font-size: 16px;
+    color: var(--textcolor);
+    font-family: Consolas;
+    width: max-content;
+    transition: 0.2s;
+    overflow: auto;
+}
+
+.codeunit {
+    font-family: Consolas;
+    font-weight: bold;
+    user-select: all;
+}
+
+.codeitalic {
+    font-family: Consolas;
+    font-style: italic;
+    user-select: all;
+}
+
+.syntaxs{color:var(--syntaxsymbol)}
+.syntaxkw{color:var(--syntaxkeyword)}
+.syntaxp{color:var(--syntaxproperty)}
+
+.settinginput {
+    flex-grow: 1;
+    height: min-content;
+    font-size: 20px;
+    font-family: Ubuntu, sans-serif;
+    background-color: var(--syntaxbackground);
+    color: var(--textcolor);
+    border: none;
+    padding: 0.5vh 1vh;
+    margin-left: 1vh;
+    border-radius: 1vh;
+    box-shadow: var(--shadowtabcolor) 0 0 2px;
+}
+
+option {
+    font-size: 18px;
+}
+
+button.interface {
+    cursor: pointer;
+    font-family: Ubuntu;
+    font-size: 24px;
+    font-weight: 700;
+    background-color: var(--highlightcolor);
+    color: var(--textcolor);
+    border: solid 3px var(--maintabcolor);
+    padding: 1vh;
+    border-radius: 2vh;
+    box-shadow: var(--shadowtabcolor) 1px 1px 2px;
+    transition: 0.2s;
+}
+
+    button.interface:hover {
+        scale: 1.1;
+        background-color: var(--hoverhighlightcolor);
+        color: black;
+        box-shadow: var(--shadowtabcolor) 0 0 5px;
+    }

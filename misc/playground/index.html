@@ -8,12 +8,12 @@
         gtag('js', new Date());
         gtag('config', 'G-7J3YJQYZ30');
     </script>
-    <title>kp PlayGround</title>
+    <title>WebDev PlayGround</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/x-icon" href="../../favicon.png">
+    <link rel="icon" type="image/x-icon" href="../../global_resources/projects/wdplayground.png">
 </head>
 <body>
     <script src="../../global_resources/corefunc.js"></script>
@@ -21,19 +21,19 @@
 
     <header>
 
-        <img src="../../global_resources/images/kpplayground.png" id="headerlogo" />
+        <img src="../../global_resources/images/wdplayground.png" id="headerlogo" />
         <div id="maintabs">
 
-            <div class="tab current" onmouseover="document.getElementById('gradienteffectorange').style.opacity = 1;" onmouseout="document.getElementById('gradienteffectorange').style.opacity = 0;">
+            <div class="tab current" onmouseover="document.getElementById('gradienteffectorange').style.opacity = 1;" onmouseout="document.getElementById('gradienteffectorange').style.opacity = 0;" id="tabhome" onclick="setScreen('home');">
                 HOME
             </div>
-            <div class="tab" onmouseover="document.getElementById('gradienteffectorange').style.opacity = 1;" onmouseout="document.getElementById('gradienteffectorange').style.opacity = 0;">
+            <div class="tab" onmouseover="document.getElementById('gradienteffectorange').style.opacity = 1;" onmouseout="document.getElementById('gradienteffectorange').style.opacity = 0;" id="taboptions" onclick="setScreen('options');">
                 OPTIONS
             </div>
-            <div class="tab" onmouseover="document.getElementById('gradienteffectorange').style.opacity = 1;" onmouseout="document.getElementById('gradienteffectorange').style.opacity = 0;">
+            <div class="tab" onmouseover="document.getElementById('gradienteffectorange').style.opacity = 1;" onmouseout="document.getElementById('gradienteffectorange').style.opacity = 0;" id="tabeditor" onclick="setScreen('editor');">
                 EDITOR
             </div>
-            <div class="tab" onmouseover="document.getElementById('gradienteffectorange').style.opacity = 1;" onmouseout="document.getElementById('gradienteffectorange').style.opacity = 0;">
+            <div class="tab" onmouseover="document.getElementById('gradienteffectorange').style.opacity = 1;" onmouseout="document.getElementById('gradienteffectorange').style.opacity = 0;" id="tabpreview" onclick="setScreen('preview');">
                 PREVIEW
             </div>
 
@@ -50,15 +50,175 @@
         </div>
         <div id="main">
 
+            <div id="screenhome" class="tabscreen selected">
 
+                <p class="text">
+                    <span style="font-size: 36px;">
+                        Welcome to <span style="color:orangered; font-weight: 700;">W</span>eb<span style="color: orangered; font-weight: 700;">D</span>ev <span style="font-family: Consolas; font-weight: 200;">PlayGround</span>!<br />
+                    </span><br /><br />
+                    This is a quick documentation to help you get started:<br /><br />
+                    <b>HOME TAB</b> gives you access to this documentation, as well as saving and loading projects. Basically, essential stuff.<br /><br />
+                    <b>OPTIONS TAB</b> is the place full of options and functions like exporting your website! You can change many things about your website there! Some more advanced than others, but still useful! Besides that, you can also use it to change the <span style="font-family: Consolas;">
+                        <span class="syntaxs">&lt;</span><span class="syntaxkw">head</span><span class="syntaxs">&gt;</span></span>
+                    tag, as you can only edit the body tag using the editor.<br /><br />
+                    <b>EDITOR TAB</b> is the place you will probably spend the most time at, as you can edit your code right there! HTML, CSS, JavaScript, all in one place! It also gives you access to special widget designing tools to make your job easier!<br /><br />
+                    <b>PREVIEW TAB</b> is the place where the magic happens! Your code will be transformed into a <span style="font-family: Consolas;">
+                        <span class="syntaxs">&lt;</span><span class="syntaxkw">div</span><span class="syntaxs">&gt;</span></span>
+                    element, which acts like a container for your website! This is also why I recommend you not to style all <span style="font-family: Consolas;">
+                        <span class="syntaxs">&lt;</span><span class="syntaxkw">div</span><span class="syntaxs">&gt;</span></span>
+                    elements directly (using the <span style="font-family: Consolas;">
+                        <span class="syntaxs">.</span><span class="syntaxkw">div</span></span>
+                    CSS selector), since this can change the entire website. Yeah, including the original design of this playground. However,
+                    I've decided that for the sake of experiments, feel free to change anything on this playground as well, if you want it all back, just refresh the website.<br /><br />
+                    <b>THE WEIRD SYMBOL IN THE TOP RIGHT CORNER</b> is a toggle between Light Mode and Dark Mode. Some people like Light Mode better, but since my eyes hurt from it, the default setting is Dark Mode.<br /><br /><br />
+                    <span style="font-size: 28px;">Now you are ready to begin! Play some beats and have fun!</span><br /><br />
+                    If you have no idea how you ended up here, you can <a class="anchorlink" href="https://kingpvz.github.io">return to the homepage</a>.<br />
+                    Press <b>Ctrl+Q</b> at any time to enable/disable contenteditable on this website. If you aren't sure about what it means, it would be better to avoid it. Or not, have fun!
+                </p>
+
+            </div>
+            <div id="screenoptions" class="tabscreen">
+                <div id="screenoptionsinside">
+                    <div>
+
+                        <h1 class="titleofsort">Website Core</h1><br />
+                        <code>
+                            <span class="syntaxs">&lt;</span><span class="syntaxkw">!DOCTYPE</span> <span class="syntaxp">html</span><span class="syntaxs">&gt;</span><br />
+                            <span class="syntaxs">&lt;</span><span class="syntaxkw">html</span><span class="syntaxs">&gt;</span><br />
+                            &nbsp;&nbsp;<span class="syntaxs">&lt;</span><span class="syntaxkw">head</span><span class="syntaxs">&gt;</span><br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="syntaxs">&lt;</span><span class="syntaxkw">link</span>
+                            <span class="syntaxp">rel</span><span class="syntaxs">="</span>stylesheet<span class="syntaxs">"</span>
+                            <span class="syntaxp">href</span><span class="syntaxs">="</span>style.css<span class="syntaxs">"</span><span class="syntaxs">/&gt;</span><br />
+
+
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="syntaxs">&lt;</span><span class="syntaxkw">title</span><span class="syntaxs">&gt;</span><input type="text" class="coreinput" id="coretitle" /><span class="syntaxs">&lt;/</span><span class="syntaxkw">title</span><span class="syntaxs">&gt;</span><br />
+
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="syntaxs">&lt;</span><span class="syntaxkw">link</span>
+                            <span class="syntaxp">rel</span><span class="syntaxs">="</span>icon<span class="syntaxs">"</span>
+                            <span class="syntaxp">type</span><span class="syntaxs">="</span>image/x-icon<span class="syntaxs">"</span>
+                            <span class="syntaxp">href</span><span class="syntaxs">="</span><input type="text" class="coreinput" id="corefavicon" /><span class="syntaxs">"</span><span class="syntaxs">/&gt;</span><br />
+
+
+                            &nbsp;&nbsp;<span class="syntaxs">&lt;/</span><span class="syntaxkw">head</span><span class="syntaxs">&gt;</span><br />
+                            &nbsp;&nbsp;<span class="syntaxs">&lt;</span><span class="syntaxkw">body</span><span class="syntaxs">&gt;</span><br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="syntaxs">&lt;</span><span class="syntaxkw">script</span>
+                            <span class="syntaxp">src</span><span class="syntaxs">="</span>main.js<span class="syntaxs">"&gt;&lt;/</span><span class="syntaxkw">script</span><span class="syntaxs">&gt;</span><br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#888;">HTML CONTENT</span><br />
+                            &nbsp;&nbsp;<span class="syntaxs">&lt;/</span><span class="syntaxkw">body</span><span class="syntaxs">&gt;</span><br />
+                            <span class="syntaxs">&lt;/</span><span class="syntaxkw">html</span><span class="syntaxs">&gt;</span><br />
+
+                        </code>
+                        <br /><br />
+                        <h1 class="titleofsort">Reserved Keywords</h1>
+                        <p class="info">
+                            You can use these on your website, however, they won't function anymore after exporting.
+                        </p>
+                        <p class="text">
+                            <span class="codeunit">r</span> (Variable/Element): Holds the <span class="codeitalic">:root</span> element.<br />
+                            <span class="codeunit">layouts</span> (Object): Holds all layouts/elements on this website.<br />
+                            <span class="codeunit">mode</span> (Variable/Number): Holds info about the current display mode (Light/Dark).<br />
+                            <span class="codeunit">editable</span> (Variable/Number): Holds info about the current contenteditable state (Enable/Disabled).<br />
+                            <span class="codeunit">currentScreen</span> (Variable/String): Holds info about the current screen (<span class="codeitalic"><span class="syntaxs">'</span>home<span class="syntaxs">'</span></span>,
+                            <span class="codeitalic"><span class="syntaxs">'</span>options<span class="syntaxs">'</span></span>,
+                            <span class="codeitalic"><span class="syntaxs">'</span>editor<span class="syntaxs">'</span></span> or
+                            <span class="codeitalic"><span class="syntaxs">'</span>preview<span class="syntaxs">'</span></span>).<br />
+                            <span class="codeunit">toggleMode</span> (Function, Parameterless): Toggles between light mode and dark mode.<br />
+                            <span class="codeunit">setScreen</span> (Function, Parameter <span class="codeitalic">x</span> =string): Changes the screen. The parameter must be one of <span class="codeitalic">currentScreen</span> values.<br />
+                            <span class="codeunit">handleKeydown</span> (Function, Parameter <span class="codeitalic">e</span> =KeyBoard Event): Handles key press (used for enabling/disabling contenteditable)<br />
+                        </p>
+
+                    </div>
+                    <div>
+
+                        <h1 class="titleofsort">Settings</h1>
+                        <p class="text">
+
+                            TBD
+
+                        </p>
+                        <br /><br />
+                        <h1 class="titleofsort">Export</h1><br />
+                            <p class="text">
+                                <div style="display:flex; align-items: center;">
+                                    <p class="text" style="margin: 0;">
+                                        Export As:
+                                    </p>
+                                    <select id="exporttype" class="settinginput" style="cursor: pointer;">
+                                        <option value="html">Single HTML File</option>
+                                        <option value="zip">Separate Files</option>
+                                    </select>
+                                </div><br />
+                                <span class="info">
+                                    Single HTML File will download the website as a single file, with the script and styles directly injected inside. Anyone can launch this file on their device
+                                    and use it without the need of any other files or organisation. Exporting as Separate Files is useful when you are building a website, as each file has it's own role. The HTML tag will
+                                    have the necessary connections to the other two files.
+                                </span>
+                                <br /><br /><br />
+
+                                            <div style="display:flex; align-items: center;">
+                                                <p class="text" style="margin: 0;">
+                                                    HTML File Name:
+                                                </p>
+                                                <input id="exportname" class="settinginput" style="cursor: text;" placeholder="index">
+                                                <p class="text" style="margin: 0;">
+                                                    .html
+                                                </p>
+                                            </div><br />
+                                <span class="info">
+                                    If you chose exporting as multiple files, don't forget to press "Allow" when your browser informs you about downloading multiple files!
+                                </span>
+                                <br /><br />
+                                            <div style="text-align: center;">
+                                                <button class="interface" onclick="Export()">EXPORT</button>
+                                            </div>
+                            </p>
+                    </div>
+
+                </div>
+            </div>
+            <div id="screeneditor" class="tabscreen">
+
+
+
+            </div>
+            <div id="screenpreview" class="tabscreen">
+
+
+
+            </div>
 
         </div>
 
     </main>
 
+    <p id="contenteditablealert" contenteditable="false" class="hidden">CONTENTEDITABLE ENABLED</p>
+
     <script>
 
         var r = document.querySelector(':root');
+
+        var layouts = {
+            "tab": {
+                "home": document.getElementById("tabhome"),
+                "options": document.getElementById("taboptions"),
+                "editor": document.getElementById("tabeditor"),
+                "preview": document.getElementById("tabpreview")
+            },
+            "screen": {
+                "home": document.getElementById("screenhome"),
+                "options": document.getElementById("screenoptions"),
+                "editor": document.getElementById("screeneditor"),
+                "preview": document.getElementById("screenpreview")
+            },
+            "misc": {
+                "options": {
+                    "title": document.getElementById("coretitle"),
+                    "favicon": document.getElementById("corefavicon"),
+                    "etype": document.getElementById("exporttype"),
+                    "ename": document.getElementById("exportname")
+                }
+            }
+        }
 
     </script>
 
