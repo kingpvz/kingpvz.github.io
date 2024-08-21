@@ -116,6 +116,20 @@ main {
     opacity: 0;
 }
 
+#projectinfo {
+    background-color: var(--syntaxbackground);
+    color: var(--textcolor);
+    border: solid 2px var(--textcolor);
+    margin: 0.5vh;
+    padding: 1vh;
+    border-radius: 1vh;
+    box-shadow: black 0 0.25vh 0.5vh -0.25vh;
+    transition: 0.1s;
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 1fr;
+    column-gap: 1vw;
+}
+
 #main {
     height: 90vh;
     overflow-y: auto;
