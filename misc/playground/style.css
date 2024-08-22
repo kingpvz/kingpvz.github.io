@@ -119,15 +119,57 @@ main {
     background-color: var(--syntaxbackground);
     color: var(--textcolor);
     border: solid 2px var(--textcolor);
-    margin: 0.5vh;
-    padding: 1vh;
-    border-radius: 1vh;
+    margin: 0.5vh 1vh;
+    padding: 1vh 3.5vh 1vh 2vh;
+    border-radius: 2vh;
     box-shadow: black 0 0.25vh 0.5vh -0.25vh;
-    transition: 0.1s;
+    transition: 0.2s;
     display: grid;
-    grid-template-columns: 2fr 2fr 1fr 1fr;
-    column-gap: 1vw;
+    grid-template-columns: 5fr 5fr 2fr 2fr;
+    column-gap: 2vw;
+    align-items: center;
 }
+
+.projectinput {
+    border:none;
+    border-bottom: solid var(--textcolor) 2px;
+    background-color: var(--syntaxbackground);
+    color: var(--textcolor);
+    padding-bottom: 8px;
+    font-size: 32px;
+    transition: 0.2s;
+    font-family: Ubuntu;
+    width: 100%;
+}
+
+.projectinput:focus {
+    outline: none;
+    border-bottom-color: var(--linkcolor);
+}
+
+.projectinputlabel {
+    margin: 4px 0 0 0;
+    font-size: 18px;
+}
+
+.projectinfobutton {
+    margin: 1vh;
+    cursor: pointer;
+    background-color: var(--highlightcolor);
+    border: solid 3px var(--maintabcolor);
+    font-family: Ubuntu;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--textcolor);
+    border-radius: 1.5vh;
+    transition: 0.2s ease-out;
+    padding: 1vh;
+}
+
+    .projectinfobutton:hover {
+        scale: 1.1;
+        box-shadow: var(--syntaxbackground) 0 0 0.5vh 0.25vh, var(--linkcolor) 0 0 1vh;
+    }
 
 #main {
     height: 90vh;
@@ -160,6 +202,11 @@ main {
 .tabscreen {
     display: none;
     padding: 1vh 2vh;
+}
+
+.tabscreen#screeneditor {
+    height: 88vh;
+    overflow-y: hidden;
 }
 
 .tabscreen.selected {
@@ -275,6 +322,8 @@ code::-webkit-scrollbar-track {
     width: max-content;
     transition: 0.2s;
     overflow: auto;
+    display: inline-block;
+    margin: 0 0.25vh;
 }
 
 .codeunit {
@@ -331,3 +380,176 @@ button.interface {
         color: black;
         box-shadow: var(--shadowtabcolor) 0 0 5px;
     }
+
+#editorinside {
+    display:grid;
+    grid-template-columns: 4fr 1fr;
+    grid-gap: 1vw;
+}
+
+#editortabs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.editortab {
+    background-color: #888;
+    color: var(--textcolor);
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Ubuntu;
+    text-align: center;
+    padding: 1vh;
+    cursor: pointer;
+    transition: 0.2s;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+    .editortab:hover {
+        background-color: var(--highlightcolor);
+    }
+
+    .editortab.current {
+        cursor: default;
+        background-color: var(--syntaxbackground);
+    }
+
+    .editortab#tabhtml {
+        border-radius: 2vh 0 0 0;
+    }
+
+    .editortab#tabjs {
+        border-radius: 0 2vh 0 0;
+    }
+
+.editorlayout {
+    background-color: var(--syntaxbackground);
+    display: none;
+}
+
+.editorlayout.selected {
+    display: block;
+}
+
+.editorarea {
+    resize: none;
+    overflow: scroll;
+    height: calc(76vh - 24px);
+    width: calc(100% - 2vh);
+    border: none;
+    padding: 1vh;
+    font-size: 14px;
+    background-color: var(--syntaxbackground);
+    color: var(--textcolor);
+    font-family: Consolas, monospace;
+    white-space: nowrap;
+    margin: 0;
+    transition: 0.2s;
+}
+
+    .editorarea:focus {
+        outline: none;
+    }
+
+    .editorarea::-webkit-scrollbar {
+        height: 10px;
+        width: 10px;
+        cursor: default;
+    }
+
+    .editorarea::-webkit-scrollbar-track {
+        background: var(--syntaxbackground);
+        cursor: default;
+    }
+
+    .editorarea::-webkit-scrollbar-thumb {
+        background: var(--textcolor);
+        border-radius: 100px;
+        border: solid 3px var(--syntaxbackground);
+        cursor: default;
+    }
+
+        .editorarea::-webkit-scrollbar-thumb:hover {
+            background: red;
+        }
+
+    .editorarea::-webkit-scrollbar-corner {
+        background: var(--syntaxbackground);
+    }
+
+#toolbar {
+    background-color: var(--syntaxbackground);
+    border-radius: 0 0 2vh 2vh;
+    padding: 0.5vh;
+    margin: 0;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--textcolor);
+    font-family: Ubuntu;
+}
+
+#editortools {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 88vh;
+}
+
+    #editortools::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    #editortools::-webkit-scrollbar-track {
+        background: var(--verybgcolor);
+    }
+
+    #editortools::-webkit-scrollbar-thumb {
+        background: var(--textcolor);
+        border-radius: 100px;
+        border: solid 3px var(--verybgcolor);
+    }
+
+        #editortools::-webkit-scrollbar-thumb:hover {
+            background: red;
+        }
+
+    #editortools::-webkit-scrollbar-corner {
+        background: var(--verybgcolor);
+    }
+
+.toolbarlabel {
+    font-size: 3vh;
+}
+
+.sortabutton {
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    display: block;
+    font-size: 4vh;
+    text-align: center;
+    width: 5vh;
+    height: 5vh;
+    margin: 0 1vh;
+    transition: 0.2s;
+    border-radius: 1vh;
+}
+
+.sortabutton:hover {
+    background-color: var(--verybgcolor);
+}
+
+#fontsizeinfo {
+    font-size: 3vh;
+    margin: 0;
+}
+
+#fontsizeunit {
+    font-size: 1.75vh;
+    margin: 0.75vh 0 0 0.5vh;
+    font-weight: 400;
+}

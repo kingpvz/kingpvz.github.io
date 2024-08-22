@@ -1,12 +1,21 @@
 var mode = 0;
 var editable = 0;
 var currentScreen = 'home';
-
+var currentTab = 'html';
+var deletion = false;
+var fontSize = {
+    sizes: [10, 11, 12, 14, 16, 18, 20, 24, 28],
+    current: 3
+}
 
 window.onload = function () {
-if (localStorage.getItem('displayMode') === '1') {
-    toggleMode();
-}
+    if (localStorage.getItem('displayMode') === '1') {
+        toggleMode();
+    }
+    if (localStorage.getItem('editorFontSize') !== 'undefined' && localStorage.getItem('editorFontSize')) {
+        fontSize["current"] = Number(localStorage.getItem('editorFontSize'));
+        changeFontSize('a')
+    }
 }
 
 
@@ -53,7 +62,7 @@ function toggleMode() {
         r.style.setProperty('--syntaxproperty', 'lightblue');
 
     }
-    localStorage.setItem('displayMode', mode)
+    localStorage.setItem('displayMode', mode);
 }
 
 function setScreen(x) {
@@ -82,8 +91,165 @@ function handleKeydown(e) {
         }
 
     }
+
+    if (e.keyCode === 8 || e.keyCode === 46) {
+        deletion = true;
+    } else {
+        deletion = false;
+    }
+
+    if (e.keyCode === 9 && currentScreen === 'editor') {
+        e.preventDefault();
+        let x = currentTab;
+        let a = layouts["input"]["editor"][x].value;
+        let b = layouts["input"]["editor"][x].selectionStart;
+        layouts["input"]["editor"][x].value = addch(a, x, '    ');
+        layouts["input"]["editor"][x].selectionStart = b + 4;
+        layouts["input"]["editor"][x].selectionEnd = b + 4;
+    }
 }
 
-function Export (){
+function setTab(x) {
+    if (x !== currentTab) {
+        layouts["editortab"][currentTab].classList.remove('current');
+        layouts["editor"][currentTab].classList.remove('selected');
+        currentTab = x;
+        layouts["editortab"][currentTab].classList.add('current');
+        layouts["editor"][currentTab].classList.add('selected');
+    }
+}
+
+function syntaxHelp(x) {
+    let a = layouts["input"]["editor"][x].value;
+    let b = layouts["input"]["editor"][x].selectionStart;
+    let c = 0;
+    if (!deletion) {    
+        switch (x) {
+            case 'html':
+
+                switch (a.slice(layouts["input"]["editor"][x].selectionStart - 1, layouts["input"]["editor"][x].selectionStart)) {
+                    case '<':
+                        a = addch(a, x, '>');
+                        break;
+                    case '{':
+                        a = addch(a, x, '}');
+                        break;
+                }
+                if (a.slice(layouts["input"]["editor"][x].selectionStart - 4, layouts["input"]["editor"][x].selectionStart) === "<img") {
+                    a = addch(a, x, ' src="" /');
+                    c = 6;
+                }
+                if (a.slice(layouts["input"]["editor"][x].selectionStart - 2, layouts["input"]["editor"][x].selectionStart) === "<a") {
+                    a = addch(a, x, ' href=""');
+                    c = 7;
+                }
+
+                break;
+            case 'css':
+
+                switch (a.slice(layouts["input"]["editor"][x].selectionStart - 1, layouts["input"]["editor"][x].selectionStart)) {
+                    case '{':
+                        a = addch(a, x, '\n    \n}');
+                        c = 5;
+                        break;
+                    case '!':
+                        a = addch(a, x, 'important');
+                        c = 9;
+                        break;
+                }
+                if (a.slice(layouts["input"]["editor"][x].selectionStart - 2, layouts["input"]["editor"][x].selectionStart) == "/*") {
+                    a = addch(a, x, '*/');
+                }
+
+                break;
+            case 'js':
+
+                switch (a.slice(layouts["input"]["editor"][x].selectionStart - 1, layouts["input"]["editor"][x].selectionStart)) {
+                    case '{':
+                        a = addch(a, x, '}');
+                        break;
+                    case '`':
+                        a = addch(a, x, '`');
+                        break;
+                }
+                switch (a.slice(layouts["input"]["editor"][x].selectionStart - 2, layouts["input"]["editor"][x].selectionStart)) {
+                    case "/*":
+                        a = addch(a, x, '*/');
+                        break;
+                    case "if":
+                        a = addch(a, x, ' () ');
+                        c = 2;
+                        break;
+                    case "{\n":
+                        a = addch(a, x, '    \n');
+                        c = 4;
+                        break;
+                }
+                if (a.slice(layouts["input"]["editor"][x].selectionStart - 8, layouts["input"]["editor"][x].selectionStart) === "function") {
+                    a = addch(a, x, ' (){\n    \n}');
+                    c = 1;
+                }
+                if (a.slice(layouts["input"]["editor"][x].selectionStart - 4, layouts["input"]["editor"][x].selectionStart) === "else") {
+                    a = addch(a, x, ' {\n    \n}');
+                    c = 7;
+                }
+                if (a.slice(layouts["input"]["editor"][x].selectionStart - 3, layouts["input"]["editor"][x].selectionStart) === "var" || a.slice(layouts["input"]["editor"][x].selectionStart - 3, layouts["input"]["editor"][x].selectionStart) === "let" ||
+                    a.slice(layouts["input"]["editor"][x].selectionStart - 5, layouts["input"]["editor"][x].selectionStart) === "const") {
+                    a = addch(a, x, '  = ;');
+                    c = 1;
+                }
+
+                break;
+                
+        }
+        switch (a.slice(layouts["input"]["editor"][x].selectionStart - 1, layouts["input"]["editor"][x].selectionStart)) {
+            case '(':
+                a = addch(a, x, ')');
+                break;
+            case '"':
+                a = addch(a, x, '"');
+                break;
+            case "'":
+                a = addch(a, x, "'");
+                break;
+            case '[':
+                a = addch(a, x, ']');
+                break;
+        }
+        layouts["input"]["editor"][x].value = a;
+        layouts["input"]["editor"][x].selectionStart = b+c;
+        layouts["input"]["editor"][x].selectionEnd = b+c;
+    }
+}
+
+function changeFontSize(how) {
+    if (how === '+' && fontSize["current"]+1!==fontSize["sizes"].length) {
+        fontSize["current"] += 1;
+    }
+    if (how === '-' && fontSize["current"] - 1 > -1) {
+        fontSize["current"] -= 1;
+    }
+    
+    document.getElementById("fontsizeinfo").innerHTML = fontSize["sizes"][fontSize["current"]];
+    let a = document.getElementById("fontsizeinfo").innerHTML+'px';
+    layouts["input"]["editor"]["html"].style.fontSize = a;
+    layouts["input"]["editor"]["css"].style.fontSize = a;
+    layouts["input"]["editor"]["js"].style.fontSize = a;
+    localStorage.setItem('editorFontSize', fontSize["current"]);
+}
+
+function addch(str, place, char) {
+    return str.slice(0, layouts["input"]["editor"][place].selectionStart) + char + str.slice(layouts["input"]["editor"][place].selectionStart);
+}
+
+function Export(){
+
+}
+
+function importProject() {
+
+}
+
+function exportProject() {
 
 }

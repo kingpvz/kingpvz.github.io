@@ -36,6 +36,9 @@
             <div class="tab" onmouseover="document.getElementById('gradienteffectorange').style.opacity = 1;" onmouseout="document.getElementById('gradienteffectorange').style.opacity = 0;" id="tabpreview" onclick="setScreen('preview');">
                 PREVIEW
             </div>
+            <div class="tab hidden">
+                TOOL
+            </div>
 
         </div>
         <div style="flex-grow: 1;"></div>
@@ -52,40 +55,47 @@
 
             <div id="screenhome" class="tabscreen selected">
 
-                <p class="text">
-                    <span style="font-size: 36px;">
-                        Welcome to <span style="color:orangered; font-weight: 700;">W</span>eb<span style="color: orangered; font-weight: 700;">D</span>ev <span style="font-family: Consolas, monospace; font-weight: 200;">PlayGround</span>!<br />
-                    </span>
+                <p class="text" style="font-size: 36px; text-align: center; margin: 1vh 0 2vh 0;">
+                    Welcome to <span style="color:orangered; font-weight: 700;">W</span>eb<span style="color: orangered; font-weight: 700;">D</span>ev <span style="font-family: Consolas, monospace; font-weight: 200;">PlayGround</span>!<br />
                 </p>
+
                 <div id="projectinfo">
-                    <div class="projectinputdiv" id="projectinfoname">
+                    <p class="text" style="font-size: 16px; margin: 0.5vh 0 1.5vh 0; grid-area: 1/1/span 1/span 2; text-align: center; font-weight: bold;">
+                        PROJECT SETTINGS
+                    </p>
+                    <div>
                         <input class="projectinput" id="projectname" placeholder="My Website" />
                         <p class="projectinputlabel">Project Name</p>
                     </div>
-                    <div class="projectinputdiv" id="projectinfoauthor">
+                    <div>
                         <input class="projectinput" id="projectauthor" placeholder="John Doe" />
                         <p class="projectinputlabel">Author</p>
                     </div>
-                    <button class="projectinfobutton">
+                    <button class="projectinfobutton" onclick="exportProject();" style="grid-area:1/3/span 2/span 1;">
                         Export Project
                     </button>
-                    <button class="projectinfobutton">
+                    <button class="projectinfobutton" onclick="importProject();" style="grid-area:1/4/span 2/span 1;">
                         Import Project
                     </button>
                 </div>
+                <br />
                 <p class="text">
                     This is a quick documentation to help you get started:<br /><br />
                     <b>HOME TAB</b> gives you access to this documentation, as well as saving and loading projects. Basically, essential stuff.<br /><br />
                     <b>OPTIONS TAB</b> is the place full of options and functions like exporting your website! You can change many things about your website there! Some more advanced than others, but still useful! Besides that, you can also use it to change the <span style="font-family: Consolas,monospace;">
-                        <span class="syntaxs">&lt;</span><span class="syntaxkw">head</span><span class="syntaxs">&gt;</span></span>
+                        <span class="syntaxs">&lt;</span><span class="syntaxkw">head</span><span class="syntaxs">&gt;</span>
+                    </span>
                     tag, as you can only edit the body tag using the editor.<br /><br />
                     <b>EDITOR TAB</b> is the place you will probably spend the most time at, as you can edit your code right there! HTML, CSS, JavaScript, all in one place! It also gives you access to special widget designing tools to make your job easier!<br /><br />
                     <b>PREVIEW TAB</b> is the place where the magic happens! Your code will be transformed into a <span style="font-family: Consolas,monospace;">
-                        <span class="syntaxs">&lt;</span><span class="syntaxkw">div</span><span class="syntaxs">&gt;</span></span>
+                        <span class="syntaxs">&lt;</span><span class="syntaxkw">div</span><span class="syntaxs">&gt;</span>
+                    </span>
                     element, which acts like a container for your website! This is also why I recommend you not to style all <span style="font-family: Consolas,monospace;">
-                        <span class="syntaxs">&lt;</span><span class="syntaxkw">div</span><span class="syntaxs">&gt;</span></span>
+                        <span class="syntaxs">&lt;</span><span class="syntaxkw">div</span><span class="syntaxs">&gt;</span>
+                    </span>
                     elements directly (using the <span style="font-family: Consolas, monospace;">
-                        <span class="syntaxs">.</span><span class="syntaxkw">div</span></span>
+                        <span class="syntaxs">.</span><span class="syntaxkw">div</span>
+                    </span>
                     CSS selector), since this can change the entire website. Yeah, including the original design of this playground. However,
                     I've decided that for the sake of experiments, feel free to change anything on this playground as well, if you want it all back, just refresh the website.<br /><br />
                     <b>THE WEIRD SYMBOL IN THE TOP RIGHT CORNER</b> is a toggle between Light Mode and Dark Mode. Some people like Light Mode better, but since my eyes hurt from it, the default setting is Dark Mode.<br /><br /><br />
@@ -133,7 +143,7 @@
                         </p>
                         <p class="text">
                             <span class="codeunit">r</span> (Variable/Element): Holds the <span class="codeitalic">:root</span> element.<br />
-                            <span class="codeunit">layouts</span> (Object): Holds all layouts/elements on this website.<br />
+                            <span class="codeunit">layouts</span> (Object): Holds all layouts and input elements on this website.<br />
                             <span class="codeunit">mode</span> (Variable/Number): Holds info about the current display mode (Light/Dark).<br />
                             <span class="codeunit">editable</span> (Variable/Number): Holds info about the current contenteditable state (Enabled/Disabled).<br />
                             <span class="codeunit">currentScreen</span> (Variable/String): Holds info about the current screen (<span class="codeitalic"><span class="syntaxs">'</span>home<span class="syntaxs">'</span></span>,
@@ -142,7 +152,21 @@
                             <span class="codeitalic"><span class="syntaxs">'</span>preview<span class="syntaxs">'</span></span>).<br />
                             <span class="codeunit">toggleMode</span> (Function, Parameterless): Toggles between light mode and dark mode.<br />
                             <span class="codeunit">setScreen</span> (Function, Parameter <span class="codeitalic">x</span> =string): Changes the screen. The parameter must be one of <span class="codeitalic">currentScreen</span> values.<br />
-                            <span class="codeunit">handleKeydown</span> (Function, Parameter <span class="codeitalic">e</span> =KeyBoard Event): Handles key press (used for enabling/disabling contenteditable)<br />
+                            <span class="codeunit">handleKeydown</span> (Function, Parameter <span class="codeitalic">e</span> =KeyBoard Event): Handles key press.<br />
+                            <span class="codeunit">Export</span> (Function, Parameterless): Exports the website according to the current parameters.<br />
+                            <span class="codeunit">exportProject</span> (Function, Parameterless): Exports the project according to the current parameters.<br />
+                            <span class="codeunit">importProject</span> (Function, Parameterless): Imports a project.<br />
+                            <span class="codeunit">currentTab</span> (Variable/String): Holds info about the current editor tab (<span class="codeitalic"><span class="syntaxs">'</span>html<span class="syntaxs">'</span></span>,
+                            <span class="codeitalic"><span class="syntaxs">'</span>css<span class="syntaxs">'</span></span> or
+                            <span class="codeitalic"><span class="syntaxs">'</span>js<span class="syntaxs">'</span></span>).<br />
+                            <span class="codeunit">setTab</span> (Function, Parameter <span class="codeitalic">x</span> =string): Changes the editor tab. The parameter must be one of <span class="codeitalic">currentTab</span> values.<br />
+                            <span class="codeunit">syntaxHelp</span> (Function, Parameter <span class="codeitalic">x</span> =string): Help with syntax. The parameter must be one of <span class="codeitalic">currentTab</span> values.<br />
+                            <span class="codeunit">addch</span> (Function, Parameter <span class="codeitalic">str</span> =string, <span class="codeitalic">place</span> =string, <span class="codeitalic">char</span> =string): Inserts <span class="codeitalic">char</span>
+                            into <span class="codeitalic">str</span> at current position within <span class="codeitalic">place</span>. The place parameter must be one of <span class="codeitalic">currentTab</span> values.<br />
+                            <span class="codeunit">deletion</span> (Variable/Boolean): True when the last pressed key was Backspace or Delete.<br />
+                            <span class="codeunit">fontSize</span> (Object): Holds info about the current font size, along with an array of possible font sizes.<br />
+                            <span class="codeunit">changeFontSize</span> (Function, Parameter <span class="codeitalic">how</span> =string): Changes the font size. The parameter must be either <span class="codeitalic"><span class="syntaxs">'</span>+<span class="syntaxs">'</span></span>
+                            or <span class="codeitalic"><span class="syntaxs">'</span>-<span class="syntaxs">'</span></span>.<br />
                         </p>
 
                     </div>
@@ -156,50 +180,89 @@
                         </p>
                         <br /><br />
                         <h1 class="titleofsort">Export</h1><br />
-                            <p class="text">
-                                <div style="display:flex; align-items: center;">
-                                    <p class="text" style="margin: 0;">
-                                        Export As:
-                                    </p>
-                                    <select id="exporttype" class="settinginput" style="cursor: pointer;">
-                                        <option value="html">Single HTML File</option>
-                                        <option value="zip">Separate Files</option>
-                                    </select>
-                                </div><br />
-                                <span class="info">
-                                    Single HTML File will download the website as a single file, with the script and styles directly injected inside. Anyone can launch this file on their device
-                                    and use it without the need of any other files or organisation. Exporting as Separate Files is useful when you are building a website, as each file has it's own role. The HTML tag will
-                                    have the necessary connections to the other two files.
-                                </span>
-                                <br /><br /><br />
+                        <p class="text">
+                            <div style="display:flex; align-items: center;">
+                                <p class="text" style="margin: 0;">
+                                    Export As:
+                                </p>
+                                <select id="exporttype" class="settinginput" style="cursor: pointer;">
+                                    <option value="html">Single HTML File</option>
+                                    <option value="zip">Separate Files</option>
+                                </select>
+                            </div><br />
+                            <span class="info">
+                                Single HTML File will download the website as a single file, with the script and styles directly injected inside. Anyone can launch this file on their device
+                                and use it without the need of any other files or organisation. Exporting as Separate Files is useful when you are building a website, as each file has it's own role. The HTML tag will
+                                have the necessary connections to the other two files.
+                            </span>
+                            <br /><br /><br />
 
-                                            <div style="display:flex; align-items: center;">
-                                                <p class="text" style="margin: 0;">
-                                                    HTML File Name:
-                                                </p>
-                                                <input id="exportname" class="settinginput" style="cursor: text;" placeholder="index">
-                                                <p class="text" style="margin: 0;">
-                                                    .html
-                                                </p>
-                                            </div><br />
-                                <span class="info">
-                                    If you chose exporting as multiple files, don't forget to press "Allow" when your browser informs you about downloading multiple files!
-                                </span>
-                                <br /><br />
-                                            <div style="text-align: center;">
-                                                <button class="interface" onclick="Export()">EXPORT</button>
-                                            </div>
-                            </p>
+                            <div style="display:flex; align-items: center;">
+                                <p class="text" style="margin: 0;">
+                                    HTML File Name:
+                                </p>
+                                <input id="exportname" class="settinginput" style="cursor: text;" placeholder="index">
+                                <p class="text" style="margin: 0;">
+                                    .html
+                                </p>
+                            </div><br />
+                            <span class="info">
+                                If you chose exporting as multiple files, don't forget to press "Allow" when your browser informs you about downloading multiple files!
+                            </span>
+                            <br /><br />
+                            <div style="text-align: center;">
+                                <button class="interface" onclick="Export()">EXPORT</button>
+                            </div>
+                        </p>
                     </div>
 
                 </div>
             </div>
             <div id="screeneditor" class="tabscreen">
+                <div id="editorinside">
+
+                    <div>
+
+                        <div id="editortabs">
+                            <div class="editortab current" id="tabhtml" onclick="setTab('html');">HTML</div>
+                            <div class="editortab" id="tabcss" onclick="setTab('css');">CSS</div>
+                            <div class="editortab" id="tabjs" onclick="setTab('js');">JavaScript</div>
+                        </div>
+
+                        <div class="editorlayout selected" id="editorhtml">
+                            <textarea class="editorarea" placeholder="This is the inside of the body tag." id="areahtml" oninput="syntaxHelp('html');" spellcheck="false"></textarea>
+                        </div>
+                        <div class="editorlayout" id="editorcss">
+                            <textarea class="editorarea" placeholder="Style the entire document using the #html selector." id="areacss" oninput="syntaxHelp('css');" spellcheck="false"></textarea>
+                        </div>
+                        <div class="editorlayout" id="editorjs">
+                            <textarea class="editorarea" placeholder="Don't forget that using reserved keywords will not work upon exporting." id="areajs" oninput="syntaxHelp('js');" spellcheck="false"></textarea>
+                        </div>
+                        <div id="toolbar">
+
+                            <p class="toolbarlabel">Font Size: </p>
+                            <h1 class="sortabutton" onclick="changeFontSize('-');">-</h1>
+                            <h1 id="fontsizeinfo">14</h1><h1 id="fontsizeunit">px</h1>
+                            <h1 class="sortabutton" onclick="changeFontSize('+');">+</h1>
+
+                        </div>
+
+                    </div>
+                    <div id="editortools">
+
+                        <h1 class="titleofsort" style="text-align: center;">TOOLS</h1>
+                        Cool tools are coming soon! You will be able to find them here!
+                    </div>
+
+                </div>
+            </div>
+            <div id="screenpreview" class="tabscreen">
 
 
 
             </div>
-            <div id="screenpreview" class="tabscreen">
+
+            <div id="screentool" class="tabscreen">
 
 
 
@@ -220,20 +283,41 @@
                 "home": document.getElementById("tabhome"),
                 "options": document.getElementById("taboptions"),
                 "editor": document.getElementById("tabeditor"),
-                "preview": document.getElementById("tabpreview")
+                "preview": document.getElementById("tabpreview"),
+                "tool": document.getElementById("tabtool")
             },
             "screen": {
                 "home": document.getElementById("screenhome"),
                 "options": document.getElementById("screenoptions"),
                 "editor": document.getElementById("screeneditor"),
-                "preview": document.getElementById("screenpreview")
+                "preview": document.getElementById("screenpreview"),
+                "tool": document.getElementById("screentool")
             },
-            "misc": {
+            "editortab": {
+                "html": document.getElementById("tabhtml"),
+                "css": document.getElementById("tabcss"),
+                "js": document.getElementById("tabjs")
+            },
+            "editor": {
+                "html": document.getElementById("editorhtml"),
+                "css": document.getElementById("editorcss"),
+                "js": document.getElementById("editorjs")
+            },
+            "input": {
                 "options": {
                     "title": document.getElementById("coretitle"),
                     "favicon": document.getElementById("corefavicon"),
                     "etype": document.getElementById("exporttype"),
                     "ename": document.getElementById("exportname")
+                },
+                "project": {
+                    "name": document.getElementById("projectname"),
+                    "author": document.getElementById("projectauthor")
+                },
+                "editor": {
+                    "html": document.getElementById("areahtml"),
+                    "css": document.getElementById("areacss"),
+                    "js": document.getElementById("areajs")
                 }
             }
         }
