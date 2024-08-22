@@ -281,7 +281,7 @@ code::-webkit-scrollbar {
 }
 
 code::-webkit-scrollbar-track {
-    background: var(--syntaxbackground);
+    background: none;
 }
 
     code::-webkit-scrollbar-thumb {
@@ -295,7 +295,7 @@ code::-webkit-scrollbar-track {
     }
 
     code::-webkit-scrollbar-corner {
-        background: var(--syntaxbackground);
+        background: none;
     }
 
 .titleofsort {
@@ -479,6 +479,44 @@ button.interface {
         background: var(--syntaxbackground);
     }
 
+    .editorarea.small {
+        height: calc(120px + 0.75vh);
+        width: calc(100% - 2vh);
+        border: none;
+        font-size: 16px;
+        line-height: 24px;
+        background-color: var(--syntaxbackground);
+        color: var(--textcolor);
+        font-family: Consolas, monospace;
+        white-space: nowrap;
+        margin: 0;
+        padding: 1vh 1.5vh;
+        border-radius: 1vh;
+        display: block;
+        box-shadow: var(--shadowtabcolor) 0 0 2px;
+    }
+
+    .editorarea.small::-webkit-scrollbar {
+        height: 5px;
+        width: 5px;
+        cursor: default;
+    }
+
+    .editorarea::-webkit-scrollbar-track {
+        background: none;
+    }
+
+    .editorarea.small::-webkit-scrollbar-thumb {
+        background: var(--textcolor);
+        border-radius: 100px;
+        border: solid 1px var(--syntaxbackground);
+        cursor: default;
+    }
+
+    .editorarea.small::-webkit-scrollbar-corner {
+        background: none;
+    }
+
 #toolbar {
     background-color: var(--syntaxbackground);
     border-radius: 0 0 2vh 2vh;
@@ -521,7 +559,10 @@ button.interface {
     }
 
 .toolbarlabel {
-    font-size: 3vh;
+    font-size: 2.5vh;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .sortabutton {
@@ -537,6 +578,7 @@ button.interface {
     margin: 0 1vh;
     transition: 0.2s;
     border-radius: 1vh;
+    color: var(--textcolor);
 }
 
 .sortabutton:hover {
@@ -546,10 +588,27 @@ button.interface {
 #fontsizeinfo {
     font-size: 3vh;
     margin: 0;
+    color: var(--textcolor);
 }
 
 #fontsizeunit {
     font-size: 1.75vh;
     margin: 0.75vh 0 0 0.5vh;
     font-weight: 400;
+    color: var(--textcolor);
+}
+
+.toolsfilter {
+    display: none;
+}
+
+    .toolsfilter.selected {
+        display: block;
+    }
+
+input[type=checkbox]{
+    width: 3vh;
+    height: 3vh;
+    cursor: pointer;
+    margin-right: 1vh;
 }

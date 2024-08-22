@@ -4,9 +4,10 @@ var currentScreen = 'home';
 var currentTab = 'html';
 var deletion = false;
 var fontSize = {
-    sizes: [10, 11, 12, 14, 16, 18, 20, 24, 28],
-    current: 3
+    "sizes": [10, 11, 12, 14, 16, 18, 20, 24, 28],
+    "current": 3
 }
+var disableHelp = false;
 
 window.onload = function () {
     if (localStorage.getItem('displayMode') === '1') {
@@ -14,7 +15,11 @@ window.onload = function () {
     }
     if (localStorage.getItem('editorFontSize') !== 'undefined' && localStorage.getItem('editorFontSize')) {
         fontSize["current"] = Number(localStorage.getItem('editorFontSize'));
-        changeFontSize('a')
+        changeFontSize('a');
+    }
+    if (localStorage.getItem('editorSyntaxHelp') === 'false') {
+        disableHelp = true;
+        document.getElementById("enablesyntaxhelp").checked = false;
     }
 }
 
@@ -113,9 +118,20 @@ function setTab(x) {
     if (x !== currentTab) {
         layouts["editortab"][currentTab].classList.remove('current');
         layouts["editor"][currentTab].classList.remove('selected');
+        if (currentTab === "css") {
+            layouts["tools"]["html"].classList.remove('selected');
+        } else {
+            layouts["tools"][currentTab].classList.remove('selected');
+        }
         currentTab = x;
         layouts["editortab"][currentTab].classList.add('current');
         layouts["editor"][currentTab].classList.add('selected');
+        if (currentTab === "css") {
+            layouts["tools"]["html"].classList.add('selected');
+        } else {
+            layouts["tools"][currentTab].classList.add('selected');
+        }
+        
     }
 }
 
@@ -123,7 +139,7 @@ function syntaxHelp(x) {
     let a = layouts["input"]["editor"][x].value;
     let b = layouts["input"]["editor"][x].selectionStart;
     let c = 0;
-    if (!deletion) {    
+    if (!deletion && !disableHelp) {    
         switch (x) {
             case 'html':
 
@@ -176,27 +192,10 @@ function syntaxHelp(x) {
                     case "/*":
                         a = addch(a, x, '*/');
                         break;
-                    case "if":
-                        a = addch(a, x, ' () ');
-                        c = 2;
-                        break;
                     case "{\n":
                         a = addch(a, x, '    \n');
                         c = 4;
                         break;
-                }
-                if (a.slice(layouts["input"]["editor"][x].selectionStart - 8, layouts["input"]["editor"][x].selectionStart) === "function") {
-                    a = addch(a, x, ' (){\n    \n}');
-                    c = 1;
-                }
-                if (a.slice(layouts["input"]["editor"][x].selectionStart - 4, layouts["input"]["editor"][x].selectionStart) === "else") {
-                    a = addch(a, x, ' {\n    \n}');
-                    c = 7;
-                }
-                if (a.slice(layouts["input"]["editor"][x].selectionStart - 3, layouts["input"]["editor"][x].selectionStart) === "var" || a.slice(layouts["input"]["editor"][x].selectionStart - 3, layouts["input"]["editor"][x].selectionStart) === "let" ||
-                    a.slice(layouts["input"]["editor"][x].selectionStart - 5, layouts["input"]["editor"][x].selectionStart) === "const") {
-                    a = addch(a, x, '  = ;');
-                    c = 1;
                 }
 
                 break;

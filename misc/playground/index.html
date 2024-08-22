@@ -82,20 +82,16 @@
                 <p class="text">
                     This is a quick documentation to help you get started:<br /><br />
                     <b>HOME TAB</b> gives you access to this documentation, as well as saving and loading projects. Basically, essential stuff.<br /><br />
-                    <b>OPTIONS TAB</b> is the place full of options and functions like exporting your website! You can change many things about your website there! Some more advanced than others, but still useful! Besides that, you can also use it to change the <span style="font-family: Consolas,monospace;">
-                        <span class="syntaxs">&lt;</span><span class="syntaxkw">head</span><span class="syntaxs">&gt;</span>
-                    </span>
+                    <b>OPTIONS TAB</b> is the place full of options and functions like exporting your website! You can change many things about your website there! Some more advanced than others, but still useful! Besides that, you can also use it to change the
+                    <span style="font-family: Consolas,monospace;"><span class="syntaxs">&lt;</span><span class="syntaxkw">head</span><span class="syntaxs">&gt;</span></span>
                     tag, as you can only edit the body tag using the editor.<br /><br />
                     <b>EDITOR TAB</b> is the place you will probably spend the most time at, as you can edit your code right there! HTML, CSS, JavaScript, all in one place! It also gives you access to special widget designing tools to make your job easier!<br /><br />
-                    <b>PREVIEW TAB</b> is the place where the magic happens! Your code will be transformed into a <span style="font-family: Consolas,monospace;">
-                        <span class="syntaxs">&lt;</span><span class="syntaxkw">div</span><span class="syntaxs">&gt;</span>
-                    </span>
-                    element, which acts like a container for your website! This is also why I recommend you not to style all <span style="font-family: Consolas,monospace;">
-                        <span class="syntaxs">&lt;</span><span class="syntaxkw">div</span><span class="syntaxs">&gt;</span>
-                    </span>
-                    elements directly (using the <span style="font-family: Consolas, monospace;">
-                        <span class="syntaxs">.</span><span class="syntaxkw">div</span>
-                    </span>
+                    <b>PREVIEW TAB</b> is the place where the magic happens! Your code will be transformed into a
+                    <span style="font-family: Consolas,monospace;"><span class="syntaxs">&lt;</span><span class="syntaxkw">div</span><span class="syntaxs">&gt;</span></span>
+                    element, which acts like a container for your website! This is also why I recommend you not to style all
+                    <span style="font-family: Consolas,monospace;"><span class="syntaxs">&lt;</span><span class="syntaxkw">div</span><span class="syntaxs">&gt;</span></span>
+                    elements directly (using the
+                    <span style="font-family: Consolas, monospace;"><span class="syntaxs">.</span><span class="syntaxkw">div</span></span>
                     CSS selector), since this can change the entire website. Yeah, including the original design of this playground. However,
                     I've decided that for the sake of experiments, feel free to change anything on this playground as well, if you want it all back, just refresh the website.<br /><br />
                     <b>THE WEIRD SYMBOL IN THE TOP RIGHT CORNER</b> is a toggle between Light Mode and Dark Mode. Some people like Light Mode better, but since my eyes hurt from it, the default setting is Dark Mode.<br /><br /><br />
@@ -173,11 +169,10 @@
                     <div>
 
                         <h1 class="titleofsort">Settings</h1>
-                        <p class="text">
-
-                            TBD
-
+                        <p class="text" style="margin-bottom: 0.5vh;">
+                            Custom Head Tag Code (Won't work in Preview)
                         </p>
+                        <textarea class="editorarea small" placeholder="This goes after the favicon link tag." id="areahead" oninput="syntaxHelp('html');" spellcheck="false"></textarea>
                         <br /><br />
                         <h1 class="titleofsort">Export</h1><br />
                         <p class="text">
@@ -221,7 +216,7 @@
             <div id="screeneditor" class="tabscreen">
                 <div id="editorinside">
 
-                    <div>
+                    <div style="box-shadow: var(--shadowtabcolor) 0 0 2px; border-radius: 2vh; height: min-content;">
 
                         <div id="editortabs">
                             <div class="editortab current" id="tabhtml" onclick="setTab('html');">HTML</div>
@@ -245,13 +240,25 @@
                             <h1 id="fontsizeinfo">14</h1><h1 id="fontsizeunit">px</h1>
                             <h1 class="sortabutton" onclick="changeFontSize('+');">+</h1>
 
+                            <p class="toolbarlabel"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </p>
+
+                            <input type="checkbox" id="enablesyntaxhelp" onclick="localStorage.setItem('editorSyntaxHelp', this.checked); disableHelp = !this.checked;" checked="checked" />
+                            <p class="toolbarlabel" onclick="document.getElementById('enablesyntaxhelp').checked = !document.getElementById('enablesyntaxhelp').checked; localStorage.setItem('editorSyntaxHelp', this.checked); disableHelp = !this.checked;" style="cursor: pointer;">Enable Syntax Help</p>
+
                         </div>
 
                     </div>
                     <div id="editortools">
 
                         <h1 class="titleofsort" style="text-align: center;">TOOLS</h1>
-                        Cool tools are coming soon! You will be able to find them here!
+                        
+                        <div id="toolshtml" class="toolsfilter selected">
+                            <p class="text">Cool HTML/CSS tools and element generators are coming soon! You will be able to find them here!</p>
+                        </div>
+                        <div id="toolsjs" class="toolsfilter">
+                            <p class="text">Cool JavaScript tools are coming soon! You will be able to find them here!</p>
+                        </div>
+
                     </div>
 
                 </div>
@@ -303,12 +310,17 @@
                 "css": document.getElementById("editorcss"),
                 "js": document.getElementById("editorjs")
             },
+            "tools": {
+                "html": document.getElementById("toolshtml"),
+                "js": document.getElementById("toolsjs")
+            },
             "input": {
                 "options": {
                     "title": document.getElementById("coretitle"),
                     "favicon": document.getElementById("corefavicon"),
                     "etype": document.getElementById("exporttype"),
-                    "ename": document.getElementById("exportname")
+                    "ename": document.getElementById("exportname"),
+                    "head": document.getElementById("areahead")
                 },
                 "project": {
                     "name": document.getElementById("projectname"),
