@@ -77,6 +77,9 @@ function setScreen(x) {
         currentScreen = x;
         layouts["tab"][currentScreen].classList.add('current');
         layouts["screen"][currentScreen].classList.add('selected');
+        if (x === 'preview') {
+
+        }
     }
 }
 

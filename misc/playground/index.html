@@ -36,7 +36,7 @@
             <div class="tab" onmouseover="document.getElementById('gradienteffectorange').style.opacity = 1;" onmouseout="document.getElementById('gradienteffectorange').style.opacity = 0;" id="tabpreview" onclick="setScreen('preview');">
                 PREVIEW
             </div>
-            <div class="tab hidden">
+            <div class="tab hidden" id="tabtool">
                 TOOL
             </div>
 
@@ -265,7 +265,12 @@
             </div>
             <div id="screenpreview" class="tabscreen">
 
+                <div id="previewtoolbar">
 
+                </div>
+                <div id="html">
+
+                </div>
 
             </div>
 
@@ -331,6 +336,9 @@
                     "css": document.getElementById("areacss"),
                     "js": document.getElementById("areajs")
                 }
+            },
+            "preview": {
+                "main": document.getElementById("html")
             }
         }
 
