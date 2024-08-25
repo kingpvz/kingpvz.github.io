@@ -14,6 +14,7 @@
     --syntaxkeyword: cornflowerblue;
     --syntaxbackground: #181818;
     --syntaxproperty: lightblue;
+    --imagefilter: none;
 }
 
 html, body {
@@ -48,8 +49,21 @@ header {
     transition: 0.3s ease-out;
 }
 
+#changelogbutton {
+    height: 4vh;
+    padding: 0.5vh 0.5vh 1.5vh 0.5vh;
+    margin-right: 2vh;
+    cursor: pointer;
+    transition: 0.2s ease-out;
+    filter: var(--imagefilter);
+}
+
 #modebutton:hover {
     scale: 1.2;
+}
+
+#changelogbutton:hover {
+    scale: 1.25;
 }
 
 main {
@@ -207,6 +221,10 @@ main {
 .tabscreen#screeneditor {
     height: 88vh;
     overflow-y: hidden;
+}
+
+.tabscreen#screenpreview {
+    padding: 0;
 }
 
 .tabscreen.selected {
@@ -611,4 +629,62 @@ input[type=checkbox]{
     height: 3vh;
     cursor: pointer;
     margin-right: 1vh;
+}
+
+#previewtoolbar {
+    height: 4vh;
+    padding: 0.45vh 1vh;
+    border-bottom: 0.1vh solid var(--maintabcolor);
+    display: flex;
+    align-items: center;
+}
+
+#html {
+    background-color: white;
+    height: 85vh;
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+
+#previewinfo {
+    flex-grow: 7;
+    display: flex;
+    align-items: center;
+}
+
+#previewfavicon {
+    width: 3.75vh;
+    height: 3.75vh;
+    margin-bottom: 0.25vh;
+    margin-right: 1.25vh;
+    border-radius: 0.5vh;
+}
+
+#previewtitle {
+    font-size: 2.5vh;
+    font-family: Ubuntu;
+    color: var(--textcolor);
+    font-weight: 700;
+}
+
+#previewtools {
+    flex-grow: 3;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.previewtool {
+    filter: var(--imagefilter);
+    height: 4vh;
+    margin-left: 2vh;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.previewtool:hover {
+    scale: 1.1;
 }
