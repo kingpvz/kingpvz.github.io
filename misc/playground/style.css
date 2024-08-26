@@ -20,10 +20,10 @@
 html, body {
     margin: 0;
     padding: 0;
-    transition: background-color 0.2s;
+    overflow: hidden;
 }
 
-header {
+#MAINWEBSITEHEADER {
     height: 6vh;
     padding: 2vh 2vh 0 2vh;
     background-color: var(--highlightcolor);
@@ -36,20 +36,20 @@ header {
     align-items: flex-end;
 }
 
-#headerlogo {
+#MAINWEBSITEheaderlogo {
     height: 4vh;
     padding: 1vh 0 2vh 0;
     -webkit-filter: drop-shadow(1px 0 1px #210c00) drop-shadow(1px 1px 1px #210c00) drop-shadow(0 1px 1px #210c00) drop-shadow(-1px 0 1px #210c00) drop-shadow(-1px -1px 1px #210c00) drop-shadow(0 -1px 1px #210c00) drop-shadow(1px -1px 1px #210c00) drop-shadow(-1px 1px 1px #210c00);
 }
 
-#modebutton {
+#MAINWEBSITEmodebutton {
     height: 5vh;
     padding: 0.5vh 0.5vh 1.5vh 0.5vh;
     cursor: pointer;
     transition: 0.3s ease-out;
 }
 
-#changelogbutton {
+#MAINWEBSITEchangelogbutton {
     height: 4vh;
     padding: 0.5vh 0.5vh 1.5vh 0.5vh;
     margin-right: 2vh;
@@ -58,26 +58,26 @@ header {
     filter: var(--imagefilter);
 }
 
-#modebutton:hover {
+#MAINWEBSITEmodebutton:hover {
     scale: 1.2;
 }
 
-#changelogbutton:hover {
+#MAINWEBSITEchangelogbutton:hover {
     scale: 1.25;
 }
 
-main {
+#MAINWEBSITEMAIN {
     height: 92vh;
     background-color: var(--verybgcolor);
 }
 
-#maintabs {
-    display:flex;
+#MAINWEBSITEmaintabs {
+    display: flex;
     padding: 0vh 4vh 0 4vh;
     height: 6vh;
 }
 
-.tab {
+.MAINWEBSITEtab {
     font-size: 2vh;
     font-family: Ubuntu;
     color: var(--textcolor);
@@ -96,21 +96,21 @@ main {
     overflow: hidden;
 }
 
-    .tab:hover {
+    .MAINWEBSITEtab:hover {
         border-radius: 2vh 2vh 0 0;
         box-shadow: orange 0 -0.25vh 1vh -0.5vh;
         background-color: var(--hoverhighlightcolor);
         color: black;
     }
 
-    .tab.current {
+    .MAINWEBSITEtab.current {
         border-radius: 2vh 2vh 0 0;
         background-color: var(--maintabcolor);
         cursor: default;
         box-shadow: var(--shadowctabcolor) 0 -3px 5px -2px;
     }
 
-        .tab.current:hover {
+        .MAINWEBSITEtab.current:hover {
             box-shadow: var(--shadowctabcolor) 0 -3px 5px -2px;
             color: black;
             background-color: var(--hoverhighlightcolor);
@@ -129,7 +129,7 @@ main {
     opacity: 0;
 }
 
-#projectinfo {
+#MAINWEBSITEprojectinfo {
     background-color: var(--syntaxbackground);
     color: var(--textcolor);
     border: solid 2px var(--textcolor);
@@ -144,8 +144,8 @@ main {
     align-items: center;
 }
 
-.projectinput {
-    border:none;
+.MAINWEBSITEprojectinput {
+    border: none;
     border-bottom: solid var(--textcolor) 2px;
     background-color: var(--syntaxbackground);
     color: var(--textcolor);
@@ -156,17 +156,17 @@ main {
     width: 100%;
 }
 
-.projectinput:focus {
-    outline: none;
-    border-bottom-color: var(--linkcolor);
-}
+    .MAINWEBSITEprojectinput:focus {
+        outline: none;
+        border-bottom-color: var(--linkcolor);
+    }
 
-.projectinputlabel {
+.MAINWEBSITEprojectinputlabel {
     margin: 4px 0 0 0;
     font-size: 18px;
 }
 
-.projectinfobutton {
+.MAINWEBSITEprojectinfobutton {
     margin: 1vh;
     cursor: pointer;
     background-color: var(--highlightcolor);
@@ -180,58 +180,58 @@ main {
     padding: 1vh;
 }
 
-    .projectinfobutton:hover {
+    .MAINWEBSITEprojectinfobutton:hover {
         scale: 1.1;
         box-shadow: var(--syntaxbackground) 0 0 0.5vh 0.25vh, var(--linkcolor) 0 0 1vh;
     }
 
-#main {
+#MAINWEBSITEmaindiv {
     height: 90vh;
     overflow-y: auto;
     overflow-x: hidden;
 }
 
-    #main::-webkit-scrollbar {
+    #MAINWEBSITEmaindiv::-webkit-scrollbar {
         width: 10px;
     }
 
-    #main::-webkit-scrollbar-track {
+    #MAINWEBSITEmaindiv::-webkit-scrollbar-track {
         background: var(--verybgcolor);
     }
 
-    #main::-webkit-scrollbar-thumb {
+    #MAINWEBSITEmaindiv::-webkit-scrollbar-thumb {
         background: var(--textcolor);
         border-radius: 100px;
         border: solid 3px var(--verybgcolor);
     }
 
-        #main::-webkit-scrollbar-thumb:hover {
+        #MAINWEBSITEmaindiv::-webkit-scrollbar-thumb:hover {
             background: red;
         }
 
-    #main::-webkit-scrollbar-corner {
+    #MAINWEBSITEmaindiv::-webkit-scrollbar-corner {
         background: var(--verybgcolor);
     }
 
-.tabscreen {
+.MAINWEBSITEtabscreen {
     display: none;
     padding: 1vh 2vh;
 }
 
-.tabscreen#screeneditor {
-    height: 88vh;
-    overflow-y: hidden;
-}
+    .MAINWEBSITEtabscreen#screeneditor {
+        height: 88vh;
+        overflow-y: hidden;
+    }
 
-.tabscreen#screenpreview {
-    padding: 0;
-}
+    .MAINWEBSITEtabscreen#screenpreview {
+        padding: 0;
+    }
 
-.tabscreen.selected {
-    display: block;
-}
+    .MAINWEBSITEtabscreen.selected {
+        display: block;
+    }
 
-.text {
+.MAINWEBSITEtext {
     font-size: 20px;
     color: var(--textcolor);
     font-family: Ubuntu;
@@ -406,8 +406,8 @@ button.interface {
 }
 
 #editortabs {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    justify-content: stretch;
 }
 
 .editortab {
@@ -423,6 +423,7 @@ button.interface {
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    flex-grow: 1;
 }
 
     .editortab:hover {
@@ -688,3 +689,23 @@ input[type=checkbox]{
 .previewtool:hover {
     scale: 1.1;
 }
+
+.aldown {
+    width: 40vw;
+    background: var(--highlightcolor);
+    margin: 10px auto 30px auto;
+    padding: 10px;
+    border-radius: 10px;
+    height: 3vw;
+    font-size: 1.3vw;
+    line-height: 1.6vw;
+    box-shadow: #555 3px 3px 3px;
+    cursor: pointer;
+    transition: 0.2s;
+    color: var(--textcolor);
+}
+
+    .aldown:hover {
+        scale: 1.05;
+        box-shadow: var(--shadowtabcolor) 0 0 10px;
+    }

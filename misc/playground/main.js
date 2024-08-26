@@ -12,6 +12,7 @@ var previewState = {
     mobile: false,
     fullscreen: false
 }
+var uniquecss = true;
 
 window.onload = function () {
     if (localStorage.getItem('displayMode') === '1') {
@@ -91,7 +92,7 @@ function setScreen(x) {
             script.innerHTML = layouts["input"]["editor"]["js"].value;
             script.id = "yourmom";
             document.body.appendChild(script);
-            layouts["preview"]["main"].innerHTML = "<style>" + layouts["input"]["editor"]["css"].value + "</style>" + layouts["input"]["editor"]["html"].value;
+            layouts["preview"]["main"].innerHTML = '<style id="MAINSTYLEWHOAT">' + layouts["input"]["editor"]["css"].value + "</style>" + layouts["input"]["editor"]["html"].value;
             if (layouts["input"]["options"]["favicon"].value) {
                 layouts["preview"]["fav"].src = layouts["input"]["options"]["favicon"].value;
             } else {
@@ -155,7 +156,7 @@ function setTab(x) {
     if (x !== currentTab) {
         layouts["editortab"][currentTab].classList.remove('current');
         layouts["editor"][currentTab].classList.remove('selected');
-        if (currentTab === "css") {
+        if (currentTab === "css" || currentTab === "cssm") {
             layouts["tools"]["html"].classList.remove('selected');
         } else {
             layouts["tools"][currentTab].classList.remove('selected');
@@ -163,7 +164,7 @@ function setTab(x) {
         currentTab = x;
         layouts["editortab"][currentTab].classList.add('current');
         layouts["editor"][currentTab].classList.add('selected');
-        if (currentTab === "css") {
+        if (currentTab === "css" || currentTab === "cssm") {
             layouts["tools"]["html"].classList.add('selected');
         } else {
             layouts["tools"][currentTab].classList.add('selected');
@@ -199,6 +200,7 @@ function syntaxHelp(x) {
 
                 break;
             case 'css':
+            case 'cssm':
 
                 switch (a.slice(layouts["input"]["editor"][x].selectionStart - 1, layouts["input"]["editor"][x].selectionStart)) {
                     case '{':
@@ -287,6 +289,10 @@ function previewFunction(x) {
             layouts["preview"]["main"].style.borderLeft = 'solid var(--verybgcolor) calc(50vw - 25vh)';
             layouts["preview"]["main"].style.borderRight = 'solid var(--verybgcolor) calc(50vw - 25vh)';
             previewState.mobile = true;
+            if (uniquecss) {
+                 document.getElementById("MAINSTYLEWHOAT").innerHTML = layouts["input"]["editor"]["cssm"].value;
+            }
+           
         } else {
             layouts["preview"]["main"].style.width = '100vw';
             layouts["preview"]["main"].style.marginLeft = '0';
@@ -294,6 +300,7 @@ function previewFunction(x) {
             layouts["preview"]["main"].style.borderLeft = 'solid var(--verybgcolor) 0';
             layouts["preview"]["main"].style.borderRight = 'solid var(--verybgcolor) 0';
             previewState.mobile = false;
+            document.getElementById("MAINSTYLEWHOAT").innerHTML = layouts["input"]["editor"]["css"].value;
         }
     }
     if (x === 2) {
@@ -308,14 +315,214 @@ function previewFunction(x) {
     }
 }
 
-function Export(){
+function toggleCssDependency() {
+    uniquecss = layouts["input"]["options"]["uniquecss"].checked;
+    if (uniquecss) {
+        layouts["editortab"]["css"].innerHTML = "Global CSS";
+        layouts["editortab"]["cssm"].style.display = "block";
+    } else {
+        layouts["editortab"]["css"].innerHTML = "CSS";
+        layouts["editortab"]["cssm"].style.display = "none";
+        if (currentTab == "cssm") {
+            setTab("css");
+        }
+    }
+}
+
+function Export() {
+
+    var filen = layouts["input"]["options"]["ename"].value.replaceAll(" ", "_");
+
+    if (layouts["input"]["options"]["etype"].value === "html") {
+
+        var filet = `<!DOCTYPE html>
+<html>
+  <head>
+    <title>_[[[REPLACE::HEAD?TITLE::CODE?NEUTRAL]]]</title>
+    <link rel="icon" type="image/x-icon" href="_[[[REPLACE::HEAD?FAVICON::CODE?NEUTRAL]]]"/>
+    _[[[REPLACE::HEAD?CUSTOM::CODE?NEUTRAL]]]
+    <meta name="author" content="_[[[REPLACE::HEAD?AUTHOR::CODE?NEUTRAL]]]">
+    <meta name="description" content="_[[[REPLACE::HEAD?PROJECT::CODE?NEUTRAL]]] created using Kingpvz's WebDev PlayGround (https://kingpvz.github.io/misc/playground)">
+  </head>
+  <body>
+    <style>
+    html,body{margin:0;padding:0;}
+    _[[[REPLACE::BODY?CSS::CODE?NEUTRAL]]]
+    @media(orientation: portrait){
+        _[[[REPLACE::BODY?CSSM::CODE?NEUTRAL]]]
+    }
+    </style>
+    <div id="html">_[[[REPLACE::BODY?HTML::CODE?NEUTRAL]]]</div>
+    <script>
+    _[[[REPLACE::BODY?JS::CODE?NEUTRAL]]]
+    <\/script>
+  </body>
+</html>`;
+        filet = filet.replace("_[[[REPLACE::HEAD?TITLE::CODE?NEUTRAL]]]", layouts["input"]["options"]["title"].value).replace("_[[[REPLACE::HEAD?FAVICON::CODE?NEUTRAL]]]", layouts["input"]["options"]["favicon"].value.replaceAll("\"", "\\\""));
+        filet = filet.replace("_[[[REPLACE::HEAD?CUSTOM::CODE?NEUTRAL]]]", layouts["input"]["options"]["head"].value).replace("_[[[REPLACE::HEAD?AUTHOR::CODE?NEUTRAL]]]", layouts["input"]["project"]["author"].value.replaceAll("\"", "\\\"")).replace("_[[[REPLACE::HEAD?PROJECT::CODE?NEUTRAL]]]", layouts["input"]["project"]["name"].value.replaceAll("\"", "\\\""));
+        filet = filet.replace("_[[[REPLACE::BODY?CSS::CODE?NEUTRAL]]]", layouts["input"]["editor"]["css"].value).replace("_[[[REPLACE::BODY?CSSM::CODE?NEUTRAL]]]", layouts["input"]["editor"]["cssm"].value);
+        filet = filet.replace("_[[[REPLACE::BODY?HTML::CODE?NEUTRAL]]]", layouts["input"]["editor"]["html"].value).replace("_[[[REPLACE::BODY?JS::CODE?NEUTRAL]]]", layouts["input"]["editor"]["js"].value);
+
+        var elementr = document.createElement('a');
+        elementr.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(filet));
+        if (!filen) { filen = "index"; }
+        elementr.setAttribute('download', filen + ".html");
+
+        elementr.style.display = 'none';
+        document.body.appendChild(elementr);
+
+        elementr.click();
+
+        document.body.removeChild(elementr);
+
+    } else {
+
+        var filet = `<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css"/>
+    <title>_[[[REPLACE::HEAD?TITLE::CODE?NEUTRAL]]]</title>
+    <link rel="icon" type="image/x-icon" href="_[[[REPLACE::HEAD?FAVICON::CODE?NEUTRAL]]]"/>
+    _[[[REPLACE::HEAD?CUSTOM::CODE?NEUTRAL]]]
+    <meta name="author" content="_[[[REPLACE::HEAD?AUTHOR::CODE?NEUTRAL]]]">
+    <meta name="description" content="_[[[REPLACE::HEAD?PROJECT::CODE?NEUTRAL]]] created using Kingpvz's WebDev PlayGround (https://kingpvz.github.io/misc/playground)">
+  </head>
+  <body>
+    <script src="main.js"></script>
+    <div id="html">_[[[REPLACE::BODY?HTML::CODE?NEUTRAL]]]</div>
+  </body>
+</html>`;
+        filet = filet.replace("_[[[REPLACE::HEAD?TITLE::CODE?NEUTRAL]]]", layouts["input"]["options"]["title"].value).replace("_[[[REPLACE::HEAD?FAVICON::CODE?NEUTRAL]]]", layouts["input"]["options"]["favicon"].value.replaceAll("\"", "\\\""));
+        filet = filet.replace("_[[[REPLACE::HEAD?CUSTOM::CODE?NEUTRAL]]]", layouts["input"]["options"]["head"].value).replace("_[[[REPLACE::HEAD?AUTHOR::CODE?NEUTRAL]]]", layouts["input"]["project"]["author"].value.replaceAll("\"", "\\\""));
+        filet = filet.replace("_[[[REPLACE::BODY?HTML::CODE?NEUTRAL]]]", layouts["input"]["editor"]["html"].value).replace("_[[[REPLACE::HEAD?PROJECT::CODE?NEUTRAL]]]", layouts["input"]["project"]["name"].value.replaceAll("\"", "\\\""));
+
+        var filetcss = `html,body{margin:0;padding:0;}
+_[[[REPLACE::BODY?CSS::CODE?NEUTRAL]]]
+@media(orientation: portrait){
+    _[[[REPLACE::BODY?CSSM::CODE?NEUTRAL]]]
+}`;
+        filetcss = filetcss.replace("_[[[REPLACE::BODY?CSS::CODE?NEUTRAL]]]", layouts["input"]["editor"]["css"].value).replace("_[[[REPLACE::BODY?CSSM::CODE?NEUTRAL]]]", layouts["input"]["editor"]["cssm"].value);
+
+        var filetjs = layouts["input"]["editor"]["js"].value;
+
+        var elementr = document.createElement('a');
+        elementr.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(filet));
+        if (!filen) { filen = "index"; }
+        elementr.setAttribute('download', filen + ".html");
+
+        elementr.style.display = 'none';
+        document.body.appendChild(elementr);
+
+        elementr.click();
+
+        document.body.removeChild(elementr);
+        var elementr = document.createElement('a');
+        elementr.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(filetcss));
+        elementr.setAttribute('download', "style.css");
+
+        elementr.style.display = 'none';
+        document.body.appendChild(elementr);
+
+        elementr.click();
+
+        document.body.removeChild(elementr);
+        var elementr = document.createElement('a');
+        elementr.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(filetjs));
+        if (!filen) { filen = "index"; }
+        elementr.setAttribute('download', "main.js");
+
+        elementr.style.display = 'none';
+        document.body.appendChild(elementr);
+
+        elementr.click();
+
+        document.body.removeChild(elementr);
+    }
 
 }
 
 function importProject() {
+    if (confirm('Loading a project will discard all unsaved data.')) {
 
+
+        var input = document.createElement('input');
+        input.type = 'file';
+        input.accept = '.wdpg';
+
+        input.onchange = e => {
+
+            var file = e.target.files[0];
+
+            var reader = new FileReader();
+            reader.readAsText(file, 'UTF-8');
+
+            reader.onload = readerEvent => {
+                var content = readerEvent.target.result;
+
+                content = JSON.parse(content);
+
+                layouts["input"]["project"]["name"].value = content["info"]["name"];
+                layouts["input"]["project"]["author"].value = content["info"]["author"];
+                layouts["input"]["options"]["title"].value = content["options"]["title"];
+                layouts["input"]["options"]["favicon"].value = content["options"]["fav"];
+                layouts["input"]["options"]["head"].value = content["options"]["head"];
+                if (content["options"]["uniquecss"] === "false") {
+                    layouts["input"]["options"]["uniquecss"].checked = false;
+                    toggleCssDependency();
+                }
+                layouts["input"]["options"]["etype"].value = content["options"]["export"];
+                layouts["input"]["options"]["ename"].value = content["options"]["name"];
+                layouts["input"]["editor"]["html"].value = content["code"]["html"];
+                layouts["input"]["editor"]["css"].value = content["code"]["css"];
+                layouts["input"]["editor"]["cssm"].value = content["code"]["cssm"];
+                layouts["input"]["editor"]["js"].value = content["code"]["js"];
+
+            }
+
+        }
+
+        input.click();
+
+
+    } else {
+        console.log("Action aborted.")
+    }
 }
 
 function exportProject() {
+
+    var filet = {
+        info: {
+            name: layouts["input"]["project"]["name"].value,
+            author: layouts["input"]["project"]["author"].value
+        },
+        options: {
+            title: layouts["input"]["options"]["title"].value,
+            fav: layouts["input"]["options"]["favicon"].value,
+            head: layouts["input"]["options"]["head"].value,
+            uniquecss: layouts["input"]["options"]["uniquecss"].checked,
+            export: layouts["input"]["options"]["etype"].value,
+            name: layouts["input"]["options"]["ename"].value
+        },
+        code: {
+            html: layouts["input"]["editor"]["html"].value,
+            css: layouts["input"]["editor"]["css"].value,
+            cssm: layouts["input"]["editor"]["cssm"].value,
+            js: layouts["input"]["editor"]["js"].value
+        }
+    };
+    var filet = JSON.stringify(filet);
+    var elementr = document.createElement('a');
+    elementr.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(filet));
+    var filen = layouts["input"]["project"]["name"].value.replaceAll(" ", "_").toLowerCase();
+    if (!filen) { filen = "mywebsite"; }
+    elementr.setAttribute('download', filen + ".wdpg");
+
+    elementr.style.display = 'none';
+    document.body.appendChild(elementr);
+
+    elementr.click();
+
+    document.body.removeChild(elementr);
 
 }

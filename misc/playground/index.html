@@ -19,71 +19,87 @@
     <script src="../../global_resources/corefunc.js"></script>
     <script src="main.js"></script>
 
-    <header>
+    <header id="MAINWEBSITEHEADER">
 
-        <img src="../../global_resources/images/wdplayground.png" id="headerlogo" />
-        <div id="maintabs">
+        <img src="../../global_resources/images/wdplayground.png" id="MAINWEBSITEheaderlogo" />
+        <div id="MAINWEBSITEmaintabs">
 
-            <div class="tab current" onmouseover="document.getElementById('gradienteffectorange').style.opacity = 1;" onmouseout="document.getElementById('gradienteffectorange').style.opacity = 0;" id="tabhome" onclick="setScreen('home');">
+            <div class="MAINWEBSITEtab current" onmouseover="document.getElementById('gradienteffectorange').style.opacity = 1;" onmouseout="document.getElementById('gradienteffectorange').style.opacity = 0;" id="tabhome" onclick="setScreen('home');">
                 HOME
             </div>
-            <div class="tab" onmouseover="document.getElementById('gradienteffectorange').style.opacity = 1;" onmouseout="document.getElementById('gradienteffectorange').style.opacity = 0;" id="taboptions" onclick="setScreen('options');">
+            <div class="MAINWEBSITEtab" onmouseover="document.getElementById('gradienteffectorange').style.opacity = 1;" onmouseout="document.getElementById('gradienteffectorange').style.opacity = 0;" id="taboptions" onclick="setScreen('options');">
                 OPTIONS
             </div>
-            <div class="tab" onmouseover="document.getElementById('gradienteffectorange').style.opacity = 1;" onmouseout="document.getElementById('gradienteffectorange').style.opacity = 0;" id="tabeditor" onclick="setScreen('editor');">
+            <div class="MAINWEBSITEtab" onmouseover="document.getElementById('gradienteffectorange').style.opacity = 1;" onmouseout="document.getElementById('gradienteffectorange').style.opacity = 0;" id="tabeditor" onclick="setScreen('editor');">
                 EDITOR
             </div>
-            <div class="tab" onmouseover="document.getElementById('gradienteffectorange').style.opacity = 1;" onmouseout="document.getElementById('gradienteffectorange').style.opacity = 0;" id="tabpreview" onclick="setScreen('preview');">
+            <div class="MAINWEBSITEtab" onmouseover="document.getElementById('gradienteffectorange').style.opacity = 1;" onmouseout="document.getElementById('gradienteffectorange').style.opacity = 0;" id="tabpreview" onclick="setScreen('preview');">
                 PREVIEW
             </div>
-            <div class="tab hidden" id="tabtool">
+            <div class="MAINWEBSITEtab hidden" id="tabtool">
                 TOOL
             </div>
-            <div class="tab hidden" id="tabchangelog">
+            <div class="MAINWEBSITEtab hidden" id="tabchangelog">
                 CHANGELOG
             </div>
-
         </div>
         <div style="flex-grow: 1;"></div>
-        <img src="https://img.icons8.com/?size=100&id=10235&format=png&color=FFFFFF" id="changelogbutton" onclick="setScreen('changelog')" title="View Changelog" />
-        <img src="../../global_resources/icons/mode.png" id="modebutton" onclick="toggleMode()" title="Toggle Light Mode/Dark Mode" />
+        <img src="https://img.icons8.com/?size=100&id=10235&format=png&color=FFFFFF" id="MAINWEBSITEchangelogbutton" onclick="setScreen('changelog')" title="View Changelog" />
+        <img src="../../global_resources/icons/mode.png" id="MAINWEBSITEmodebutton" onclick="toggleMode()" title="Toggle Light Mode/Dark Mode" />
 
     </header>
 
-    <main>
+    <main id="MAINWEBSITEMAIN">
 
         <div id="gradienteffect">
             <div id="gradienteffectorange"></div>
         </div>
-        <div id="main">
+        <div id="MAINWEBSITEmaindiv">
 
-            <div id="screenhome" class="tabscreen selected">
+            <div id="screenhome" class="MAINWEBSITEtabscreen selected">
 
-                <p class="text" style="font-size: 36px; text-align: center; margin: 1vh 0 2vh 0;">
+                <p class="MAINWEBSITEtext" style="font-size: 36px; text-align: center; margin: 1vh 0 2vh 0;">
                     Welcome to <span style="color:orangered; font-weight: 700;">W</span>eb<span style="color: orangered; font-weight: 700;">D</span>ev <span style="font-family: Consolas, monospace; font-weight: 200;">PlayGround</span>!<br />
                 </p>
 
-                <div id="projectinfo">
-                    <p class="text" style="font-size: 16px; margin: 0.5vh 0 1.5vh 0; grid-area: 1/1/span 1/span 2; text-align: center; font-weight: bold;">
+                <div id="MAINWEBSITEprojectinfo">
+                    <p class="MAINWEBSITEtext" style="font-size: 16px; margin: 0.5vh 0 1.5vh 0; grid-area: 1/1/span 1/span 2; text-align: center; font-weight: bold;">
                         PROJECT SETTINGS
                     </p>
                     <div>
-                        <input class="projectinput" id="projectname" placeholder="My Website" />
-                        <p class="projectinputlabel">Project Name</p>
+                        <input class="MAINWEBSITEprojectinput" id="projectname" placeholder="My Website" />
+                        <p class="MAINWEBSITEprojectinputlabel">Project Name</p>
                     </div>
                     <div>
-                        <input class="projectinput" id="projectauthor" placeholder="John Doe" />
-                        <p class="projectinputlabel">Author</p>
+                        <input class="MAINWEBSITEprojectinput" id="projectauthor" placeholder="John Doe" />
+                        <p class="MAINWEBSITEprojectinputlabel">Author</p>
                     </div>
-                    <button class="projectinfobutton" onclick="exportProject();" style="grid-area:1/3/span 2/span 1;">
+                    <button class="MAINWEBSITEprojectinfobutton" onclick="exportProject();" style="grid-area:1/3/span 2/span 1;" title="Export as .wdpg Project File">
                         Export Project
                     </button>
-                    <button class="projectinfobutton" onclick="importProject();" style="grid-area:1/4/span 2/span 1;">
+                    <button class="MAINWEBSITEprojectinfobutton" onclick="importProject();" style="grid-area:1/4/span 2/span 1;" title="Import a .wdpg Project File">
                         Import Project
                     </button>
                 </div>
                 <br />
-                <p class="text">
+                <div style="display: flex; align-items: center; justify-content: space-around;">
+                    <div onclick="const iframe = document.createElement('iframe');
+                                    iframe.style.display = 'none';
+                                    iframe.src = 'https://kingpvz.github.io/global_resources/projects/other/wdpg/sample.wdpg';
+                                    document.body.appendChild(iframe);
+                                    setTimeout(function() {
+                                        document.body.removeChild(iframe);
+                                    }, 1000);"
+                         class="aldown">
+    <img style="float:left; margin-right: 15px; height: 100%; filter: var(--imagefilter);" src="../../global_resources/icons/download.png" />
+    <b>Download Sample Website Project</b><br /><i style="opacity: 0.7; font-size: 1vw;">sample.wdpg &nbsp; | &nbsp; 33kB</i>
+</div>
+                <p class="MAINWEBSITEtext" style="width: 50vw;">
+                    This is the project for the uQuiz Text Designer
+                </p>
+                </div>
+                
+                <p class="MAINWEBSITEtext">
                     This is a quick documentation to help you get started:<br /><br />
                     <b>HOME TAB</b> gives you access to this documentation, as well as saving and loading projects. Basically, essential stuff.<br /><br />
                     <b>OPTIONS TAB</b> is the place full of options and functions like exporting your website! You can change many things about your website there! Some more advanced than others, but still useful! Besides that, you can also use it to change the
@@ -98,7 +114,7 @@
                     <span style="font-family: Consolas, monospace;"><span class="syntaxkw">div</span></span>
                     CSS selector), since this can change the entire website. Yeah, including the original design of this playground. However,
                     I've decided that for the sake of experiments, feel free to change anything on this playground as well, if you want it all back, just refresh the website.<br /><br />
-                    <b>THE SYMBOLS IN THE TOP RIGHT CORNER</b> are two (shocking). The one that looks like 
+                    <b>THE SYMBOLS IN THE TOP RIGHT CORNER</b> are two (shocking). The one that looks like
                     something to write is the changelog. The weird one is a toggle between Light Mode and Dark Mode. Some people like Light Mode better, but since my eyes hurt from it, the default setting is Dark Mode.<br /><br /><br />
                     <span style="font-size: 28px;">Now you are ready to begin! Play some beats and have fun!</span><br /><br />
                     If you have no idea how you ended up here, you can <a class="anchorlink" href="https://kingpvz.github.io">return to the homepage</a>.<br />
@@ -106,7 +122,7 @@
                 </p>
 
             </div>
-            <div id="screenoptions" class="tabscreen">
+            <div id="screenoptions" class="MAINWEBSITEtabscreen">
                 <div id="screenoptionsinside">
                     <div>
 
@@ -142,7 +158,7 @@
                         <p class="info">
                             You can use these on your website, however, they won't function anymore after exporting.
                         </p>
-                        <p class="text">
+                        <p class="MAINWEBSITEtext">
                             <span class="codeunit">r</span> (Variable/Element): Holds the <span class="codeitalic">:root</span> element.<br />
                             <span class="codeunit">layouts</span> (Object): Holds all layouts and input elements on this website.<br />
                             <span class="codeunit">mode</span> (Variable/Number): Holds info about the current display mode (Light/Dark).<br />
@@ -171,21 +187,25 @@
                             <span class="codeunit">previewFunction</span> (Function, Parameter <span class="codeitalic">x</span> =number): Triggers an action based on the parameter. If x=1, changes the preview mode to mobile. If x=2, changes the
                             preview mode to full screen.<br />
                             <span class="codeunit">previewState</span> (Object): Holds info about the current preview state.<br />
+                            <span class="codeunit">uniquecss</span> (Variable/Boolean): Checks whether you have enabled independent CSS for mobile.<br />
+                            <span class="codeunit">toggleCssDependency</span> (Function, Parameterless): Toggles the uniquecss variable and changes the required styles.<br />
                         </p>
 
                     </div>
                     <div>
 
                         <h1 class="titleofsort">Settings</h1>
-                        <p class="text" style="margin-bottom: 0.5vh;">
+                        <p class="MAINWEBSITEtext" style="margin-bottom: 0.5vh;">
                             Custom Head Tag Code (Won't work in Preview)
                         </p>
                         <textarea class="editorarea small" placeholder="This goes after the favicon link tag." id="areahead" oninput="syntaxHelp('html');" spellcheck="false"></textarea>
+                        <br />
+                        <div style="display: flex; align-items: center;"><input type="checkbox" checked="checked" id="independentcsscheck" onclick="toggleCssDependency();" /><p class="MAINWEBSITEtext" style="cursor: pointer;" onclick="layouts['input']['options']['uniquecss'].checked = !layouts['input']['options']['uniquecss'].checked; toggleCssDependency();">Independent CSS for Mobile</p></div>
                         <br /><br />
                         <h1 class="titleofsort">Export</h1>
-                        <p class="text">
+                        <p class="MAINWEBSITEtext">
                             <div style="display:flex; align-items: center;">
-                                <p class="text" style="margin: 0;">
+                                <p class="MAINWEBSITEtext" style="margin: 0;">
                                     Export As:
                                 </p>
                                 <select id="exporttype" class="settinginput" style="cursor: pointer;">
@@ -201,16 +221,17 @@
                             <br /><br /><br />
 
                             <div style="display:flex; align-items: center;">
-                                <p class="text" style="margin: 0;">
+                                <p class="MAINWEBSITEtext" style="margin: 0;">
                                     HTML File Name:
                                 </p>
                                 <input id="exportname" class="settinginput" style="cursor: text;" placeholder="index">
-                                <p class="text" style="margin: 0;">
+                                <p class="MAINWEBSITEtext" style="margin: 0;">
                                     .html
                                 </p>
                             </div><br />
                             <span class="info">
-                                If you chose exporting as multiple files, don't forget to press "Allow" when your browser informs you about downloading multiple files!
+                                If you chose exporting as multiple files, don't forget to press "Allow" when your browser informs you about downloading multiple files! Some browsers might warn you about downloading JavaScript files,
+                                you will need to choose "Keep" or "Allow" when asked about the main.js file.
                             </span>
                             <br /><br />
                             <div style="text-align: center;">
@@ -221,14 +242,15 @@
 
                 </div>
             </div>
-            <div id="screeneditor" class="tabscreen">
+            <div id="screeneditor" class="MAINWEBSITEtabscreen">
                 <div id="editorinside">
 
                     <div style="box-shadow: var(--shadowtabcolor) 0 0 2px; border-radius: 2vh; height: min-content;">
 
                         <div id="editortabs">
                             <div class="editortab current" id="tabhtml" onclick="setTab('html');">HTML</div>
-                            <div class="editortab" id="tabcss" onclick="setTab('css');">CSS</div>
+                            <div class="editortab" id="tabcss" onclick="setTab('css');">Global CSS</div>
+                            <div class="editortab" id="tabcssm" onclick="setTab('cssm');">Mobile CSS</div>
                             <div class="editortab" id="tabjs" onclick="setTab('js');">JavaScript</div>
                         </div>
 
@@ -236,7 +258,10 @@
                             <textarea class="editorarea" placeholder="This is the inside of the body tag." id="areahtml" oninput="syntaxHelp('html');" spellcheck="false"></textarea>
                         </div>
                         <div class="editorlayout" id="editorcss">
-                            <textarea class="editorarea" placeholder="Style the entire document using the #html selector. It will be replaced with the body selector upon exporting." id="areacss" oninput="syntaxHelp('css');" spellcheck="false"></textarea>
+                            <textarea class="editorarea" placeholder="Style the entire document using the #html selector." id="areacss" oninput="syntaxHelp('css');" spellcheck="false"></textarea>
+                        </div>
+                        <div class="editorlayout" id="editorcssm">
+                            <textarea class="editorarea" placeholder="This is the inside of the @media(orientation: portrait){} rule." id="areacssm" oninput="syntaxHelp('cssm');" spellcheck="false"></textarea>
                         </div>
                         <div class="editorlayout" id="editorjs">
                             <textarea class="editorarea" placeholder="Don't forget that using reserved keywords will not work upon exporting." id="areajs" oninput="syntaxHelp('js');" spellcheck="false"></textarea>
@@ -261,17 +286,17 @@
                         <h1 class="titleofsort" style="text-align: center;">TOOLS</h1>
 
                         <div id="toolshtml" class="toolsfilter selected">
-                            <p class="text">Cool HTML/CSS tools and element generators are coming soon! You will be able to find them here!</p>
+                            <p class="MAINWEBSITEtext">Cool HTML/CSS tools and element generators are coming soon! You will be able to find them here!</p>
                         </div>
                         <div id="toolsjs" class="toolsfilter">
-                            <p class="text">Cool JavaScript tools are coming soon! You will be able to find them here!</p>
+                            <p class="MAINWEBSITEtext">Cool JavaScript tools are coming soon! You will be able to find them here!</p>
                         </div>
 
                     </div>
 
                 </div>
             </div>
-            <div id="screenpreview" class="tabscreen">
+            <div id="screenpreview" class="MAINWEBSITEtabscreen">
 
                 <div id="previewtoolbar">
                     <div id="previewinfo">
@@ -280,7 +305,7 @@
                     </div>
                     <div id="previewtools">
                         <img id="previewmobileversion" class="previewtool" title="Mobile Version" src="../../global_resources/icons/mobile.png" onclick="previewFunction(1);" />
-                        <img id="previewfullscreen" class="previewtool" title="Full Screen" src="../../global_resources/icons/fullscreen.png" onclick="previewFunction(2);" />
+                        <img id="previewfullscreen" class="previewtool" title="Full Screen (Press Esc to exit)" src="../../global_resources/icons/fullscreen.png" onclick="previewFunction(2);" />
                     </div>
                 </div>
                 <div id="html">
@@ -289,15 +314,15 @@
 
             </div>
 
-            <div id="screentool" class="tabscreen">
+            <div id="screentool" class="MAINWEBSITEtabscreen">
 
 
 
             </div>
 
-            <div id="screenchangelog" class="tabscreen">
+            <div id="screenchangelog" class="MAINWEBSITEtabscreen">
 
-                <p class="text">
+                <p class="MAINWEBSITEtext">
                     <b>x/x/24</b><br />
                     The website was released.
                 </p>
@@ -334,11 +359,13 @@
             "editortab": {
                 "html": document.getElementById("tabhtml"),
                 "css": document.getElementById("tabcss"),
+                "cssm": document.getElementById("tabcssm"),
                 "js": document.getElementById("tabjs")
             },
             "editor": {
                 "html": document.getElementById("editorhtml"),
                 "css": document.getElementById("editorcss"),
+                "cssm": document.getElementById("editorcssm"),
                 "js": document.getElementById("editorjs")
             },
             "tools": {
@@ -351,7 +378,8 @@
                     "favicon": document.getElementById("corefavicon"),
                     "etype": document.getElementById("exporttype"),
                     "ename": document.getElementById("exportname"),
-                    "head": document.getElementById("areahead")
+                    "head": document.getElementById("areahead"),
+                    "uniquecss": document.getElementById("independentcsscheck")
                 },
                 "project": {
                     "name": document.getElementById("projectname"),
@@ -360,6 +388,7 @@
                 "editor": {
                     "html": document.getElementById("areahtml"),
                     "css": document.getElementById("areacss"),
+                    "cssm": document.getElementById("areacssm"),
                     "js": document.getElementById("areajs")
                 }
             },
@@ -369,6 +398,11 @@
                 "title": document.getElementById("previewtitle")
             }
         }
+
+        window.addEventListener('beforeunload', function (e) {
+            e.preventDefault();
+            e.returnValue = '';
+        });
 
     </script>
 
