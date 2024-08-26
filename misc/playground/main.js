@@ -261,19 +261,27 @@ function syntaxHelp(x) {
 }
 
 function changeFontSize(how) {
-    if (how === '+' && fontSize["current"]+1!==fontSize["sizes"].length) {
-        fontSize["current"] += 1;
+    if (window.innerHeight > window.innerWidth) {
+
+        let a = "initial";
+
+    } else {
+        if (how === '+' && fontSize["current"] + 1 !== fontSize["sizes"].length) {
+            fontSize["current"] += 1;
+        }
+        if (how === '-' && fontSize["current"] - 1 > -1) {
+            fontSize["current"] -= 1;
+        }
+
+        document.getElementById("fontsizeinfo").innerHTML = fontSize["sizes"][fontSize["current"]];
+        let a = document.getElementById("fontsizeinfo").innerHTML + 'px';
+        localStorage.setItem('editorFontSize', fontSize["current"]);
     }
-    if (how === '-' && fontSize["current"] - 1 > -1) {
-        fontSize["current"] -= 1;
-    }
-    
-    document.getElementById("fontsizeinfo").innerHTML = fontSize["sizes"][fontSize["current"]];
-    let a = document.getElementById("fontsizeinfo").innerHTML+'px';
+
     layouts["input"]["editor"]["html"].style.fontSize = a;
     layouts["input"]["editor"]["css"].style.fontSize = a;
+    layouts["input"]["editor"]["cssm"].style.fontSize = a;
     layouts["input"]["editor"]["js"].style.fontSize = a;
-    localStorage.setItem('editorFontSize', fontSize["current"]);
 }
 
 function addch(str, place, char) {
@@ -282,35 +290,47 @@ function addch(str, place, char) {
 
 function previewFunction(x) {
     if (x === 1) {
-        if (!previewState.mobile) {
-            layouts["preview"]["main"].style.width = '50vh';
-            layouts["preview"]["main"].style.marginLeft = 'auto';
-            layouts["preview"]["main"].style.marginRight = 'auto';
-            layouts["preview"]["main"].style.borderLeft = 'solid var(--verybgcolor) calc(50vw - 25vh)';
-            layouts["preview"]["main"].style.borderRight = 'solid var(--verybgcolor) calc(50vw - 25vh)';
-            previewState.mobile = true;
+        if (window.innerHeight > window.innerWidth) {
             if (uniquecss) {
-                 document.getElementById("MAINSTYLEWHOAT").innerHTML = layouts["input"]["editor"]["cssm"].value;
+                document.getElementById("MAINSTYLEWHOAT").innerHTML = layouts["input"]["editor"]["css"].value+"\n"+layouts["input"]["editor"]["cssm"].value;
             }
-           
         } else {
-            layouts["preview"]["main"].style.width = '100vw';
-            layouts["preview"]["main"].style.marginLeft = '0';
-            layouts["preview"]["main"].style.marginRight = '0';
-            layouts["preview"]["main"].style.borderLeft = 'solid var(--verybgcolor) 0';
-            layouts["preview"]["main"].style.borderRight = 'solid var(--verybgcolor) 0';
-            previewState.mobile = false;
-            document.getElementById("MAINSTYLEWHOAT").innerHTML = layouts["input"]["editor"]["css"].value;
+            if (!previewState.mobile) {
+                layouts["preview"]["main"].style.width = '50vh';
+                layouts["preview"]["main"].style.marginLeft = 'auto';
+                layouts["preview"]["main"].style.marginRight = 'auto';
+                layouts["preview"]["main"].style.borderLeft = 'solid var(--verybgcolor) calc(50vw - 25vh)';
+                layouts["preview"]["main"].style.borderRight = 'solid var(--verybgcolor) calc(50vw - 25vh)';
+                previewState.mobile = true;
+                if (uniquecss) {
+                    document.getElementById("MAINSTYLEWHOAT").innerHTML = layouts["input"]["editor"]["css"].value + "\n" +layouts["input"]["editor"]["cssm"].value;
+                }
+           
+            } else {
+                layouts["preview"]["main"].style.width = '100vw';
+                layouts["preview"]["main"].style.marginLeft = '0';
+                layouts["preview"]["main"].style.marginRight = '0';
+                layouts["preview"]["main"].style.borderLeft = 'solid var(--verybgcolor) 0';
+                layouts["preview"]["main"].style.borderRight = 'solid var(--verybgcolor) 0';
+                previewState.mobile = false;
+                document.getElementById("MAINSTYLEWHOAT").innerHTML = layouts["input"]["editor"]["css"].value;
+            }
         }
     }
     if (x === 2) {
-        if (!previewState.fullscreen) {
-            layouts["preview"]["main"].style.height = '100vh';
-            layouts["preview"]["main"].style.bottom = '0';
-            previewState.fullscreen = true;
+        if (window.innerHeight > window.innerWidth) {
+            if (uniquecss) {
+                layouts["preview"]["main"].style.height = 'inital';
+            }
         } else {
-            layouts["preview"]["main"].style.height = '85vh';
-            previewState.fullscreen = false;
+            if (!previewState.fullscreen) {
+                layouts["preview"]["main"].style.height = '100vh';
+                layouts["preview"]["main"].style.bottom = '0';
+                previewState.fullscreen = true;
+            } else {
+                layouts["preview"]["main"].style.height = '85vh';
+                previewState.fullscreen = false;
+            }
         }
     }
 }

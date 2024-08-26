@@ -142,6 +142,7 @@ html, body {
     grid-template-columns: 5fr 5fr 2fr 2fr;
     column-gap: 2vw;
     align-items: center;
+    grid-template-areas: 'title title button1 button2' 'input1 input2 button1 button2';
 }
 
 .MAINWEBSITEprojectinput {
@@ -691,11 +692,10 @@ input[type=checkbox]{
 }
 
 .aldown {
-    width: 40vw;
+    width: 30vw;
     background: var(--highlightcolor);
-    margin: 10px auto 30px auto;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 1vh;
     height: 3vw;
     font-size: 1.3vw;
     line-height: 1.6vw;
@@ -703,9 +703,318 @@ input[type=checkbox]{
     cursor: pointer;
     transition: 0.2s;
     color: var(--textcolor);
+    border: solid var(--textcolor) 2px;
 }
 
     .aldown:hover {
         scale: 1.05;
         box-shadow: var(--shadowtabcolor) 0 0 10px;
     }
+
+.onlymobile {
+    display: none;
+}
+
+#extradownloadingSTYLESYEAitalic {
+    opacity: 0.7;
+    font-size: 1vw;
+}
+
+#mediocrosityialMAINWEBSITEtexttitle {
+    font-size: 16px;
+}
+
+#extradownloadingSTYLESYEA {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--syntaxbackground);
+    box-shadow: var(--shadowtabcolor) 0 0 2px;
+    transition: 0.2s;
+    border-radius: 2vh;
+    margin: 1vh;
+}
+
+#extradownloadingSTYLESYEAdown {
+    width: 50vw;
+}
+
+@media(orientation: portrait) {
+    .onlymobile {
+        display: block;
+    }
+
+    .NOMOBILE {
+        display: none !important;
+    }
+
+    html, body {
+        margin: 0;
+        padding: 0;
+        overflow-y: scroll;
+    }
+
+    #MAINWEBSITEHEADER {
+        height: 14vh;
+        padding: 1vh 2vh 0 2vh;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 8vh 1fr;
+        grid-template-areas: 'logo logo tools tools' 'tabs tabs tabs tabs';
+    }
+
+    #MAINWEBSITEheaderlogo {
+        grid-area: logo;
+        padding: 0;
+        width: 50vw;
+        align-self: center;
+        }
+
+    #MAINWEBSITEmodebutton {
+        height: 6vh;
+    }
+
+    #MAINWEBSITEchangelogbutton {
+        height: 5vh;
+        margin-right: 1vh;
+    }
+
+    #MAINWEBSITEmodebutton:hover {
+        scale: 1.0;
+    }
+
+    #MAINWEBSITEchangelogbutton:hover {
+        scale: 1.0;
+    }
+
+    #MAINWEBSITEMAIN {
+        height: initial;
+    }
+
+    #MAINWEBSITEmaintabs {
+        grid-area: tabs;
+        padding: 0;
+        height: 6vh;
+        justify-content: space-around;
+    }
+
+    .MAINWEBSITEtab {
+        padding: 1vh;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        border-radius: 0.75vh 0.75vh 0 0;
+        height: 4vh;
+        overflow: hidden;
+    }
+
+        .MAINWEBSITEtab:hover {
+            border-radius: 1.5vh 1.5vh 0 0;
+        }
+
+        .MAINWEBSITEtab.current {
+            border-radius: 1.5vh 1.5vh 0 0;
+        }
+
+
+    #gradienteffect {
+        height: 1vh;
+    }
+
+    #gradienteffectorange {
+        height: 1vh;
+    }
+
+    #MAINWEBSITEprojectinfo {
+        border: solid 5px var(--textcolor);
+        padding: 1vh 2vh;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #mediocrosityialMAINWEBSITEtexttitle {
+        font-size: 32px;
+    }
+
+    .MAINWEBSITEprojectinput {
+        width: 100%;
+        border-bottom: solid var(--textcolor) 5px;
+        padding-bottom: 16px;
+        font-size: 72px;
+    }
+
+    .MAINWEBSITEprojectinputlabel {
+        margin: 8px 0 32px 0;
+        font-size: 48px;
+    }
+
+    .MAINWEBSITEprojectinfobutton {
+        border: solid 5px var(--maintabcolor);
+        font-size: 48px;
+        border-radius: 1vh;
+        margin: 1vh 0;
+    }
+
+        .MAINWEBSITEprojectinfobutton:hover {
+            scale: 1.0;
+        }
+
+    #extradownloadingSTYLESYEA {
+        flex-direction: column;
+        box-shadow: var(--shadowtabcolor) 0 0 10px;
+        border-radius: 2vh;
+        margin: 1vh;
+        padding: 1vh 1vh 0 1vh;
+    }
+
+    #MAINWEBSITEmaindiv {
+        height: initial;
+        overflow-y: initial;
+    }
+
+        .MAINWEBSITEtabscreen#screeneditor {
+            height: 98vh;
+        }
+
+        .MAINWEBSITEtabscreen#screenchangelog {
+            height: 82vh;
+        }
+
+    .MAINWEBSITEtext {
+        font-size: 28px;
+    }
+
+        .MAINWEBSITEtext.MAINWEBSITEbigger {
+            font-size: 40px;
+        }
+
+    .info {
+        font-size: 24px;
+    }
+
+    code {
+        font-size: 36px;
+        line-height: 48px;
+        margin-top: 0;
+        box-shadow: var(--shadowtabcolor) 0 0 10px;
+    }
+
+    .titleofsort {
+        font-size: 32px;
+    }
+
+    #screenoptionsinside {
+        display: block;
+    }
+
+    .coreinput {
+        border: solid var(--shadowtabcolor) 3px;
+        font-size: 36px;
+    }
+
+    .settinginput {
+        font-size: 36px;
+        box-shadow: var(--shadowtabcolor) 0 0 10px;
+    }
+
+    button.interface {
+        font-size: 48px;
+        border: solid 5px var(--maintabcolor);
+        padding: 1vh;
+        border-radius: 1.5vh;
+        box-shadow: var(--shadowtabcolor) 2px 2px 4px;
+    }
+
+        button.interface:hover {
+            scale: 1.0;
+        }
+
+    #editorinside {
+        display: block;
+    }
+
+    #editortabs {
+        display: flex;
+        justify-content: stretch;
+    }
+
+    .editortab {
+        font-size: 36px;
+    }
+
+    .editorarea {
+        height: calc(88.5vh - 36px);
+        font-size: 32px;
+    }
+
+        .editorarea.small {
+            height: calc(210px + 0.75vh);
+            font-size: 36px;
+            line-height: 42px;
+            overflow: auto;
+            box-shadow: var(--shadowtabcolor) 0 0 10px;
+        }
+
+    #toolbar {
+        height: 4vh;
+    }
+
+    .toolbarlabel {
+        font-size: 2.5vh;
+    }
+
+    #previewtoolbar {
+        height: 6vh;
+        overflow: hidden;
+    }
+
+    #html {
+        height: 93vh;
+        position: initial;
+        bottom: 0;
+        left: 0;
+        transition: 0.3s ease;
+    }
+
+    #previewfavicon {
+        width: 5.5vh;
+        height: 5.5vh;
+        margin-bottom: 0.5vh;
+        margin-right: 1.5vh;
+        border-radius: 1vh;
+    }
+
+    #previewtitle {
+        font-size: 3vh;
+    }
+
+    #previewtools {
+        flex-grow: 0;
+        display: none;
+    }
+
+    .aldown {
+        width: calc(100% - 2vh);
+        padding: 1vh;
+        border-radius: 1vh;
+        height: 7vw;
+        font-size: 4.5vw;
+        line-height: 3.5vw;
+        border: solid var(--textcolor) 3px;
+    }
+
+        .aldown:hover {
+            scale: 1.0;
+        }
+
+    #extradownloadingSTYLESYEAitalic {
+        opacity: 0.7;
+        font-size: 3vw;
+    }
+
+    #extradownloadingSTYLESYEAdown {
+        width: 100%;
+        text-align: center;
+    }
+}

@@ -43,9 +43,10 @@
                 CHANGELOG
             </div>
         </div>
-        <div style="flex-grow: 1;"></div>
-        <img src="https://img.icons8.com/?size=100&id=10235&format=png&color=FFFFFF" id="MAINWEBSITEchangelogbutton" onclick="setScreen('changelog')" title="View Changelog" />
-        <img src="../../global_resources/icons/mode.png" id="MAINWEBSITEmodebutton" onclick="toggleMode()" title="Toggle Light Mode/Dark Mode" />
+        <div style="display: flex; justify-content: right; align-items: flex-end; flex-grow: 1; grid-area: tools;">
+            <img src="https://img.icons8.com/?size=100&id=10235&format=png&color=FFFFFF" id="MAINWEBSITEchangelogbutton" onclick="setScreen('changelog')" title="View Changelog" />
+            <img src="../../global_resources/icons/mode.png" id="MAINWEBSITEmodebutton" onclick="toggleMode()" title="Toggle Light Mode/Dark Mode" />
+        </div>
 
     </header>
 
@@ -63,26 +64,26 @@
                 </p>
 
                 <div id="MAINWEBSITEprojectinfo">
-                    <p class="MAINWEBSITEtext" style="font-size: 16px; margin: 0.5vh 0 1.5vh 0; grid-area: 1/1/span 1/span 2; text-align: center; font-weight: bold;">
+                    <p class="MAINWEBSITEtext" style="margin: 0.5vh 0 1.5vh 0; grid-area: title; text-align: center; font-weight: bold;" id="mediocrosityialMAINWEBSITEtexttitle">
                         PROJECT SETTINGS
                     </p>
-                    <div>
+                    <div style="grid-area: input1;">
                         <input class="MAINWEBSITEprojectinput" id="projectname" placeholder="My Website" />
                         <p class="MAINWEBSITEprojectinputlabel">Project Name</p>
                     </div>
-                    <div>
+                    <div style="grid-area: input2;">
                         <input class="MAINWEBSITEprojectinput" id="projectauthor" placeholder="John Doe" />
                         <p class="MAINWEBSITEprojectinputlabel">Author</p>
                     </div>
-                    <button class="MAINWEBSITEprojectinfobutton" onclick="exportProject();" style="grid-area:1/3/span 2/span 1;" title="Export as .wdpg Project File">
+                    <button class="MAINWEBSITEprojectinfobutton" onclick="exportProject();" style="grid-area:button1;" title="Export as .wdpg Project File">
                         Export Project
                     </button>
-                    <button class="MAINWEBSITEprojectinfobutton" onclick="importProject();" style="grid-area:1/4/span 2/span 1;" title="Import a .wdpg Project File">
+                    <button class="MAINWEBSITEprojectinfobutton" onclick="importProject();" style="grid-area:button2;" title="Import a .wdpg Project File">
                         Import Project
                     </button>
                 </div>
                 <br />
-                <div style="display: flex; align-items: center; justify-content: space-around;">
+                <div id="extradownloadingSTYLESYEA">
                     <div onclick="const iframe = document.createElement('iframe');
                                     iframe.style.display = 'none';
                                     iframe.src = 'https://kingpvz.github.io/global_resources/projects/other/wdpg/sample.wdpg';
@@ -92,20 +93,22 @@
                                     }, 1000);"
                          class="aldown">
     <img style="float:left; margin-right: 15px; height: 100%; filter: var(--imagefilter);" src="../../global_resources/icons/download.png" />
-    <b>Download Sample Website Project</b><br /><i style="opacity: 0.7; font-size: 1vw;">sample.wdpg &nbsp; | &nbsp; 33kB</i>
+    <b>Download Sample Website Project</b><br /><i id="extradownloadingSTYLESYEAitalic">sample.wdpg &nbsp; | &nbsp; 33kB</i>
 </div>
-                <p class="MAINWEBSITEtext" style="width: 50vw;">
-                    This is the project for the uQuiz Text Designer
+                <p class="MAINWEBSITEtext" id="extradownloadingSTYLESYEAdown">
+                    This is the project for the <a href="https://kingpvz.github.io/misc/quiz/textdesign" class="anchorlink" target="_blank">uQuiz Text Designer</a> that you can download and then import to see how projects work.
+                    By all means, feel free to modify it as much as you want and use for whatever project of yours. Just note that because I used some classes and IDs that are already present on this website, using the preivew
+                    tab will introduce issues. A lot of them. Also it won't work. Use export to make it work, or challenge yourself and try to fix it!
                 </p>
                 </div>
-                
                 <p class="MAINWEBSITEtext">
                     This is a quick documentation to help you get started:<br /><br />
                     <b>HOME TAB</b> gives you access to this documentation, as well as saving and loading projects. Basically, essential stuff.<br /><br />
                     <b>OPTIONS TAB</b> is the place full of options and functions like exporting your website! You can change many things about your website there! Some more advanced than others, but still useful! Besides that, you can also use it to change the
                     <span style="font-family: Consolas,monospace;"><span class="syntaxs">&lt;</span><span class="syntaxkw">head</span><span class="syntaxs">&gt;</span></span>
                     tag, as you can only edit the body tag using the editor.<br /><br />
-                    <b>EDITOR TAB</b> is the place you will probably spend the most time at, as you can edit your code right there! HTML, CSS, JavaScript, all in one place! It also gives you access to special widget designing tools to make your job easier!<br /><br />
+                    <b>EDITOR TAB</b> is the place you will probably spend the most time at, as you can edit your code right there! HTML, CSS, JavaScript, all in one place! It also gives you access to special widget designing tools to make your job easier!<span class="onlymobile">
+                                                                  Note: Special widget deigning tools are not available on mobile.</span><br /><br />
                     <b>PREVIEW TAB</b> is the place where the magic happens! Your code will be transformed into a
                     <span style="font-family: Consolas,monospace;"><span class="syntaxs">&lt;</span><span class="syntaxkw">div</span><span class="syntaxs">&gt;</span></span>
                     element, which acts like a container for your website! This is also why I recommend you not to style all
@@ -118,7 +121,10 @@
                     something to write is the changelog. The weird one is a toggle between Light Mode and Dark Mode. Some people like Light Mode better, but since my eyes hurt from it, the default setting is Dark Mode.<br /><br /><br />
                     <span style="font-size: 28px;">Now you are ready to begin! Play some beats and have fun!</span><br /><br />
                     If you have no idea how you ended up here, you can <a class="anchorlink" href="https://kingpvz.github.io">return to the homepage</a>.<br />
-                    Press <b>Ctrl+Q</b> at any time to enable/disable contenteditable on this website. If you aren't sure about what it means, it would be better to avoid it. Or not, have fun!
+                    <span class="NOMOBILE">
+                        Press <b>Ctrl+Q</b> at any time to enable/disable contenteditable on this website. If you aren't sure about what it means, it would be better to avoid it. Or not, have fun!
+                    </span>
+                    
                 </p>
 
             </div>
@@ -154,11 +160,11 @@
 
                         </code>
                         <br /><br />
-                        <h1 class="titleofsort">Reserved Keywords</h1>
-                        <p class="info">
+                        <h1 class="titleofsort NOMOBILE">Reserved Keywords</h1>
+                        <p class="info NOMOBILE">
                             You can use these on your website, however, they won't function anymore after exporting.
                         </p>
-                        <p class="MAINWEBSITEtext">
+                        <p class="MAINWEBSITEtext NOMOBILE">
                             <span class="codeunit">r</span> (Variable/Element): Holds the <span class="codeitalic">:root</span> element.<br />
                             <span class="codeunit">layouts</span> (Object): Holds all layouts and input elements on this website.<br />
                             <span class="codeunit">mode</span> (Variable/Number): Holds info about the current display mode (Light/Dark).<br />
@@ -200,7 +206,7 @@
                         </p>
                         <textarea class="editorarea small" placeholder="This goes after the favicon link tag." id="areahead" oninput="syntaxHelp('html');" spellcheck="false"></textarea>
                         <br />
-                        <div style="display: flex; align-items: center;"><input type="checkbox" checked="checked" id="independentcsscheck" onclick="toggleCssDependency();" /><p class="MAINWEBSITEtext" style="cursor: pointer;" onclick="layouts['input']['options']['uniquecss'].checked = !layouts['input']['options']['uniquecss'].checked; toggleCssDependency();">Independent CSS for Mobile</p></div>
+                        <div style="display: flex; align-items: center;"><input type="checkbox" checked="checked" id="independentcsscheck" onclick="toggleCssDependency();" /><p class="MAINWEBSITEtext MAINWEBSITEbigger" style="cursor: pointer;" onclick="layouts['input']['options']['uniquecss'].checked = !layouts['input']['options']['uniquecss'].checked; toggleCssDependency();">Independent CSS for Mobile</p></div>
                         <br /><br />
                         <h1 class="titleofsort">Export</h1>
                         <p class="MAINWEBSITEtext">
@@ -268,12 +274,12 @@
                         </div>
                         <div id="toolbar">
 
-                            <p class="toolbarlabel">Font Size: </p>
-                            <h1 class="sortabutton" onclick="changeFontSize('-');">-</h1>
-                            <h1 id="fontsizeinfo">14</h1><h1 id="fontsizeunit">px</h1>
-                            <h1 class="sortabutton" onclick="changeFontSize('+');">+</h1>
+                            <p class="toolbarlabel NOMOBILE">Font Size: </p>
+                            <h1 class="sortabutton NOMOBILE" onclick="changeFontSize('-');">-</h1>
+                            <h1 id="fontsizeinfo" class="NOMOBILE">14</h1><h1 id="fontsizeunit" class="NOMOBILE">px</h1>
+                            <h1 class="sortabutton NOMOBILE" onclick="changeFontSize('+');">+</h1>
 
-                            <p class="toolbarlabel"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </p>
+                            <p class="toolbarlabel NOMOBILE"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </p>
 
                             <input type="checkbox" id="enablesyntaxhelp" onclick="localStorage.setItem('editorSyntaxHelp', this.checked); disableHelp = !this.checked;" checked="checked" />
                             <p class="toolbarlabel" onclick="document.getElementById('enablesyntaxhelp').checked = !document.getElementById('enablesyntaxhelp').checked; localStorage.setItem('editorSyntaxHelp', this.checked); disableHelp = !this.checked;" style="cursor: pointer;">Enable Syntax Help</p>
@@ -281,7 +287,7 @@
                         </div>
 
                     </div>
-                    <div id="editortools">
+                    <div id="editortools" class="NOMOBILE">
 
                         <h1 class="titleofsort" style="text-align: center;">TOOLS</h1>
 
@@ -323,7 +329,7 @@
             <div id="screenchangelog" class="MAINWEBSITEtabscreen">
 
                 <p class="MAINWEBSITEtext">
-                    <b>x/x/24</b><br />
+                    <b>8/26/24</b><br />
                     The website was released.
                 </p>
 
