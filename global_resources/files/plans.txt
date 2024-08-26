@@ -4,13 +4,18 @@
 // > Name
 //   Description
 // - Added (Date when this plan was added)
-// - Desktop (Date when this plan was implemented for desktop view)
-// - Mobile (Date when this plan was implemented for mobile view)
-// - Implemented (Date when this plan was implemented - used when desktop and mobile views are on the same site)
+// - Desktop (Date when this plan was implemented for desktop)
+// - Mobile (Date when this plan was implemented for mobile)
+// - Implemented (Date when this plan was implemented - used when desktop and mobile work together)
 
 // <done>If the plan is grey, it means it's completed.</done>
 
 
+
+> (PLAYGROUND) Tools
+  Tools for web design and web development. This will take a looooong time
+- Added 8/26/24
+- Desktop TBA
 
 > Quick Navigation in index.html
   8 or 10 buttons for quick navigation like youtube, projects and so on.
