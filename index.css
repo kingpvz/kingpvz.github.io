@@ -287,11 +287,11 @@ p {
     font-size: 2vw;
 }
 
-.yt-username {
+#___ytsubscribe_0, #___ytsubscribe_1 {
     color: white !important;
     font-weight: 700 !important;
 }
 
-.yt-subscribe img {
-    border-radius: 8px !important;
-}
+    #___ytsubscribe_0, #___ytsubscribe_1 img {
+        border-radius: 8px !important;
+    }
