@@ -261,9 +261,10 @@ function syntaxHelp(x) {
 }
 
 function changeFontSize(how) {
+    let a;
     if (window.innerHeight > window.innerWidth) {
 
-        let a = "initial";
+        a = "initial";
 
     } else {
         if (how === '+' && fontSize["current"] + 1 !== fontSize["sizes"].length) {
@@ -274,7 +275,7 @@ function changeFontSize(how) {
         }
 
         document.getElementById("fontsizeinfo").innerHTML = fontSize["sizes"][fontSize["current"]];
-        let a = document.getElementById("fontsizeinfo").innerHTML + 'px';
+        a = document.getElementById("fontsizeinfo").innerHTML + 'px';
         localStorage.setItem('editorFontSize', fontSize["current"]);
     }
 
