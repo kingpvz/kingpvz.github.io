@@ -286,3 +286,12 @@ p {
 .quicknavtext {
     font-size: 2vw;
 }
+
+.yt-username {
+    color: white !important;
+    font-weight: 700 !important;
+}
+
+.yt-subscribe img {
+    border-radius: 8px !important;
+}
