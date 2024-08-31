@@ -287,11 +287,6 @@ p {
     font-size: 2vw;
 }
 
-#___ytsubscribe_0, #___ytsubscribe_1 {
-    color: white !important;
-    font-weight: 700 !important;
+.g-ytsubscribe {
+    background-color: white;
 }
-
-    #___ytsubscribe_0, #___ytsubscribe_1 img {
-        border-radius: 8px !important;
-    }
