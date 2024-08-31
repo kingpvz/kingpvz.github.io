@@ -10,7 +10,7 @@
 
         gtag('config', 'G-7J3YJQYZ30');
     </script>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -21,67 +21,129 @@
 </head>
 <body>
     <script src="global_resources/corefunc.js"></script>
-    <script src="site_resources/templates.js"></script>
     <script>
         var red = GetURLParameter('redirect');
         if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && red !== '0') {
             window.location.replace("/m")
         }
     </script>
-    <br />
-    <script>
-        document.body.appendChild(headertemplate.content);
-    </script><br />
+    
     <div id="sourcegrid">
-        <div id="sidebar">
+        <section id="sectionmain" style="background: rgb(0 0 255 / 5%);">
+            <img src="global_resources/images/website_logo.png" id="webtitle">
             <div id="nav">
-                <br />
-                <a class="navbar here" href="#" title="The main page! Not much to see here tho.">Home</a><br /><br />
-                <a class="navbar" href="minecraft" title="My Minecraft mods, resource packs and maps!">Minecraft</a><br /><br />
-                <a class="navbar" href="contact" title="My email and messaging platforms.">Contact</a><br /><br />
-                <a class="navbar" href="social" title="Follow me everywhere!">Social Sites</a><br /><br />
-                <a class="navbar" href="projects" title="My apps, games and other fun projects!">Projects</a><br /><br />
-                <a class="navbar" href="webs" title="My other websites to check out!">Websites</a><br /><br />
+                <a class="navbar" href="minecraft" title="My Minecraft mods, resource packs and maps!">Minecraft</a>
+                <a class="navbar" href="contact" title="My email and messaging platforms.">Contact</a>
+                <a class="navbar" href="social" title="Follow me everywhere!">Social Sites</a>
+                <a class="navbar" href="projects" title="My apps, games and other fun projects!">Projects</a>
+                <a class="navbar" href="webs" title="My other websites to check out!">Websites</a>
             </div>
-        </div>
-        
+            <div style="display: grid; grid-template-columns: 71vw 25vw; grid-gap: 1vw; grid-template-areas: 'middle rightside'; height: calc(72vh - 3vw);">
 
-        <div id="content">
-            <p><b>Stanislav Suchovsk&yacute;</b>, also known as <b>Kingpvz</b>, is a Slovak producer and youtuber.</p>
-            <div style="display:flex; justify-content: center; align-items: center;">
-                <p style="font-size: 20px; font-weight: 700; margin-right: 15px;">Read more at:</p>
-                <a class="introlink" href="https://minitubia.fandom.com/wiki/Kingpvz" target="_blank">MINITUBIA</a>
-                <p style="font-size: 20px; font-weight: 400; margin-right: 15px; margin-left: 15px;">or</p>
-                <a class="introlink" href="https://musicalcorner2.blogspot.com/2023/02/artist-spotlight-kingpvz.html" target="_blank">MUSICAL CORNER</a>
-            </div><br />
-
-            <script src="https://apis.google.com/js/platform.js"></script>
-
-            <div style="background-color: #ddd; border: solid red 2px; border-radius: 1vw; display:flex; align-items: center; justify-content: space-around; padding: 0.25vw; margin: 1vw 20% 1vw 20%;">
-                <div class="g-ytsubscribe" data-channelid="UCtN6gLNMUufiyzgCfuaBnDw" data-layout="full" data-count="default"></div>
-                <div class="g-ytsubscribe" data-channelid="UCxVUdaJnCOn9gR8kz1ymZDQ" data-layout="full" data-count="default"></div>
-            </div>
-            <br />
-            <div>
-                <h1>Check out my plans for:</h1>
-                <div style="display:flex; align-items: center; justify-content: space-around; width: 50%; margin-left: 25%; margin-right: 25%;">
-                    <a href="files?file=ytplans.txt" class="introlink">MY YOUTUBE</a>
-                    <a href="files?file=plans.txt" class="introlink">THIS WEBSITE</a>
+                <div style="grid-area: middle; display: flex; flex-direction: column; height: calc(72vh - 5vw);" class="advtitle">
+                    <p><b>Stanislav Suchovsk&yacute;</b>, also known as <b>Kingpvz</b>, is a Slovak producer and youtuber.</p>
+                    <div style="display:flex; justify-content: center; align-items: center;">
+                        <p style="font-size: 20px; font-weight: 700; margin-right: 15px;">Read more at:</p>
+                        <a class="introlink" href="https://minitubia.fandom.com/wiki/Kingpvz" target="_blank">MINITUBIA</a>
+                        <p style="font-size: 20px; font-weight: 400; margin-right: 15px; margin-left: 15px;">or</p>
+                        <a class="introlink" href="https://musicalcorner2.blogspot.com/2023/02/artist-spotlight-kingpvz.html" target="_blank">MUSICAL CORNER</a>
+                    </div><br />
+                    <h1 style="margin-bottom: 0;">LATEST NEWS:</h1>
+                    <div id="news">
+                        <div style="text-align: left;">
+                            <h1 class="new">NEW TOOL: THE <a href="misc/playground" style="color:yellow">WEBDEV PLAYGROUND</a>!</h1>
+                            <p class="newp">
+                                Create your own website or just play around with the funny tools (coming soon) and features (like contenteditable) and practice your programming!
+                                I enjoyed making this website a lot so I hope you will enjoy creating your own websites using it! Give it a try!
+                            </p>
+                            <br />
+                            <h1 class="new">NEW HOMEPAGE DESIGN!</h1>
+                            <p class="newp">
+                                Hey do you like it?
+                            </p>
+                            <br />
+                            <h1 class="new">ADDED TEXT DESIGNER TO <a href="projects/uquiz" style="color:yellow">ULTIMATE QUIZ</a>!</h1>
+                            <p class="newp">
+                                Using the text designer you can change the color, shadow, style and basically everything about your text in your quiz without knowing any programming!
+                                Pretty cool huh? You can access it <a href="misc/quiz/textdesign" style="color:yellow">here</a>.
+                            </p>
+                            <br />
+                            <h1 class="new">There is no more news. But make sure to check out my <a href="projects/uquiz" style="color:yellow">projects</a>! (for no reason in particular)</h1>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <p>&copy;2024 Kingpvz</p><p>All rights reserved.</p><p><a target="_blank" class="footerlink" href="https://github.com/kingpvz/kingpvz.github.io/">GitHub Repository</a></p>
+                    </div>
                 </div>
-            </div><br /><br /><hr style="margin: 0 150px 50px 150px;" />
-            <div>
-                <h1 style="font-size: 1.5vw; background-color: #333; border-radius: 0.5vw; width: fit-content; margin-left: auto; margin-right: auto; padding: 0.5vw;">ADDED TEXT DESIGNER TO <a href="projects/uquiz" style="color:yellow">ULTIMATE QUIZ</a>!</h1>
-                <br />
-                <h1 style="font-size: 2.3vw; margin-bottom: 5px;">There is not much to see now. So feel free to check out:</h1><br />
-                <h2 style="font-size:2vw; margin-top:0px;">
-                    <a href="projects" style="font-size: 2.5vw; color:yellow;">My Projects!</a> or perhaps wanna
-                    <a href="https://open.spotify.com/artist/0E9m4Xiqd4g7gAnByJ8FZW?si=1m-T9AhcS7-npeM3t_ZHCw" style="font-size: 2.5vw; color:yellow;">Hear my music?</a>
-                </h2>
+                <div style="grid-area: rightside" id="titlediv" class="advtitle">
+                    <h1 style="color: red;" class="titleitem">YouTube:</h1>
+                    <script src="https://apis.google.com/js/platform.js"></script>
+                    <div class="g-ytsubscribe" data-channelid="UCtN6gLNMUufiyzgCfuaBnDw" data-layout="full" data-count="default"></div>
+                    <div class="g-ytsubscribe" data-channelid="UCxVUdaJnCOn9gR8kz1ymZDQ" data-layout="full" data-count="default"></div>
+                    <br />
+                    <a target="_blank" style="color: #FF424D;" class="titleitem" href="https://patreon.com/kingpvz">Patreon</a>
+                    <a target="_blank" style="color: #F56040" class="titleitem" href="https://instagram.com/kingpvzyt">Instagram</a>
+                    <a target="_blank" style="color: #1DB954;" class="titleitem" href="https://open.spotify.com/artist/0E9m4Xiqd4g7gAnByJ8FZW?si=1m-T9AhcS7-npeM3t_ZHCw">Spotify</a>
+                    <a target="_blank" style="color: white;" class="titleitem" href="https://my-store-b3cfd9.creator-spring.com/">Merch</a>
+                    <a target="_blank" style="color: #ccf;" class="titleitem" href="https://discord.gg/dSA8SjbkXP">Discord Server</a>
+                </div>
+
             </div>
-        </div>
+
+        </section>
+        <section id="section2" style="background: rgb(255 0 0 / 5%);">
+            <div class="lownav">
+                <a href="#sectionmain"><img src="global_resources/images/website_logo.png" class="lowwebtitle"></a>
+                <a class="navbar" href="minecraft" title="My Minecraft mods, resource packs and maps!">Minecraft</a>
+                <a class="navbar" href="contact" title="My email and messaging platforms.">Contact</a>
+                <a class="navbar" href="social" title="Follow me everywhere!">Social Sites</a>
+                <a class="navbar" href="projects" title="My apps, games and other fun projects!">Projects</a>
+                <a class="navbar" href="webs" title="My other websites to check out!">Websites</a>
+            </div>
+
+            <div style="display:flex; align-items: center; justify-content: space-around; width: 50%;">
+                <h1 style="font-size: 2vw;">Check out my plans for:</h1>
+                <a href="files?file=ytplans.txt" class="introlink">MY YOUTUBE</a>
+                <a href="files?file=plans.txt" class="introlink">THIS WEBSITE</a>
+            </div>
+            <br /><br />
+            <p>Make sure to check out:</p>
+            <br />
+            <div id="quicknavgrid">
+                <a href="misc/playground" class="quicknavcontainer">
+                    <div class="quicknavitem">
+                        <img class="quicknavimage" src="global_resources/projects/wdplayground.png" />
+                        <h1 class="quicknavtext">WebDev Playground</h1>
+                    </div>
+                </a>
+                <a href="projects/uquiz" class="quicknavcontainer">
+                    <div class="quicknavitem">
+                        <img class="quicknavimage" src="global_resources/projects/uquiz.png" />
+                        <h1 class="quicknavtext">Ultimate Quiz</h1>
+                    </div>
+                </a>
+                <a href="https://open.spotify.com/artist/0E9m4Xiqd4g7gAnByJ8FZW?si=1m-T9AhcS7-npeM3t_ZHCw" class="quicknavcontainer" target="_blank">
+                    <div class="quicknavitem">
+                        <img class="quicknavimage" src="https://www.freepnglogos.com/uploads/spotify-logo-png/image-gallery-spotify-logo-21.png" />
+                        <h1 class="quicknavtext">My Music</h1>
+                    </div>
+                </a>
+                <a href="https://alavidawiki.github.io" class="quicknavcontainer" target="_blank">
+                    <div class="quicknavitem">
+                        <img class="quicknavimage" src="global_resources/projects/alavida.png" />
+                        <h1 class="quicknavtext">Alavida Wiki</h1>
+                    </div>
+                </a>
+                <a href="https://youtube.com/@kingpvz" class="quicknavcontainer" target="_blank">
+                    <div class="quicknavitem">
+                        <img class="quicknavimage" src="https://www.pngkit.com/png/full/430-4306266_mino-studio-white-youtube-logo-png.png" style="scale: 0.8;" />
+                        <h1 class="quicknavtext">My YouTube Channel</h1>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        
     </div>
-          <script>
-              document.body.appendChild(footertemplate.content);
-          </script>
 </body>
 </html>

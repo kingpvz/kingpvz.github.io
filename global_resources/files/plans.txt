@@ -12,15 +12,21 @@
 
 
 
+> Move Minecraft to Projects
+  Since I don't mod minecraft anymore, putting it on the top of the navigation feels pointless. So let's remove it!
+- Added 8/31/24
+- Desktop TBA
+- Mobile TBA
+
 > (PLAYGROUND) Tools
   Tools for web design and web development. This will take a looooong time
 - Added 8/26/24
 - Desktop TBA
 
 > Quick Navigation in index.html
-  8 or 10 buttons for quick navigation like youtube, projects and so on.
+  5 buttons for quick navigation like youtube, projects and so on.
 - Added 2/8/24
-- Desktop TBA
+- Desktop 8/31/24
 - Mobile TBA
 
 <done>> (QUIZ) Complete Documentation
