@@ -27,6 +27,7 @@ html, body {
 }
 
 body {
+    font-family: 'Roboto', sans-serif;
     background: linear-gradient(-45deg, #111115, #141420, #141407, #151111);
     background-size: 400% 400%;
     animation: gradient 10s ease infinite;
@@ -121,6 +122,7 @@ section {
     font-size: 2.5vh;
     margin: 0;
     transition: 0.2s ease;
+    font-family: Ubuntu, sans-serif;
 }
 
 .navbar:hover {
@@ -139,7 +141,7 @@ section {
 .titleitem {
     font-size: 2vw;
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: Ubuntu, sans-serif;
     font-weight: 900;
     text-decoration: none;
     transition: 0.3s;
@@ -188,11 +190,13 @@ h1.titleitem {
 
 p {
     font-size: 20px;
+    font-family: 'Roboto', sans-serif;
 }
-.footer {
+
+.footer, .footer p {
     font-size: 18px;
     color: lightgray;
-    font-family: 'Roboto', sans-serif;
+    font-family: Ubuntu, sans-serif;
     font-weight: 200;
     display: flex;
     justify-content: space-between;
@@ -285,6 +289,7 @@ p {
 
 .quicknavtext {
     font-size: 2vw;
+    font-family: Ubuntu, sans-serif;
 }
 
 .gscribe {
