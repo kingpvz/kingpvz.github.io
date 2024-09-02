@@ -23,11 +23,11 @@
 - Added 8/26/24
 - Desktop TBA
 
-> Quick Navigation in index.html
-  5 buttons for quick navigation like youtube, projects and so on.
+<done>> Quick Navigation in index.html
+  5/6 buttons for quick navigation like youtube, projects and so on.
 - Added 2/8/24
 - Desktop 8/31/24
-- Mobile TBA
+- Mobile 9/1/24</done>
 
 <done>> (QUIZ) Complete Documentation
   A simple documentation to deeply explain what everything does and give you a quick html lesson about how powerful this quiz actually is.
