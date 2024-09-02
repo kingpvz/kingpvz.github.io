@@ -540,14 +540,20 @@ button.interface {
 #toolbar {
     background-color: var(--syntaxbackground);
     border-radius: 0 0 2vh 2vh;
-    padding: 0.5vh;
+    padding: 0.5vh 2vh;
     margin: 0;
     height: 5vh;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     color: var(--textcolor);
     font-family: Ubuntu;
+}
+
+.helpingdiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #editortools {
@@ -583,6 +589,17 @@ button.interface {
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+.toolbarimg {
+    height: 4vh;
+    cursor: pointer;
+    transition: 0.2s;
+    filter: var(--imagefilter);
+}
+
+.toolbarimg:hover {
+    scale: 1.1;
 }
 
 .sortabutton {
@@ -960,6 +977,16 @@ input[type=checkbox]{
     #toolbar {
         height: 4vh;
     }
+
+    .toolbarimg {
+        height: 3.5vh;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+
+        .toolbarimg:hover {
+            scale: 1;
+        }
 
     .toolbarlabel {
         font-size: 2.5vh;

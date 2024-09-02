@@ -198,6 +198,7 @@
                             <span class="codeunit">previewState</span> (Object): Holds info about the current preview state.<br />
                             <span class="codeunit">uniquecss</span> (Variable/Boolean): Checks whether you have enabled independent CSS for mobile.<br />
                             <span class="codeunit">toggleCssDependency</span> (Function, Parameterless): Toggles the uniquecss variable and changes the required styles.<br />
+                            <span class="codeunit">downloadUnit</span> (Function, Parameterless): Downloads the current editor tab's content as a corresponding file.<br />
                         </p>
 
                     </div>
@@ -277,15 +278,19 @@
                         </div>
                         <div id="toolbar">
 
-                            <p class="toolbarlabel NOMOBILE">Font Size: </p>
-                            <h1 class="sortabutton NOMOBILE" onclick="changeFontSize('-');">-</h1>
-                            <h1 id="fontsizeinfo" class="NOMOBILE">14</h1><h1 id="fontsizeunit" class="NOMOBILE">px</h1>
-                            <h1 class="sortabutton NOMOBILE" onclick="changeFontSize('+');">+</h1>
+                            <div class="helpingdiv NOMOBILE">
+                                <p class="toolbarlabel">Font Size: </p>
+                                <h1 class="sortabutton" onclick="changeFontSize('-');" title="Decrease Font Size">-</h1>
+                                <h1 id="fontsizeinfo">14</h1><h1 id="fontsizeunit">px</h1>
+                                <h1 class="sortabutton" onclick="changeFontSize('+');" title="Increase Font Size">+</h1>
+                            </div>
 
-                            <p class="toolbarlabel NOMOBILE"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </p>
+                            <div class="helpingdiv">
+                                <input type="checkbox" id="enablesyntaxhelp" onclick="localStorage.setItem('editorSyntaxHelp', this.checked); disableHelp = !this.checked;" checked="checked" />
+                                <p class="toolbarlabel" onclick="document.getElementById('enablesyntaxhelp').checked = !document.getElementById('enablesyntaxhelp').checked; localStorage.setItem('editorSyntaxHelp', this.checked); disableHelp = !this.checked;" style="cursor: pointer;">Enable Syntax Help</p>
+                            </div>
 
-                            <input type="checkbox" id="enablesyntaxhelp" onclick="localStorage.setItem('editorSyntaxHelp', this.checked); disableHelp = !this.checked;" checked="checked" />
-                            <p class="toolbarlabel" onclick="document.getElementById('enablesyntaxhelp').checked = !document.getElementById('enablesyntaxhelp').checked; localStorage.setItem('editorSyntaxHelp', this.checked); disableHelp = !this.checked;" style="cursor: pointer;">Enable Syntax Help</p>
+                            <img class="toolbarimg" src="../../global_resources/icons/download.png" onclick="downloadUnit();" title="Download This File" />
 
                         </div>
 
@@ -332,8 +337,15 @@
             <div id="screenchangelog" class="MAINWEBSITEtabscreen">
 
                 <p class="MAINWEBSITEtext">
+                    <b>9/2/24</b><br />
+                    Added the ability to download individual files using a new download button in the toolbar.<br />
+                    Toolbar now displays throughout the entire container, instead of in the center only.<br />
+                    <span class="NOMOBILE">The button to Increase/Decrease font size now says what it does on hover.</span>
+
+                    <br /><br />
+
                     <b>8/31/24</b><br />
-                    Fixed font size not changing.<br />
+                    <span class="NOMOBILE">Fixed font size not changing.<br /></span>
                     New (and proper) sample project.
 
                     <br /><br />

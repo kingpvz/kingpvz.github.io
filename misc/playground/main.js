@@ -547,3 +547,28 @@ function exportProject() {
     document.body.removeChild(elementr);
 
 }
+
+function downloadUnit() {
+
+    var filet = layouts["input"]["editor"][currentTab].value;
+    var elementr = document.createElement('a');
+    elementr.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(filet));
+    var filen = layouts["input"]["project"]["name"].value.replaceAll(" ", "_").toLowerCase();
+    if (!filen) { filen = "file"; }
+    let filex;
+    if (currentTab === 'cssm') {
+        filex = 'css';
+    } else {
+        filex = currentTab;
+    }
+
+    elementr.setAttribute('download', filen + "." + filex);
+
+    elementr.style.display = 'none';
+    document.body.appendChild(elementr);
+
+    elementr.click();
+
+    document.body.removeChild(elementr);
+
+}
