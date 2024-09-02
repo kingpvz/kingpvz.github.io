@@ -157,6 +157,7 @@ h1.titleitem {
     text-shadow: none;
     cursor: default;
     font-size: 1vw;
+    margin-bottom: 4px;
 }
 
     h1.titleitem:hover {
