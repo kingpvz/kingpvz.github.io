@@ -72,7 +72,7 @@
 - Mobile 4/12/24</done>
 
 <done>> Websites in Navigation
-  a websites section to show off and comunicate basically all of my websites with <span style="text-decoration:line-trough;">favicon and</span> quick description
+  a websites section to show off and comunicate basically all of my websites with <span style="text-decoration:line-through;">favicon and</span> quick description
 - Added 2/8/24
 - Desktop 2/12/24
 - Mobile 2/12/24</done>
