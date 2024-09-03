@@ -149,34 +149,6 @@ body {
     color: #ffc;
 }
 
-/*minecraft*/
-.mcbutton {
-    box-shadow: 2px 2px 10px 0px #ffffff;
-    background-color: #6b6b6b;
-    border-radius: 0.5vw;
-    display: inline-block;
-    cursor: pointer;
-    color: #ffffff;
-    font-family: Verdana;
-    font-size: 1vw;
-    font-weight: bold;
-    padding: 0.76vw 1.5vw;
-    text-decoration: none;
-    text-shadow: 0px 1px 2px #000000;
-    margin: 1vw 0.5vw 1vw 0.5vw;
-    transition: 0.2s;
-}
-
-.mcbutton:hover {
-        background-color: #8f8f8f;
-        scale: 1.05;
-    }
-
-.mcbutton:active {
-        background-color: #aaaaaa;
-        scale: 1.175;
-    }
-
 /*contact*/
 .connect{
     margin: 0.25vw 0.75vw 0.25vw 0.75vw;

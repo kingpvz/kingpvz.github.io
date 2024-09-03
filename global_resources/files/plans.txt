@@ -21,7 +21,7 @@
 > Move Minecraft to Projects
   Since I don't mod minecraft anymore, putting it on the top of the navigation feels pointless. So let's remove it!
 - Added 8/31/24
-- Desktop TBA
+- Desktop 9/3/24
 - Mobile TBA
 
 <done>> Quick Navigation in index.html
