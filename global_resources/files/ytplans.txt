@@ -4,8 +4,7 @@
   <ul>nothing planned yet</ul>
 
 > OTHER
-  <ul><li>Reacting to old music projects</li>
-  <li>How to make a website tutorial part 2</li></ul>
+  <ul><li>How to make a website tutorial part 2</li></ul>
 
 
 <h2>MUSIC</h2>
