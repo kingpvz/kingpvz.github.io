@@ -39,7 +39,7 @@
             <div class="MAINWEBSITEtab" onmouseover="document.getElementById('gradienteffectorange').style.opacity = 1;" onmouseout="document.getElementById('gradienteffectorange').style.opacity = 0;" id="tabpreview" onclick="setScreen('preview');">
                 PREVIEW
             </div>
-            <div class="MAINWEBSITEtab hidden" id="tabtool">
+            <div class="MAINWEBSITEtab hidden" id="tabtool" onmouseover="document.getElementById('gradienteffectorange').style.opacity = 1;" onmouseout="document.getElementById('gradienteffectorange').style.opacity = 0;" onclick="setScreen('tool');">
                 TOOL
             </div>
             <div class="MAINWEBSITEtab hidden" id="tabchangelog">
@@ -174,16 +174,19 @@
                             <span class="codeunit">editable</span> (Variable/Number): Holds info about the current contenteditable state (Enabled/Disabled).<br />
                             <span class="codeunit">currentScreen</span> (Variable/String): Holds info about the current screen (<span class="codeitalic"><span class="syntaxs">'</span>home<span class="syntaxs">'</span></span>,
                             <span class="codeitalic"><span class="syntaxs">'</span>options<span class="syntaxs">'</span></span>,
-                            <span class="codeitalic"><span class="syntaxs">'</span>editor<span class="syntaxs">'</span></span> or
-                            <span class="codeitalic"><span class="syntaxs">'</span>preview<span class="syntaxs">'</span></span>).<br />
+                            <span class="codeitalic"><span class="syntaxs">'</span>editor<span class="syntaxs">'</span></span>,
+                            <span class="codeitalic"><span class="syntaxs">'</span>preview<span class="syntaxs">'</span></span> or
+                            <span class="codeitalic"><span class="syntaxs">'</span>tool<span class="syntaxs">'</span></span>).<br />
                             <span class="codeunit">toggleMode</span> (Function, Parameterless): Toggles between light mode and dark mode.<br />
-                            <span class="codeunit">setScreen</span> (Function, Parameter <span class="codeitalic">x</span> =string): Changes the screen. The parameter must be one of <span class="codeitalic">currentScreen</span> values.<br />
+                            <span class="codeunit">setScreen</span> (Function, Parameter <span class="codeitalic">x</span> =string, Parameter <span class="codeitalic">tool</span> =string): Changes the screen.
+                            The parameter <span class="codeitalic">x</span> must be one of <span class="codeitalic">currentScreen</span> values.<br />
                             <span class="codeunit">handleKeydown</span> (Function, Parameter <span class="codeitalic">e</span> =KeyBoard Event): Handles key press.<br />
                             <span class="codeunit">Export</span> (Function, Parameterless): Exports the website according to the current parameters.<br />
                             <span class="codeunit">exportProject</span> (Function, Parameterless): Exports the project according to the current parameters.<br />
                             <span class="codeunit">importProject</span> (Function, Parameterless): Imports a project.<br />
                             <span class="codeunit">currentTab</span> (Variable/String): Holds info about the current editor tab (<span class="codeitalic"><span class="syntaxs">'</span>html<span class="syntaxs">'</span></span>,
-                            <span class="codeitalic"><span class="syntaxs">'</span>css<span class="syntaxs">'</span></span> or
+                            <span class="codeitalic"><span class="syntaxs">'</span>css<span class="syntaxs">'</span></span>,
+                            <span class="codeitalic"><span class="syntaxs">'</span>cssm<span class="syntaxs">'</span></span> or
                             <span class="codeitalic"><span class="syntaxs">'</span>js<span class="syntaxs">'</span></span>).<br />
                             <span class="codeunit">setTab</span> (Function, Parameter <span class="codeitalic">x</span> =string): Changes the editor tab. The parameter must be one of <span class="codeitalic">currentTab</span> values.<br />
                             <span class="codeunit">syntaxHelp</span> (Function, Parameter <span class="codeitalic">x</span> =string): Help with syntax. The parameter must be one of <span class="codeitalic">currentTab</span> values.<br />
@@ -328,15 +331,20 @@
 
             </div>
 
-            <div id="screentool" class="MAINWEBSITEtabscreen">
+            <iframe id="screentool" class="MAINWEBSITEtabscreen" src="">
 
-
-
-            </div>
+            </iframe>
 
             <div id="screenchangelog" class="MAINWEBSITEtabscreen">
 
                 <p class="MAINWEBSITEtext">
+                    <span class="NOMOBILE">
+                        <b>9/15/24</b><br />
+                        Prepared the setScreen function for tools.<br />
+                        Fixed reserved functions not showing 'cssm' between the values of currentTab.
+
+                        <br /><br />
+                    </span>
                     <b>9/2/24</b><br />
                     Added the ability to download individual files using a new download button in the toolbar.<br />
                     Toolbar now displays throughout the entire container, instead of in the center only.<br />

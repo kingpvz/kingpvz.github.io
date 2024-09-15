@@ -77,7 +77,7 @@ function toggleMode() {
     localStorage.setItem('displayMode', mode);
 }
 
-function setScreen(x) {
+function setScreen(x,tool="") {
     if (x !== currentScreen) {
         layouts["tab"][currentScreen].classList.remove('current');
         layouts["screen"][currentScreen].classList.remove('selected');
@@ -109,6 +109,16 @@ function setScreen(x) {
             }
             previewState.mobile = true;
             previewFunction(1);
+        }
+        if (x === "tool") {
+            layouts["tab"][x].classList.remove("hidden");
+            if (tool) {
+                if (!tool.startsWith("$")) {
+                    layouts["screen"][x].src = "tools/" + tool;
+                } else {
+                    layouts["screen"][x].src = "toolsjs/" + tool.substring(1);
+                }
+            }
         }
     }
 }

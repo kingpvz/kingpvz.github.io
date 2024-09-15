@@ -38,7 +38,7 @@ html, body {
 
 #MAINWEBSITEheaderlogo {
     height: 4vh;
-    padding: 1vh 0 2vh 0;
+    padding: 1vh 0 1.5vh 0;
     -webkit-filter: drop-shadow(1px 0 1px #210c00) drop-shadow(1px 1px 1px #210c00) drop-shadow(0 1px 1px #210c00) drop-shadow(-1px 0 1px #210c00) drop-shadow(-1px -1px 1px #210c00) drop-shadow(0 -1px 1px #210c00) drop-shadow(1px -1px 1px #210c00) drop-shadow(-1px 1px 1px #210c00);
 }
 
@@ -755,6 +755,11 @@ input[type=checkbox]{
 
 #extradownloadingSTYLESYEAdown {
     width: 50vw;
+}
+
+iframe {
+    width: 100%;
+    border: none;
 }
 
 @media(orientation: portrait) {
