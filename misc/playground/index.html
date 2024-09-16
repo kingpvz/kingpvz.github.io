@@ -126,7 +126,7 @@
                     <span style="font-size: 28px;">Now you are ready to begin! Play some beats and have fun!</span><br /><br />
                     If you have no idea how you ended up here, you can <a class="anchorlink" href="https://kingpvz.github.io">return to the homepage</a>.<br />
                     <span class="NOMOBILE">
-                        Press <b>Ctrl+Q</b> at any time to enable/disable contenteditable on this website. If you aren't sure about what it means, it would be better to avoid it. Or not, have fun!
+                        Press <b>Ctrl+Q</b> at any time to enable/disable contenteditable on this website. If you aren't sure about what it means, it would be better to avoid it. Or not, have fun! Note, that it won't work on tools.
                     </span>
 
                 </p>
@@ -304,6 +304,9 @@
                         <h1 class="titleofsort" style="text-align: center;">TOOLS</h1>
 
                         <div id="toolshtml" class="toolsfilter selected">
+                            <button class="toolbutton" onclick="setScreen('tool', 'buttoncreate');">Button Creator</button>
+                        </div>
+                        <div id="toolscss" class="toolsfilter">
                             <button class="toolbutton" onclick="setScreen('tool', 'button');">Button Designer</button>
                         </div>
                         <div id="toolsjs" class="toolsfilter">
@@ -341,7 +344,7 @@
                     <span class="NOMOBILE">
                         <b>9/16/24</b><br />
                         Standardized the border radii of buttons.<br />
-                        Added the Button Designer tool (in preview mode).
+                        Added the Button Designer tool.
 
                         <br /><br />
                     </span>
@@ -413,6 +416,7 @@
             },
             "tools": {
                 "html": document.getElementById("toolshtml"),
+                "css": document.getElementById("toolscss"),
                 "js": document.getElementById("toolsjs")
             },
             "input": {
@@ -446,7 +450,8 @@
             e.preventDefault();
             e.returnValue = '';
         });
-
+        
+        setScreen('tool', 'button');
     </script>
 
 </body>

@@ -127,11 +127,8 @@ function setScreen(x,tool="") {
         if (x === "tool") {
             layouts["tab"][x].classList.remove("hidden");
             if (tool) {
-                if (!tool.startsWith("$")) {
-                    layouts["screen"][x].src = "tools/" + tool + ".html";
-                } else {
-                    layouts["screen"][x].src = "toolsjs/" + tool.substring(1) + ".html";
-                }
+                if (!tool.startsWith("$")) { if (layouts["screen"][x].src !== "tools/" + tool + ".html") { layouts["screen"][x].src = "tools/" + tool + ".html"; } }
+                else { if (layouts["screen"][x].src !== "toolsjs/" + tool.substring(1) + ".html") { layouts["screen"][x].src = "toolsjs/" + tool.substring(1) + ".html"; } }
             }
         }
     }
@@ -180,16 +177,16 @@ function setTab(x) {
     if (x !== currentTab) {
         layouts["editortab"][currentTab].classList.remove('current');
         layouts["editor"][currentTab].classList.remove('selected');
-        if (currentTab === "css" || currentTab === "cssm") {
-            layouts["tools"]["html"].classList.remove('selected');
+        if (currentTab === "cssm") {
+            layouts["tools"]["css"].classList.remove('selected');
         } else {
             layouts["tools"][currentTab].classList.remove('selected');
         }
         currentTab = x;
         layouts["editortab"][currentTab].classList.add('current');
         layouts["editor"][currentTab].classList.add('selected');
-        if (currentTab === "css" || currentTab === "cssm") {
-            layouts["tools"]["html"].classList.add('selected');
+        if (currentTab === "cssm") {
+            layouts["tools"]["css"].classList.add('selected');
         } else {
             layouts["tools"][currentTab].classList.add('selected');
         }

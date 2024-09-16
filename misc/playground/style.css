@@ -760,6 +760,7 @@ input[type=checkbox]{
 iframe {
     width: calc(100% - 4vh);
     border: none;
+    height: 88vh;
 }
 
 .toolbutton {
