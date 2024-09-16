@@ -82,7 +82,8 @@ function toggleMode() {
 
         mode = 0;
         toDark();
-        r = layouts["screen"]["tool"]
+        r = layouts["screen"]["tool"].contentDocument || layouts["screen"]["tool"].contentWindow.document;
+        r = r.querySelector(':root');
         toDark();
         r = document.querySelector(':root');
 
