@@ -21,7 +21,44 @@
 
     <script>
 
-
+        window.onload = () => {
+            let r = document.querySelector(":root");
+            if (localStorage.getItem('displayMode') === '1') {
+                r.style.setProperty('--highlightcolor', '#eae356');
+                r.style.setProperty('--verybgcolor', '#eee');
+                r.style.setProperty('--shadowtabcolor', '#333');
+                r.style.setProperty('--shadowctabcolor', '#efef5f');
+                r.style.setProperty('--textcolor', '#222');
+                r.style.setProperty('--hoverhighlightcolor', 'yellow');
+                r.style.setProperty('--maintabcolor', 'orange');
+                r.style.setProperty('--gradient1', 'linear-gradient(orange 0%, #eee 80%, #eee 100%)');
+                r.style.setProperty('--gradient2', 'linear-gradient(yellow 0%, #eee 80%, #eee 100%)');
+                r.style.setProperty('--syntaxsymbol', 'orangered');
+                r.style.setProperty('--syntaxkeyword', 'blue');
+                r.style.setProperty('--linkcolor', 'darkblue');
+                r.style.setProperty('--linkhovercolor', 'yellow');
+                r.style.setProperty('--syntaxbackground', 'white');
+                r.style.setProperty('--syntaxproperty', 'deepslateblue');
+                r.style.setProperty('--imagefilter', 'invert()');
+            } else {
+                r.style.setProperty('--highlightcolor', '#210c00');
+                r.style.setProperty('--verybgcolor', '#333');
+                r.style.setProperty('--shadowtabcolor', '#ddd');
+                r.style.setProperty('--shadowctabcolor', '#111');
+                r.style.setProperty('--textcolor', 'white');
+                r.style.setProperty('--hoverhighlightcolor', 'orange');
+                r.style.setProperty('--maintabcolor', 'orangered');
+                r.style.setProperty('--gradient1', 'linear-gradient(orangered 0%, #333 80%, #333 100%)');
+                r.style.setProperty('--gradient2', 'linear-gradient(orange 0%, #333 80%, #333 100%)');
+                r.style.setProperty('--syntaxsymbol', 'orange');
+                r.style.setProperty('--syntaxkeyword', 'cornflowerblue');
+                r.style.setProperty('--linkcolor', 'yellow');
+                r.style.setProperty('--linkhovercolor', 'blue');
+                r.style.setProperty('--syntaxbackground', '#181818');
+                r.style.setProperty('--syntaxproperty', 'lightblue');
+                r.style.setProperty('--imagefilter', 'none');
+            }
+        }
 
     </script>
 </body>

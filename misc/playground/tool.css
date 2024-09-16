@@ -1,22 +1,3 @@
-:root {
-    --highlightcolor: #210c00;
-    --verybgcolor: #333;
-    --shadowtabcolor: #ddd;
-    --textcolor: white;
-    --shadowctabcolor: #111;
-    --hoverhighlightcolor: orange;
-    --maintabcolor: orangered;
-    --linkcolor: yellow;
-    --linkhovercolor: blue;
-    --gradient1: linear-gradient(orangered 0%, #333 80%, #333 100%);
-    --gradient2: linear-gradient(orange 0%, #333 80%, #333 100%);
-    --syntaxsymbol: orange;
-    --syntaxkeyword: cornflowerblue;
-    --syntaxbackground: #181818;
-    --syntaxproperty: lightblue;
-    --imagefilter: none;
-}
-
 pseudo {
     color: var(--textcolor);
     font-family: Ubuntu;
