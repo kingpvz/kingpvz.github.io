@@ -30,10 +30,7 @@ window.onload = function () {
 
 
 function toggleMode() {
-    if (mode === 0) { //set to light
-
-        mode = 1;
-
+    function toLight() {
         r.style.setProperty('--highlightcolor', '#eae356');
         r.style.setProperty('--verybgcolor', '#eee');
         r.style.setProperty('--shadowtabcolor', '#333');
@@ -50,12 +47,9 @@ function toggleMode() {
         r.style.setProperty('--syntaxbackground', 'white');
         r.style.setProperty('--syntaxproperty', 'deepslateblue');
         r.style.setProperty('--imagefilter', 'invert()');
-
     }
-    else{ //set to dark
 
-        mode = 0;
-
+    function toDark() {
         r.style.setProperty('--highlightcolor', '#210c00');
         r.style.setProperty('--verybgcolor', '#333');
         r.style.setProperty('--shadowtabcolor', '#ddd');
@@ -72,6 +66,25 @@ function toggleMode() {
         r.style.setProperty('--syntaxbackground', '#181818');
         r.style.setProperty('--syntaxproperty', 'lightblue');
         r.style.setProperty('--imagefilter', 'none');
+    }
+
+    if (mode === 0) {
+
+        mode = 1;
+        toLight();
+        r = layouts["screen"]["tool"].contentDocument || layouts["screen"]["tool"].contentWindow.document;
+        r = r.querySelector(':root');
+        toLight();
+        r = document.querySelector(':root');
+
+    }
+    else { //set to dark
+
+        mode = 0;
+        toDark();
+        r = layouts["screen"]["tool"]
+        toDark();
+        r = document.querySelector(':root');
 
     }
     localStorage.setItem('displayMode', mode);
@@ -114,9 +127,9 @@ function setScreen(x,tool="") {
             layouts["tab"][x].classList.remove("hidden");
             if (tool) {
                 if (!tool.startsWith("$")) {
-                    layouts["screen"][x].src = "tools/" + tool;
+                    layouts["screen"][x].src = "tools/" + tool + ".html";
                 } else {
-                    layouts["screen"][x].src = "toolsjs/" + tool.substring(1);
+                    layouts["screen"][x].src = "toolsjs/" + tool.substring(1) + ".html";
                 }
             }
         }

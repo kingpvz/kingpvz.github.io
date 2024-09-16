@@ -95,14 +95,14 @@
                                         document.body.removeChild(iframe);
                                     }, 1000);"
                          class="aldown">
-    <img style="float:left; margin-right: 15px; height: 100%; filter: var(--imagefilter);" src="../../global_resources/icons/download.png" />
-    <b>Download Sample Website Project</b><br /><i id="extradownloadingSTYLESYEAitalic">sample.wdpg &nbsp; | &nbsp; 2kB</i>
-</div>
-                <p class="MAINWEBSITEtext" id="extradownloadingSTYLESYEAdown">
-                    You can download this project and then import to see how projects work.
-                    By all means, feel free to modify it as much as you want and use for whatever project of yours.
-                    It was supposed to be better but I messed up, more info in the project.
-                </p>
+                        <img style="float:left; margin-right: 15px; height: 100%; filter: var(--imagefilter);" src="../../global_resources/icons/download.png" />
+                        <b>Download Sample Website Project</b><br /><i id="extradownloadingSTYLESYEAitalic">sample.wdpg &nbsp; | &nbsp; 2kB</i>
+                    </div>
+                    <p class="MAINWEBSITEtext" id="extradownloadingSTYLESYEAdown">
+                        You can download this project and then import to see how projects work.
+                        By all means, feel free to modify it as much as you want and use for whatever project of yours.
+                        It was supposed to be better but I messed up, more info in the project.
+                    </p>
                 </div>
                 <p class="MAINWEBSITEtext">
                     This is a quick documentation to help you get started:<br /><br />
@@ -111,7 +111,8 @@
                     <span style="font-family: Consolas,monospace;"><span class="syntaxs">&lt;</span><span class="syntaxkw">head</span><span class="syntaxs">&gt;</span></span>
                     tag, as you can only edit the body tag using the editor.<br /><br />
                     <b>EDITOR TAB</b> is the place you will probably spend the most time at, as you can edit your code right there! HTML, CSS, JavaScript, all in one place! It also gives you access to special widget designing tools to make your job easier!<span class="onlymobile">
-                                                                  Note: Special widget deigning tools are not available on mobile.</span><br /><br />
+                        Note: Special widget deigning tools are not available on mobile.
+                    </span><br /><br />
                     <b>PREVIEW TAB</b> is the place where the magic happens! Your code will be transformed into a
                     <span style="font-family: Consolas,monospace;"><span class="syntaxs">&lt;</span><span class="syntaxkw">div</span><span class="syntaxs">&gt;</span></span>
                     element, which acts like a container for your website! This is also why I recommend you not to style all
@@ -127,7 +128,7 @@
                     <span class="NOMOBILE">
                         Press <b>Ctrl+Q</b> at any time to enable/disable contenteditable on this website. If you aren't sure about what it means, it would be better to avoid it. Or not, have fun!
                     </span>
-                    
+
                 </p>
 
             </div>
@@ -303,7 +304,7 @@
                         <h1 class="titleofsort" style="text-align: center;">TOOLS</h1>
 
                         <div id="toolshtml" class="toolsfilter selected">
-                            <p class="MAINWEBSITEtext">Cool HTML/CSS tools and element generators are coming soon! You will be able to find them here!</p>
+                            <button class="toolbutton" onclick="setScreen('tool', 'button');">Button Designer</button>
                         </div>
                         <div id="toolsjs" class="toolsfilter">
                             <p class="MAINWEBSITEtext">Cool JavaScript tools are coming soon! You will be able to find them here!</p>
@@ -332,12 +333,19 @@
             </div>
 
             <iframe id="screentool" class="MAINWEBSITEtabscreen" src="">
-
             </iframe>
 
             <div id="screenchangelog" class="MAINWEBSITEtabscreen">
 
                 <p class="MAINWEBSITEtext">
+                    <span class="NOMOBILE">
+                        <b>9/16/24</b><br />
+                        Standardized the border radii of buttons.<br />
+                        Added the Button Designer tool (in preview mode).
+
+                        <br /><br />
+                    </span>
+
                     <span class="NOMOBILE">
                         <b>9/15/24</b><br />
                         Prepared the setScreen function for tools.<br />

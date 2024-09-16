@@ -388,7 +388,7 @@ button.interface {
     color: var(--textcolor);
     border: solid 3px var(--maintabcolor);
     padding: 1vh;
-    border-radius: 2vh;
+    border-radius: 1.5vh;
     box-shadow: var(--shadowtabcolor) 1px 1px 2px;
     transition: 0.2s;
 }
@@ -713,7 +713,7 @@ input[type=checkbox]{
     width: 30vw;
     background: var(--highlightcolor);
     padding: 10px;
-    border-radius: 1vh;
+    border-radius: 1.5vh;
     height: 3vw;
     font-size: 1.3vw;
     line-height: 1.6vw;
@@ -758,8 +758,28 @@ input[type=checkbox]{
 }
 
 iframe {
-    width: 100%;
+    width: calc(100% - 4vh);
     border: none;
+}
+
+.toolbutton {
+    width: calc(94% - 1vh);
+    margin: 3%;
+    padding: 0.5vh;
+    font-size: 28px;
+    font-family: Ubuntu;
+    font-weight: 500;
+    color: var(--textcolor);
+    background-color: var(--highlightcolor);
+    border: 3px solid var(--maintabcolor);
+    border-radius: 1.5vh;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.toolbutton:hover {
+    scale: 1.05;
+    box-shadow: var(--textcolor) 0 0 0.5vh;
 }
 
 @media(orientation: portrait) {
