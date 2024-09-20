@@ -253,7 +253,7 @@ input[type=checkbox] {
     background-color: #181818;
     padding: 0.5vh;
     border-radius: 1vh;
-    box-shadow: var(--shadowtabcolor) 0 0 2px;
+    box-shadow: white 0 0 2px;
     filter: var(--imagefilter);
     transition: 0.2s;
     cursor: pointer;
@@ -294,6 +294,15 @@ textarea {
 .smalltitle {
     font-size: 2vh;
     margin-bottom: 2.5vh;
+    margin-top: 0;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+}
+
+.bigtitle {
+    font-size: 4vh;
+    margin-bottom: 1vh;
     margin-top: 0;
     font-weight: bold;
     width: 100%;
