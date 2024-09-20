@@ -1,5 +1,6 @@
 *::-webkit-scrollbar {
     width: 8px;
+    height: 8px;
 }
 
 *::-webkit-scrollbar-track {
@@ -26,6 +27,7 @@ p {
     font-size: 2.5vh;
     margin-top: 5px;
     margin-bottom: 5px;
+    white-space: nowrap;
 }
 
 body, html {
@@ -97,9 +99,14 @@ pseudo {
             box-shadow: var(--shadowtabcolor) 0 -3px 5px -3px;
         }
 
+        pseudo[type="tab"].last {
+            margin-right: 0;
+        }
+
     pseudo[type="space"] {
         width: 1vh;
         height: 1vh;
+        display: block;
     }
 
     pseudo[type="longspace"] {
@@ -252,13 +259,28 @@ input[type=checkbox] {
     cursor: pointer;
 }
 
-.imgbutton:hover {
-    width: 4vh;
-    height: 4vh;
-    padding: 0;
-    box-shadow: none;
-    background: none;
+    .imgbutton:hover {
+        width: 4vh;
+        height: 4vh;
+        padding: 0;
+        box-shadow: none;
+        background: none;
+    }
+
+.imgbutton.big {
+    width: 5vh;
+    height: 5vh;
+    padding: 1vh;
+
 }
+
+    .imgbutton.big:hover {
+        scale: 1.4;
+        padding: 0.5vh;
+        margin: 0.5vh;
+        box-shadow: none;
+        background: none;
+    }
 
 textarea {
     resize: vertical;
@@ -267,4 +289,37 @@ textarea {
     max-height: 30vh;
     font-family: Consolas, monospace !important;
     font-size: 18px !important;
+}
+
+.smalltitle {
+    font-size: 2vh;
+    margin-bottom: 2.5vh;
+    margin-top: 0;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+}
+
+code {
+    color: var(--textcolor);
+    font-family: Consolas, monospace;
+    font-size: 2vh;
+    background-color: var(--syntaxbackground);
+    padding: 0.5vh 1vh;
+    border-radius: 1vh;
+    box-shadow: var(--shadowtabcolor) 0 0 2px;
+    transition: 0.2s;
+    display: block;
+}
+
+span.symbol {
+    color: var(--syntaxsymbol);
+}
+
+span.kw {
+    color: var(--syntaxkeyword);
+}
+
+span.prop {
+    color: var(--syntaxproperty);
 }

@@ -78,7 +78,7 @@ function toggleMode() {
         r = document.querySelector(':root');
 
     }
-    else { //set to dark
+    else {
 
         mode = 0;
         toDark();
@@ -127,7 +127,8 @@ function setScreen(x,tool="") {
         if (x === "tool") {
             layouts["tab"][x].classList.remove("hidden");
             if (tool) {
-                if (!tool.startsWith("$")) { if (layouts["screen"][x].src !== "tools/" + tool + ".html") { layouts["screen"][x].src = "tools/" + tool + ".html"; } }
+                if (!tool.startsWith("$") && !tool.startsWith("#")) { if (layouts["screen"][x].src !== "tools/" + tool + ".html") { layouts["screen"][x].src = "tools/" + tool + ".html"; } }
+                else if (tool.startsWith("#")) { if (layouts["screen"][x].src !== "toolscss/" + tool.substring(1) + ".html") { layouts["screen"][x].src = "toolscss/" + tool.substring(1) + ".html"; } }
                 else { if (layouts["screen"][x].src !== "toolsjs/" + tool.substring(1) + ".html") { layouts["screen"][x].src = "toolsjs/" + tool.substring(1) + ".html"; } }
             }
         }

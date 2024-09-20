@@ -1,6 +1,6 @@
 #maingrid {
     display: grid;
-    grid-template-columns: calc(74.25vw) 1fr;
+    grid-template-columns: 74.25vw 1fr;
     grid-gap: 1vw;
     margin-top: 2vh;
     height: calc(98vh - 40px);
@@ -31,11 +31,14 @@
     overflow-y: auto;
     padding: 1vh 2vh;
     border-radius: 1.5vh;
+    height: calc(( 98vh - 40px - 1vw ) / 3 - 14px - 5vh);
 }
 
 #previewcontainer {
     border-radius: 1.5vh;
     overflow: hidden;
+    height: calc(( 98vh - 40px - 1vw ) / 3 - 14px - 2.5vh);
+    max-width: calc(24.75vw - 4px);
 }
 
 .MAINEDITOR {
