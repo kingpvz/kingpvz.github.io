@@ -1,0 +1,505 @@
+<html>
+<head>
+    <link rel="stylesheet" href="button.css" />
+    <link rel="stylesheet" href="../tool.css" />
+</head>
+<body>
+    <script src="button.js"></script>
+
+
+    <main>
+
+        <pseudo type="textcont">
+            <pseudo type="title">Button Creator</pseudo>
+            <pseudo type="description">Version 1.0 by Kingpvz</pseudo>
+        </pseudo>
+
+        <div id="maingrid">
+
+            <div id="toolkit">
+                <pseudo type="tabcont">
+                    <pseudo type="tab" class="selected" id="tabeditor" onclick="setTab('editor');">EDITOR</pseudo>
+                    <pseudo type="tab" id="tabcode" onclick="setTab('code');">CODE</pseudo>
+                    <pseudo class="fill"></pseudo>
+                    <pseudo type="tab" class="last" id="tabchangelog" onclick="setTab('changelog');">CHANGELOG</pseudo>
+                </pseudo>
+
+                <div id="editor" class="toolkitscreen">
+                    <div>
+
+                        <p class="bigtitle">GENERAL</p><br />
+
+                        <div class="flex">
+                            <p>Class(es):</p>
+                            <input class="input inline fill" placeholder="class1 class2" id="atclass" oninput="updateData();" />
+                            <pseudo type="space"></pseudo>
+                            <pseudo type="space"></pseudo>
+                            <p>ID:</p>
+                            <input class="input inline" placeholder="mybutton" size="10" id="atid" oninput="fixSelector(this);" />
+                            <p>Language:</p>
+                            <input class="input inline fit" placeholder="fr" value="en" size="2" id="atlang" oninput="fixSelector(this); if (this.value.length > 2) { this.value = this.value.substring(this.value.length - 2); } updateData();" />
+                        </div><br />
+                        <p class="flex center">Inner HTML (here you can put the text displayed on the button):</p>
+                        <textarea class="input" oninput="updateData();" id="innerhtml"></textarea>
+                        <br /><br />
+                        <div class="flex">
+                            <p>Name:</p>
+                            <input class="input inline" placeholder="my_button" size="5" id="atname" oninput="updateData();" />
+                            <p>Title:</p>
+                            <input class="input inline fill" placeholder="This is a button!" id="attitle" oninput="updateData();" />
+                        </div><br />
+                        <div class="flex">
+                            <p>Popover Settings:</p><pseudo type="space"></pseudo>
+                            <img class="imgbutton" src="https://img.icons8.com/?size=100&id=85962&format=png&color=FFFFFF"
+                                 onclick="document.getElementById('POPOVEREDITOR').classList.remove('hidden'); window.setTimeout(() => { document.getElementById('POPOVEREDITOR').style.opacity = 1 }, 1);" />
+                            <pseudo type="fullspace"></pseudo>
+                            <div id="theentireformthing" class="inactive flex">
+                                <p>Form Settings:</p><pseudo type="space"></pseudo>
+                                <img class="imgbutton" src="https://img.icons8.com/?size=100&id=85962&format=png&color=FFFFFF"
+                                     onclick="document.getElementById('FORMEDITOR').classList.remove('hidden'); window.setTimeout(() => { document.getElementById('FORMEDITOR').style.opacity = 1 }, 1);" />
+                            </div>
+                            <pseudo type="fullspace"></pseudo>
+                            <p>Inline Style:</p><pseudo type="space"></pseudo>
+                            <img class="imgbutton" src="https://img.icons8.com/?size=100&id=85962&format=png&color=FFFFFF"
+                                 onclick="document.getElementById('STYLEEDITOR').classList.remove('hidden'); window.setTimeout(() => { document.getElementById('STYLEEDITOR').style.opacity = 1 }, 1);" />
+                            <pseudo type="fullspace"></pseudo>
+                            <p>Toggles:</p><pseudo type="space"></pseudo>
+                            <img class="imgbutton" src="https://img.icons8.com/?size=100&id=85962&format=png&color=FFFFFF"
+                                 onclick="document.getElementById('TOGGLEEDITOR').classList.remove('hidden'); window.setTimeout(() => { document.getElementById('TOGGLEEDITOR').style.opacity = 1 }, 1);" />
+                            <pseudo type="fullspace"></pseudo>
+                            <p>Data:</p><pseudo type="space"></pseudo>
+                            <img class="imgbutton" src="https://img.icons8.com/?size=100&id=85962&format=png&color=FFFFFF"
+                                 onclick="document.getElementById('DATAEDITOR').classList.remove('hidden'); window.setTimeout(() => { document.getElementById('DATAEDITOR').style.opacity = 1 }, 1);" />
+                        </div><br />
+                        <div class="flex">
+                            <p>Tab Index:</p>
+                            <input class="input inline" placeholder="2" style="width: 10vh;" id="attabindex" oninput="updateData();" type="number" />
+                            <p>Type:</p>
+                            <select class="input inline" onchange="if (this.value === 'submit') { document.getElementById('theentireformthing').classList.remove('inactive') } else { document.getElementById('theentireformthing').classList.add('inactive') } updateData();" id="attype">
+                                <option value="button">Button</option>
+                                <option value="reset">Reset</option>
+                                <option value="submit">Submit</option>
+                            </select>
+                            <p>Value:</p>
+                            <input class="input inline fill" placeholder="value to return" size="10" id="atvalue" oninput="updateData();" />
+                        </div>
+
+
+                    </div>
+                    <div style="filter:invert(0.5); height: 95%; background-color: var(--verybgcolor); margin: auto 0;"></div>
+                    <div>
+
+                        <p class="bigtitle">EVENTS</p><br />
+                        <div class="flex">
+                            <p><b>CLICK:</b></p>
+                            <pseudo type="space"></pseudo>
+                            <select class="input inline fit" id="eventclicktype" onchange="layout.event.click.value.placeholder = (this.value === 'link' ? 'https://yourlink.com/page' : 'yourFunction(parameter);'); updateData();">
+                                <option value="link">Link</option>
+                                <option value="js">Script</option>
+                            </select>
+                            <input class="input inline fill" placeholder="https://yourlink.com/page" id="eventclick" oninput="fixScript(this);" />
+                        </div><br />
+                        <div class="flex">
+                            <p><b>DOUBLE CLICK:</b></p>
+                            <pseudo type="space"></pseudo>
+                            <select class="input inline fit" id="eventdblclicktype" onchange="layout.event.dblclick.value.placeholder = (this.value === 'link' ? 'https://yourlink.com/page' : 'yourFunction(parameter);'); updateData();">
+                                <option value="link">Link</option>
+                                <option value="js">Script</option>
+                            </select>
+                            <input class="input inline fill" placeholder="https://yourlink.com/page" id="eventdblclick" oninput="fixScript(this);" />
+                        </div><br />
+                        <div class="flex">
+                            <p><b>RIGHT CLICK:</b></p>
+                            <pseudo type="space"></pseudo>
+                            <select class="input inline fit" id="eventcontextmenutype" onchange="layout.event.contextmenu.value.placeholder = (this.value === 'link' ? 'https://yourlink.com/page' : 'yourFunction(parameter);'); updateData();">
+                                <option value="link">Link</option>
+                                <option value="js">Script</option>
+                            </select>
+                            <input class="input inline fill" placeholder="https://yourlink.com/page" id="eventcontextmenu" oninput="fixScript(this);" />
+                            <pseudo type="space"></pseudo>
+                            <img class="imgbutton" src="https://img.icons8.com/?size=100&id=21622&format=png&color=FFFFFF"
+                                 onclick="document.getElementById('CONTEXTMENUEDITOR').classList.remove('hidden'); window.setTimeout(() => { document.getElementById('CONTEXTMENUEDITOR').style.opacity = 1 }, 1);" />
+                        </div><br />
+                        <div class="flex">
+                            <p><b>Window Resize:</b></p>
+                            <input class="input inline fill" placeholder="changeSize(this);" id="eventresize" oninput="fixScript(this);"/>
+                        </div><br />
+                        <div class="flex">
+                            <p><b>Focus:</b></p>
+                            <input class="input inline fill" placeholder="flash(this, 'green');" id="eventfocus" oninput="fixScript(this);"/>
+                        </div><br />
+                        <div class="flex">
+                            <p><b>Text Select:</b></p>
+                            <input class="input inline fill" placeholder="navigator.clipboard.writeText(this.innerHTML);" id="eventselect" oninput="fixScript(this);"/>
+                        </div><br />
+                        <div class="flex">
+                            <p><b>Text Copy:</b></p>
+                            <input class="input inline fill" placeholder="alert('Copied!');" id="eventcopy" oninput="fixScript(this);"/>
+                        </div><br /><br />
+                        <p>Miscelaneous Mouse Events:</p>
+                        <div class="flex">
+                            <p><b>Down (Click Start):</b></p>
+                            <input class="input inline fill" placeholder="this.style.scale = 1.2;" id="eventmousedown" oninput="fixScript(this);"/>
+                        </div><br />
+                        <div class="flex">
+                            <p><b>Up (Click End):</b></p>
+                            <input class="input inline fill" placeholder="this.style.scale = initial;" id="eventmouseup" oninput="fixScript(this);"/>
+                        </div><br />
+                        <div class="flex">
+                            <p><b>Over (Hover):</b></p>
+                            <input class="input inline fill" placeholder="this.style.scale = 1.1;" id="eventmouseover" oninput="fixScript(this);"/>
+                        </div><br />
+                        <div class="flex">
+                            <p><b>Move (Hover + Moving):</b></p>
+                            <input class="input inline fill" placeholder="makeFlow('cusror', this);" id="eventmousemove" oninput="fixScript(this);"/>
+                        </div><br />
+                        <div class="flex">
+                            <p><b>Out (Hover End):</b></p>
+                            <input class="input inline fill" placeholder="this.style.scale = 1;" id="eventmouseout" oninput="fixScript(this);"/>
+                        </div><br />
+                        <div class="flex">
+                            <p><b>Wheel Scroll:</b></p>
+                            <input class="input inline fill" placeholder="move(this, e);" id="eventwheel" oninput="fixScript(this);"/>
+                        </div><br /><br />
+                        <p>Drag Events:</p>
+                        <div class="flex">
+                            <p><b>Drag:</b></p>
+                            <input class="input inline fill" placeholder="this.style.zIndex = 999;" id="eventdrag" oninput="fixScript(this);"/>
+                        </div><br />
+                        <div class="flex">
+                            <p><b>Start:</b></p>
+                            <input class="input inline fill" placeholder="this.style.shadow = 'black 0 15px 10px 5px';" id="eventdragstart" oninput="fixScript(this);"/>
+                        </div><br />
+                        <div class="flex">
+                            <p><b>End:</b></p>
+                            <input class="input inline fill" placeholder="this.style.shadow = 'none';" id="eventdragend" oninput="fixScript(this);"/>
+                        </div><br />
+                        <div class="flex">
+                            <p><b>Enter Target:</b></p>
+                            <input class="input inline fill" placeholder="startAction(droppable, this);" id="eventdragenter" oninput="fixScript(this);"/>
+                        </div><br />
+                        <div class="flex">
+                            <p><b>Leave Target:</b></p>
+                            <input class="input inline fill" placeholder="changeBack(droppable);" id="eventdragleave" oninput="fixScript(this);"/>
+                        </div><br />
+                        <div class="flex">
+                            <p><b>Over Tagret:</b></p>
+                            <input class="input inline fill" placeholder="makeGreen(droppable);" id="eventdragover" oninput="fixScript(this);"/>
+                        </div><br />
+                        <div class="flex">
+                            <p><b>Drop:</b></p>
+                            <input class="input inline fill" placeholder="this.style.scale = 0;" id="eventdrop" oninput="fixScript(this);"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="code" class="toolkitscreen hidden">
+                <pseudo type="space"></pseudo>
+                <div class="flex" style="align-items: flex-end;">
+                    <div class="flex">
+                        <input type="checkbox" id="inlinecodecheck" onchange="inline = this.checked; generateCode();" />
+                        <p onclick="document.getElementById('inlinecodecheck').checked = !document.getElementById('inlinecodecheck').checked; inline = !inline; generateCode();" style="cursor: pointer; -webkit-user-select: none; -ms-user-select: none; user-select: none;">Inline Code</p>
+                    </div>
+                    <pseudo type="fullspace"></pseudo>
+                    <img class="imgbutton big" src="../../../global_resources/icons/download.png" title="Download" onclick="downloadCode();" />
+                    <pseudo type="space"></pseudo>
+                    <pseudo type="space"></pseudo>
+                    <img class="imgbutton big" src="https://img.icons8.com/?size=100&id=ZyQyiaVmUZvu&format=png&color=FFFFFF" title="Copy" onclick="copyCode();" id="copycodebutton" />
+                </div>
+                <br />
+                <code id="codeview">
+
+                </code>
+
+            </div>
+
+            <div id="changelog" class="toolkitscreen hidden">
+
+                <p>
+                    <b>1.0</b><br />
+                    Tool released.
+                </p>
+
+            </div>
+        </div>
+
+
+        <div id="POPOVEREDITOR" class="MAINEDITOR hidden">
+            <div class="MAINEDITORINSIDE">
+                <p class="smalltitle">Popover Button:</p>
+                <div class="flex">
+                    <p>Popover Target ID:</p>
+                    <input class="input inline" placeholder="elementID" size="10" id="atpopovertarget" oninput="fixSelector(this);"/>
+                    <p>Action:</p>
+                    <select class="input inline fit" id="atpopoveraction" onchange="updateData();">
+                        <option value="toggle">Toggle</option>
+                        <option value="hide">Hide</option>
+                        <option value="show">Show</option>
+                    </select>
+                </div>
+                <br /><br />
+                <p class="smalltitle">Popover Element:</p>
+                <div class="flex center">
+                    <input type="checkbox" id="atpopover" onchange="updateData();" />
+                    <p onclick="layout.input['popover'].checked = !layout.input['popover'].checked; updateData();" style="cursor: pointer; -webkit-user-select: none; -ms-user-select: none; user-select: none;">Is Popover Element</p>
+                </div>
+                <br /><br />
+                <div class="flex center">
+                    <button class="button whole" onclick="document.getElementById('POPOVEREDITOR').style.opacity = 0; window.setTimeout(() => { document.getElementById('POPOVEREDITOR').classList.add('hidden') } , 200);">CLOSE</button>
+                </div>
+            </div>
+        </div>
+        <div id="FORMEDITOR" class="MAINEDITOR hidden">
+            <div class="MAINEDITORINSIDE">
+                <div class="flex">
+                    <p>Form ID:</p>
+                    <input class="input inline" placeholder="myForm" id="atform" size="10" oninput="fixSelector(this);"/>
+                    <p>Action Link:</p>
+                    <input class="input inline fill" placeholder="https://host.com/databse" id="atformaction" oninput="updateData();"/>
+                </div><br />
+                <div class="flex center">
+                    <p>Encoding:</p>
+                    <select class="input inline" id="atformenctype" onchange="updateData();">
+                        <option value="application/x-www-form-urlencoded" title="application/x-www-form-urlencoded">Default</option>
+                        <option value="multipart/form-data" title="multipart/form-data">File</option>
+                        <option value="text/plain" title="text/plain">None</option>
+                    </select>
+                    <p>Method:</p>
+                    <select class="input inline" id="atformmethod" onchange="updateData();">
+                        <option value="get">GET</option>
+                        <option value="post">POST</option>
+                    </select>
+                    <p>Target:</p>
+                    <select class="input inline" id="atformtarget" onchange="if (!this.value) { document.getElementById('formframeeditor').classList.remove('inactive'); } else { document.getElementById('formframeeditor').classList.add('inactive'); } updateData();">
+                        <option value="_blank">Blank</option>
+                        <option value="_self">Self</option>
+                        <option value="_parent">Parent</option>
+                        <option value="_top">Top</option>
+                        <option value="">Frame</option>
+                    </select>
+                    <img class="imgbutton inactive" src="https://img.icons8.com/?size=100&id=85962&format=png&color=FFFFFF" id="formframeeditor"
+                         onclick="document.getElementById('FORMFRAMEEDITOR').classList.remove('hidden'); window.setTimeout(() => { document.getElementById('FORMFRAMEEDITOR').style.opacity = 1 }, 1);" />
+                </div><br />
+                <div class="flex center">
+                    <input type="checkbox" id="atformnovalidate" onchange="updateData();" />
+                    <p onclick="layout.input['formnovalidate'].checked = !layout.input['formnovalidate'].checked; updateData();" style="cursor: pointer; -webkit-user-select: none; -ms-user-select: none; user-select: none;">Do Not Validate Form</p>
+                </div>
+                <br /><br />
+                <div class="flex center">
+                    <button class="button whole" onclick="document.getElementById('FORMEDITOR').style.opacity = 0; window.setTimeout(() => { document.getElementById('FORMEDITOR').classList.add('hidden') } , 200);">CLOSE</button>
+                </div>
+            </div>
+        </div>
+        <div id="FORMFRAMEEDITOR" class="MAINEDITOR hidden">
+            <div class="MAINEDITORINSIDE">
+                <div class="flex">
+                    <p>Frame Name:</p>
+                    <input class="input inline fit" size="10" placeholder="myFrame" id="atformtargetframe" oninput="fixSelector(this);"/>
+                </div>
+                <br />
+                <div class="flex center">
+                    <button class="button whole" onclick="document.getElementById('FORMFRAMEEDITOR').style.opacity = 0; window.setTimeout(() => { document.getElementById('FORMFRAMEEDITOR').classList.add('hidden') } , 200);">CLOSE</button>
+                </div>
+            </div>
+        </div>
+        <div id="STYLEEDITOR" class="MAINEDITOR hidden">
+            <div class="MAINEDITORINSIDE">
+                <p class="flex center">Embed Inline Style:</p>
+                <textarea class="input" style="width: 50vw; height: 40px; resize: none; min-height: 40px !important; overflow-x: scroll; white-space: nowrap; overflow-y: hidden !important;" placeholder="height: 100px; width: 50px;" id="atstyle" oninput="this.value = this.value.replaceAll('\n', ''); updateData();"></textarea>
+                <br /><br />
+                <div class="flex center">
+                    <button class="button whole" onclick="document.getElementById('STYLEEDITOR').style.opacity = 0; window.setTimeout(() => { document.getElementById('STYLEEDITOR').classList.add('hidden') } , 200);">CLOSE</button>
+                </div>
+            </div>
+        </div>
+        <div id="TOGGLEEDITOR" class="MAINEDITOR hidden">
+            <div class="MAINEDITORINSIDE">
+                <div class="flex center">
+                    <input type="checkbox" id="athidden" onchange="updateData();" />
+                    <p onclick="layout.input['hidden'].checked = !layout.input['hidden'].checked; updateData();" style="cursor: pointer; -webkit-user-select: none; -ms-user-select: none; user-select: none;">Hidden</p>
+                    <pseudo type="space"></pseudo><pseudo type="space"></pseudo>
+                    <input type="checkbox" id="atdisabled" onchange="updateData();" />
+                    <p onclick="layout.input['disabled'].checked = !layout.input['disabled'].checked; updateData();" style="cursor: pointer; -webkit-user-select: none; -ms-user-select: none; user-select: none;">Disabled</p>
+                    <pseudo type="space"></pseudo><pseudo type="space"></pseudo>
+                    <input type="checkbox" id="atinert" onchange="updateData();" />
+                    <p onclick="layout.input['inert'].checked = !layout.input['inert'].checked; updateData();" style="cursor: pointer; -webkit-user-select: none; -ms-user-select: none; user-select: none;">Inert</p>
+                    <pseudo type="space"></pseudo><pseudo type="space"></pseudo>
+                    <input type="checkbox" id="attranslate" onchange="updateData();" checked />
+                    <p onclick="layout.input['translate'].checked = !layout.input['translate'].checked; updateData();" style="cursor: pointer; -webkit-user-select: none; -ms-user-select: none; user-select: none;">Translate</p>
+                </div><br />
+                <div class="flex center">
+                    <input type="checkbox" id="atdraggable" onchange="updateData();" />
+                    <p onclick="layout.input['draggable'].checked = !layout.input['draggable'].checked; updateData();" style="cursor: pointer; -webkit-user-select: none; -ms-user-select: none; user-select: none;">Draggable</p>
+                    <pseudo type="space"></pseudo><pseudo type="space"></pseudo>
+                    <input type="checkbox" id="atautofocus" onchange="updateData();" />
+                    <p onclick="layout.input['autofocus'].checked = !layout.input['autofocus'].checked; updateData();" style="cursor: pointer; -webkit-user-select: none; -ms-user-select: none; user-select: none;">Autofocus</p>
+                    <pseudo type="space"></pseudo><pseudo type="space"></pseudo>
+                    <input type="checkbox" id="atcontenteditable" onchange="updateData();" />
+                    <p onclick="layout.input['contenteditable'].checked = !layout.input['contenteditable'].checked; updateData();" style="cursor: pointer; -webkit-user-select: none; -ms-user-select: none; user-select: none;">Content Editable</p>
+                </div>
+                <br />
+                <div class="flex center">
+                    <button class="button whole" onclick="document.getElementById('TOGGLEEDITOR').style.opacity = 0; window.setTimeout(() => { document.getElementById('TOGGLEEDITOR').classList.add('hidden') } , 200);">CLOSE</button>
+                </div>
+            </div>
+        </div>
+        <div id="DATAEDITOR" class="MAINEDITOR hidden">
+            <div class="MAINEDITORINSIDE">
+                <p class="smalltitle">Data Editor</p>
+                <div id="datagrid">
+                    <div class="datagriditem inactive" id="dataitem_example">
+                        <div class="flex"><p>data-</p><input class="input fill" value="example-key" id="datakey_example" /></div>
+                        <div class="flex"><input class="input fill" value="example value" id="datavalue_example" /></div>
+                        <img class="imgbutton fit" src="https://kingpvz.github.io/global_resources/icons/delete.png" id="datadelete_example" />
+                    </div>
+                </div>
+                <br /><br />
+                <div class="flex center">
+                    <button class="button whole" onclick="newData(); updateData();">ADD DATA</button>
+                    <pseudo type="longspace"></pseudo>
+                    <button class="button whole" onclick="document.getElementById('DATAEDITOR').style.opacity = 0; window.setTimeout(() => { document.getElementById('DATAEDITOR').classList.add('hidden') } , 200);">CLOSE</button>
+                </div>
+            </div>
+        </div>
+        <div id="CONTEXTMENUEDITOR" class="MAINEDITOR hidden">
+            <div class="MAINEDITORINSIDE">
+                <div class="flex center">
+                    <input type="checkbox" id="eventcontextmenuprevent" onchange="updateData();" checked />
+                    <p onclick="layout.event.contextmenu.preventdefault.checked = !layout.event.contextmenu.preventdefault.checked; updateData();" style="cursor: pointer; -webkit-user-select: none; -ms-user-select: none; user-select: none;">Prevent Default (Do not show Context Menu)</p>
+                </div><br />
+                <div class="flex center">
+                    <p style="font-weight: 200; font-size: 2vh;">Note: When there is no script/link, this attribute will be ignored and the context menu will be shown.<br />
+                    If you want to force prevent default, put a single space to the link/script field.</p>
+                </div>
+                <br />
+                <div class="flex center">
+                    <button class="button whole" onclick="document.getElementById('CONTEXTMENUEDITOR').style.opacity = 0; window.setTimeout(() => { document.getElementById('CONTEXTMENUEDITOR').classList.add('hidden') } , 200);">CLOSE</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+    <script>
+
+        var layout;
+        window.onload = () => {
+            layout = {
+                tab: {
+                    "editor": document.getElementById("tabeditor"),
+                    "code": document.getElementById("tabcode"),
+                    "changelog": document.getElementById("tabchangelog")
+                },
+                screen: {
+                    "editor": document.getElementById("editor"),
+                    "code": document.getElementById("code"),
+                    "changelog": document.getElementById("changelog")
+                },
+                data: {},
+                input: {
+                    "popover": document.getElementById("atpopover"),
+                    "formnovalidate": document.getElementById("atformnovalidate"),
+                    "hidden": document.getElementById("athidden"),
+                    "disabled": document.getElementById("atdisabled"),
+                    "inert": document.getElementById("atinert"),
+                    "translate": document.getElementById("attranslate"),
+                    "draggable": document.getElementById("atdraggable"),
+                    "autofocus": document.getElementById("atautofocus"),
+                    "contenteditable": document.getElementById("atcontenteditable"),
+                    "class": document.getElementById("atclass"),
+                    "id": document.getElementById("atid"),
+                    "lang": document.getElementById("atlang"),
+                    "innerHTML": document.getElementById("innerhtml"),
+                    "name": document.getElementById("atname"),
+                    "title": document.getElementById("attitle"),
+                    "tabindex": document.getElementById("attabindex"),
+                    "type": document.getElementById("attype"),
+                    "value": document.getElementById("atvalue"),
+                    "popovertarget": document.getElementById("atpopovertarget"),
+                    "popoveraction": document.getElementById("atpopoveraction"),
+                    "form": document.getElementById("atform"),
+                    "formaction": document.getElementById("atformaction"),
+                    "formenctype": document.getElementById("atformenctype"),
+                    "formmethod": document.getElementById("atformmethod"),
+                    "formtarget": document.getElementById("atformtarget"),
+                    "formtargetframe": document.getElementById("atformtargetframe"),
+                    "style": document.getElementById("atstyle")
+                },
+                event: {
+                    click: {
+                        type: document.getElementById("eventclicktype"),
+                        value: document.getElementById("eventclick")
+                    },
+                    dblclick: {
+                        type: document.getElementById("eventdblclicktype"),
+                        value: document.getElementById("eventdblclick")
+                    },
+                    contextmenu: {
+                        type: document.getElementById("eventcontextmenutype"),
+                        value: document.getElementById("eventcontextmenu"),
+                        preventdefault: document.getElementById("eventcontextmenuprevent")
+                    },
+                    resize: document.getElementById("eventresize"),
+                    focus: document.getElementById("eventfocus"),
+                    select: document.getElementById("eventselect"),
+                    copy: document.getElementById("eventcopy"),
+                    mousedown: document.getElementById("eventmousedown"),
+                    mouseup: document.getElementById("eventmouseup"),
+                    mouseover: document.getElementById("eventmouseover"),
+                    mousemove: document.getElementById("eventmousemove"),
+                    mouseout: document.getElementById("eventmouseout"),
+                    wheel: document.getElementById("eventwheel"),
+                    drag: document.getElementById("eventdrag"),
+                    dragstart: document.getElementById("eventdragstart"),
+                    dragend: document.getElementById("eventdragend"),
+                    dragenter: document.getElementById("eventdragenter"),
+                    dragleave: document.getElementById("eventdragleave"),
+                    dragover: document.getElementById("eventdragover"),
+                    drop: document.getElementById("eventdrop"),
+                },
+                code: document.getElementById("codeview")
+            }
+
+            let r = document.querySelector(":root");
+            if (localStorage.getItem('displayMode') === '1') {
+                r.style.setProperty('--highlightcolor', '#eae356');
+                r.style.setProperty('--verybgcolor', '#eee');
+                r.style.setProperty('--shadowtabcolor', '#333');
+                r.style.setProperty('--shadowctabcolor', '#efef5f');
+                r.style.setProperty('--textcolor', '#222');
+                r.style.setProperty('--hoverhighlightcolor', 'yellow');
+                r.style.setProperty('--maintabcolor', 'orange');
+                r.style.setProperty('--gradient1', 'linear-gradient(orange 0%, #eee 80%, #eee 100%)');
+                r.style.setProperty('--gradient2', 'linear-gradient(yellow 0%, #eee 80%, #eee 100%)');
+                r.style.setProperty('--syntaxsymbol', 'orangered');
+                r.style.setProperty('--syntaxkeyword', 'blue');
+                r.style.setProperty('--linkcolor', 'darkblue');
+                r.style.setProperty('--linkhovercolor', 'yellow');
+                r.style.setProperty('--syntaxbackground', 'white');
+                r.style.setProperty('--syntaxproperty', 'deepslateblue');
+                r.style.setProperty('--imagefilter', 'invert()');
+            } else {
+                r.style.setProperty('--highlightcolor', '#210c00');
+                r.style.setProperty('--verybgcolor', '#333');
+                r.style.setProperty('--shadowtabcolor', '#ddd');
+                r.style.setProperty('--shadowctabcolor', '#111');
+                r.style.setProperty('--textcolor', 'white');
+                r.style.setProperty('--hoverhighlightcolor', 'orange');
+                r.style.setProperty('--maintabcolor', 'orangered');
+                r.style.setProperty('--gradient1', 'linear-gradient(orangered 0%, #333 80%, #333 100%)');
+                r.style.setProperty('--gradient2', 'linear-gradient(orange 0%, #333 80%, #333 100%)');
+                r.style.setProperty('--syntaxsymbol', 'orange');
+                r.style.setProperty('--syntaxkeyword', 'cornflowerblue');
+                r.style.setProperty('--linkcolor', 'yellow');
+                r.style.setProperty('--linkhovercolor', 'blue');
+                r.style.setProperty('--syntaxbackground', '#181818');
+                r.style.setProperty('--syntaxproperty', 'lightblue');
+                r.style.setProperty('--imagefilter', 'none');
+            }
+        }
+
+    </script>
+</body>
+</html>
