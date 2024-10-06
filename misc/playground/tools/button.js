@@ -201,7 +201,7 @@ function generateCode() {
         code += data.data[i].key?`data-${data.data[i].key}="${TFIX(data.data[i].value)}"` + sep:'';
     }
 
-    code += ">" + data.innerHTML.replaceAll("\n", "<br>") + "</button>"
+    code += ">" + data.innerHTML + "</button>"
     code = code.replaceAll(' >', '>')
     var intermed = code.replaceAll("<", '<span class="symbol"(((THISWILLBERT)))&lt;</span(((THISWILLBERT)))').replaceAll(">", '<span class="symbol">&gt;</span>').replaceAll("(((THISWILLBERT)))", ">");
     if (!inline) {
