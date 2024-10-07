@@ -44,7 +44,7 @@
 .MAINEDITOR {
     position: absolute;
     left: 2px;
-    top: calc(42px + 2vh);
+    top: calc(22px + 2vh);
     width: calc(74.25vw - 4px);
     height: calc(98vh - 24px);
     background-color: rgb(0 0 0 / 0.8);
