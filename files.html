@@ -205,6 +205,7 @@
                 receive = receive.split("\n");
                 fileTitle = receive.shift();
                 result = receive.join("<br/>");
+                result.replaceAll(" ", "&nbsp;");
             }
             document.getElementById("textfile").innerHTML = result;
             document.getElementById("filetitle").innerHTML = fileTitle;
