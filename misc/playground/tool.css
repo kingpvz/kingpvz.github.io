@@ -46,20 +46,17 @@ pseudo {
 }
 
     pseudo[type="title"] {
-        font-size: 32px;
-        font-weight: bold;
-        margin: 0 24px 0 0;
-        line-height: 40px;
+        display: none;
     }
 
     pseudo[type="description"] {
-        font-size: 18px;
+        font-size: 16px;
+        line-height: 20px;
         margin: 0;
     }
 
     pseudo[type="textcont"] {
         display: flex;
-        align-items: baseline;
     }
 
     pseudo[type="tabcont"] {
