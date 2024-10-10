@@ -64,8 +64,8 @@
     <style>
 
         ::-webkit-scrollbar {
-            width: 30px;
-            height: 30px;
+            width: 20px;
+            height: 20px;
         }
 
         ::-webkit-scrollbar-track {
@@ -75,7 +75,7 @@
         ::-webkit-scrollbar-thumb {
             background: #fff;
             border-radius: 100px;
-            border: solid 13px #222;
+            border: solid 8px #222;
         }
 
             ::-webkit-scrollbar-thumb:hover {
@@ -135,13 +135,13 @@
         }
 
         .content {
-            margin: 0 1vw 0 1vw;
+            margin: 0 0 0 1vw;
             padding: 1vw 1vw 0 1vw;
             overflow: auto;
             height: calc(100vh - 6vw);
-            width: calc(100% - 1vw - 40px);
+            width: calc(100% - 3vw);
             font-size: 1vw;
-            transition: 0.5s;
+            transition: font-size 0.5s ease;
         }
 
         done {
@@ -205,6 +205,7 @@
                 receive = receive.split("\n");
                 fileTitle = receive.shift();
                 result = receive.join("<br/>");
+                result = result.replaceAll(" ", "&nbsp;");
             }
             document.getElementById("textfile").innerHTML = result;
             document.getElementById("filetitle").innerHTML = fileTitle;

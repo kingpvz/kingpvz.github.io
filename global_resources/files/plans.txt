@@ -12,8 +12,14 @@
 
 
 
+> Add Tabs to the Tool Tab in wdPlayGround
+  Just imagine you could have multiple tools open at the same time. That would be cool. So there would be tabs with the tools
+  and you can easily switch to the tools and work on idk 2 button designs at the same time! And of course, you could close them.
+- Added 10/7/24
+- Desktop TBA
+
 > Categorize Projects
-  Categories like "Tool"/"Game/App" and other would definitely help with better orientation!
+  Categories like Tool/Game/App or similar would definitely help with navigation!
 - Added 9/2/24
 - Desktop TBA
 - Mobile TBA
