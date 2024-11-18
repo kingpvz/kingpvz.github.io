@@ -1,0 +1,270 @@
+<html>
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7J3YJQYZ30"></script>
+    <script>
+     window.dataLayer = window.dataLayer || [];
+     function gtag() { dataLayer.push(arguments); }
+     gtag('js', new Date());
+
+     gtag('config', 'G-7J3YJQYZ30');
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <title>Survey - Kingpvz</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+
+    <style>
+        html, body {
+            padding: 0;
+            margin: 0;
+            font-family: 'Ubuntu', sans-serif !important;
+            color: #131313 !important;
+            background-color: #fff;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .kd::-webkit-scrollbar {
+            width: 5px;
+            height: 5px;
+        }
+
+        .kd::-webkit-scrollbar-track {
+            background: none;
+        }
+
+        .kd::-webkit-scrollbar-thumb {
+            background: #111;
+            border-radius: 100px;
+            border: solid 3px none;
+        }
+
+        .kd::-webkit-scrollbar-thumb:hover {
+            background: red;
+        }
+
+        .kd::-webkit-scrollbar-corner {
+            background: #fff;
+        }
+
+        .kd {
+            height: 90vh;
+            padding: 1.5vh 20vh;
+            display: none;
+            overflow: auto;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            height: 5vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #111;
+            padding: 1vh;
+            box-shadow: black 0 1px 5px;
+        }
+
+        #headerimg {
+            height: 5vh;
+            width: 5vh;
+        }
+
+        #headerh {
+            font-size: 4vh;
+            line-height: 1;
+            color: white !important;
+            margin: 0 0 0 1vw;
+        }
+
+        p, h3 {
+            font-size: 24px;
+            text-align: center;
+        }
+
+        button {
+            box-shadow: #000000 0 0 0 0;
+            text-decoration: solid #000000 auto;
+            font-size: 3vh;
+            font-weight: bold;
+            font-family: Ubuntu;
+            color: #000000;
+            border: solid 3px #ff7b00;
+            border-radius: 1.5vh;
+            background-color: #eef1cb;
+            padding: 0.5vh 1vh;
+            cursor: pointer;
+            margin-bottom: 2vh;
+            display: inline;
+            opacity: 1;
+            scale: 1;
+            outline: white solid 2px;
+            transition: 0.2s ease;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+            button:hover {
+                box-shadow: #e4ae90 0 0 3px 3px;
+                text-decoration: solid #000000 auto;
+                font-size: 3vh;
+                font-weight: bold;
+                font-family: Ubuntu;
+                color: #000000;
+                border: solid 3px #ff7b00;
+                border-radius: 1.5vh;
+                background-color: #eef1cb;
+                padding: 0.5vh 1vh;
+                cursor: pointer;
+                display: inline;
+                opacity: 1;
+                scale: 1.05;
+                outline: #e4ae90 solid 2px;
+            }
+
+            button:active {
+                box-shadow: #e4ae90 0 0 3px 5px;
+                text-decoration: solid #000000 auto;
+                font-size: 3vh;
+                font-weight: bold;
+                font-family: Ubuntu;
+                color: #383838;
+                border: solid 3px #9b9e00;
+                border-radius: 1.5vh;
+                background-color: #f3fff0;
+                padding: 0.5vh 1vh;
+                cursor: pointer;
+                display: inline;
+                opacity: 1;
+                scale: 1;
+                outline: #e4ae90 solid 2px;
+            }
+
+        .visible {
+            display: flex;
+        }
+
+        @media(orientation: portrait){
+             
+            .kd {
+                height: 91vh;
+                padding: 1vh 5vh;
+            }
+
+            header {
+                box-shadow: black 0 3px 10px;
+            }
+
+            #headerh {
+                font-size: 3.5vh;
+                margin: 0 0 0 3vw;
+            }
+
+            h2 {
+                font-size: 60px;
+                text-align: center;
+            }
+
+            p, h3 {
+                font-size: 48px;
+            }
+
+            button {
+                font-size: 4vh;
+                border: solid 5px #ff7b00;
+                margin-bottom: 2vh;
+                outline: white solid 2px;
+            }
+
+                button:hover {
+                    box-shadow: #e4ae90 0 0 3px 3px;
+                    font-size: 4vh;
+                    border: solid 5px #ff7b00;
+                    scale: 1.05;
+                    outline: #e4ae90 solid 2px;
+                }
+
+                button:active {
+                    box-shadow: #e4ae90 0 0 3px 5px;
+                    font-size: 4vh;
+                    border: solid 5px #9b9e00;
+                    border-radius: 1.5vh;
+                    background-color: #f3fff0;
+                    outline: #e4ae90 solid 2px;
+                }
+        }
+    </style>
+
+    <script>
+        let k = 0;
+        let current = 0;
+        function update() {
+            document.getElementById(`kd${current}`).classList.remove("visible");
+            current = k;
+            document.getElementById(`kd${current}`).classList.add("visible");
+        }
+    </script>
+
+</head>
+<body>
+
+    <header>
+        <img id="headerimg" src="favicon.png" />
+        <h1 id="headerh">Streaming Survey</h1>
+    </header>
+
+    <div id="kd0" class="kd visible">
+        <h2>Welcome and thanks for checking out this survey!</h2>
+        <p>Someone recently asked me on a stream if I could stream Minecraft next, and I have no idea what to stream. You can use this survey to let me know whatever you want me to stream!</p>
+        <button onclick="k = 1; update();">Let's Go!</button>
+    </div>
+
+    <div id="kd1" class="kd">
+        <h2>The first question is:</h2>
+        <h3>Do you watch my streams, or would you, if I streamed a specific game (perhaps a game you like)?</h3>
+        <button onclick="k = 2; update();">Yes</button>
+        <button onclick="k = 3; update();">No</button>
+    </div>
+
+    <div id="kd2" class="kd">
+        <h2>The next question is:</h2>
+        <h3>Would you watch my stream if I played Minecraft?</h3>
+        <button onclick="k = 4; update();">Yes</button>
+        <button onclick="k = 5; update();">No</button>
+    </div>
+
+    <div id="kd3" class="kd">
+        <h2>What a survey!</h2>
+        <p>If you do not watch my streams, nor would you if I streamed a game you like, this survey is pointless.<br />Thank you for your interest and have a great day!</p>
+        <button onclick="document.location.href='.'">Exit</button>
+    </div>
+
+    <div id="kd4" class="kd">
+        <iframe id="ifr1" src="https://docs.google.com/forms/d/e/1FAIpQLSd-sRKi_d54JJdSA93IxKnMG_VZ4dFqFdkup6lXyATAO-7A4w/viewform?embedded=true" width="640" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        <script>
+            let fr1 = document.getElementById("ifr1");
+            fr1.onload = function () {
+                fr1.height = window.innerHeight / 0.9;
+            }
+        </script>
+    </div>
+
+    <div id="kd5" class="kd">
+        <iframe id="ifr2" src="https://docs.google.com/forms/d/e/1FAIpQLScmAE5d-IaqM6A5wePUAmgDJ1s7cgEa1LbnQTkFpvlSLEdCOw/viewform?embedded=true" width="640" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        <script>
+            let fr2 = document.getElementById("ifr2");
+            fr2.onload = function () {
+                fr2.height = window.innerHeight / 0.9;
+            }
+        </script>
+    </div>
+
+</body>
+</html>
