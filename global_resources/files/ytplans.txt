@@ -1,10 +1,10 @@
 <pseudo title>YouTube Plans</pseudo>
 <h2>VIDEOS</h2>
 > IF I DIE/LOSE THE VIDEO ENDS
-  <ul>nothing planned yet</ul>
+  <ul><li>Night Horros</li></ul>
 
 > OTHER
-  <ul><li>How to make a website tutorial part 2 &nbsp; &nbsp; <i>Editing started</i></li></ul>
+  <ul><li>How to make a website tutorial part 2 &nbsp; &nbsp; <i>Releasing 11/22!</i></li></ul>
 
 
 <h2>MUSIC</h2>
