@@ -4,12 +4,16 @@
   <ul><li>Night Horros</li></ul>
 
 > OTHER
-  <ul><li>How to make a website tutorial part 2 &nbsp; &nbsp; <i>Releasing 11/22!</i></li></ul>
+  <ul>none</ul>
 
 
 <h2>MUSIC</h2>
 > Geometry Bass 2
-  <ul><li>All SubZero and World level music</li></ul>
+  <ul><li>All SubZero and World level music
+<ul><li>Meltdown 3/3</li>
+<li>World 4/10</li>
+<li>SubZero 0/3</li></ul>
+</li></ul>
 
 > Other
   <ul>none</ul>
