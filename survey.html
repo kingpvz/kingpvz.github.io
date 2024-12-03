@@ -56,9 +56,10 @@
             height: 90vh;
             padding: 1.5vh 20vh;
             display: none;
-            overflow: auto;
+            overflow-y: auto;
             flex-direction: column;
             align-items: center;
+            overflow-x: hidden;
         }
 
         header {
@@ -205,7 +206,8 @@
     <script>
         let k = 0;
         let current = 0;
-        function update() {
+        function update(x) {
+            k = x;
             document.getElementById(`kd${current}`).classList.remove("visible");
             current = k;
             document.getElementById(`kd${current}`).classList.add("visible");
@@ -222,48 +224,31 @@
 
     <div id="kd0" class="kd visible">
         <h2>Welcome and thanks for checking out this survey!</h2>
-        <p>Someone recently asked me on a stream if I could stream Minecraft next, and I have no idea what to stream. You can use this survey to let me know whatever you want me to stream!</p>
-        <button onclick="k = 1; update();">Let's Go!</button>
+        <p>I'm running out of games to stream. You can use this survey to let me know whatever you want me to play on stream!</p>
+        <button onclick="update(1);">Let's Go!</button>
     </div>
 
     <div id="kd1" class="kd">
-        <h2>The first question is:</h2>
+        <h2>An important question:</h2>
         <h3>Do you watch my streams, or would you, if I streamed a specific game (perhaps a game you like)?</h3>
-        <button onclick="k = 2; update();">Yes</button>
-        <button onclick="k = 3; update();">No</button>
+        <button onclick="update(2);">Yes</button>
+        <button onclick="update(3);">No</button>
     </div>
 
     <div id="kd2" class="kd">
-        <h2>The next question is:</h2>
-        <h3>Would you watch my stream if I played Minecraft?</h3>
-        <button onclick="k = 4; update();">Yes</button>
-        <button onclick="k = 5; update();">No</button>
+        <iframe id="ifr" src="https://docs.google.com/forms/d/e/1FAIpQLScmAE5d-IaqM6A5wePUAmgDJ1s7cgEa1LbnQTkFpvlSLEdCOw/viewform?embedded=true" width="100%" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        <script>
+            let fr = document.getElementById("ifr");
+            fr.onload = function () {
+                fr.height = window.innerHeight / 0.9;
+            }
+        </script>
     </div>
 
     <div id="kd3" class="kd">
         <h2>What a survey!</h2>
         <p>If you do not watch my streams, nor would you if I streamed a game you like, this survey is pointless.<br />Thank you for your interest and have a great day!</p>
         <button onclick="document.location.href='.'">Exit</button>
-    </div>
-
-    <div id="kd4" class="kd">
-        <iframe id="ifr1" src="https://docs.google.com/forms/d/e/1FAIpQLSd-sRKi_d54JJdSA93IxKnMG_VZ4dFqFdkup6lXyATAO-7A4w/viewform?embedded=true" width="640" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-        <script>
-            let fr1 = document.getElementById("ifr1");
-            fr1.onload = function () {
-                fr1.height = window.innerHeight / 0.9;
-            }
-        </script>
-    </div>
-
-    <div id="kd5" class="kd">
-        <iframe id="ifr2" src="https://docs.google.com/forms/d/e/1FAIpQLScmAE5d-IaqM6A5wePUAmgDJ1s7cgEa1LbnQTkFpvlSLEdCOw/viewform?embedded=true" width="640" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-        <script>
-            let fr2 = document.getElementById("ifr2");
-            fr2.onload = function () {
-                fr2.height = window.innerHeight / 0.9;
-            }
-        </script>
     </div>
 
 </body>
