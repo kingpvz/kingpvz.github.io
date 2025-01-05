@@ -1,8 +1,7 @@
 <pseudo title>YouTube Plans</pseudo>
 <h2>VIDEOS</h2>
 > IF I DIE/LOSE THE VIDEO ENDS
-  <ul><li>Night Horrors / <i>Releasing 12/28</i></li>
-<li>Welcome To The Game 2 / <i>Editing using Davinci Resolve, I have no idea when I'll finish it.</i></li></ul>
+  <ul>none</ul>
 
 > OTHER
   <ul>none</ul>
