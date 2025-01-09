@@ -1,8 +1,7 @@
 Use-agent: *
 Disallow: /global_resources/
 Disallow: /site_resources/
-Disallow: /m/site_resources/
-Disallow: /m/style.css
+Disallow: /m/
 Disallow: /404.html
-Disallow: /style.css
 Disallow: /README.md
+Disallow: /misc/quiz/index.html
