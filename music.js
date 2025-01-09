@@ -459,7 +459,8 @@ window.onload = function () {
     else {
         openSong(songID, false);
         document.title = "Kingpvz - " + database[songID].title;
-        if (database[songID].album === 'none' && !database[songID].alt) document.getElementById("musicExtraButtonExtra").style.display = 'none';
+        if (!database[songID].link.alt) { database[songID].link.alt = []; }
+        if (database[songID].album === 'none' && database[songID].link.alt.length === 0) document.getElementById("musicExtraButtonExtra").style.display = 'none';
     }
 }
 
