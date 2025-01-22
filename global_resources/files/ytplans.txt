@@ -1,7 +1,14 @@
 <pseudo title>YouTube Plans</pseudo>
 <h2>VIDEOS</h2>
 > IF I DIE/LOSE THE VIDEO ENDS
-  <ul>none</ul>
+  <ul><li>Poppy Playtime (Chapter 1)</li>
+<li>Best Moments Compilation 2</li></ul>
+
+> EVERITHING WRONG WITH CHARRIII5 (in no particular order)
+  <ul><li>FNaF series (FFPS, HW, SB, SB:R, HW2)</li>
+<li>Undertale</li>
+<li>Deltarune (Ch1, Ch2)</li>
+<li>Poppy Playtime Chapter 1 (hyper short video)</li></ul>
 
 > OTHER
   <ul>none</ul>
@@ -16,4 +23,4 @@
 </li></ul>
 
 > Other
-  <ul>none</ul>
+  <ul><li>Toby Fox - Dummy! (Electro Swing Remix)</li></ul>
