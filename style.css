@@ -308,6 +308,7 @@ body {
     box-shadow: #111 0 0 10px 5px;
     position: sticky;
     top: 2vw;
+    z-index: 999;
 }
 
 #searchBar {
