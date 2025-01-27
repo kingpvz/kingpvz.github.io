@@ -221,7 +221,7 @@ function openSong(id, pc=true) {
                 sc.href = i.soundcloud;
                 sc.target = "_blank";
                 let img = document.createElement("img");
-                img.src = "https://cdn.icon-icons.com/icons2/99/PNG/512/soundcloud_socialnetwork_17421.png";
+                img.src = "https://a-v2.sndcdn.com/assets/images/sc-icons/ios-a62dfc8fe7.png";
                 img.classList.add("linkImage");
                 img.title = "SoundCloud";
                 sc.appendChild(img);
