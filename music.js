@@ -222,6 +222,7 @@ function openSong(id, pc=true) {
                 sc.target = "_blank";
                 let img = document.createElement("img");
                 img.src = "https://a-v2.sndcdn.com/assets/images/sc-icons/ios-a62dfc8fe7.png";
+                img.style.borderRadius = "0.5vw";
                 img.classList.add("linkImage");
                 img.title = "SoundCloud";
                 sc.appendChild(img);
