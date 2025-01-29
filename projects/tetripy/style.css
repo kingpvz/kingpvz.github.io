@@ -11,6 +11,10 @@
     box-shadow: 0 0 15px #505000;
 }
 
+body, html {
+    overflow-x: hidden;
+}
+
 .introlink {
     margin: 0.5vw;
     padding: 0.5vw 1vw 0.5vw 1vw;
@@ -61,23 +65,51 @@
     height: min-content;
 }
 
-h2.A {
-    margin-top: 40px;
-    margin-bottom: 0;
+@keyframes wtfs {
+    0% {
+        transform: scale3d(1, 1, 1) rotate(0deg);
+        right: 0;
+        top: 0;
+    }
+
+    30% {
+        transform: scale3d(0.75, 1.25, 1) rotate(10deg);
+        right: 2px;
+        top: -20px;
+    }
+
+    40% {
+        transform: scale3d(1.25, 0.75, 0.95) rotate(-5deg);
+        right: -5px;
+        top: 10px;
+    }
+
+    50% {
+        transform: scale3d(0.85, 1.15, 1) rotate(0deg);
+        right: 3px;
+        top: 7px;
+    }
+
+    65% {
+        transform: scale3d(1.05, 0.95, 1.05) rotate(5deg);
+        right: 5px;
+        top: -10px;
+    }
+
+    75% {
+        transform: scale3d(0.95, 1.05, 1) rotate(-3deg);
+        right: -2px;
+        top: -3px;
+    }
+
+    100% {
+        transform: scale3d(1, 1, 1) rotate(0deg);
+        right: 0;
+        top: 0;
+    }
 }
 
-p.A {
-    font-size: 18px;
-    line-height: 26px;
-}
-
-blockquote {
-    font-size: 20px;
-    color: #ccc;
-    border-left: 5px solid #999; 
-    padding: 10px 20px;
-    border-radius: 5px;
-    background-color: #222;
-    width: fit-content;
-    margin: -5px 0 0 0;
+#wtf {
+    animation: wtfs 1s cubic-bezier(0.445, 0.050, 0.550, 0.950) 0s infinite normal forwards;
+    position:relative;
 }
