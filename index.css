@@ -135,11 +135,11 @@ section {
     flex-direction: column;
     width: 23vw;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .titleitem {
-    font-size: 2vw;
+    font-size: 3.5vh;
     margin: 0;
     font-family: Ubuntu, sans-serif;
     font-weight: 900;
@@ -294,11 +294,27 @@ p {
 }
 
 .gscribe {
+    width: 21vw;
     padding: 1vh;
-    border-radius: 1vh;
-    background-color: white;
+    border-radius: 1vw;
+    background-color: #333;
     border: solid red 3px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+}
+
+.youtubeImage {
+    height: 6vw;
+    width: 6vw;
+    display: block;
+    border-radius: 3vw;
+    user-drag: none;
+    -webkit-user-drag: none;
+    transition: 0.3s ease-out;
+}
+
+.youtubeImage:hover {
+    box-shadow: white 0 0 10px;
 }
