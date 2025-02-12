@@ -1667,6 +1667,23 @@ var database = [
         }
     },
     {
+        title: "Dummy!",
+        genre: "swing",
+        album: "none",
+        year: 2025,
+        originality: "remix",
+        originalby: "Toby Fox",
+        lyrics: "inst",
+        explicit: false,
+        cover: "https://i.scdn.co/image/ab6761670000ecd4be936e4ef9f2f473c44c575d",
+        link: {
+            base: {
+                youtube: "https://youtu.be/0i_synnxtVM",
+                odysee: "https://odysee.com/@kingpvz:4/dummy_swingremix:e"
+            }
+        }
+    },
+    {
         title: "Dutch",
         genre: "swing",
         album: "ritt",
