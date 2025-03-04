@@ -1826,10 +1826,12 @@ var database = [
         originality: "original",
         lyrics: "inst",
         explicit: false,
-        cover: "https://i.scdn.co/image/ab6761670000ecd4be936e4ef9f2f473c44c575d",
+        cover: "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02f4647b60414fc64c54bd08f8",
         link: {
             base: {
-                youtube: "https://youtu.be/iHTWmGS7_Qo"
+                youtube: "https://youtu.be/iHTWmGS7_Qo",
+                spotify: "https://open.spotify.com/track/7JMdz6k0WFk2aHW7myXSgQ?si=dd70f617833d4a3f",
+                deezer: "https://dzr.page.link/sXwWo2K8v7LYEUvL8"
             }
         }
     },
