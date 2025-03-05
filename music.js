@@ -1831,7 +1831,8 @@ var database = [
             base: {
                 youtube: "https://youtu.be/iHTWmGS7_Qo",
                 spotify: "https://open.spotify.com/track/7JMdz6k0WFk2aHW7myXSgQ?si=dd70f617833d4a3f",
-                deezer: "https://dzr.page.link/sXwWo2K8v7LYEUvL8"
+                deezer: "https://dzr.page.link/sXwWo2K8v7LYEUvL8",
+                itunes: "https://music.apple.com/us/album/exuberant-winter-single/1799900398"
             }
         }
     },
