@@ -1315,6 +1315,22 @@ var database = [
         }
     },
     {
+        title: "Concussion",
+        genre: "hardbass:Metalcord",
+        album: "none",
+        year: 2025,
+        originality: "original",
+        lyrics: "inst",
+        explicit: false,
+        cover: "https://i.scdn.co/image/ab6761670000ecd4be936e4ef9f2f473c44c575d",
+        link: {
+            base: {
+                youtube: "https://youtu.be/2gL89sbABng",
+                ng: "https://www.newgrounds.com/audio/listen/1400628"
+            }
+        }
+    },
+    {
         title: "Controversy",
         genre: "exp house:Bass-House",
         album: "none",
