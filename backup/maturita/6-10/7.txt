@@ -1,0 +1,1350 @@
+6.Zadanie
+
+Zistite, aký operačný systém je na počítači, na ktorom pracujete. Akým spôsobom si môžeme overiť pravosť zdrojového kódu operačného systému? Pomocou správcu úloh sledujte úlohu kalkulačky: vyhľadajte aplikáciu Kalkulačka (C:\Windows\System32\calc.exe) a zistite koľko pamäte zaberá proces calc.exe. Ako sa tento údaj mení pri minimalizovaní? Zapisuje proces kalkulačky aj na pevný disk? Aké je celkové využitie procesora a pevného disku? Popíšte funkcie operačného systému.
+
+Poznámky k úlohe:
+Operačný systém
+Operačný systém (OS) je program fungujúci ako prostredník medzi používateľmi a hardvérom (technickým vybavením) počítačového systému. Vytvára prostredie pre spúšťanie programov používateľov. Hlavným cieľom je zabezpečenie pohodlného prístupu používateľov k programom a efektívne využívanie hardvéru. Podľa širšej definície je operačný systém všetko, čo dostanete v krabici s OS – kompilátory, editory, GUI nadstavby...
+Podľa odbornej definície je OS iba program, ktorý neustále beží na počítači – tzv. výkonné
+jadro (kernel) operačného systému.
+
+Funkcie operačného systému:
+1.Správa pamäte
+oPrideľovanie pamäte procesom
+oUchováva informácie o využívaní pamäti používateľmi
+2.Správa procesov
+oPlánovanie a sledovanie procesov
+oPrideľovanie procesov
+3.Správa zariadení
+oProstredníctvom ovládačov
+oPriorita procesov, efektívne prideľovanie zariadení
+4.Správa súborov
+oRiadenie prístupu k súborom
+oSúbory usporiadané do adresárov
+oSystémy: FAT (File Allocation Table) a NTFS (New Technology File System)
+Komunikácia s používateľom
+Vykonávanie programov
+Diagnostika/ detekcia chýb
+Chybové riadenie a protokolovanie činností
+Komunikácia s inými systémami
+
+
+7. Zadanie
+
+Vytvorte rozsiahly textový dokument (nakopírujte tento učebný materiál 10 krát za sebou do jedného súboru), zapíšte si jeho veľkosť. Potom ho skomprimujte. Zapíšte si veľkosť po komprimácii. Vypočítajte kompresný pomer použitej kompresie. Experimentujte s rôznymi kompr. algoritmami. Charakterizujte kompresiu, jej význam. Aké typy kompresie poznáte?
+
+Komprimácia dát je proces, pri ktorom sa znižuje objem dát.
+Kompresný pomer  je pomer skomprimovaných dát ku neskomprimovaným. Napr. kompresný pomer 1:4 znamená, že došlo k 4-násobnému zmenšeniu objemu dát (takže 20 MB súbor má po komprimácii 5 MB, teda zmenšil sa na ¼ = 25% pôvodnej veľkosti). Komprimovať dáta má zmysel iba vtedy, ak je kompresný pomer menší ako jedna.
+Existujú dva druhy komprimácie:
+nestratová - pri ktorej nedochádza k strate údajov. To znamená, že ak skomprimované dáta dekomprimujeme, získame úplne identické dáta. Takto sa balia napríklad textové, programové a iné súbory. Kompresia sa deje na základe vynechania redundantných (nadpočetných) informácií. 
+stratová - je proces, pri ktorom sa vynechajú tie údaje, ktoré sú pre celkový dojem z dát nepodstatné, ale dáta sa už po kompresii nikdy nedajú zrekonštruovať do pôvodnej podoby, časť informácií totiž chýba. Stratová koprimácia sa používa hlavne pre komprimovanie mediálnych súborov a to zvuk (mp3), obraz (jpg), video (mpeg). Aj pri niekoľko desaťnásobnej redukcii dát je výsledok komprimácie takmer nerozoznateľný od originálu. 
+Komprimácia sa vykonáva buď automaticky (uložením súboru v komprimovanom formáte JPG, MPEG, MP3) alebo pomocou špeciálneho komprimačného programu.
+Komprimačné programy, archivácia
+Výhodou archivačných formátov ako sú RAR, ZIP, 7zip je, že dokážu do jedného balíka vložiť množstvo súborov čo je výhoda, ktorú určite oceníme napríklad pri posielaní viacerých príloh v e-maily . Ak však archivujeme súbory len za účelom zníženia ich veľkosti je dobre si uvedomiť, že komprimovať sa oplatí len súbory, na ktorých ešte nie je aplikovaná žiadna kompresia. Aj preto majú napríklad obrázky vo formáte TIFF alebo BMP po pridaní do archívu veľmi malú veľkosť, zatiaľ čo obrázky v JPG nezmenšíme takmer vôbec. To isté platí aj o hudobných súboroch. Veľmi efektívne je komprimovať textové dokumenty, databázy...
+Komprimačné (pakovacie) programy boli vyvinuté za účelom zmenšenia veľkosti súborov, pri zachovaní ich pôvodného obsahu. Ich cieľom je zmenšenie (skomprimovanie) súboru, ktorý potom zaberá podstatne menej miesta, ako jeho pôvodný tvar. So skomprimovaným súborom však nie je možné vykonávať bežné operácie, t.j. čítať ho, zapisovať a pod. Na to, aby ho bolo možné meniť, je potrebné jeho dekomprimovanie, čiže rozpakovanie - vrátenie do pôvodného stavu.
+Princíp fungovania: Predstavte si text, v ktorom sa 30 krát vyskytuje slovo archivácia. Znamená to, že takýto text zaberá 30x10=300 znakov. Keď namiesto slova archivácia použijeme nejakú značku, napr. #, ušetrí sa tým 30x9=270 znakov. Pri komprimácii sa teda každé slovo archivácia nahradí značkou # a do tabuľky kódov sa zaznačí: # = archivácia. Tým sa výrazným spôsobom zmenší veľkosť textového súboru. Komprimačné programy pritom pracujú na ešte nižšej úrovni. Namiesto opakovania znakov sledujú opakovanie bitov (0 alebo 1). Dekomprimácia je opačný proces ako komprimácia. V tomto prípade sa namiesto znakov tabuľky musia vložiť slová, ktoré zastupujú. Napr. namiesto značky # sa v komprimovanom texte vloží slovo archivácia.
+K najznámejším komprimačným programom patria: WinZIP, WinRAR
+
+8. Zadanie
+
+Vo svete existuje celý rad metód ako by ste mohli zašifrovať text. Jednou z najbežnejších metód je šifrovať text posunutím ordinálnych hodnôt daným smerom. Ide o posunutie písmen v abecede. Napr. pri posunutí  o 3 znaky s text „abc“ zašifruje na „cde“. V sifra.xlsx je text, ktorý zašifrujte posunutím ordinálnej hodnoty znaku o číslo n. Následne urobte aj dešifrovanie tohto textu. Vysvetlite pojmy kódovanie a šifrovanie. 
+Napr.: pre N=1
+P	o	k	l	a	d	j	e	u	k	r	y	t	y	v	u	č	e	b	n	i	V	T	1
+Q	p	l	m	b	e	k	f	v	l	s	z	u	z	w	v	é	f	c	o	j	W	U	2
+
+Nápoveda
+Použité funkcie char a code
+Kódovanie
+Systém zápisu určitej informácie
+je proces, pri ktorom sa každému znaku (postupnosti znakov) jednoznačne priradí znak alebo postupnosť znakov (obrazov) z iného súboru znakov
+Kto pozná kód vie informáciu odkódovať a zakódovať 
+Napr. morzeovka, ŠPZtka, digitálne inf.
+a.Písmo – jeden z kódov
+oTen, kto nepozná jednotlivé písmena a nedokáže ich spojiť do slov
+b.Binárny kód 
+oPočítače pracujú iba s digitálnymi informáciami, preto informácie, ktoré chceme spracovať pomocou počítača kódujeme
+otvar 0 a 1
+Šifrovanie
+	- Ide o utajené šírenie informácii
+	- Proces, keď obsah textu zmeníme do nezrozumiteľnej podoby
+	- Cieľ: nájdenie šifry, ktorú by nedovolene nemohli rozlúštiť
+	
+	Algoritmus
+		○ postup  na základe, ktorého sa pôvodná správa zmení na zašifrovanú a naopak
+		○ Je verejný
+		○ Väčšina algoritmov vyžaduje na šifrovanie a dešifrovanie kľúč
+	Kľúč 
+		= je utajená informácia pomocou, ktorej sa dostaneme k rozlúšteniu zašifrovanej správy 
+Kryptológia – veda zaoberajúca sa šiframi
+
+
+9. Zadanie
+
+Zistite IP adresu počítača a rýchlosť LAN siete v ktorej sa nachádza. Vysvetlite pojem IP adresa. Vypočítajte, za aký čas sa prenesie súbor veľkosti 2 GB touto sieťou na druhý počítač. Klasifikujte počítačovú sieť v učebni informatiky z hľadiska rozdelenia počítačových sietí podľa rôznych kritérií (rozlohy, úlohy počítačov v sieti, topológie,...). 
+Popíšte výhody a nevýhody pripojenia do počítačovej siete. Popíšte IP adresu.
+
+
+Nápoveda:
+
+Počítačová sieť je systém vzájomne prepojených počítačov za účelom prenosu informácií medzi nimi. Presnejšie: Počítačová sieť je súhrnné označenie technických a softwarových prostriedkov, pomocou ktorých je realizované prepojenie a výmena dát medzi počítačmi. 
+Dôvody zavádzania počítačových sietí:
+· zdieľanie údajov, 
+· zdieľanie prostriedkov 
+· zvýšenie spoľahlivosti systému.
+Služby poskytované sieťou:
+· prenos súborov, 
+· prenos správ, 
+· konverzácia medzi užívateľmi (chat), 
+· zdieľanie súborov,
+· tlač na zdieľaných tlačiarňach, 
+· ochrana údajov, 
+· spojenie s inými sieťami, 
+· práca na vzdialenej stanici, 
+· účtovanie služieb siete. 
+Časti počítačovej siete: 
+· hardware, 
+· software, 
+· organizačné zabezpečenie. 
+Hardware siete zahrňuje všetky technické prostriedky siete (počítače, routre, switche, modemy, kabeláž, sieťové karty, tlačiarne, ....) pomocou ktorých je fyzicky vybudovaná počítačová sieť. 
+Software siete potrebujú programové vybavenie, ktoré v spolupráci s hardwarom zabezpečuje funkcie siete. 
+Organizačné zabezpečenie je súbor pravidiel a opatrení správania sa používateľov pri používaní počítačovej siete.
+
+Jednoduchá síť typu peer to peer je velmi spolehlivá a její výpadek nezpůsobí vážné roblémy. Má však funkční omezení. U sítě klient–server případný výpadek serveru znamená zastavení činnosti všech stanic a ochromení informačního systému podniku. Může to znamenat i zastavení výroby, a tedy obrovské finanční ztráty. Proto jako server bývá nasazen výkonný speciální počítač, který má velmi kvalitní testované díly. Zálohování (archivace) všech dat probíhá automaticky každý den. V nejdůležitějších sítích pracují dva servery současně (paralelně), každý je přitom schopen obsloužit celou síť. Je jistě pochopitelné, že síťový server je velmi drahý počítač. 
+IP adresa – číselná adresa 
+každý počítač v sieti internet má pridelenú jednoznačnú číselnú adresu, podľa ktorej ho možno nájsť IPv4 je 32-bitová, podporuje viac ako 4 miliardy (232) adries (dnes už nepostačujúce); skladá sa zo štyroch celých čísel od 0 po 255 oddelených bodkami, napr. 192.168.1.15 
+10. Zadanie
+
+Katka má fotografiu triedy uloženú v bitmapovom súbore a chce ju poslať MMS-kou na Petrov
+mobilný telefón. Fotka má rozmery 256 x 180 pixelov (obrazových bodov) a je v nej použitých 256 farieb. MMS-ka môže mať maximálne 5 KB. Najmenej koľko MMS musí Katka poslať, ak chce poslať celú fotografiu rozloženú do viacerých MMS? V programe Excel vytvor pre Katku funkciu, kde po zadaní rozmerov a počtu farieb bude hneď vedieť počet MMS. Popíšte spôsob prenosu správ pomocou elektronickej pošty.
+
+Nápoveda
+
+Riešenie
+Rozmery fotografie sú 256 x 180 pixelov, teda počet bodov v obrázku bude: 
+256 × 180 = 46 080
+Každý bod 256 farebného obrázka zaberie 1 B pamäte (pozri úlohu 1), takže obrázok bude zaberať: 46 080 × 1 B = 46 080 B
+Jedna MMS môže zaberať 5 kB čo je v B: 5 kB × 1024 = 5 120 B
+Počet MMS vypočítame takto: 46 080 B : 5 120 B = 9
+Potrebný počet MMS je 9.
+
+Správy pre elektronickú poštu píšeme v aplikácií klienta elektronickej pošty. Po napísaní správy a zadaní e-mailovej adresy adresáta sa e-mailová správa spolu s prílohami prenáša ako jeden textový súbor (prílohy sú v ňom špeciálne zakódované) cez port 25 prostredníctvom protokolu SMTP (Simple Mail Transfer Protocol) na server odchádzajúcej pošty (outgoing server). Tento je spravidla vo vlastníctve zriaďovateľa e-mailovej schránky. Server prevezme údaje od odosielateľa a pokúsi sa správu doručiť adresátovi. Pokiaľ e-mailová adresa neobsahuje doménu, ale len názov schránky, predpokladá, že schránka adresáta je zriadená na rovnakej doméne ako schránka odosielateľa a pokúsi sa o doručenie sám. Pokiaľ sa domény odosielateľ a prijímateľa líšia, SMTP server sa spojí s DNS serverom, aby si od neho vypýtal IP adresu, na ktorú nasmeruje správu. V prípade jej prijatia cieľovým serverom sa prestane starať o jej ďalší osud. V prípade, že doručenie správy zlyhá odosielateľ o tom zvyčajne dostane správu.
+Po úspešnom doručení na cieľový server zostáva správa na ňom uložená dovtedy, pokiaľ si ju
+adresát nevyzdvihne. Na prenos doručenej správy zo servera na lokálny počítač sa používajú protokoly POP3 a IMAP.
+POP3 (Post Office Protocol version 3) pracuje na porte 110 a štandardne správy čakajúce na serveri stiahne do lokálneho počítača a tým, že ich na serveri zmaže. Vždy sa stiahnu všetky správy bez ohľadu na to, či používateľ o ne záujem má alebo nie. Doručené správy máme k dispozícii len v počítači, do ktorého sme ich stiahli.
+Protokol IMAP (Internet Message Access Protokol) umožňuje so správami pracovať priamo na serveri s tým, že používateľ po pripojení získa zo servera len hlavičky správ. Celá správa sa stiahne a zobrazí až v prípade požiadavky. Správu možno vymazať bez toho, aby ju používateľ preniesol so lokálneho počítača – vymazaním hlavičky v klientovi sa vymaže celá správa na serveri. Protokol pracuje na porte 143 a vďaka uchovávaniu správ na serveri ich máme k dispozícii pri prihlásení sa z ľubovoľného počítača. Veľmi často možno k e-mailovým schránkam pristupovať i prostredníctvom webového rozhrania, tzv. webmailu. Výhodou je, že používateľ nemusí nastavovať parametre e-mailového klienta a dostupnosť z ľubovoľného miesta na svete, nevýhodou menší komfort a pohodlie používateľa.
+
+6.Zadanie
+
+Zistite, aký operačný systém je na počítači, na ktorom pracujete. Akým spôsobom si môžeme overiť pravosť zdrojového kódu operačného systému? Pomocou správcu úloh sledujte úlohu kalkulačky: vyhľadajte aplikáciu Kalkulačka (C:\Windows\System32\calc.exe) a zistite koľko pamäte zaberá proces calc.exe. Ako sa tento údaj mení pri minimalizovaní? Zapisuje proces kalkulačky aj na pevný disk? Aké je celkové využitie procesora a pevného disku? Popíšte funkcie operačného systému.
+
+Poznámky k úlohe:
+Operačný systém
+Operačný systém (OS) je program fungujúci ako prostredník medzi používateľmi a hardvérom (technickým vybavením) počítačového systému. Vytvára prostredie pre spúšťanie programov používateľov. Hlavným cieľom je zabezpečenie pohodlného prístupu používateľov k programom a efektívne využívanie hardvéru. Podľa širšej definície je operačný systém všetko, čo dostanete v krabici s OS – kompilátory, editory, GUI nadstavby...
+Podľa odbornej definície je OS iba program, ktorý neustále beží na počítači – tzv. výkonné
+jadro (kernel) operačného systému.
+
+Funkcie operačného systému:
+1.Správa pamäte
+oPrideľovanie pamäte procesom
+oUchováva informácie o využívaní pamäti používateľmi
+2.Správa procesov
+oPlánovanie a sledovanie procesov
+oPrideľovanie procesov
+3.Správa zariadení
+oProstredníctvom ovládačov
+oPriorita procesov, efektívne prideľovanie zariadení
+4.Správa súborov
+oRiadenie prístupu k súborom
+oSúbory usporiadané do adresárov
+oSystémy: FAT (File Allocation Table) a NTFS (New Technology File System)
+Komunikácia s používateľom
+Vykonávanie programov
+Diagnostika/ detekcia chýb
+Chybové riadenie a protokolovanie činností
+Komunikácia s inými systémami
+
+
+7. Zadanie
+
+Vytvorte rozsiahly textový dokument (nakopírujte tento učebný materiál 10 krát za sebou do jedného súboru), zapíšte si jeho veľkosť. Potom ho skomprimujte. Zapíšte si veľkosť po komprimácii. Vypočítajte kompresný pomer použitej kompresie. Experimentujte s rôznymi kompr. algoritmami. Charakterizujte kompresiu, jej význam. Aké typy kompresie poznáte?
+
+Komprimácia dát je proces, pri ktorom sa znižuje objem dát.
+Kompresný pomer  je pomer skomprimovaných dát ku neskomprimovaným. Napr. kompresný pomer 1:4 znamená, že došlo k 4-násobnému zmenšeniu objemu dát (takže 20 MB súbor má po komprimácii 5 MB, teda zmenšil sa na ¼ = 25% pôvodnej veľkosti). Komprimovať dáta má zmysel iba vtedy, ak je kompresný pomer menší ako jedna.
+Existujú dva druhy komprimácie:
+nestratová - pri ktorej nedochádza k strate údajov. To znamená, že ak skomprimované dáta dekomprimujeme, získame úplne identické dáta. Takto sa balia napríklad textové, programové a iné súbory. Kompresia sa deje na základe vynechania redundantných (nadpočetných) informácií. 
+stratová - je proces, pri ktorom sa vynechajú tie údaje, ktoré sú pre celkový dojem z dát nepodstatné, ale dáta sa už po kompresii nikdy nedajú zrekonštruovať do pôvodnej podoby, časť informácií totiž chýba. Stratová koprimácia sa používa hlavne pre komprimovanie mediálnych súborov a to zvuk (mp3), obraz (jpg), video (mpeg). Aj pri niekoľko desaťnásobnej redukcii dát je výsledok komprimácie takmer nerozoznateľný od originálu. 
+Komprimácia sa vykonáva buď automaticky (uložením súboru v komprimovanom formáte JPG, MPEG, MP3) alebo pomocou špeciálneho komprimačného programu.
+Komprimačné programy, archivácia
+Výhodou archivačných formátov ako sú RAR, ZIP, 7zip je, že dokážu do jedného balíka vložiť množstvo súborov čo je výhoda, ktorú určite oceníme napríklad pri posielaní viacerých príloh v e-maily . Ak však archivujeme súbory len za účelom zníženia ich veľkosti je dobre si uvedomiť, že komprimovať sa oplatí len súbory, na ktorých ešte nie je aplikovaná žiadna kompresia. Aj preto majú napríklad obrázky vo formáte TIFF alebo BMP po pridaní do archívu veľmi malú veľkosť, zatiaľ čo obrázky v JPG nezmenšíme takmer vôbec. To isté platí aj o hudobných súboroch. Veľmi efektívne je komprimovať textové dokumenty, databázy...
+Komprimačné (pakovacie) programy boli vyvinuté za účelom zmenšenia veľkosti súborov, pri zachovaní ich pôvodného obsahu. Ich cieľom je zmenšenie (skomprimovanie) súboru, ktorý potom zaberá podstatne menej miesta, ako jeho pôvodný tvar. So skomprimovaným súborom však nie je možné vykonávať bežné operácie, t.j. čítať ho, zapisovať a pod. Na to, aby ho bolo možné meniť, je potrebné jeho dekomprimovanie, čiže rozpakovanie - vrátenie do pôvodného stavu.
+Princíp fungovania: Predstavte si text, v ktorom sa 30 krát vyskytuje slovo archivácia. Znamená to, že takýto text zaberá 30x10=300 znakov. Keď namiesto slova archivácia použijeme nejakú značku, napr. #, ušetrí sa tým 30x9=270 znakov. Pri komprimácii sa teda každé slovo archivácia nahradí značkou # a do tabuľky kódov sa zaznačí: # = archivácia. Tým sa výrazným spôsobom zmenší veľkosť textového súboru. Komprimačné programy pritom pracujú na ešte nižšej úrovni. Namiesto opakovania znakov sledujú opakovanie bitov (0 alebo 1). Dekomprimácia je opačný proces ako komprimácia. V tomto prípade sa namiesto znakov tabuľky musia vložiť slová, ktoré zastupujú. Napr. namiesto značky # sa v komprimovanom texte vloží slovo archivácia.
+K najznámejším komprimačným programom patria: WinZIP, WinRAR
+
+8. Zadanie
+
+Vo svete existuje celý rad metód ako by ste mohli zašifrovať text. Jednou z najbežnejších metód je šifrovať text posunutím ordinálnych hodnôt daným smerom. Ide o posunutie písmen v abecede. Napr. pri posunutí  o 3 znaky s text „abc“ zašifruje na „cde“. V sifra.xlsx je text, ktorý zašifrujte posunutím ordinálnej hodnoty znaku o číslo n. Následne urobte aj dešifrovanie tohto textu. Vysvetlite pojmy kódovanie a šifrovanie. 
+Napr.: pre N=1
+P	o	k	l	a	d	j	e	u	k	r	y	t	y	v	u	č	e	b	n	i	V	T	1
+Q	p	l	m	b	e	k	f	v	l	s	z	u	z	w	v	é	f	c	o	j	W	U	2
+
+Nápoveda
+Použité funkcie char a code
+Kódovanie
+Systém zápisu určitej informácie
+je proces, pri ktorom sa každému znaku (postupnosti znakov) jednoznačne priradí znak alebo postupnosť znakov (obrazov) z iného súboru znakov
+Kto pozná kód vie informáciu odkódovať a zakódovať 
+Napr. morzeovka, ŠPZtka, digitálne inf.
+a.Písmo – jeden z kódov
+oTen, kto nepozná jednotlivé písmena a nedokáže ich spojiť do slov
+b.Binárny kód 
+oPočítače pracujú iba s digitálnymi informáciami, preto informácie, ktoré chceme spracovať pomocou počítača kódujeme
+otvar 0 a 1
+Šifrovanie
+	- Ide o utajené šírenie informácii
+	- Proces, keď obsah textu zmeníme do nezrozumiteľnej podoby
+	- Cieľ: nájdenie šifry, ktorú by nedovolene nemohli rozlúštiť
+	
+	Algoritmus
+		○ postup  na základe, ktorého sa pôvodná správa zmení na zašifrovanú a naopak
+		○ Je verejný
+		○ Väčšina algoritmov vyžaduje na šifrovanie a dešifrovanie kľúč
+	Kľúč 
+		= je utajená informácia pomocou, ktorej sa dostaneme k rozlúšteniu zašifrovanej správy 
+Kryptológia – veda zaoberajúca sa šiframi
+
+
+9. Zadanie
+
+Zistite IP adresu počítača a rýchlosť LAN siete v ktorej sa nachádza. Vysvetlite pojem IP adresa. Vypočítajte, za aký čas sa prenesie súbor veľkosti 2 GB touto sieťou na druhý počítač. Klasifikujte počítačovú sieť v učebni informatiky z hľadiska rozdelenia počítačových sietí podľa rôznych kritérií (rozlohy, úlohy počítačov v sieti, topológie,...). 
+Popíšte výhody a nevýhody pripojenia do počítačovej siete. Popíšte IP adresu.
+
+
+Nápoveda:
+
+Počítačová sieť je systém vzájomne prepojených počítačov za účelom prenosu informácií medzi nimi. Presnejšie: Počítačová sieť je súhrnné označenie technických a softwarových prostriedkov, pomocou ktorých je realizované prepojenie a výmena dát medzi počítačmi. 
+Dôvody zavádzania počítačových sietí:
+· zdieľanie údajov, 
+· zdieľanie prostriedkov 
+· zvýšenie spoľahlivosti systému.
+Služby poskytované sieťou:
+· prenos súborov, 
+· prenos správ, 
+· konverzácia medzi užívateľmi (chat), 
+· zdieľanie súborov,
+· tlač na zdieľaných tlačiarňach, 
+· ochrana údajov, 
+· spojenie s inými sieťami, 
+· práca na vzdialenej stanici, 
+· účtovanie služieb siete. 
+Časti počítačovej siete: 
+· hardware, 
+· software, 
+· organizačné zabezpečenie. 
+Hardware siete zahrňuje všetky technické prostriedky siete (počítače, routre, switche, modemy, kabeláž, sieťové karty, tlačiarne, ....) pomocou ktorých je fyzicky vybudovaná počítačová sieť. 
+Software siete potrebujú programové vybavenie, ktoré v spolupráci s hardwarom zabezpečuje funkcie siete. 
+Organizačné zabezpečenie je súbor pravidiel a opatrení správania sa používateľov pri používaní počítačovej siete.
+
+Jednoduchá síť typu peer to peer je velmi spolehlivá a její výpadek nezpůsobí vážné roblémy. Má však funkční omezení. U sítě klient–server případný výpadek serveru znamená zastavení činnosti všech stanic a ochromení informačního systému podniku. Může to znamenat i zastavení výroby, a tedy obrovské finanční ztráty. Proto jako server bývá nasazen výkonný speciální počítač, který má velmi kvalitní testované díly. Zálohování (archivace) všech dat probíhá automaticky každý den. V nejdůležitějších sítích pracují dva servery současně (paralelně), každý je přitom schopen obsloužit celou síť. Je jistě pochopitelné, že síťový server je velmi drahý počítač. 
+IP adresa – číselná adresa 
+každý počítač v sieti internet má pridelenú jednoznačnú číselnú adresu, podľa ktorej ho možno nájsť IPv4 je 32-bitová, podporuje viac ako 4 miliardy (232) adries (dnes už nepostačujúce); skladá sa zo štyroch celých čísel od 0 po 255 oddelených bodkami, napr. 192.168.1.15 
+10. Zadanie
+
+Katka má fotografiu triedy uloženú v bitmapovom súbore a chce ju poslať MMS-kou na Petrov
+mobilný telefón. Fotka má rozmery 256 x 180 pixelov (obrazových bodov) a je v nej použitých 256 farieb. MMS-ka môže mať maximálne 5 KB. Najmenej koľko MMS musí Katka poslať, ak chce poslať celú fotografiu rozloženú do viacerých MMS? V programe Excel vytvor pre Katku funkciu, kde po zadaní rozmerov a počtu farieb bude hneď vedieť počet MMS. Popíšte spôsob prenosu správ pomocou elektronickej pošty.
+
+Nápoveda
+
+Riešenie
+Rozmery fotografie sú 256 x 180 pixelov, teda počet bodov v obrázku bude: 
+256 × 180 = 46 080
+Každý bod 256 farebného obrázka zaberie 1 B pamäte (pozri úlohu 1), takže obrázok bude zaberať: 46 080 × 1 B = 46 080 B
+Jedna MMS môže zaberať 5 kB čo je v B: 5 kB × 1024 = 5 120 B
+Počet MMS vypočítame takto: 46 080 B : 5 120 B = 9
+Potrebný počet MMS je 9.
+
+Správy pre elektronickú poštu píšeme v aplikácií klienta elektronickej pošty. Po napísaní správy a zadaní e-mailovej adresy adresáta sa e-mailová správa spolu s prílohami prenáša ako jeden textový súbor (prílohy sú v ňom špeciálne zakódované) cez port 25 prostredníctvom protokolu SMTP (Simple Mail Transfer Protocol) na server odchádzajúcej pošty (outgoing server). Tento je spravidla vo vlastníctve zriaďovateľa e-mailovej schránky. Server prevezme údaje od odosielateľa a pokúsi sa správu doručiť adresátovi. Pokiaľ e-mailová adresa neobsahuje doménu, ale len názov schránky, predpokladá, že schránka adresáta je zriadená na rovnakej doméne ako schránka odosielateľa a pokúsi sa o doručenie sám. Pokiaľ sa domény odosielateľ a prijímateľa líšia, SMTP server sa spojí s DNS serverom, aby si od neho vypýtal IP adresu, na ktorú nasmeruje správu. V prípade jej prijatia cieľovým serverom sa prestane starať o jej ďalší osud. V prípade, že doručenie správy zlyhá odosielateľ o tom zvyčajne dostane správu.
+Po úspešnom doručení na cieľový server zostáva správa na ňom uložená dovtedy, pokiaľ si ju
+adresát nevyzdvihne. Na prenos doručenej správy zo servera na lokálny počítač sa používajú protokoly POP3 a IMAP.
+POP3 (Post Office Protocol version 3) pracuje na porte 110 a štandardne správy čakajúce na serveri stiahne do lokálneho počítača a tým, že ich na serveri zmaže. Vždy sa stiahnu všetky správy bez ohľadu na to, či používateľ o ne záujem má alebo nie. Doručené správy máme k dispozícii len v počítači, do ktorého sme ich stiahli.
+Protokol IMAP (Internet Message Access Protokol) umožňuje so správami pracovať priamo na serveri s tým, že používateľ po pripojení získa zo servera len hlavičky správ. Celá správa sa stiahne a zobrazí až v prípade požiadavky. Správu možno vymazať bez toho, aby ju používateľ preniesol so lokálneho počítača – vymazaním hlavičky v klientovi sa vymaže celá správa na serveri. Protokol pracuje na porte 143 a vďaka uchovávaniu správ na serveri ich máme k dispozícii pri prihlásení sa z ľubovoľného počítača. Veľmi často možno k e-mailovým schránkam pristupovať i prostredníctvom webového rozhrania, tzv. webmailu. Výhodou je, že používateľ nemusí nastavovať parametre e-mailového klienta a dostupnosť z ľubovoľného miesta na svete, nevýhodou menší komfort a pohodlie používateľa.
+
+6.Zadanie
+
+Zistite, aký operačný systém je na počítači, na ktorom pracujete. Akým spôsobom si môžeme overiť pravosť zdrojového kódu operačného systému? Pomocou správcu úloh sledujte úlohu kalkulačky: vyhľadajte aplikáciu Kalkulačka (C:\Windows\System32\calc.exe) a zistite koľko pamäte zaberá proces calc.exe. Ako sa tento údaj mení pri minimalizovaní? Zapisuje proces kalkulačky aj na pevný disk? Aké je celkové využitie procesora a pevného disku? Popíšte funkcie operačného systému.
+
+Poznámky k úlohe:
+Operačný systém
+Operačný systém (OS) je program fungujúci ako prostredník medzi používateľmi a hardvérom (technickým vybavením) počítačového systému. Vytvára prostredie pre spúšťanie programov používateľov. Hlavným cieľom je zabezpečenie pohodlného prístupu používateľov k programom a efektívne využívanie hardvéru. Podľa širšej definície je operačný systém všetko, čo dostanete v krabici s OS – kompilátory, editory, GUI nadstavby...
+Podľa odbornej definície je OS iba program, ktorý neustále beží na počítači – tzv. výkonné
+jadro (kernel) operačného systému.
+
+Funkcie operačného systému:
+1.Správa pamäte
+oPrideľovanie pamäte procesom
+oUchováva informácie o využívaní pamäti používateľmi
+2.Správa procesov
+oPlánovanie a sledovanie procesov
+oPrideľovanie procesov
+3.Správa zariadení
+oProstredníctvom ovládačov
+oPriorita procesov, efektívne prideľovanie zariadení
+4.Správa súborov
+oRiadenie prístupu k súborom
+oSúbory usporiadané do adresárov
+oSystémy: FAT (File Allocation Table) a NTFS (New Technology File System)
+Komunikácia s používateľom
+Vykonávanie programov
+Diagnostika/ detekcia chýb
+Chybové riadenie a protokolovanie činností
+Komunikácia s inými systémami
+
+
+7. Zadanie
+
+Vytvorte rozsiahly textový dokument (nakopírujte tento učebný materiál 10 krát za sebou do jedného súboru), zapíšte si jeho veľkosť. Potom ho skomprimujte. Zapíšte si veľkosť po komprimácii. Vypočítajte kompresný pomer použitej kompresie. Experimentujte s rôznymi kompr. algoritmami. Charakterizujte kompresiu, jej význam. Aké typy kompresie poznáte?
+
+Komprimácia dát je proces, pri ktorom sa znižuje objem dát.
+Kompresný pomer  je pomer skomprimovaných dát ku neskomprimovaným. Napr. kompresný pomer 1:4 znamená, že došlo k 4-násobnému zmenšeniu objemu dát (takže 20 MB súbor má po komprimácii 5 MB, teda zmenšil sa na ¼ = 25% pôvodnej veľkosti). Komprimovať dáta má zmysel iba vtedy, ak je kompresný pomer menší ako jedna.
+Existujú dva druhy komprimácie:
+nestratová - pri ktorej nedochádza k strate údajov. To znamená, že ak skomprimované dáta dekomprimujeme, získame úplne identické dáta. Takto sa balia napríklad textové, programové a iné súbory. Kompresia sa deje na základe vynechania redundantných (nadpočetných) informácií. 
+stratová - je proces, pri ktorom sa vynechajú tie údaje, ktoré sú pre celkový dojem z dát nepodstatné, ale dáta sa už po kompresii nikdy nedajú zrekonštruovať do pôvodnej podoby, časť informácií totiž chýba. Stratová koprimácia sa používa hlavne pre komprimovanie mediálnych súborov a to zvuk (mp3), obraz (jpg), video (mpeg). Aj pri niekoľko desaťnásobnej redukcii dát je výsledok komprimácie takmer nerozoznateľný od originálu. 
+Komprimácia sa vykonáva buď automaticky (uložením súboru v komprimovanom formáte JPG, MPEG, MP3) alebo pomocou špeciálneho komprimačného programu.
+Komprimačné programy, archivácia
+Výhodou archivačných formátov ako sú RAR, ZIP, 7zip je, že dokážu do jedného balíka vložiť množstvo súborov čo je výhoda, ktorú určite oceníme napríklad pri posielaní viacerých príloh v e-maily . Ak však archivujeme súbory len za účelom zníženia ich veľkosti je dobre si uvedomiť, že komprimovať sa oplatí len súbory, na ktorých ešte nie je aplikovaná žiadna kompresia. Aj preto majú napríklad obrázky vo formáte TIFF alebo BMP po pridaní do archívu veľmi malú veľkosť, zatiaľ čo obrázky v JPG nezmenšíme takmer vôbec. To isté platí aj o hudobných súboroch. Veľmi efektívne je komprimovať textové dokumenty, databázy...
+Komprimačné (pakovacie) programy boli vyvinuté za účelom zmenšenia veľkosti súborov, pri zachovaní ich pôvodného obsahu. Ich cieľom je zmenšenie (skomprimovanie) súboru, ktorý potom zaberá podstatne menej miesta, ako jeho pôvodný tvar. So skomprimovaným súborom však nie je možné vykonávať bežné operácie, t.j. čítať ho, zapisovať a pod. Na to, aby ho bolo možné meniť, je potrebné jeho dekomprimovanie, čiže rozpakovanie - vrátenie do pôvodného stavu.
+Princíp fungovania: Predstavte si text, v ktorom sa 30 krát vyskytuje slovo archivácia. Znamená to, že takýto text zaberá 30x10=300 znakov. Keď namiesto slova archivácia použijeme nejakú značku, napr. #, ušetrí sa tým 30x9=270 znakov. Pri komprimácii sa teda každé slovo archivácia nahradí značkou # a do tabuľky kódov sa zaznačí: # = archivácia. Tým sa výrazným spôsobom zmenší veľkosť textového súboru. Komprimačné programy pritom pracujú na ešte nižšej úrovni. Namiesto opakovania znakov sledujú opakovanie bitov (0 alebo 1). Dekomprimácia je opačný proces ako komprimácia. V tomto prípade sa namiesto znakov tabuľky musia vložiť slová, ktoré zastupujú. Napr. namiesto značky # sa v komprimovanom texte vloží slovo archivácia.
+K najznámejším komprimačným programom patria: WinZIP, WinRAR
+
+8. Zadanie
+
+Vo svete existuje celý rad metód ako by ste mohli zašifrovať text. Jednou z najbežnejších metód je šifrovať text posunutím ordinálnych hodnôt daným smerom. Ide o posunutie písmen v abecede. Napr. pri posunutí  o 3 znaky s text „abc“ zašifruje na „cde“. V sifra.xlsx je text, ktorý zašifrujte posunutím ordinálnej hodnoty znaku o číslo n. Následne urobte aj dešifrovanie tohto textu. Vysvetlite pojmy kódovanie a šifrovanie. 
+Napr.: pre N=1
+P	o	k	l	a	d	j	e	u	k	r	y	t	y	v	u	č	e	b	n	i	V	T	1
+Q	p	l	m	b	e	k	f	v	l	s	z	u	z	w	v	é	f	c	o	j	W	U	2
+
+Nápoveda
+Použité funkcie char a code
+Kódovanie
+Systém zápisu určitej informácie
+je proces, pri ktorom sa každému znaku (postupnosti znakov) jednoznačne priradí znak alebo postupnosť znakov (obrazov) z iného súboru znakov
+Kto pozná kód vie informáciu odkódovať a zakódovať 
+Napr. morzeovka, ŠPZtka, digitálne inf.
+a.Písmo – jeden z kódov
+oTen, kto nepozná jednotlivé písmena a nedokáže ich spojiť do slov
+b.Binárny kód 
+oPočítače pracujú iba s digitálnymi informáciami, preto informácie, ktoré chceme spracovať pomocou počítača kódujeme
+otvar 0 a 1
+Šifrovanie
+	- Ide o utajené šírenie informácii
+	- Proces, keď obsah textu zmeníme do nezrozumiteľnej podoby
+	- Cieľ: nájdenie šifry, ktorú by nedovolene nemohli rozlúštiť
+	
+	Algoritmus
+		○ postup  na základe, ktorého sa pôvodná správa zmení na zašifrovanú a naopak
+		○ Je verejný
+		○ Väčšina algoritmov vyžaduje na šifrovanie a dešifrovanie kľúč
+	Kľúč 
+		= je utajená informácia pomocou, ktorej sa dostaneme k rozlúšteniu zašifrovanej správy 
+Kryptológia – veda zaoberajúca sa šiframi
+
+
+9. Zadanie
+
+Zistite IP adresu počítača a rýchlosť LAN siete v ktorej sa nachádza. Vysvetlite pojem IP adresa. Vypočítajte, za aký čas sa prenesie súbor veľkosti 2 GB touto sieťou na druhý počítač. Klasifikujte počítačovú sieť v učebni informatiky z hľadiska rozdelenia počítačových sietí podľa rôznych kritérií (rozlohy, úlohy počítačov v sieti, topológie,...). 
+Popíšte výhody a nevýhody pripojenia do počítačovej siete. Popíšte IP adresu.
+
+
+Nápoveda:
+
+Počítačová sieť je systém vzájomne prepojených počítačov za účelom prenosu informácií medzi nimi. Presnejšie: Počítačová sieť je súhrnné označenie technických a softwarových prostriedkov, pomocou ktorých je realizované prepojenie a výmena dát medzi počítačmi. 
+Dôvody zavádzania počítačových sietí:
+· zdieľanie údajov, 
+· zdieľanie prostriedkov 
+· zvýšenie spoľahlivosti systému.
+Služby poskytované sieťou:
+· prenos súborov, 
+· prenos správ, 
+· konverzácia medzi užívateľmi (chat), 
+· zdieľanie súborov,
+· tlač na zdieľaných tlačiarňach, 
+· ochrana údajov, 
+· spojenie s inými sieťami, 
+· práca na vzdialenej stanici, 
+· účtovanie služieb siete. 
+Časti počítačovej siete: 
+· hardware, 
+· software, 
+· organizačné zabezpečenie. 
+Hardware siete zahrňuje všetky technické prostriedky siete (počítače, routre, switche, modemy, kabeláž, sieťové karty, tlačiarne, ....) pomocou ktorých je fyzicky vybudovaná počítačová sieť. 
+Software siete potrebujú programové vybavenie, ktoré v spolupráci s hardwarom zabezpečuje funkcie siete. 
+Organizačné zabezpečenie je súbor pravidiel a opatrení správania sa používateľov pri používaní počítačovej siete.
+
+Jednoduchá síť typu peer to peer je velmi spolehlivá a její výpadek nezpůsobí vážné roblémy. Má však funkční omezení. U sítě klient–server případný výpadek serveru znamená zastavení činnosti všech stanic a ochromení informačního systému podniku. Může to znamenat i zastavení výroby, a tedy obrovské finanční ztráty. Proto jako server bývá nasazen výkonný speciální počítač, který má velmi kvalitní testované díly. Zálohování (archivace) všech dat probíhá automaticky každý den. V nejdůležitějších sítích pracují dva servery současně (paralelně), každý je přitom schopen obsloužit celou síť. Je jistě pochopitelné, že síťový server je velmi drahý počítač. 
+IP adresa – číselná adresa 
+každý počítač v sieti internet má pridelenú jednoznačnú číselnú adresu, podľa ktorej ho možno nájsť IPv4 je 32-bitová, podporuje viac ako 4 miliardy (232) adries (dnes už nepostačujúce); skladá sa zo štyroch celých čísel od 0 po 255 oddelených bodkami, napr. 192.168.1.15 
+10. Zadanie
+
+Katka má fotografiu triedy uloženú v bitmapovom súbore a chce ju poslať MMS-kou na Petrov
+mobilný telefón. Fotka má rozmery 256 x 180 pixelov (obrazových bodov) a je v nej použitých 256 farieb. MMS-ka môže mať maximálne 5 KB. Najmenej koľko MMS musí Katka poslať, ak chce poslať celú fotografiu rozloženú do viacerých MMS? V programe Excel vytvor pre Katku funkciu, kde po zadaní rozmerov a počtu farieb bude hneď vedieť počet MMS. Popíšte spôsob prenosu správ pomocou elektronickej pošty.
+
+Nápoveda
+
+Riešenie
+Rozmery fotografie sú 256 x 180 pixelov, teda počet bodov v obrázku bude: 
+256 × 180 = 46 080
+Každý bod 256 farebného obrázka zaberie 1 B pamäte (pozri úlohu 1), takže obrázok bude zaberať: 46 080 × 1 B = 46 080 B
+Jedna MMS môže zaberať 5 kB čo je v B: 5 kB × 1024 = 5 120 B
+Počet MMS vypočítame takto: 46 080 B : 5 120 B = 9
+Potrebný počet MMS je 9.
+
+Správy pre elektronickú poštu píšeme v aplikácií klienta elektronickej pošty. Po napísaní správy a zadaní e-mailovej adresy adresáta sa e-mailová správa spolu s prílohami prenáša ako jeden textový súbor (prílohy sú v ňom špeciálne zakódované) cez port 25 prostredníctvom protokolu SMTP (Simple Mail Transfer Protocol) na server odchádzajúcej pošty (outgoing server). Tento je spravidla vo vlastníctve zriaďovateľa e-mailovej schránky. Server prevezme údaje od odosielateľa a pokúsi sa správu doručiť adresátovi. Pokiaľ e-mailová adresa neobsahuje doménu, ale len názov schránky, predpokladá, že schránka adresáta je zriadená na rovnakej doméne ako schránka odosielateľa a pokúsi sa o doručenie sám. Pokiaľ sa domény odosielateľ a prijímateľa líšia, SMTP server sa spojí s DNS serverom, aby si od neho vypýtal IP adresu, na ktorú nasmeruje správu. V prípade jej prijatia cieľovým serverom sa prestane starať o jej ďalší osud. V prípade, že doručenie správy zlyhá odosielateľ o tom zvyčajne dostane správu.
+Po úspešnom doručení na cieľový server zostáva správa na ňom uložená dovtedy, pokiaľ si ju
+adresát nevyzdvihne. Na prenos doručenej správy zo servera na lokálny počítač sa používajú protokoly POP3 a IMAP.
+POP3 (Post Office Protocol version 3) pracuje na porte 110 a štandardne správy čakajúce na serveri stiahne do lokálneho počítača a tým, že ich na serveri zmaže. Vždy sa stiahnu všetky správy bez ohľadu na to, či používateľ o ne záujem má alebo nie. Doručené správy máme k dispozícii len v počítači, do ktorého sme ich stiahli.
+Protokol IMAP (Internet Message Access Protokol) umožňuje so správami pracovať priamo na serveri s tým, že používateľ po pripojení získa zo servera len hlavičky správ. Celá správa sa stiahne a zobrazí až v prípade požiadavky. Správu možno vymazať bez toho, aby ju používateľ preniesol so lokálneho počítača – vymazaním hlavičky v klientovi sa vymaže celá správa na serveri. Protokol pracuje na porte 143 a vďaka uchovávaniu správ na serveri ich máme k dispozícii pri prihlásení sa z ľubovoľného počítača. Veľmi často možno k e-mailovým schránkam pristupovať i prostredníctvom webového rozhrania, tzv. webmailu. Výhodou je, že používateľ nemusí nastavovať parametre e-mailového klienta a dostupnosť z ľubovoľného miesta na svete, nevýhodou menší komfort a pohodlie používateľa.
+
+6.Zadanie
+
+Zistite, aký operačný systém je na počítači, na ktorom pracujete. Akým spôsobom si môžeme overiť pravosť zdrojového kódu operačného systému? Pomocou správcu úloh sledujte úlohu kalkulačky: vyhľadajte aplikáciu Kalkulačka (C:\Windows\System32\calc.exe) a zistite koľko pamäte zaberá proces calc.exe. Ako sa tento údaj mení pri minimalizovaní? Zapisuje proces kalkulačky aj na pevný disk? Aké je celkové využitie procesora a pevného disku? Popíšte funkcie operačného systému.
+
+Poznámky k úlohe:
+Operačný systém
+Operačný systém (OS) je program fungujúci ako prostredník medzi používateľmi a hardvérom (technickým vybavením) počítačového systému. Vytvára prostredie pre spúšťanie programov používateľov. Hlavným cieľom je zabezpečenie pohodlného prístupu používateľov k programom a efektívne využívanie hardvéru. Podľa širšej definície je operačný systém všetko, čo dostanete v krabici s OS – kompilátory, editory, GUI nadstavby...
+Podľa odbornej definície je OS iba program, ktorý neustále beží na počítači – tzv. výkonné
+jadro (kernel) operačného systému.
+
+Funkcie operačného systému:
+1.Správa pamäte
+oPrideľovanie pamäte procesom
+oUchováva informácie o využívaní pamäti používateľmi
+2.Správa procesov
+oPlánovanie a sledovanie procesov
+oPrideľovanie procesov
+3.Správa zariadení
+oProstredníctvom ovládačov
+oPriorita procesov, efektívne prideľovanie zariadení
+4.Správa súborov
+oRiadenie prístupu k súborom
+oSúbory usporiadané do adresárov
+oSystémy: FAT (File Allocation Table) a NTFS (New Technology File System)
+Komunikácia s používateľom
+Vykonávanie programov
+Diagnostika/ detekcia chýb
+Chybové riadenie a protokolovanie činností
+Komunikácia s inými systémami
+
+
+7. Zadanie
+
+Vytvorte rozsiahly textový dokument (nakopírujte tento učebný materiál 10 krát za sebou do jedného súboru), zapíšte si jeho veľkosť. Potom ho skomprimujte. Zapíšte si veľkosť po komprimácii. Vypočítajte kompresný pomer použitej kompresie. Experimentujte s rôznymi kompr. algoritmami. Charakterizujte kompresiu, jej význam. Aké typy kompresie poznáte?
+
+Komprimácia dát je proces, pri ktorom sa znižuje objem dát.
+Kompresný pomer  je pomer skomprimovaných dát ku neskomprimovaným. Napr. kompresný pomer 1:4 znamená, že došlo k 4-násobnému zmenšeniu objemu dát (takže 20 MB súbor má po komprimácii 5 MB, teda zmenšil sa na ¼ = 25% pôvodnej veľkosti). Komprimovať dáta má zmysel iba vtedy, ak je kompresný pomer menší ako jedna.
+Existujú dva druhy komprimácie:
+nestratová - pri ktorej nedochádza k strate údajov. To znamená, že ak skomprimované dáta dekomprimujeme, získame úplne identické dáta. Takto sa balia napríklad textové, programové a iné súbory. Kompresia sa deje na základe vynechania redundantných (nadpočetných) informácií. 
+stratová - je proces, pri ktorom sa vynechajú tie údaje, ktoré sú pre celkový dojem z dát nepodstatné, ale dáta sa už po kompresii nikdy nedajú zrekonštruovať do pôvodnej podoby, časť informácií totiž chýba. Stratová koprimácia sa používa hlavne pre komprimovanie mediálnych súborov a to zvuk (mp3), obraz (jpg), video (mpeg). Aj pri niekoľko desaťnásobnej redukcii dát je výsledok komprimácie takmer nerozoznateľný od originálu. 
+Komprimácia sa vykonáva buď automaticky (uložením súboru v komprimovanom formáte JPG, MPEG, MP3) alebo pomocou špeciálneho komprimačného programu.
+Komprimačné programy, archivácia
+Výhodou archivačných formátov ako sú RAR, ZIP, 7zip je, že dokážu do jedného balíka vložiť množstvo súborov čo je výhoda, ktorú určite oceníme napríklad pri posielaní viacerých príloh v e-maily . Ak však archivujeme súbory len za účelom zníženia ich veľkosti je dobre si uvedomiť, že komprimovať sa oplatí len súbory, na ktorých ešte nie je aplikovaná žiadna kompresia. Aj preto majú napríklad obrázky vo formáte TIFF alebo BMP po pridaní do archívu veľmi malú veľkosť, zatiaľ čo obrázky v JPG nezmenšíme takmer vôbec. To isté platí aj o hudobných súboroch. Veľmi efektívne je komprimovať textové dokumenty, databázy...
+Komprimačné (pakovacie) programy boli vyvinuté za účelom zmenšenia veľkosti súborov, pri zachovaní ich pôvodného obsahu. Ich cieľom je zmenšenie (skomprimovanie) súboru, ktorý potom zaberá podstatne menej miesta, ako jeho pôvodný tvar. So skomprimovaným súborom však nie je možné vykonávať bežné operácie, t.j. čítať ho, zapisovať a pod. Na to, aby ho bolo možné meniť, je potrebné jeho dekomprimovanie, čiže rozpakovanie - vrátenie do pôvodného stavu.
+Princíp fungovania: Predstavte si text, v ktorom sa 30 krát vyskytuje slovo archivácia. Znamená to, že takýto text zaberá 30x10=300 znakov. Keď namiesto slova archivácia použijeme nejakú značku, napr. #, ušetrí sa tým 30x9=270 znakov. Pri komprimácii sa teda každé slovo archivácia nahradí značkou # a do tabuľky kódov sa zaznačí: # = archivácia. Tým sa výrazným spôsobom zmenší veľkosť textového súboru. Komprimačné programy pritom pracujú na ešte nižšej úrovni. Namiesto opakovania znakov sledujú opakovanie bitov (0 alebo 1). Dekomprimácia je opačný proces ako komprimácia. V tomto prípade sa namiesto znakov tabuľky musia vložiť slová, ktoré zastupujú. Napr. namiesto značky # sa v komprimovanom texte vloží slovo archivácia.
+K najznámejším komprimačným programom patria: WinZIP, WinRAR
+
+8. Zadanie
+
+Vo svete existuje celý rad metód ako by ste mohli zašifrovať text. Jednou z najbežnejších metód je šifrovať text posunutím ordinálnych hodnôt daným smerom. Ide o posunutie písmen v abecede. Napr. pri posunutí  o 3 znaky s text „abc“ zašifruje na „cde“. V sifra.xlsx je text, ktorý zašifrujte posunutím ordinálnej hodnoty znaku o číslo n. Následne urobte aj dešifrovanie tohto textu. Vysvetlite pojmy kódovanie a šifrovanie. 
+Napr.: pre N=1
+P	o	k	l	a	d	j	e	u	k	r	y	t	y	v	u	č	e	b	n	i	V	T	1
+Q	p	l	m	b	e	k	f	v	l	s	z	u	z	w	v	é	f	c	o	j	W	U	2
+
+Nápoveda
+Použité funkcie char a code
+Kódovanie
+Systém zápisu určitej informácie
+je proces, pri ktorom sa každému znaku (postupnosti znakov) jednoznačne priradí znak alebo postupnosť znakov (obrazov) z iného súboru znakov
+Kto pozná kód vie informáciu odkódovať a zakódovať 
+Napr. morzeovka, ŠPZtka, digitálne inf.
+a.Písmo – jeden z kódov
+oTen, kto nepozná jednotlivé písmena a nedokáže ich spojiť do slov
+b.Binárny kód 
+oPočítače pracujú iba s digitálnymi informáciami, preto informácie, ktoré chceme spracovať pomocou počítača kódujeme
+otvar 0 a 1
+Šifrovanie
+	- Ide o utajené šírenie informácii
+	- Proces, keď obsah textu zmeníme do nezrozumiteľnej podoby
+	- Cieľ: nájdenie šifry, ktorú by nedovolene nemohli rozlúštiť
+	
+	Algoritmus
+		○ postup  na základe, ktorého sa pôvodná správa zmení na zašifrovanú a naopak
+		○ Je verejný
+		○ Väčšina algoritmov vyžaduje na šifrovanie a dešifrovanie kľúč
+	Kľúč 
+		= je utajená informácia pomocou, ktorej sa dostaneme k rozlúšteniu zašifrovanej správy 
+Kryptológia – veda zaoberajúca sa šiframi
+
+
+9. Zadanie
+
+Zistite IP adresu počítača a rýchlosť LAN siete v ktorej sa nachádza. Vysvetlite pojem IP adresa. Vypočítajte, za aký čas sa prenesie súbor veľkosti 2 GB touto sieťou na druhý počítač. Klasifikujte počítačovú sieť v učebni informatiky z hľadiska rozdelenia počítačových sietí podľa rôznych kritérií (rozlohy, úlohy počítačov v sieti, topológie,...). 
+Popíšte výhody a nevýhody pripojenia do počítačovej siete. Popíšte IP adresu.
+
+
+Nápoveda:
+
+Počítačová sieť je systém vzájomne prepojených počítačov za účelom prenosu informácií medzi nimi. Presnejšie: Počítačová sieť je súhrnné označenie technických a softwarových prostriedkov, pomocou ktorých je realizované prepojenie a výmena dát medzi počítačmi. 
+Dôvody zavádzania počítačových sietí:
+· zdieľanie údajov, 
+· zdieľanie prostriedkov 
+· zvýšenie spoľahlivosti systému.
+Služby poskytované sieťou:
+· prenos súborov, 
+· prenos správ, 
+· konverzácia medzi užívateľmi (chat), 
+· zdieľanie súborov,
+· tlač na zdieľaných tlačiarňach, 
+· ochrana údajov, 
+· spojenie s inými sieťami, 
+· práca na vzdialenej stanici, 
+· účtovanie služieb siete. 
+Časti počítačovej siete: 
+· hardware, 
+· software, 
+· organizačné zabezpečenie. 
+Hardware siete zahrňuje všetky technické prostriedky siete (počítače, routre, switche, modemy, kabeláž, sieťové karty, tlačiarne, ....) pomocou ktorých je fyzicky vybudovaná počítačová sieť. 
+Software siete potrebujú programové vybavenie, ktoré v spolupráci s hardwarom zabezpečuje funkcie siete. 
+Organizačné zabezpečenie je súbor pravidiel a opatrení správania sa používateľov pri používaní počítačovej siete.
+
+Jednoduchá síť typu peer to peer je velmi spolehlivá a její výpadek nezpůsobí vážné roblémy. Má však funkční omezení. U sítě klient–server případný výpadek serveru znamená zastavení činnosti všech stanic a ochromení informačního systému podniku. Může to znamenat i zastavení výroby, a tedy obrovské finanční ztráty. Proto jako server bývá nasazen výkonný speciální počítač, který má velmi kvalitní testované díly. Zálohování (archivace) všech dat probíhá automaticky každý den. V nejdůležitějších sítích pracují dva servery současně (paralelně), každý je přitom schopen obsloužit celou síť. Je jistě pochopitelné, že síťový server je velmi drahý počítač. 
+IP adresa – číselná adresa 
+každý počítač v sieti internet má pridelenú jednoznačnú číselnú adresu, podľa ktorej ho možno nájsť IPv4 je 32-bitová, podporuje viac ako 4 miliardy (232) adries (dnes už nepostačujúce); skladá sa zo štyroch celých čísel od 0 po 255 oddelených bodkami, napr. 192.168.1.15 
+10. Zadanie
+
+Katka má fotografiu triedy uloženú v bitmapovom súbore a chce ju poslať MMS-kou na Petrov
+mobilný telefón. Fotka má rozmery 256 x 180 pixelov (obrazových bodov) a je v nej použitých 256 farieb. MMS-ka môže mať maximálne 5 KB. Najmenej koľko MMS musí Katka poslať, ak chce poslať celú fotografiu rozloženú do viacerých MMS? V programe Excel vytvor pre Katku funkciu, kde po zadaní rozmerov a počtu farieb bude hneď vedieť počet MMS. Popíšte spôsob prenosu správ pomocou elektronickej pošty.
+
+Nápoveda
+
+Riešenie
+Rozmery fotografie sú 256 x 180 pixelov, teda počet bodov v obrázku bude: 
+256 × 180 = 46 080
+Každý bod 256 farebného obrázka zaberie 1 B pamäte (pozri úlohu 1), takže obrázok bude zaberať: 46 080 × 1 B = 46 080 B
+Jedna MMS môže zaberať 5 kB čo je v B: 5 kB × 1024 = 5 120 B
+Počet MMS vypočítame takto: 46 080 B : 5 120 B = 9
+Potrebný počet MMS je 9.
+
+Správy pre elektronickú poštu píšeme v aplikácií klienta elektronickej pošty. Po napísaní správy a zadaní e-mailovej adresy adresáta sa e-mailová správa spolu s prílohami prenáša ako jeden textový súbor (prílohy sú v ňom špeciálne zakódované) cez port 25 prostredníctvom protokolu SMTP (Simple Mail Transfer Protocol) na server odchádzajúcej pošty (outgoing server). Tento je spravidla vo vlastníctve zriaďovateľa e-mailovej schránky. Server prevezme údaje od odosielateľa a pokúsi sa správu doručiť adresátovi. Pokiaľ e-mailová adresa neobsahuje doménu, ale len názov schránky, predpokladá, že schránka adresáta je zriadená na rovnakej doméne ako schránka odosielateľa a pokúsi sa o doručenie sám. Pokiaľ sa domény odosielateľ a prijímateľa líšia, SMTP server sa spojí s DNS serverom, aby si od neho vypýtal IP adresu, na ktorú nasmeruje správu. V prípade jej prijatia cieľovým serverom sa prestane starať o jej ďalší osud. V prípade, že doručenie správy zlyhá odosielateľ o tom zvyčajne dostane správu.
+Po úspešnom doručení na cieľový server zostáva správa na ňom uložená dovtedy, pokiaľ si ju
+adresát nevyzdvihne. Na prenos doručenej správy zo servera na lokálny počítač sa používajú protokoly POP3 a IMAP.
+POP3 (Post Office Protocol version 3) pracuje na porte 110 a štandardne správy čakajúce na serveri stiahne do lokálneho počítača a tým, že ich na serveri zmaže. Vždy sa stiahnu všetky správy bez ohľadu na to, či používateľ o ne záujem má alebo nie. Doručené správy máme k dispozícii len v počítači, do ktorého sme ich stiahli.
+Protokol IMAP (Internet Message Access Protokol) umožňuje so správami pracovať priamo na serveri s tým, že používateľ po pripojení získa zo servera len hlavičky správ. Celá správa sa stiahne a zobrazí až v prípade požiadavky. Správu možno vymazať bez toho, aby ju používateľ preniesol so lokálneho počítača – vymazaním hlavičky v klientovi sa vymaže celá správa na serveri. Protokol pracuje na porte 143 a vďaka uchovávaniu správ na serveri ich máme k dispozícii pri prihlásení sa z ľubovoľného počítača. Veľmi často možno k e-mailovým schránkam pristupovať i prostredníctvom webového rozhrania, tzv. webmailu. Výhodou je, že používateľ nemusí nastavovať parametre e-mailového klienta a dostupnosť z ľubovoľného miesta na svete, nevýhodou menší komfort a pohodlie používateľa.
+
+6.Zadanie
+
+Zistite, aký operačný systém je na počítači, na ktorom pracujete. Akým spôsobom si môžeme overiť pravosť zdrojového kódu operačného systému? Pomocou správcu úloh sledujte úlohu kalkulačky: vyhľadajte aplikáciu Kalkulačka (C:\Windows\System32\calc.exe) a zistite koľko pamäte zaberá proces calc.exe. Ako sa tento údaj mení pri minimalizovaní? Zapisuje proces kalkulačky aj na pevný disk? Aké je celkové využitie procesora a pevného disku? Popíšte funkcie operačného systému.
+
+Poznámky k úlohe:
+Operačný systém
+Operačný systém (OS) je program fungujúci ako prostredník medzi používateľmi a hardvérom (technickým vybavením) počítačového systému. Vytvára prostredie pre spúšťanie programov používateľov. Hlavným cieľom je zabezpečenie pohodlného prístupu používateľov k programom a efektívne využívanie hardvéru. Podľa širšej definície je operačný systém všetko, čo dostanete v krabici s OS – kompilátory, editory, GUI nadstavby...
+Podľa odbornej definície je OS iba program, ktorý neustále beží na počítači – tzv. výkonné
+jadro (kernel) operačného systému.
+
+Funkcie operačného systému:
+1.Správa pamäte
+oPrideľovanie pamäte procesom
+oUchováva informácie o využívaní pamäti používateľmi
+2.Správa procesov
+oPlánovanie a sledovanie procesov
+oPrideľovanie procesov
+3.Správa zariadení
+oProstredníctvom ovládačov
+oPriorita procesov, efektívne prideľovanie zariadení
+4.Správa súborov
+oRiadenie prístupu k súborom
+oSúbory usporiadané do adresárov
+oSystémy: FAT (File Allocation Table) a NTFS (New Technology File System)
+Komunikácia s používateľom
+Vykonávanie programov
+Diagnostika/ detekcia chýb
+Chybové riadenie a protokolovanie činností
+Komunikácia s inými systémami
+
+
+7. Zadanie
+
+Vytvorte rozsiahly textový dokument (nakopírujte tento učebný materiál 10 krát za sebou do jedného súboru), zapíšte si jeho veľkosť. Potom ho skomprimujte. Zapíšte si veľkosť po komprimácii. Vypočítajte kompresný pomer použitej kompresie. Experimentujte s rôznymi kompr. algoritmami. Charakterizujte kompresiu, jej význam. Aké typy kompresie poznáte?
+
+Komprimácia dát je proces, pri ktorom sa znižuje objem dát.
+Kompresný pomer  je pomer skomprimovaných dát ku neskomprimovaným. Napr. kompresný pomer 1:4 znamená, že došlo k 4-násobnému zmenšeniu objemu dát (takže 20 MB súbor má po komprimácii 5 MB, teda zmenšil sa na ¼ = 25% pôvodnej veľkosti). Komprimovať dáta má zmysel iba vtedy, ak je kompresný pomer menší ako jedna.
+Existujú dva druhy komprimácie:
+nestratová - pri ktorej nedochádza k strate údajov. To znamená, že ak skomprimované dáta dekomprimujeme, získame úplne identické dáta. Takto sa balia napríklad textové, programové a iné súbory. Kompresia sa deje na základe vynechania redundantných (nadpočetných) informácií. 
+stratová - je proces, pri ktorom sa vynechajú tie údaje, ktoré sú pre celkový dojem z dát nepodstatné, ale dáta sa už po kompresii nikdy nedajú zrekonštruovať do pôvodnej podoby, časť informácií totiž chýba. Stratová koprimácia sa používa hlavne pre komprimovanie mediálnych súborov a to zvuk (mp3), obraz (jpg), video (mpeg). Aj pri niekoľko desaťnásobnej redukcii dát je výsledok komprimácie takmer nerozoznateľný od originálu. 
+Komprimácia sa vykonáva buď automaticky (uložením súboru v komprimovanom formáte JPG, MPEG, MP3) alebo pomocou špeciálneho komprimačného programu.
+Komprimačné programy, archivácia
+Výhodou archivačných formátov ako sú RAR, ZIP, 7zip je, že dokážu do jedného balíka vložiť množstvo súborov čo je výhoda, ktorú určite oceníme napríklad pri posielaní viacerých príloh v e-maily . Ak však archivujeme súbory len za účelom zníženia ich veľkosti je dobre si uvedomiť, že komprimovať sa oplatí len súbory, na ktorých ešte nie je aplikovaná žiadna kompresia. Aj preto majú napríklad obrázky vo formáte TIFF alebo BMP po pridaní do archívu veľmi malú veľkosť, zatiaľ čo obrázky v JPG nezmenšíme takmer vôbec. To isté platí aj o hudobných súboroch. Veľmi efektívne je komprimovať textové dokumenty, databázy...
+Komprimačné (pakovacie) programy boli vyvinuté za účelom zmenšenia veľkosti súborov, pri zachovaní ich pôvodného obsahu. Ich cieľom je zmenšenie (skomprimovanie) súboru, ktorý potom zaberá podstatne menej miesta, ako jeho pôvodný tvar. So skomprimovaným súborom však nie je možné vykonávať bežné operácie, t.j. čítať ho, zapisovať a pod. Na to, aby ho bolo možné meniť, je potrebné jeho dekomprimovanie, čiže rozpakovanie - vrátenie do pôvodného stavu.
+Princíp fungovania: Predstavte si text, v ktorom sa 30 krát vyskytuje slovo archivácia. Znamená to, že takýto text zaberá 30x10=300 znakov. Keď namiesto slova archivácia použijeme nejakú značku, napr. #, ušetrí sa tým 30x9=270 znakov. Pri komprimácii sa teda každé slovo archivácia nahradí značkou # a do tabuľky kódov sa zaznačí: # = archivácia. Tým sa výrazným spôsobom zmenší veľkosť textového súboru. Komprimačné programy pritom pracujú na ešte nižšej úrovni. Namiesto opakovania znakov sledujú opakovanie bitov (0 alebo 1). Dekomprimácia je opačný proces ako komprimácia. V tomto prípade sa namiesto znakov tabuľky musia vložiť slová, ktoré zastupujú. Napr. namiesto značky # sa v komprimovanom texte vloží slovo archivácia.
+K najznámejším komprimačným programom patria: WinZIP, WinRAR
+
+8. Zadanie
+
+Vo svete existuje celý rad metód ako by ste mohli zašifrovať text. Jednou z najbežnejších metód je šifrovať text posunutím ordinálnych hodnôt daným smerom. Ide o posunutie písmen v abecede. Napr. pri posunutí  o 3 znaky s text „abc“ zašifruje na „cde“. V sifra.xlsx je text, ktorý zašifrujte posunutím ordinálnej hodnoty znaku o číslo n. Následne urobte aj dešifrovanie tohto textu. Vysvetlite pojmy kódovanie a šifrovanie. 
+Napr.: pre N=1
+P	o	k	l	a	d	j	e	u	k	r	y	t	y	v	u	č	e	b	n	i	V	T	1
+Q	p	l	m	b	e	k	f	v	l	s	z	u	z	w	v	é	f	c	o	j	W	U	2
+
+Nápoveda
+Použité funkcie char a code
+Kódovanie
+Systém zápisu určitej informácie
+je proces, pri ktorom sa každému znaku (postupnosti znakov) jednoznačne priradí znak alebo postupnosť znakov (obrazov) z iného súboru znakov
+Kto pozná kód vie informáciu odkódovať a zakódovať 
+Napr. morzeovka, ŠPZtka, digitálne inf.
+a.Písmo – jeden z kódov
+oTen, kto nepozná jednotlivé písmena a nedokáže ich spojiť do slov
+b.Binárny kód 
+oPočítače pracujú iba s digitálnymi informáciami, preto informácie, ktoré chceme spracovať pomocou počítača kódujeme
+otvar 0 a 1
+Šifrovanie
+	- Ide o utajené šírenie informácii
+	- Proces, keď obsah textu zmeníme do nezrozumiteľnej podoby
+	- Cieľ: nájdenie šifry, ktorú by nedovolene nemohli rozlúštiť
+	
+	Algoritmus
+		○ postup  na základe, ktorého sa pôvodná správa zmení na zašifrovanú a naopak
+		○ Je verejný
+		○ Väčšina algoritmov vyžaduje na šifrovanie a dešifrovanie kľúč
+	Kľúč 
+		= je utajená informácia pomocou, ktorej sa dostaneme k rozlúšteniu zašifrovanej správy 
+Kryptológia – veda zaoberajúca sa šiframi
+
+
+9. Zadanie
+
+Zistite IP adresu počítača a rýchlosť LAN siete v ktorej sa nachádza. Vysvetlite pojem IP adresa. Vypočítajte, za aký čas sa prenesie súbor veľkosti 2 GB touto sieťou na druhý počítač. Klasifikujte počítačovú sieť v učebni informatiky z hľadiska rozdelenia počítačových sietí podľa rôznych kritérií (rozlohy, úlohy počítačov v sieti, topológie,...). 
+Popíšte výhody a nevýhody pripojenia do počítačovej siete. Popíšte IP adresu.
+
+
+Nápoveda:
+
+Počítačová sieť je systém vzájomne prepojených počítačov za účelom prenosu informácií medzi nimi. Presnejšie: Počítačová sieť je súhrnné označenie technických a softwarových prostriedkov, pomocou ktorých je realizované prepojenie a výmena dát medzi počítačmi. 
+Dôvody zavádzania počítačových sietí:
+· zdieľanie údajov, 
+· zdieľanie prostriedkov 
+· zvýšenie spoľahlivosti systému.
+Služby poskytované sieťou:
+· prenos súborov, 
+· prenos správ, 
+· konverzácia medzi užívateľmi (chat), 
+· zdieľanie súborov,
+· tlač na zdieľaných tlačiarňach, 
+· ochrana údajov, 
+· spojenie s inými sieťami, 
+· práca na vzdialenej stanici, 
+· účtovanie služieb siete. 
+Časti počítačovej siete: 
+· hardware, 
+· software, 
+· organizačné zabezpečenie. 
+Hardware siete zahrňuje všetky technické prostriedky siete (počítače, routre, switche, modemy, kabeláž, sieťové karty, tlačiarne, ....) pomocou ktorých je fyzicky vybudovaná počítačová sieť. 
+Software siete potrebujú programové vybavenie, ktoré v spolupráci s hardwarom zabezpečuje funkcie siete. 
+Organizačné zabezpečenie je súbor pravidiel a opatrení správania sa používateľov pri používaní počítačovej siete.
+
+Jednoduchá síť typu peer to peer je velmi spolehlivá a její výpadek nezpůsobí vážné roblémy. Má však funkční omezení. U sítě klient–server případný výpadek serveru znamená zastavení činnosti všech stanic a ochromení informačního systému podniku. Může to znamenat i zastavení výroby, a tedy obrovské finanční ztráty. Proto jako server bývá nasazen výkonný speciální počítač, který má velmi kvalitní testované díly. Zálohování (archivace) všech dat probíhá automaticky každý den. V nejdůležitějších sítích pracují dva servery současně (paralelně), každý je přitom schopen obsloužit celou síť. Je jistě pochopitelné, že síťový server je velmi drahý počítač. 
+IP adresa – číselná adresa 
+každý počítač v sieti internet má pridelenú jednoznačnú číselnú adresu, podľa ktorej ho možno nájsť IPv4 je 32-bitová, podporuje viac ako 4 miliardy (232) adries (dnes už nepostačujúce); skladá sa zo štyroch celých čísel od 0 po 255 oddelených bodkami, napr. 192.168.1.15 
+10. Zadanie
+
+Katka má fotografiu triedy uloženú v bitmapovom súbore a chce ju poslať MMS-kou na Petrov
+mobilný telefón. Fotka má rozmery 256 x 180 pixelov (obrazových bodov) a je v nej použitých 256 farieb. MMS-ka môže mať maximálne 5 KB. Najmenej koľko MMS musí Katka poslať, ak chce poslať celú fotografiu rozloženú do viacerých MMS? V programe Excel vytvor pre Katku funkciu, kde po zadaní rozmerov a počtu farieb bude hneď vedieť počet MMS. Popíšte spôsob prenosu správ pomocou elektronickej pošty.
+
+Nápoveda
+
+Riešenie
+Rozmery fotografie sú 256 x 180 pixelov, teda počet bodov v obrázku bude: 
+256 × 180 = 46 080
+Každý bod 256 farebného obrázka zaberie 1 B pamäte (pozri úlohu 1), takže obrázok bude zaberať: 46 080 × 1 B = 46 080 B
+Jedna MMS môže zaberať 5 kB čo je v B: 5 kB × 1024 = 5 120 B
+Počet MMS vypočítame takto: 46 080 B : 5 120 B = 9
+Potrebný počet MMS je 9.
+
+Správy pre elektronickú poštu píšeme v aplikácií klienta elektronickej pošty. Po napísaní správy a zadaní e-mailovej adresy adresáta sa e-mailová správa spolu s prílohami prenáša ako jeden textový súbor (prílohy sú v ňom špeciálne zakódované) cez port 25 prostredníctvom protokolu SMTP (Simple Mail Transfer Protocol) na server odchádzajúcej pošty (outgoing server). Tento je spravidla vo vlastníctve zriaďovateľa e-mailovej schránky. Server prevezme údaje od odosielateľa a pokúsi sa správu doručiť adresátovi. Pokiaľ e-mailová adresa neobsahuje doménu, ale len názov schránky, predpokladá, že schránka adresáta je zriadená na rovnakej doméne ako schránka odosielateľa a pokúsi sa o doručenie sám. Pokiaľ sa domény odosielateľ a prijímateľa líšia, SMTP server sa spojí s DNS serverom, aby si od neho vypýtal IP adresu, na ktorú nasmeruje správu. V prípade jej prijatia cieľovým serverom sa prestane starať o jej ďalší osud. V prípade, že doručenie správy zlyhá odosielateľ o tom zvyčajne dostane správu.
+Po úspešnom doručení na cieľový server zostáva správa na ňom uložená dovtedy, pokiaľ si ju
+adresát nevyzdvihne. Na prenos doručenej správy zo servera na lokálny počítač sa používajú protokoly POP3 a IMAP.
+POP3 (Post Office Protocol version 3) pracuje na porte 110 a štandardne správy čakajúce na serveri stiahne do lokálneho počítača a tým, že ich na serveri zmaže. Vždy sa stiahnu všetky správy bez ohľadu na to, či používateľ o ne záujem má alebo nie. Doručené správy máme k dispozícii len v počítači, do ktorého sme ich stiahli.
+Protokol IMAP (Internet Message Access Protokol) umožňuje so správami pracovať priamo na serveri s tým, že používateľ po pripojení získa zo servera len hlavičky správ. Celá správa sa stiahne a zobrazí až v prípade požiadavky. Správu možno vymazať bez toho, aby ju používateľ preniesol so lokálneho počítača – vymazaním hlavičky v klientovi sa vymaže celá správa na serveri. Protokol pracuje na porte 143 a vďaka uchovávaniu správ na serveri ich máme k dispozícii pri prihlásení sa z ľubovoľného počítača. Veľmi často možno k e-mailovým schránkam pristupovať i prostredníctvom webového rozhrania, tzv. webmailu. Výhodou je, že používateľ nemusí nastavovať parametre e-mailového klienta a dostupnosť z ľubovoľného miesta na svete, nevýhodou menší komfort a pohodlie používateľa.
+
+6.Zadanie
+
+Zistite, aký operačný systém je na počítači, na ktorom pracujete. Akým spôsobom si môžeme overiť pravosť zdrojového kódu operačného systému? Pomocou správcu úloh sledujte úlohu kalkulačky: vyhľadajte aplikáciu Kalkulačka (C:\Windows\System32\calc.exe) a zistite koľko pamäte zaberá proces calc.exe. Ako sa tento údaj mení pri minimalizovaní? Zapisuje proces kalkulačky aj na pevný disk? Aké je celkové využitie procesora a pevného disku? Popíšte funkcie operačného systému.
+
+Poznámky k úlohe:
+Operačný systém
+Operačný systém (OS) je program fungujúci ako prostredník medzi používateľmi a hardvérom (technickým vybavením) počítačového systému. Vytvára prostredie pre spúšťanie programov používateľov. Hlavným cieľom je zabezpečenie pohodlného prístupu používateľov k programom a efektívne využívanie hardvéru. Podľa širšej definície je operačný systém všetko, čo dostanete v krabici s OS – kompilátory, editory, GUI nadstavby...
+Podľa odbornej definície je OS iba program, ktorý neustále beží na počítači – tzv. výkonné
+jadro (kernel) operačného systému.
+
+Funkcie operačného systému:
+1.Správa pamäte
+oPrideľovanie pamäte procesom
+oUchováva informácie o využívaní pamäti používateľmi
+2.Správa procesov
+oPlánovanie a sledovanie procesov
+oPrideľovanie procesov
+3.Správa zariadení
+oProstredníctvom ovládačov
+oPriorita procesov, efektívne prideľovanie zariadení
+4.Správa súborov
+oRiadenie prístupu k súborom
+oSúbory usporiadané do adresárov
+oSystémy: FAT (File Allocation Table) a NTFS (New Technology File System)
+Komunikácia s používateľom
+Vykonávanie programov
+Diagnostika/ detekcia chýb
+Chybové riadenie a protokolovanie činností
+Komunikácia s inými systémami
+
+
+7. Zadanie
+
+Vytvorte rozsiahly textový dokument (nakopírujte tento učebný materiál 10 krát za sebou do jedného súboru), zapíšte si jeho veľkosť. Potom ho skomprimujte. Zapíšte si veľkosť po komprimácii. Vypočítajte kompresný pomer použitej kompresie. Experimentujte s rôznymi kompr. algoritmami. Charakterizujte kompresiu, jej význam. Aké typy kompresie poznáte?
+
+Komprimácia dát je proces, pri ktorom sa znižuje objem dát.
+Kompresný pomer  je pomer skomprimovaných dát ku neskomprimovaným. Napr. kompresný pomer 1:4 znamená, že došlo k 4-násobnému zmenšeniu objemu dát (takže 20 MB súbor má po komprimácii 5 MB, teda zmenšil sa na ¼ = 25% pôvodnej veľkosti). Komprimovať dáta má zmysel iba vtedy, ak je kompresný pomer menší ako jedna.
+Existujú dva druhy komprimácie:
+nestratová - pri ktorej nedochádza k strate údajov. To znamená, že ak skomprimované dáta dekomprimujeme, získame úplne identické dáta. Takto sa balia napríklad textové, programové a iné súbory. Kompresia sa deje na základe vynechania redundantných (nadpočetných) informácií. 
+stratová - je proces, pri ktorom sa vynechajú tie údaje, ktoré sú pre celkový dojem z dát nepodstatné, ale dáta sa už po kompresii nikdy nedajú zrekonštruovať do pôvodnej podoby, časť informácií totiž chýba. Stratová koprimácia sa používa hlavne pre komprimovanie mediálnych súborov a to zvuk (mp3), obraz (jpg), video (mpeg). Aj pri niekoľko desaťnásobnej redukcii dát je výsledok komprimácie takmer nerozoznateľný od originálu. 
+Komprimácia sa vykonáva buď automaticky (uložením súboru v komprimovanom formáte JPG, MPEG, MP3) alebo pomocou špeciálneho komprimačného programu.
+Komprimačné programy, archivácia
+Výhodou archivačných formátov ako sú RAR, ZIP, 7zip je, že dokážu do jedného balíka vložiť množstvo súborov čo je výhoda, ktorú určite oceníme napríklad pri posielaní viacerých príloh v e-maily . Ak však archivujeme súbory len za účelom zníženia ich veľkosti je dobre si uvedomiť, že komprimovať sa oplatí len súbory, na ktorých ešte nie je aplikovaná žiadna kompresia. Aj preto majú napríklad obrázky vo formáte TIFF alebo BMP po pridaní do archívu veľmi malú veľkosť, zatiaľ čo obrázky v JPG nezmenšíme takmer vôbec. To isté platí aj o hudobných súboroch. Veľmi efektívne je komprimovať textové dokumenty, databázy...
+Komprimačné (pakovacie) programy boli vyvinuté za účelom zmenšenia veľkosti súborov, pri zachovaní ich pôvodného obsahu. Ich cieľom je zmenšenie (skomprimovanie) súboru, ktorý potom zaberá podstatne menej miesta, ako jeho pôvodný tvar. So skomprimovaným súborom však nie je možné vykonávať bežné operácie, t.j. čítať ho, zapisovať a pod. Na to, aby ho bolo možné meniť, je potrebné jeho dekomprimovanie, čiže rozpakovanie - vrátenie do pôvodného stavu.
+Princíp fungovania: Predstavte si text, v ktorom sa 30 krát vyskytuje slovo archivácia. Znamená to, že takýto text zaberá 30x10=300 znakov. Keď namiesto slova archivácia použijeme nejakú značku, napr. #, ušetrí sa tým 30x9=270 znakov. Pri komprimácii sa teda každé slovo archivácia nahradí značkou # a do tabuľky kódov sa zaznačí: # = archivácia. Tým sa výrazným spôsobom zmenší veľkosť textového súboru. Komprimačné programy pritom pracujú na ešte nižšej úrovni. Namiesto opakovania znakov sledujú opakovanie bitov (0 alebo 1). Dekomprimácia je opačný proces ako komprimácia. V tomto prípade sa namiesto znakov tabuľky musia vložiť slová, ktoré zastupujú. Napr. namiesto značky # sa v komprimovanom texte vloží slovo archivácia.
+K najznámejším komprimačným programom patria: WinZIP, WinRAR
+
+8. Zadanie
+
+Vo svete existuje celý rad metód ako by ste mohli zašifrovať text. Jednou z najbežnejších metód je šifrovať text posunutím ordinálnych hodnôt daným smerom. Ide o posunutie písmen v abecede. Napr. pri posunutí  o 3 znaky s text „abc“ zašifruje na „cde“. V sifra.xlsx je text, ktorý zašifrujte posunutím ordinálnej hodnoty znaku o číslo n. Následne urobte aj dešifrovanie tohto textu. Vysvetlite pojmy kódovanie a šifrovanie. 
+Napr.: pre N=1
+P	o	k	l	a	d	j	e	u	k	r	y	t	y	v	u	č	e	b	n	i	V	T	1
+Q	p	l	m	b	e	k	f	v	l	s	z	u	z	w	v	é	f	c	o	j	W	U	2
+
+Nápoveda
+Použité funkcie char a code
+Kódovanie
+Systém zápisu určitej informácie
+je proces, pri ktorom sa každému znaku (postupnosti znakov) jednoznačne priradí znak alebo postupnosť znakov (obrazov) z iného súboru znakov
+Kto pozná kód vie informáciu odkódovať a zakódovať 
+Napr. morzeovka, ŠPZtka, digitálne inf.
+a.Písmo – jeden z kódov
+oTen, kto nepozná jednotlivé písmena a nedokáže ich spojiť do slov
+b.Binárny kód 
+oPočítače pracujú iba s digitálnymi informáciami, preto informácie, ktoré chceme spracovať pomocou počítača kódujeme
+otvar 0 a 1
+Šifrovanie
+	- Ide o utajené šírenie informácii
+	- Proces, keď obsah textu zmeníme do nezrozumiteľnej podoby
+	- Cieľ: nájdenie šifry, ktorú by nedovolene nemohli rozlúštiť
+	
+	Algoritmus
+		○ postup  na základe, ktorého sa pôvodná správa zmení na zašifrovanú a naopak
+		○ Je verejný
+		○ Väčšina algoritmov vyžaduje na šifrovanie a dešifrovanie kľúč
+	Kľúč 
+		= je utajená informácia pomocou, ktorej sa dostaneme k rozlúšteniu zašifrovanej správy 
+Kryptológia – veda zaoberajúca sa šiframi
+
+
+9. Zadanie
+
+Zistite IP adresu počítača a rýchlosť LAN siete v ktorej sa nachádza. Vysvetlite pojem IP adresa. Vypočítajte, za aký čas sa prenesie súbor veľkosti 2 GB touto sieťou na druhý počítač. Klasifikujte počítačovú sieť v učebni informatiky z hľadiska rozdelenia počítačových sietí podľa rôznych kritérií (rozlohy, úlohy počítačov v sieti, topológie,...). 
+Popíšte výhody a nevýhody pripojenia do počítačovej siete. Popíšte IP adresu.
+
+
+Nápoveda:
+
+Počítačová sieť je systém vzájomne prepojených počítačov za účelom prenosu informácií medzi nimi. Presnejšie: Počítačová sieť je súhrnné označenie technických a softwarových prostriedkov, pomocou ktorých je realizované prepojenie a výmena dát medzi počítačmi. 
+Dôvody zavádzania počítačových sietí:
+· zdieľanie údajov, 
+· zdieľanie prostriedkov 
+· zvýšenie spoľahlivosti systému.
+Služby poskytované sieťou:
+· prenos súborov, 
+· prenos správ, 
+· konverzácia medzi užívateľmi (chat), 
+· zdieľanie súborov,
+· tlač na zdieľaných tlačiarňach, 
+· ochrana údajov, 
+· spojenie s inými sieťami, 
+· práca na vzdialenej stanici, 
+· účtovanie služieb siete. 
+Časti počítačovej siete: 
+· hardware, 
+· software, 
+· organizačné zabezpečenie. 
+Hardware siete zahrňuje všetky technické prostriedky siete (počítače, routre, switche, modemy, kabeláž, sieťové karty, tlačiarne, ....) pomocou ktorých je fyzicky vybudovaná počítačová sieť. 
+Software siete potrebujú programové vybavenie, ktoré v spolupráci s hardwarom zabezpečuje funkcie siete. 
+Organizačné zabezpečenie je súbor pravidiel a opatrení správania sa používateľov pri používaní počítačovej siete.
+
+Jednoduchá síť typu peer to peer je velmi spolehlivá a její výpadek nezpůsobí vážné roblémy. Má však funkční omezení. U sítě klient–server případný výpadek serveru znamená zastavení činnosti všech stanic a ochromení informačního systému podniku. Může to znamenat i zastavení výroby, a tedy obrovské finanční ztráty. Proto jako server bývá nasazen výkonný speciální počítač, který má velmi kvalitní testované díly. Zálohování (archivace) všech dat probíhá automaticky každý den. V nejdůležitějších sítích pracují dva servery současně (paralelně), každý je přitom schopen obsloužit celou síť. Je jistě pochopitelné, že síťový server je velmi drahý počítač. 
+IP adresa – číselná adresa 
+každý počítač v sieti internet má pridelenú jednoznačnú číselnú adresu, podľa ktorej ho možno nájsť IPv4 je 32-bitová, podporuje viac ako 4 miliardy (232) adries (dnes už nepostačujúce); skladá sa zo štyroch celých čísel od 0 po 255 oddelených bodkami, napr. 192.168.1.15 
+10. Zadanie
+
+Katka má fotografiu triedy uloženú v bitmapovom súbore a chce ju poslať MMS-kou na Petrov
+mobilný telefón. Fotka má rozmery 256 x 180 pixelov (obrazových bodov) a je v nej použitých 256 farieb. MMS-ka môže mať maximálne 5 KB. Najmenej koľko MMS musí Katka poslať, ak chce poslať celú fotografiu rozloženú do viacerých MMS? V programe Excel vytvor pre Katku funkciu, kde po zadaní rozmerov a počtu farieb bude hneď vedieť počet MMS. Popíšte spôsob prenosu správ pomocou elektronickej pošty.
+
+Nápoveda
+
+Riešenie
+Rozmery fotografie sú 256 x 180 pixelov, teda počet bodov v obrázku bude: 
+256 × 180 = 46 080
+Každý bod 256 farebného obrázka zaberie 1 B pamäte (pozri úlohu 1), takže obrázok bude zaberať: 46 080 × 1 B = 46 080 B
+Jedna MMS môže zaberať 5 kB čo je v B: 5 kB × 1024 = 5 120 B
+Počet MMS vypočítame takto: 46 080 B : 5 120 B = 9
+Potrebný počet MMS je 9.
+
+Správy pre elektronickú poštu píšeme v aplikácií klienta elektronickej pošty. Po napísaní správy a zadaní e-mailovej adresy adresáta sa e-mailová správa spolu s prílohami prenáša ako jeden textový súbor (prílohy sú v ňom špeciálne zakódované) cez port 25 prostredníctvom protokolu SMTP (Simple Mail Transfer Protocol) na server odchádzajúcej pošty (outgoing server). Tento je spravidla vo vlastníctve zriaďovateľa e-mailovej schránky. Server prevezme údaje od odosielateľa a pokúsi sa správu doručiť adresátovi. Pokiaľ e-mailová adresa neobsahuje doménu, ale len názov schránky, predpokladá, že schránka adresáta je zriadená na rovnakej doméne ako schránka odosielateľa a pokúsi sa o doručenie sám. Pokiaľ sa domény odosielateľ a prijímateľa líšia, SMTP server sa spojí s DNS serverom, aby si od neho vypýtal IP adresu, na ktorú nasmeruje správu. V prípade jej prijatia cieľovým serverom sa prestane starať o jej ďalší osud. V prípade, že doručenie správy zlyhá odosielateľ o tom zvyčajne dostane správu.
+Po úspešnom doručení na cieľový server zostáva správa na ňom uložená dovtedy, pokiaľ si ju
+adresát nevyzdvihne. Na prenos doručenej správy zo servera na lokálny počítač sa používajú protokoly POP3 a IMAP.
+POP3 (Post Office Protocol version 3) pracuje na porte 110 a štandardne správy čakajúce na serveri stiahne do lokálneho počítača a tým, že ich na serveri zmaže. Vždy sa stiahnu všetky správy bez ohľadu na to, či používateľ o ne záujem má alebo nie. Doručené správy máme k dispozícii len v počítači, do ktorého sme ich stiahli.
+Protokol IMAP (Internet Message Access Protokol) umožňuje so správami pracovať priamo na serveri s tým, že používateľ po pripojení získa zo servera len hlavičky správ. Celá správa sa stiahne a zobrazí až v prípade požiadavky. Správu možno vymazať bez toho, aby ju používateľ preniesol so lokálneho počítača – vymazaním hlavičky v klientovi sa vymaže celá správa na serveri. Protokol pracuje na porte 143 a vďaka uchovávaniu správ na serveri ich máme k dispozícii pri prihlásení sa z ľubovoľného počítača. Veľmi často možno k e-mailovým schránkam pristupovať i prostredníctvom webového rozhrania, tzv. webmailu. Výhodou je, že používateľ nemusí nastavovať parametre e-mailového klienta a dostupnosť z ľubovoľného miesta na svete, nevýhodou menší komfort a pohodlie používateľa.
+
+6.Zadanie
+
+Zistite, aký operačný systém je na počítači, na ktorom pracujete. Akým spôsobom si môžeme overiť pravosť zdrojového kódu operačného systému? Pomocou správcu úloh sledujte úlohu kalkulačky: vyhľadajte aplikáciu Kalkulačka (C:\Windows\System32\calc.exe) a zistite koľko pamäte zaberá proces calc.exe. Ako sa tento údaj mení pri minimalizovaní? Zapisuje proces kalkulačky aj na pevný disk? Aké je celkové využitie procesora a pevného disku? Popíšte funkcie operačného systému.
+
+Poznámky k úlohe:
+Operačný systém
+Operačný systém (OS) je program fungujúci ako prostredník medzi používateľmi a hardvérom (technickým vybavením) počítačového systému. Vytvára prostredie pre spúšťanie programov používateľov. Hlavným cieľom je zabezpečenie pohodlného prístupu používateľov k programom a efektívne využívanie hardvéru. Podľa širšej definície je operačný systém všetko, čo dostanete v krabici s OS – kompilátory, editory, GUI nadstavby...
+Podľa odbornej definície je OS iba program, ktorý neustále beží na počítači – tzv. výkonné
+jadro (kernel) operačného systému.
+
+Funkcie operačného systému:
+1.Správa pamäte
+oPrideľovanie pamäte procesom
+oUchováva informácie o využívaní pamäti používateľmi
+2.Správa procesov
+oPlánovanie a sledovanie procesov
+oPrideľovanie procesov
+3.Správa zariadení
+oProstredníctvom ovládačov
+oPriorita procesov, efektívne prideľovanie zariadení
+4.Správa súborov
+oRiadenie prístupu k súborom
+oSúbory usporiadané do adresárov
+oSystémy: FAT (File Allocation Table) a NTFS (New Technology File System)
+Komunikácia s používateľom
+Vykonávanie programov
+Diagnostika/ detekcia chýb
+Chybové riadenie a protokolovanie činností
+Komunikácia s inými systémami
+
+
+7. Zadanie
+
+Vytvorte rozsiahly textový dokument (nakopírujte tento učebný materiál 10 krát za sebou do jedného súboru), zapíšte si jeho veľkosť. Potom ho skomprimujte. Zapíšte si veľkosť po komprimácii. Vypočítajte kompresný pomer použitej kompresie. Experimentujte s rôznymi kompr. algoritmami. Charakterizujte kompresiu, jej význam. Aké typy kompresie poznáte?
+
+Komprimácia dát je proces, pri ktorom sa znižuje objem dát.
+Kompresný pomer  je pomer skomprimovaných dát ku neskomprimovaným. Napr. kompresný pomer 1:4 znamená, že došlo k 4-násobnému zmenšeniu objemu dát (takže 20 MB súbor má po komprimácii 5 MB, teda zmenšil sa na ¼ = 25% pôvodnej veľkosti). Komprimovať dáta má zmysel iba vtedy, ak je kompresný pomer menší ako jedna.
+Existujú dva druhy komprimácie:
+nestratová - pri ktorej nedochádza k strate údajov. To znamená, že ak skomprimované dáta dekomprimujeme, získame úplne identické dáta. Takto sa balia napríklad textové, programové a iné súbory. Kompresia sa deje na základe vynechania redundantných (nadpočetných) informácií. 
+stratová - je proces, pri ktorom sa vynechajú tie údaje, ktoré sú pre celkový dojem z dát nepodstatné, ale dáta sa už po kompresii nikdy nedajú zrekonštruovať do pôvodnej podoby, časť informácií totiž chýba. Stratová koprimácia sa používa hlavne pre komprimovanie mediálnych súborov a to zvuk (mp3), obraz (jpg), video (mpeg). Aj pri niekoľko desaťnásobnej redukcii dát je výsledok komprimácie takmer nerozoznateľný od originálu. 
+Komprimácia sa vykonáva buď automaticky (uložením súboru v komprimovanom formáte JPG, MPEG, MP3) alebo pomocou špeciálneho komprimačného programu.
+Komprimačné programy, archivácia
+Výhodou archivačných formátov ako sú RAR, ZIP, 7zip je, že dokážu do jedného balíka vložiť množstvo súborov čo je výhoda, ktorú určite oceníme napríklad pri posielaní viacerých príloh v e-maily . Ak však archivujeme súbory len za účelom zníženia ich veľkosti je dobre si uvedomiť, že komprimovať sa oplatí len súbory, na ktorých ešte nie je aplikovaná žiadna kompresia. Aj preto majú napríklad obrázky vo formáte TIFF alebo BMP po pridaní do archívu veľmi malú veľkosť, zatiaľ čo obrázky v JPG nezmenšíme takmer vôbec. To isté platí aj o hudobných súboroch. Veľmi efektívne je komprimovať textové dokumenty, databázy...
+Komprimačné (pakovacie) programy boli vyvinuté za účelom zmenšenia veľkosti súborov, pri zachovaní ich pôvodného obsahu. Ich cieľom je zmenšenie (skomprimovanie) súboru, ktorý potom zaberá podstatne menej miesta, ako jeho pôvodný tvar. So skomprimovaným súborom však nie je možné vykonávať bežné operácie, t.j. čítať ho, zapisovať a pod. Na to, aby ho bolo možné meniť, je potrebné jeho dekomprimovanie, čiže rozpakovanie - vrátenie do pôvodného stavu.
+Princíp fungovania: Predstavte si text, v ktorom sa 30 krát vyskytuje slovo archivácia. Znamená to, že takýto text zaberá 30x10=300 znakov. Keď namiesto slova archivácia použijeme nejakú značku, napr. #, ušetrí sa tým 30x9=270 znakov. Pri komprimácii sa teda každé slovo archivácia nahradí značkou # a do tabuľky kódov sa zaznačí: # = archivácia. Tým sa výrazným spôsobom zmenší veľkosť textového súboru. Komprimačné programy pritom pracujú na ešte nižšej úrovni. Namiesto opakovania znakov sledujú opakovanie bitov (0 alebo 1). Dekomprimácia je opačný proces ako komprimácia. V tomto prípade sa namiesto znakov tabuľky musia vložiť slová, ktoré zastupujú. Napr. namiesto značky # sa v komprimovanom texte vloží slovo archivácia.
+K najznámejším komprimačným programom patria: WinZIP, WinRAR
+
+8. Zadanie
+
+Vo svete existuje celý rad metód ako by ste mohli zašifrovať text. Jednou z najbežnejších metód je šifrovať text posunutím ordinálnych hodnôt daným smerom. Ide o posunutie písmen v abecede. Napr. pri posunutí  o 3 znaky s text „abc“ zašifruje na „cde“. V sifra.xlsx je text, ktorý zašifrujte posunutím ordinálnej hodnoty znaku o číslo n. Následne urobte aj dešifrovanie tohto textu. Vysvetlite pojmy kódovanie a šifrovanie. 
+Napr.: pre N=1
+P	o	k	l	a	d	j	e	u	k	r	y	t	y	v	u	č	e	b	n	i	V	T	1
+Q	p	l	m	b	e	k	f	v	l	s	z	u	z	w	v	é	f	c	o	j	W	U	2
+
+Nápoveda
+Použité funkcie char a code
+Kódovanie
+Systém zápisu určitej informácie
+je proces, pri ktorom sa každému znaku (postupnosti znakov) jednoznačne priradí znak alebo postupnosť znakov (obrazov) z iného súboru znakov
+Kto pozná kód vie informáciu odkódovať a zakódovať 
+Napr. morzeovka, ŠPZtka, digitálne inf.
+a.Písmo – jeden z kódov
+oTen, kto nepozná jednotlivé písmena a nedokáže ich spojiť do slov
+b.Binárny kód 
+oPočítače pracujú iba s digitálnymi informáciami, preto informácie, ktoré chceme spracovať pomocou počítača kódujeme
+otvar 0 a 1
+Šifrovanie
+	- Ide o utajené šírenie informácii
+	- Proces, keď obsah textu zmeníme do nezrozumiteľnej podoby
+	- Cieľ: nájdenie šifry, ktorú by nedovolene nemohli rozlúštiť
+	
+	Algoritmus
+		○ postup  na základe, ktorého sa pôvodná správa zmení na zašifrovanú a naopak
+		○ Je verejný
+		○ Väčšina algoritmov vyžaduje na šifrovanie a dešifrovanie kľúč
+	Kľúč 
+		= je utajená informácia pomocou, ktorej sa dostaneme k rozlúšteniu zašifrovanej správy 
+Kryptológia – veda zaoberajúca sa šiframi
+
+
+9. Zadanie
+
+Zistite IP adresu počítača a rýchlosť LAN siete v ktorej sa nachádza. Vysvetlite pojem IP adresa. Vypočítajte, za aký čas sa prenesie súbor veľkosti 2 GB touto sieťou na druhý počítač. Klasifikujte počítačovú sieť v učebni informatiky z hľadiska rozdelenia počítačových sietí podľa rôznych kritérií (rozlohy, úlohy počítačov v sieti, topológie,...). 
+Popíšte výhody a nevýhody pripojenia do počítačovej siete. Popíšte IP adresu.
+
+
+Nápoveda:
+
+Počítačová sieť je systém vzájomne prepojených počítačov za účelom prenosu informácií medzi nimi. Presnejšie: Počítačová sieť je súhrnné označenie technických a softwarových prostriedkov, pomocou ktorých je realizované prepojenie a výmena dát medzi počítačmi. 
+Dôvody zavádzania počítačových sietí:
+· zdieľanie údajov, 
+· zdieľanie prostriedkov 
+· zvýšenie spoľahlivosti systému.
+Služby poskytované sieťou:
+· prenos súborov, 
+· prenos správ, 
+· konverzácia medzi užívateľmi (chat), 
+· zdieľanie súborov,
+· tlač na zdieľaných tlačiarňach, 
+· ochrana údajov, 
+· spojenie s inými sieťami, 
+· práca na vzdialenej stanici, 
+· účtovanie služieb siete. 
+Časti počítačovej siete: 
+· hardware, 
+· software, 
+· organizačné zabezpečenie. 
+Hardware siete zahrňuje všetky technické prostriedky siete (počítače, routre, switche, modemy, kabeláž, sieťové karty, tlačiarne, ....) pomocou ktorých je fyzicky vybudovaná počítačová sieť. 
+Software siete potrebujú programové vybavenie, ktoré v spolupráci s hardwarom zabezpečuje funkcie siete. 
+Organizačné zabezpečenie je súbor pravidiel a opatrení správania sa používateľov pri používaní počítačovej siete.
+
+Jednoduchá síť typu peer to peer je velmi spolehlivá a její výpadek nezpůsobí vážné roblémy. Má však funkční omezení. U sítě klient–server případný výpadek serveru znamená zastavení činnosti všech stanic a ochromení informačního systému podniku. Může to znamenat i zastavení výroby, a tedy obrovské finanční ztráty. Proto jako server bývá nasazen výkonný speciální počítač, který má velmi kvalitní testované díly. Zálohování (archivace) všech dat probíhá automaticky každý den. V nejdůležitějších sítích pracují dva servery současně (paralelně), každý je přitom schopen obsloužit celou síť. Je jistě pochopitelné, že síťový server je velmi drahý počítač. 
+IP adresa – číselná adresa 
+každý počítač v sieti internet má pridelenú jednoznačnú číselnú adresu, podľa ktorej ho možno nájsť IPv4 je 32-bitová, podporuje viac ako 4 miliardy (232) adries (dnes už nepostačujúce); skladá sa zo štyroch celých čísel od 0 po 255 oddelených bodkami, napr. 192.168.1.15 
+10. Zadanie
+
+Katka má fotografiu triedy uloženú v bitmapovom súbore a chce ju poslať MMS-kou na Petrov
+mobilný telefón. Fotka má rozmery 256 x 180 pixelov (obrazových bodov) a je v nej použitých 256 farieb. MMS-ka môže mať maximálne 5 KB. Najmenej koľko MMS musí Katka poslať, ak chce poslať celú fotografiu rozloženú do viacerých MMS? V programe Excel vytvor pre Katku funkciu, kde po zadaní rozmerov a počtu farieb bude hneď vedieť počet MMS. Popíšte spôsob prenosu správ pomocou elektronickej pošty.
+
+Nápoveda
+
+Riešenie
+Rozmery fotografie sú 256 x 180 pixelov, teda počet bodov v obrázku bude: 
+256 × 180 = 46 080
+Každý bod 256 farebného obrázka zaberie 1 B pamäte (pozri úlohu 1), takže obrázok bude zaberať: 46 080 × 1 B = 46 080 B
+Jedna MMS môže zaberať 5 kB čo je v B: 5 kB × 1024 = 5 120 B
+Počet MMS vypočítame takto: 46 080 B : 5 120 B = 9
+Potrebný počet MMS je 9.
+
+Správy pre elektronickú poštu píšeme v aplikácií klienta elektronickej pošty. Po napísaní správy a zadaní e-mailovej adresy adresáta sa e-mailová správa spolu s prílohami prenáša ako jeden textový súbor (prílohy sú v ňom špeciálne zakódované) cez port 25 prostredníctvom protokolu SMTP (Simple Mail Transfer Protocol) na server odchádzajúcej pošty (outgoing server). Tento je spravidla vo vlastníctve zriaďovateľa e-mailovej schránky. Server prevezme údaje od odosielateľa a pokúsi sa správu doručiť adresátovi. Pokiaľ e-mailová adresa neobsahuje doménu, ale len názov schránky, predpokladá, že schránka adresáta je zriadená na rovnakej doméne ako schránka odosielateľa a pokúsi sa o doručenie sám. Pokiaľ sa domény odosielateľ a prijímateľa líšia, SMTP server sa spojí s DNS serverom, aby si od neho vypýtal IP adresu, na ktorú nasmeruje správu. V prípade jej prijatia cieľovým serverom sa prestane starať o jej ďalší osud. V prípade, že doručenie správy zlyhá odosielateľ o tom zvyčajne dostane správu.
+Po úspešnom doručení na cieľový server zostáva správa na ňom uložená dovtedy, pokiaľ si ju
+adresát nevyzdvihne. Na prenos doručenej správy zo servera na lokálny počítač sa používajú protokoly POP3 a IMAP.
+POP3 (Post Office Protocol version 3) pracuje na porte 110 a štandardne správy čakajúce na serveri stiahne do lokálneho počítača a tým, že ich na serveri zmaže. Vždy sa stiahnu všetky správy bez ohľadu na to, či používateľ o ne záujem má alebo nie. Doručené správy máme k dispozícii len v počítači, do ktorého sme ich stiahli.
+Protokol IMAP (Internet Message Access Protokol) umožňuje so správami pracovať priamo na serveri s tým, že používateľ po pripojení získa zo servera len hlavičky správ. Celá správa sa stiahne a zobrazí až v prípade požiadavky. Správu možno vymazať bez toho, aby ju používateľ preniesol so lokálneho počítača – vymazaním hlavičky v klientovi sa vymaže celá správa na serveri. Protokol pracuje na porte 143 a vďaka uchovávaniu správ na serveri ich máme k dispozícii pri prihlásení sa z ľubovoľného počítača. Veľmi často možno k e-mailovým schránkam pristupovať i prostredníctvom webového rozhrania, tzv. webmailu. Výhodou je, že používateľ nemusí nastavovať parametre e-mailového klienta a dostupnosť z ľubovoľného miesta na svete, nevýhodou menší komfort a pohodlie používateľa.
+
+6.Zadanie
+
+Zistite, aký operačný systém je na počítači, na ktorom pracujete. Akým spôsobom si môžeme overiť pravosť zdrojového kódu operačného systému? Pomocou správcu úloh sledujte úlohu kalkulačky: vyhľadajte aplikáciu Kalkulačka (C:\Windows\System32\calc.exe) a zistite koľko pamäte zaberá proces calc.exe. Ako sa tento údaj mení pri minimalizovaní? Zapisuje proces kalkulačky aj na pevný disk? Aké je celkové využitie procesora a pevného disku? Popíšte funkcie operačného systému.
+
+Poznámky k úlohe:
+Operačný systém
+Operačný systém (OS) je program fungujúci ako prostredník medzi používateľmi a hardvérom (technickým vybavením) počítačového systému. Vytvára prostredie pre spúšťanie programov používateľov. Hlavným cieľom je zabezpečenie pohodlného prístupu používateľov k programom a efektívne využívanie hardvéru. Podľa širšej definície je operačný systém všetko, čo dostanete v krabici s OS – kompilátory, editory, GUI nadstavby...
+Podľa odbornej definície je OS iba program, ktorý neustále beží na počítači – tzv. výkonné
+jadro (kernel) operačného systému.
+
+Funkcie operačného systému:
+1.Správa pamäte
+oPrideľovanie pamäte procesom
+oUchováva informácie o využívaní pamäti používateľmi
+2.Správa procesov
+oPlánovanie a sledovanie procesov
+oPrideľovanie procesov
+3.Správa zariadení
+oProstredníctvom ovládačov
+oPriorita procesov, efektívne prideľovanie zariadení
+4.Správa súborov
+oRiadenie prístupu k súborom
+oSúbory usporiadané do adresárov
+oSystémy: FAT (File Allocation Table) a NTFS (New Technology File System)
+Komunikácia s používateľom
+Vykonávanie programov
+Diagnostika/ detekcia chýb
+Chybové riadenie a protokolovanie činností
+Komunikácia s inými systémami
+
+
+7. Zadanie
+
+Vytvorte rozsiahly textový dokument (nakopírujte tento učebný materiál 10 krát za sebou do jedného súboru), zapíšte si jeho veľkosť. Potom ho skomprimujte. Zapíšte si veľkosť po komprimácii. Vypočítajte kompresný pomer použitej kompresie. Experimentujte s rôznymi kompr. algoritmami. Charakterizujte kompresiu, jej význam. Aké typy kompresie poznáte?
+
+Komprimácia dát je proces, pri ktorom sa znižuje objem dát.
+Kompresný pomer  je pomer skomprimovaných dát ku neskomprimovaným. Napr. kompresný pomer 1:4 znamená, že došlo k 4-násobnému zmenšeniu objemu dát (takže 20 MB súbor má po komprimácii 5 MB, teda zmenšil sa na ¼ = 25% pôvodnej veľkosti). Komprimovať dáta má zmysel iba vtedy, ak je kompresný pomer menší ako jedna.
+Existujú dva druhy komprimácie:
+nestratová - pri ktorej nedochádza k strate údajov. To znamená, že ak skomprimované dáta dekomprimujeme, získame úplne identické dáta. Takto sa balia napríklad textové, programové a iné súbory. Kompresia sa deje na základe vynechania redundantných (nadpočetných) informácií. 
+stratová - je proces, pri ktorom sa vynechajú tie údaje, ktoré sú pre celkový dojem z dát nepodstatné, ale dáta sa už po kompresii nikdy nedajú zrekonštruovať do pôvodnej podoby, časť informácií totiž chýba. Stratová koprimácia sa používa hlavne pre komprimovanie mediálnych súborov a to zvuk (mp3), obraz (jpg), video (mpeg). Aj pri niekoľko desaťnásobnej redukcii dát je výsledok komprimácie takmer nerozoznateľný od originálu. 
+Komprimácia sa vykonáva buď automaticky (uložením súboru v komprimovanom formáte JPG, MPEG, MP3) alebo pomocou špeciálneho komprimačného programu.
+Komprimačné programy, archivácia
+Výhodou archivačných formátov ako sú RAR, ZIP, 7zip je, že dokážu do jedného balíka vložiť množstvo súborov čo je výhoda, ktorú určite oceníme napríklad pri posielaní viacerých príloh v e-maily . Ak však archivujeme súbory len za účelom zníženia ich veľkosti je dobre si uvedomiť, že komprimovať sa oplatí len súbory, na ktorých ešte nie je aplikovaná žiadna kompresia. Aj preto majú napríklad obrázky vo formáte TIFF alebo BMP po pridaní do archívu veľmi malú veľkosť, zatiaľ čo obrázky v JPG nezmenšíme takmer vôbec. To isté platí aj o hudobných súboroch. Veľmi efektívne je komprimovať textové dokumenty, databázy...
+Komprimačné (pakovacie) programy boli vyvinuté za účelom zmenšenia veľkosti súborov, pri zachovaní ich pôvodného obsahu. Ich cieľom je zmenšenie (skomprimovanie) súboru, ktorý potom zaberá podstatne menej miesta, ako jeho pôvodný tvar. So skomprimovaným súborom však nie je možné vykonávať bežné operácie, t.j. čítať ho, zapisovať a pod. Na to, aby ho bolo možné meniť, je potrebné jeho dekomprimovanie, čiže rozpakovanie - vrátenie do pôvodného stavu.
+Princíp fungovania: Predstavte si text, v ktorom sa 30 krát vyskytuje slovo archivácia. Znamená to, že takýto text zaberá 30x10=300 znakov. Keď namiesto slova archivácia použijeme nejakú značku, napr. #, ušetrí sa tým 30x9=270 znakov. Pri komprimácii sa teda každé slovo archivácia nahradí značkou # a do tabuľky kódov sa zaznačí: # = archivácia. Tým sa výrazným spôsobom zmenší veľkosť textového súboru. Komprimačné programy pritom pracujú na ešte nižšej úrovni. Namiesto opakovania znakov sledujú opakovanie bitov (0 alebo 1). Dekomprimácia je opačný proces ako komprimácia. V tomto prípade sa namiesto znakov tabuľky musia vložiť slová, ktoré zastupujú. Napr. namiesto značky # sa v komprimovanom texte vloží slovo archivácia.
+K najznámejším komprimačným programom patria: WinZIP, WinRAR
+
+8. Zadanie
+
+Vo svete existuje celý rad metód ako by ste mohli zašifrovať text. Jednou z najbežnejších metód je šifrovať text posunutím ordinálnych hodnôt daným smerom. Ide o posunutie písmen v abecede. Napr. pri posunutí  o 3 znaky s text „abc“ zašifruje na „cde“. V sifra.xlsx je text, ktorý zašifrujte posunutím ordinálnej hodnoty znaku o číslo n. Následne urobte aj dešifrovanie tohto textu. Vysvetlite pojmy kódovanie a šifrovanie. 
+Napr.: pre N=1
+P	o	k	l	a	d	j	e	u	k	r	y	t	y	v	u	č	e	b	n	i	V	T	1
+Q	p	l	m	b	e	k	f	v	l	s	z	u	z	w	v	é	f	c	o	j	W	U	2
+
+Nápoveda
+Použité funkcie char a code
+Kódovanie
+Systém zápisu určitej informácie
+je proces, pri ktorom sa každému znaku (postupnosti znakov) jednoznačne priradí znak alebo postupnosť znakov (obrazov) z iného súboru znakov
+Kto pozná kód vie informáciu odkódovať a zakódovať 
+Napr. morzeovka, ŠPZtka, digitálne inf.
+a.Písmo – jeden z kódov
+oTen, kto nepozná jednotlivé písmena a nedokáže ich spojiť do slov
+b.Binárny kód 
+oPočítače pracujú iba s digitálnymi informáciami, preto informácie, ktoré chceme spracovať pomocou počítača kódujeme
+otvar 0 a 1
+Šifrovanie
+	- Ide o utajené šírenie informácii
+	- Proces, keď obsah textu zmeníme do nezrozumiteľnej podoby
+	- Cieľ: nájdenie šifry, ktorú by nedovolene nemohli rozlúštiť
+	
+	Algoritmus
+		○ postup  na základe, ktorého sa pôvodná správa zmení na zašifrovanú a naopak
+		○ Je verejný
+		○ Väčšina algoritmov vyžaduje na šifrovanie a dešifrovanie kľúč
+	Kľúč 
+		= je utajená informácia pomocou, ktorej sa dostaneme k rozlúšteniu zašifrovanej správy 
+Kryptológia – veda zaoberajúca sa šiframi
+
+
+9. Zadanie
+
+Zistite IP adresu počítača a rýchlosť LAN siete v ktorej sa nachádza. Vysvetlite pojem IP adresa. Vypočítajte, za aký čas sa prenesie súbor veľkosti 2 GB touto sieťou na druhý počítač. Klasifikujte počítačovú sieť v učebni informatiky z hľadiska rozdelenia počítačových sietí podľa rôznych kritérií (rozlohy, úlohy počítačov v sieti, topológie,...). 
+Popíšte výhody a nevýhody pripojenia do počítačovej siete. Popíšte IP adresu.
+
+
+Nápoveda:
+
+Počítačová sieť je systém vzájomne prepojených počítačov za účelom prenosu informácií medzi nimi. Presnejšie: Počítačová sieť je súhrnné označenie technických a softwarových prostriedkov, pomocou ktorých je realizované prepojenie a výmena dát medzi počítačmi. 
+Dôvody zavádzania počítačových sietí:
+· zdieľanie údajov, 
+· zdieľanie prostriedkov 
+· zvýšenie spoľahlivosti systému.
+Služby poskytované sieťou:
+· prenos súborov, 
+· prenos správ, 
+· konverzácia medzi užívateľmi (chat), 
+· zdieľanie súborov,
+· tlač na zdieľaných tlačiarňach, 
+· ochrana údajov, 
+· spojenie s inými sieťami, 
+· práca na vzdialenej stanici, 
+· účtovanie služieb siete. 
+Časti počítačovej siete: 
+· hardware, 
+· software, 
+· organizačné zabezpečenie. 
+Hardware siete zahrňuje všetky technické prostriedky siete (počítače, routre, switche, modemy, kabeláž, sieťové karty, tlačiarne, ....) pomocou ktorých je fyzicky vybudovaná počítačová sieť. 
+Software siete potrebujú programové vybavenie, ktoré v spolupráci s hardwarom zabezpečuje funkcie siete. 
+Organizačné zabezpečenie je súbor pravidiel a opatrení správania sa používateľov pri používaní počítačovej siete.
+
+Jednoduchá síť typu peer to peer je velmi spolehlivá a její výpadek nezpůsobí vážné roblémy. Má však funkční omezení. U sítě klient–server případný výpadek serveru znamená zastavení činnosti všech stanic a ochromení informačního systému podniku. Může to znamenat i zastavení výroby, a tedy obrovské finanční ztráty. Proto jako server bývá nasazen výkonný speciální počítač, který má velmi kvalitní testované díly. Zálohování (archivace) všech dat probíhá automaticky každý den. V nejdůležitějších sítích pracují dva servery současně (paralelně), každý je přitom schopen obsloužit celou síť. Je jistě pochopitelné, že síťový server je velmi drahý počítač. 
+IP adresa – číselná adresa 
+každý počítač v sieti internet má pridelenú jednoznačnú číselnú adresu, podľa ktorej ho možno nájsť IPv4 je 32-bitová, podporuje viac ako 4 miliardy (232) adries (dnes už nepostačujúce); skladá sa zo štyroch celých čísel od 0 po 255 oddelených bodkami, napr. 192.168.1.15 
+10. Zadanie
+
+Katka má fotografiu triedy uloženú v bitmapovom súbore a chce ju poslať MMS-kou na Petrov
+mobilný telefón. Fotka má rozmery 256 x 180 pixelov (obrazových bodov) a je v nej použitých 256 farieb. MMS-ka môže mať maximálne 5 KB. Najmenej koľko MMS musí Katka poslať, ak chce poslať celú fotografiu rozloženú do viacerých MMS? V programe Excel vytvor pre Katku funkciu, kde po zadaní rozmerov a počtu farieb bude hneď vedieť počet MMS. Popíšte spôsob prenosu správ pomocou elektronickej pošty.
+
+Nápoveda
+
+Riešenie
+Rozmery fotografie sú 256 x 180 pixelov, teda počet bodov v obrázku bude: 
+256 × 180 = 46 080
+Každý bod 256 farebného obrázka zaberie 1 B pamäte (pozri úlohu 1), takže obrázok bude zaberať: 46 080 × 1 B = 46 080 B
+Jedna MMS môže zaberať 5 kB čo je v B: 5 kB × 1024 = 5 120 B
+Počet MMS vypočítame takto: 46 080 B : 5 120 B = 9
+Potrebný počet MMS je 9.
+
+Správy pre elektronickú poštu píšeme v aplikácií klienta elektronickej pošty. Po napísaní správy a zadaní e-mailovej adresy adresáta sa e-mailová správa spolu s prílohami prenáša ako jeden textový súbor (prílohy sú v ňom špeciálne zakódované) cez port 25 prostredníctvom protokolu SMTP (Simple Mail Transfer Protocol) na server odchádzajúcej pošty (outgoing server). Tento je spravidla vo vlastníctve zriaďovateľa e-mailovej schránky. Server prevezme údaje od odosielateľa a pokúsi sa správu doručiť adresátovi. Pokiaľ e-mailová adresa neobsahuje doménu, ale len názov schránky, predpokladá, že schránka adresáta je zriadená na rovnakej doméne ako schránka odosielateľa a pokúsi sa o doručenie sám. Pokiaľ sa domény odosielateľ a prijímateľa líšia, SMTP server sa spojí s DNS serverom, aby si od neho vypýtal IP adresu, na ktorú nasmeruje správu. V prípade jej prijatia cieľovým serverom sa prestane starať o jej ďalší osud. V prípade, že doručenie správy zlyhá odosielateľ o tom zvyčajne dostane správu.
+Po úspešnom doručení na cieľový server zostáva správa na ňom uložená dovtedy, pokiaľ si ju
+adresát nevyzdvihne. Na prenos doručenej správy zo servera na lokálny počítač sa používajú protokoly POP3 a IMAP.
+POP3 (Post Office Protocol version 3) pracuje na porte 110 a štandardne správy čakajúce na serveri stiahne do lokálneho počítača a tým, že ich na serveri zmaže. Vždy sa stiahnu všetky správy bez ohľadu na to, či používateľ o ne záujem má alebo nie. Doručené správy máme k dispozícii len v počítači, do ktorého sme ich stiahli.
+Protokol IMAP (Internet Message Access Protokol) umožňuje so správami pracovať priamo na serveri s tým, že používateľ po pripojení získa zo servera len hlavičky správ. Celá správa sa stiahne a zobrazí až v prípade požiadavky. Správu možno vymazať bez toho, aby ju používateľ preniesol so lokálneho počítača – vymazaním hlavičky v klientovi sa vymaže celá správa na serveri. Protokol pracuje na porte 143 a vďaka uchovávaniu správ na serveri ich máme k dispozícii pri prihlásení sa z ľubovoľného počítača. Veľmi často možno k e-mailovým schránkam pristupovať i prostredníctvom webového rozhrania, tzv. webmailu. Výhodou je, že používateľ nemusí nastavovať parametre e-mailového klienta a dostupnosť z ľubovoľného miesta na svete, nevýhodou menší komfort a pohodlie používateľa.
+
+6.Zadanie
+
+Zistite, aký operačný systém je na počítači, na ktorom pracujete. Akým spôsobom si môžeme overiť pravosť zdrojového kódu operačného systému? Pomocou správcu úloh sledujte úlohu kalkulačky: vyhľadajte aplikáciu Kalkulačka (C:\Windows\System32\calc.exe) a zistite koľko pamäte zaberá proces calc.exe. Ako sa tento údaj mení pri minimalizovaní? Zapisuje proces kalkulačky aj na pevný disk? Aké je celkové využitie procesora a pevného disku? Popíšte funkcie operačného systému.
+
+Poznámky k úlohe:
+Operačný systém
+Operačný systém (OS) je program fungujúci ako prostredník medzi používateľmi a hardvérom (technickým vybavením) počítačového systému. Vytvára prostredie pre spúšťanie programov používateľov. Hlavným cieľom je zabezpečenie pohodlného prístupu používateľov k programom a efektívne využívanie hardvéru. Podľa širšej definície je operačný systém všetko, čo dostanete v krabici s OS – kompilátory, editory, GUI nadstavby...
+Podľa odbornej definície je OS iba program, ktorý neustále beží na počítači – tzv. výkonné
+jadro (kernel) operačného systému.
+
+Funkcie operačného systému:
+1.Správa pamäte
+oPrideľovanie pamäte procesom
+oUchováva informácie o využívaní pamäti používateľmi
+2.Správa procesov
+oPlánovanie a sledovanie procesov
+oPrideľovanie procesov
+3.Správa zariadení
+oProstredníctvom ovládačov
+oPriorita procesov, efektívne prideľovanie zariadení
+4.Správa súborov
+oRiadenie prístupu k súborom
+oSúbory usporiadané do adresárov
+oSystémy: FAT (File Allocation Table) a NTFS (New Technology File System)
+Komunikácia s používateľom
+Vykonávanie programov
+Diagnostika/ detekcia chýb
+Chybové riadenie a protokolovanie činností
+Komunikácia s inými systémami
+
+
+7. Zadanie
+
+Vytvorte rozsiahly textový dokument (nakopírujte tento učebný materiál 10 krát za sebou do jedného súboru), zapíšte si jeho veľkosť. Potom ho skomprimujte. Zapíšte si veľkosť po komprimácii. Vypočítajte kompresný pomer použitej kompresie. Experimentujte s rôznymi kompr. algoritmami. Charakterizujte kompresiu, jej význam. Aké typy kompresie poznáte?
+
+Komprimácia dát je proces, pri ktorom sa znižuje objem dát.
+Kompresný pomer  je pomer skomprimovaných dát ku neskomprimovaným. Napr. kompresný pomer 1:4 znamená, že došlo k 4-násobnému zmenšeniu objemu dát (takže 20 MB súbor má po komprimácii 5 MB, teda zmenšil sa na ¼ = 25% pôvodnej veľkosti). Komprimovať dáta má zmysel iba vtedy, ak je kompresný pomer menší ako jedna.
+Existujú dva druhy komprimácie:
+nestratová - pri ktorej nedochádza k strate údajov. To znamená, že ak skomprimované dáta dekomprimujeme, získame úplne identické dáta. Takto sa balia napríklad textové, programové a iné súbory. Kompresia sa deje na základe vynechania redundantných (nadpočetných) informácií. 
+stratová - je proces, pri ktorom sa vynechajú tie údaje, ktoré sú pre celkový dojem z dát nepodstatné, ale dáta sa už po kompresii nikdy nedajú zrekonštruovať do pôvodnej podoby, časť informácií totiž chýba. Stratová koprimácia sa používa hlavne pre komprimovanie mediálnych súborov a to zvuk (mp3), obraz (jpg), video (mpeg). Aj pri niekoľko desaťnásobnej redukcii dát je výsledok komprimácie takmer nerozoznateľný od originálu. 
+Komprimácia sa vykonáva buď automaticky (uložením súboru v komprimovanom formáte JPG, MPEG, MP3) alebo pomocou špeciálneho komprimačného programu.
+Komprimačné programy, archivácia
+Výhodou archivačných formátov ako sú RAR, ZIP, 7zip je, že dokážu do jedného balíka vložiť množstvo súborov čo je výhoda, ktorú určite oceníme napríklad pri posielaní viacerých príloh v e-maily . Ak však archivujeme súbory len za účelom zníženia ich veľkosti je dobre si uvedomiť, že komprimovať sa oplatí len súbory, na ktorých ešte nie je aplikovaná žiadna kompresia. Aj preto majú napríklad obrázky vo formáte TIFF alebo BMP po pridaní do archívu veľmi malú veľkosť, zatiaľ čo obrázky v JPG nezmenšíme takmer vôbec. To isté platí aj o hudobných súboroch. Veľmi efektívne je komprimovať textové dokumenty, databázy...
+Komprimačné (pakovacie) programy boli vyvinuté za účelom zmenšenia veľkosti súborov, pri zachovaní ich pôvodného obsahu. Ich cieľom je zmenšenie (skomprimovanie) súboru, ktorý potom zaberá podstatne menej miesta, ako jeho pôvodný tvar. So skomprimovaným súborom však nie je možné vykonávať bežné operácie, t.j. čítať ho, zapisovať a pod. Na to, aby ho bolo možné meniť, je potrebné jeho dekomprimovanie, čiže rozpakovanie - vrátenie do pôvodného stavu.
+Princíp fungovania: Predstavte si text, v ktorom sa 30 krát vyskytuje slovo archivácia. Znamená to, že takýto text zaberá 30x10=300 znakov. Keď namiesto slova archivácia použijeme nejakú značku, napr. #, ušetrí sa tým 30x9=270 znakov. Pri komprimácii sa teda každé slovo archivácia nahradí značkou # a do tabuľky kódov sa zaznačí: # = archivácia. Tým sa výrazným spôsobom zmenší veľkosť textového súboru. Komprimačné programy pritom pracujú na ešte nižšej úrovni. Namiesto opakovania znakov sledujú opakovanie bitov (0 alebo 1). Dekomprimácia je opačný proces ako komprimácia. V tomto prípade sa namiesto znakov tabuľky musia vložiť slová, ktoré zastupujú. Napr. namiesto značky # sa v komprimovanom texte vloží slovo archivácia.
+K najznámejším komprimačným programom patria: WinZIP, WinRAR
+
+8. Zadanie
+
+Vo svete existuje celý rad metód ako by ste mohli zašifrovať text. Jednou z najbežnejších metód je šifrovať text posunutím ordinálnych hodnôt daným smerom. Ide o posunutie písmen v abecede. Napr. pri posunutí  o 3 znaky s text „abc“ zašifruje na „cde“. V sifra.xlsx je text, ktorý zašifrujte posunutím ordinálnej hodnoty znaku o číslo n. Následne urobte aj dešifrovanie tohto textu. Vysvetlite pojmy kódovanie a šifrovanie. 
+Napr.: pre N=1
+P	o	k	l	a	d	j	e	u	k	r	y	t	y	v	u	č	e	b	n	i	V	T	1
+Q	p	l	m	b	e	k	f	v	l	s	z	u	z	w	v	é	f	c	o	j	W	U	2
+
+Nápoveda
+Použité funkcie char a code
+Kódovanie
+Systém zápisu určitej informácie
+je proces, pri ktorom sa každému znaku (postupnosti znakov) jednoznačne priradí znak alebo postupnosť znakov (obrazov) z iného súboru znakov
+Kto pozná kód vie informáciu odkódovať a zakódovať 
+Napr. morzeovka, ŠPZtka, digitálne inf.
+a.Písmo – jeden z kódov
+oTen, kto nepozná jednotlivé písmena a nedokáže ich spojiť do slov
+b.Binárny kód 
+oPočítače pracujú iba s digitálnymi informáciami, preto informácie, ktoré chceme spracovať pomocou počítača kódujeme
+otvar 0 a 1
+Šifrovanie
+	- Ide o utajené šírenie informácii
+	- Proces, keď obsah textu zmeníme do nezrozumiteľnej podoby
+	- Cieľ: nájdenie šifry, ktorú by nedovolene nemohli rozlúštiť
+	
+	Algoritmus
+		○ postup  na základe, ktorého sa pôvodná správa zmení na zašifrovanú a naopak
+		○ Je verejný
+		○ Väčšina algoritmov vyžaduje na šifrovanie a dešifrovanie kľúč
+	Kľúč 
+		= je utajená informácia pomocou, ktorej sa dostaneme k rozlúšteniu zašifrovanej správy 
+Kryptológia – veda zaoberajúca sa šiframi
+
+
+9. Zadanie
+
+Zistite IP adresu počítača a rýchlosť LAN siete v ktorej sa nachádza. Vysvetlite pojem IP adresa. Vypočítajte, za aký čas sa prenesie súbor veľkosti 2 GB touto sieťou na druhý počítač. Klasifikujte počítačovú sieť v učebni informatiky z hľadiska rozdelenia počítačových sietí podľa rôznych kritérií (rozlohy, úlohy počítačov v sieti, topológie,...). 
+Popíšte výhody a nevýhody pripojenia do počítačovej siete. Popíšte IP adresu.
+
+
+Nápoveda:
+
+Počítačová sieť je systém vzájomne prepojených počítačov za účelom prenosu informácií medzi nimi. Presnejšie: Počítačová sieť je súhrnné označenie technických a softwarových prostriedkov, pomocou ktorých je realizované prepojenie a výmena dát medzi počítačmi. 
+Dôvody zavádzania počítačových sietí:
+· zdieľanie údajov, 
+· zdieľanie prostriedkov 
+· zvýšenie spoľahlivosti systému.
+Služby poskytované sieťou:
+· prenos súborov, 
+· prenos správ, 
+· konverzácia medzi užívateľmi (chat), 
+· zdieľanie súborov,
+· tlač na zdieľaných tlačiarňach, 
+· ochrana údajov, 
+· spojenie s inými sieťami, 
+· práca na vzdialenej stanici, 
+· účtovanie služieb siete. 
+Časti počítačovej siete: 
+· hardware, 
+· software, 
+· organizačné zabezpečenie. 
+Hardware siete zahrňuje všetky technické prostriedky siete (počítače, routre, switche, modemy, kabeláž, sieťové karty, tlačiarne, ....) pomocou ktorých je fyzicky vybudovaná počítačová sieť. 
+Software siete potrebujú programové vybavenie, ktoré v spolupráci s hardwarom zabezpečuje funkcie siete. 
+Organizačné zabezpečenie je súbor pravidiel a opatrení správania sa používateľov pri používaní počítačovej siete.
+
+Jednoduchá síť typu peer to peer je velmi spolehlivá a její výpadek nezpůsobí vážné roblémy. Má však funkční omezení. U sítě klient–server případný výpadek serveru znamená zastavení činnosti všech stanic a ochromení informačního systému podniku. Může to znamenat i zastavení výroby, a tedy obrovské finanční ztráty. Proto jako server bývá nasazen výkonný speciální počítač, který má velmi kvalitní testované díly. Zálohování (archivace) všech dat probíhá automaticky každý den. V nejdůležitějších sítích pracují dva servery současně (paralelně), každý je přitom schopen obsloužit celou síť. Je jistě pochopitelné, že síťový server je velmi drahý počítač. 
+IP adresa – číselná adresa 
+každý počítač v sieti internet má pridelenú jednoznačnú číselnú adresu, podľa ktorej ho možno nájsť IPv4 je 32-bitová, podporuje viac ako 4 miliardy (232) adries (dnes už nepostačujúce); skladá sa zo štyroch celých čísel od 0 po 255 oddelených bodkami, napr. 192.168.1.15 
+10. Zadanie
+
+Katka má fotografiu triedy uloženú v bitmapovom súbore a chce ju poslať MMS-kou na Petrov
+mobilný telefón. Fotka má rozmery 256 x 180 pixelov (obrazových bodov) a je v nej použitých 256 farieb. MMS-ka môže mať maximálne 5 KB. Najmenej koľko MMS musí Katka poslať, ak chce poslať celú fotografiu rozloženú do viacerých MMS? V programe Excel vytvor pre Katku funkciu, kde po zadaní rozmerov a počtu farieb bude hneď vedieť počet MMS. Popíšte spôsob prenosu správ pomocou elektronickej pošty.
+
+Nápoveda
+
+Riešenie
+Rozmery fotografie sú 256 x 180 pixelov, teda počet bodov v obrázku bude: 
+256 × 180 = 46 080
+Každý bod 256 farebného obrázka zaberie 1 B pamäte (pozri úlohu 1), takže obrázok bude zaberať: 46 080 × 1 B = 46 080 B
+Jedna MMS môže zaberať 5 kB čo je v B: 5 kB × 1024 = 5 120 B
+Počet MMS vypočítame takto: 46 080 B : 5 120 B = 9
+Potrebný počet MMS je 9.
+
+Správy pre elektronickú poštu píšeme v aplikácií klienta elektronickej pošty. Po napísaní správy a zadaní e-mailovej adresy adresáta sa e-mailová správa spolu s prílohami prenáša ako jeden textový súbor (prílohy sú v ňom špeciálne zakódované) cez port 25 prostredníctvom protokolu SMTP (Simple Mail Transfer Protocol) na server odchádzajúcej pošty (outgoing server). Tento je spravidla vo vlastníctve zriaďovateľa e-mailovej schránky. Server prevezme údaje od odosielateľa a pokúsi sa správu doručiť adresátovi. Pokiaľ e-mailová adresa neobsahuje doménu, ale len názov schránky, predpokladá, že schránka adresáta je zriadená na rovnakej doméne ako schránka odosielateľa a pokúsi sa o doručenie sám. Pokiaľ sa domény odosielateľ a prijímateľa líšia, SMTP server sa spojí s DNS serverom, aby si od neho vypýtal IP adresu, na ktorú nasmeruje správu. V prípade jej prijatia cieľovým serverom sa prestane starať o jej ďalší osud. V prípade, že doručenie správy zlyhá odosielateľ o tom zvyčajne dostane správu.
+Po úspešnom doručení na cieľový server zostáva správa na ňom uložená dovtedy, pokiaľ si ju
+adresát nevyzdvihne. Na prenos doručenej správy zo servera na lokálny počítač sa používajú protokoly POP3 a IMAP.
+POP3 (Post Office Protocol version 3) pracuje na porte 110 a štandardne správy čakajúce na serveri stiahne do lokálneho počítača a tým, že ich na serveri zmaže. Vždy sa stiahnu všetky správy bez ohľadu na to, či používateľ o ne záujem má alebo nie. Doručené správy máme k dispozícii len v počítači, do ktorého sme ich stiahli.
+Protokol IMAP (Internet Message Access Protokol) umožňuje so správami pracovať priamo na serveri s tým, že používateľ po pripojení získa zo servera len hlavičky správ. Celá správa sa stiahne a zobrazí až v prípade požiadavky. Správu možno vymazať bez toho, aby ju používateľ preniesol so lokálneho počítača – vymazaním hlavičky v klientovi sa vymaže celá správa na serveri. Protokol pracuje na porte 143 a vďaka uchovávaniu správ na serveri ich máme k dispozícii pri prihlásení sa z ľubovoľného počítača. Veľmi často možno k e-mailovým schránkam pristupovať i prostredníctvom webového rozhrania, tzv. webmailu. Výhodou je, že používateľ nemusí nastavovať parametre e-mailového klienta a dostupnosť z ľubovoľného miesta na svete, nevýhodou menší komfort a pohodlie používateľa.
+
+6.Zadanie
+
+Zistite, aký operačný systém je na počítači, na ktorom pracujete. Akým spôsobom si môžeme overiť pravosť zdrojového kódu operačného systému? Pomocou správcu úloh sledujte úlohu kalkulačky: vyhľadajte aplikáciu Kalkulačka (C:\Windows\System32\calc.exe) a zistite koľko pamäte zaberá proces calc.exe. Ako sa tento údaj mení pri minimalizovaní? Zapisuje proces kalkulačky aj na pevný disk? Aké je celkové využitie procesora a pevného disku? Popíšte funkcie operačného systému.
+
+Poznámky k úlohe:
+Operačný systém
+Operačný systém (OS) je program fungujúci ako prostredník medzi používateľmi a hardvérom (technickým vybavením) počítačového systému. Vytvára prostredie pre spúšťanie programov používateľov. Hlavným cieľom je zabezpečenie pohodlného prístupu používateľov k programom a efektívne využívanie hardvéru. Podľa širšej definície je operačný systém všetko, čo dostanete v krabici s OS – kompilátory, editory, GUI nadstavby...
+Podľa odbornej definície je OS iba program, ktorý neustále beží na počítači – tzv. výkonné
+jadro (kernel) operačného systému.
+
+Funkcie operačného systému:
+1.Správa pamäte
+oPrideľovanie pamäte procesom
+oUchováva informácie o využívaní pamäti používateľmi
+2.Správa procesov
+oPlánovanie a sledovanie procesov
+oPrideľovanie procesov
+3.Správa zariadení
+oProstredníctvom ovládačov
+oPriorita procesov, efektívne prideľovanie zariadení
+4.Správa súborov
+oRiadenie prístupu k súborom
+oSúbory usporiadané do adresárov
+oSystémy: FAT (File Allocation Table) a NTFS (New Technology File System)
+Komunikácia s používateľom
+Vykonávanie programov
+Diagnostika/ detekcia chýb
+Chybové riadenie a protokolovanie činností
+Komunikácia s inými systémami
+
+
+7. Zadanie
+
+Vytvorte rozsiahly textový dokument (nakopírujte tento učebný materiál 10 krát za sebou do jedného súboru), zapíšte si jeho veľkosť. Potom ho skomprimujte. Zapíšte si veľkosť po komprimácii. Vypočítajte kompresný pomer použitej kompresie. Experimentujte s rôznymi kompr. algoritmami. Charakterizujte kompresiu, jej význam. Aké typy kompresie poznáte?
+
+Komprimácia dát je proces, pri ktorom sa znižuje objem dát.
+Kompresný pomer  je pomer skomprimovaných dát ku neskomprimovaným. Napr. kompresný pomer 1:4 znamená, že došlo k 4-násobnému zmenšeniu objemu dát (takže 20 MB súbor má po komprimácii 5 MB, teda zmenšil sa na ¼ = 25% pôvodnej veľkosti). Komprimovať dáta má zmysel iba vtedy, ak je kompresný pomer menší ako jedna.
+Existujú dva druhy komprimácie:
+nestratová - pri ktorej nedochádza k strate údajov. To znamená, že ak skomprimované dáta dekomprimujeme, získame úplne identické dáta. Takto sa balia napríklad textové, programové a iné súbory. Kompresia sa deje na základe vynechania redundantných (nadpočetných) informácií. 
+stratová - je proces, pri ktorom sa vynechajú tie údaje, ktoré sú pre celkový dojem z dát nepodstatné, ale dáta sa už po kompresii nikdy nedajú zrekonštruovať do pôvodnej podoby, časť informácií totiž chýba. Stratová koprimácia sa používa hlavne pre komprimovanie mediálnych súborov a to zvuk (mp3), obraz (jpg), video (mpeg). Aj pri niekoľko desaťnásobnej redukcii dát je výsledok komprimácie takmer nerozoznateľný od originálu. 
+Komprimácia sa vykonáva buď automaticky (uložením súboru v komprimovanom formáte JPG, MPEG, MP3) alebo pomocou špeciálneho komprimačného programu.
+Komprimačné programy, archivácia
+Výhodou archivačných formátov ako sú RAR, ZIP, 7zip je, že dokážu do jedného balíka vložiť množstvo súborov čo je výhoda, ktorú určite oceníme napríklad pri posielaní viacerých príloh v e-maily . Ak však archivujeme súbory len za účelom zníženia ich veľkosti je dobre si uvedomiť, že komprimovať sa oplatí len súbory, na ktorých ešte nie je aplikovaná žiadna kompresia. Aj preto majú napríklad obrázky vo formáte TIFF alebo BMP po pridaní do archívu veľmi malú veľkosť, zatiaľ čo obrázky v JPG nezmenšíme takmer vôbec. To isté platí aj o hudobných súboroch. Veľmi efektívne je komprimovať textové dokumenty, databázy...
+Komprimačné (pakovacie) programy boli vyvinuté za účelom zmenšenia veľkosti súborov, pri zachovaní ich pôvodného obsahu. Ich cieľom je zmenšenie (skomprimovanie) súboru, ktorý potom zaberá podstatne menej miesta, ako jeho pôvodný tvar. So skomprimovaným súborom však nie je možné vykonávať bežné operácie, t.j. čítať ho, zapisovať a pod. Na to, aby ho bolo možné meniť, je potrebné jeho dekomprimovanie, čiže rozpakovanie - vrátenie do pôvodného stavu.
+Princíp fungovania: Predstavte si text, v ktorom sa 30 krát vyskytuje slovo archivácia. Znamená to, že takýto text zaberá 30x10=300 znakov. Keď namiesto slova archivácia použijeme nejakú značku, napr. #, ušetrí sa tým 30x9=270 znakov. Pri komprimácii sa teda každé slovo archivácia nahradí značkou # a do tabuľky kódov sa zaznačí: # = archivácia. Tým sa výrazným spôsobom zmenší veľkosť textového súboru. Komprimačné programy pritom pracujú na ešte nižšej úrovni. Namiesto opakovania znakov sledujú opakovanie bitov (0 alebo 1). Dekomprimácia je opačný proces ako komprimácia. V tomto prípade sa namiesto znakov tabuľky musia vložiť slová, ktoré zastupujú. Napr. namiesto značky # sa v komprimovanom texte vloží slovo archivácia.
+K najznámejším komprimačným programom patria: WinZIP, WinRAR
+
+8. Zadanie
+
+Vo svete existuje celý rad metód ako by ste mohli zašifrovať text. Jednou z najbežnejších metód je šifrovať text posunutím ordinálnych hodnôt daným smerom. Ide o posunutie písmen v abecede. Napr. pri posunutí  o 3 znaky s text „abc“ zašifruje na „cde“. V sifra.xlsx je text, ktorý zašifrujte posunutím ordinálnej hodnoty znaku o číslo n. Následne urobte aj dešifrovanie tohto textu. Vysvetlite pojmy kódovanie a šifrovanie. 
+Napr.: pre N=1
+P	o	k	l	a	d	j	e	u	k	r	y	t	y	v	u	č	e	b	n	i	V	T	1
+Q	p	l	m	b	e	k	f	v	l	s	z	u	z	w	v	é	f	c	o	j	W	U	2
+
+Nápoveda
+Použité funkcie char a code
+Kódovanie
+Systém zápisu určitej informácie
+je proces, pri ktorom sa každému znaku (postupnosti znakov) jednoznačne priradí znak alebo postupnosť znakov (obrazov) z iného súboru znakov
+Kto pozná kód vie informáciu odkódovať a zakódovať 
+Napr. morzeovka, ŠPZtka, digitálne inf.
+a.Písmo – jeden z kódov
+oTen, kto nepozná jednotlivé písmena a nedokáže ich spojiť do slov
+b.Binárny kód 
+oPočítače pracujú iba s digitálnymi informáciami, preto informácie, ktoré chceme spracovať pomocou počítača kódujeme
+otvar 0 a 1
+Šifrovanie
+	- Ide o utajené šírenie informácii
+	- Proces, keď obsah textu zmeníme do nezrozumiteľnej podoby
+	- Cieľ: nájdenie šifry, ktorú by nedovolene nemohli rozlúštiť
+	
+	Algoritmus
+		○ postup  na základe, ktorého sa pôvodná správa zmení na zašifrovanú a naopak
+		○ Je verejný
+		○ Väčšina algoritmov vyžaduje na šifrovanie a dešifrovanie kľúč
+	Kľúč 
+		= je utajená informácia pomocou, ktorej sa dostaneme k rozlúšteniu zašifrovanej správy 
+Kryptológia – veda zaoberajúca sa šiframi
+
+
+9. Zadanie
+
+Zistite IP adresu počítača a rýchlosť LAN siete v ktorej sa nachádza. Vysvetlite pojem IP adresa. Vypočítajte, za aký čas sa prenesie súbor veľkosti 2 GB touto sieťou na druhý počítač. Klasifikujte počítačovú sieť v učebni informatiky z hľadiska rozdelenia počítačových sietí podľa rôznych kritérií (rozlohy, úlohy počítačov v sieti, topológie,...). 
+Popíšte výhody a nevýhody pripojenia do počítačovej siete. Popíšte IP adresu.
+
+
+Nápoveda:
+
+Počítačová sieť je systém vzájomne prepojených počítačov za účelom prenosu informácií medzi nimi. Presnejšie: Počítačová sieť je súhrnné označenie technických a softwarových prostriedkov, pomocou ktorých je realizované prepojenie a výmena dát medzi počítačmi. 
+Dôvody zavádzania počítačových sietí:
+· zdieľanie údajov, 
+· zdieľanie prostriedkov 
+· zvýšenie spoľahlivosti systému.
+Služby poskytované sieťou:
+· prenos súborov, 
+· prenos správ, 
+· konverzácia medzi užívateľmi (chat), 
+· zdieľanie súborov,
+· tlač na zdieľaných tlačiarňach, 
+· ochrana údajov, 
+· spojenie s inými sieťami, 
+· práca na vzdialenej stanici, 
+· účtovanie služieb siete. 
+Časti počítačovej siete: 
+· hardware, 
+· software, 
+· organizačné zabezpečenie. 
+Hardware siete zahrňuje všetky technické prostriedky siete (počítače, routre, switche, modemy, kabeláž, sieťové karty, tlačiarne, ....) pomocou ktorých je fyzicky vybudovaná počítačová sieť. 
+Software siete potrebujú programové vybavenie, ktoré v spolupráci s hardwarom zabezpečuje funkcie siete. 
+Organizačné zabezpečenie je súbor pravidiel a opatrení správania sa používateľov pri používaní počítačovej siete.
+
+Jednoduchá síť typu peer to peer je velmi spolehlivá a její výpadek nezpůsobí vážné roblémy. Má však funkční omezení. U sítě klient–server případný výpadek serveru znamená zastavení činnosti všech stanic a ochromení informačního systému podniku. Může to znamenat i zastavení výroby, a tedy obrovské finanční ztráty. Proto jako server bývá nasazen výkonný speciální počítač, který má velmi kvalitní testované díly. Zálohování (archivace) všech dat probíhá automaticky každý den. V nejdůležitějších sítích pracují dva servery současně (paralelně), každý je přitom schopen obsloužit celou síť. Je jistě pochopitelné, že síťový server je velmi drahý počítač. 
+IP adresa – číselná adresa 
+každý počítač v sieti internet má pridelenú jednoznačnú číselnú adresu, podľa ktorej ho možno nájsť IPv4 je 32-bitová, podporuje viac ako 4 miliardy (232) adries (dnes už nepostačujúce); skladá sa zo štyroch celých čísel od 0 po 255 oddelených bodkami, napr. 192.168.1.15 
+10. Zadanie
+
+Katka má fotografiu triedy uloženú v bitmapovom súbore a chce ju poslať MMS-kou na Petrov
+mobilný telefón. Fotka má rozmery 256 x 180 pixelov (obrazových bodov) a je v nej použitých 256 farieb. MMS-ka môže mať maximálne 5 KB. Najmenej koľko MMS musí Katka poslať, ak chce poslať celú fotografiu rozloženú do viacerých MMS? V programe Excel vytvor pre Katku funkciu, kde po zadaní rozmerov a počtu farieb bude hneď vedieť počet MMS. Popíšte spôsob prenosu správ pomocou elektronickej pošty.
+
+Nápoveda
+
+Riešenie
+Rozmery fotografie sú 256 x 180 pixelov, teda počet bodov v obrázku bude: 
+256 × 180 = 46 080
+Každý bod 256 farebného obrázka zaberie 1 B pamäte (pozri úlohu 1), takže obrázok bude zaberať: 46 080 × 1 B = 46 080 B
+Jedna MMS môže zaberať 5 kB čo je v B: 5 kB × 1024 = 5 120 B
+Počet MMS vypočítame takto: 46 080 B : 5 120 B = 9
+Potrebný počet MMS je 9.
+
+Správy pre elektronickú poštu píšeme v aplikácií klienta elektronickej pošty. Po napísaní správy a zadaní e-mailovej adresy adresáta sa e-mailová správa spolu s prílohami prenáša ako jeden textový súbor (prílohy sú v ňom špeciálne zakódované) cez port 25 prostredníctvom protokolu SMTP (Simple Mail Transfer Protocol) na server odchádzajúcej pošty (outgoing server). Tento je spravidla vo vlastníctve zriaďovateľa e-mailovej schránky. Server prevezme údaje od odosielateľa a pokúsi sa správu doručiť adresátovi. Pokiaľ e-mailová adresa neobsahuje doménu, ale len názov schránky, predpokladá, že schránka adresáta je zriadená na rovnakej doméne ako schránka odosielateľa a pokúsi sa o doručenie sám. Pokiaľ sa domény odosielateľ a prijímateľa líšia, SMTP server sa spojí s DNS serverom, aby si od neho vypýtal IP adresu, na ktorú nasmeruje správu. V prípade jej prijatia cieľovým serverom sa prestane starať o jej ďalší osud. V prípade, že doručenie správy zlyhá odosielateľ o tom zvyčajne dostane správu.
+Po úspešnom doručení na cieľový server zostáva správa na ňom uložená dovtedy, pokiaľ si ju
+adresát nevyzdvihne. Na prenos doručenej správy zo servera na lokálny počítač sa používajú protokoly POP3 a IMAP.
+POP3 (Post Office Protocol version 3) pracuje na porte 110 a štandardne správy čakajúce na serveri stiahne do lokálneho počítača a tým, že ich na serveri zmaže. Vždy sa stiahnu všetky správy bez ohľadu na to, či používateľ o ne záujem má alebo nie. Doručené správy máme k dispozícii len v počítači, do ktorého sme ich stiahli.
+Protokol IMAP (Internet Message Access Protokol) umožňuje so správami pracovať priamo na serveri s tým, že používateľ po pripojení získa zo servera len hlavičky správ. Celá správa sa stiahne a zobrazí až v prípade požiadavky. Správu možno vymazať bez toho, aby ju používateľ preniesol so lokálneho počítača – vymazaním hlavičky v klientovi sa vymaže celá správa na serveri. Protokol pracuje na porte 143 a vďaka uchovávaniu správ na serveri ich máme k dispozícii pri prihlásení sa z ľubovoľného počítača. Veľmi často možno k e-mailovým schránkam pristupovať i prostredníctvom webového rozhrania, tzv. webmailu. Výhodou je, že používateľ nemusí nastavovať parametre e-mailového klienta a dostupnosť z ľubovoľného miesta na svete, nevýhodou menší komfort a pohodlie používateľa.
+

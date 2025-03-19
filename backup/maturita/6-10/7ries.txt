@@ -1,0 +1,2 @@
+Kompresný pomer zip = 8:136 = 1:17
+Kompresný pomer rar = 7:136 = 1:19.4285714
