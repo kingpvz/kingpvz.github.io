@@ -300,6 +300,17 @@ function openSong(id, pc=true) {
                 os.appendChild(img);
                 links.appendChild(os);
             }
+            if (i.ng) {
+                var os = document.createElement("a");
+                os.href = i.ng;
+                os.target = "_blank";
+                let img = document.createElement("img");
+                img.src = "https://img.ngfiles.com/wiki/uploads/968000/iu_968880_1.gif";
+                img.classList.add("linkImage");
+                img.title = "NewGrounds";
+                os.appendChild(img);
+                links.appendChild(os);
+            }
             alt.appendChild(links);
             ex.appendChild(alt);
         }
