@@ -1339,11 +1339,13 @@ var database = [
         originality: "original",
         lyrics: "inst",
         explicit: false,
-        cover: "https://i.scdn.co/image/ab6761670000ecd4be936e4ef9f2f473c44c575d",
+        cover: "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02c754e236bd7540c06560bf3e",
         link: {
             base: {
                 youtube: "https://youtu.be/2gL89sbABng",
-                ng: "https://www.newgrounds.com/audio/listen/1400628"
+                ng: "https://www.newgrounds.com/audio/listen/1400628",
+                itunes: "https://music.apple.com/us/album/concussion-single/1807104070",
+                deezer: "https://dzr.page.link/n3Yho1dsc1eax8yx9"
             }
         }
     },
