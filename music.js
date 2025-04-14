@@ -1342,6 +1342,7 @@ var database = [
         cover: "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02c754e236bd7540c06560bf3e",
         link: {
             base: {
+                spotify: "https://open.spotify.com/track/78rbLkA8XVDwMtYaUuOmOP?si=51c6ebe3cf364b49",
                 youtube: "https://youtu.be/2gL89sbABng",
                 ng: "https://www.newgrounds.com/audio/listen/1400628",
                 itunes: "https://music.apple.com/us/album/concussion-single/1807104070",
