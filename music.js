@@ -1716,7 +1716,8 @@ var database = [
         link: {
             base: {
                 youtube: "https://youtu.be/0i_synnxtVM",
-                odysee: "https://odysee.com/@kingpvz:4/dummy_swingremix:e"
+                odysee: "https://odysee.com/@kingpvz:4/dummy_swingremix:e",
+                ng: "https://www.newgrounds.com/audio/listen/1394824"
             }
         }
     },
