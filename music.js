@@ -2872,6 +2872,23 @@ var database = [
         }
     },
     {
+        title: "Neuropathic",
+        genre: "hardstyle",
+        album: "none",
+        year: 2025,
+        originality: "original",
+        lyrics: "inst",
+        explicit: false,
+        cover: "https://i.scdn.co/image/ab6761670000ecd4be936e4ef9f2f473c44c575d",
+        link: {
+            base: {
+                youtube: "https://www.youtube.com/watch?v=LHkEat2lqBg",
+                odysee: "https://odysee.com/@kingpvz:4/neuropathic:7",
+                ng: "https://www.newgrounds.com/audio/listen/1403264"
+            }
+        }
+    },
+    {
         title: "Never Gonna Give You Up",
         genre: "house:Electro-House",
         album: "none",
@@ -3740,7 +3757,7 @@ var database = [
         }
     },
     {
-        title: "The 8th Seas",
+        title: "The 8th Sea",
         genre: "hardbass:Hardbass",
         album: "gb2",
         year: 2023,
