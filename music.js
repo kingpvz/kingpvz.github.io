@@ -2880,12 +2880,14 @@ var database = [
         originality: "original",
         lyrics: "inst",
         explicit: false,
-        cover: "https://i.scdn.co/image/ab6761670000ecd4be936e4ef9f2f473c44c575d",
+        cover: "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02681eadf1fa8b7e634681f4ba",
         link: {
             base: {
                 youtube: "https://www.youtube.com/watch?v=LHkEat2lqBg",
                 odysee: "https://odysee.com/@kingpvz:4/neuropathic:7",
-                ng: "https://www.newgrounds.com/audio/listen/1403264"
+                ng: "https://www.newgrounds.com/audio/listen/1403264",
+                spotify: "https://open.spotify.com/track/0nnHL3PPrCRGPDRWbMgvLG?si=8f66a41a8a1b47ba",
+                itunes: "https://music.apple.com/us/album/neuropathic-single/1811250933"
             }
         }
     },
