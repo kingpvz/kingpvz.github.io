@@ -1,16 +1,14 @@
 <pseudo title>YouTube Plans</pseudo>
 <h2>VIDEOS</h2>
 > IF I DIE/LOSE THE VIDEO ENDS
-  <ul><li>Best Moments Compilation 2 &nbsp; <i>Coming March 28th</i></li>
-<li>Spaghet &nbsp; <i>Coming May 9th</i></li>
-<li>Bendy and the Ink Machine &nbsp; <i>Coming June 6th</i></li>
-<li>Super Mario Bros. &nbsp; <i>Editing rn</i></li>
+  <ul><li>Bendy and the Ink Machine &nbsp; <i>Coming June 6th</i></li>
+<li>Super Mario Bros. &nbsp; <i>Coming August 1st</i></li>
 <li>Spiritfarer</li>
-<li>FPS Chess</li></ul>
+<li>FPS Chess</li>
+<li>White Knuckle</li></ul>
 
 > EVERITHING WRONG WITH CHARRIII5 (in no particular order)
-  <ul><li>FNaF series (FFPS, UCN, HW, SB, SB:R, HW2)</li>
-<li>Deltarune (Ch1, Ch2) nbsp; <i>Coming April 11th</i></li>
+  <ul><li>FNaF series (HW, SB, SB:R, HW2)</li>
 <li>Poppy Playtime Chapter 1 (hyper short video)</li></ul>
 
 > OTHER
@@ -26,4 +24,4 @@
 </li></ul>
 
 > Other
-  <ul>Shirobon - Born Survivor (Remix of some sort???) &nbsp; <i>Working on it rn</i></ul>
+  <ul>Shirobon - Born Survivor (Chiptune Remix) &nbsp; <i>Coming July 18th</i></ul>
