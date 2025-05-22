@@ -3836,7 +3836,8 @@ var database = [
             base: {
                 youtube: "https://youtu.be/cl8GJGfcvI8",
                 odysee: "https://odysee.com/@kingpvz:4/toby-fox-the-field-of-hopes-and-dreams:c",
-                ng: "https://www.newgrounds.com/audio/listen/1254156"
+                ng: "https://www.newgrounds.com/audio/listen/1254156",
+                spotify: "https://open.spotify.com/track/4CYc1cmmfSbQCoSLVpozr6?si=945a87e9c2b64388"
             }
         }
     },

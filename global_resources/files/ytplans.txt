@@ -20,7 +20,8 @@
   <ul><li>All SubZero and World level music
 <ul><li>Meltdown 3/3</li>
 <li>World 5/10</li>
-<li>SubZero 0/3</li></ul>
+<li>SubZero 0/3</li>
+<li>The Challenge?</li></ul>
 </li></ul>
 
 > Other
