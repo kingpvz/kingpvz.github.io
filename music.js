@@ -1993,6 +1993,23 @@ var database = [
         }
     },
     {
+        title: "Frontlines",
+        genre: "hardbass:Hardbass",
+        album: "gb2",
+        year: 2025,
+        originality: "remix",
+        originalby: "Dex Arson",
+        lyrics: "inst",
+        explicit: false,
+        cover: "https://i.scdn.co/image/ab6761670000ecd4be936e4ef9f2f473c44c575d",
+        link: {
+            base: {
+                youtube: "https://youtu.be/3ZjROFwTMRI",
+                ng: "https://www.newgrounds.com/audio/listen/1409580"
+            }
+        }
+    },
+    {
         title: "Funk You",
         genre: "house:Funk-House",
         album: "wyrtb",
