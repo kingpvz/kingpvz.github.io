@@ -4134,6 +4134,24 @@ var database = [
             }
         }
     },
+    {
+        title: "Vodka",
+        genre: "hardbass:Hardbass",
+        album: "none",
+        year: 2021,
+        originality: "original",
+        lyrics: "inst",
+        explicit: false,
+        cover: "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02c7e8b4426d8ba417f9c2e05c",
+        link: {
+            base: {
+                spotify: "https://open.spotify.com/album/2OdyYf60jxUfGJNoiGC1Wb?si=atSdZsehQtqI5rRj3BURrA",
+                youtube: "https://youtu.be/72jaMnTPo1k",
+                itunes: "https://music.apple.com/us/album/vodka-single/1561236066",
+                odysee: "https://odysee.com/@kingpvz:4/kingpvz-vodka-%28kingpvz-styled-hardbass%29:e"
+            }
+        }
+    },
     /*w*/
     {
         title: "Wrap Out",
