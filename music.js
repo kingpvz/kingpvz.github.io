@@ -2946,6 +2946,23 @@ var database = [
     },
     /*o*/
     {
+        title: "Obstacles",
+        genre: "chip",
+        album: "none",
+        year: 2025,
+        originality: "original",
+        lyrics: "inst",
+        explicit: false,
+        cover: "https://i.scdn.co/image/ab6761670000ecd4be936e4ef9f2f473c44c575d",
+        link: {
+            base: {
+                youtube: "https://youtu.be/eGdaEXvzWMY",
+                ng: "https://www.newgrounds.com/audio/listen/1414944",
+                bili: "https://www.bilibili.com/video/BV1uRfTYxErD/"
+            }
+        }
+    },
+    {
         title: "Oh No!",
         genre: "hardbass:Hardbass",
         album: "none",
