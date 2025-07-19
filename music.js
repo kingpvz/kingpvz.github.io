@@ -2491,6 +2491,24 @@ var database = [
             }
         }
     },
+    {
+        title: "It's TV Time!",
+        genre: "complextro",
+        album: "none",
+        year: 2025,
+        originality: "remix",
+        originalby: "Toby Fox",
+        lyrics: "lyric",
+        language: "English",
+        explicit: false,
+        cover: "https://i.scdn.co/image/ab6761670000ecd4be936e4ef9f2f473c44c575d",
+        link: {
+            base: {
+                youtube: "https://youtu.be/OBe_GGn6biQ",
+                ng: "https://www.newgrounds.com/audio/listen/1443900"
+            }
+        }
+    },
     /*j*/
     {
         title: "Journey",
