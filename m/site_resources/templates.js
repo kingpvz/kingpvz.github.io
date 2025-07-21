@@ -8,7 +8,7 @@ headertemplate.innerHTML = `
         <div id="leftnav">
             <a target="_blank" style="color: red;" class="titleitem" href="https://youtube.com/@kingpvz">YouTube</a><br />
             <a target="_blank" style="color: #FF424D;" class="titleitem" href="https://patreon.com/kingpvz">Patreon</a><br />
-            <a target="_blank" style="color: #F56040" class="titleitem" href="https://instagram.com/kingpvzyt">Instagram</a><br>
+            <a target="_blank" style="color: #F56040" class="titleitem" href="https://instagram.com/kingpvz_yt">Instagram</a><br>
         </div>
         <div id="rightnav">
             <a target="_blank" style="color: #1DB954;" class="titleitem" href="https://open.spotify.com/artist/0E9m4Xiqd4g7gAnByJ8FZW?si=1m-T9AhcS7-npeM3t_ZHCw">Spotify</a><br />
