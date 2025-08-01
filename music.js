@@ -958,6 +958,25 @@ var database = [
         }
     },
     {
+        title: "Born Survivor",
+        genre: "chip",
+        album: "none",
+        year: 2025,
+        originality: "remix",
+        originalby: "Shirobon",
+        lyrics: "lyric",
+        language: "English", 
+        explicit: false,
+        cover: "https://i.scdn.co/image/ab6761670000ecd4be936e4ef9f2f473c44c575d",
+        link: {
+            base: {
+                youtube: "https://www.youtube.com/watch?v=aJ00LgSuLSs",
+                ng: "https://www.newgrounds.com/audio/listen/1422093",
+                odysee: "https://odysee.com/@kingpvz:4/bornsurvivor:d"
+            }
+        }
+    },
+    {
         title: "Brain Damage",
         genre: "hardstyle",
         album: "none",
