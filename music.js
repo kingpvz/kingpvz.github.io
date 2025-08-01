@@ -973,7 +973,13 @@ var database = [
                 youtube: "https://www.youtube.com/watch?v=aJ00LgSuLSs",
                 ng: "https://www.newgrounds.com/audio/listen/1422093",
                 odysee: "https://odysee.com/@kingpvz:4/bornsurvivor:d"
-            }
+            },
+            alt: [
+                {
+                    name: "Instrumental Version",
+                    youtube: "https://www.youtube.com/watch?v=26Mmu_anOls&t=9s"
+                }
+            ]
         }
     },
     {
