@@ -600,9 +600,9 @@ var albums = {
         desc: "This album contains probably the best songs I've made till the date of its release. In fact, I am extremely happy for this album.",
         cover: "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e027eac873ac84cb7f0eaaddb4e",
         youtube: "https://www.youtube.com/playlist?list=PLS6i1BpODObV_0YMXvcDsM0cK1-nR0NQ5",
-        spotify: "https://open.spotify.com/album/2NvpSGYGqQAlKJpkC8qzhK?si=qbPmp-zUSkiaHD9HEA7gkQ",
+        spotify: "https://open.spotify.com/album/3t2kFWIzdwWFL2PhOx7FO7?si=ulHApuAuRfGmOjJMD8nNjQ",
         itunes: "https://music.apple.com/us/album/roaring-in-the-20s/1776636659",
-        deezer: "https://deezer.page.link/CN3R3gZjLY8bgEaP6"
+        deezer: "https://link.deezer.com/s/30FisHeFcWx0YYzrGEQSh"
     },
     gb2: {
         name: "Geometry Bass 2",
@@ -1367,11 +1367,11 @@ var database = [
         cover: "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02c754e236bd7540c06560bf3e",
         link: {
             base: {
-                spotify: "https://open.spotify.com/track/78rbLkA8XVDwMtYaUuOmOP?si=51c6ebe3cf364b49",
+                spotify: "https://open.spotify.com/track/5zGfLuOndELIB952YV4BgP?si=4e54f758519e4f49",
                 youtube: "https://youtu.be/2gL89sbABng",
                 ng: "https://www.newgrounds.com/audio/listen/1400628",
                 itunes: "https://music.apple.com/us/album/concussion-single/1807104070",
-                deezer: "https://dzr.page.link/n3Yho1dsc1eax8yx9"
+                deezer: "https://link.deezer.com/s/30FiIn1mtI2WWWHtaDCzy"
             }
         }
     },
@@ -1607,9 +1607,9 @@ var database = [
         link: {
             base: {
                 youtube: "https://www.youtube.com/watch?v=Mh9CTrUIKdc",
-                spotify: "https://open.spotify.com/track/33pXXL4k8IsdWHDFEpU7Vn?si=37ef4469a01f4da4",
+                spotify: "https://open.spotify.com/track/2eGn27CLoefdi92GxEQtGV?si=bc68043cf75a4725",
                 itunes: "https://music.apple.com/us/album/delete-it/1776636659?i=1776636799",
-                deezer: "https://deezer.page.link/oEn2rGwJMuNs11NZ7"
+                deezer: "https://link.deezer.com/s/30FiLiOAZnHs3tdvJnuTY"
             }
         }
     },
@@ -1646,9 +1646,9 @@ var database = [
         link: {
             base: {
                 youtube: "https://youtu.be/IqaQATnNQao",
-                spotify: "https://open.spotify.com/album/2Hqk6fWUbFAyiNDBf452cf?si=MVsjQnOcSk2Rf7HCv6GMqg",
+                spotify: "https://open.spotify.com/track/4nvVaOkE8fGKxwCGS4Qp1h?si=7b1342a624184b99",
                 itunes: "https://music.apple.com/us/album/disrupt-single/1745747986",
-                deezer: "https://deezer.page.link/srnk4fTpxSWAuj72A",
+                deezer: "https://link.deezer.com/s/30FiEODLG4A0vtMTJxOt7",
                 odysee: "https://odysee.com/@kingpvz:4/kingpvz-x-sozislav-disrupt-old-school:9"
             }
         }
@@ -1759,9 +1759,9 @@ var database = [
         link: {
             base: {
                 youtube: "https://www.youtube.com/watch?v=iI4VhkBrWhE",
-                spotify: "https://open.spotify.com/track/5diMSaP5cgM2MPcOiTeP79?si=2c5c3bc0cd2e419f",
+                spotify: "https://open.spotify.com/track/76MGqid9ZvqxBk5R2gCJTO?si=6945cdfefca34325",
                 itunes: "https://music.apple.com/us/album/dutch/1776636659?i=1776636813",
-                deezer: "https://deezer.page.link/BxRHyLjsNvsyWMqTA"
+                deezer: "https://link.deezer.com/s/30FiKDOTLLYmoJWPZtKhk"
             }
         }
     },
@@ -1893,8 +1893,8 @@ var database = [
         link: {
             base: {
                 youtube: "https://youtu.be/iHTWmGS7_Qo",
-                spotify: "https://open.spotify.com/track/7JMdz6k0WFk2aHW7myXSgQ?si=dd70f617833d4a3f",
-                deezer: "https://dzr.page.link/sXwWo2K8v7LYEUvL8",
+                spotify: "https://open.spotify.com/track/7L2q1kjNYbPmL6vjT1XSKQ?si=93d91134b02a4b42",
+                deezer: "https://link.deezer.com/s/30FiJ0lf6YG0ksFJ2pTdR",
                 itunes: "https://music.apple.com/us/album/exuberant-winter-single/1799900398"
             }
         }
@@ -2077,9 +2077,9 @@ var database = [
         link: {
             base: {
                 youtube: "https://youtu.be/Kiv0tpA4Jsw",
-                spotify: "https://open.spotify.com/album/13OgOvIiQSNCDNBkwBMsP4?si=4aW1eFhPQvi8qA936BWYtw",
+                spotify: "https://open.spotify.com/track/0ovVx74MUIx6TtPuKoVq1y?si=d0858067927d407e",
                 itunes: "https://music.apple.com/us/album/gatsbys-bass-single/1771448325",
-                deezer: "https://deezer.page.link/tXPFzKapFKGrB4nG6",
+                deezer: "https://link.deezer.com/s/30FiHalxEGb4H3lJxnbo8",
                 bili: "https://www.bilibili.com/video/BV1pZp7eqEAC/"
             }
         }
@@ -2198,9 +2198,9 @@ var database = [
         link: {
             base: {
                 youtube: "https://youtu.be/IDQJV14e4oE",
-                spotify: "https://open.spotify.com/album/65zUQeoNYYb6lmJA4hyW1X?si=xnC3C3YLTaOEkO7C_r5DnQ",
+                spotify: "https://open.spotify.com/track/4sclJ6YM0PPqCzY70apkCn?si=00e1f6a2baec420b",
                 itunes: "https://music.apple.com/us/album/guns-blazing-kingpvz-remix-single/1747918309",
-                deezer: "https://deezer.page.link/oazpqwXzvh88CCCb7",
+                deezer: "https://link.deezer.com/s/30FiFEMNcYxb89VXp0rrQ",
                 odysee: "https://odysee.com/@kingpvz:4/undertale-yellow-guns-blazing-%28upbeat:1"
             }
         }
@@ -2319,9 +2319,9 @@ var database = [
         link: {
             base: {
                 youtube: "https://youtu.be/3DfiAIppebo",
-                spotify: "https://open.spotify.com/album/5pRY8noHH1Gau3TdDf0ilM?si=ctpkQx1TSZCiEhthS0D7mg",
+                spotify: "https://open.spotify.com/track/5VRdffgNaMUaNba0wUgaql?si=80209b2f9fc54738",
                 itunes: "https://music.apple.com/us/album/heart-bays-single/1745747923",
-                deezer: "https://deezer.page.link/QN8MfXMK1QbXtoAj6",
+                deezer: "https://link.deezer.com/s/30FiznuORubVYgi1ItBEB",
                 odysee: "https://odysee.com/@kingpvz:4/kingpvz-heart-bays-hardbass-metalcord:1"
             }
         }
@@ -2493,9 +2493,9 @@ var database = [
         link: {
             base: {
                 youtube: "https://www.youtube.com/watch?v=-Mr6DVdpf_A",
-                spotify: "https://open.spotify.com/track/4gb74pOdUzqgviWSj1r34V?si=5f6f5a4906e24075",
+                spotify: "https://open.spotify.com/track/0napL0OsZOCfm2hz5Ja94o?si=22dde99686134174",
                 itunes: "https://music.apple.com/us/album/intro/1776636659?i=1776636669",
-                deezer: "https://deezer.page.link/xNXmANPvf7hXHkq78"
+                deezer: "https://link.deezer.com/s/30FiLVQVNvPocSPlmVJZq"
             }
         }
     },
@@ -2947,8 +2947,9 @@ var database = [
                 youtube: "https://www.youtube.com/watch?v=LHkEat2lqBg",
                 odysee: "https://odysee.com/@kingpvz:4/neuropathic:7",
                 ng: "https://www.newgrounds.com/audio/listen/1403264",
-                spotify: "https://open.spotify.com/track/0nnHL3PPrCRGPDRWbMgvLG?si=8f66a41a8a1b47ba",
-                itunes: "https://music.apple.com/us/album/neuropathic-single/1811250933"
+                spotify: "https://open.spotify.com/track/50WjojlI5ffmDxkyQrpl6l?si=f769ae1053be45b2",
+                itunes: "https://music.apple.com/us/album/neuropathic-single/1811250933",
+                deezer: "https://link.deezer.com/s/30FiHJx3bWM1ahkiENQbA"
             }
         }
     },
@@ -2997,12 +2998,14 @@ var database = [
         originality: "original",
         lyrics: "inst",
         explicit: false,
-        cover: "https://i.scdn.co/image/ab6761670000ecd4be936e4ef9f2f473c44c575d",
+        cover: "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e028854c9cb4b0ec4743cdd09ea",
         link: {
             base: {
                 youtube: "https://youtu.be/eGdaEXvzWMY",
                 ng: "https://www.newgrounds.com/audio/listen/1414944",
-                bili: "https://www.bilibili.com/video/BV1uRfTYxErD/"
+                bili: "https://www.bilibili.com/video/BV1uRfTYxErD/",
+                spotify: "https://open.spotify.com/track/0GUpMrgk3bTB0ejNhiXN03?si=237bbdf8272d48d9",
+                deezer: "https://link.deezer.com/s/30Fiu67jDFp9ViS0aXOx8"
             }
         }
     },
@@ -3083,9 +3086,9 @@ var database = [
         link: {
             base: {
                 youtube: "https://youtu.be/fyvHWfA6me8",
-                spotify: "https://open.spotify.com/album/0ECGMzDRycvYTem8w6bon6?si=xFvq5KvVSv6y9YhSCmMqYQ",
+                spotify: "https://open.spotify.com/track/3OYtJESJf9doDodFMdfAt2?si=3544b35efb59486b",
                 itunes: "https://music.apple.com/us/album/party-time-single/1771448779",
-                deezer: "https://deezer.page.link/XhNt8KiQooVgfCU39"
+                deezer: "https://link.deezer.com/s/30FiGp8ZAXMiVPDZ8uISJ"
             }
         }
     },
@@ -3103,9 +3106,9 @@ var database = [
         link: {
             base: {
                 youtube: "https://youtu.be/fiMzEhU6eyg?si=R5mvjYD49m-oSHPp",
-                spotify: "https://open.spotify.com/album/2DwTM1E30CcKjm2o1DqfVi?si=D6suAYe2S8q7q0z04-2FRA",
+                spotify: "https://open.spotify.com/track/7myrSq2JMQ68PBXnaBcVRz?si=4134ed75647740e5",
                 itunes: "https://music.apple.com/us/album/patriot-feat-kingpvz-single/1572971892",
-                deezer: "https://deezer.page.link/xKT92rcWzk62BZg59"
+                deezer: "https://link.deezer.com/s/30FiCIhiSJ3BMbsmwoKug"
             }
         }
     },
@@ -3479,9 +3482,9 @@ var database = [
         link: {
             base: {
                 youtube: "https://youtu.be/WrNOHhO1RUc",
-                spotify: "https://open.spotify.com/track/7fEwH6Yz4pDkLXxy7A9C0E?si=364dca3fee1e4dcf",
+                spotify: "https://open.spotify.com/track/71qLW7KY4OTOUDgIfS0dLi?si=24516a87d9c448af",
                 itunes: "https://music.apple.com/us/album/roaring-in-the-20s/1776636659?i=1776636672",
-                deezer: "https://deezer.page.link/LrERJktkoY57t17s5"
+                deezer: "https://link.deezer.com/s/30FiMKU6S2wuJML8chhvp"
             }
         }
     },
@@ -3831,9 +3834,9 @@ var database = [
                 {
                     name: "Extended Version",
                     youtube: "https://www.youtube.com/watch?v=3HKCVNXBOcg",
-                    spotify: "https://open.spotify.com/track/35eM6O10jw1oLWYAjdyYi7?si=3c9dccc2fa3d4d0b",
+                    spotify: "https://open.spotify.com/track/3ltOLP8a18RIHt2NWRkP9d?si=e1cd7436cc634a1b",
                     itunes: "https://music.apple.com/us/album/tear-it-up-extended-version/1776636659?i=1776636819",
-                    deezer: "https://deezer.page.link/2KJrGnpRcq9jKan26"
+                    deezer: "https://link.deezer.com/s/30FiJMlvaT3KZRTaMSFuI"
                 }
             ]
         }
