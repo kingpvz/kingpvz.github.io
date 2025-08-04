@@ -2601,7 +2601,8 @@ var database = [
                 spotify: "https://open.spotify.com/track/2P4CGGgLSH4bwzf512DP50?si=9a1ebbbc5df04604",
                 itunes: "https://music.apple.com/us/album/jumper/1626532804?i=1626533381",
                 deezer: "https://deezer.page.link/cTUEFnJH8SkuqYHh6",
-                odysee: "https://odysee.com/@kingpvz:4/waterflame-jumper-%28hardbass-remake-by:e"
+                odysee: "https://odysee.com/@kingpvz:4/waterflame-jumper-%28hardbass-remake-by:e",
+                ng: "https://www.newgrounds.com/audio/listen/1452621"
             }
         }
     },
@@ -3700,7 +3701,8 @@ var database = [
                 spotify: "https://open.spotify.com/track/6n2mXH7LL6nm7pmQaB9bnk?si=326969e5755642b0",
                 itunes: "https://music.apple.com/us/album/stereo-madness/1626532804?i=1626532805",
                 deezer: "https://deezer.page.link/vHqne8jB68aJLyfx7",
-                odysee: "https://odysee.com/@kingpvz:4/forever-bound-stereo-madness-%28hardbass:5"
+                odysee: "https://odysee.com/@kingpvz:4/forever-bound-stereo-madness-%28hardbass:5",
+                ng: "https://www.newgrounds.com/audio/listen/1458166"
             }
         }
     },
