@@ -1858,9 +1858,10 @@ var database = [
         link: {
             base: {
                 youtube: "https://youtu.be/lGUC9PTKgNU",
-                spotify: "https://open.spotify.com/album/5dZupShOWQu5AONsOFK1Bt?si=fmKQjZW_Rpmu8dX9fGH-CQ",
-                itunes: "https://music.apple.com/us/album/enemy-retreating-kingpvz-remix-single/1756753882",
-                odysee: "https://odysee.com/@kingpvz:4/undertale-yellow-enemy-retreating:1"
+                spotify: "https://open.spotify.com/album/786y1vMglX4p74BMFzjoQ0?si=exrxagdlRraZz2Ab83FUSQ",
+                itunes: "https://music.apple.com/us/album/enemy-retreating-single/1831452309",
+                odysee: "https://odysee.com/@kingpvz:4/undertale-yellow-enemy-retreating:1",
+                deezer: "https://link.deezer.com/s/30GvHb1X0D6Fo4yQZWRia"
             }
         }
     },
