@@ -601,7 +601,7 @@ var albums = {
         cover: "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e027eac873ac84cb7f0eaaddb4e",
         youtube: "https://www.youtube.com/playlist?list=PLS6i1BpODObV_0YMXvcDsM0cK1-nR0NQ5",
         spotify: "https://open.spotify.com/album/3t2kFWIzdwWFL2PhOx7FO7?si=ulHApuAuRfGmOjJMD8nNjQ",
-        itunes: "https://music.apple.com/us/album/roaring-in-the-20s/1776636659",
+        itunes: "https://music.apple.com/us/album/roaring-in-the-20s/1831378553",
         deezer: "https://link.deezer.com/s/30FisHeFcWx0YYzrGEQSh"
     },
     gb2: {
@@ -1370,7 +1370,7 @@ var database = [
                 spotify: "https://open.spotify.com/track/5zGfLuOndELIB952YV4BgP?si=4e54f758519e4f49",
                 youtube: "https://youtu.be/2gL89sbABng",
                 ng: "https://www.newgrounds.com/audio/listen/1400628",
-                itunes: "https://music.apple.com/us/album/concussion-single/1807104070",
+                itunes: "https://music.apple.com/us/album/concussion-single/1831379085",
                 deezer: "https://link.deezer.com/s/30FiIn1mtI2WWWHtaDCzy"
             }
         }
@@ -1608,7 +1608,7 @@ var database = [
             base: {
                 youtube: "https://www.youtube.com/watch?v=Mh9CTrUIKdc",
                 spotify: "https://open.spotify.com/track/2eGn27CLoefdi92GxEQtGV?si=bc68043cf75a4725",
-                itunes: "https://music.apple.com/us/album/delete-it/1776636659?i=1776636799",
+                itunes: "https://music.apple.com/us/song/delete-it/1831378557",
                 deezer: "https://link.deezer.com/s/30FiLiOAZnHs3tdvJnuTY"
             }
         }
@@ -1760,7 +1760,7 @@ var database = [
             base: {
                 youtube: "https://www.youtube.com/watch?v=iI4VhkBrWhE",
                 spotify: "https://open.spotify.com/track/76MGqid9ZvqxBk5R2gCJTO?si=6945cdfefca34325",
-                itunes: "https://music.apple.com/us/album/dutch/1776636659?i=1776636813",
+                itunes: "https://music.apple.com/us/song/dutch/1831378561",
                 deezer: "https://link.deezer.com/s/30FiKDOTLLYmoJWPZtKhk"
             }
         }
@@ -1895,7 +1895,7 @@ var database = [
                 youtube: "https://youtu.be/iHTWmGS7_Qo",
                 spotify: "https://open.spotify.com/track/7L2q1kjNYbPmL6vjT1XSKQ?si=93d91134b02a4b42",
                 deezer: "https://link.deezer.com/s/30FiJ0lf6YG0ksFJ2pTdR",
-                itunes: "https://music.apple.com/us/album/exuberant-winter-single/1799900398"
+                itunes: "https://music.apple.com/us/album/exuberant-winter-single/1831378536"
             }
         }
     },
@@ -2077,8 +2077,8 @@ var database = [
         link: {
             base: {
                 youtube: "https://youtu.be/Kiv0tpA4Jsw",
-                spotify: "https://open.spotify.com/track/0ovVx74MUIx6TtPuKoVq1y?si=d0858067927d407e",
-                itunes: "https://music.apple.com/us/album/gatsbys-bass-single/1771448325",
+                spotify: "https://open.spotify.com/track/6ViaEXLnCH59sUleqhXccX?si=93577cb3b27f47fd",
+                itunes: "https://music.apple.com/us/album/gatsbys-bass-single/1831378049",
                 deezer: "https://link.deezer.com/s/30FiHalxEGb4H3lJxnbo8",
                 bili: "https://www.bilibili.com/video/BV1pZp7eqEAC/"
             }
@@ -2494,7 +2494,7 @@ var database = [
             base: {
                 youtube: "https://www.youtube.com/watch?v=-Mr6DVdpf_A",
                 spotify: "https://open.spotify.com/track/0napL0OsZOCfm2hz5Ja94o?si=22dde99686134174",
-                itunes: "https://music.apple.com/us/album/intro/1776636659?i=1776636669",
+                itunes: "https://music.apple.com/us/song/intro/1831378554",
                 deezer: "https://link.deezer.com/s/30FiLVQVNvPocSPlmVJZq"
             }
         }
@@ -2703,9 +2703,9 @@ var database = [
         link: {
             base: {
                 youtube: "https://youtu.be/Kg6ZWU_ybf4",
-                spotify: "https://open.spotify.com/album/5kBancecJxVGIjaWkKXVoJ?si=c0wFYlDTTb2g1FjXu-Pbvw",
-                itunes: "https://music.apple.com/us/album/lower-single/1756127088",
-                deezer: "https://deezer.page.link/5uTihchksCprTVTB6",
+                spotify: "https://open.spotify.com/track/1p7tXsB7BIWFMcIEKtqVA8?si=b493c3ed71ad4d16",
+                itunes: "https://music.apple.com/us/album/lower-single/1831452958",
+                deezer: "https://link.deezer.com/s/30GusxDpiY2cAJsxbvGYM",
                 bili: "https://www.bilibili.com/video/BV1e63KeFEY9/"
             }
         }
@@ -2948,7 +2948,7 @@ var database = [
                 odysee: "https://odysee.com/@kingpvz:4/neuropathic:7",
                 ng: "https://www.newgrounds.com/audio/listen/1403264",
                 spotify: "https://open.spotify.com/track/50WjojlI5ffmDxkyQrpl6l?si=f769ae1053be45b2",
-                itunes: "https://music.apple.com/us/album/neuropathic-single/1811250933",
+                itunes: "https://music.apple.com/us/album/neuropathic-single/1831379230",
                 deezer: "https://link.deezer.com/s/30FiHJx3bWM1ahkiENQbA"
             }
         }
@@ -3005,7 +3005,8 @@ var database = [
                 ng: "https://www.newgrounds.com/audio/listen/1414944",
                 bili: "https://www.bilibili.com/video/BV1uRfTYxErD/",
                 spotify: "https://open.spotify.com/track/0GUpMrgk3bTB0ejNhiXN03?si=237bbdf8272d48d9",
-                deezer: "https://link.deezer.com/s/30Fiu67jDFp9ViS0aXOx8"
+                deezer: "https://link.deezer.com/s/30Fiu67jDFp9ViS0aXOx8",
+                itunes: "https://music.apple.com/us/album/obstacles-single/1831338305"
             }
         }
     },
@@ -3087,7 +3088,7 @@ var database = [
             base: {
                 youtube: "https://youtu.be/fyvHWfA6me8",
                 spotify: "https://open.spotify.com/track/3OYtJESJf9doDodFMdfAt2?si=3544b35efb59486b",
-                itunes: "https://music.apple.com/us/album/party-time-single/1771448779",
+                itunes: "https://music.apple.com/us/album/party-time-single/1831378273",
                 deezer: "https://link.deezer.com/s/30FiGp8ZAXMiVPDZ8uISJ"
             }
         }
@@ -3483,7 +3484,7 @@ var database = [
             base: {
                 youtube: "https://youtu.be/WrNOHhO1RUc",
                 spotify: "https://open.spotify.com/track/71qLW7KY4OTOUDgIfS0dLi?si=24516a87d9c448af",
-                itunes: "https://music.apple.com/us/album/roaring-in-the-20s/1776636659?i=1776636672",
+                itunes: "https://music.apple.com/us/song/roaring-in-the-20s/1831378555",
                 deezer: "https://link.deezer.com/s/30FiMKU6S2wuJML8chhvp"
             }
         }
@@ -3835,7 +3836,7 @@ var database = [
                     name: "Extended Version",
                     youtube: "https://www.youtube.com/watch?v=3HKCVNXBOcg",
                     spotify: "https://open.spotify.com/track/3ltOLP8a18RIHt2NWRkP9d?si=e1cd7436cc634a1b",
-                    itunes: "https://music.apple.com/us/album/tear-it-up-extended-version/1776636659?i=1776636819",
+                    itunes: "https://music.apple.com/us/song/tear-it-up-extended-version/1831378563",
                     deezer: "https://link.deezer.com/s/30FiJMlvaT3KZRTaMSFuI"
                 }
             ]
