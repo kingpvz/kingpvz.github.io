@@ -1123,18 +1123,16 @@ var database = [
         link: {
             base: {
                 youtube: "https://www.youtube.com/watch?v=wnSMSLPYvQ4",
-                spotify: "https://open.spotify.com/track/03Lv23mQvYatQ5bN544oaE?si=f91138551b1a4d7d",
-                itunes: "https://music.apple.com/us/album/cave-brawl/1600087960?i=1600087963",
-                deezer: "https://deezer.page.link/8By2PPc8YUR9kNc38",
+                spotify: "https://open.spotify.com/track/5wCPeHvobxiRzCsZmprOH9?si=57a3b91deff24c8a",
+                deezer: "https://link.deezer.com/s/30GTgxW37jlfxLFuET6uO",
                 ng: "https://www.newgrounds.com/audio/listen/1413447"
             },
             alt: [
                 {
                     name: "Extended Mix",
                     youtube: "https://www.youtube.com/watch?v=KDZbgxkawq8",
-                    spotify: "https://open.spotify.com/track/1BAtKjOeKoFKVzRpGNA46r?si=16135e1344094802",
-                    itunes: "https://music.apple.com/us/album/cave-brawl-extended-mix/1600087960?i=1600087976",
-                    deezer: "https://deezer.page.link/cPGHwKogzKYGg98x7",
+                    spotify: "https://open.spotify.com/track/4cvl1oqgsLqy2H5GyUHq3J?si=c4e0e4dfbba24aac",
+                    deezer: "https://link.deezer.com/s/30GTgPaJ5PMWuxtUnH9Xb",
                     ng: "https://www.newgrounds.com/audio/listen/1413464"
                 }
             ]
@@ -1209,18 +1207,16 @@ var database = [
         link: {
             base: {
                 youtube: "https://www.youtube.com/watch?v=62sakTUDj_U",
-                spotify: "https://open.spotify.com/track/3Sf8LxIMUfLznTIui2Ehcq?si=8352f1aa3afb4729",
-                itunes: "https://music.apple.com/us/album/chipping-over/1600087960?i=1600087974",
-                deezer: "https://deezer.page.link/mcNzuVHWirP4FmPS7",
+                spotify: "https://open.spotify.com/track/1naxACxElZwLWKTMF5Z3yy?si=410cf93dca92449e",
+                deezer: "https://link.deezer.com/s/30GTpjVue5WNXfy1Lxi0W",
                 ng: "https://www.newgrounds.com/audio/listen/1413459"
             },
             alt: [
                 {
                     name: "Extended Mix",
                     youtube: "https://www.youtube.com/watch?v=Xb3jxzlMLNc",
-                    spotify: "https://open.spotify.com/track/0KU9iMundIkUom84u5gWJG?si=2349024e7cea43be",
-                    itunes: "https://music.apple.com/us/album/chipping-over-extended-mix/1600087960?i=1600087975",
-                    deezer: "https://deezer.page.link/T4jZmD4fiPyntDz38",
+                    spotify: "https://open.spotify.com/track/2dQJkHqGzdFRUmyKCsl1C6?si=4d6d9ec374b942cc",
+                    deezer: "https://link.deezer.com/s/30GTpBZD1mmbomc0WXVtl",
                     ng: "https://www.newgrounds.com/audio/listen/1413462"
                 }
             ]
@@ -1302,9 +1298,8 @@ var database = [
         link: {
             base: {
                 youtube: "https://www.youtube.com/watch?v=JQ6k31gB4Gw",
-                spotify: "https://open.spotify.com/track/4eaWcr3A56BXb6bvMy4GHs?si=a13a9cafdcad4110",
-                itunes: "https://music.apple.com/us/album/clouds-over-the-sky/1600087960?i=1600087965",
-                deezer: "https://deezer.page.link/89EcUJW8s2T2G5Kg8",
+                spotify: "https://open.spotify.com/track/6dNlQDOseIdIhq0o3MSsXz?si=000ee36d5ce344b8",
+                deezer: "https://link.deezer.com/s/30GTiqJgrFVhSrATAsM3f",
                 ng: "https://www.newgrounds.com/audio/listen/1413449"
             }
         }
@@ -1435,9 +1430,8 @@ var database = [
         link: {
             base: {
                 youtube: "https://www.youtube.com/watch?v=gKXJHWKao2g",
-                spotify: "https://open.spotify.com/track/3tAIGfOE5TWlZ8FjXrGRNO?si=57634b8bad91438b",
-                itunes: "https://music.apple.com/us/album/cymaticum/1600087960?i=1600087970",
-                deezer: "https://deezer.page.link/isuEvo7Wo9uHBGsC9",
+                spotify: "https://open.spotify.com/track/5hY4iovKxUjuuZJuYrYzbC?si=acf317a5a4cd4d23",
+                deezer: "https://link.deezer.com/s/30GTm6uqxy4DSq0Jf9UQt",
                 ng: "https://www.newgrounds.com/audio/listen/1413460"
             }
         }
@@ -1456,16 +1450,16 @@ var database = [
         link: {
             base: {
                 youtube: "https://youtu.be/1MOodiTEwh0",
-                spotify: "https://open.spotify.com/album/4GoIikgHneHVkFlP3b9FD8?si=4FUHkmDFQxSZGUbcP9eabw",
-                itunes: "https://music.apple.com/us/album/d-from-maths-single/1616524163",
-                odysee: "https://odysee.com/@kingpvz:4/kingpvz-d-from-maths-%28electrohouse-lyric:c"
+                spotify: "https://open.spotify.com/album/49sAAChZ8NYdXiZ8KLn5mi?si=LZHusB5rSBKbxOv6DC8ilw",
+                odysee: "https://odysee.com/@kingpvz:4/kingpvz-d-from-maths-%28electrohouse-lyric:c",
+                deezer: "https://link.deezer.com/s/30GT8LWs2LhyV6NZrlUhR"
             },
             alt: [
                 {
                     name: "Instrumental Version",
                     youtube: "https://www.youtube.com/watch?v=CX5z5JxafNo",
-                    spotify: "https://open.spotify.com/track/4FagdeVzHYKZI2c831AasI?si=ea0bee30cb304bda",
-                    itunes: "https://music.apple.com/us/album/d-from-maths-instrumental/1616524163?i=1616524165"
+                    spotify: "https://open.spotify.com/track/53Ii4lCp6EiWr6fF4ektN0?si=a895956938034db6",
+                    deezer: "https://link.deezer.com/s/30GT9eb5ZqBEDh0ZD7fJd"
                 }
             ]
         }
@@ -1901,9 +1895,8 @@ var database = [
         link: {
             base: {
                 youtube: "https://www.youtube.com/watch?v=rxwdB_R6QqU",
-                spotify: "https://open.spotify.com/track/7yAKqJbthaQ8JY8l5gpUga?si=ac46c6fcf08e4eac",
-                itunes: "https://music.apple.com/us/album/feels-like-tomorrow/1600087960?i=1600087966",
-                deezer: "https://deezer.page.link/pVZybA1oEev5ZRVN7",
+                spotify: "https://open.spotify.com/track/3zleZejMHODcdEm6mYRXhS?si=42210c38f1644626",
+                deezer: "https://link.deezer.com/s/30GTj8lagNt2utVXj8rvK",
                 ng: "https://www.newgrounds.com/audio/listen/1413451"
             }
         }
@@ -2363,9 +2356,8 @@ var database = [
         link: {
             base: {
                 youtube: "https://www.youtube.com/watch?v=58B3bZIzoBE",
-                spotify: "https://open.spotify.com/track/1aaNDCyV6IuGBIGd1HQd3Y?si=aba97a49d2754006",
-                itunes: "https://music.apple.com/us/album/hoover-base/1600087960?i=1600087967",
-                deezer: "https://deezer.page.link/3yY6TzzeJFJrw4be9",
+                spotify: "https://open.spotify.com/track/6eHscZLU8GDJxydjjFXOSc?si=346ed34b12ee4425",
+                deezer: "https://link.deezer.com/s/30GTjN9aplXTIuCyjYrq1",
                 ng: "https://www.newgrounds.com/audio/listen/1413452"
             }
         }
@@ -2382,9 +2374,8 @@ var database = [
         link: {
             base: {
                 youtube: "https://www.youtube.com/watch?v=NPpW7OrywyE",
-                spotify: "https://open.spotify.com/track/1HBxSMnz9sCzHlrUzxQnEw?si=612d9b371f37474b",
-                itunes: "https://music.apple.com/us/album/hopeful-menu/1600087960?i=1600087973",
-                deezer: "https://deezer.page.link/fVuVD5gir3Nk9GCq7",
+                spotify: "https://open.spotify.com/track/6QYkJkGhJtaWkfTgyOQROh?si=62381e26d371414b",
+                deezer: "https://link.deezer.com/s/30GTolQhHoRBZ6El9ywbO",
                 ng: "https://www.newgrounds.com/audio/listen/1413458"
             }
         }
@@ -2872,9 +2863,8 @@ var database = [
         link: {
             base: {
                 youtube: "https://youtu.be/zj1Rade3UiQ",
-                spotify: "https://open.spotify.com/album/7c77q4Tq8fUaIWdGbePUS3?si=4xAWruVSRq6AcOeDj8cOBQ",
-                itunes: "https://music.apple.com/us/album/mf-single/1608204526",
-                deezer: "https://deezer.page.link/dPC4AJdjjBfdpvWd9",
+                spotify: "https://open.spotify.com/album/6CwM0NuDRvBa4Wo1hfTNcw?si=Yapu6J7RTsKv99fjR4S2tw",
+                deezer: "https://link.deezer.com/s/30GTa8AGdBC1cbvTvLsUA",
                 odysee: "https://odysee.com/@kingpvz:4/kingpvz-x-slavmax-mf-ultimate-brostep:a"
             }
         }
@@ -3054,9 +3044,9 @@ var database = [
         link: {
             base: {
                 youtube: "https://youtu.be/UdRwnW2KAA4",
-                spotify: "https://open.spotify.com/album/7KE7IL0AZlSS4nNM5MaYho?si=YrMFmHh-SXOXxo74yE0J2A",
-                itunes: "https://music.apple.com/us/album/parkovi%C5%A1t%C4%9B-single/1608042517",
-                odysee: "https://odysee.com/@kingpvz:4/hork%C3%BD%C5%BEe-sl%C3%AD%C5%BEe-parkovi%C5%A1t%C4%9B:b"
+                spotify: "https://open.spotify.com/album/0MhZObhybiCLGurWR5yqQF?si=YvWlhRb3TO20mUDt4YWKGg",
+                odysee: "https://odysee.com/@kingpvz:4/hork%C3%BD%C5%BEe-sl%C3%AD%C5%BEe-parkovi%C5%A1t%C4%9B:b",
+                deezer: "https://link.deezer.com/s/30GTbxyNrTqQ2HQGCYUiz"
             }
         }
     },
@@ -3138,9 +3128,8 @@ var database = [
         link: {
             base: {
                 youtube: "https://www.youtube.com/watch?v=Ze8kdsKlZo0",
-                spotify: "https://open.spotify.com/track/136d8q7KtYaBJidILm4iwP?si=70f0455c70f14612",
-                itunes: "https://music.apple.com/us/album/paused-dreams/1600087960?i=1600087972",
-                deezer: "https://deezer.page.link/HFNSWxJ4kGZoRUzP7",
+                spotify: "https://open.spotify.com/track/3FzdRroHCvjkQqUbMaTMjO?si=bdeeb0542b704150",
+                deezer: "https://link.deezer.com/s/30GTnKNahb9Ly3V6F3WJ8",
                 ng: "https://www.newgrounds.com/audio/listen/1413457"
             }
         }
@@ -3228,9 +3217,8 @@ var database = [
         link: {
             base: {
                 youtube: "https://www.youtube.com/watch?v=ZNuinUvK7vw",
-                spotify: "https://open.spotify.com/track/685ANjcp5G7CiOBcalInSG?si=518e7bdbae4746ae",
-                itunes: "https://music.apple.com/us/album/planetone/1600087960?i=1600087968",
-                deezer: "https://deezer.page.link/n52V8g5pwJbeDmqC7",
+                spotify: "https://open.spotify.com/track/6cjMiYnbiKiRXDRl0wOXr1?si=41d769e6ac8a4f3d",
+                deezer: "https://link.deezer.com/s/30GTkCbyXjUsvFF1uItDG",
                 ng: "https://www.newgrounds.com/audio/listen/1413455"
             }
         }
@@ -3542,9 +3530,8 @@ var database = [
         link: {
             base: {
                 youtube: "https://www.youtube.com/watch?v=YiDGhg-VbCg",
-                spotify: "https://open.spotify.com/track/7EaOZB91OUtgjynN1mOrVc?si=d0e228f420094502",
-                itunes: "https://music.apple.com/us/album/paused-dreams/1600087960?i=1600087972",
-                deezer: "https://deezer.page.link/6CB4isRzFXxP49Aj6",
+                spotify: "https://open.spotify.com/track/687FfKEw5lSgKtMDdgX1gm?si=f60a8c7bb91f4f95",
+                deezer: "https://link.deezer.com/s/30GTnatnlKhZ1A3YRINEY",
                 ng: "https://www.newgrounds.com/audio/listen/1413461"
             }
         }
@@ -3704,9 +3691,8 @@ var database = [
         link: {
             base: {
                 youtube: "https://www.youtube.com/watch?v=bX_H3JC2fhs",
-                spotify: "https://open.spotify.com/track/1BCjl5rdQ1KqjrE2mz0Xsw?si=09b954a68c0b4aaf",
-                itunes: "https://music.apple.com/us/album/stormstep/1600087960?i=1600087962",
-                deezer: "https://deezer.page.link/oNwXDgJ1ccFv4SYP6",
+                spotify: "https://open.spotify.com/track/52YrFi5UtNx96alLszsglO?si=fa7c8db74eca45fd",
+                deezer: "https://link.deezer.com/s/30GTfnRsT4ayQWJ8UXV5S",
                 ng: "https://www.newgrounds.com/audio/listen/1413446"
             }
         }
@@ -3853,18 +3839,16 @@ var database = [
         link: {
             base: {
                 youtube: "https://www.youtube.com/watch?v=sHDdoyQBCqk",
-                spotify: "https://open.spotify.com/track/2ZFbhkFQ9x549ACrvOo5n8?si=03129d7b456e420f",
-                itunes: "https://music.apple.com/us/album/the-city-of-no-dip/1600087960?i=1600087961",
-                deezer: "https://deezer.page.link/MRQHFWCNu3rgGWiS7",
+                spotify: "https://open.spotify.com/track/3nATdyQhUP1J0bSFi2okrT?si=2e74622f88d844d3",
+                deezer: "https://link.deezer.com/s/30GTdWc4H3UViVCR8sWNc",
                 ng: "https://www.newgrounds.com/audio/listen/1413445"
             },
             alt: [
                 {
                     name: "Extended Mix",
                     youtube: "https://www.youtube.com/watch?v=xrLUQLzxdEw",
-                    spotify: "https://open.spotify.com/track/2F3o9pRHhfB1Z51a02v0sX?si=3fccb282d97d4942",
-                    itunes: "https://music.apple.com/us/album/the-city-of-no-dip-extended-mix/1600087960?i=1600087977",
-                    deezer: "https://deezer.page.link/4P6XuhzkrDhJf5UC8",
+                    spotify: "https://open.spotify.com/track/1l8gTVuTbdAzf9Glxp5nHS?si=cbc37d6422324a4d",
+                    deezer: "https://link.deezer.com/s/30GTefMG8strodR9APhwm",
                     ng: "https://www.newgrounds.com/audio/listen/1413465"
                 }
             ]
@@ -3921,9 +3905,8 @@ var database = [
         link: {
             base: {
                 youtube: "https://www.youtube.com/watch?v=WmNNioimPG8",
-                spotify: "https://open.spotify.com/track/3xN7eLNSB6YtGkEZkKql5D?si=a858295962434d8d",
-                itunes: "https://music.apple.com/us/album/the-grace-of-the-dip/1600087960?i=1600087969",
-                deezer: "https://deezer.page.link/4gb9R3Nx5JAvTwrX7",
+                spotify: "https://open.spotify.com/track/3mhP6V8WMPY44Vabt3tbPE?si=e93fd9c759b7433c",
+                deezer: "https://link.deezer.com/s/30GTlimXoTIhw8gA2b5dp",
                 ng: "https://www.newgrounds.com/audio/listen/1413456"
             }
         }
@@ -3958,9 +3941,8 @@ var database = [
         link: {
             base: {
                 youtube: "https://www.youtube.com/watch?v=1FrZ4jbVkts",
-                spotify: "https://open.spotify.com/track/3J7tfiefH7o6GsLKy1DnUd?si=04084b55ed6c40bf",
-                itunes: "https://music.apple.com/us/album/the-world-under-us/1600087960?i=1600087964",
-                deezer: "https://deezer.page.link/siJTFLhHn4D5Dep69",
+                spotify: "https://open.spotify.com/track/2zXmxCAJfO4WGjryciQf6z?si=cfa400d939e74a81",
+                deezer: "https://link.deezer.com/s/30GThFB6gVfi3Hi9ASk4e",
                 ng: "https://www.newgrounds.com/audio/listen/1413448"
             }
         }
