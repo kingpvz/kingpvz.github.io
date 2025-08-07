@@ -627,9 +627,9 @@ var database = [
         link: {
             base: {
                 youtube: "https://youtu.be/TTNeAFW8lPA",
-                spotify: "https://open.spotify.com/album/2Z7ZwcFEzSkgH2moupOX75?si=lS3z1tcwSfmMmk-vdiQotw",
-                itunes: "https://music.apple.com/us/album/2021-single/1596410888",
-                odysee: "https://odysee.com/@kingpvz:4/kingpvz-2021-%28happy-hardcore-uk:b"
+                spotify: "https://open.spotify.com/album/0x8YZQZuNTTbEtws43i9wx?si=k0VRc0URRxmpTPqjvSvNZQ",
+                odysee: "https://odysee.com/@kingpvz:4/kingpvz-2021-%28happy-hardcore-uk:b",
+                deezer: "https://link.deezer.com/s/30GTyybpJX4DPE2v0OuYi"
             }
         }
     },
@@ -1373,9 +1373,8 @@ var database = [
         link: {
             base: {
                 youtube: "https://youtu.be/wIC4Ting-Pk",
-                spotify: "https://open.spotify.com/album/1FOSS21JyFhOBJvnuOgyu2?si=9ZMg-LcgRAGw-ZZ5jV3oxg",
-                itunes: "https://music.apple.com/us/album/controversy-single/1596410650",
-                deezer: "https://deezer.page.link/WiVtfvpzDXaNwZrF7",
+                spotify: "https://open.spotify.com/album/3JRGGlIXXcy41LMwlv5yUM?si=tWGjfXXbSjie9bS32Bvd-g",
+                deezer: "https://link.deezer.com/s/30GTCv4qSPtkbOVGn8y7z",
                 odysee: "https://odysee.com/@kingpvz:4/kingpvz-controversy-%28experimental-bassy:f"
             }
         }
@@ -1610,9 +1609,8 @@ var database = [
         link: {
             base: {
                 youtube: "https://youtu.be/ok_W5Qc8VIQ",
-                spotify: "https://open.spotify.com/album/1eN44bxjPvxGsB5eBqiZrg?si=B-xWMIWFSUOoURKeOv-RUA",
-                itunes: "https://music.apple.com/us/album/dirty-lada-single/1589282984",
-                deezer: "https://deezer.page.link/7QGgPeYenzc1j7Er5",
+                spotify: "https://open.spotify.com/album/3HKyduqA52gcfBgDihlYTy?si=k5DHKJT-TLayqMHciWVRoA",
+                deezer: "https://link.deezer.com/s/30GTFCjjRyKu3liGoXGhy",
                 odysee: "https://odysee.com/@kingpvz:4/kingpvz-dirty-lada-%28old-school-metalcord:b"
             }
         }
@@ -2226,18 +2224,16 @@ var database = [
         link: {
             base: {
                 youtube: "https://youtu.be/vzN5FH58QdQ",
-                spotify: "https://open.spotify.com/album/3l95fEMTMC7JmoetvHGpCi?si=6PEJV4J9TaybTPfSq_AcTw",
-                itunes: "https://music.apple.com/us/album/hardbass-ili-adidas-single/1591247172",
-                deezer: "https://deezer.page.link/95BN8TNfCoF4u7D48",
+                spotify: "https://open.spotify.com/album/5UFFbcCQg4hpRjmIAWhMvz?si=7rZLLsIARIyzuGGiDGWvOQ",
+                deezer: "https://link.deezer.com/s/30GTDMClayEPUyeCl8vBZ",
                 odysee: "https://odysee.com/@kingpvz:4/kingpvz-hardbass-ili-adidas:7"
             },
             alt: [
                 {
                     name: "Instrumental Version",
                     youtube: "https://www.youtube.com/watch?v=0P0BUsMZJfc",
-                    spotify: "https://open.spotify.com/track/1eVbIPSoGA93LRC7SFhoMf?si=cca7ae720f6c47ce",
-                    itunes: "https://music.apple.com/us/album/hardbass-ili-adidas-instrumental/1591247172?i=1591247176",
-                    deezer: "https://deezer.page.link/NDd54j4zqns4NAXV8"
+                    spotify: "https://open.spotify.com/track/0y9EDAmojr4nEzvOs0Dc2o?si=bb497a3cdebd45d4",
+                    deezer: "https://link.deezer.com/s/30GTEktRKEbMOcw3kkLOf"
                 }
             ]
         }
@@ -2254,9 +2250,8 @@ var database = [
         link: {
             base: {
                 youtube: "https://youtu.be/-7kgbpJQa3E",
-                spotify: "https://open.spotify.com/album/3hoGUHzG6xyIpjGJjSMyrO?si=sM9aq5OZSWekdWPUj1o5tg",
-                itunes: "https://music.apple.com/us/album/hardbass-revolution-single/1600852045",
-                deezer: "https://deezer.page.link/7EGYyZfyLiRwW2tJA",
+                spotify: "https://open.spotify.com/album/3Jhc4X8rm7KR36hPR07t6a?si=wPGU1TtVSRS_0v1dPtdnsQ",
+                deezer: "https://link.deezer.com/s/30GTAnmqza03xVhdiVcsu",
                 odysee: "https://odysee.com/@kingpvz:4/kingpvz-hardbass-revolution-hardbass:1"
             }
         }
@@ -2338,8 +2333,8 @@ var database = [
         link: {
             base: {
                 youtube: "https://youtu.be/6VSoVbprGf0",
-                spotify: "https://open.spotify.com/album/5bG9kfS3FZLP1OSY1Ynwz1?si=sCELrhdwSKqPAMPX6DzffA",
-                itunes: "https://music.apple.com/us/album/hillz-single/1604556735",
+                spotify: "https://open.spotify.com/album/6N4UgHEtokBMmy8GwdFbqc?si=5gSXDeUsSJm40ENkVJ7Z9w",
+                deezer: "https://link.deezer.com/s/30GTxtuNxbhzYGrIMOgdR",
                 odysee: "https://odysee.com/@kingpvz:4/kingpvz-hillz-%28breakcore-song%29:2"
             }
         }
@@ -2433,9 +2428,9 @@ var database = [
         link: {
             base: {
                 youtube: "https://youtu.be/5VF7tO6Xung",
-                spotify: "https://open.spotify.com/album/6mRfioZuNicCCJ74xguhLB?si=G5SLhM2CRvuLMgJqOnb7hA",
-                itunes: "https://music.apple.com/us/album/i-saw-a-thing-single/1588283769",
-                odysee: "https://odysee.com/@kingpvz:4/kingpvz-i-saw-a-thing-%28experimental:3"
+                spotify: "https://open.spotify.com/album/4lsemf4wHRdMMnVAxy1qeG?si=Tafq3aJ5TvOk51DIXgbvbw",
+                odysee: "https://odysee.com/@kingpvz:4/kingpvz-i-saw-a-thing-%28experimental:3",
+                deezer: "https://link.deezer.com/s/30GTGxdC53uWU1zHbpbCX"
             }
         }
     },
@@ -2784,9 +2779,8 @@ var database = [
         link: {
             base: {
                 youtube: "https://youtu.be/MEq3wdoA5lo",
-                spotify: "https://open.spotify.com/album/3FrlnsYFUfH3598KLKurtB?si=TtMnrzfhQ4KnEOgoxKbrpQ",
-                itunes: "https://music.apple.com/us/album/meme-rewind-2021-single/1594673420",
-                deezer: "https://deezer.page.link/nxuHeiBfHdpgtBJcA",
+                spotify: "https://open.spotify.com/album/5KtajbzuaN2T79pPXKEunj?si=j7fRcju5Q5aYIMSPu7gnew",
+                deezer: "https://link.deezer.com/s/30GTzHUgDtVV9wC4pKuoP",
                 odysee: "https://odysee.com/@kingpvz:4/meme-music-rewind-2021:3"
             }
         }
