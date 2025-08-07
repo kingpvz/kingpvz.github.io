@@ -394,7 +394,7 @@ textarea::-ms-input-placeholder {color: #aaa;}
 
 .mobileSpacer { display: none; }
 
-@media(orientation: portrait) {
+@media(max-width:800px) {
 
     #main {
         grid-template-rows: 30% 70%;

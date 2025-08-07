@@ -391,7 +391,7 @@ function Export() {
     <style>
     html,body{margin:0;padding:0;}
     _[[[REPLACE::BODY?CSS::CODE?NEUTRAL]]]
-    @media(orientation: portrait){
+    @media(max-width:800px){
         _[[[REPLACE::BODY?CSSM::CODE?NEUTRAL]]]
     }
     </style>
@@ -441,7 +441,7 @@ function Export() {
 
         var filetcss = `html,body{margin:0;padding:0;}
 _[[[REPLACE::BODY?CSS::CODE?NEUTRAL]]]
-@media(orientation: portrait){
+@media(max-width:800px){
     _[[[REPLACE::BODY?CSSM::CODE?NEUTRAL]]]
 }`;
         filetcss = filetcss.replace("_[[[REPLACE::BODY?CSS::CODE?NEUTRAL]]]", layouts["input"]["editor"]["css"].value).replace("_[[[REPLACE::BODY?CSSM::CODE?NEUTRAL]]]", layouts["input"]["editor"]["cssm"].value);

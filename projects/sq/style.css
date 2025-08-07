@@ -165,7 +165,7 @@ html, body {
 }
 
 
-@media(orientation: portrait){
+@media(max-width:800px){
 
     .returnback {
         font-size: 60px;
