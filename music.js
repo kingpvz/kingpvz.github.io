@@ -898,7 +898,7 @@ var database = [
         link: {
             base: {
                 youtube: "https://youtu.be/9v5jwypRy4s",
-                spotify: "https://open.spotify.com/album/6LMfNrObx6oZemmRFsKj7l?si=IPO99at6Q6SDYXDnIqHPUg",
+                spotify: "https://open.spotify.com/album/2BIIGhskVHzCRRtyJoQJDv?si=Khbli8jaSi6aFEPCwJ3Osw",
                 itunes: "https://music.apple.com/us/album/bitman-single/1831446337",
                 deezer: "https://link.deezer.com/s/30GSCKXqvrdF32O4MW7cF",
                 odysee: "https://odysee.com/@kingpvz:4/kingpvz-bitman-chiptune-song-%28a-bit:6"
@@ -2446,7 +2446,7 @@ var database = [
         link: {
             base: {
                 youtube: "https://youtu.be/RquEKwbxw8M",
-                spotify: "https://open.spotify.com/track/1eObiRO5LWT0iDb2NIaaq0?si=739e800f532b4c94",
+                spotify: "https://open.spotify.com/album/04UvNnFMur4vZ1EBWZVmd0?si=onywG8VQSBquAjntR_TTWw",
                 itunes: "https://music.apple.com/us/album/intermission-single/1831452005",
                 deezer: "https://link.deezer.com/s/30GRoJDstg8Tl3m231wP0",
                 odysee: "https://odysee.com/@kingpvz:4/kingpvz-intermission-electro-swing:d",
@@ -2591,7 +2591,7 @@ var database = [
         link: {
             base: {
                 youtube: "https://youtu.be/1vgpaRSiR0c",
-                spotify: "https://open.spotify.com/album/2DQ0WY6kT9gTUkYIkzLtNz?si=dpYkB1smQd-GthxAKlJOEA",
+                spotify: "https://open.spotify.com/album/184ejQ516wMlSRMQXX2xNp?si=UXGwdHeZQvyYdFaGsF6Mbw",
                 itunes: "https://music.apple.com/us/album/kfl-single/1831444929",
                 deezer: "https://link.deezer.com/s/30GSqEN8iQtwjNkmQztCf",
                 odysee: "https://odysee.com/@kingpvz:4/kingpvz-kfl-hardphonk-hardbass-x-phonk:0",
@@ -2952,7 +2952,7 @@ var database = [
         link: {
             base: {
                 youtube: "https://youtu.be/AoEkcGYKyAk",
-                spotify: "https://open.spotify.com/album/51UKqfHxyiXTwcSLdDpuui?si=nwXCssvoTzi7qtV8-hb0nA",
+                spotify: "https://open.spotify.com/album/2j1HppppU6AEJMpqerdDLf?si=Xn-EZ1W0S9SUsncbTm57Iw",
                 itunes: "https://music.apple.com/us/album/new-day-single/1831445690",
                 deezer: "https://link.deezer.com/s/30GSwC85wwhAucTZ3KAl1",
                 odysee: "https://odysee.com/@kingpvz:4/kingpvz-new-day-%2890s-styled-electronica%29:0"
@@ -3645,7 +3645,7 @@ var database = [
         link: {
             base: {
                 youtube: "https://youtu.be/EASoSVyVfI4",
-                spotify: "https://open.spotify.com/album/7pjL7dOsG8Jj4hthCCtLki?si=vSQo2KJET3mcwtPq0axIYQ",
+                spotify: "https://open.spotify.com/album/1snKNqfjMB8Vak094LlnLb?si=1SNMvuDNTCuSghC6T9XpNw",
                 itunes: "https://music.apple.com/us/album/steppin-sides-single/1831450924",
                 deezer: "https://link.deezer.com/s/30GRxGrEPLKUogZpJkT2L",
                 odysee: "https://odysee.com/@kingpvz:4/kingpvz-steppin%27-sides-electro-swing:5",
@@ -3703,7 +3703,7 @@ var database = [
         link: {
             base: {
                 youtube: "https://youtu.be/B_4kgZzbEhI",
-                spotify: "https://open.spotify.com/album/6hQ8s5CmayAxCQgsBpziPo?si=qy60Yx_iRUaf0Hd1uMwXZA",
+                spotify: "https://open.spotify.com/album/3wi9V29INSZx2JMysp7VQa?si=3cNssvQuQo2Ou5Ds831ATw",
                 itunes: "https://music.apple.com/us/album/stroke-single/1831445492",
                 odysee: "https://odysee.com/@kingpvz:4/kingpvz-stroke-metalcord-hardbass:b",
                 deezer: "https://link.deezer.com/s/30GSxmCLxbvqGA4e1lAK9"
