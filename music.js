@@ -580,7 +580,8 @@ var albums = {
         cover: "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02c6957215eb236e2fbb205db3",
         youtube: "https://www.youtube.com/playlist?list=PLS6i1BpODObU_kAn-UgOrpS5f6GDSPqrA",
         spotify: "https://open.spotify.com/album/0Mb4xrQemVzskDLrWIpAzm?si=JpiSvgfmSoKZYFBRvrUHlg",
-        deezer: "https://deezer.page.link/zLQm75D7ja6ijFZQ7"
+        deezer: "https://deezer.page.link/zLQm75D7ja6ijFZQ7",
+        itunes: "https://music.apple.com/us/album/double-dip-adventure/1832223320"
     },
     gb: {
         name: "Geometry Bass",
@@ -589,7 +590,8 @@ var albums = {
         cover: "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0292640ff1a639ef80176402b1",
         youtube: "https://www.youtube.com/playlist?list=PLdj_MACtyUjvzBUJ1nyxDvZM6GPHWDyv4",
         spotify: "https://open.spotify.com/album/4LvcKcSdgDAopIbpp4wEi1?si=52GRQnajTwiNsGL6l49hfQ",
-        deezer: "https://link.deezer.com/s/30GSNgdffj2gV5Gsnxqx0"
+        deezer: "https://link.deezer.com/s/30GSNgdffj2gV5Gsnxqx0",
+        itunes: "https://music.apple.com/us/album/geometry-bass/1832223401"
     },
     ritt: {
         name: "Roaring In The 20s",
@@ -629,7 +631,8 @@ var database = [
                 youtube: "https://youtu.be/TTNeAFW8lPA",
                 spotify: "https://open.spotify.com/album/0x8YZQZuNTTbEtws43i9wx?si=k0VRc0URRxmpTPqjvSvNZQ",
                 odysee: "https://odysee.com/@kingpvz:4/kingpvz-2021-%28happy-hardcore-uk:b",
-                deezer: "https://link.deezer.com/s/30GTyybpJX4DPE2v0OuYi"
+                deezer: "https://link.deezer.com/s/30GTyybpJX4DPE2v0OuYi",
+                itunes: "https://music.apple.com/us/album/2021-single/1832225537"
             }
         }
     },
@@ -686,7 +689,8 @@ var database = [
                 youtube: "https://youtu.be/pZjC9Vp_htw",
                 spotify: "https://open.spotify.com/track/6XXA60J5rbjfFHkqBCNTPv?si=c259622728334ef2",
                 deezer: "https://link.deezer.com/s/30GSS4orDNKb1vITl7C5k",
-                odysee: "https://odysee.com/@kingpvz:4/djvi-back-on-track-%28hardbass-remix-by:3"
+                odysee: "https://odysee.com/@kingpvz:4/djvi-back-on-track-%28hardbass-remix-by:3",
+                itunes: "https://music.apple.com/us/song/back-on-track/1832223403"
             }
         }
     },
@@ -753,7 +757,8 @@ var database = [
                 youtube: "https://youtu.be/bKdbsv_FOz8",
                 spotify: "https://open.spotify.com/track/7fceG0SYdX4TOmU6PSZhfM?si=8a39dbb900754646",
                 deezer: "https://link.deezer.com/s/30GSUAFnCrkENSoXJRqhu",
-                odysee: "https://odysee.com/@kingpvz:4/djvi-base-after-base-%28hardbass-remix-by:3"
+                odysee: "https://odysee.com/@kingpvz:4/djvi-base-after-base-%28hardbass-remix-by:3",
+                itunes: "https://music.apple.com/us/song/base-after-base/1832223406"
             }
         }
     },
@@ -920,7 +925,8 @@ var database = [
                 youtube: "https://youtu.be/JVS5KCJwmjo",
                 spotify: "https://open.spotify.com/track/1crQFTkgLm0dA8zgcP88jk?si=e7d21bd9877847a6",
                 deezer: "https://link.deezer.com/s/30GT2ZBX5g5h4lQQzPPcb",
-                odysee: "https://odysee.com/@kingpvz:4/waterflame-blast-processing-%28hardrave:a"
+                odysee: "https://odysee.com/@kingpvz:4/waterflame-blast-processing-%28hardrave:a",
+                itunes: "https://music.apple.com/us/song/blast-processing/1832223418"
             }
         }
     },
@@ -936,7 +942,7 @@ var database = [
         link: {
             base: {
                 youtube: "https://youtu.be/mo2hx3wYl48",
-                spotify: "https://open.spotify.com/album/37NaHrOJdfvEpYw9nUp9jB?si=2XZBH4_9SxKjEviynk61QA",
+                spotify: "https://open.spotify.com/album/4kJCEB4PGOCmrjZvc6LpI2?si=GATVmSxVS8CThCqqxGNIuw",
                 itunes: "https://music.apple.com/us/album/blind-hopes-single/1578732763",
                 deezer: "https://deezer.page.link/qYKbeiCLC6PQoZHJA",
                 odysee: "https://odysee.com/@kingpvz:4/kingpvz-blind-hopes-%28metal-e-rock-mobile:4"
@@ -944,7 +950,7 @@ var database = [
             alt: [
                 {
                     name: "Speaker Friendly Version",
-                    spotify: "https://open.spotify.com/track/3mXv0rg4aAPG1q3JNMpQXh?si=cdb58d18c0144da4",
+                    spotify: "https://open.spotify.com/track/59zThqxTZ8NhF7u9mVd71P?si=15f5428c00c54cd7",
                     itunes: "https://music.apple.com/us/album/blind-hopes-speaker-friendly-version/1578732763?i=1578732766",
                     deezer: "https://deezer.page.link/ktdENmJjB7ToPR7d8"
                 }
@@ -1072,7 +1078,8 @@ var database = [
                 youtube: "https://youtu.be/UDevyzFpWtM",
                 spotify: "https://open.spotify.com/track/3YZTU7Jb5ZUKH1821VhAKP?si=a7f055f6b7ea4294",
                 deezer: "https://link.deezer.com/s/30GSV6rKob4Wh8OrqeZ81",
-                odysee: "https://odysee.com/@kingpvz:4/djvi-can%27t-let-go-%28hardbass-metalshade:3"
+                odysee: "https://odysee.com/@kingpvz:4/djvi-can%27t-let-go-%28hardbass-metalshade:3",
+                itunes: "https://music.apple.com/us/song/cant-let-go/1832223407"
             }
         }
     },
@@ -1125,7 +1132,8 @@ var database = [
                 youtube: "https://www.youtube.com/watch?v=wnSMSLPYvQ4",
                 spotify: "https://open.spotify.com/track/5wCPeHvobxiRzCsZmprOH9?si=57a3b91deff24c8a",
                 deezer: "https://link.deezer.com/s/30GTgxW37jlfxLFuET6uO",
-                ng: "https://www.newgrounds.com/audio/listen/1413447"
+                ng: "https://www.newgrounds.com/audio/listen/1413447",
+                itunes: "https://music.apple.com/us/song/cave-brawl/1832223323"
             },
             alt: [
                 {
@@ -1133,7 +1141,8 @@ var database = [
                     youtube: "https://www.youtube.com/watch?v=KDZbgxkawq8",
                     spotify: "https://open.spotify.com/track/4cvl1oqgsLqy2H5GyUHq3J?si=c4e0e4dfbba24aac",
                     deezer: "https://link.deezer.com/s/30GTgPaJ5PMWuxtUnH9Xb",
-                    ng: "https://www.newgrounds.com/audio/listen/1413464"
+                    ng: "https://www.newgrounds.com/audio/listen/1413464",
+                    itunes: "https://music.apple.com/us/song/cave-brawl-extended-mix/1832223456"
                 }
             ]
         }
@@ -1209,7 +1218,8 @@ var database = [
                 youtube: "https://www.youtube.com/watch?v=62sakTUDj_U",
                 spotify: "https://open.spotify.com/track/1naxACxElZwLWKTMF5Z3yy?si=410cf93dca92449e",
                 deezer: "https://link.deezer.com/s/30GTpjVue5WNXfy1Lxi0W",
-                ng: "https://www.newgrounds.com/audio/listen/1413459"
+                ng: "https://www.newgrounds.com/audio/listen/1413459",
+                itunes: "https://music.apple.com/us/song/chipping-over/1832223334"
             },
             alt: [
                 {
@@ -1217,7 +1227,8 @@ var database = [
                     youtube: "https://www.youtube.com/watch?v=Xb3jxzlMLNc",
                     spotify: "https://open.spotify.com/track/2dQJkHqGzdFRUmyKCsl1C6?si=4d6d9ec374b942cc",
                     deezer: "https://link.deezer.com/s/30GTpBZD1mmbomc0WXVtl",
-                    ng: "https://www.newgrounds.com/audio/listen/1413462"
+                    ng: "https://www.newgrounds.com/audio/listen/1413462",
+                    itunes: "https://music.apple.com/us/song/chipping-over-extended-mix/1832223335"
                 }
             ]
         }
@@ -1300,7 +1311,8 @@ var database = [
                 youtube: "https://www.youtube.com/watch?v=JQ6k31gB4Gw",
                 spotify: "https://open.spotify.com/track/6dNlQDOseIdIhq0o3MSsXz?si=000ee36d5ce344b8",
                 deezer: "https://link.deezer.com/s/30GTiqJgrFVhSrATAsM3f",
-                ng: "https://www.newgrounds.com/audio/listen/1413449"
+                ng: "https://www.newgrounds.com/audio/listen/1413449",
+                itunes: "https://music.apple.com/us/song/clouds-over-the-sky/1832223325"
             }
         }
     },
@@ -1319,7 +1331,8 @@ var database = [
                 youtube: "https://youtu.be/bvHcoeeFx_8",
                 spotify: "https://open.spotify.com/track/7GLsxyBksFJwuLufpBTY1j?si=c0fcb3fc872f4868",
                 deezer: "https://link.deezer.com/s/30GT0evoeyMCoKbSTbvHH",
-                odysee: "https://odysee.com/@kingpvz:4/dj-nate-clubstep-%28hardbass-remix-by:a"
+                odysee: "https://odysee.com/@kingpvz:4/dj-nate-clubstep-%28hardbass-remix-by:a",
+                itunes: "https://music.apple.com/us/song/clubstep/1832223415"
             }
         }
     },
@@ -1338,7 +1351,8 @@ var database = [
                 youtube: "https://youtu.be/kEYug8vS-_g",
                 spotify: "https://open.spotify.com/track/2CPRFfmerTz55WpJMC2Zl2?si=835307e066a646bb",
                 deezer: "https://link.deezer.com/s/30GSYpHu8VIa4rNeK52mD",
-                odysee: "https://odysee.com/@kingpvz:4/waterflame-clutterfunk-%28hardbass-remix:2"
+                odysee: "https://odysee.com/@kingpvz:4/waterflame-clutterfunk-%28hardbass-remix:2",
+                itunes: "https://music.apple.com/us/song/clutterfunk/1832223412"
             }
         }
     },
@@ -1373,9 +1387,10 @@ var database = [
         link: {
             base: {
                 youtube: "https://youtu.be/wIC4Ting-Pk",
-                spotify: "https://open.spotify.com/album/3JRGGlIXXcy41LMwlv5yUM?si=tWGjfXXbSjie9bS32Bvd-g",
+                spotify: "https://open.spotify.com/album/1FOSS21JyFhOBJvnuOgyu2?si=Xc_KdKG6SHqa60ARoRRiHw",
                 deezer: "https://link.deezer.com/s/30GTCv4qSPtkbOVGn8y7z",
-                odysee: "https://odysee.com/@kingpvz:4/kingpvz-controversy-%28experimental-bassy:f"
+                odysee: "https://odysee.com/@kingpvz:4/kingpvz-controversy-%28experimental-bassy:f",
+                itunes: "https://music.apple.com/us/album/controversy-single/1832225440"
             }
         }
     },
@@ -1413,7 +1428,8 @@ var database = [
                 youtube: "https://youtu.be/GswwlMy0XGk",
                 spotify: "https://open.spotify.com/track/0kojIM9wnxCn98w9wsZBg9?si=3a4d0d2870694268",
                 deezer: "https://link.deezer.com/s/30GSX6FEkGrcbircZOG9N",
-                odysee: "https://odysee.com/@kingpvz:4/djvi-cycles-%28hardbass-remake-remix-by:d"
+                odysee: "https://odysee.com/@kingpvz:4/djvi-cycles-%28hardbass-remake-remix-by:d",
+                itunes: "https://music.apple.com/us/song/cycles/1832223410"
             }
         }
     },
@@ -1431,7 +1447,8 @@ var database = [
                 youtube: "https://www.youtube.com/watch?v=gKXJHWKao2g",
                 spotify: "https://open.spotify.com/track/5hY4iovKxUjuuZJuYrYzbC?si=acf317a5a4cd4d23",
                 deezer: "https://link.deezer.com/s/30GTm6uqxy4DSq0Jf9UQt",
-                ng: "https://www.newgrounds.com/audio/listen/1413460"
+                ng: "https://www.newgrounds.com/audio/listen/1413460",
+                itunes: "https://music.apple.com/us/song/cymaticum/1832223330"
             }
         }
     },
@@ -1451,14 +1468,16 @@ var database = [
                 youtube: "https://youtu.be/1MOodiTEwh0",
                 spotify: "https://open.spotify.com/album/49sAAChZ8NYdXiZ8KLn5mi?si=LZHusB5rSBKbxOv6DC8ilw",
                 odysee: "https://odysee.com/@kingpvz:4/kingpvz-d-from-maths-%28electrohouse-lyric:c",
-                deezer: "https://link.deezer.com/s/30GT8LWs2LhyV6NZrlUhR"
+                deezer: "https://link.deezer.com/s/30GT8LWs2LhyV6NZrlUhR",
+                itunes: "https://music.apple.com/us/album/d-from-maths-single/1832223136"
             },
             alt: [
                 {
                     name: "Instrumental Version",
                     youtube: "https://www.youtube.com/watch?v=CX5z5JxafNo",
                     spotify: "https://open.spotify.com/track/53Ii4lCp6EiWr6fF4ektN0?si=a895956938034db6",
-                    deezer: "https://link.deezer.com/s/30GT9eb5ZqBEDh0ZD7fJd"
+                    deezer: "https://link.deezer.com/s/30GT9eb5ZqBEDh0ZD7fJd",
+                    itunes: "https://music.apple.com/us/song/d-from-maths-instrumental/1832223138"
                 }
             ]
         }
@@ -1534,7 +1553,8 @@ var database = [
                 youtube: "https://youtu.be/dlljg_JCNB0",
                 spotify: "https://open.spotify.com/track/1grUzrlwt15aggVzGcJaAm?si=b64892131aab43b4",
                 deezer: "https://link.deezer.com/s/30GT4TlamRW6jXiGQMTgv",
-                odysee: "https://odysee.com/@kingpvz:4/f-777-deadlocked-%28hardbass-remix-by:c"
+                odysee: "https://odysee.com/@kingpvz:4/f-777-deadlocked-%28hardbass-remix-by:c",
+                itunes: "https://music.apple.com/us/song/deadlocked/1832223421"
             }
         }
     },
@@ -1609,9 +1629,10 @@ var database = [
         link: {
             base: {
                 youtube: "https://youtu.be/ok_W5Qc8VIQ",
-                spotify: "https://open.spotify.com/album/3HKyduqA52gcfBgDihlYTy?si=k5DHKJT-TLayqMHciWVRoA",
+                spotify: "https://open.spotify.com/album/1eN44bxjPvxGsB5eBqiZrg?si=WetfXZC9Q6KH-ZborgDgQg",
                 deezer: "https://link.deezer.com/s/30GTFCjjRyKu3liGoXGhy",
-                odysee: "https://odysee.com/@kingpvz:4/kingpvz-dirty-lada-%28old-school-metalcord:b"
+                odysee: "https://odysee.com/@kingpvz:4/kingpvz-dirty-lada-%28old-school-metalcord:b",
+                itunes: "https://music.apple.com/us/album/dirty-lada-single/1832225969"
             }
         }
     },
@@ -1706,7 +1727,8 @@ var database = [
                 youtube: "https://youtu.be/-zNNsEloEv4",
                 spotify: "https://open.spotify.com/track/5bhbHhUIPTUaWb2Bij8kpL?si=e4c310d7770c4cd6",
                 deezer: "https://link.deezer.com/s/30GSTPvyVUHBG369J5L1u",
-                odysee: "https://odysee.com/@kingpvz:4/djvi-dry-out-%28hardbass-remix-by-kingpvz%29:c"
+                odysee: "https://odysee.com/@kingpvz:4/djvi-dry-out-%28hardbass-remix-by-kingpvz%29:c",
+                itunes: "https://music.apple.com/us/song/dry-out/1832223405"
             }
         }
     },
@@ -1761,9 +1783,9 @@ var database = [
         link: {
             base: {
                 youtube: "https://youtu.be/9meT1JqYO4w",
-                spotify: "https://open.spotify.com/album/7FReRuljYmmsR5FVAPoZra?si=ItFc1bK2S3-B4Q7yh-PZqg",
+                spotify: "https://open.spotify.com/album/2aFzOdrRwgmOZc8RldW0VB?si=XIEkFnD6QbO3JRnEfYwYFQ",
                 itunes: "https://music.apple.com/us/album/echoes-of-the-stars-hardbass-remix-single/1622859786",
-                deezer: "https://deezer.page.link/uqsKuFABkGHiKZ3D9",
+                deezer: "https://link.deezer.com/s/30JaBCDbTfCmNAK6PC5V2",
                 odysee: "https://odysee.com/@kingpvz:4/rusteraser-echoes-of-the-stars-%28kingpvz:6"
             }
         }
@@ -1802,7 +1824,8 @@ var database = [
                 youtube: "https://youtu.be/KborqVsit9I",
                 spotify: "https://open.spotify.com/track/6qRcZY1WZGHhfwou8i6puL?si=aa7b6b70adca4c05",
                 deezer: "https://link.deezer.com/s/30GT0YklSE2NmLsPwRWyf",
-                odysee: "https://odysee.com/@kingpvz:4/dj-nate-electrodynamix-%28hardbass-remix:b"
+                odysee: "https://odysee.com/@kingpvz:4/dj-nate-electrodynamix-%28hardbass-remix:b",
+                itunes: "https://music.apple.com/us/song/electrodynamix/1832223416"
             }
         }
     },
@@ -1821,7 +1844,8 @@ var database = [
                 youtube: "https://youtu.be/qMmozfhgrqQ",
                 spotify: "https://open.spotify.com/track/2SFghpZIXi7Xc6bHgMiXXB?si=d6ec0d9e39034bb8",
                 deezer: "https://link.deezer.com/s/30GSZGhDpsAhx7MU1vrPL",
-                odysee: "https://odysee.com/@kingpvz:4/waterflame-electroman-adventures:e"
+                odysee: "https://odysee.com/@kingpvz:4/waterflame-electroman-adventures:e",
+                itunes: "https://music.apple.com/us/song/electroman-adventures/1832223414"
             }
         }
     },
@@ -1895,7 +1919,8 @@ var database = [
                 youtube: "https://www.youtube.com/watch?v=rxwdB_R6QqU",
                 spotify: "https://open.spotify.com/track/3zleZejMHODcdEm6mYRXhS?si=42210c38f1644626",
                 deezer: "https://link.deezer.com/s/30GTj8lagNt2utVXj8rvK",
-                ng: "https://www.newgrounds.com/audio/listen/1413451"
+                ng: "https://www.newgrounds.com/audio/listen/1413451",
+                itunes: "https://music.apple.com/us/song/feels-like-tomorrow/1832223326"
             }
         }
     },
@@ -1933,7 +1958,8 @@ var database = [
                 youtube: "https://youtu.be/K_0j2JwplSE",
                 spotify: "https://open.spotify.com/track/2mUnVSdALqpkxamfDmtJqW?si=c61712a8db014977",
                 deezer: "https://link.deezer.com/s/30GT5wAyVvLpGINciamdz",
-                odysee: "https://odysee.com/@kingpvz:4/mdk-fingerbang-%28hardbass-metalcord-remix:5"
+                odysee: "https://odysee.com/@kingpvz:4/mdk-fingerbang-%28hardbass-metalcord-remix:5",
+                itunes: "https://music.apple.com/us/song/fingerdash/1832223422"
             }
         }
     },
@@ -2079,7 +2105,8 @@ var database = [
                 youtube: "https://youtu.be/wpBxzNzgUV0",
                 spotify: "https://open.spotify.com/track/3Jz9ravLxdF6ykZ5Ome2Tp?si=f3baee9c5ea44341",
                 deezer: "https://link.deezer.com/s/30GT4i2y04rlwRH25oP3c",
-                odysee: "https://odysee.com/@kingpvz:4/waterflame-geometrical-dominator:0"
+                odysee: "https://odysee.com/@kingpvz:4/waterflame-geometrical-dominator:0",
+                itunes: "https://music.apple.com/us/song/geometrical-dominator/1832223420"
             }
         }
     },
@@ -2099,7 +2126,8 @@ var database = [
                 youtube: "https://youtu.be/_wQcJEavZW8",
                 spotify: "https://open.spotify.com/track/5zSo36PNrewY7ia81TrINi?si=24dfad8981e2408e",
                 deezer: "https://link.deezer.com/s/30GT7amE2RDuTpLXpCyGL",
-                odysee: "https://odysee.com/@kingpvz:4/kingpvz-geometry-dash-hardbass-geometry:3"
+                odysee: "https://odysee.com/@kingpvz:4/kingpvz-geometry-dash-hardbass-geometry:3",
+                itunes: "https://music.apple.com/us/song/geometry-dash/1832223424"
             }
         }
     },
@@ -2224,16 +2252,18 @@ var database = [
         link: {
             base: {
                 youtube: "https://youtu.be/vzN5FH58QdQ",
-                spotify: "https://open.spotify.com/album/5UFFbcCQg4hpRjmIAWhMvz?si=7rZLLsIARIyzuGGiDGWvOQ",
+                spotify: "https://open.spotify.com/album/3l95fEMTMC7JmoetvHGpCi?si=43gVSbeOSeG2FM5PbH6RIQ",
                 deezer: "https://link.deezer.com/s/30GTDMClayEPUyeCl8vBZ",
-                odysee: "https://odysee.com/@kingpvz:4/kingpvz-hardbass-ili-adidas:7"
+                odysee: "https://odysee.com/@kingpvz:4/kingpvz-hardbass-ili-adidas:7",
+                itunes: "https://music.apple.com/us/album/hardbass-ili-adidas-single/1832225711"
             },
             alt: [
                 {
                     name: "Instrumental Version",
                     youtube: "https://www.youtube.com/watch?v=0P0BUsMZJfc",
-                    spotify: "https://open.spotify.com/track/0y9EDAmojr4nEzvOs0Dc2o?si=bb497a3cdebd45d4",
-                    deezer: "https://link.deezer.com/s/30GTEktRKEbMOcw3kkLOf"
+                    spotify: "https://open.spotify.com/track/1eVbIPSoGA93LRC7SFhoMf?si=fc6ad705deec4c2b",
+                    deezer: "https://link.deezer.com/s/30GTEktRKEbMOcw3kkLOf",
+                    itunes: "https://music.apple.com/us/song/hardbass-ili-adidas-instrumental/1832225713"
                 }
             ]
         }
@@ -2250,9 +2280,10 @@ var database = [
         link: {
             base: {
                 youtube: "https://youtu.be/-7kgbpJQa3E",
-                spotify: "https://open.spotify.com/album/3Jhc4X8rm7KR36hPR07t6a?si=wPGU1TtVSRS_0v1dPtdnsQ",
+                spotify: "https://open.spotify.com/album/3hoGUHzG6xyIpjGJjSMyrO?si=C2F2Sw9YTsSfNsptJuhryQ",
                 deezer: "https://link.deezer.com/s/30GTAnmqza03xVhdiVcsu",
-                odysee: "https://odysee.com/@kingpvz:4/kingpvz-hardbass-revolution-hardbass:1"
+                odysee: "https://odysee.com/@kingpvz:4/kingpvz-hardbass-revolution-hardbass:1",
+                itunes: "https://music.apple.com/us/album/hardbass-revolution-single/1832223307"
             }
         }
     },
@@ -2270,9 +2301,9 @@ var database = [
         link: {
             base: {
                 youtube: "https://youtu.be/nAGNvd4hLTE",
-                spotify: "https://open.spotify.com/album/0GHWC6ZdjsAeqR12u9EpK4?si=pSrywj8NRYWg2RKf0k-Ddw",
+                spotify: "https://open.spotify.com/album/5HRPFtFFFsElNfn8L5sVLi?si=fSC85Vh2SbOn7lLW8c53FA",
                 itunes: "https://music.apple.com/us/album/hazard-hardbass-remix-single/1583966206",
-                deezer: "https://deezer.page.link/Bhusda7pMxACw7T88",
+                deezer: "https://link.deezer.com/s/30JaMx6YRnKIeTZnwjdui",
                 odysee: "https://odysee.com/@kingpvz:4/hork%C3%BD%C5%BEe-sl%C3%AD%C5%BEe-hazard-%28hardbass-remix:8"
             },
             alt: [
@@ -2317,7 +2348,8 @@ var database = [
                 youtube: "https://youtu.be/phN3UEATY0k",
                 spotify: "https://open.spotify.com/track/18RlpfcJiHONNN9WDVRtBP?si=bdbca14106af41aa",
                 deezer: "https://link.deezer.com/s/30GT20VjYbz7oaRlylcmJ",
-                odysee: "https://odysee.com/@kingpvz:4/waterflame-hexagon-force-%28hardbass-remix:9"
+                odysee: "https://odysee.com/@kingpvz:4/waterflame-hexagon-force-%28hardbass-remix:9",
+                itunes: "https://music.apple.com/us/song/hexagon-force/1832223417"
             }
         }
     },
@@ -2333,9 +2365,10 @@ var database = [
         link: {
             base: {
                 youtube: "https://youtu.be/6VSoVbprGf0",
-                spotify: "https://open.spotify.com/album/6N4UgHEtokBMmy8GwdFbqc?si=5gSXDeUsSJm40ENkVJ7Z9w",
+                spotify: "https://open.spotify.com/track/2bXda0Rgnx87ZWnMzUMM0n?si=00346fd8796444bd",
                 deezer: "https://link.deezer.com/s/30GTxtuNxbhzYGrIMOgdR",
-                odysee: "https://odysee.com/@kingpvz:4/kingpvz-hillz-%28breakcore-song%29:2"
+                odysee: "https://odysee.com/@kingpvz:4/kingpvz-hillz-%28breakcore-song%29:2",
+                itunes: "https://music.apple.com/us/album/hillz-single/1832223142"
             }
         }
     },
@@ -2353,7 +2386,8 @@ var database = [
                 youtube: "https://www.youtube.com/watch?v=58B3bZIzoBE",
                 spotify: "https://open.spotify.com/track/6eHscZLU8GDJxydjjFXOSc?si=346ed34b12ee4425",
                 deezer: "https://link.deezer.com/s/30GTjN9aplXTIuCyjYrq1",
-                ng: "https://www.newgrounds.com/audio/listen/1413452"
+                ng: "https://www.newgrounds.com/audio/listen/1413452", 
+                itunes: "https://music.apple.com/us/song/hoover-base/1832223327"
             }
         }
     },
@@ -2371,7 +2405,8 @@ var database = [
                 youtube: "https://www.youtube.com/watch?v=NPpW7OrywyE",
                 spotify: "https://open.spotify.com/track/6QYkJkGhJtaWkfTgyOQROh?si=62381e26d371414b",
                 deezer: "https://link.deezer.com/s/30GTolQhHoRBZ6El9ywbO",
-                ng: "https://www.newgrounds.com/audio/listen/1413458"
+                ng: "https://www.newgrounds.com/audio/listen/1413458",
+                itunes: "https://music.apple.com/us/song/hopeful-menu/1832223333"
             }
         }
     },
@@ -2430,7 +2465,8 @@ var database = [
                 youtube: "https://youtu.be/5VF7tO6Xung",
                 spotify: "https://open.spotify.com/album/4lsemf4wHRdMMnVAxy1qeG?si=Tafq3aJ5TvOk51DIXgbvbw",
                 odysee: "https://odysee.com/@kingpvz:4/kingpvz-i-saw-a-thing-%28experimental:3",
-                deezer: "https://link.deezer.com/s/30GTGxdC53uWU1zHbpbCX"
+                deezer: "https://link.deezer.com/s/30GTGxdC53uWU1zHbpbCX",
+                itunes: "https://music.apple.com/us/album/i-saw-a-thing-single/1832225812"
             }
         }
     },
@@ -2574,7 +2610,8 @@ var database = [
                 spotify: "https://open.spotify.com/track/1GpjRnYf4dJpmgKSnoYmQb?si=169ed97f1890449a",
                 deezer: "https://link.deezer.com/s/30GSVIMpBhlB5VWOB5kTI",
                 odysee: "https://odysee.com/@kingpvz:4/waterflame-jumper-%28hardbass-remake-by:e",
-                ng: "https://www.newgrounds.com/audio/listen/1452621"
+                ng: "https://www.newgrounds.com/audio/listen/1452621",
+                itunes: "https://music.apple.com/us/song/jumper/1832223408"
             }
         }
     },
@@ -2740,9 +2777,7 @@ var database = [
         link: {
             base: {
                 youtube: "https://youtu.be/S2kdGw3fmpI",
-                spotify: "https://open.spotify.com/album/5216wnj38Oe7rNini3FW08?si=a0ZJV45pTXyULIBSYmTDYA",
                 soundcloud: "https://soundcloud.com/kingpvz/mam-v-p-na-lehatku-hardbass?si=7d119799b92e47ba8c0f301ff20fd82f&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
-                itunes: "https://music.apple.com/us/album/m%C3%A1m-v-p-na-leh%C3%A1tku-kingpvz-hardbass-remix-single/1534598190",
                 odysee: "https://odysee.com/@kingpvz:4/hork%C3%BD%C5%BEe-sl%C3%AD%C5%BEe-m%C3%A1m-v-p...-na:f"
             }
         }
@@ -2779,9 +2814,10 @@ var database = [
         link: {
             base: {
                 youtube: "https://youtu.be/MEq3wdoA5lo",
-                spotify: "https://open.spotify.com/album/5KtajbzuaN2T79pPXKEunj?si=j7fRcju5Q5aYIMSPu7gnew",
+                spotify: "https://open.spotify.com/album/3FrlnsYFUfH3598KLKurtB?si=djMM3ZD4S1i31mATWswoNw",
                 deezer: "https://link.deezer.com/s/30GTzHUgDtVV9wC4pKuoP",
-                odysee: "https://odysee.com/@kingpvz:4/meme-music-rewind-2021:3"
+                odysee: "https://odysee.com/@kingpvz:4/meme-music-rewind-2021:3",
+                itunes: "https://music.apple.com/us/album/meme-rewind-2021-single/1832225599"
             }
         }
     },
@@ -2859,7 +2895,8 @@ var database = [
                 youtube: "https://youtu.be/zj1Rade3UiQ",
                 spotify: "https://open.spotify.com/album/6CwM0NuDRvBa4Wo1hfTNcw?si=Yapu6J7RTsKv99fjR4S2tw",
                 deezer: "https://link.deezer.com/s/30GTa8AGdBC1cbvTvLsUA",
-                odysee: "https://odysee.com/@kingpvz:4/kingpvz-x-slavmax-mf-ultimate-brostep:a"
+                odysee: "https://odysee.com/@kingpvz:4/kingpvz-x-slavmax-mf-ultimate-brostep:a",
+                itunes: "https://music.apple.com/us/album/mf-single/1832223311"
             }
         }
     },
@@ -3040,7 +3077,8 @@ var database = [
                 youtube: "https://youtu.be/UdRwnW2KAA4",
                 spotify: "https://open.spotify.com/album/0MhZObhybiCLGurWR5yqQF?si=YvWlhRb3TO20mUDt4YWKGg",
                 odysee: "https://odysee.com/@kingpvz:4/hork%C3%BD%C5%BEe-sl%C3%AD%C5%BEe-parkovi%C5%A1t%C4%9B:b",
-                deezer: "https://link.deezer.com/s/30GTbxyNrTqQ2HQGCYUiz"
+                deezer: "https://link.deezer.com/s/30GTbxyNrTqQ2HQGCYUiz",
+                itunes: "https://music.apple.com/us/album/parkovi%C5%A1t%C4%9B-single/1832223284"
             }
         }
     },
@@ -3124,7 +3162,8 @@ var database = [
                 youtube: "https://www.youtube.com/watch?v=Ze8kdsKlZo0",
                 spotify: "https://open.spotify.com/track/3FzdRroHCvjkQqUbMaTMjO?si=bdeeb0542b704150",
                 deezer: "https://link.deezer.com/s/30GTnKNahb9Ly3V6F3WJ8",
-                ng: "https://www.newgrounds.com/audio/listen/1413457"
+                ng: "https://www.newgrounds.com/audio/listen/1413457",
+                itunes: "https://music.apple.com/us/song/paused-dreams/1832223332"
             }
         }
     },
@@ -3159,7 +3198,7 @@ var database = [
             base: {
                 youtube: "https://youtu.be/gjG2Wo63Vxw",
                 spotify: "https://open.spotify.com/album/0xklYFtcU4dahUgjqMr69P?si=c70XWVcZQRWlKqqdrFdA8w",
-                itunes: "https://music.apple.com/us/album/pears-single/1690396153",
+                itunes: "https://music.apple.com/us/album/pears-single/1832227749",
                 odysee: "https://odysee.com/@kingpvz:4/kingpvz-pears-ultimate-hardbass:f"
             },
             alt: [
@@ -3167,7 +3206,7 @@ var database = [
                     name: "Instrumental Version",
                     youtube: "https://www.youtube.com/watch?v=cRgnpH7aTxU",
                     spotify: "https://open.spotify.com/track/2pSRfpwSfZ7Fukyi3qaLF6?si=805786c5a11d4278",
-                    itunes: "https://music.apple.com/us/album/pears-instrumental/1690396153?i=1690396155"
+                    itunes: "https://music.apple.com/us/song/pears-instrumental/1832227752"
                 }
             ]
         }
@@ -3213,7 +3252,8 @@ var database = [
                 youtube: "https://www.youtube.com/watch?v=ZNuinUvK7vw",
                 spotify: "https://open.spotify.com/track/6cjMiYnbiKiRXDRl0wOXr1?si=41d769e6ac8a4f3d",
                 deezer: "https://link.deezer.com/s/30GTkCbyXjUsvFF1uItDG",
-                ng: "https://www.newgrounds.com/audio/listen/1413455"
+                ng: "https://www.newgrounds.com/audio/listen/1413455",
+                itunes: "https://music.apple.com/us/song/planetone/1832223328"
             }
         }
     },
@@ -3253,7 +3293,8 @@ var database = [
                 youtube: "https://youtu.be/5naIg-v8meY",
                 spotify: "https://open.spotify.com/track/2ouHJGkcQyNUKKP9ZkuPrT?si=842d29d32d2b45ec",
                 deezer: "https://link.deezer.com/s/30GSTaWbPiIJEFW85W24g",
-                odysee: "https://odysee.com/@kingpvz:4/step-polargeist-%28hardbass-remix-by:e"
+                odysee: "https://odysee.com/@kingpvz:4/step-polargeist-%28hardbass-remix-by:e",
+                itunes: "https://music.apple.com/us/song/polargeist/1832223404"
             }
         }
     },
@@ -3411,7 +3452,7 @@ var database = [
         link: {
             base: {
                 youtube: "https://youtu.be/8TmFcgvtAAM",
-                spotify: "https://open.spotify.com/album/3gPUy34K18bbD9djErM5Q8?si=smsN6_Z5Ry-WVRg9At9dhQ",
+                spotify: "https://open.spotify.com/album/4WkpxDS1mCYLRM5IgOu4ln?si=T24l4A0cR_2gj2lO0bULwQ",
                 itunes: "https://music.apple.com/us/album/razor-single/1580409181",
                 odysee: "https://odysee.com/@kingpvz:4/kingpvz-razor-%28bass-house-ultimate-song%29:2"
             }
@@ -3429,7 +3470,7 @@ var database = [
         link: {
             base: {
                 youtube: "https://youtu.be/r5GNxTwq9No",
-                spotify: "https://open.spotify.com/album/7vZYBV9dYhz3R3DhXSVtO3?si=6Rr0gpOAR2aAVBKC0yTsqg",
+                spotify: "https://open.spotify.com/album/3U7eepw33pJXR5C1xxtZOe?si=eL1S0hlOQE2NmoK_-9Lw5w",
                 deezer: "https://link.deezer.com/s/30GSuNEgbxgKnmrjQUpB8",
                 odysee: "https://odysee.com/@kingpvz:4/kingpvz-rivalry-%28alternative-trap-house%29:e"
             }
@@ -3526,7 +3567,8 @@ var database = [
                 youtube: "https://www.youtube.com/watch?v=YiDGhg-VbCg",
                 spotify: "https://open.spotify.com/track/687FfKEw5lSgKtMDdgX1gm?si=f60a8c7bb91f4f95",
                 deezer: "https://link.deezer.com/s/30GTnatnlKhZ1A3YRINEY",
-                ng: "https://www.newgrounds.com/audio/listen/1413461"
+                ng: "https://www.newgrounds.com/audio/listen/1413461",
+                itunes: "https://music.apple.com/us/song/sharpington/1832223331"
             }
         }
     },
@@ -3569,8 +3611,8 @@ var database = [
                     name: "Instrumental Version",
                     youtube: "https://www.youtube.com/watch?v=Mn-fYUnNm6E",
                     spotify: "https://open.spotify.com/album/2ln9uyrqZ9sXrAZpJsFLFH?si=qYaQtAo9T0mz7Z7TQ7ksEg",
-                    itunes: "https://music.apple.com/us/album/skibidi-toilet-instrumental-single/1719683624",
-                    deezer: "https://deezer.page.link/B8NikVEuwcambSNb7"
+                    itunes: "https://music.apple.com/us/album/skibidi-toilet-single/1832227755",
+                    deezer: "https://link.deezer.com/s/30JaNgQhPpn6kJB5uYoJO"
                 }
             ]
         }
@@ -3629,7 +3671,8 @@ var database = [
                 youtube: "https://youtu.be/N4rlXY0UdXc",
                 spotify: "https://open.spotify.com/track/125i1F4wQAXfKiTQIvJWeh?si=90f0f528829d4c9a",
                 deezer: "https://link.deezer.com/s/30GT6fuT4tgsQ9Sux3iWH",
-                odysee: "https://odysee.com/@kingpvz:4/ocular-nebula-stay-inside-me-%28hardbass:4"
+                odysee: "https://odysee.com/@kingpvz:4/ocular-nebula-stay-inside-me-%28hardbass:4",
+                itunes: "https://music.apple.com/us/song/stay-inside-me/1832223423"
             }
         }
     },
@@ -3669,7 +3712,8 @@ var database = [
                 spotify: "https://open.spotify.com/track/7b0cauiVUg2Uuf9MNkWERj?si=fdbef149bfe14863",
                 deezer: "https://link.deezer.com/s/30GSR8iysjc9JYy5iXH5B",
                 odysee: "https://odysee.com/@kingpvz:4/forever-bound-stereo-madness-%28hardbass:5",
-                ng: "https://www.newgrounds.com/audio/listen/1458166"
+                ng: "https://www.newgrounds.com/audio/listen/1458166",
+                itunes: "https://music.apple.com/us/song/stereo-madness/1832223402"
             }
         }
     },
@@ -3687,7 +3731,8 @@ var database = [
                 youtube: "https://www.youtube.com/watch?v=bX_H3JC2fhs",
                 spotify: "https://open.spotify.com/track/52YrFi5UtNx96alLszsglO?si=fa7c8db74eca45fd",
                 deezer: "https://link.deezer.com/s/30GTfnRsT4ayQWJ8UXV5S",
-                ng: "https://www.newgrounds.com/audio/listen/1413446"
+                ng: "https://www.newgrounds.com/audio/listen/1413446",
+                itunes: "https://music.apple.com/us/song/stormstep/1832223322"
             }
         }
     },
@@ -3835,7 +3880,8 @@ var database = [
                 youtube: "https://www.youtube.com/watch?v=sHDdoyQBCqk",
                 spotify: "https://open.spotify.com/track/3nATdyQhUP1J0bSFi2okrT?si=2e74622f88d844d3",
                 deezer: "https://link.deezer.com/s/30GTdWc4H3UViVCR8sWNc",
-                ng: "https://www.newgrounds.com/audio/listen/1413445"
+                ng: "https://www.newgrounds.com/audio/listen/1413445",
+                itunes: "https://music.apple.com/us/song/the-city-of-no-dip/1832223321"
             },
             alt: [
                 {
@@ -3843,7 +3889,8 @@ var database = [
                     youtube: "https://www.youtube.com/watch?v=xrLUQLzxdEw",
                     spotify: "https://open.spotify.com/track/1l8gTVuTbdAzf9Glxp5nHS?si=cbc37d6422324a4d",
                     deezer: "https://link.deezer.com/s/30GTefMG8strodR9APhwm",
-                    ng: "https://www.newgrounds.com/audio/listen/1413465"
+                    ng: "https://www.newgrounds.com/audio/listen/1413465",
+                    itunes: "https://music.apple.com/us/song/the-city-of-no-dip-extended-mix/1832223457"
                 }
             ]
         }
@@ -3901,7 +3948,8 @@ var database = [
                 youtube: "https://www.youtube.com/watch?v=WmNNioimPG8",
                 spotify: "https://open.spotify.com/track/3mhP6V8WMPY44Vabt3tbPE?si=e93fd9c759b7433c",
                 deezer: "https://link.deezer.com/s/30GTlimXoTIhw8gA2b5dp",
-                ng: "https://www.newgrounds.com/audio/listen/1413456"
+                ng: "https://www.newgrounds.com/audio/listen/1413456",
+                itunes: "https://music.apple.com/us/song/the-grace-of-the-dip/1832223329"
             }
         }
     },
@@ -3937,7 +3985,8 @@ var database = [
                 youtube: "https://www.youtube.com/watch?v=1FrZ4jbVkts",
                 spotify: "https://open.spotify.com/track/2zXmxCAJfO4WGjryciQf6z?si=cfa400d939e74a81",
                 deezer: "https://link.deezer.com/s/30GThFB6gVfi3Hi9ASk4e",
-                ng: "https://www.newgrounds.com/audio/listen/1413448"
+                ng: "https://www.newgrounds.com/audio/listen/1413448",
+                itunes: "https://music.apple.com/us/song/the-world-under-us/1832223324"
             }
         }
     },
@@ -3956,7 +4005,8 @@ var database = [
                 youtube: "https://youtu.be/UaYjECakyAY",
                 spotify: "https://open.spotify.com/track/1PscuLsNCbOur2Gcj3UtjC?si=820a621312d540a3",
                 deezer: "https://link.deezer.com/s/30GSZ65lKvR43tx2wLaLQ",
-                odysee: "https://odysee.com/@kingpvz:4/dj-nate-theory-of-everything-%28hardbass:8"
+                odysee: "https://odysee.com/@kingpvz:4/dj-nate-theory-of-everything-%28hardbass:8",
+                itunes: "https://music.apple.com/us/song/theory-of-everything/1832223413"
             }
         }
     },
@@ -3975,7 +4025,8 @@ var database = [
                 youtube: "https://youtu.be/xUS7FVIQTlk",
                 spotify: "https://open.spotify.com/track/60YF7QAXjcel7p7UsKGjan?si=04a84771986342e9",
                 deezer: "https://link.deezer.com/s/30GT3IDAyStjCOl0iPK7G",
-                odysee: "https://odysee.com/@kingpvz:4/dj-nate-theory-of-everything-2-%28hardbass:4"
+                odysee: "https://odysee.com/@kingpvz:4/dj-nate-theory-of-everything-2-%28hardbass:4",
+                itunes: "https://music.apple.com/us/song/theory-of-everything-ii/1832223419"
             }
         }
     },
@@ -4026,7 +4077,8 @@ var database = [
                 youtube: "https://youtu.be/wYbkNkm8xNI",
                 spotify: "https://open.spotify.com/track/7nPZ5gq6OP580sauN0iJrL?si=7a886336facd4a61",
                 deezer: "https://link.deezer.com/s/30GSWnJ5rVc5vU6SAIhmJ",
-                odysee: "https://odysee.com/@kingpvz:4/waterflame-time-machine-%28hardbass-remix:c"
+                odysee: "https://odysee.com/@kingpvz:4/waterflame-time-machine-%28hardbass-remix:c",
+                itunes: "https://music.apple.com/us/song/time-machine/1832223409"
             }
         }
     },
@@ -4228,7 +4280,8 @@ var database = [
                 youtube: "https://youtu.be/AQLy0o9ufx0",
                 spotify: "https://open.spotify.com/track/7d4eEz8y9OUBF2liBUOAzC?si=a16a01b651b94fd2",
                 deezer: "https://link.deezer.com/s/30GSXGGIU9l1lZbuwTrXB",
-                odysee: "https://odysee.com/@kingpvz:4/djvi-xstep-%28hardbass-remix-by-kingpvz%29:b"
+                odysee: "https://odysee.com/@kingpvz:4/djvi-xstep-%28hardbass-remix-by-kingpvz%29:b",
+                itunes: "https://music.apple.com/us/song/xstep/1832223411"
             }
         }
     },
