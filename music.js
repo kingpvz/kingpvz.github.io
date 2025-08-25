@@ -1838,7 +1838,8 @@ var database = [
                 spotify: "https://open.spotify.com/track/6qRcZY1WZGHhfwou8i6puL?si=aa7b6b70adca4c05",
                 deezer: "https://link.deezer.com/s/30GT0YklSE2NmLsPwRWyf",
                 odysee: "https://odysee.com/@kingpvz:4/dj-nate-electrodynamix-%28hardbass-remix:b",
-                itunes: "https://music.apple.com/us/song/electrodynamix/1832223416"
+                itunes: "https://music.apple.com/us/song/electrodynamix/1832223416",
+                newgrounds: "https://www.newgrounds.com/audio/listen/1465047"
             }
         }
     },
@@ -1972,7 +1973,8 @@ var database = [
                 spotify: "https://open.spotify.com/track/2mUnVSdALqpkxamfDmtJqW?si=c61712a8db014977",
                 deezer: "https://link.deezer.com/s/30GT5wAyVvLpGINciamdz",
                 odysee: "https://odysee.com/@kingpvz:4/mdk-fingerbang-%28hardbass-metalcord-remix:5",
-                itunes: "https://music.apple.com/us/song/fingerdash/1832223422"
+                itunes: "https://music.apple.com/us/song/fingerdash/1832223422",
+                newgrounds: "https://www.newgrounds.com/audio/listen/1465045"
             }
         }
     },
@@ -2078,7 +2080,8 @@ var database = [
                     spotify: "https://open.spotify.com/track/2HcKRjfFoTafK3pB8ua3IJ?si=edbbb75d17a744cc",
                     itunes: "https://music.apple.com/us/album/funk-you-extended-version/1544132001?i=1544132003",
                     deezer: "https://deezer.page.link/JMS9osXNtcz1H3F6A",
-                    odysee: "https://odysee.com/@kingpvz:4/kingpvz-funk-you-%28extended-improved:9"
+                    odysee: "https://odysee.com/@kingpvz:4/kingpvz-funk-you-%28extended-improved:9",
+                    newgrounds: "https://www.newgrounds.com/audio/listen/1465048"
                 }
             ]
         }
@@ -2119,7 +2122,8 @@ var database = [
                 spotify: "https://open.spotify.com/track/3Jz9ravLxdF6ykZ5Ome2Tp?si=f3baee9c5ea44341",
                 deezer: "https://link.deezer.com/s/30GT4i2y04rlwRH25oP3c",
                 odysee: "https://odysee.com/@kingpvz:4/waterflame-geometrical-dominator:0",
-                itunes: "https://music.apple.com/us/song/geometrical-dominator/1832223420"
+                itunes: "https://music.apple.com/us/song/geometrical-dominator/1832223420",
+                newgrounds: "https://www.newgrounds.com/audio/listen/1465046"
             }
         }
     },
@@ -4305,7 +4309,8 @@ var database = [
                 spotify: "https://open.spotify.com/track/7d4eEz8y9OUBF2liBUOAzC?si=a16a01b651b94fd2",
                 deezer: "https://link.deezer.com/s/30GSXGGIU9l1lZbuwTrXB",
                 odysee: "https://odysee.com/@kingpvz:4/djvi-xstep-%28hardbass-remix-by-kingpvz%29:b",
-                itunes: "https://music.apple.com/us/song/xstep/1832223411"
+                itunes: "https://music.apple.com/us/song/xstep/1832223411",
+                newgrounds: "https://www.newgrounds.com/audio/listen/1465044"
             }
         }
     },
