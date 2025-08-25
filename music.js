@@ -967,7 +967,7 @@ var database = [
         lyrics: "lyric",
         language: "English", 
         explicit: false,
-        cover: "https://i.scdn.co/image/ab6761670000ecd4be936e4ef9f2f473c44c575d",
+        cover: "https://i.scdn.co/image/ab67616d0000b273652904f47e528d1e2b177093",
         link: {
             base: {
                 youtube: "https://www.youtube.com/watch?v=aJ00LgSuLSs",
@@ -977,7 +977,9 @@ var database = [
             alt: [
                 {
                     name: "Instrumental Version",
-                    youtube: "https://www.youtube.com/watch?v=26Mmu_anOls&t=9s"
+                    youtube: "https://www.youtube.com/watch?v=26Mmu_anOls&t=9s",
+                    spotify: "https://open.spotify.com/album/6CMvT7qc0A2tCRdhJyLoBM?si=o5yl7c57SmKuTEljD1iK_g",
+                    deezer: "https://link.deezer.com/s/30R8YGsD6KgOef4KRNmUa"
                 }
             ]
         }
