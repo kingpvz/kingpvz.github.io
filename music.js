@@ -2703,7 +2703,9 @@ var database = [
             alt: [
                 {
                     name: "Instrumental Version",
-                    youtube: "https://www.youtube.com/watch?v=09P6KEgGRpk"
+                    youtube: "https://www.youtube.com/watch?v=09P6KEgGRpk",
+                    spotify: "https://open.spotify.com/album/1C86h7jUN8IOjQl2tx2tqh?si=WbYbMs9jSPS9ISVOLQuM4w",
+                    deezer: "https://link.deezer.com/s/30ZiqoZ3y4CwI93i1y3Ni"
                 },
                 {
                     name: "Extended Version",
