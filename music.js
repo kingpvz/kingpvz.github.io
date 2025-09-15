@@ -2552,10 +2552,12 @@ var database = [
         lyrics: "lyric",
         language: "English",
         explicit: false,
-        cover: "https://i.scdn.co/image/ab6761670000ecd4be936e4ef9f2f473c44c575d",
+        cover: "https://cdn2.pixelcut.app/temp/upscale/ad364168-2c35-4454-ac15-18cecc38ad3c.jpg",
         link: {
             base: {
                 youtube: "https://youtu.be/OBe_GGn6biQ",
+                spotify: "https://open.spotify.com/album/5PVZoJN4D3OiGHrdDayGGk?si=bPTlm9ubR1O6MO9Xqb1_Mg",
+                deezer: "https://www.deezer.com/us/album/806625111",
                 ng: "https://www.newgrounds.com/audio/listen/1443900"
             }
         }
