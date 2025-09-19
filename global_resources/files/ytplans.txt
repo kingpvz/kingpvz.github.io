@@ -1,8 +1,7 @@
 <pseudo title>YouTube Plans</pseudo>
 <h2>VIDEOS</h2>
 > IF I DIE/LOSE THE VIDEO ENDS
-  <ul><li>Super Mario Bros. &nbsp; <i>Coming August 1st</i></li>
-<li>Spiritfarer</li>
+<ul><li>Spiritfarer</li>
 <li>FPS Chess</li>
 <li>White Knuckle</li></ul>
 
@@ -16,7 +15,7 @@
 
 <h2>MUSIC</h2>
 > Geometry Bass 2
-  <ul><li>All SubZero and World level music
+<ul><li>All SubZero and World level music
 <ul><li>Meltdown 3/3</li>
 <li>World 6/10</li>
 <li>SubZero 0/3</li>
@@ -24,4 +23,4 @@
 </li></ul>
 
 > Other
-  <ul>Shirobon - Born Survivor (Chiptune Remix) &nbsp; <i>Coming August 1st</i></ul>
+  <ul>None</ul>
