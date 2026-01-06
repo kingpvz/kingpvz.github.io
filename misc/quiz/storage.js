@@ -413,7 +413,7 @@ var questions = {
         "author": "580002 + ChatGPT",
             "name": "Kviz IB111",
                 "id": "notimportant",
-                    "questions": 100,
+                    "questions": 67,
                         "embed": ""
     },
     "settings": {
@@ -494,26 +494,6 @@ var questions = {
             "c": 2
         },
         {
-            "id": 6,
-            "command": "Vyber správnou odpověď!",
-            "query": "Co je hlavním cílem refaktorizace kódu?",
-            "c1": "Změna chování programu",
-            "c2": "Zlepšení čitelnosti a struktury",
-            "c3": "Zrychlení běhu",
-            "c4": "Oprava chyb",
-            "c": 2
-        },
-        {
-            "id": 7,
-            "command": "Vyber správnou odpověď!",
-            "query": "Jaký problém řeší princip single responsibility?",
-            "c1": "Výkon algoritmu",
-            "c2": "Příliš mnoho funkcí",
-            "c3": "Směšování více odpovědností v jednom celku",
-            "c4": "Typovou nekonzistenci",
-            "c": 3
-        },
-        {
             "id": 8,
             "command": "Vyber správnou odpověď!",
             "query": "Je funkce, která vrací vždy stejný výstup pro stejný vstup, deterministická?",
@@ -577,10 +557,10 @@ var questions = {
             "id": 14,
             "command": "Vyber správnou odpověď!",
             "query": "Jaký typ chyby je porušení syntaktických pravidel?",
-            "c1": "Logická chyba",
-            "c2": "Runtime chyba",
-            "c3": "Syntaktická chyba",
-            "c4": "Typová chyba",
+            "c1": "Logic Error",
+            "c2": "Runtime Error",
+            "c3": "Syntax Error",
+            "c4": "Type Error",
             "c": 3
         },
         {
@@ -834,16 +814,6 @@ var questions = {
             "c": 2
         },
         {
-            "id": 40,
-            "command": "Vyber správnou odpověď!",
-            "query": "Jaký problém řeší princip zapouzdření?",
-            "c1": "Výkon algoritmů",
-            "c2": "Omezení přímého přístupu ke stavu",
-            "c3": "Paralelní běh",
-            "c4": "Typovou inferenci",
-            "c": 2
-        },
-        {
             "id": 41,
             "command": "Vyber správnou odpověď!",
             "query": "Je lambda výraz v Pythonu plnohodnotná funkce?",
@@ -922,16 +892,6 @@ var questions = {
             "c3": "Zkrácení zápisu",
             "c4": "Omezení typů",
             "c": 2
-        },
-        {
-            "id": 49,
-            "command": "Vyber správnou odpověď!",
-            "query": "Je porovnání pomocí == závislé na implementaci metody __eq__?",
-            "c1": "Ano",
-            "c2": "Ne",
-            "c3": "Pouze pro čísla",
-            "c4": "Nevím",
-            "c": 1
         },
         {
             "id": 50,
@@ -1056,21 +1016,11 @@ var questions = {
         {
             "id": 62,
             "command": "Vyber správnou odpověď!",
-            "query": "Je funkce, která závisí na aktuálním čase, deterministická?",
+            "query": "Je funkce, která závisí na aktuálním čase, deterministická a čistá?",
             "c1": "Ano",
             "c2": "Ne",
-            "c3": "Pouze při testování",
-            "c4": "Nevím",
-            "c": 2
-        },
-        {
-            "id": 63,
-            "command": "Vyber správnou odpověď!",
-            "query": "Co je hlavním cílem abstrakce?",
-            "c1": "Zvýšení výkonu",
-            "c2": "Skrytí nepodstatných detailů",
-            "c3": "Zkrácení kódu",
-            "c4": "Zajištění typové bezpečnosti",
+            "c3": "Pouze deterministická",
+            "c4": "Pouze čistá",
             "c": 2
         },
         {
@@ -1081,26 +1031,6 @@ var questions = {
             "c2": "Přehlednost a opakované použití",
             "c3": "Typovou inferenci",
             "c4": "Syntaktické chyby",
-            "c": 2
-        },
-        {
-            "id": 65,
-            "command": "Vyber správnou odpověď!",
-            "query": "Co znamená, že je proměnná shadowovaná?",
-            "c1": "Je globální",
-            "c2": "Je přepsána proměnnou z vnitřního rozsahu",
-            "c3": "Je konstantní",
-            "c4": "Je odstraněna z paměti",
-            "c": 2
-        },
-        {
-            "id": 66,
-            "command": "Vyber správnou odpověď!",
-            "query": "Jaký je hlavní důsledek používání magických konstant?",
-            "c1": "Vyšší výkon",
-            "c2": "Horší čitelnost a údržba",
-            "c3": "Nižší paměťová náročnost",
-            "c4": "Typové chyby",
             "c": 2
         },
         {
@@ -1132,16 +1062,6 @@ var questions = {
             "c3": "Paralelní zpracování",
             "c4": "Zajištění typové bezpečnosti",
             "c": 2
-        },
-        {
-            "id": 70,
-            "command": "Vyber správnou odpověď!",
-            "query": "Je použití break považováno za dobrý styl?",
-            "c1": "Ano, vždy",
-            "c2": "Ne, nikdy",
-            "c3": "Záleží na kontextu a čitelnosti",
-            "c4": "Pouze ve while",
-            "c": 3
         },
         {
             "id": 71,
