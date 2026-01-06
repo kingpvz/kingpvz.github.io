@@ -430,7 +430,7 @@ var questions = {
                                                 "r_good": "B",
                                                     "r_great": "A",
                                                         "text_again": "Zkusit Znovu",
-                                                            "text_return": "Spátky"
+                                                            "text_return": "Zpátky"
     },
     "qr": [
         {
@@ -1036,7 +1036,7 @@ var questions = {
         {
             "id": 60,
             "command": "Vyber správnou odpověď!",
-            "query": "Co znamená, že je funkce side-effect free?",
+            "query": "Co znamená, že je funkce čistá?",
             "c1": "Je rychlá",
             "c2": "Nemění žádný stav mimo sebe",
             "c3": "Nemá parametry",
