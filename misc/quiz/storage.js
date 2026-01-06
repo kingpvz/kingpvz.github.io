@@ -413,7 +413,7 @@ var questions = {
         "author": "580002 + ChatGPT",
             "name": "Kviz IB111",
                 "id": "notimportant",
-                    "questions": 67,
+                    "questions": 66,
                         "embed": ""
     },
     "settings": {
@@ -562,16 +562,6 @@ var questions = {
             "c3": "Syntax Error",
             "c4": "Type Error",
             "c": 3
-        },
-        {
-            "id": 15,
-            "command": "Vyber správnou odpověď!",
-            "query": "Co znamená, že je funkce idempotentní?",
-            "c1": "Vrací vždy True",
-            "c2": "Lze ji volat opakovaně se stejným výsledkem",
-            "c3": "Nemá parametry",
-            "c4": "Nemá návratovou hodnotu",
-            "c": 2
         },
         {
             "id": 16,
