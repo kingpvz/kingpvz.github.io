@@ -298,6 +298,7 @@ function loadProject() {
             reader.readAsText(file, 'UTF-8');
 
             reader.onload = readerEvent => {
+                document.getElementById("questions").innerHTML = "";
                 var content = readerEvent.target.result;
 
                 content = JSON.parse(content);

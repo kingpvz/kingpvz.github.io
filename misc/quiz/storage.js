@@ -19,7 +19,7 @@ var questions = {
         "r_fail": "To bolo skutočne nezabudnuteľné! Snáď sa ti podarí nabudúce odpovedať aspoň na jednu otázku správne.",
         "r_bad": "Smer je správny, ale ešte je čo zlepšovať!",
         "r_ok": "Pol na pol, je to dobrý začiatok! Už si na polceste k úplnému úspechu.",
-        "r_good": "Ešte trošku a budeš perfektní!",
+        "r_good": "Ešte trošku a budeš perfektný!",
         "r_great": " Si skutočný odborník!",
                                                         "text_again": "Skúsiť Znova",
                                                             "text_return": "Naspäť"
