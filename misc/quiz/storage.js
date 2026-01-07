@@ -911,9 +911,9 @@ var questions = {
         }, {
             "id": 75,
             "command": "Vyber správnou odpověď!",
-            "query": "Jaký je rozdíl mezi <code>list.insert(1, 5)</code> a <code>list.insert(-1,5)</code> z hlediska časové složitosti?",
-            "c1": "<code>list.insert(1, 5)</code> se provede v konstantním čase, zatím co <code>list.insert(-1,5)</code> v lineárním.",
-            "c2": "<code>list.insert(1, 5)</code> se provede v lineárním čase, zatím co <code>list.insert(-1,5)</code> v konstantním.",
+            "query": "Jaký je rozdíl mezi <code>list.insert(1, 5)</code> a <code>list.insert(-1, 5)</code> z hlediska časové složitosti?",
+            "c1": "<code>list.insert(1, 5)</code> se provede v konstantním čase, zatím co <code>list.insert(-1, 5)</code> v lineárním.",
+            "c2": "<code>list.insert(1, 5)</code> se provede v lineárním čase, zatím co <code>list.insert(-1, 5)</code> v konstantním.",
             "c3": "Žádný, funkce <code>list.insert()</code> se vždy provede v lineárním čase.",
             "c4": "Žádný, funkce <code>list.insert()</code> se vždy provede v konstantním čase.",
             "c": 2
