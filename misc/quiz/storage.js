@@ -605,7 +605,7 @@ var questions = {
         }, {
             "id": 25,
             "command": "Vyber správnou odpověď!",
-            "query": "Jaký je hlavní účel funkce assert v Pythonu?",
+            "query": "Jaký je hlavní účel příkazu assert v Pythonu?",
             "c1": "Ošetření výjimek",
             "c2": "Ladění a kontrola předpokladů",
             "c3": "Zrychlení běhu programu",
