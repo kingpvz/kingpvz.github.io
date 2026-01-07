@@ -611,16 +611,16 @@ var questions = {
             "c3": "Zrychlení běhu programu",
             "c4": "Uspokojování mypy",
             "c": 2
-        }, {
-            "id": 26,
-            "command": "Vyber správnou odpověď!",
-            "query": "Je funkce, která mění pouze své lokální proměnné, považována za čistou?",
-            "c1": "Ano",
-            "c2": "Ne",
-            "c3": "Pouze bez návratové hodnoty",
-            "c4": "Nevím",
-            "c": 1
-        }, {
+            }, {
+                "id": 26,
+                "command": "Vyber správnou odpověď!",
+                "query": "Je funkce, která mění pouze své lokální proměnné, považována za čistou?",
+                "c1": "Ano, pokud neporušuje čistotu jiným způsobem",
+                "c2": "Ne, změna jakékoliv proměnné porušuje čistotu funkce",
+                "c3": "Ano, protože změna lokálních proměnných zaručuje čistotu funkce",
+                "c4": "Ne, protože tím zasahuje do paměti",
+                "c": 1
+            }, {
             "id": 27,
             "command": "Vyber správnou odpověď!",
             "query": "Co znamená, že je datová struktura imutabilní?",
