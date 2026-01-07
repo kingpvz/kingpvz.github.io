@@ -74,6 +74,10 @@ img {
   box-shadow: 0 0 2vw black;
 }
 
+.choice > code {
+    display: inline
+}
+
 #next {
   width: 30vw;
   visibility: hidden;
