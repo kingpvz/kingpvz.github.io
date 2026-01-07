@@ -409,31 +409,29 @@ var questions = {
     },
 
     "ib111": {
-    "info": {
-        "author": "580002 + ChatGPT",
+        "info": {
+            "author": "",
             "name": "Kviz IB111",
-                "id": "notimportant",
-                    "questions": 66,
-                        "embed": ""
-    },
-    "settings": {
-        "n": "Další",
+            "id": "kvizib111",
+            "questions": 54,
+            "embed": ""
+        },
+        "settings": {
+            "n": "Další",
             "ask": 10,
-                "done": "Hotovo!",
-                    "text_points": "Body",
-                        "text_correct": "Správně",
-                            "text_wrong": "Nesprávně",
-                                "r": "Známka",
-                                    "r_fail": "F",
-                                        "r_bad": "E/D",
-                                            "r_ok": "C",
-                                                "r_good": "B",
-                                                    "r_great": "A",
-                                                        "text_again": "Zkusit Znovu",
-                                                            "text_return": "Zpátky"
-    },
-    "qr": [
-        {
+            "done": "Hotovo!",
+            "text_points": "Body",
+            "text_correct": "Správně",
+            "text_wrong": "Nesprávně",
+            "r": "Známka",
+            "r_fail": "F",
+            "r_bad": "E/D",
+            "r_ok": "C",
+            "r_good": "B",
+            "r_great": "A",
+            "text_again": "Zkusit Znovu",
+            "text_return": "Zpátky"
+        }, "qr": [{
             "id": 0,
             "command": "Vyber správnou odpověď!",
             "query": "Jakou časovou složitost má přístup k prvku seznamu podle indexu v Pythonu?",
@@ -442,18 +440,16 @@ var questions = {
             "c3": "O(1)",
             "c4": "Záleží na délce seznamu",
             "c": 3
-        },
-        {
+        }, {
             "id": 1,
             "command": "Vyber správnou odpověď!",
-            "query": "Porušuje funkce, která zapisuje do souboru, princip čisté funkce?",
-            "c1": "Ano",
+            "query": "Je funkce, která zapisuje do souboru, čistá?",
+            "c1": "Ano, vždy",
             "c2": "Ne",
             "c3": "Nevím",
-            "c4": "Pouze při výjimce",
-            "c": 1
-        },
-        {
+            "c4": "Pouze pokud soubor taky vytvoří",
+            "c": 2
+        }, {
             "id": 2,
             "command": "Vyber správnou odpověď!",
             "query": "Co znamená, že je proměnná lokální?",
@@ -462,18 +458,16 @@ var questions = {
             "c3": "Má omezený kontext platnosti",
             "c4": "Nelze ji změnit",
             "c": 3
-        },
-        {
+        }, {
             "id": 3,
             "command": "Vyber správnou odpověď!",
-            "query": "Je vyhodnocení podmínky if výraz nebo příkaz?",
+            "query": "Je <code>if</code> výraz nebo příkaz?",
             "c1": "Výraz",
             "c2": "Příkaz",
             "c3": "Obojí",
             "c4": "Ani jedno",
             "c": 2
-        },
-        {
+        }, {
             "id": 4,
             "command": "Vyber správnou odpověď!",
             "query": "Jaký je hlavní rozdíl mezi mutabilním a nemutabilním objektem?",
@@ -482,8 +476,7 @@ var questions = {
             "c3": "Možnost změny stavu objektu",
             "c4": "Typová anotace",
             "c": 3
-        },
-        {
+        }, {
             "id": 5,
             "command": "Vyber správnou odpověď!",
             "query": "Je předání seznamu do funkce v Pythonu předání hodnotou?",
@@ -492,8 +485,7 @@ var questions = {
             "c3": "Pouze pro prázdné seznamy",
             "c4": "Nevím",
             "c": 2
-        },
-        {
+        }, {
             "id": 8,
             "command": "Vyber správnou odpověď!",
             "query": "Je funkce, která vrací vždy stejný výstup pro stejný vstup, deterministická?",
@@ -502,28 +494,16 @@ var questions = {
             "c3": "Nevím",
             "c4": "Pouze bez cyklu",
             "c": 1
-        },
-        {
-            "id": 9,
-            "command": "Vyber správnou odpověď!",
-            "query": "Co je hlavním účelem unit testů?",
-            "c1": "Ověření výkonu",
-            "c2": "Ověření správnosti izolovaných částí",
-            "c3": "Dokumentace kódu",
-            "c4": "Optimalizace paměti",
-            "c": 2
-        },
-        {
+        }, {
             "id": 10,
             "command": "Vyber správnou odpověď!",
             "query": "Jaký je důsledek porušení DRY principu?",
             "c1": "Vyšší výkon",
             "c2": "Obtížnější údržba",
             "c3": "Lepší modularita",
-            "c4": "Žádný",
+            "c4": "Pochvala od nástroje Edulint",
             "c": 2
-        },
-        {
+        }, {
             "id": 11,
             "command": "Vyber správnou odpověď!",
             "query": "Je None v Pythonu objekt?",
@@ -532,8 +512,7 @@ var questions = {
             "c3": "Pouze konstanta",
             "c4": "Nevím",
             "c": 1
-        },
-        {
+        }, {
             "id": 12,
             "command": "Vyber správnou odpověď!",
             "query": "Jaký je smysl klíčového slova pass?",
@@ -542,18 +521,7 @@ var questions = {
             "c3": "Přeskočí iteraci",
             "c4": "Způsobí výjimku",
             "c": 2
-        },
-        {
-            "id": 13,
-            "command": "Vyber správnou odpověď!",
-            "query": "Co je hlavním rizikem používání globálních proměnných?",
-            "c1": "Vyšší paměťová náročnost",
-            "c2": "Snížená čitelnost a testovatelnost",
-            "c3": "Pomalejší běh",
-            "c4": "Typové chyby",
-            "c": 2
-        },
-        {
+        }, {
             "id": 14,
             "command": "Vyber správnou odpověď!",
             "query": "Jaký typ chyby je porušení syntaktických pravidel?",
@@ -562,38 +530,25 @@ var questions = {
             "c3": "Syntax Error",
             "c4": "Type Error",
             "c": 3
-        },
-        {
+        }, {
             "id": 16,
             "command": "Vyber správnou odpověď!",
             "query": "Jaký je hlavní rozdíl mezi výrazem a příkazem?",
             "c1": "Výraz má vždy vedlejší efekt",
-            "c2": "Příkaz vrací hodnotu",
-            "c3": "Výraz má hodnotu",
-            "c4": "Neexistuje rozdíl",
+            "c2": "Příkaz vrací hodnotu (Každý příkaz je také výrazem)",
+            "c3": "Výraz má hodnotu (Každý výraz je také příkazem)",
+            "c4": "Výrazy jsou pouze matematické (5+3) a příkazy jsou ku příkladu volání funkce",
             "c": 3
-        },
-        {
+        }, {
             "id": 17,
             "command": "Vyber správnou odpověď!",
-            "query": "Je použití vstupu od uživatele (input) vedlejší efekt?",
+            "query": "Je použití vstupu od uživatele (<code>input</code>) vedlejší efekt?",
             "c1": "Ano",
             "c2": "Ne",
             "c3": "Nevím",
             "c4": "Pouze v cyklu",
             "c": 1
-        },
-        {
-            "id": 18,
-            "command": "Vyber správnou odpověď!",
-            "query": "Co je hlavním cílem modularizace programu?",
-            "c1": "Zkrácení kódu",
-            "c2": "Rozdělení programu na samostatné části",
-            "c3": "Zrychlení běhu",
-            "c4": "Snížení paměti",
-            "c": 2
-        },
-        {
+        }, {
             "id": 19,
             "command": "Vyber správnou odpověď!",
             "query": "Jaký je význam návratové hodnoty funkce?",
@@ -602,8 +557,7 @@ var questions = {
             "c3": "Slouží k ladění",
             "c4": "Nemá význam",
             "c": 2
-        },
-        {
+        }, {
             "id": 20,
             "command": "Vyber správnou odpověď!",
             "query": "Je výjimka totéž co chyba?",
@@ -612,8 +566,7 @@ var questions = {
             "c3": "Pouze v Pythonu",
             "c4": "Nevím",
             "c": 2
-        },
-        {
+        }, {
             "id": 21,
             "command": "Vyber správnou odpověď!",
             "query": "Co je hlavní výhoda používání funkcí?",
@@ -622,8 +575,7 @@ var questions = {
             "c3": "Méně proměnných",
             "c4": "Menší paměť",
             "c": 2
-        },
-        {
+        }, {
             "id": 22,
             "command": "Vyber správnou odpověď!",
             "query": "Jaký problém může způsobit příliš dlouhá funkce?",
@@ -632,8 +584,7 @@ var questions = {
             "c3": "Vyšší paměťovou náročnost",
             "c4": "Žádný",
             "c": 2
-        },
-        {
+        }, {
             "id": 23,
             "command": "Vyber správnou odpověď!",
             "query": "Co znamená, že je jazyk interpretovaný?",
@@ -642,28 +593,25 @@ var questions = {
             "c3": "Nemá typy",
             "c4": "Nelze ho analyzovat",
             "c": 2
-        },
-        {
+        }, {
             "id": 24,
             "command": "Vyber správnou odpověď!",
-            "query": "Je porovnání objektů pomocí is porovnáním hodnot?",
+            "query": "Je porovnání objektů pomocí <code>is</code> porovnáním hodnot?",
             "c1": "Ano",
             "c2": "Ne",
             "c3": "Pouze pro None",
             "c4": "Nevím",
             "c": 2
-        },
-        {
+        }, {
             "id": 25,
             "command": "Vyber správnou odpověď!",
             "query": "Jaký je hlavní účel funkce assert v Pythonu?",
             "c1": "Ošetření výjimek",
             "c2": "Ladění a kontrola předpokladů",
             "c3": "Zrychlení běhu programu",
-            "c4": "Nahrazení unit testů",
+            "c4": "Uspokojování mypy",
             "c": 2
-        },
-        {
+        }, {
             "id": 26,
             "command": "Vyber správnou odpověď!",
             "query": "Je funkce, která mění pouze své lokální proměnné, považována za čistou?",
@@ -672,8 +620,7 @@ var questions = {
             "c3": "Pouze bez návratové hodnoty",
             "c4": "Nevím",
             "c": 1
-        },
-        {
+        }, {
             "id": 27,
             "command": "Vyber správnou odpověď!",
             "query": "Co znamená, že je datová struktura imutabilní?",
@@ -682,8 +629,7 @@ var questions = {
             "c3": "Je pomalejší než mutabilní",
             "c4": "Je uložena na zásobníku",
             "c": 2
-        },
-        {
+        }, {
             "id": 28,
             "command": "Vyber správnou odpověď!",
             "query": "Jaký je typický důsledek chybné práce s mutabilními objekty?",
@@ -692,8 +638,7 @@ var questions = {
             "c3": "Chyba při překladu",
             "c4": "Zpomalení programu",
             "c": 2
-        },
-        {
+        }, {
             "id": 29,
             "command": "Vyber správnou odpověď!",
             "query": "Co vyjadřuje pojem referenční transparentnost?",
@@ -702,8 +647,7 @@ var questions = {
             "c3": "Viditelnost proměnné",
             "c4": "Optimalizaci paměti",
             "c": 2
-        },
-        {
+        }, {
             "id": 30,
             "command": "Vyber správnou odpověď!",
             "query": "Je porovnání dvou seznamů pomocí == porovnáním identity?",
@@ -712,8 +656,7 @@ var questions = {
             "c3": "Pouze pokud jsou prázdné",
             "c4": "Nevím",
             "c": 2
-        },
-        {
+        }, {
             "id": 31,
             "command": "Vyber správnou odpověď!",
             "query": "Jaký je hlavní rozdíl mezi while a for cyklem v Pythonu?",
@@ -722,8 +665,7 @@ var questions = {
             "c3": "for iteruje nad iterovatelnou strukturou",
             "c4": "Žádný rozdíl není",
             "c": 3
-        },
-        {
+        }, {
             "id": 32,
             "command": "Vyber správnou odpověď!",
             "query": "Co se stane, pokud funkce neobsahuje explicitní return?",
@@ -732,38 +674,16 @@ var questions = {
             "c3": "Vrátí None",
             "c4": "Vyhodí výjimku",
             "c": 3
-        },
-        {
-            "id": 33,
-            "command": "Vyber správnou odpověď!",
-            "query": "Jaký je hlavní účel dokumentačního řetězce (docstring)?",
-            "c1": "Zrychlení běhu",
-            "c2": "Automatická kontrola typů",
-            "c3": "Popis chování a rozhraní",
-            "c4": "Nahrazení komentářů",
-            "c": 3
-        },
-        {
-            "id": 34,
-            "command": "Vyber správnou odpověď!",
-            "query": "Je použití výjimky považováno za řízení toku programu?",
-            "c1": "Ano, vždy",
-            "c2": "Ne, výjimky nejsou tok řízení",
-            "c3": "Pouze ve výjimečných případech",
-            "c4": "Nevím",
-            "c": 3
-        },
-        {
+        }, {
             "id": 35,
             "command": "Vyber správnou odpověď!",
-            "query": "Co znamená, že má funkce vedlejší efekt?",
+            "query": "Co znamená, že funkce není čistá?",
             "c1": "Vrací hodnotu",
             "c2": "Mění stav mimo svůj lokální rozsah",
             "c3": "Obsahuje cyklus",
-            "c4": "Je pomalá",
+            "c4": "Pro stejný vstup vrací vždy stejný výsledek",
             "c": 2
-        },
-        {
+        }, {
             "id": 36,
             "command": "Vyber správnou odpověď!",
             "query": "Jaký je hlavní problém příliš hlubokého vnoření podmínek?",
@@ -772,28 +692,16 @@ var questions = {
             "c3": "Chyby při běhu",
             "c4": "Nižší výkon CPU",
             "c": 2
-        },
-        {
-            "id": 37,
-            "command": "Vyber správnou odpověď!",
-            "query": "Jaký je účel klíčového slova global?",
-            "c1": "Zrychlení přístupu k proměnné",
-            "c2": "Deklarace globální proměnné ve funkci",
-            "c3": "Vytvoření konstanty",
-            "c4": "Změna typu proměnné",
-            "c": 2
-        },
-        {
+        }, {
             "id": 38,
             "command": "Vyber správnou odpověď!",
-            "query": "Je výpis na standardní výstup považován za I/O operaci?",
-            "c1": "Ano",
-            "c2": "Ne",
-            "c3": "Pouze v terminálu",
-            "c4": "Nevím",
+            "query": "Porušuje použití funkce <code>print</code> čistotu funkce?",
+            "c1": "Ano, vždy",
+            "c2": "V terminálu ne, jinak ano",
+            "c3": "V terminálu ano, jinak ne",
+            "c4": "Ne, nikdy",
             "c": 1
-        },
-        {
+        }, {
             "id": 39,
             "command": "Vyber správnou odpověď!",
             "query": "Co je hlavním cílem typové kontroly?",
@@ -802,18 +710,7 @@ var questions = {
             "c3": "Optimalizace paměti",
             "c4": "Zkrácení kódu",
             "c": 2
-        },
-        {
-            "id": 41,
-            "command": "Vyber správnou odpověď!",
-            "query": "Je lambda výraz v Pythonu plnohodnotná funkce?",
-            "c1": "Ano",
-            "c2": "Ne",
-            "c3": "Pouze bez parametrů",
-            "c4": "Nevím",
-            "c": 1
-        },
-        {
+        }, {
             "id": 42,
             "command": "Vyber správnou odpověď!",
             "query": "Jaký je hlavní rozdíl mezi list comprehension a klasickým cyklem?",
@@ -822,8 +719,7 @@ var questions = {
             "c3": "Cykly nelze vnořovat",
             "c4": "Neexistuje rozdíl",
             "c": 2
-        },
-        {
+        }, {
             "id": 43,
             "command": "Vyber správnou odpověď!",
             "query": "Co je hlavní riziko příliš obecného názvu proměnné?",
@@ -832,8 +728,7 @@ var questions = {
             "c3": "Syntaktická chyba",
             "c4": "Chyba překladu",
             "c": 2
-        },
-        {
+        }, {
             "id": 44,
             "command": "Vyber správnou odpověď!",
             "query": "Jaký je účel klíčového slova None?",
@@ -842,8 +737,7 @@ var questions = {
             "c3": "Nulová hodnota",
             "c4": "Prázdný objekt",
             "c": 1
-        },
-        {
+        }, {
             "id": 45,
             "command": "Vyber správnou odpověď!",
             "query": "Je funkce bez vedlejších efektů vždy bezpečná pro testování?",
@@ -852,8 +746,7 @@ var questions = {
             "c3": "Pouze bez parametrů",
             "c4": "Nevím",
             "c": 1
-        },
-        {
+        }, {
             "id": 46,
             "command": "Vyber správnou odpověď!",
             "query": "Jaký je hlavní rozdíl mezi chybou a výjimkou?",
@@ -862,28 +755,7 @@ var questions = {
             "c3": "Chyba je vždy fatální",
             "c4": "Výjimky nelze zachytit",
             "c": 2
-        },
-        {
-            "id": 47,
-            "command": "Vyber správnou odpověď!",
-            "query": "Co znamená, že je kód deklarativní?",
-            "c1": "Popisuje jak se něco dělá",
-            "c2": "Popisuje co se má stát",
-            "c3": "Používá pouze funkce",
-            "c4": "Nepoužívá proměnné",
-            "c": 2
-        },
-        {
-            "id": 48,
-            "command": "Vyber správnou odpověď!",
-            "query": "Jaký je hlavní účel návrhových principů?",
-            "c1": "Zvýšení výkonu",
-            "c2": "Zlepšení struktury a udržovatelnosti kódu",
-            "c3": "Zkrácení zápisu",
-            "c4": "Omezení typů",
-            "c": 2
-        },
-        {
+        }, {
             "id": 50,
             "command": "Vyber správnou odpověď!",
             "query": "Co znamená pojem časová složitost algoritmu?",
@@ -892,18 +764,7 @@ var questions = {
             "c3": "Kolik řádků má kód",
             "c4": "Jak rychlý je procesor",
             "c": 2
-        },
-        {
-            "id": 51,
-            "command": "Vyber správnou odpověď!",
-            "query": "Jaký je hlavní smysl asymptotické notace?",
-            "c1": "Popis přesného času běhu",
-            "c2": "Porovnání růstu složitosti pro velké vstupy",
-            "c3": "Optimalizace paměti",
-            "c4": "Lepší čitelnost kódu",
-            "c": 2
-        },
-        {
+        }, {
             "id": 52,
             "command": "Vyber správnou odpověď!",
             "query": "Je algoritmus s časovou složitostí O(n) vždy rychlejší než O(n log n)?",
@@ -912,8 +773,7 @@ var questions = {
             "c3": "Pouze pro malé vstupy",
             "c4": "Nevím",
             "c": 2
-        },
-        {
+        }, {
             "id": 53,
             "command": "Vyber správnou odpověď!",
             "query": "Co znamená pojem paměťová složitost?",
@@ -922,8 +782,7 @@ var questions = {
             "c3": "Rychlost přístupu do paměti",
             "c4": "Velikost vstupu",
             "c": 2
-        },
-        {
+        }, {
             "id": 54,
             "command": "Vyber správnou odpověď!",
             "query": "Kdy je vhodné použít rekurzi místo iterace?",
@@ -932,8 +791,7 @@ var questions = {
             "c3": "Když problém má přirozenou rekurzivní strukturu",
             "c4": "Pouze pro malé vstupy",
             "c": 3
-        },
-        {
+        }, {
             "id": 55,
             "command": "Vyber správnou odpověď!",
             "query": "Jaký je hlavní problém neomezené rekurze?",
@@ -942,8 +800,7 @@ var questions = {
             "c3": "Syntaktická chyba",
             "c4": "Typová chyba",
             "c": 2
-        },
-        {
+        }, {
             "id": 56,
             "command": "Vyber správnou odpověď!",
             "query": "Co je invariant cyklu?",
@@ -952,8 +809,7 @@ var questions = {
             "c3": "Počet iterací",
             "c4": "Řídicí proměnná",
             "c": 2
-        },
-        {
+        }, {
             "id": 57,
             "command": "Vyber správnou odpověď!",
             "query": "Jaký je hlavní účel použití pomocné proměnné?",
@@ -962,8 +818,7 @@ var questions = {
             "c3": "Zkrácení kódu",
             "c4": "Zajištění typové bezpečnosti",
             "c": 2
-        },
-        {
+        }, {
             "id": 58,
             "command": "Vyber správnou odpověď!",
             "query": "Co znamená, že je algoritmus korektní?",
@@ -972,8 +827,7 @@ var questions = {
             "c3": "Je jednoduchý",
             "c4": "Neobsahuje cykly",
             "c": 2
-        },
-        {
+        }, {
             "id": 59,
             "command": "Vyber správnou odpověď!",
             "query": "Jaký je hlavní rozdíl mezi chybou v logice a chybou syntaktickou?",
@@ -982,8 +836,7 @@ var questions = {
             "c3": "Logická chyba je vždy viditelná",
             "c4": "Neexistuje rozdíl",
             "c": 2
-        },
-        {
+        }, {
             "id": 60,
             "command": "Vyber správnou odpověď!",
             "query": "Co znamená, že je funkce čistá?",
@@ -992,38 +845,16 @@ var questions = {
             "c3": "Nemá parametry",
             "c4": "Vrací None",
             "c": 2
-        },
-        {
-            "id": 61,
-            "command": "Vyber správnou odpověď!",
-            "query": "Jaký je hlavní důvod oddělování výpočtu od I/O?",
-            "c1": "Zvýšení výkonu",
-            "c2": "Lepší testovatelnost",
-            "c3": "Snížení paměťové náročnosti",
-            "c4": "Jednodušší syntaxi",
-            "c": 2
-        },
-        {
+        }, {
             "id": 62,
             "command": "Vyber správnou odpověď!",
-            "query": "Je funkce, která závisí na aktuálním čase, deterministická a čistá?",
+            "query": "Je funkce, která závisí na aktuálním čase čistá?",
             "c1": "Ano",
-            "c2": "Ne",
-            "c3": "Pouze deterministická",
-            "c4": "Pouze čistá",
-            "c": 2
-        },
-        {
-            "id": 64,
-            "command": "Vyber správnou odpověď!",
-            "query": "Jaký problém řeší rozdělení kódu do modulů?",
-            "c1": "Rychlost běhu",
-            "c2": "Přehlednost a opakované použití",
-            "c3": "Typovou inferenci",
-            "c4": "Syntaktické chyby",
-            "c": 2
-        },
-        {
+            "c2": "Není čistá, protože nastavuje systémové datum",
+            "c3": "Není čistá, protože pro rovnaký vstup může vrátit jiný výsledek",
+            "c4": "Není čistá, protože vyžaduje importování modulu <code>time</code>",
+            "c": 3
+        }, {
             "id": 67,
             "command": "Vyber správnou odpověď!",
             "query": "Co znamená lazy vyhodnocování?",
@@ -1032,18 +863,7 @@ var questions = {
             "c3": "Paralelní výpočet",
             "c4": "Optimalizaci paměti",
             "c": 2
-        },
-        {
-            "id": 68,
-            "command": "Vyber správnou odpověď!",
-            "query": "Jaký je hlavní rozdíl mezi iterátorem a iterovatelným objektem?",
-            "c1": "Iterátor lze použít jen jednou",
-            "c2": "Iterovatelný objekt vrací iterátor",
-            "c3": "Iterátor ukládá všechna data",
-            "c4": "Neexistuje rozdíl",
-            "c": 2
-        },
-        {
+        }, {
             "id": 69,
             "command": "Vyber správnou odpověď!",
             "query": "Co je hlavním účelem generátorů?",
@@ -1052,8 +872,7 @@ var questions = {
             "c3": "Paralelní zpracování",
             "c4": "Zajištění typové bezpečnosti",
             "c": 2
-        },
-        {
+        }, {
             "id": 71,
             "command": "Vyber správnou odpověď!",
             "query": "Jaký je hlavní účel návratové hodnoty u rekurzivní funkce?",
@@ -1062,8 +881,7 @@ var questions = {
             "c3": "Zabránění chybám",
             "c4": "Zrychlení výpočtu",
             "c": 2
-        },
-        {
+        }, {
             "id": 72,
             "command": "Vyber správnou odpověď!",
             "query": "Co znamená, že je program robustní?",
@@ -1072,8 +890,7 @@ var questions = {
             "c3": "Má krátký kód",
             "c4": "Nepoužívá výjimky",
             "c": 2
-        },
-        {
+        }, {
             "id": 73,
             "command": "Vyber správnou odpověď!",
             "query": "Jaký je hlavní rozdíl mezi testováním a laděním?",
@@ -1082,8 +899,7 @@ var questions = {
             "c3": "Ladění je automatické",
             "c4": "Testování je pomalejší",
             "c": 2
-        },
-        {
+        }, {
             "id": 74,
             "command": "Vyber správnou odpověď!",
             "query": "Co znamená, že je kód udržovatelný?",
@@ -1092,9 +908,16 @@ var questions = {
             "c3": "Je bez chyb",
             "c4": "Je optimalizovaný",
             "c": 2
-        }
-
-    ]
-}
+        }, {
+            "id": 75,
+            "command": "Vyber správnou odpověď!",
+            "query": "Jaký je rozdíl mezi <code>list.insert(1, 5)</code> a <code>list.insert(-1,5)</code> z hlediska časové složitosti?",
+            "c1": "<code>list.insert(1, 5)</code> se provede v konstantním čase, zatím co <code>list.insert(-1,5)</code> v lineárním.",
+            "c2": "<code>list.insert(1, 5)</code> se provede v lineárním čase, zatím co <code>list.insert(-1,5)</code> v konstantním.",
+            "c3": "Žádný, funkce <code>list.insert()</code> se vždy provede v lineárním čase.",
+            "c4": "Žádný, funkce <code>list.insert()</code> se vždy provede v konstantním čase.",
+            "c": 2
+        }]
+    }
   
 };
