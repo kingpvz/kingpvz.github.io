@@ -78,12 +78,12 @@ function randomQuestion() {
     }
 if (chosen["id"] !== -1){
 ids.push(chosen["id"]);
-  command.innerHTML = chosen["command"];
-  query.innerHTML = chosen["query"];
-  c1.innerHTML = chosen["c1"];
-  c2.innerHTML = chosen["c2"];
-  c3.innerHTML = chosen["c3"];
-  c4.innerHTML = chosen["c4"];
+    command.innerHTML = chosen["command"];
+    query.innerHTML = chosen["query"];
+    c1.innerHTML = "<p style='margin:0'>"+chosen["c1"]+"</p>";
+    c2.innerHTML = "<p style='margin:0'>" + chosen["c2"] + "</p>";
+    c3.innerHTML = "<p style='margin:0'>" + chosen["c3"] + "</p>";
+    c4.innerHTML = "<p style='margin:0'>" + chosen["c4"] + "</p>";
     correct = chosen["c"];
     switchPlaces();
 } else {
