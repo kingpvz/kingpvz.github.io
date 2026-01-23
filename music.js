@@ -40,6 +40,7 @@ var filt = {
         fr2023: true,
         fr2024: true,
         fr2025: true,
+        fr2026: true,
         arslavmax: true,
         ardogload: true,
         arsozislav: true,
@@ -3645,6 +3646,22 @@ var database = [
                     deezer: "https://link.deezer.com/s/30R920p9MUPBUv6qehnuK"
                 }
             ]
+        }
+    },
+    {
+        title: "SO BACK",
+        genre: "hardbass:Hardphonk/Metalcord",
+        album: "none",
+        year: 2026,
+        originality: "original",
+        lyrics: "inst",
+        explicit: false,
+        cover: "https://uploads.ungrounded.net/tmp/7403000/7403013/icon/7403013_raw.jpg?f1769186849",
+        link: {
+            base: {
+                youtube: "https://youtu.be/9E73ZrjZqDE",
+                ng: "https://www.newgrounds.com/audio/listen/1517767"
+            }
         }
     },
     {
