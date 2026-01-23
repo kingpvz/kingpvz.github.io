@@ -3684,6 +3684,23 @@ var database = [
         }
     },
     {
+        title: "Space Pirates",
+        genre: "hardbass:Hardbass",
+        album: "gb2",
+        year: 2025,
+        originality: "remix",
+        originalby: "Waterflame",
+        lyrics: "inst",
+        explicit: false,
+        cover: "https://i.scdn.co/image/ab6761670000ecd4be936e4ef9f2f473c44c575d",
+        link: {
+            base: {
+                youtube: "https://youtu.be/lrD2og7aQUA",
+                ng: "https://www.newgrounds.com/audio/listen/1427847"
+            }
+        }
+    },
+    {
         title: "Spider Dance",
         genre: "hardbass:Hardbass",
         album: "none",
