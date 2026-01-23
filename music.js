@@ -2553,7 +2553,7 @@ var database = [
         lyrics: "lyric",
         language: "English",
         explicit: false,
-        cover: "https://cdn2.pixelcut.app/temp/upscale/ad364168-2c35-4454-ac15-18cecc38ad3c.jpg",
+        cover: "https://i.scdn.co/image/ab67616d0000b273c19b81475b29c3955df38e2d",
         link: {
             base: {
                 youtube: "https://youtu.be/OBe_GGn6biQ",
@@ -3650,7 +3650,7 @@ var database = [
     },
     {
         title: "SO BACK",
-        genre: "hardbass:Hardphonk/Metalcord",
+        genre: "hardbass:Hardphonk hardbass:Metalcord",
         album: "none",
         year: 2026,
         originality: "original",
