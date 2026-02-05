@@ -3660,7 +3660,10 @@ var database = [
         link: {
             base: {
                 youtube: "https://youtu.be/9E73ZrjZqDE",
-                ng: "https://www.newgrounds.com/audio/listen/1517767"
+                ng: "https://www.newgrounds.com/audio/listen/1517767",
+                spotify: "https://open.spotify.com/track/5NYMpRQeURn2TcHcPTO6Yc?si=f65449914ba04424",
+                itunes: "https://music.apple.com/us/album/so-back-single/1871249904",
+                deezer: "https://link.deezer.com/s/32mFRTZMNGQcqN5qfEcyp"
             }
         }
     },
