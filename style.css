@@ -833,3 +833,120 @@ body {
     margin: 1vh;
     font-size: 1.2vw;
 }
+
+/*stream*/
+#streamttl {
+    margin: 0;
+    font-size: 4vh;
+    font-style: italic;
+    flex: 1;
+}
+
+#titleseason {
+    display: flex;
+    margin-bottom: 4vh;
+    align-items: center;
+}
+
+#streamssn {
+    top: 0;
+    right: 0;
+    background-color: orangered;
+    border-radius: 100vw;
+    border: solid yellow 3px;
+    padding: 1vh;
+    display: flex;
+    align-items: center;
+}
+
+#streamssn > h2 {
+    margin: 0 1vh 0 0;
+    font-size: 3vh;
+    line-height: 1;
+}
+
+#streamssn > div {
+    background-color: yellow;
+    display: flex;
+    width: 4vh;
+    height: 3vh;
+    border-radius: 2vh;
+    align-items: center;
+    justify-content: center;
+    outline: #222 0.5vh solid;
+}
+
+#streamssn > div > h3 {
+    margin: 0;
+    color: #222;
+    font-size: 2.5vh;
+    line-height: 1;
+}
+
+#streamside {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-gap: 2vh;
+    padding: 1vh 0 1vh 1vh;
+    align-items: start;
+}
+
+.streamside {
+    border: solid 0.5vh orangered;
+    box-shadow: orangered 0 0 5px;
+    border-radius: 4vh;
+    background-color: orangered;
+}
+
+.streamside > h1 {
+    margin: 0.5vh;
+    font-size: 3.5vh;
+}
+
+.streamside > p {
+    background-color: rgba(0 0 0 / 50%);
+    padding: 1vh;
+    margin: 0.5vh 0;
+    border-radius: 2vh;
+    font-size: 1.8vh;
+}
+
+    .streamside > div {
+        background-color: rgba(16 16 16 / 90%);
+        padding: 2vh;
+        border-radius: 2vh 2vh 3.5vh 3.5vh;
+    }
+
+        .streamside > div > p {
+            margin: 0;
+        }
+
+    .streamside > div > p > a  {
+        text-decoration: none;
+        color: yellow;
+        font-weight: bold;
+        transition: 0.2s ease-out;
+    }
+            .streamside > div > p > a:hover {
+                color: orange;
+            }
+
+.streamelmc {
+    border-radius: 3px 1vh 1vh 3px;
+    border-left: #777 solid 3px;
+    display: flex;
+    padding: 1vh 1vh 1vh 2vh;
+    margin-bottom: 2vh;
+    align-items: baseline;
+}
+    .streamelmc > h1 {
+        margin: 0;
+        font-size: 3vh;
+    }
+
+    .streamelmc > h2 {
+        padding-left: 1vh;
+        color: #aaa;
+        margin: 0;
+        font-size: 2.5vh;
+    }

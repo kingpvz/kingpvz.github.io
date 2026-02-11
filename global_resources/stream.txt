@@ -3,6 +3,13 @@
 	"coming": [
 		[
 			"Poppy Playtime Chapter 5", "Horror", true
+		],
+		
+		[
+			"Rhythm Doctor", "Rhythm Game"
+		],
+		[
+			"Try Not to Laugh", "Challenge", true
 		]
 	],
 	"schedule": [
