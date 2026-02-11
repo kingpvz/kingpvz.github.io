@@ -7,18 +7,12 @@
 	],
 	"schedule": [
 		[
-			"2/23/2026", "Rhythm Game",
-			"Rhythm Doctor - Part 128",
-			"Maybe I'll be busy who knows"
+			"2/12/2026", "Rhythm Game",
+			"Rhythm Doctor - Part 3"
 		],
 		[
-			"2/24/2026", "Rhythm Game",
-			"Rhythm Doctor - Part 128",
-			"Maybe I'll be busy who knows"
-		],
-		[
-			"3/11/2026", "Just Chatting",
-			"New Year Celebration"
+			"2/17/2026", "Nothing",
+			"Second semester begins aaaand yea i gotta see how the system works. I will stream the next week hopefully."
 		]
 	]
 }
