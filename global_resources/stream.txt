@@ -17,7 +17,7 @@
 			"Maybe I'll be busy who knows"
 		],
 		[
-			"2/1/2026", "Just Chatting",
+			"3/1/2026", "Just Chatting",
 			"New Year Celebration"
 		]
 	]

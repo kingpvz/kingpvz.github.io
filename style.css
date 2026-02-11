@@ -955,6 +955,7 @@ body {
     border-radius: 3px 1vh 1vh 3px;
     border-left: #777 solid 3px;
     margin-bottom: 2vh;
+    text-align: left;
 }
 
 .streamelms > div {
@@ -969,3 +970,13 @@ body {
     margin: 0;
     font-size: 2vh;
 }
+
+.streamelms > h1 {
+    font-size: 3vh;
+    margin: 1vh 1vh 1vh 2vh;
+}
+
+    .streamelms > p {
+        font-size: 2vh;
+        margin: 0 1vh 1vh 2vh;
+    }
