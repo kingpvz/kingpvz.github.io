@@ -23,22 +23,61 @@ window.onload = function () {
     }
     const schd = document.getElementById("schedulestr");
     if (receive.schedule.length != 0) schd.innerHTML = "";
+    function getPFTZ(date, timeZone) {
+        const fmt = new Intl.DateTimeFormat('en-US', {
+            timeZone: timeZone,
+            year: 'numeric',
+            month: '2-digit',
+            day: '2-digit',
+            hour: '2-digit',
+            minute: '2-digit',
+            second: '2-digit',
+            hour12: false
+        });
+        const parts = fmt.formatToParts(date);
+        const map = {};
+        for (const p of parts) {
+            if (p.type !== 'literal') map[p.type] = p.value;
+        }
+        return map;
+    }
+    const TZ = 'Europe/Berlin';
+
     for (i of receive.schedule) {
         const body = document.createElement("div");
         body.classList.add("streamelms");
         const head = document.createElement("div");
         const date = document.createElement("h2");
-        let dt = Date.parse(i[0]);
         let td = new Date();
-        console.log(dt, td);
+        const dtParts = getPFTZ(Date.parse(i[0]), 'Europe/Berlin');
+        const nowParts = getPFTZ(td, Intl.DateTimeFormat().resolvedOptions().timeZone);
+
+        const dtKey = `${dtParts.year}-${dtParts.month}-${dtParts.day}`;
+        const nowKey = `${nowParts.year}-${nowParts.month}-${nowParts.day}`;
+
+        const nowMinutes = parseInt(nowParts.hour, 10) * 60 + parseInt(nowParts.minute, 10);
+
+        if (dtKey === nowKey) {
+            if (nowMinutes < 16 * 60) date.innerHTML = "Today";
+            else if (nowMinutes < 18 * 60) date.innerHTML = "Live Now"
+            else date.innerHTML = "Finished";
+        } else if (dtKey > nowKey) {
+            date.innerHTML = "Future";
+        } else {
+            date.innerHTML = "Finished";
+        }
+        head.appendChild(date);
+        const genre = document.createElement("h2");
+        genre.innerHTML = i[1];
+        head.appendChild(genre);
+        body.appendChild(head);
         const name = document.createElement("h1");
         name.innerHTML = i[2];
-        const genre = document.createElement("h2");
-        genre.innerHTML = "/ " + i[1];
         body.appendChild(name);
-        body.appendChild(genre);
         if (i[3]) {
-            body.style.backgroundColor = "#762102";
+            const notes = document.createElement("p");
+            notes.innerHTML = i[3];
+            body.appendChild(notes);
         }
         schd.appendChild(body);
     }

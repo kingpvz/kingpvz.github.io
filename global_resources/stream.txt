@@ -3,23 +3,21 @@
 	"coming": [
 		[
 			"Poppy Playtime Chapter 5", "Horror", true
-		],
-		
-		[
-			"Rhythm Doctor", "Rhythm Game"
-		],
-		[
-			"Try Not to Laugh", "Challenge"
 		]
 	],
 	"schedule": [
 		[
-			"12/31/2026", "Rhythm Game",
+			"2/10/2026", "Rhythm Game",
 			"Rhythm Doctor - Part 128",
 			"Maybe I'll be busy who knows"
 		],
 		[
-			"1/1/2027", "Just Chatting",
+			"2/11/2026", "Rhythm Game",
+			"Rhythm Doctor - Part 128",
+			"Maybe I'll be busy who knows"
+		],
+		[
+			"2/12/2026", "Just Chatting",
 			"New Year Celebration"
 		]
 	]
