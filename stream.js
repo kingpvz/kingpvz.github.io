@@ -57,8 +57,14 @@ window.onload = function () {
         const nowMinutes = parseInt(nowParts.hour, 10) * 60 + parseInt(nowParts.minute, 10);
         if (dtKey === nowKey) {
             if (nowMinutes < 16 * 60) date.innerHTML = "Today";
-            else if (nowMinutes < 18 * 60) date.innerHTML = "Live Now";
-            else date.innerHTML = "Finished";
+            else if (nowMinutes < 18 * 60) {
+                date.innerHTML = "Live Now";
+                head.style.backgroundColor = "red";
+            }
+            else {
+                date.innerHTML = "Finished";
+                head.style.backgroundColor = "#333";
+            }
         } else if (dtKey > nowKey) {
             const dtMidUtc = Date.UTC(+dtParts.year, +dtParts.month - 1, +dtParts.day);
             const nowMidUtc = Date.UTC(+nowParts.year, +nowParts.month - 1, +nowParts.day);
@@ -67,17 +73,29 @@ window.onload = function () {
             if (dayDiff === 1) {
                 date.innerHTML = "Tomorrow";
             } else if (dayDiff > 1) {
-                const userLocale = navigator.language || 'en-US';
-                const shortFormatter = new Intl.DateTimeFormat(userLocale, {
-                    timeZone: tz,
-                    month: '2-digit',
-                    day: '2-digit'
+                const shortFormatter = new Intl.DateTimeFormat('en-US', {
+                    timeZone: 'Europe/Berlin',
+                    month: 'long',
+                    day: 'numeric'
                 });
-                const shortDate = shortFormatter.format(Date.parse(i[0]));
-                date.innerHTML = shortDate;
+                date.innerHTML = shortFormatter.format(Date.parse(i[0]));
+                switch (date.innerHTML.slice(-2)) {
+                    case " 1": case "21": case "31":
+                        date.innerHTML += "st";
+                        break;
+                    case " 2": case "22":
+                        date.innerHTML += "nd";
+                        break;
+                    case " 3": case "23":
+                        date.innerHTML += "rd";
+                        break;
+                    default:
+                        date.innerHTML += "th";
+                }
             }
         } else {
             date.innerHTML = "Finished";
+            head.style.backgroundColor = "#777";
         }
         head.appendChild(date);
         const genre = document.createElement("h2");

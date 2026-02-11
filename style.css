@@ -954,6 +954,18 @@ body {
 .streamelms {
     border-radius: 3px 1vh 1vh 3px;
     border-left: #777 solid 3px;
-    padding: 1vh 1vh 1vh 0;
     margin-bottom: 2vh;
+}
+
+.streamelms > div {
+    display: flex;
+    background-color: orangered;
+    justify-content: space-between;
+    border-radius: 0 1vh 1vh 0;
+    padding: 1vh 1vh 1vh 2vh;
+}
+
+.streamelms > div > h2 {
+    margin: 0;
+    font-size: 2vh;
 }
