@@ -12,7 +12,7 @@ headertemplate.innerHTML = `
         </div>
         <div id="rightnav">
             <a target="_blank" style="color: #1DB954;" class="titleitem" href="https://open.spotify.com/artist/0E9m4Xiqd4g7gAnByJ8FZW?si=1m-T9AhcS7-npeM3t_ZHCw">Spotify</a><br />
-            <a target="_blank" style="color: lightblue;" class="titleitem" href="https://discord.gg/zkWXngH">Discord</a><br />
+            <a target="_blank" style="color: lightblue;" class="titleitem" href="https://github.com/kingpvz">GitHub</a><br />
             <a target="_blank" style="color: white;" class="titleitem" href="https://my-store-b3cfd9.creator-spring.com/">Merch</a><br>
         </div>
     </div>

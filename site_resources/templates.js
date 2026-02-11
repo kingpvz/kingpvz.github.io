@@ -10,7 +10,6 @@ headertemplate.innerHTML = `
             <a target="_blank" style="color: #F56040" class="titleitem" href="https://instagram.com/kingpvz_yt">Instagram</a><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
             <a target="_blank" style="color: #1DB954;" class="titleitem" href="https://open.spotify.com/artist/0E9m4Xiqd4g7gAnByJ8FZW?si=1m-T9AhcS7-npeM3t_ZHCw">Spotify</a><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
             <a target="_blank" style="color: white;" class="titleitem" href="https://my-store-b3cfd9.creator-spring.com/">Merch</a><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-            <a target="_blank" style="color: #ccf;" class="titleitem" href="https://discord.gg/dSA8SjbkXP">Discord</a>
          </div></div>
 `;
 
