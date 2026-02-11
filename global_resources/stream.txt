@@ -1,0 +1,19 @@
+{
+	"season": 6,
+	"coming": [
+		[
+			"Poppy Playtime Chapter 5", "Horror", true
+		]
+	],
+	"schedule": [
+		[
+			"12/31/2026", "Rhythm Game",
+			"Rhythm Doctor - Part 128",
+			"Maybe I'll be busy who knows"
+		],
+		[
+			"1/1/2027", "Just Chatting",
+			"New Year Celebration"
+		]
+	]
+}
