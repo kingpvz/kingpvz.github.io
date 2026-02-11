@@ -716,3 +716,145 @@ html, body{
     flex-direction: column;
     padding: 5vw;
 }
+
+/*stream*/
+#streamttl {
+    margin: 0;
+    font-size: 7vw;
+    padding-bottom: 2vw;
+}
+
+#titleseason {
+    display: flex;
+    margin-bottom: 4vw;
+    align-items: center;
+    flex-direction: column;
+}
+
+#streamssn {
+    background-color: orangered;
+    border-radius: 100vw;
+    border: solid yellow 3px;
+    padding: 1.5vw;
+    display: flex;
+    align-items: center;
+}
+
+    #streamssn > h2 {
+        margin: 0 1.5vw 0 0;
+        font-size: 4.5vw;
+        line-height: 1;
+    }
+
+    #streamssn > div {
+        background-color: yellow;
+        display: flex;
+        width: 6vw;
+        height: 4.5vw;
+        border-radius: 3vw;
+        align-items: center;
+        justify-content: center;
+        outline: #222 0.75vw solid;
+    }
+
+        #streamssn > div > h3 {
+            margin: 0;
+            color: #222;
+            font-size: 3.75vw;
+            line-height: 1;
+        }
+
+#streamside {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 4vw;
+    padding: 4vw;
+    align-items: start;
+}
+
+.streamside {
+    border: solid 1vw orangered;
+    box-shadow: orangered 0 0 5px;
+    border-radius: 8vw;
+    background-color: orangered;
+}
+
+    .streamside > h1 {
+        margin: 1vw;
+        font-size: 6vw;
+    }
+
+    .streamside > p {
+        background-color: rgba(0 0 0 / 50%);
+        padding: 2vw;
+        margin: 1vw 0;
+        border-radius: 4vw;
+        font-size: 3vw;
+    }
+
+    .streamside > div {
+        background-color: rgba(16 16 16 / 90%);
+        padding: 4vw;
+        border-radius: 4vw 4vw 7vw 7vw;
+    }
+
+        .streamside > div > p {
+            margin: 0;
+            font-size: 3vw;
+        }
+
+            .streamside > div > p > a {
+                text-decoration: none;
+                color: yellow;
+                font-weight: bold;
+            }
+
+.streamelmc {
+    border-radius: 3px 2vw 2vw 3px;
+    border-left: #777 solid 3px;
+    display: block;
+    padding: 2vw 2vw 2vw 4vw;
+    margin-bottom: 4vw;
+    text-align: left;
+}
+
+    .streamelmc > h1 {
+        margin: 0;
+        font-size: 6vw;
+    }
+
+    .streamelmc > h2 {
+        color: #aaa;
+        margin: 0;
+        font-size: 4vw;
+    }
+
+.streamelms {
+    border-radius: 3px 2vw 2vw 3px;
+    border-left: #777 solid 3px;
+    margin-bottom: 4vw;
+    text-align: left;
+}
+
+    .streamelms > div {
+        display: flex;
+        background-color: orangered;
+        justify-content: space-between;
+        border-radius: 0 2vw 2vw 0;
+        padding: 2vw 2vw 2vw 4vw;
+    }
+
+        .streamelms > div > h2 {
+            margin: 0;
+            font-size: 4vw;
+        }
+
+    .streamelms > h1 {
+        font-size: 6vw;
+        margin: 2vw 2vw 2vw 4vw;
+    }
+
+    .streamelms > p {
+        font-size: 3.5vw;
+        margin: 0 2vw 2vw 4vw;
+    }

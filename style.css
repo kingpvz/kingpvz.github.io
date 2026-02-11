@@ -849,8 +849,6 @@ body {
 }
 
 #streamssn {
-    top: 0;
-    right: 0;
     background-color: orangered;
     border-radius: 100vw;
     border: solid yellow 3px;
