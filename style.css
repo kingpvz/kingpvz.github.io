@@ -930,8 +930,8 @@ body {
             }
 
 .streamelmc {
-    border-radius: 3px 1vh 1vh 3px;
-    border-left: #777 solid 3px;
+    border-radius: 5px 1vh 1vh 5px;
+    border-left: #777 solid 5px;
     display: flex;
     padding: 1vh 1vh 1vh 2vh;
     margin-bottom: 2vh;
@@ -950,8 +950,8 @@ body {
     }
 
 .streamelms {
-    border-radius: 3px 1vh 1vh 3px;
-    border-left: #777 solid 3px;
+    border-radius: 5px 1vh 1vh 5px;
+    border-left: #777 solid 5px;
     margin-bottom: 2vh;
     text-align: left;
 }
