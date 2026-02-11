@@ -9,7 +9,7 @@
 			"Rhythm Doctor", "Rhythm Game"
 		],
 		[
-			"Try Not to Laugh", "Challenge", true
+			"Try Not to Laugh", "Challenge"
 		]
 	],
 	"schedule": [

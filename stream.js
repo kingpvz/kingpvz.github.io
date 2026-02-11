@@ -21,4 +21,20 @@ window.onload = function () {
         if (i[2]) body.style.backgroundColor = "#762102";
         upcomings.appendChild(body);
     }
+    const schd = document.getElementById("schedulestr");
+    if (receive.schedule.length != 0) schd.innerHTML = "";
+    for (i of receive.coming) {
+        const body = document.createElement("div");
+        body.classList.add("streamelms");
+        const head = document.createElement("div");
+        const date;
+        const name = document.createElement("h1");
+        name.innerHTML = i[0];
+        const genre = document.createElement("h2");
+        genre.innerHTML = "/ " + i[1];
+        body.appendChild(name);
+        body.appendChild(genre);
+        if (i[2]) body.style.backgroundColor = "#762102";
+        schd.appendChild(body);
+    }
 }
