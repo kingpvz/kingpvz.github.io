@@ -7,17 +7,17 @@
 	],
 	"schedule": [
 		[
-			"2/21/2026", "Rhythm Game",
+			"2/23/2026", "Rhythm Game",
 			"Rhythm Doctor - Part 128",
 			"Maybe I'll be busy who knows"
 		],
 		[
-			"2/22/2026", "Rhythm Game",
+			"2/24/2026", "Rhythm Game",
 			"Rhythm Doctor - Part 128",
 			"Maybe I'll be busy who knows"
 		],
 		[
-			"3/1/2026", "Just Chatting",
+			"3/11/2026", "Just Chatting",
 			"New Year Celebration"
 		]
 	]
