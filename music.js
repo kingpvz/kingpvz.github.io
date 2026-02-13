@@ -49,8 +49,6 @@ var filt = {
     }
 }
 
-
-
 function filters(x, close = false) {
     var y = document.getElementById(x);
     if (close) { y.style.display = "none"; }

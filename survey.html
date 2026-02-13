@@ -19,12 +19,17 @@
     <link rel="icon" type="image/x-icon" href="favicon.png">
 
     <style>
+        :root {
+            --c1: #131313;
+            --c2: #fff;
+        }
+
         html, body {
             padding: 0;
             margin: 0;
             font-family: 'Ubuntu', sans-serif !important;
-            color: #131313 !important;
-            background-color: #fff;
+            color: var(--c1) !important;
+            background-color: var(--c2);
             height: 100vh;
             overflow: hidden;
         }
@@ -39,7 +44,7 @@
         }
 
         .kd::-webkit-scrollbar-thumb {
-            background: #111;
+            background: var(--c1);
             border-radius: 100px;
             border: solid 3px none;
         }
@@ -64,24 +69,45 @@
 
         header {
             height: 5vh;
-            display: flex;
-            justify-content: center;
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
             align-items: center;
             background-color: #111;
-            padding: 1vh;
+            padding: 1.5vh;
+            border-radius: 0 0 3vh 3vh;
             box-shadow: black 0 1px 5px;
         }
 
         #headerimg {
             height: 5vh;
             width: 5vh;
+            cursor: pointer;
         }
 
         #headerh {
             font-size: 4vh;
             line-height: 1;
             color: white !important;
-            margin: 0 0 0 1vw;
+            margin: 0;
+            flex:1;
+        }
+
+        #headers {
+            font-size: 3vh;
+            line-height: 1;
+            color: white !important;
+            margin: 0;
+            cursor: pointer;
+            transition: 0.2s ease-out;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            -webkit-user-select: none;
+            user-select: none;
+            justify-self: end;
+        }
+
+        #headers:hover {
+            filter: invert(0.2);
         }
 
         p, h3 {
@@ -152,7 +178,7 @@
             display: flex;
         }
 
-        @media(max-width:800px){
+        @media(orientation: portrait){
              
             .kd {
                 height: 91vh;
@@ -161,11 +187,21 @@
 
             header {
                 box-shadow: black 0 3px 10px;
+                grid-template-columns: 1fr auto;
+                height: 8vh;
+                grid-gap: 1vh;
             }
 
             #headerh {
                 font-size: 3.5vh;
-                margin: 0 0 0 3vw;
+                margin: 0;
+            }
+
+            #headers {
+                font-size: 2vh;
+                margin: 0;
+                grid-column: span 2;
+                justify-self: center;
             }
 
             h2 {
@@ -206,23 +242,50 @@
     <script>
         let k = 0;
         let current = 0;
+        let dark = false;
         function update(x) {
             k = x;
             document.getElementById(`kd${current}`).classList.remove("visible");
             current = k;
             document.getElementById(`kd${current}`).classList.add("visible");
         }
+        function lightdark() {
+            if (dark) {
+                document.documentElement.style.setProperty('--c1', '#131313');
+                document.documentElement.style.setProperty('--c2', '#fff');
+                document.getElementById("headers").innerHTML = "Dark Mode";
+                dark = false;
+                localStorage.setItem("mode", "0");
+            } else {
+                document.documentElement.style.setProperty('--c2', '#131313');
+                document.documentElement.style.setProperty('--c1', '#fff');
+                document.getElementById("headers").innerHTML = "Light Mode";
+                dark = true;
+                localStorage.setItem("mode", "1");
+            }
+        }
+        window.addEventListener("DOMContentLoaded", () => {
+            if (localStorage.getItem("mode") === "1") lightdark();
+        });
     </script>
 
 </head>
 <body>
 
     <header>
-        <img id="headerimg" src="favicon.png" />
-        <h1 id="headerh">Streaming Survey</h1>
+        <img id="headerimg" src="favicon.png" onclick="window.location.assign('.')" />
+        <h1 id="headerh">Ultimate Surveys&trade;</h1>
+        <h2 id="headers" onclick="lightdark()">Dark Mode</h2>
     </header>
 
     <div id="kd0" class="kd visible">
+        <h2>Welcome and thanks for checking out my website!</h2>
+        <p>Please select the survey you would like to fill out:</p>
+        <button onclick="update(4);">Survey Regarding Upcoming Streams</button>
+        <button onclick="update(5);">Suggest Rhythm Doctor Levels</button>
+    </div>
+
+    <div id="kd4" class="kd">
         <h2>Welcome and thanks for checking out this survey!</h2>
         <p>I'm running out of games to stream. You can use this survey to let me know whatever you want me to play on stream!</p>
         <button onclick="update(1);">Let's Go!</button>
@@ -236,7 +299,17 @@
     </div>
 
     <div id="kd2" class="kd">
-        <iframe id="ifr" src="https://docs.google.com/forms/d/e/1FAIpQLScmAE5d-IaqM6A5wePUAmgDJ1s7cgEa1LbnQTkFpvlSLEdCOw/viewform?embedded=true" width="100%" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        <iframe id="ifr2" src="https://docs.google.com/forms/d/e/1FAIpQLScmAE5d-IaqM6A5wePUAmgDJ1s7cgEa1LbnQTkFpvlSLEdCOw/viewform?embedded=true" style="width:100%" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        <script>
+            let fr2 = document.getElementById("ifr2");
+            fr2.onload = function () {
+                fr2.height = window.innerHeight / 0.9;
+            }
+        </script>
+    </div>
+
+    <div id="kd5" class="kd">
+        <iframe id="ifr" src="https://docs.google.com/forms/d/e/1FAIpQLSc8inJxlmwI8q24GJzimtUobDSo2IVuVzz-NIBhKc-nnIXfxA/viewform?embedded=true" style="width:100%" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
         <script>
             let fr = document.getElementById("ifr");
             fr.onload = function () {
