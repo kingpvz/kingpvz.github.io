@@ -2,7 +2,7 @@
 	"season": 6,
 	"coming": [
 		[
-			"Poppy Playtime Chapter 5", "Horror", true
+			"Rhythm Doctor - Finish Up + Your Levels", "Rhythm Game"
 		]
 	],
 	"schedule": [
@@ -10,6 +10,10 @@
 			"2/26/2026", "Rhythm Game",
 			"Rhythm Doctor Part 4",
 			"I should have time I think."
+		],
+		[
+			"3/5/2026", "Horror",
+			"Poppy PLaytime Chapter 5 - Series Start"
 		]
 	]
 }
