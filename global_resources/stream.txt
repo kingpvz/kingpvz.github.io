@@ -1,14 +1,21 @@
 {
 	"season": 6,
 	"coming": [
-		[
-			"Rhythm Doctor - Finish Up + Your Levels", "Rhythm Game"
-		]
+		
 	],
 	"schedule": [
 		[
-			"3/19/2026", "Horror",
-			"Poppy Playtime Chapter 5 - Part 3"
+			"3/26/2026", "Horror",
+			"Poppy Playtime Chapter 5 - THE END"
+		],
+		[
+			"4/1/2026", "Horror",
+			"Five Nights at Epstein",
+			"I have no idea if I'll make it in time, so maybe the April Fools will come a day later."
+		],
+		[
+			"4/9/2026", "Rhythm Game",
+			"Rhythm Doctor - Finish Up + Your Levels - Part 1"
 		]
 	]
 }
