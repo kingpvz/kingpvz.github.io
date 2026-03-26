@@ -5,13 +5,9 @@
 	],
 	"schedule": [
 		[
-			"3/26/2026", "Horror",
-			"Poppy Playtime Chapter 5 - THE END"
-		],
-		[
-			"4/1/2026", "Horror",
+			"4/2/2026", "Horror",
 			"Five Nights at Epstein",
-			"I have no idea if I'll make it in time, so maybe the April Fools will come a day later."
+			"I'm probably not making it to stream on April 1st, so we will make April Fools on the 2nd."
 		],
 		[
 			"4/9/2026", "Rhythm Game",
