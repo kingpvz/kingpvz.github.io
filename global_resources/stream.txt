@@ -5,9 +5,9 @@
 	],
 	"schedule": [
 		[
-			"4/2/2026", "Horror",
-			"Five Nights at Epstein",
-			"I'm probably not making it to stream on April 1st, so we will make April Fools on the 2nd."
+			"4/2/2026", "CANCELLED",
+			"Cancelled due to network outages.",
+			"Five Nights at Epstein (April Fools Special Stream)"
 		],
 		[
 			"4/9/2026", "Rhythm Game",
