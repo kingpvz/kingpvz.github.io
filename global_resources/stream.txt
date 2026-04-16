@@ -5,8 +5,8 @@
 	],
 	"schedule": [
 		[
-			"4/16/2026", "Rhythm Game",
-			"Rhythm Doctor - Part 6 (Your Levels + Night Modes)"
+			"4/23/2026", "Rhythm Game",
+			"Rhythm Doctor - THE END"
 		]
 	]
 }
