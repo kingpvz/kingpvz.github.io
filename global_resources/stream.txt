@@ -5,13 +5,13 @@
 	],
 	"schedule": [
 		[
-			"4/23/2026", "Rhythm Game",
-			"Rhythm Doctor - THE END"
-		],
-		[
 			"4/30/2026", "Nothing",
 			"Dentist visit",
 			"(no i won't be streaming that)"
+		],
+		[
+			"5/7/2026", "SHMUP",
+			"JSAB: Completing Achievement Challenges"
 		]
 	]
 }
