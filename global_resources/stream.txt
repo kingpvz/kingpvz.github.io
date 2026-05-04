@@ -10,11 +10,11 @@
 			"idk what to stream"
 		],
 		[
-			"5/14/2026", "Nohting",
+			"5/14/2026", "Nothing",
 			"Exams"
 		],
 		[
-			"5/21/2026", "Nohting",
+			"5/21/2026", "Nothing",
 			"Exams"
 		]
 	]
