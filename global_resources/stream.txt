@@ -5,13 +5,17 @@
 	],
 	"schedule": [
 		[
-			"4/23/2026", "Rhythm Game",
-			"Rhythm Doctor - THE END"
+			"5/7/2026", "FPS",
+			"Team Fortress 2",
+			"idk what to stream"
 		],
 		[
-			"4/30/2026", "Nothing",
-			"Dentist visit",
-			"(no i won't be streaming that)"
+			"5/14/2026", "Nohting",
+			"Exams"
+		],
+		[
+			"5/21/2026", "Nohting",
+			"Exams"
 		]
 	]
 }
