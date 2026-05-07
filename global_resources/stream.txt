@@ -1,13 +1,12 @@
 {
 	"season": 6,
 	"coming": [
-		
+		["JSAB: Completing Challenge Quests", "SHMUP"]
 	],
 	"schedule": [
 		[
-			"5/7/2026", "FPS",
-			"Team Fortress 2",
-			"idk what to stream"
+			"5/7/2026", "Horror",
+			"Brno Transit"
 		],
 		[
 			"5/14/2026", "Nothing",
