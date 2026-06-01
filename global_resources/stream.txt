@@ -5,19 +5,11 @@
 	],
 	"schedule": [
 		[
-			"5/14/2026", "Nothing",
+			"6/5/2026", "Nothing",
 			"Exams"
 		],
 		[
-			"5/21/2026", "Nothing",
-			"Exams"
-		],
-		[
-			"5/28/2026", "Nothing",
-			"Exams"
-		],
-		[
-			"5/28/2026", "SHMUP",
+			"6/12/2026", "SHMUP",
 			"JSAB: Challenge Quests",
 			"EXAMS ARE OVER YOOOOOOO"
 		]
