@@ -1,17 +1,13 @@
 {
 	"season": 6,
 	"coming": [
-		
+		["Deltarune Chapter 5", "RPG", true]
 	],
 	"schedule": [
 		[
-			"6/5/2026", "Nothing",
-			"Exams"
-		],
-		[
 			"6/12/2026", "SHMUP",
 			"JSAB: Challenge Quests",
-			"EXAMS ARE OVER YOOOOOOO"
+			"EXAMS ARE (almost) OVER YOOOOOOO"
 		]
 	]
 }
