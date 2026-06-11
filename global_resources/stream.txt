@@ -5,7 +5,7 @@
 	],
 	"schedule": [
 		[
-			"6/12/2026", "SHMUP",
+			"6/11/2026", "SHMUP",
 			"JSAB: Challenge Quests",
 			"EXAMS ARE (almost) OVER YOOOOOOO"
 		]
