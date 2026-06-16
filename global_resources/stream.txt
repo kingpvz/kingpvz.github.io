@@ -1,7 +1,8 @@
 {
 	"season": 6,
 	"coming": [
-		["Deltarune Chapter 5", "RPG", true]
+		["Deltarune Chapter 5", "RPG", true],
+		["Hrot", "FPS"]
 	],
 	"schedule": [
 		[
