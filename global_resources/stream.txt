@@ -1,14 +1,18 @@
 {
 	"season": 6,
 	"coming": [
-		["Deltarune Chapter 5", "RPG", true],
 		["Hrot", "FPS"]
 	],
 	"schedule": [
 		[
-			"6/11/2026", "SHMUP",
-			"JSAB: Challenge Quests",
-			"EXAMS ARE (almost) OVER YOOOOOOO"
+			"6/29/2026", "RPG",
+			"Deltarune Chapter 5 - Series Start",
+			"I will stream about 2-3 hours earlier than usually."
+		],
+		[
+			"6/30/2026", "RPG",
+			"Deltarune Chapter 5 - Part 2",
+			"I will stream about 2-3 hours earlier than usually."
 		]
 	]
 }
