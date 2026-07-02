@@ -1,14 +1,10 @@
 {
 	"season": 6,
 	"coming": [
-		["Hrot", "FPS"]
+		["Hrot", "FPS"],
+		["Just Shapes and Beats - Quests", "SHMUP"]
 	],
 	"schedule": [
-		[
-			"7/1/2026", "RPG",
-			"Deltarune Chapter 5 - Part 3",
-			"I will stream about 1-2 hours earlier than usually."
-		],
 		[
 			"7/2/2026", "RPG",
 			"Deltarune Chapter 5 - THE END",
