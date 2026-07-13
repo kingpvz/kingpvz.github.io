@@ -1,14 +1,13 @@
 {
 	"season": 6,
 	"coming": [
-		["Hrot", "FPS"],
-		["Just Shapes and Beats - Quests", "SHMUP"]
+		["Hrot", "FPS"]
 	],
 	"schedule": [
 		[
-			"7/2/2026", "RPG",
-			"Deltarune Chapter 5 - THE END",
-			"Secret Boss + Ending + Weird Route"
+			"7/13/2026", "SHMUP",
+			"Just Shapes and Beats - Quests",
+			"I think there are like 2 or 3 more quests so imma beat them right now"
 		]
 	]
 }
