@@ -5,7 +5,7 @@
 	],
 	"schedule": [
 		[
-			"7/13/2026", "SHMUP",
+			"7/16/2026", "SHMUP",
 			"Just Shapes and Beats - Quests",
 			"I think there are like 2 or 3 more quests so imma beat them right now"
 		]
