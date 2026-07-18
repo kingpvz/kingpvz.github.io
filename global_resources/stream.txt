@@ -1,13 +1,13 @@
 {
 	"season": 6,
 	"coming": [
-		["Hrot", "FPS"]
+	 
 	],
 	"schedule": [
 		[
-			"7/16/2026", "SHMUP",
-			"Just Shapes and Beats - Quests",
-			"I think there are like 2 or 3 more quests so imma beat them right now"
+			"7/23/2026", "FPS",
+			"Hrot",
+			"No clue if this will be a series or just a simple one-episoder, but yeah."
 		]
 	]
 }
