@@ -1999,6 +1999,35 @@ var database = [
         }
     },
     {
+        title: "Flower Man",
+        genre: "other:Soundtrack other:Dance exp",
+        album: "none",
+        year: 2026,
+        originality: "remix",
+        originalby: "Toby Fox & Camellia",
+        lyrics: "lyric",
+        language: "English",
+        explicit: false,
+        cover: "https://i.scdn.co/image/ab6761670000ecd4be936e4ef9f2f473c44c575d",
+        link: {
+            base: {
+                youtube: "https://youtu.be/FOJOn3ihKIY",
+                ng: "https://www.newgrounds.com/audio/listen/1598706",
+                bili: "https://www.bilibili.com/video/BV1BKgq6FEzn/"
+            },
+            alt: [
+                {
+                    name: "Instrumental Version",
+                    youtube: "https://youtu.be/7EeMaE8BVaM"
+                },
+                {
+                    name: "Vocals Only Version",
+                    youtube: "https://youtu.be/Mwlo_E8xvGM"
+                }
+            ]
+        }
+    },
+    {
         title: "Friday",
         genre: "hardbass:Hardbass",
         album: "wyrtb",
