@@ -2018,7 +2018,8 @@ var database = [
             alt: [
                 {
                     name: "Instrumental Version",
-                    youtube: "https://youtu.be/7EeMaE8BVaM"
+                    youtube: "https://youtu.be/7EeMaE8BVaM",
+                    ng: "https://www.newgrounds.com/audio/listen/1603731"
                 },
                 {
                     name: "Vocals Only Version",
