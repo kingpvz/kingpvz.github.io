@@ -5,9 +5,8 @@
 	],
 	"schedule": [
 		[
-			"7/23/2026", "FPS",
-			"Hrot",
-			"No clue if this will be a series or just a simple one-episoder, but yeah."
+			"8/6/2026", "FPS",
+			"Hrot"
 		]
 	]
 }
