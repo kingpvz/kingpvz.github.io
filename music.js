@@ -2008,18 +2008,22 @@ var database = [
         lyrics: "lyric",
         language: "English",
         explicit: false,
-        cover: "https://i.scdn.co/image/ab6761670000ecd4be936e4ef9f2f473c44c575d",
+        cover: "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e025195667fd21e06e6d16e1b0c",
         link: {
             base: {
                 youtube: "https://youtu.be/FOJOn3ihKIY",
                 ng: "https://www.newgrounds.com/audio/listen/1598706",
-                bili: "https://www.bilibili.com/video/BV1BKgq6FEzn/"
+                bili: "https://www.bilibili.com/video/BV1BKgq6FEzn/",
+                spotify: "https://open.spotify.com/album/3wa1x5OpXXEGaUZvAKGwuC",
+                deezer: "https://link.deezer.com/s/344DdSZsAOSj6OwcAdzBU"
             },
             alt: [
                 {
                     name: "Instrumental Version",
                     youtube: "https://youtu.be/7EeMaE8BVaM",
-                    ng: "https://www.newgrounds.com/audio/listen/1603731"
+                    ng: "https://www.newgrounds.com/audio/listen/1603731",
+                    spotify: "https://open.spotify.com/track/4Tk5iCOKI0WRrWjqgdrcsv?si=71519fb826174c8a",
+                    deezer: "https://link.deezer.com/s/344DehS57DEdagmizm5YB"
                 },
                 {
                     name: "Vocals Only Version",
