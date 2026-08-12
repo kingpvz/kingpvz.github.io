@@ -4,8 +4,12 @@
 	 
 	],
 	"schedule": [
+  [
+   "8/13/2026","Nothing",
+   "Unplanned voyage"
+  ],
 		[
-			"8/13/2026", "Sandbox",
+			"8/20/2026", "Sandbox",
 			"KingCraft Showcase (Minecraft Mod)"
 		]
 	]
