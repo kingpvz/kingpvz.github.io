@@ -311,6 +311,17 @@ function openSong(id, pc=true) {
                 os.appendChild(img);
                 links.appendChild(os);
             }
+            if (i.bili) {
+                var os = document.createElement("a");
+                os.href = i.ng;
+                os.target = "_blank";
+                let img = document.createElement("img");
+                img.src = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.miraheze.org%2Fhololivewiki%2Fe%2Fea%2FLogo_-_bilibili_(Textless).png%3F20200609035028&f=1&nofb=1&ipt=f6d74ea43157f7dd3f544afefe9b1da5076f1d5de3266bf0be26d7cac0762f37";
+                img.classList.add("linkImage");
+                img.title = "BiliBili";
+                os.appendChild(img);
+                links.appendChild(os);
+            }
             alt.appendChild(links);
             ex.appendChild(alt);
         }
