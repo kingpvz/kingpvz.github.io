@@ -1598,7 +1598,7 @@ var database = [
                 }
             ]
         }
-    }, ,
+    },
     {
         title: "Dedoles",
         genre: "hardbass:Hardbass",

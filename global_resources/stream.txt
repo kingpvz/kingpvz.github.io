@@ -8,10 +8,6 @@
 	 ["Fears to Fathom: Scratch Creek", "Horror"]
 	],
 	"schedule": [
-		[
-			"8/20/2026", "Sandbox",
-			"KingCraft Showcase (Minecraft Mod)",
-			"Final stream of the season"
-		]
+		
 	]
 }
