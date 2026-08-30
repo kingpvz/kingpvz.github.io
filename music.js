@@ -1571,6 +1571,35 @@ var database = [
         }
     },
     {
+        title: "Deckchair (Na Leh&aacute;tku)",
+        genre: "swing",
+        album: "none",
+        year: 2026,
+        originality: "remix",
+        originalby: "Hork&yacute;&zcaron;e Sl&iacute;&zcaron;e",
+        lyrics: "lyric",
+        language: "Slovak",
+        explicit: true,
+        cover: "https://i.scdn.co/image/ab6761670000ecd4be936e4ef9f2f473c44c575d",
+        link: {
+            base: {
+                youtube: "https://www.youtube.com/watch?v=c91xFQGpeas"
+            },
+            alt: [
+                {
+                    name: "Instrumental Version",
+                    youtube: "https://youtu.be/_tpPCgmners",
+                    ng: "https://www.newgrounds.com/audio/listen/1610487",
+                    bili: "https://www.bilibili.com/video/BV1s2tn6zE5U/"
+                },
+                {
+                    name: "Extended Version",
+                    youtube: "https://youtu.be/Z912jlkw8Sc"
+                }
+            ]
+        }
+    }, ,
+    {
         title: "Dedoles",
         genre: "hardbass:Hardbass",
         album: "wyrtb",
