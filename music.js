@@ -1591,21 +1591,27 @@ var database = [
         lyrics: "lyric",
         language: "Slovak",
         explicit: true,
-        cover: "https://i.scdn.co/image/ab6761670000ecd4be936e4ef9f2f473c44c575d",
+        cover: "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0246a2ea20e3aed69cc8c1e468",
         link: {
             base: {
-                youtube: "https://www.youtube.com/watch?v=c91xFQGpeas"
+                youtube: "https://www.youtube.com/watch?v=c91xFQGpeas",
+                spotify: "https://open.spotify.com/album/2ZgT2tclgSU96rhWcoTI13?si=Ri7n_lXKTJqUqefB3h7yoQ",
+                deezer: "https://link.deezer.com/s/34hKf8FaVKFDeUg8XvxOD"
             },
             alt: [
                 {
                     name: "Instrumental Version",
                     youtube: "https://youtu.be/_tpPCgmners",
                     ng: "https://www.newgrounds.com/audio/listen/1610487",
-                    bili: "https://www.bilibili.com/video/BV1s2tn6zE5U/"
+                    bili: "https://www.bilibili.com/video/BV1s2tn6zE5U/",
+                    spotify: "https://open.spotify.com/track/0U7yOQ26HACJBzYqvmk8Ey?si=09ee628c20ad4661",
+                    deezer: "https://link.deezer.com/s/34hKfuNHbXFkrAyeDvYYC"
                 },
                 {
                     name: "Extended Version",
-                    youtube: "https://youtu.be/Z912jlkw8Sc"
+                    youtube: "https://youtu.be/Z912jlkw8Sc",
+                    spotify: "https://open.spotify.com/track/0HfQOIbaQwJ31sk01StBeR?si=488f99c27f3645ef",
+                    deezer: "https://link.deezer.com/s/34hKfL2aYyIM0mR4WVXou"
                 }
             ]
         }
@@ -1798,7 +1804,8 @@ var database = [
             base: {
                 youtube: "https://youtu.be/0i_synnxtVM",
                 odysee: "https://odysee.com/@kingpvz:4/dummy_swingremix:e",
-                ng: "https://www.newgrounds.com/audio/listen/1394824"
+                ng: "https://www.newgrounds.com/audio/listen/1394824",
+                deezer: "https://link.deezer.com/s/34hKheCosVoVbLKukDPVb"
             }
         }
     },
