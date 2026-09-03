@@ -5,7 +5,8 @@
 		"schedule": ["WHEN:date(mm/dd/yyyy)", "GENRE:string", "TITLE:string", "NOTES:string=''"]
 	},
 	"coming": [
-	 ["Fears to Fathom: Scratch Creek", "Horror"]
+	 ["Fears to Fathom: Scratch Creek", "Horror"],
+         ["MOUSE: P.I. For Hire", "FPS"]
 	],
 	"schedule": [
 		
