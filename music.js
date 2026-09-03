@@ -1799,13 +1799,14 @@ var database = [
         originalby: "Toby Fox",
         lyrics: "inst",
         explicit: false,
-        cover: "https://i.scdn.co/image/ab6761670000ecd4be936e4ef9f2f473c44c575d",
+        cover: "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0202f2c469bb489da6fe8217f1",
         link: {
             base: {
                 youtube: "https://youtu.be/0i_synnxtVM",
                 odysee: "https://odysee.com/@kingpvz:4/dummy_swingremix:e",
                 ng: "https://www.newgrounds.com/audio/listen/1394824",
-                deezer: "https://link.deezer.com/s/34hKheCosVoVbLKukDPVb"
+                deezer: "https://link.deezer.com/s/34hKheCosVoVbLKukDPVb",
+                spotify: "https://open.spotify.com/album/4rEHNv5agHDwPaW3a9sp59?si=ddwTzHvISjCGBKoxJAmicQ"
             }
         }
     },
