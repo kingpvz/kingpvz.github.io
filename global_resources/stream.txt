@@ -9,8 +9,17 @@
 	],
 	"schedule": [
 		[
-			"10/08/2026", "FPS",
-			"MOUSE: P.I. For Hire - Part 2"
+			"10/15/2026", "FPS",
+			"MOUSE: P.I. For Hire - Part 3"
+		],
+		[
+			"10/22/2026", "Nothing",
+			"Airport Business"
+		],
+		[
+			"10/29/2026", "???",
+			"Birthday Stream",
+			"idk what i'll play, maybe mouse tbh"
 		]
 	]
 }
