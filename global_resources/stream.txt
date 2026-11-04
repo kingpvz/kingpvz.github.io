@@ -9,14 +9,9 @@
 	],
 	"schedule": [
 		[
-			"10/29/2026", "FPS",
-			"Team Fortress 2",
-			"Birthday Stream"
-		],
-[
-"11/5/2026", "FPS",
-"Mouse: P.I. For Hire",
-"I don't remember which part it is rn"
-]
+			"11/5/2026", "FPS",
+			"Mouse: P.I. For Hire",
+			"I don't remember which part it is rn"
+		]
 	]
 }
