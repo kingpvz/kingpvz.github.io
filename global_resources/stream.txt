@@ -6,7 +6,7 @@
 	},
 	"coming": [
 		["Endacopia", "Adventure"],
-		["Building a project from scratch - speedrun", "Programming"],
+		["Building an instant messenger from scratch --speedrun --noai", "Programming"],
 		["Vampire Survivors", "RPG"]
 	],
 	"schedule": [
