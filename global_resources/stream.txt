@@ -6,13 +6,14 @@
 	},
 	"coming": [
 		["Endacopia", "Adventure"],
-		["Building a random ass project from scratch - speedrun", "Programming"]
+		["Building a project from scratch - speedrun", "Programming"],
+		["Vampire Survivors", "RPG"]
 	],
 	"schedule": [
 		[
-			"11/5/2026", "FPS",
-			"Mouse: P.I. For Hire",
-			"I don't remember which part it is rn"
+			"11/12/2026", "FPS",
+			"Mouse: P.I. For Hire - Part 5",
+			"I'm going to the dentist in the morning so I might cancel the stream if unable to talk"
 		]
 	]
 }
