@@ -11,9 +11,8 @@
 	],
 	"schedule": [
 		[
-			"11/19/2026", "FPS",
-			"MOUSE: P.I. For Hire",
-			"I am not 100% sure if the stream takes place, so you should prob ring that bell ykyk"
+			"11/26/2026", "FPS",
+			"MOUSE: P.I. For Hire - Part 7"
 		]
 	]
 }
